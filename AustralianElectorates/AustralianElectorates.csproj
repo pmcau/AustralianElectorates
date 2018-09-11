@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageTags>Australia, Electorates</PackageTags>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile Condition="'$(Configuration)'=='Release'">true</GenerateDocumentationFile>
+    <Description>Provides a .net wrapper around the Australian Electoral Commission (AEC) data https://www.geonames.org/).</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Condition="Exists('..\Data\Electorates.zip')" Include="..\Data\Electorates.zip" Link="Electorates.zip" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-63127-02" PrivateAssets="All" />
+    <PackageReference Include="System.IO.Compression.ZipFile" Version="4.3.0"/>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,36 @@
+using System;
+using System.Linq;
+using AustralianElectorates;
+using GeoJSON.Net.Feature;
+
+static class MetadataCleaner
+{
+    public static void CleanMetadata(FeatureCollection featureCollection, State? state = null)
+    {
+        if (!featureCollection.Features.First().Properties.ContainsKey("Elect_div"))
+        {
+            return;
+        }
+        foreach (var feature in featureCollection.Features)
+        {
+            var electorate = (string) feature.Properties["Elect_div"];
+            var stateFromProperties = GetState(feature, state);
+            var area = (double) feature.Properties["Area_SqKm"];
+
+            electorate = electorate.Replace(" ", "-").Replace("'", "");
+            feature.Properties.Clear();
+            feature.Properties["electorate"] = electorate;
+            feature.Properties["area"] = Math.Round(area,6);
+            feature.Properties["state"] = stateFromProperties;
+        }
+    }
+
+    private static string GetState(Feature feature, State? state)
+    {
+        if (feature.Properties.TryGetValue("State", out var stateFromProperties))
+        {
+            return (string) stateFromProperties;
+        }
+        return state.ToString();
+    }
+}
