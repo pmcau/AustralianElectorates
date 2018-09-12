@@ -51,6 +51,8 @@ Each of the above groupings have the following structure.
 
 Each maps has multiple variants based on the combination of simplification and trimming.
 
+With the below two options combined, there are eight different options for each map.
+
 #### Simplication
 
 Simplication uses [MapShaper simplify option](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-simplify)
