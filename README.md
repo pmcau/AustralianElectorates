@@ -1,10 +1,10 @@
 
 
-### Electorate information
+## Electorate information
 
 All information about electorates is avaliable at [/Data/electorates.json](https://github.com/SimonCropp/AustralianElectorates/blob/master/Data/electorates.json)
 
-#### Example content
+### Example content
 
 ```
 [
@@ -33,25 +33,25 @@ All information about electorates is avaliable at [/Data/electorates.json](https
   },
 ```
 
-### Maps
+## Maps
 
 All maps are in [geojson format](http://geojson.org/).
 
  * Future (Next election) [/Data/Maps/Future](https://github.com/SimonCropp/AustralianElectorates/tree/master/Data/Maps/Future)
  * 2016 (Previous election) [/Data/Maps/2016](https://github.com/SimonCropp/AustralianElectorates/tree/master/Data/Maps/2016)
 
-#### Structure
+### Structure
 
 Each of the above groupings have the following structure.
 
  * Australia and state "combined electorate" maps are at the root.
  * Specific elctorate maps are located inside a subdirectry based on the state they exist in.
 
-#### Map variants
+### Map variants
 
 Each maps has multiple variants based on the combination of simplification and trimming.
 
-##### Simplication
+#### Simplication
 
 Simplication uses [MapShaper simplify option](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-simplify)
 
@@ -59,8 +59,9 @@ Simplication uses [MapShaper simplify option](https://github.com/mbloch/mapshape
  
 The level of simplifation is represented as a percent number. 20, 10 and 5. representing 20%, 10% and 5%. The smalled the number the smaller the file, but with the loss of some accuracy.  
 
-##### Trimming
+#### Trimming
 
+Trimming removes small islands to reduce the file size. Maps that have been trimmed have `trimmed` in the file name.
 
 ## Copyright
 
