@@ -30,7 +30,7 @@ static class GeoJsonExtensions
     {
         if (feature.Geometry is MultiPolygon multiPolygon)
         {
-            var items = multiPolygon.Coordinates.Skip(1).Take(2).Where(x => x.Size() > 350).ToList();
+            var items = multiPolygon.Coordinates.Skip(1).Where(x => x.Size() > 300).Take(2).ToList();
             items.Insert(0, multiPolygon.Coordinates.First());
             return new Feature(new MultiPolygon(items), feature.Properties);
         }
