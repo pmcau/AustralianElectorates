@@ -58,8 +58,8 @@ With the below two options combined, there are eight different options for each 
 Simplication uses [MapShaper simplify option](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-simplify)
 
 > Visvalingam simplification iteratively removes the least important point from a polyline. The importance of points is measured using a metric based on the geometry of the triangle formed by each non-endpoint vertex and the two neighboring vertices
- 
-The level of simplifation is represented as a percent number. 20, 10 and 5. representing 20%, 10% and 5%. The smalled the number the smaller the file, but with the loss of some accuracy.  
+
+The level of simplification is represented as a percent number. 20, 10 and 5. representing 20%, 10% and 5%. The smaller the number the smaller the file, but with the loss of some accuracy.  
 
 #### Trimming
 
@@ -67,9 +67,9 @@ Trimming removes small islands to reduce the file size. Maps that have been trim
 
 ## Copyright
 
-The code in this repos is licensed under MIT.
+The code in this repository is licensed under MIT.
 
-The content that is dendered is source from the [Australian Electoral Commision (AEC)](https://www.aec.gov.au/). See the [AEC Copyright](https://www.aec.gov.au/footer/Copyright.htm)  for more information on data usage.
+The content that is rendered is source from the [Australian Electoral Commision (AEC)](https://www.aec.gov.au/). See the [AEC Copyright](https://www.aec.gov.au/footer/Copyright.htm)  for more information on data usage.
 
 ## Re-Generating the data
 
