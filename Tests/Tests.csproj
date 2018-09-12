@@ -2,8 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
+    <Optimize>false</Optimize>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="ApprovalTests" Version="3.0.16" />
+    <PackageReference Include="ObjectApproval" Version="2.2.0" />
     <PackageReference Include="GeoJSON.Net" Version="1.1.68" />
     <PackageReference Include="HtmlAgilityPack" Version="1.8.7" />
     <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />

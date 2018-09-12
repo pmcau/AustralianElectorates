@@ -1,0 +1,480 @@
+﻿{
+  "hunter": {
+    "Name": "hunter",
+    "State": "NSW",
+    "Description": "Hunter includes the Muswellbrook Shire Council, Singleton Council, Cessnock City Council (part) and Lake Macquarie City Council (part). The main towns include Broke, Cessnock, Denman, Mulbring, Muswellbrook, Paxton, Putty, Singleton, Widden and Wyee.<br>This description reflects local government areas in existence in 2015.",
+    "Area": 10640.0,
+    "ProductsAndIndustry": "Agriculture, coal-mining, dairy farming, engineering, farming, forestry, fruit and vegetables, horse studs and racing, timber milling, tourism, wine grapes, wineries and wool. Liddell and Bayswater Power Stations are also in the division.",
+    "NameDerivation": "Named after John Hunter (1737-1821), second Governor of New South Wales 1795-99.",
+    "DateGazetted": "2016-02-25T00:00:00",
+    "Members": [
+      {
+        "Name": "Fitzgibbon, J",
+        "Begin": 2016,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Conroy, P",
+        "Begin": 2013,
+        "End": 2016,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Combet, G",
+        "Begin": 2007,
+        "End": 2013,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Hoare, K",
+        "Begin": 1998,
+        "End": 2007,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Brown, B",
+        "Begin": 1984,
+        "End": 1998,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Fitzgibbon, J",
+        "Begin": 1996,
+        "End": 2016,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Fitzgibbon, E J",
+        "Begin": 1984,
+        "End": 1996,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Brown, R J",
+        "Begin": 1980,
+        "End": 1984,
+        "Party": "ALP"
+      },
+      {
+        "Name": "James, A W",
+        "Begin": 1960,
+        "End": 1980,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Evatt, H V",
+        "Begin": 1958,
+        "End": 1960,
+        "Party": "ALP"
+      },
+      {
+        "Name": "James, R",
+        "Begin": 1928,
+        "End": 1958,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Charlton, M",
+        "Begin": 1910,
+        "End": 1928,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Liddell, F",
+        "Begin": 1903,
+        "End": 1910,
+        "Party": "FT/ANTI-SOC"
+      },
+      {
+        "Name": "Barton, E",
+        "Begin": 1901,
+        "End": 1903,
+        "Party": "PROT"
+      }
+    ],
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+  },
+  "batman": {
+    "Name": "batman",
+    "State": "VIC",
+    "Description": "The Division of Batman is located in Melbourne's northern suburbs. It covers an area of approximately 66 sq km from Thomastown/Bundoora in the north to Clifton Hill in the south, with Merri Creek providing the vast majority of the western boundary and Darebin Creek, parts of Macleod and Plenty Road Bundoora providing the eastern boundary. The suburbs of Alphington, Bundoora (part), Clifton Hill, Coburg North (part), Fairfield, Kingsbury, Macleod (part), Northcote, Preston, Reservoir, Thomastown (part) and Thornbury are in this division.",
+    "ProductsAndIndustry": "Light engineering, textiles, clothing and footwear and general retail.",
+    "NameDerivation": "Named after John Batman 1801-39, the early settler and explorer, known as the 'Founder of Melbourne'.",
+    "Members": [
+      {
+        "Name": "Kearney, G",
+        "Begin": 2018,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Feeney, D",
+        "Begin": 2013,
+        "End": 2018,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Ferguson, M",
+        "Begin": 1996,
+        "End": 2013,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Howe, B L",
+        "Begin": 1977,
+        "End": 1996,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Garrick, H J",
+        "Begin": 1969,
+        "End": 1977,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Benson, S J",
+        "Begin": 1962,
+        "End": 1969,
+        "Party": "ALP/IND"
+      },
+      {
+        "Name": "Bird, A C",
+        "Begin": 1949,
+        "End": 1962,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Brennan, F",
+        "Begin": 1934,
+        "End": 1949,
+        "Party": "FLP/ALP"
+      },
+      {
+        "Name": "Dennis, S",
+        "Begin": 1931,
+        "End": 1934,
+        "Party": "UAP"
+      },
+      {
+        "Name": "Brennan, F",
+        "Begin": 1911,
+        "End": 1931,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Beard, H E",
+        "Begin": 1910,
+        "End": 1910,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Coon, J",
+        "Begin": 1906,
+        "End": 1910,
+        "Party": "PROT"
+      }
+    ],
+    "DemographicRating": "Inner Metropolitan"
+  },
+  "spence": {
+    "Name": "spence",
+    "State": "NSW",
+    "Description": "<p>The Division of Spence consists of:</p><ul><li>City of Playford,</li><li>Town of Gawler,</li><li>part of the Barossa Council,</li><li>part of the City of Salisbury, and</li><li>part of the Light Regional Council</li></ul>",
+    "Area": 532.0,
+    "ProductsAndIndustry": "Commercial, defence, Edinburgh RAAF Base, retail and technology based industry, Lyell McEwin Hospital, market gardens and viticulture.",
+    "NameDerivation": "Named in honour of Catherine Helen Spence, 1825-1910. Spence was an advocate for female suffrage and electoral reform and was the first female political candidate in Australia when she stood (unsuccessfully) for a seat at the Federal Convention elections of 1897.",
+    "DateGazetted": "2018-07-20T00:00:00",
+    "Members": [],
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion"
+  },
+  "cook": {
+    "Name": "cook",
+    "State": "NSW",
+    "Description": "Cook covers an area from Kurnell and Cronulla in the east to Sylvania and Gymea Bay in the west and from Kyle Bay, Monterey and Botany Bay in the north to Dents Creek and Hacking River in the south. Suburbs include Monterey, Beverley Park, Blakehurst, Burraneer, Caringbah, Carss Park, Cronulla, Greenhills Beach, Gymea, Gymea Bay, Kyle Bay, Kurnell, Lilli Pilli, Miranda, Sandringham, Sans Souci, Sylvania, Sylvania Waters, Taren Point and Yowie Bay.<br>This description reflects local government areas in existence in 2015.",
+    "Area": 94.0,
+    "ProductsAndIndustry": "Port and berthing facilities, boat building, steel fabrication, pharmaceutical plant, oyster farming, retail and service industries",
+    "NameDerivation": "Named after Captain James Cook (1728-79), the first European to discover the east coast of Australia in 1770.",
+    "DateGazetted": "2016-02-25T00:00:00",
+    "Members": [
+      {
+        "Name": "Morrison, S",
+        "Begin": 2007,
+        "Party": "LP"
+      },
+      {
+        "Name": "Baird, B",
+        "Begin": 1998,
+        "End": 2007,
+        "Party": "LP"
+      },
+      {
+        "Name": "Mutch, S",
+        "Begin": 1996,
+        "End": 1998,
+        "Party": "LP"
+      },
+      {
+        "Name": "Dobie, J D M",
+        "Begin": 1975,
+        "End": 1996,
+        "Party": "LP"
+      },
+      {
+        "Name": "Thorburn, R W",
+        "Begin": 1972,
+        "End": 1975,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Dobie, J D M",
+        "Begin": 1969,
+        "End": 1972,
+        "Party": "LP"
+      },
+      {
+        "Name": "Cope, J F",
+        "Begin": 1955,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Sheehan, T",
+        "Begin": 1937,
+        "End": 1955,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Garden, J S",
+        "Begin": 1934,
+        "End": 1937,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Riley, E C",
+        "Begin": 1922,
+        "End": 1934,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Catts, J H",
+        "Begin": 1906,
+        "End": 1922,
+        "Party": "ALP"
+      }
+    ],
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+  },
+  "bean": {
+    "Name": "bean",
+    "Description": "<p>The Division of Bean covers an area in the south of the ACT consisting of the Districts of:</p><ul><li>Booth,</li><li>Coree,</li><li>Cotter River,</li><li>Mount Clear,</li><li>Paddys River,</li><li>Rendezvous Creek,</li><li>Stromlo,</li><li>Tennent,</li><li>Tuggeranong,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul><p>The Division of Bean also includes Norfolk Island.</p>",
+    "Area": 1913.0,
+    "ProductsAndIndustry": "Mainly residential with tourism, retail and some light industry at Hume",
+    "NameDerivation": "Named after Charles Edwin Woodrow Bean, 1879-1968, Australia's official correspondent to the Australian Imperial Force in World War One, editor of the <em>Official History of Australia in the War of 1914-1918</em> and primary advocate to establish the Australian War Memorial.",
+    "DateGazetted": "2018-07-13T00:00:00",
+    "Members": [],
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs"
+  },
+  "fenner": {
+    "Name": "fenner",
+    "Description": "<p>The Division of Fenner covers an area in the north of the ACT consisting of the Districts of:</p><ul><li>Gungahlin,</li><li>Hall, and</li><li>part of Belconnen</li></ul><p>The Division of Fenner also includes the Jervis Bay Territory.</p>",
+    "Area": 238.0,
+    "ProductsAndIndustry": "Mainly residential with tourism, retail and some light industry at Mitchell",
+    "NameDerivation": "Named after Professor Frank Fenner AC CMG MBE FAA FRS FRACP FRCP, 1914-2010, eminent scientist of national and international renown who made significant contributions to improving the wellbeing of humanity.",
+    "DateGazetted": "2018-07-13T00:00:00",
+    "Members": [
+      {
+        "Name": "Leigh, A",
+        "Begin": 2010,
+        "Party": "ALP"
+      },
+      {
+        "Name": "McMullan, B",
+        "Begin": 1998,
+        "End": 2010,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Dargavel, S",
+        "Begin": 1997,
+        "End": 1998,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Langmore, J",
+        "Begin": 1984,
+        "End": 1997,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Fry, K L",
+        "Begin": 1974,
+        "End": 1984,
+        "Party": "ALP"
+      }
+    ],
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs"
+  },
+  "canberra": {
+    "Name": "canberra",
+    "Description": "<p>The Division of Canberra covers an area in central ACT consisting of the Districts of:</p><ul><li>Canberra Central,</li><li>Kowen,</li><li>Majura,</li><li>part of Belconnen,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul>",
+    "Area": 312.0,
+    "ProductsAndIndustry": "Mainly residential with tourism, retail and some light industry at Fyshwick and Beard",
+    "NameDerivation": "A locality name derived from an Aboriginal word which is held to mean 'meeting place'.",
+    "DateGazetted": "2018-07-13T00:00:00",
+    "Members": [
+      {
+        "Name": "Brodtmann, G",
+        "Begin": 2010,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Ellis, A",
+        "Begin": 1998,
+        "End": 2010,
+        "Party": "ALP"
+      },
+      {
+        "Name": "McMullan, B",
+        "Begin": 1996,
+        "End": 1998,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Smyth, B M",
+        "Begin": 1995,
+        "End": 1996,
+        "Party": "LP"
+      },
+      {
+        "Name": "Kelly, R J",
+        "Begin": 1980,
+        "End": 1995,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Haslem, J W",
+        "Begin": 1975,
+        "End": 1980,
+        "Party": "LP"
+      },
+      {
+        "Name": "Enderby, K E",
+        "Begin": 1974,
+        "End": 1975,
+        "Party": "ALP"
+      }
+    ],
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs"
+  },
+  "bass": {
+    "Name": "bass",
+    "State": "TAS",
+    "Description": "<p>The Division of Bass is located on Launceston and consists of the:</p><ul><li>City of Launceston</li><li>Municipality of Dorset</li><li>Municipality of Flinders</li><li>Municipality of George Town</li><li>Municipality of West Tamar </li></ul><p>The Division of Bass includes Flinders Island.</p>",
+    "Area": 7975.96,
+    "ProductsAndIndustry": "Aluminium and ferrous metal smelting, brewery, cattle (dairy and beef) farming, manufacturing, mining, ports and shipping, ship building, timber, tourism, fishing, wineries and wool.",
+    "NameDerivation": "Named in honour of George Bass, 1771-1803. Bass was a surgeon, scientist and explorer who was one of those responsible for the early geographical investigation of the Australian coast. Bassâ€™ explorations included the islands in Bass Strait, Tamar estuary, Derwent estuary and Mount Wellington.",
+    "DateGazetted": "2017-11-14T00:00:00",
+    "Members": [
+      {
+        "Name": "Hart, R",
+        "Begin": 2016,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Nikolic, A",
+        "Begin": 2013,
+        "End": 2016,
+        "Party": "LP"
+      },
+      {
+        "Name": "Lyons, G",
+        "Begin": 2010,
+        "End": 2013,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Campbell, J",
+        "Begin": 2007,
+        "End": 2010,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Ferguson, M",
+        "Begin": 2004,
+        "End": 2007,
+        "Party": "LP"
+      },
+      {
+        "Name": "O'Byrne, M",
+        "Begin": 1998,
+        "End": 2004,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Smith, W L",
+        "Begin": 1996,
+        "End": 1998,
+        "Party": "LP"
+      },
+      {
+        "Name": "Smith, S J",
+        "Begin": 1993,
+        "End": 1996,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Smith, W L",
+        "Begin": 1984,
+        "End": 1993,
+        "Party": "LP"
+      },
+      {
+        "Name": "Newman, K E",
+        "Begin": 1975,
+        "End": 1984,
+        "Party": "LP"
+      },
+      {
+        "Name": "Barnard, L H",
+        "Begin": 1954,
+        "End": 1975,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Kekwick, B H",
+        "Begin": 1949,
+        "End": 1954,
+        "Party": "LP"
+      },
+      {
+        "Name": "Barnard, H C",
+        "Begin": 1934,
+        "End": 1949,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Guy, J A",
+        "Begin": 1929,
+        "End": 1934,
+        "Party": "ALP/UAP"
+      },
+      {
+        "Name": "Jackson, D S",
+        "Begin": 1919,
+        "End": 1929,
+        "Party": "NAT"
+      },
+      {
+        "Name": "Jensen, J A",
+        "Begin": 1910,
+        "End": 1919,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Storrer, D",
+        "Begin": 1903,
+        "End": 1910,
+        "Party": "PROT"
+      }
+    ],
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities."
+  }
+}

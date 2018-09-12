@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 using AustralianElectorates;
 using HtmlAgilityPack;
@@ -32,7 +33,7 @@ public static class ElectoratesScraper
             electorate.DateGazetted = DateTime.ParseExact(gazettedHtml.InnerText, "d MMMM yyyy", null);
         }
 
-        electorate.Members = values["Members"].TrimmedInnerHtml();
+        electorate.Members = ElectorateMembers(values).ToList();
         electorate.DemographicRating = values["Demographic Rating"].TrimmedInnerHtml();
         electorate.ProductsAndIndustry = values["Products/Industries of the Area"].TrimmedInnerHtml();
         electorate.NameDerivation = values["Name derivation"].TrimmedInnerHtml();
@@ -50,6 +51,53 @@ public static class ElectoratesScraper
             electorate.Area = double.Parse(area.InnerHtml.Trim().Replace("&nbsp;", " ").Replace(" ", "").Replace("sqkm", "").Replace(",", ""));
         }
         return electorate;
+    }
+
+    static IEnumerable<Member> ElectorateMembers(Dictionary<string, HtmlNode> values)
+    {
+        var members = values["Members"];
+        if (members.InnerText.Contains("will be elected at the next federal general election."))
+        {
+            yield break;
+        }
+        var texts = members
+            .Descendants("li")
+            .Select(x => x.ChildNodes.First().InnerText)
+            .ToList();
+        if (texts.Count == 0)
+        {
+            texts = members.ChildNodes
+                .Where(x => x.NodeType == HtmlNodeType.Text)
+                .Select(x => x.InnerText)
+                .ToList();
+        }
+        foreach (var text in texts)
+        {
+            var cleaned = text.TrimEnd('(').Trim();
+            if (cleaned.Length == 0)
+            {
+                continue;
+            }
+            var split = cleaned.Split(new[] {" ("},2, StringSplitOptions.None);
+            var member = split[0];
+            split = split[1].Split(new[] { ") " }, 2, StringSplitOptions.None);
+            var party = split[0];
+
+            split = split[1].Split(new[] {"&ndash;", "â€“", "-" }, 2, StringSplitOptions.RemoveEmptyEntries);
+            var begin = ushort.Parse(split[0].Trim());
+            ushort? end = null;
+            if (split.Length > 1)
+            {
+                end = ushort.Parse(split[1].Trim());
+            }
+            yield return new Member
+            {
+                Name = member,
+                Party = party,
+                Begin = begin,
+                End = end,
+            };
+        }
     }
 
     static HtmlNode FindProfileTable(HtmlDocument document)

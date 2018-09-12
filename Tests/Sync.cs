@@ -40,7 +40,6 @@ public class Sync
     [Trait("Category", "Integration")]
     public async Task SyncData()
     {
-        IoHelpers.PurgeDirectoryRecursive(DataLocations.ElectoratesPath);
         IoHelpers.PurgeDirectory(DataLocations.MapsPath, exclude: "australia.geojson");
 
         foreach (var directory in Directory.EnumerateDirectories(DataLocations.MapsPath))

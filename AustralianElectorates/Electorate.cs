@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace AustralianElectorates
 {
@@ -11,7 +12,7 @@ namespace AustralianElectorates
         public string ProductsAndIndustry { get; set; }
         public string NameDerivation { get; set; }
         public DateTime? DateGazetted { get; set; }
-        public string Members { get; set; }
+        public List<Member> Members { get; set; }
         public string DemographicRating { get; set; }
     }
 }
