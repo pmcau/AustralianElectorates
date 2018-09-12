@@ -63,7 +63,7 @@ The level of simplification is represented as a percent number. 20, 10 and 5. re
 
 #### Trimming
 
-Trimming removes small islands to reduce the file size. Maps that have been trimmed have `trimmed` in the file name.
+Trimming removes small islands and disconnected land masses to reduce the file size. Maps that have been trimmed have `trimmed` in the file name.
 
 ## Copyright
 
