@@ -7,7 +7,7 @@ public class CleanMetadata
     [Trait("Category", "Integration")]
     public void Run()
     {
-        var path = @"C:\Code\AustralianElectorates\Data\Maps\2016\australia.json";
+        var path = @"C:\Code\AustralianElectorates\Data\Maps\2016\australia.geojson";
         var featureCollection = JsonSerializer.Deserialize<FeatureCollection>(path);
         MetadataCleaner.CleanMetadata(featureCollection);
         JsonSerializer.SerializeGeo(featureCollection, path);

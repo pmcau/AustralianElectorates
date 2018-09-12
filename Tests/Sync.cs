@@ -41,7 +41,7 @@ public class Sync
     public async Task SyncData()
     {
         IoHelpers.PurgeDirectoryRecursive(DataLocations.ElectoratesPath);
-        IoHelpers.PurgeDirectory(DataLocations.MapsPath, exclude: "australia.json");
+        IoHelpers.PurgeDirectory(DataLocations.MapsPath, exclude: "australia.geojson");
 
         foreach (var directory in Directory.EnumerateDirectories(DataLocations.MapsPath))
         {
@@ -81,16 +81,16 @@ public class Sync
 
     static void WriteOptimised(string directory)
     {
-        var jsonPath = Path.Combine(directory, "australia.json");
+        var jsonPath = Path.Combine(directory, "australia.geojson");
         var raw = JsonSerializer.DeserializeGeo(jsonPath);
-        var rawTrimmedPath = Path.Combine(directory, "australia_trimmed.json");
+        var rawTrimmedPath = Path.Combine(directory, "australia_trimmed.geojson");
         JsonSerializer.SerializeGeo(raw.Trim(), rawTrimmedPath);
         foreach (var percent in percents)
         {
-            var percentJsonPath = Path.Combine(directory, $"australia_{percent}.json");
+            var percentJsonPath = Path.Combine(directory, $"australia_{percent}.geojson");
             ShapeToGeoJson.Convert(percentJsonPath, jsonPath, percent);
             var featureCollection = JsonSerializer.DeserializeGeo(percentJsonPath);
-            var trimmedPath = Path.Combine(directory, $"australia_trimmed{percent:D2}.json");
+            var trimmedPath = Path.Combine(directory, $"australia_trimmed{percent:D2}.geojson");
             JsonSerializer.SerializeGeo(featureCollection.Trim(), trimmedPath);
         }
     }

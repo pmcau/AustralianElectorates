@@ -12,7 +12,7 @@ public static class DataLocations
         DataPath = Path.GetFullPath(Path.Combine(SlnPath, "Data"));
         ElectoratesPath = Path.GetFullPath(Path.Combine(DataPath, "ElectoratesMetadata"));
         MapsPath = Path.GetFullPath(Path.Combine(DataPath, "Maps"));
-        FutureAustraliaJsonPath = Path.GetFullPath(Path.Combine(MapsPath, "Future/australia.json"));
+        FutureAustraliaJsonPath = Path.GetFullPath(Path.Combine(MapsPath, "Future/australia.geojson"));
         AustralianElectoratesProjectPath = Path.GetFullPath(Path.Combine(SlnPath, "AustralianElectorates"));
         BogusProjectPath = Path.GetFullPath(Path.Combine(SlnPath, "AustralianElectorates.Bogus"));
     }

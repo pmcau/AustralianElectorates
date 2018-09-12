@@ -43,7 +43,7 @@ public class FutureToCountry
 
     FeatureCollection WriteState(State state, string shpFile)
     {
-        var stateJsonPath = Path.Combine(DataLocations.TempPath, $"{state}.json");
+        var stateJsonPath = Path.Combine(DataLocations.TempPath, $"{state}.geojson");
         ShapeToGeoJson.Convert(stateJsonPath, shpFile);
 
         var stateCollection = JsonSerializer.Deserialize<FeatureCollection>(stateJsonPath);

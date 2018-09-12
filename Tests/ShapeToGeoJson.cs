@@ -5,7 +5,7 @@ public class ShapeToGeoJson
 {
     public static void Convert(string targetFile, string shpFile, int? percent = null)
     {
-        //mapshaper C:\Code\AustralianElectorates\Data\ElectoratesByState\act.json -simplify dp 20% -o format=geojson C:\Code\AustralianElectorates\Data\ElectoratesByState\temp.json
+        //mapshaper C:\Code\AustralianElectorates\Data\ElectoratesByState\act.geojson -simplify dp 20% -o format=geojson C:\Code\AustralianElectorates\Data\ElectoratesByState\temp.json
         var arguments = $@"/C mapshaper ""{shpFile}"" ";
         if (percent != null)
         {
