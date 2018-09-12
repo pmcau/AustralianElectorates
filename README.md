@@ -37,6 +37,8 @@ All information about electorates is avaliable at [/Data/electorates.json](https
 
 All maps are in [geojson format](http://geojson.org/).
 
+The following grouping of maps exist:
+
  * Future (Next election) [/Data/Maps/Future](https://github.com/SimonCropp/AustralianElectorates/tree/master/Data/Maps/Future)
  * 2016 (Previous election) [/Data/Maps/2016](https://github.com/SimonCropp/AustralianElectorates/tree/master/Data/Maps/2016)
 
