@@ -8,16 +8,16 @@ public class Sync
 {
     static List<int> percents;
 
-    static Dictionary<State, List<string>> electorateNames = new Dictionary<State, List<string>>
+    static Dictionary<State, HashSet<string>> electorateNames = new Dictionary<State, HashSet<string>>
     {
-        {State.ACT, new List<string>()},
-        {State.TAS, new List<string>()},
-        {State.SA, new List<string>()},
-        {State.VIC, new List<string>()},
-        {State.QLD, new List<string>()},
-        {State.NT, new List<string>()},
-        {State.NSW, new List<string>()},
-        {State.WA, new List<string>()},
+        {State.ACT, new HashSet<string>()},
+        {State.TAS, new HashSet<string>()},
+        {State.SA, new HashSet<string>()},
+        {State.VIC, new HashSet<string>()},
+        {State.QLD, new HashSet<string>()},
+        {State.NT, new HashSet<string>()},
+        {State.NSW, new HashSet<string>()},
+        {State.WA, new HashSet<string>()},
     };
     static  List<State> states = new List < State >
     {
@@ -64,10 +64,7 @@ public class Sync
                     {
                         var electorate = (string) electorateFeature.Properties["electorate"];
                         var electorateNameList = electorateNames[state];
-                        if (!electorateNameList.Contains(electorate))
-                        {
-                            electorateNameList.Add(electorate);
-                        }
+                        electorateNameList.Add(electorate);
 
                         var electorateJson = Path.Combine(stateDirectory, $"{electorate}{suffix}");
                         JsonSerializer.SerializeGeo(electorateFeature.ToCollection(), electorateJson);
@@ -97,13 +94,15 @@ public class Sync
 
     static async Task WriteElectoratesMetaData()
     {
+        var electorates = new List<Electorate>();
         foreach (var electoratePair in electorateNames)
         {
             foreach (var electorateName in electoratePair.Value)
             {
-                var electorate = await ElectoratesScraper.ScrapeElectorate(electorateName, electoratePair.Key);
-                JsonSerializer.Serialize(electorate, Path.Combine(DataLocations.ElectoratesPath, electorateName + ".json"));
+                electorates.Add(await ElectoratesScraper.ScrapeElectorate(electorateName, electoratePair.Key));
             }
         }
+
+        JsonSerializer.Serialize(electorates, Path.Combine(DataLocations.DataPath, "electorates.json"));
     }
 }
