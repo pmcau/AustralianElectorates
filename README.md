@@ -47,15 +47,29 @@ The following grouping of maps exist:
 Each of the above groupings have the following structure.
 
  * Australia and state "combined electorate" maps are at the root.
- * Specific elctorate maps are located inside a subdirectry based on the state they exist in.
+ * Specific electorate maps are located inside a subdirectory based on the state they exist in.
 
 ### Map variants
 
 Each maps has multiple variants based on the combination of simplification and trimming.
 
-With the below two options combined, there are eight different options for each map.
+With the below two options combined, there are 10 different options for each map.
 
-#### Simplication
+| Size  | File name              | Simplification | Trimming |
+| ----- | ---------------------- | -------------- | -------- |
+| 2.8MB | [Bass.geojson](/blob/master/Data/Maps/Future/TAS/Bass.geojson)           | none           | no       |
+| 231KB | [Bass_20.geojson](/blob/master/Data/Maps/Future/TAS/Bass_20.geojson)        | 20%            | no       |
+| 94KB  | [Bass_10.geojson](/blob/master/Data/Maps/Future/TAS/Bass_10.geojson)        | 20%            | no       |
+| 46KB  | [Bass_05.geojson](/blob/master/Data/Maps/Future/TAS/Bass_05.geojson)         | 5%             | no       |
+| 8KB   | [Bass_01.geojson](/blob/master/Data/Maps/Future/TAS/Bass_01.geojson)         | 1%             | no       |
+| 2.1MB | [Bass_trimmed.geojson](/blob/master/Data/Maps/Future/TAS/Bass_trimmed.geojson)   | none           | yes      |
+| 149KB | [Bass_trimmed20.geojson](/blob/master/Data/Maps/Future/TAS/Bass_trimmed20.geojson) | 20%            | yes      |
+| 63KB  | [Bass_trimmed10.geojson](/blob/master/Data/Maps/Future/TAS/Bass_trimmed10.geojson) | 10%            | yes      |
+| 32KB  | [Bass_trimmed05.geojson](/blob/master/Data/Maps/Future/TAS/Bass_trimmed05.geojson) | 5%             | yes      |
+| 7KB   | [Bass_trimmed01.geojson](/blob/master/Data/Maps/Future/TAS/Bass_trimmed01.geojson) | 1%             | yes      |
+
+
+#### Simplification
 
 Simplication uses [MapShaper simplify option](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-simplify)
 
@@ -71,7 +85,7 @@ Trimming removes small islands and disconnected land masses to reduce the file s
 
 The code in this repository is licensed under MIT.
 
-The content that is rendered is source from the [Australian Electoral Commision (AEC)](https://www.aec.gov.au/). See the [AEC Copyright](https://www.aec.gov.au/footer/Copyright.htm)  for more information on data usage.
+The content that is rendered is sourced from the [Australian Electoral Commision (AEC)](https://www.aec.gov.au/). See the [AEC Copyright](https://www.aec.gov.au/footer/Copyright.htm)  for more information on data usage.
 
 ## Re-Generating the data
 
