@@ -53,7 +53,9 @@ Each of the above groupings have the following structure.
 
 Each maps has multiple variants based on the combination of simplification and trimming.
 
-With the below two options combined, there are 10 different options for each map.
+With the two options combined, there are 10 different options for each map.
+
+Below is the combinations for [Bass](https://www.aec.gov.au/profiles/tas/bass.htm)
 
 | Size  | File name              | Simplification | Trimming |
 | -----:| ---------------------- | --------------:| --------:|
