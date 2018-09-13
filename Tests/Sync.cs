@@ -19,7 +19,8 @@ public class Sync
         {State.NSW, new HashSet<string>()},
         {State.WA, new HashSet<string>()},
     };
-    static  List<State> states = new List < State >
+
+    static List<State> states = new List<State>
     {
         State.ACT,
         State.TAS,
@@ -33,7 +34,7 @@ public class Sync
 
     static Sync()
     {
-        percents = new List<int> {20, 10, 5};
+        percents = new List<int> {20, 10, 5, 1};
     }
 
     [Fact]

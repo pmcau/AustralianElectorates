@@ -41,7 +41,7 @@ static class JsonSerializer
         using (var textWriter = new StreamWriter(fileStream))
         using (var jsonTextWriter = new JsonTextWriter(textWriter))
         {
-            jsonTextWriter.Indentation = 0;
+            jsonTextWriter.Indentation = 2;
             jsonSerializer.Serialize(jsonTextWriter, value);
         }
     }
