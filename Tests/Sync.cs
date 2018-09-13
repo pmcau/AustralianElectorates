@@ -84,7 +84,7 @@ public class Sync
         JsonSerializer.SerializeGeo(raw.Trim(), rawTrimmedPath);
         foreach (var percent in percents)
         {
-            var percentJsonPath = Path.Combine(directory, $"australia_{percent}.geojson");
+            var percentJsonPath = Path.Combine(directory, $"australia_{percent:D2}.geojson");
             ShapeToGeoJson.Convert(percentJsonPath, jsonPath, percent);
             var featureCollection = JsonSerializer.DeserializeGeo(percentJsonPath);
             var trimmedPath = Path.Combine(directory, $"australia_trimmed{percent:D2}.geojson");

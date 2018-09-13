@@ -56,7 +56,7 @@ Each maps has multiple variants based on the combination of simplification and t
 With the below two options combined, there are 10 different options for each map.
 
 | Size  | File name              | Simplification | Trimming |
-| ----- | ---------------------- | -------------- | -------- |
+| -----:| ---------------------- | --------------:| --------:|
 | 2.8MB | [Bass.geojson](/blob/master/Data/Maps/Future/TAS/Bass.geojson)           | none           | no       |
 | 231KB | [Bass_20.geojson](/blob/master/Data/Maps/Future/TAS/Bass_20.geojson)        | 20%            | no       |
 | 94KB  | [Bass_10.geojson](/blob/master/Data/Maps/Future/TAS/Bass_10.geojson)        | 20%            | no       |
