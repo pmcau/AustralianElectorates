@@ -18,7 +18,7 @@ public class Export
             var targetYear = Path.Combine(target, Path.GetFileName(sourceYear));
             foreach (var fileInfo in FileInfos(sourceYear))
             {
-                var destFileName = Path.Combine(targetYear, "Electorates", ElectorateName( fileInfo.FullName) + ".geojson");
+                var destFileName = Path.Combine(targetYear, "Electorates", $"{ElectorateName(fileInfo.FullName)}.geojson");
                 fileInfo.CopyTo(destFileName);
             }
         }
@@ -44,7 +44,7 @@ public class Export
         }
     }
 
-    private static string ElectorateName(string x)
+    static string ElectorateName(string x)
     {
         return Path.GetFileNameWithoutExtension(x).Split('_')[0];
     }

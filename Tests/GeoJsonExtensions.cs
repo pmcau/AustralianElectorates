@@ -18,12 +18,51 @@ static class GeoJsonExtensions
 
     public static FeatureCollection Trim(this FeatureCollection featureCollection)
     {
-        return new FeatureCollection(featureCollection.Features.Select(x => x.FirstGeometryFeature()).ToList());
+        var features = featureCollection.Features.Select(x => x.FirstGeometryFeature())
+            .ToList();
+        return new FeatureCollection(features);
     }
 
     public static FeatureCollection FeaturesCollectionForState(this FeatureCollection featureCollection, State state)
     {
-        return new FeatureCollection(featureCollection.Features.Where(x => string.Equals((string) x.Properties["state"], state.ToString(), StringComparison.OrdinalIgnoreCase)).ToList());
+        var features = featureCollection.Features
+            .Where(x => string.Equals((string) x.Properties["state"], state.ToString(), StringComparison.OrdinalIgnoreCase))
+            .ToList();
+        return new FeatureCollection(features);
+    }
+    public static FeatureCollection CalculateBoundingBox(this IEnumerable<Feature> features)
+    {
+        foreach (var feature in features)
+        {
+            feature.b
+        }
+    }
+
+    public static IEnumerable<IPosition> AllPositions(this Feature features)
+    {
+        if (features.Geometry is MultiPolygon multiPolygon)
+        {
+            return multiPolygon.Coordinates.SelectMany(x => x.Coordinates).SelectMany(x=>x.Coordinates);
+        }
+
+        var polygon = (Polygon)features.Geometry;
+        return polygon.Coordinates.SelectMany(x => x.Coordinates);
+    }
+    double[] BoundingBox(IEnumerable<IPosition> points)
+    {
+        var xmin=double.MaxValue;
+        var xmax = double.MinValue;
+        var ymin = double.MaxValue;
+        var ymax = double.MinValue;
+        foreach (var position in points)
+        {
+            xmax = Math.Max(position.Longitude, xmax);
+            xmin = Math.Min(position.Longitude, xmin);
+            ymax = Math.Max(position.Latitude, ymax);
+            ymin = Math.Min(position.Latitude, ymin);
+        }
+
+        return new[]{xmin, ymin, xmax, ymax};
     }
 
     public static Feature FirstGeometryFeature(this Feature feature)
