@@ -11,7 +11,7 @@ public class ShapeToGeoJson
         {
             arguments += $" -simplify {percent}%";
         }
-        arguments += $@" -o format=geojson ""{targetFile}""";
+        arguments += $@" -o format=geojson bbox ""{targetFile}"" ";
         var startInfo = new ProcessStartInfo("cmd.exe", arguments)
         {
             CreateNoWindow = true,

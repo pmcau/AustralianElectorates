@@ -47,6 +47,7 @@ public class FutureToCountry
         ShapeToGeoJson.Convert(stateJsonPath, shpFile);
 
         var stateCollection = JsonSerializer.Deserialize<FeatureCollection>(stateJsonPath);
+
         MetadataCleaner.CleanMetadata(stateCollection, state);
         return stateCollection;
     }

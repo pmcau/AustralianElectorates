@@ -30,25 +30,29 @@ static class GeoJsonExtensions
             .ToList();
         return new FeatureCollection(features);
     }
-    public static FeatureCollection CalculateBoundingBox(this IEnumerable<Feature> features)
+
+    public static double[] CalculateBoundingBox(this IEnumerable<Feature> features)
     {
-        foreach (var feature in features)
-        {
-            feature.b
-        }
+        return BoundingBox(features.SelectMany(x => x.AllPositions()));
+    }
+    public static double[] CalculateBoundingBox(this Feature feature)
+    {
+        return BoundingBox(feature.AllPositions());
     }
 
     public static IEnumerable<IPosition> AllPositions(this Feature features)
     {
         if (features.Geometry is MultiPolygon multiPolygon)
         {
-            return multiPolygon.Coordinates.SelectMany(x => x.Coordinates).SelectMany(x=>x.Coordinates);
+            return multiPolygon.Coordinates.SelectMany(x => x.Coordinates)
+                .SelectMany(x=>x.Coordinates);
         }
 
         var polygon = (Polygon)features.Geometry;
         return polygon.Coordinates.SelectMany(x => x.Coordinates);
     }
-    double[] BoundingBox(IEnumerable<IPosition> points)
+
+    static double[] BoundingBox(IEnumerable<IPosition> points)
     {
         var xmin=double.MaxValue;
         var xmax = double.MinValue;
