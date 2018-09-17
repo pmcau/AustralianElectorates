@@ -38,7 +38,9 @@ public class FutureToCountry
             features.AddRange(featureCollection.Features);
         }
 
-        JsonSerializer.SerializeGeo(new FeatureCollection(features), DataLocations.FutureAustraliaJsonPath);
+        var collection = new FeatureCollection(features);
+        collection.FixBoundingBox();
+        JsonSerializer.SerializeGeo(collection, DataLocations.FutureAustraliaJsonPath);
     }
 
     FeatureCollection WriteState(State state, string shpFile)

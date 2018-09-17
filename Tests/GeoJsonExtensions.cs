@@ -39,8 +39,15 @@ static class GeoJsonExtensions
     {
         return BoundingBox(feature.AllPositions());
     }
+    public static void FixBoundingBox(this FeatureCollection featureCollection)
+    {
+        foreach (var feature in featureCollection.Features)
+        {
+            feature.BoundingBoxes = feature.CalculateBoundingBox();
+        }
+    }
 
-    public static IEnumerable<IPosition> AllPositions(this Feature features)
+public static IEnumerable<IPosition> AllPositions(this Feature features)
     {
         if (features.Geometry is MultiPolygon multiPolygon)
         {

@@ -81,10 +81,7 @@ public class Sync
     {
         var jsonPath = Path.Combine(directory, "australia.geojson");
         var raw = JsonSerializer.DeserializeGeo(jsonPath);
-        foreach (var feature in raw.Features)
-        {
-            feature.BoundingBoxes = feature.CalculateBoundingBox();
-        }
+        raw.FixBoundingBox();
         var rawTrimmedPath = Path.Combine(directory, "australia_trimmed.geojson");
         JsonSerializer.SerializeGeo(raw.Trim(), rawTrimmedPath);
         foreach (var percent in percents)
@@ -92,10 +89,9 @@ public class Sync
             var percentJsonPath = Path.Combine(directory, $"australia_{percent:D2}.geojson");
             ShapeToGeoJson.Convert(percentJsonPath, jsonPath, percent);
             var featureCollection = JsonSerializer.DeserializeGeo(percentJsonPath);
-            foreach (var feature in featureCollection.Features)
-            {
-                feature.BoundingBoxes = feature.CalculateBoundingBox();
-            }
+            featureCollection.FixBoundingBox();
+
+            JsonSerializer.SerializeGeo(featureCollection, percentJsonPath);
             var trimmedPath = Path.Combine(directory, $"australia_trimmed{percent:D2}.geojson");
             JsonSerializer.SerializeGeo(featureCollection.Trim(), trimmedPath);
         }
