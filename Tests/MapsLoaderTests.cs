@@ -43,6 +43,14 @@ public class DataLoaderTests
         ObjectApprover.VerifyWithJson(data.Substring(0,200));
     }
 
+
+    [Fact]
+    public void GetElectorateFull()
+    {
+        var data = DataLoader.CurrentMaps.GetElectorate("O'Connor");
+        Assert.NotNull(data);
+    }
+
     [Fact]
     public void GetFutureElectorate()
     {

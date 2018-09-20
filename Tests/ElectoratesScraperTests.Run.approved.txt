@@ -3,11 +3,12 @@
     "Name": "Melbourne",
     "ShortName": "melbourne",
     "State": "VIC",
-    "Description": "<p>The Division of Melbourne consists of:</p><ul><li>part of the Melbourne City Council,ÂƒÂƒ</li><li>part of the Moonee Valley City Council,ÂƒÂƒ</li><li>part of the Moreland City Council, andÂƒÂƒ</li><li>part of the Yarra City Council.</li></ul>",
     "Area": 40.0,
+    "DateGazetted": "2018-07-13T00:00:00",
+    "Description": "<p>The Division of Melbourne consists of:</p><ul><li>part of the Melbourne City Council,ÂƒÂƒ</li><li>part of the Moonee Valley City Council,ÂƒÂƒ</li><li>part of the Moreland City Council, andÂƒÂƒ</li><li>part of the Yarra City Council.</li></ul>",
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
     "ProductsAndIndustry": "Professional, scientific and technical services, financial services, accommodation and food services, health care, education and training, retail and manufacturing.",
     "NameDerivation": "Named after the City of Melbourne. The settlement of Port Phillip was named 'Melbourne' on 5 March 1837 in honour of Lord Melbourne who was the Prime Minister of Great Britain at the time.",
-    "DateGazetted": "2018-07-13T00:00:00",
     "Members": [
       {
         "Name": "Bandt, A",
@@ -50,18 +51,18 @@
         "End": 1904,
         "Party": "PROT"
       }
-    ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    ]
   },
   "hunter": {
     "Name": "Hunter",
     "ShortName": "hunter",
     "State": "NSW",
-    "Description": "Hunter includes the Muswellbrook Shire Council, Singleton Council, Cessnock City Council (part) and Lake Macquarie City Council (part). The main towns include Broke, Cessnock, Denman, Mulbring, Muswellbrook, Paxton, Putty, Singleton, Widden and Wyee.<br>This description reflects local government areas in existence in 2015.",
     "Area": 10640.0,
+    "DateGazetted": "2016-02-25T00:00:00",
+    "Description": "Hunter includes the Muswellbrook Shire Council, Singleton Council, Cessnock City Council (part) and Lake Macquarie City Council (part). The main towns include Broke, Cessnock, Denman, Mulbring, Muswellbrook, Paxton, Putty, Singleton, Widden and Wyee.<br>This description reflects local government areas in existence in 2015.",
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
     "ProductsAndIndustry": "Agriculture, coal-mining, dairy farming, engineering, farming, forestry, fruit and vegetables, horse studs and racing, timber milling, tourism, wine grapes, wineries and wool. Liddell and Bayswater Power Stations are also in the division.",
     "NameDerivation": "Named after John Hunter (1737-1821), second Governor of New South Wales 1795-99.",
-    "DateGazetted": "2016-02-25T00:00:00",
     "Members": [
       {
         "Name": "Fitzgibbon, J",
@@ -146,14 +147,14 @@
         "End": 1903,
         "Party": "PROT"
       }
-    ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    ]
   },
   "batman": {
     "Name": "Batman",
     "ShortName": "batman",
     "State": "VIC",
     "Description": "The Division of Batman is located in Melbourne's northern suburbs. It covers an area of approximately 66 sq km from Thomastown/Bundoora in the north to Clifton Hill in the south, with Merri Creek providing the vast majority of the western boundary and Darebin Creek, parts of Macleod and Plenty Road Bundoora providing the eastern boundary. The suburbs of Alphington, Bundoora (part), Clifton Hill, Coburg North (part), Fairfield, Kingsbury, Macleod (part), Northcote, Preston, Reservoir, Thomastown (part) and Thornbury are in this division.",
+    "DemographicRating": "Inner Metropolitan",
     "ProductsAndIndustry": "Light engineering, textiles, clothing and footwear and general retail.",
     "NameDerivation": "Named after John Batman 1801-39, the early settler and explorer, known as the 'Founder of Melbourne'.",
     "Members": [
@@ -228,30 +229,30 @@
         "End": 1910,
         "Party": "PROT"
       }
-    ],
-    "DemographicRating": "Inner Metropolitan"
+    ]
   },
   "spence": {
     "Name": "Spence",
     "ShortName": "spence",
     "State": "SA",
-    "Description": "<p>The Division of Spence consists of:</p><ul><li>City of Playford,</li><li>Town of Gawler,</li><li>part of the Barossa Council,</li><li>part of the City of Salisbury, and</li><li>part of the Light Regional Council</li></ul>",
     "Area": 532.0,
+    "DateGazetted": "2018-07-20T00:00:00",
+    "Description": "<p>The Division of Spence consists of:</p><ul><li>City of Playford,</li><li>Town of Gawler,</li><li>part of the Barossa Council,</li><li>part of the City of Salisbury, and</li><li>part of the Light Regional Council</li></ul>",
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
     "ProductsAndIndustry": "Commercial, defence, Edinburgh RAAF Base, retail and technology based industry, Lyell McEwin Hospital, market gardens and viticulture.",
     "NameDerivation": "Named in honour of Catherine Helen Spence, 1825-1910. Spence was an advocate for female suffrage and electoral reform and was the first female political candidate in Australia when she stood (unsuccessfully) for a seat at the Federal Convention elections of 1897.",
-    "DateGazetted": "2018-07-20T00:00:00",
-    "Members": [],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion"
+    "Members": []
   },
   "cook": {
     "Name": "Cook",
     "ShortName": "cook",
     "State": "NSW",
-    "Description": "Cook covers an area from Kurnell and Cronulla in the east to Sylvania and Gymea Bay in the west and from Kyle Bay, Monterey and Botany Bay in the north to Dents Creek and Hacking River in the south. Suburbs include Monterey, Beverley Park, Blakehurst, Burraneer, Caringbah, Carss Park, Cronulla, Greenhills Beach, Gymea, Gymea Bay, Kyle Bay, Kurnell, Lilli Pilli, Miranda, Sandringham, Sans Souci, Sylvania, Sylvania Waters, Taren Point and Yowie Bay.<br>This description reflects local government areas in existence in 2015.",
     "Area": 94.0,
+    "DateGazetted": "2016-02-25T00:00:00",
+    "Description": "Cook covers an area from Kurnell and Cronulla in the east to Sylvania and Gymea Bay in the west and from Kyle Bay, Monterey and Botany Bay in the north to Dents Creek and Hacking River in the south. Suburbs include Monterey, Beverley Park, Blakehurst, Burraneer, Caringbah, Carss Park, Cronulla, Greenhills Beach, Gymea, Gymea Bay, Kyle Bay, Kurnell, Lilli Pilli, Miranda, Sandringham, Sans Souci, Sylvania, Sylvania Waters, Taren Point and Yowie Bay.<br>This description reflects local government areas in existence in 2015.",
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
     "ProductsAndIndustry": "Port and berthing facilities, boat building, steel fabrication, pharmaceutical plant, oyster farming, retail and service industries",
     "NameDerivation": "Named after Captain James Cook (1728-79), the first European to discover the east coast of Australia in 1770.",
-    "DateGazetted": "2016-02-25T00:00:00",
     "Members": [
       {
         "Name": "Morrison, S",
@@ -317,28 +318,28 @@
         "End": 1922,
         "Party": "ALP"
       }
-    ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    ]
   },
   "bean": {
     "Name": "Bean",
     "ShortName": "bean",
-    "Description": "<p>The Division of Bean covers an area in the south of the ACT consisting of the Districts of:</p><ul><li>Booth,</li><li>Coree,</li><li>Cotter River,</li><li>Mount Clear,</li><li>Paddys River,</li><li>Rendezvous Creek,</li><li>Stromlo,</li><li>Tennent,</li><li>Tuggeranong,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul><p>The Division of Bean also includes Norfolk Island.</p>",
     "Area": 1913.0,
+    "DateGazetted": "2018-07-13T00:00:00",
+    "Description": "<p>The Division of Bean covers an area in the south of the ACT consisting of the Districts of:</p><ul><li>Booth,</li><li>Coree,</li><li>Cotter River,</li><li>Mount Clear,</li><li>Paddys River,</li><li>Rendezvous Creek,</li><li>Stromlo,</li><li>Tennent,</li><li>Tuggeranong,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul><p>The Division of Bean also includes Norfolk Island.</p>",
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
     "ProductsAndIndustry": "Mainly residential with tourism, retail and some light industry at Hume",
     "NameDerivation": "Named after Charles Edwin Woodrow Bean, 1879-1968, Australia's official correspondent to the Australian Imperial Force in World War One, editor of the <em>Official History of Australia in the War of 1914-1918</em> and primary advocate to establish the Australian War Memorial.",
-    "DateGazetted": "2018-07-13T00:00:00",
-    "Members": [],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs"
+    "Members": []
   },
   "fenner": {
     "Name": "Fenner",
     "ShortName": "fenner",
-    "Description": "<p>The Division of Fenner covers an area in the north of the ACT consisting of the Districts of:</p><ul><li>Gungahlin,</li><li>Hall, and</li><li>part of Belconnen</li></ul><p>The Division of Fenner also includes the Jervis Bay Territory.</p>",
     "Area": 238.0,
+    "DateGazetted": "2018-07-13T00:00:00",
+    "Description": "<p>The Division of Fenner covers an area in the north of the ACT consisting of the Districts of:</p><ul><li>Gungahlin,</li><li>Hall, and</li><li>part of Belconnen</li></ul><p>The Division of Fenner also includes the Jervis Bay Territory.</p>",
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
     "ProductsAndIndustry": "Mainly residential with tourism, retail and some light industry at Mitchell",
     "NameDerivation": "Named after Professor Frank Fenner AC CMG MBE FAA FRS FRACP FRCP, 1914-2010, eminent scientist of national and international renown who made significant contributions to improving the wellbeing of humanity.",
-    "DateGazetted": "2018-07-13T00:00:00",
     "Members": [
       {
         "Name": "Leigh, A",
@@ -369,17 +370,17 @@
         "End": 1984,
         "Party": "ALP"
       }
-    ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs"
+    ]
   },
   "canberra": {
     "Name": "Canberra",
     "ShortName": "canberra",
-    "Description": "<p>The Division of Canberra covers an area in central ACT consisting of the Districts of:</p><ul><li>Canberra Central,</li><li>Kowen,</li><li>Majura,</li><li>part of Belconnen,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul>",
     "Area": 312.0,
+    "DateGazetted": "2018-07-13T00:00:00",
+    "Description": "<p>The Division of Canberra covers an area in central ACT consisting of the Districts of:</p><ul><li>Canberra Central,</li><li>Kowen,</li><li>Majura,</li><li>part of Belconnen,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul>",
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
     "ProductsAndIndustry": "Mainly residential with tourism, retail and some light industry at Fyshwick and Beard",
     "NameDerivation": "A locality name derived from an Aboriginal word which is held to mean 'meeting place'.",
-    "DateGazetted": "2018-07-13T00:00:00",
     "Members": [
       {
         "Name": "Brodtmann, G",
@@ -422,18 +423,18 @@
         "End": 1975,
         "Party": "ALP"
       }
-    ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs"
+    ]
   },
   "bass": {
     "Name": "Bass",
     "ShortName": "bass",
     "State": "TAS",
-    "Description": "<p>The Division of Bass is located on Launceston and consists of the:</p><ul><li>City of Launceston</li><li>Municipality of Dorset</li><li>Municipality of Flinders</li><li>Municipality of George Town</li><li>Municipality of West Tamar </li></ul><p>The Division of Bass includes Flinders Island.</p>",
     "Area": 7975.96,
+    "DateGazetted": "2017-11-14T00:00:00",
+    "Description": "<p>The Division of Bass is located on Launceston and consists of the:</p><ul><li>City of Launceston</li><li>Municipality of Dorset</li><li>Municipality of Flinders</li><li>Municipality of George Town</li><li>Municipality of West Tamar </li></ul><p>The Division of Bass includes Flinders Island.</p>",
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
     "ProductsAndIndustry": "Aluminium and ferrous metal smelting, brewery, cattle (dairy and beef) farming, manufacturing, mining, ports and shipping, ship building, timber, tourism, fishing, wineries and wool.",
     "NameDerivation": "Named in honour of George Bass, 1771-1803. Bass was a surgeon, scientist and explorer who was one of those responsible for the early geographical investigation of the Australian coast. Bassâ€™ explorations included the islands in Bass Strait, Tamar estuary, Derwent estuary and Mount Wellington.",
-    "DateGazetted": "2017-11-14T00:00:00",
     "Members": [
       {
         "Name": "Hart, R",
@@ -536,7 +537,6 @@
         "End": 1910,
         "Party": "PROT"
       }
-    ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities."
+    ]
   }
 }

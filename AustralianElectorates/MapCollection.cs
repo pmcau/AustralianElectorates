@@ -31,6 +31,7 @@ namespace AustralianElectorates
 
         public string GetElectorate(string electorateName)
         {
+            electorateName = GetElectorateShortName(electorateName);
             Guard.AgainstNullWhiteSpace(electorateName, nameof(electorateName));
             return electoratesCache.GetOrAdd($@"{prefix}\Electorates\{electorateName}", Inner);
         }
@@ -66,32 +67,35 @@ namespace AustralianElectorates
             }
         }
 
-        public  void LoadAll()
+        public static string GetElectorateShortName(string electorate)
+        {
+            return electorate.ToLowerInvariant().Replace(" ", "-").Replace("'", "");
+        }
+
+        public void LoadAll()
         {
             using (var stream = assembly.GetManifestResourceStream("Maps.zip"))
             using (var archive = new ZipArchive(stream))
             {
-                foreach (var entry in archive.Entries)
+                foreach (var entry in archive.Entries.Where(x => x.FullName.StartsWith(prefix)))
                 {
                     var key = entry.FullName.Split('.').First();
                     var mapString = ReadString(entry);
 
-                    if (key.StartsWith($@"{prefix}\Electorates"))
+                    if (key.Contains("Electorates"))
                     {
                         electoratesCache[key] = mapString;
                         continue;
                     }
-                    if (key==$@"{prefix}\australia")
+
+                    if (key.Contains("australia"))
                     {
                         australia = mapString;
                         continue;
                     }
-                    if (key.StartsWith(prefix))
-                    {
-                        var state = ParseState(key);
-                        statesCache[state] = mapString;
-                        continue;
-                    }
+
+                    var state = ParseState(key);
+                    statesCache[state] = mapString;
                 }
             }
         }
