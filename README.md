@@ -2,7 +2,7 @@
 
 ## Electorate information
 
-All information about electorates is available at [/Data/electorates.json](https://github.com/SimonCropp/AustralianElectorates/blob/master/Data/electorates.json)
+All information about electorates is available at [/Data/electorates.json](/Data/electorates.json)
 
 
 ### Example content
@@ -10,27 +10,30 @@ All information about electorates is available at [/Data/electorates.json](https
 ```
 [
   {
-    "Name":"Canberra",
-    "State":"ACT",
-    "Description":"<p>The Division of Canberra covers an area in central ACT consisting of the Districts of:</p><ul><li>Canberra Central,</li><li>Kowen,</li><li>Majura,</li><li>part of Belconnen,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul>",
-    "Area":312.0,
-    "ProductsAndIndustry":"Mainly residential with tourism, retail and some light industry at Fyshwick and Beard",
-    "NameDerivation":"A locality name derived from an Aboriginal word which is held to mean 'meeting place'.",
-    "DateGazetted":"2018-07-13T00:00:00",
-    "Members":[
+    "Name": "Canberra",
+    "ShortName": "canberra",
+    "State": "ACT",
+    "Area": 312.0,
+    "ExistInCurrent": true,
+    "ExistInFuture": true,
+    "DateGazetted": "2018-07-13",
+    "Description": "<p>The Division of Canberra covers an area in central ACT consisting of the Districts of:</p><ul><li>Canberra Central,</li><li>Kowen,</li><li>Majura,</li><li>part of Belconnen,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul>",
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
+    "ProductsAndIndustry": "Mainly residential with tourism, retail and some light industry at Fyshwick and Beard",
+    "NameDerivation": "A locality name derived from an Aboriginal word which is held to mean 'meeting place'.",
+    "Members": [
       {
-        "Name":"Brodtmann, G",
-        "Begin":2010,
-        "Party":"ALP"
+        "Name": "Brodtmann, G",
+        "Begin": 2010,
+        "Party": "ALP"
       },
       {
-        "Name":"Ellis, A",
-        "Begin":1998,
-        "End":2010,
-        "Party":"ALP"
+        "Name": "Ellis, A",
+        "Begin": 1998,
+        "End": 2010,
+        "Party": "ALP"
       }
-    ],
-    "DemographicRating":"<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs"
+    ]
   },
 ```
 
@@ -72,11 +75,30 @@ Below is the combinations for [Bass](https://www.aec.gov.au/profiles/tas/bass.ht
 
 #### Simplification
 
-Simplication uses [MapShaper simplify option](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-simplify)
+Simplification uses [MapShaper simplify option](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-simplify)
 
 > Visvalingam simplification iteratively removes the least important point from a polyline. The importance of points is measured using a metric based on the geometry of the triangle formed by each non-endpoint vertex and the two neighboring vertices
 
 The level of simplification is represented as a percent number. 20, 10, 5, and 1. representing 20%, 10%, 5%, and 1%. The smaller the number the smaller the file, but with the loss of some accuracy.
+
+
+## NuGet
+
+https://nuget.org/packages/AustralianElectorates/ [![NuGet Status](http://img.shields.io/nuget/v/AustralianElectorates.svg?longCache=true&style=flat)](https://www.nuget.org/packages/AustralianElectorates/)
+
+    PM> Install-Package AustralianElectorates
+
+
+## Usage
+
+```
+var canberraInfo = DataLoader.Electorates.Single(x => x.Name == "Canberra");
+Debug.WriteLine(canberraInfo.Description);
+var currentMember = canberraInfo.Members.First();
+Debug.WriteLine(currentMember.Name);
+Debug.WriteLine(currentMember.Party);
+var canberraGeoJson = DataLoader.CurrentMaps.GetElectorate("Canberra");
+```
 
 
 ## Copyright
