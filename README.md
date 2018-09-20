@@ -41,8 +41,8 @@ All maps are in [geojson format](http://geojson.org/).
 
 The following grouping of maps exist:
 
- * Future (Next election) [/Data/Maps/Future](https://github.com/SimonCropp/AustralianElectorates/tree/master/Data/Maps/Future)
- * 2016 (Previous election) [/Data/Maps/2016](https://github.com/SimonCropp/AustralianElectorates/tree/master/Data/Maps/2016)
+ * Future (Next election) [/Data/Maps/Future](/Data/Maps/Future)
+ * Current (2016 election) [/Data/Maps/Current](/Data/Maps/Current)
 
 
 ### Structure
