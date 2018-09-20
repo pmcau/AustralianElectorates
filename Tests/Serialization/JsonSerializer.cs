@@ -15,6 +15,7 @@ static class JsonSerializer
             Formatting = Formatting.Indented,
             ContractResolver = new CustomContractResolver()
         };
+        jsonSerializer.Converters.Insert(0,new CustomDateTimeConverter());
         jsonSerializer.Converters.Add(new StringEnumConverter());
     }
 

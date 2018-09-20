@@ -9,12 +9,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Condition="Exists('..\Data\Electorates.zip')" Include="..\Data\Electorates.zip" Link="Electorates.zip" />
+    <EmbeddedResource Condition="Exists('..\Data\MapsCurated.zip')"
+                      Include="..\Data\MapsCurated.zip"
+                      LogicalName="Maps.zip"
+                      Link="Maps.zip" />
+    <EmbeddedResource Condition="Exists('..\Data\electorates.json')"
+                      Include="..\Data\electorates.json"
+                      LogicalName="electorates.json"
+                      Link="electorates.json" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-63127-02" PrivateAssets="All" />
-    <PackageReference Include="System.IO.Compression.ZipFile" Version="4.3.0"/>
+    <PackageReference Include="System.IO.Compression.ZipFile" Version="4.3.0" />
   </ItemGroup>
 
 </Project>

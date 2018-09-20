@@ -4,15 +4,16 @@ using System.IO.Compression;
 
 static class Zipper
 {
-    public static void ZipDir(string targetFile, string sourceDirectory, string searchPattern)
+    public static void ZipDir(string targetFile, string sourceDirectory)
     {
         File.Delete(targetFile);
         using (var zipStream = File.Create(targetFile))
         using (var archive = new ZipArchive(zipStream, ZipArchiveMode.Create))
         {
-            foreach (var file in Directory.EnumerateFiles(sourceDirectory,searchPattern))
+            foreach (var file in Directory.EnumerateFiles(sourceDirectory,"*.*",SearchOption.AllDirectories))
             {
-                var entry = archive.CreateEntry(Path.GetFileName(file));
+                var entryName = file.Replace(sourceDirectory,"").Trim('\\');
+                var entry = archive.CreateEntry(entryName);
                 //To stop the zip changing from the perspective of git
                 entry.LastWriteTime = new DateTimeOffset(2000, 1, 1, 1, 1, 1, TimeSpan.Zero);
 

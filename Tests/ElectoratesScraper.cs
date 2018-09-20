@@ -5,52 +5,75 @@ using System.Linq;
 using System.Threading.Tasks;
 using AustralianElectorates;
 using HtmlAgilityPack;
+using Xunit;
 
 public static class ElectoratesScraper
 {
-    public static async Task<Electorate> ScrapeElectorate(string electorateName, State state)
+    public static async Task<Electorate> ScrapeElectorate(string shortName, State state)
     {
-        var tempElectorateHtmlPath = Path.Combine(DataLocations.TempPath, $"{electorateName}.html");
-        await Downloader.DownloadFile(tempElectorateHtmlPath, $"https://www.aec.gov.au/profiles/{state}/{electorateName}.htm");
-        var document = new HtmlDocument();
-        document.Load(tempElectorateHtmlPath);
-        var values = new Dictionary<string, HtmlNode>(StringComparer.OrdinalIgnoreCase);
-        var profileId = FindProfileTable(document);
-        var htmlNodeCollection = profileId.SelectNodes("dt");
-        foreach (var keyNode in htmlNodeCollection)
+        try
         {
-            var valueNode = keyNode.NextSibling.NextSibling;
-            values[keyNode.InnerText.Trim().Trim(':').Replace("  ", " ")] = valueNode;
-        }
 
-        var electorate = new Electorate
-        {
-            Name = electorateName,
-            State = state
-        };
-        if (values.TryGetValue("Date this name and boundary was gazetted", out var gazettedHtml))
-        {
-            electorate.DateGazetted = DateTime.ParseExact(gazettedHtml.InnerText, "d MMMM yyyy", null);
-        }
+            var tempElectorateHtmlPath = Path.Combine(DataLocations.TempPath, $"{shortName}.html");
+            await Downloader.DownloadFile(tempElectorateHtmlPath, $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm");
+            var document = new HtmlDocument();
+            document.Load(tempElectorateHtmlPath);
 
-        electorate.Members = ElectorateMembers(values).ToList();
-        electorate.DemographicRating = values["Demographic Rating"].TrimmedInnerHtml();
-        electorate.ProductsAndIndustry = values["Products/Industries of the Area"].TrimmedInnerHtml();
-        electorate.NameDerivation = values["Name derivation"].TrimmedInnerHtml();
-        if (values.TryGetValue("Location Description", out var description))
-        {
-            electorate.Description = description.TrimmedInnerHtml();
-        }
-        if (values.TryGetValue("Area and Location Description", out description))
-        {
-            electorate.Description = description.TrimmedInnerHtml();
-        }
+            var fullName = GetFullName(document);
+            var values = new Dictionary<string, HtmlNode>(StringComparer.OrdinalIgnoreCase);
+            var profileId = FindProfileTable(document);
+            var htmlNodeCollection = profileId.SelectNodes("dt");
+            foreach (var keyNode in htmlNodeCollection)
+            {
+                var valueNode = keyNode.NextSibling.NextSibling;
+                values[keyNode.InnerText.Trim().Trim(':').Replace("  ", " ")] = valueNode;
+            }
 
-        if (values.TryGetValue("Area", out var area))
-        {
-            electorate.Area = double.Parse(area.InnerHtml.Trim().Replace("&nbsp;", " ").Replace(" ", "").Replace("sqkm", "").Replace(",", ""));
+            var electorate = new Electorate
+            {
+                Name = fullName,
+                ShortName = shortName,
+                State = state
+            };
+            if (values.TryGetValue("Date this name and boundary was gazetted", out var gazettedHtml))
+            {
+                electorate.DateGazetted = DateTime.ParseExact(gazettedHtml.InnerText, "d MMMM yyyy", null);
+            }
+
+            electorate.Members = ElectorateMembers(values).ToList();
+            electorate.DemographicRating = values["Demographic Rating"].TrimmedInnerHtml();
+            electorate.ProductsAndIndustry = values["Products/Industries of the Area"].TrimmedInnerHtml();
+            electorate.NameDerivation = values["Name derivation"].TrimmedInnerHtml();
+            if (values.TryGetValue("Location Description", out var description))
+            {
+                electorate.Description = description.TrimmedInnerHtml();
+            }
+
+            if (values.TryGetValue("Area and Location Description", out description))
+            {
+                electorate.Description = description.TrimmedInnerHtml();
+            }
+
+            if (values.TryGetValue("Area", out var area))
+            {
+                electorate.Area = double.Parse(area.InnerHtml.Trim().Replace("&nbsp;", " ").Replace(" ", "").Replace("sqkm", "").Replace(",", ""));
+            }
+
+            return electorate;
         }
-        return electorate;
+        catch (Exception exception)
+        {
+            throw new Exception("Failed to parse " + shortName, exception);
+        }
+    }
+
+    static string GetFullName(HtmlDocument document)
+    {
+        var headings = document.DocumentNode.Descendants("h1").Skip(1).ToList();
+        var strings = headings.Single().InnerText.Replace("Profile of the electoral division of ", "").Split(new[] {" ("}, StringSplitOptions.None);
+        var fullName = strings[0];
+        Assert.NotEmpty(fullName);
+        return fullName;
     }
 
     static IEnumerable<Member> ElectorateMembers(Dictionary<string, HtmlNode> values)

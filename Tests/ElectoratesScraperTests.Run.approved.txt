@@ -1,6 +1,61 @@
 ﻿{
+  "melbourne": {
+    "Name": "Melbourne",
+    "ShortName": "melbourne",
+    "State": "VIC",
+    "Description": "<p>The Division of Melbourne consists of:</p><ul><li>part of the Melbourne City Council,ÂƒÂƒ</li><li>part of the Moonee Valley City Council,ÂƒÂƒ</li><li>part of the Moreland City Council, andÂƒÂƒ</li><li>part of the Yarra City Council.</li></ul>",
+    "Area": 40.0,
+    "ProductsAndIndustry": "Professional, scientific and technical services, financial services, accommodation and food services, health care, education and training, retail and manufacturing.",
+    "NameDerivation": "Named after the City of Melbourne. The settlement of Port Phillip was named 'Melbourne' on 5 March 1837 in honour of Lord Melbourne who was the Prime Minister of Great Britain at the time.",
+    "DateGazetted": "2018-07-13T00:00:00",
+    "Members": [
+      {
+        "Name": "Bandt, A",
+        "Begin": 2010,
+        "Party": "GRN"
+      },
+      {
+        "Name": "Tanner, L",
+        "Begin": 1993,
+        "End": 2010,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Hand, G L",
+        "Begin": 1983,
+        "End": 1993,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Innes, U E",
+        "Begin": 1972,
+        "End": 1983,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Calwell, A A",
+        "Begin": 1940,
+        "End": 1972,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Malony, W R N",
+        "Begin": 1904,
+        "End": 1940,
+        "Party": "ALP/FLP"
+      },
+      {
+        "Name": "McEacharn, M D",
+        "Begin": 1901,
+        "End": 1904,
+        "Party": "PROT"
+      }
+    ],
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+  },
   "hunter": {
-    "Name": "hunter",
+    "Name": "Hunter",
+    "ShortName": "hunter",
     "State": "NSW",
     "Description": "Hunter includes the Muswellbrook Shire Council, Singleton Council, Cessnock City Council (part) and Lake Macquarie City Council (part). The main towns include Broke, Cessnock, Denman, Mulbring, Muswellbrook, Paxton, Putty, Singleton, Widden and Wyee.<br>This description reflects local government areas in existence in 2015.",
     "Area": 10640.0,
@@ -95,7 +150,8 @@
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
   },
   "batman": {
-    "Name": "batman",
+    "Name": "Batman",
+    "ShortName": "batman",
     "State": "VIC",
     "Description": "The Division of Batman is located in Melbourne's northern suburbs. It covers an area of approximately 66 sq km from Thomastown/Bundoora in the north to Clifton Hill in the south, with Merri Creek providing the vast majority of the western boundary and Darebin Creek, parts of Macleod and Plenty Road Bundoora providing the eastern boundary. The suburbs of Alphington, Bundoora (part), Clifton Hill, Coburg North (part), Fairfield, Kingsbury, Macleod (part), Northcote, Preston, Reservoir, Thomastown (part) and Thornbury are in this division.",
     "ProductsAndIndustry": "Light engineering, textiles, clothing and footwear and general retail.",
@@ -176,8 +232,9 @@
     "DemographicRating": "Inner Metropolitan"
   },
   "spence": {
-    "Name": "spence",
-    "State": "NSW",
+    "Name": "Spence",
+    "ShortName": "spence",
+    "State": "SA",
     "Description": "<p>The Division of Spence consists of:</p><ul><li>City of Playford,</li><li>Town of Gawler,</li><li>part of the Barossa Council,</li><li>part of the City of Salisbury, and</li><li>part of the Light Regional Council</li></ul>",
     "Area": 532.0,
     "ProductsAndIndustry": "Commercial, defence, Edinburgh RAAF Base, retail and technology based industry, Lyell McEwin Hospital, market gardens and viticulture.",
@@ -187,7 +244,8 @@
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion"
   },
   "cook": {
-    "Name": "cook",
+    "Name": "Cook",
+    "ShortName": "cook",
     "State": "NSW",
     "Description": "Cook covers an area from Kurnell and Cronulla in the east to Sylvania and Gymea Bay in the west and from Kyle Bay, Monterey and Botany Bay in the north to Dents Creek and Hacking River in the south. Suburbs include Monterey, Beverley Park, Blakehurst, Burraneer, Caringbah, Carss Park, Cronulla, Greenhills Beach, Gymea, Gymea Bay, Kyle Bay, Kurnell, Lilli Pilli, Miranda, Sandringham, Sans Souci, Sylvania, Sylvania Waters, Taren Point and Yowie Bay.<br>This description reflects local government areas in existence in 2015.",
     "Area": 94.0,
@@ -263,7 +321,8 @@
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
   },
   "bean": {
-    "Name": "bean",
+    "Name": "Bean",
+    "ShortName": "bean",
     "Description": "<p>The Division of Bean covers an area in the south of the ACT consisting of the Districts of:</p><ul><li>Booth,</li><li>Coree,</li><li>Cotter River,</li><li>Mount Clear,</li><li>Paddys River,</li><li>Rendezvous Creek,</li><li>Stromlo,</li><li>Tennent,</li><li>Tuggeranong,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul><p>The Division of Bean also includes Norfolk Island.</p>",
     "Area": 1913.0,
     "ProductsAndIndustry": "Mainly residential with tourism, retail and some light industry at Hume",
@@ -273,7 +332,8 @@
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs"
   },
   "fenner": {
-    "Name": "fenner",
+    "Name": "Fenner",
+    "ShortName": "fenner",
     "Description": "<p>The Division of Fenner covers an area in the north of the ACT consisting of the Districts of:</p><ul><li>Gungahlin,</li><li>Hall, and</li><li>part of Belconnen</li></ul><p>The Division of Fenner also includes the Jervis Bay Territory.</p>",
     "Area": 238.0,
     "ProductsAndIndustry": "Mainly residential with tourism, retail and some light industry at Mitchell",
@@ -313,7 +373,8 @@
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs"
   },
   "canberra": {
-    "Name": "canberra",
+    "Name": "Canberra",
+    "ShortName": "canberra",
     "Description": "<p>The Division of Canberra covers an area in central ACT consisting of the Districts of:</p><ul><li>Canberra Central,</li><li>Kowen,</li><li>Majura,</li><li>part of Belconnen,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul>",
     "Area": 312.0,
     "ProductsAndIndustry": "Mainly residential with tourism, retail and some light industry at Fyshwick and Beard",
@@ -365,7 +426,8 @@
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs"
   },
   "bass": {
-    "Name": "bass",
+    "Name": "Bass",
+    "ShortName": "bass",
     "State": "TAS",
     "Description": "<p>The Division of Bass is located on Launceston and consists of the:</p><ul><li>City of Launceston</li><li>Municipality of Dorset</li><li>Municipality of Flinders</li><li>Municipality of George Town</li><li>Municipality of West Tamar </li></ul><p>The Division of Bass includes Flinders Island.</p>",
     "Area": 7975.96,

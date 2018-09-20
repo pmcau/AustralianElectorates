@@ -85,6 +85,7 @@ public class Sync
 
         await WriteElectoratesMetaData();
         Export.ExportElectorates();
+        Zipper.ZipDir(DataLocations.MapsCuratedZipPath, DataLocations.MapsCuratedPath);
     }
 
     static async Task Get2016()
@@ -144,6 +145,8 @@ public class Sync
             }
         }
 
-        JsonSerializer.Serialize(electorates, Path.Combine(DataLocations.DataPath, "electorates.json"));
+        var combine = Path.Combine(DataLocations.DataPath, "electorates.json");
+        File.Delete(combine);
+        JsonSerializer.Serialize(electorates, combine);
     }
 }
