@@ -13,7 +13,6 @@ public static class ElectoratesScraper
     {
         try
         {
-
             var tempElectorateHtmlPath = Path.Combine(DataLocations.TempPath, $"{shortName}.html");
             await Downloader.DownloadFile(tempElectorateHtmlPath, $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm");
             var document = new HtmlDocument();

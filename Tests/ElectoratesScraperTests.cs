@@ -6,6 +6,7 @@ using Xunit;
 public class ElectoratesScraperTests
 {
     [Fact]
+    [Trait("Category", "Integration")]
     public async Task Run()
     {
         var bass = await ElectoratesScraper.ScrapeElectorate("bass", State.TAS);
