@@ -4,6 +4,7 @@
 
 All information about electorates is available at [/Data/electorates.json](https://github.com/SimonCropp/AustralianElectorates/blob/master/Data/electorates.json)
 
+
 ### Example content
 
 ```
@@ -33,6 +34,7 @@ All information about electorates is available at [/Data/electorates.json](https
   },
 ```
 
+
 ## Maps
 
 All maps are in [geojson format](http://geojson.org/).
@@ -42,12 +44,14 @@ The following grouping of maps exist:
  * Future (Next election) [/Data/Maps/Future](https://github.com/SimonCropp/AustralianElectorates/tree/master/Data/Maps/Future)
  * 2016 (Previous election) [/Data/Maps/2016](https://github.com/SimonCropp/AustralianElectorates/tree/master/Data/Maps/2016)
 
+
 ### Structure
 
 Each of the above groupings have the following structure.
 
  * Australia and state "combined electorate" maps are at the root.
  * Specific electorate maps are located inside a subdirectory based on the state they exist in.
+
 
 ### Map variants
 
@@ -72,23 +76,27 @@ Simplication uses [MapShaper simplify option](https://github.com/mbloch/mapshape
 
 > Visvalingam simplification iteratively removes the least important point from a polyline. The importance of points is measured using a metric based on the geometry of the triangle formed by each non-endpoint vertex and the two neighboring vertices
 
-The level of simplification is represented as a percent number. 20, 10 and 5. representing 20%, 10% and 5%. The smaller the number the smaller the file, but with the loss of some accuracy.
+The level of simplification is represented as a percent number. 20, 10, 5, and 1. representing 20%, 10%, 5%, and 1%. The smaller the number the smaller the file, but with the loss of some accuracy.
+
 
 ## Copyright
 
 The code in this repository is licensed under MIT.
 
-The content that is rendered is sourced from the [Australian Electoral Commission (AEC)](https://www.aec.gov.au/). See the [AEC Copyright](https://www.aec.gov.au/footer/Copyright.htm) for more information on data usage.
+The content that is rendered (all files under [/Data/](/Data/)) is sourced from the [Australian Electoral Commission (AEC)](https://www.aec.gov.au/) and remains under the [AEC Copyright](https://www.aec.gov.au/footer/Copyright.htm).
+
 
 ## Re-Generating the data
 
 Some tools are required for GIS operations.
 
-### ogr2ogr 
+
+### ogr2ogr
 
 Part of [Geospatial Data Abstraction Library (GDAL)](https://www.gdal.org/)
 
  * Download https://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries
+
 
 ### MapShaper
 

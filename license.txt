@@ -1,3 +1,10 @@
+## Data
+
+The content that is rendered (all files under /Data/) is sourced from the Australian Electoral Commission (AEC) https://www.aec.gov.au/ and remains under the AEC Copyright https://www.aec.gov.au/footer/Copyright.htm.
+
+
+## Code
+
 MIT License
 
 Copyright (c) 2018 Simon Cropp
