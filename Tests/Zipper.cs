@@ -10,9 +10,9 @@ static class Zipper
         using (var zipStream = File.Create(targetFile))
         using (var archive = new ZipArchive(zipStream, ZipArchiveMode.Create))
         {
-            foreach (var file in Directory.EnumerateFiles(sourceDirectory,"*.*",SearchOption.AllDirectories))
+            foreach (var file in Directory.EnumerateFiles(sourceDirectory, "*.*", SearchOption.AllDirectories))
             {
-                var entryName = file.Replace(sourceDirectory,"").Trim('\\');
+                var entryName = file.Replace(sourceDirectory, "").Trim('\\');
                 var entry = archive.CreateEntry(entryName);
                 //To stop the zip changing from the perspective of git
                 entry.LastWriteTime = new DateTimeOffset(2000, 1, 1, 1, 1, 1, TimeSpan.Zero);

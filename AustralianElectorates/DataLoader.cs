@@ -8,6 +8,7 @@ namespace AustralianElectorates
     public static class DataLoader
     {
         static Assembly assembly;
+
         static DataLoader()
         {
             assembly = typeof(DataLoader).Assembly;
@@ -27,9 +28,9 @@ namespace AustralianElectorates
             CurrentMaps.LoadAll();
         }
 
-        public static void Export(string directory)
+        public static void Export(string directory, bool overwrite = false)
         {
-            Guard.AgainstNull(directory,nameof(directory));
+            Guard.AgainstNull(directory, nameof(directory));
             using (var stream = assembly.GetManifestResourceStream("electorates.json"))
             using (var target = File.Create(Path.Combine(directory, "electorates.json")))
             {
@@ -39,7 +40,7 @@ namespace AustralianElectorates
             using (var stream = assembly.GetManifestResourceStream("Maps.zip"))
             using (var archive = new ZipArchive(stream))
             {
-                archive.ExtractToDirectory(directory);
+                archive.ExtractToDirectory(directory, overwrite);
             }
         }
     }
