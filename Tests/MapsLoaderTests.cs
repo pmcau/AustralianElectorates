@@ -14,39 +14,39 @@ public class MapsLoaderTests
     [Fact]
     public void LoadAustraliaMaps()
     {
-        var data2016 = MapsLoader.Maps2016.LoadAustraliaMap();
-        Assert.NotEmpty(data2016);
-        Assert.NotNull(data2016);
-        var dataFuture = MapsLoader.MapsFuture.LoadAustraliaMap();
+        var dataCurrent = MapsLoader.Current.LoadAustralia();
+        Assert.NotEmpty(dataCurrent);
+        Assert.NotNull(dataCurrent);
+        var dataFuture = MapsLoader.Future.LoadAustralia();
         Assert.NotEmpty(dataFuture);
         Assert.NotNull(dataFuture);
     }
 
     [Fact]
-    public void Maps2016LoadStateMap()
+    public void MapsCurrentLoadStateMap()
     {
-        var data = MapsLoader.Maps2016.LoadStateMap(State.ACT);
+        var data = MapsLoader.Current.LoadState(State.ACT);
         ObjectApprover.VerifyWithJson(data.Substring(0,200));
     }
 
     [Fact]
-    public void MapsFutureLoadStateMap()
+    public void FutureLoadState()
     {
-        var data = MapsLoader.MapsFuture.LoadStateMap(State.ACT);
+        var data = MapsLoader.Future.LoadState(State.ACT);
         ObjectApprover.VerifyWithJson(data.Substring(0,200));
     }
 
     [Fact]
-    public void Maps2016LoadElectorateMap()
+    public void CurrentLoadElectorate()
     {
-        var data = MapsLoader.Maps2016.LoadElectorateMap("fenner");
+        var data = MapsLoader.Current.LoadElectorate("fenner");
         ObjectApprover.VerifyWithJson(data.Substring(0,200));
     }
 
     [Fact]
-    public void MapsFutureLoadElectorateMap()
+    public void FutureLoadElectorate()
     {
-        var data = MapsLoader.MapsFuture.LoadElectorateMap("fenner");
+        var data = MapsLoader.Future.LoadElectorate("fenner");
         ObjectApprover.VerifyWithJson(data.Substring(0,200));
     }
 
@@ -56,10 +56,10 @@ public class MapsLoaderTests
         MapsLoader.LoadAll();
         ObjectApprover.VerifyWithJson(new
         {
-            MapsFutureLoadedElectorateMaps = MapsLoader.MapsFuture.LoadedElectorateMaps.Count,
-            MapsFutureLoadedStateMaps = MapsLoader.MapsFuture.LoadedStateMaps.Count,
-            Maps2016LoadedElectorateMaps = MapsLoader.Maps2016.LoadedElectorateMaps.Count,
-            Maps2016LoadedStateMaps = MapsLoader.Maps2016.LoadedStateMaps.Count,
+            FutureLoadedElectorateMaps = MapsLoader.Future.LoadedElectorates.Count,
+            FutureLoadedStateMaps = MapsLoader.Future.LoadedStates.Count,
+            CurrentLoadedElectorateMaps = MapsLoader.Current.LoadedElectorates.Count,
+            CurrentLoadedStateMaps = MapsLoader.Current.LoadedStates.Count,
         });
     }
 }

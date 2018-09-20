@@ -52,7 +52,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -96,7 +96,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -110,7 +110,7 @@
     "DateGazetted": "2018-07-13",
     "Members": [],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
-    "ExistIn2016": false,
+    "ExistInCurrent": false,
     "ExistInFuture": true
   },
   {
@@ -226,7 +226,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -294,7 +294,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -362,7 +362,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": false
   },
   {
@@ -448,7 +448,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -486,7 +486,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -500,7 +500,7 @@
     "DateGazetted": "2017-11-14",
     "Members": [],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": false,
+    "ExistInCurrent": false,
     "ExistInFuture": true
   },
   {
@@ -598,7 +598,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -666,7 +666,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -758,7 +758,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -838,7 +838,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -912,7 +912,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -986,7 +986,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -1018,7 +1018,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -1050,7 +1050,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -1093,7 +1093,7 @@
       }
     ],
     "DemographicRating": "Inner Metropolitan",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": false
   },
   {
@@ -1149,7 +1149,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -1240,7 +1240,7 @@
       }
     ],
     "DemographicRating": "Rural",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": false
   },
   {
@@ -1254,7 +1254,7 @@
     "DateGazetted": "2018-07-20",
     "Members": [],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
-    "ExistIn2016": false,
+    "ExistInCurrent": false,
     "ExistInFuture": true
   },
   {
@@ -1292,7 +1292,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -1384,7 +1384,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -1469,7 +1469,7 @@
       }
     ],
     "DemographicRating": "Inner Metropolitan",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": false
   },
   {
@@ -1579,7 +1579,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -1623,7 +1623,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -1649,7 +1649,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -1705,7 +1705,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -1761,7 +1761,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -1859,7 +1859,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -1945,7 +1945,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -2013,7 +2013,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -2057,7 +2057,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -2161,7 +2161,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -2205,7 +2205,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -2273,7 +2273,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -2311,7 +2311,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -2331,7 +2331,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -2375,7 +2375,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -2419,7 +2419,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -2463,7 +2463,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -2579,7 +2579,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -2653,7 +2653,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -2679,7 +2679,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -2735,7 +2735,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -2803,7 +2803,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -2853,7 +2853,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -2891,7 +2891,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -2953,7 +2953,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -2997,7 +2997,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -3070,7 +3070,7 @@
       }
     ],
     "DemographicRating": "Rural",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": false
   },
   {
@@ -3126,7 +3126,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -3175,7 +3175,7 @@
       }
     ],
     "DemographicRating": "Inner Metropolitan",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": false
   },
   {
@@ -3201,7 +3201,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -3238,7 +3238,7 @@
       }
     ],
     "DemographicRating": "Rural",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": false
   },
   {
@@ -3276,7 +3276,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -3374,7 +3374,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -3424,7 +3424,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -3438,7 +3438,7 @@
     "DateGazetted": "2018-07-13",
     "Members": [],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": false,
+    "ExistInCurrent": false,
     "ExistInFuture": true
   },
   {
@@ -3452,7 +3452,7 @@
     "DateGazetted": "2018-07-13",
     "Members": [],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": false,
+    "ExistInCurrent": false,
     "ExistInFuture": true
   },
   {
@@ -3466,7 +3466,7 @@
     "DateGazetted": "2018-07-13",
     "Members": [],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": false,
+    "ExistInCurrent": false,
     "ExistInFuture": true
   },
   {
@@ -3480,7 +3480,7 @@
     "DateGazetted": "2018-07-13",
     "Members": [],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": false,
+    "ExistInCurrent": false,
     "ExistInFuture": true
   },
   {
@@ -3494,7 +3494,7 @@
     "DateGazetted": "2018-07-13",
     "Members": [],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": false,
+    "ExistInCurrent": false,
     "ExistInFuture": true
   },
   {
@@ -3520,7 +3520,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -3552,7 +3552,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -3626,7 +3626,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -3712,7 +3712,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -3822,7 +3822,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -3878,7 +3878,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -3916,7 +3916,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -3954,7 +3954,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -3992,7 +3992,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -4048,7 +4048,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -4074,7 +4074,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -4118,7 +4118,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -4198,7 +4198,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -4236,7 +4236,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -4322,7 +4322,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -4360,7 +4360,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -4416,7 +4416,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -4484,7 +4484,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -4582,7 +4582,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -4620,7 +4620,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -4694,7 +4694,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -4750,7 +4750,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -4776,7 +4776,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -4844,7 +4844,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -4894,7 +4894,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -4974,7 +4974,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -5006,7 +5006,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -5050,7 +5050,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -5118,7 +5118,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -5138,7 +5138,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -5158,7 +5158,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -5196,7 +5196,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -5240,7 +5240,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -5332,7 +5332,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -5370,7 +5370,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -5408,7 +5408,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -5446,7 +5446,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -5490,7 +5490,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -5588,7 +5588,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -5626,7 +5626,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -5705,7 +5705,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -5767,7 +5767,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -5823,7 +5823,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -5867,7 +5867,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -5965,7 +5965,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -6003,7 +6003,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -6035,7 +6035,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -6073,7 +6073,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -6123,7 +6123,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -6161,7 +6161,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -6211,7 +6211,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -6327,7 +6327,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -6425,7 +6425,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -6475,7 +6475,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -6519,7 +6519,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -6569,7 +6569,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -6643,7 +6643,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -6681,7 +6681,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -6791,7 +6791,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -6823,7 +6823,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -6873,7 +6873,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -6959,7 +6959,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -7009,7 +7009,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -7083,7 +7083,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -7127,7 +7127,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -7165,7 +7165,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -7257,7 +7257,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -7313,7 +7313,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -7381,7 +7381,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -7449,7 +7449,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -7559,7 +7559,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -7657,7 +7657,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -7695,7 +7695,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -7733,7 +7733,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -7795,7 +7795,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -7845,7 +7845,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -7925,7 +7925,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -8023,7 +8023,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -8055,7 +8055,7 @@
       }
     ],
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -8093,7 +8093,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -8167,7 +8167,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -8211,7 +8211,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -8249,7 +8249,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -8275,7 +8275,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -8331,7 +8331,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -8423,7 +8423,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -8461,7 +8461,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -8529,7 +8529,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -8549,7 +8549,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -8581,7 +8581,7 @@
       }
     ],
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -8613,7 +8613,7 @@
       }
     ],
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -8694,7 +8694,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -8756,7 +8756,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -8866,7 +8866,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   },
   {
@@ -8928,7 +8928,7 @@
       }
     ],
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "ExistIn2016": true,
+    "ExistInCurrent": true,
     "ExistInFuture": true
   }
 ]

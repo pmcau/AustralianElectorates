@@ -14,13 +14,13 @@ namespace AustralianElectorates
         }
 
         public static IReadOnlyList<Electorate> Electorates { get; }
-        public static MapCollection Maps2016 { get; } = new MapCollection("2016");
-        public static MapCollection MapsFuture { get; } = new MapCollection("Future");
+        public static MapCollection Current { get; } = new MapCollection("Current");
+        public static MapCollection Future { get; } = new MapCollection("Future");
 
         public static void LoadAll()
         {
-            MapsFuture.LoadAll();
-            Maps2016.LoadAll();
+            Future.LoadAll();
+            Current.LoadAll();
         }
     }
 }

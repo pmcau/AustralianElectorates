@@ -1,0 +1,6 @@
+﻿{
+  "FutureLoadedElectorateMaps": 151,
+  "FutureLoadedStateMaps": 8,
+  "CurrentLoadedElectorateMaps": 150,
+  "CurrentLoadedStateMaps": 8
+}
