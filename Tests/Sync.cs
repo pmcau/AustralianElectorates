@@ -76,8 +76,8 @@ public class Sync
                         var electorateNameList = electorateNames[state];
                         electorateNameList.Add(electorate);
 
-                        var electorateJson = Path.Combine(electoratesDirectory, $"{electorate}{suffix}");
-                        JsonSerializer.SerializeGeo(electorateFeature.ToCollection(), electorateJson);
+                        var electorateJsonPath = Path.Combine(electoratesDirectory, $"{electorate}{suffix}");
+                        JsonSerializer.SerializeGeo(electorateFeature.ToCollection(), electorateJsonPath);
                     }
                 }
             }

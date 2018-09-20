@@ -1,7 +1,7 @@
 [
   {
     "Name": "Canberra",
-    "ShortName": "Canberra",
+    "ShortName": "canberra",
     "State": "ACT",
     "Description": "<p>The Division of Canberra covers an area in central ACT consisting of the Districts of:</p><ul><li>Canberra Central,</li><li>Kowen,</li><li>Majura,</li><li>part of Belconnen,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul>",
     "Area": 312.0,
@@ -55,7 +55,7 @@
   },
   {
     "Name": "Fenner",
-    "ShortName": "Fenner",
+    "ShortName": "fenner",
     "State": "ACT",
     "Description": "<p>The Division of Fenner covers an area in the north of the ACT consisting of the Districts of:</p><ul><li>Gungahlin,</li><li>Hall, and</li><li>part of Belconnen</li></ul><p>The Division of Fenner also includes the Jervis Bay Territory.</p>",
     "Area": 238.0,
@@ -97,7 +97,7 @@
   },
   {
     "Name": "Bean",
-    "ShortName": "Bean",
+    "ShortName": "bean",
     "State": "ACT",
     "Description": "<p>The Division of Bean covers an area in the south of the ACT consisting of the Districts of:</p><ul><li>Booth,</li><li>Coree,</li><li>Cotter River,</li><li>Mount Clear,</li><li>Paddys River,</li><li>Rendezvous Creek,</li><li>Stromlo,</li><li>Tennent,</li><li>Tuggeranong,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul><p>The Division of Bean also includes Norfolk Island.</p>",
     "Area": 1913.0,
@@ -109,7 +109,7 @@
   },
   {
     "Name": "Bass",
-    "ShortName": "Bass",
+    "ShortName": "bass",
     "State": "TAS",
     "Description": "<p>The Division of Bass is located on Launceston and consists of the:</p><ul><li>City of Launceston</li><li>Municipality of Dorset</li><li>Municipality of Flinders</li><li>Municipality of George Town</li><li>Municipality of West Tamar </li></ul><p>The Division of Bass includes Flinders Island.</p>",
     "Area": 7975.96,
@@ -223,7 +223,7 @@
   },
   {
     "Name": "Braddon",
-    "ShortName": "Braddon",
+    "ShortName": "braddon",
     "State": "TAS",
     "Description": "<p>The Division of Braddon is focused on Burnie and Devonport and also consists of the:</p><ul><li>City of Burnie</li><li>Municipality of Central Coast</li><li>Municipality of Circular Head</li><li>City of Devonport</li><li>Municipality of King Island</li><li>Municipality of Latrobe</li><li>Municipality of Waratah-Wynard, and</li><li>Municipality of West Coast</li></ul><p>The Division of Braddon includes King Island.</p>",
     "Area": 21369.24,
@@ -289,7 +289,7 @@
   },
   {
     "Name": "Denison",
-    "ShortName": "Denison",
+    "ShortName": "denison",
     "State": "TAS",
     "Description": "<p>The Division of Braddon is focused on Burnie and Devonport and also consists of the:</p><ul><li>City of Burnie</li><li>Municipality of Central Coast</li><li>Municipality of Circular Head</li><li>City of Devonport</li><li>Municipality of King Island</li><li>Municipality of Latrobe</li><li>Municipality of Waratah-Wynard, and</li><li>Municipality of West Coast</li></ul><p>The Division of Braddon includes King Island.</p>",
     "Area": 21369.24,
@@ -355,7 +355,7 @@
   },
   {
     "Name": "Franklin",
-    "ShortName": "Franklin",
+    "ShortName": "franklin",
     "State": "TAS",
     "Description": "<p>The Division of Franklin consists of the:</p><ul><li>Municipality of Huon Valley,</li><li>part of the City of Clarence, and</li><li>part of the Municipality of Kingborough.</li></ul><p>The Division of Franklin includes Macquarie Island.</p>",
     "Area": 10009.23,
@@ -439,7 +439,7 @@
   },
   {
     "Name": "Lyons",
-    "ShortName": "Lyons",
+    "ShortName": "lyons",
     "State": "TAS",
     "Description": "<p>The Division of Lyons consists of the:</p><ul><li>Municipality of Break O&rsquo;Day</li><li>Municipality of Brighton</li><li>Municipality of Central Highlands</li><li>Municipality of Derwent Valley</li><li>Municipality of Glamorgan-Spring Bay</li><li>Municipality of Kentish</li><li>Municipality of Meander Valley</li><li>Municipality of Northern Midlands</li><li>Municipality of Sorell</li><li>Municipality of Southern Midlands</li><li>Municipality of Tasman</li><li>part of the City of Clarence</li></ul>",
     "Area": 35721.83,
@@ -475,7 +475,7 @@
   },
   {
     "Name": "Clark",
-    "ShortName": "Clark",
+    "ShortName": "clark",
     "State": "TAS",
     "Description": "<p>The Division of Clark is centred on Hobart and consists of the:</p><ul><li>City of Glenorchy</li><li>City of Hobart, and</li><li>part of the Municipality of Kingborough</li></ul>",
     "Area": 292.26,
@@ -487,7 +487,7 @@
   },
   {
     "Name": "Adelaide",
-    "ShortName": "Adelaide",
+    "ShortName": "adelaide",
     "State": "SA",
     "Description": "<p>The Division of Adelaide consists of:</p><ul><li>Adelaide City Council,</li><li>City of Prospect,</li><li>Corporation of the Town of Walkerville,</li><li>part of the City of Burnside,</li><li>part of the City of Charles Sturt,</li><li>part of the City of Port Adelaide Enfield,</li><li>part of the City of Unley, and </li><li>part of the City of West Torrens</li></ul>",
     "Area": 86.0,
@@ -583,7 +583,7 @@
   },
   {
     "Name": "Barker",
-    "ShortName": "Barker",
+    "ShortName": "barker",
     "State": "SA",
     "Description": "<p>The Division of Barker consists of:</p><ul><li>Berri Barmera Council,</li><li>City of Mount Gambier,</li><li>Coorong District Council,</li><li>District Council of Grant, </li><li>District Council of Karoonda East Murray,</li><li>District Council of Loxton Waikerie,</li><li>District Council of Robe,</li><li>Kingston District Council,</li><li>Naracoorte Lucindale Council,</li><li>Mid Murray Council,</li><li>Renmark Paringa Council,</li><li>Rural City of Murray Bridge,</li><li>Southern Mallee District Council,</li><li>Tatiara District Council,</li><li>Wattle Range Council,</li><li>part of the Barossa Council,</li><li>part of the Light Regional Council, </li><li>part of the Outback Community Authority, and</li><li>Unincorporated Riverland</li></ul>",
     "Area": 65206.0,
@@ -649,7 +649,7 @@
   },
   {
     "Name": "Boothby",
-    "ShortName": "Boothby",
+    "ShortName": "boothby",
     "State": "SA",
     "Description": "<p>The Division of Boothby consists of:</p><ul><li>City of Holdfast Bay, </li><li>part of the City of Marion,</li><li>part of the City of Mitcham, and</li><li>part of the City of Unley</li></ul>",
     "Area": 115.0,
@@ -739,7 +739,7 @@
   },
   {
     "Name": "Grey",
-    "ShortName": "Grey",
+    "ShortName": "grey",
     "State": "SA",
     "Description": "<p>The Division of Grey consists of:</p><ul><li>Adelaide Plains Council,</li><li>Anangu Pitjantjatjara Yankunytjatjara,</li><li>City of Port Lincoln,</li><li>Clare and Gilbert Valleys Council,</li><li>Corporation of the City of Whyalla,</li><li>District Council of Barunga West,</li><li>District Council of Ceduna,</li><li>District Council of Cleve,</li><li>District Council of Coober Pedy,</li><li>District Council of Elliston,</li><li>District Council of Franklin Harbour,</li><li>District Council of Kimba,</li><li>District Council of Lower Eyre Peninsula,</li><li>District Council of Mount Remarkable,</li><li>District Council of Orroroo Carrieton,</li><li>District Council of Peterborough,</li><li>District Council of Streaky Bay,</li><li>District Council of the Copper Coast</li><li>District Council of Tumby Bay,</li><li>Flinders Ranges Council,</li><li>Maralinga Tjarutja,</li><li>Municipal Council of Roxby Downs,</li><li>Northern Areas Council,</li><li>Port Augusta City Council,</li><li>Port Pirie Regional Council,</li><li>Regional Council of Goyder,</li><li>Wakefield Regional Council,</li><li>Wudinna District Council,</li><li>Yorke Peninsula Council,</li><li>part of Light Regional Council,</li><li>Pastoral Unincorporated Area, and</li><li>Unincorporated Area Whyalla</li></ul>",
     "Area": 908595.0,
@@ -817,7 +817,7 @@
   },
   {
     "Name": "Hindmarsh",
-    "ShortName": "Hindmarsh",
+    "ShortName": "hindmarsh",
     "State": "SA",
     "Description": "<p>The Division of Hindmarsh consists of:</p><ul><li>part of the City of Charles Sturt,</li><li>part of the City of Port Adelaide Enfield, and</li><li>part of the City of West Torrens</li></ul>",
     "Area": 122.0,
@@ -889,7 +889,7 @@
   },
   {
     "Name": "Kingston",
-    "ShortName": "Kingston",
+    "ShortName": "kingston",
     "State": "SA",
     "Description": "<p>The Division of Kingston consists of:</p><ul><li>part of the City of Marion, and</li><li>part of the City of Onkaparinga</li></ul>",
     "Area": 165.0,
@@ -961,7 +961,7 @@
   },
   {
     "Name": "Makin",
-    "ShortName": "Makin",
+    "ShortName": "makin",
     "State": "SA",
     "Description": "<p>The Division of Makin consists of:</p><ul><li>part of the City of Port Adelaide Enfield,</li><li>part of the City of Salisbury, and</li><li>part of the City of Tea Tree Gully</li></ul>",
     "Area": 162.0,
@@ -991,7 +991,7 @@
   },
   {
     "Name": "Mayo",
-    "ShortName": "Mayo",
+    "ShortName": "mayo",
     "State": "SA",
     "Description": "<p>The Division of Mayo consists of:</p><ul><li>Alexandrina Council,</li><li>City of Victor Harbor,</li><li>District Council of Yankalilla,</li><li>Kangaroo Island Council,</li><li>Mount Barker District Council,</li><li>part of the Adelaide Hills Council,</li><li>part of the City of Mitcham, and</li><li>part of the City of Onkaparinga</li></ul>",
     "Area": 9135.0,
@@ -1021,7 +1021,7 @@
   },
   {
     "Name": "Port Adelaide",
-    "ShortName": "Port-Adelaide",
+    "ShortName": "port-adelaide",
     "State": "SA",
     "Description": "Port Adelaide covers an area of approximately 181 sq km from Waterloo Corner in the north down to Grange Road in the south whilst its eastern boundary takes in parts of Salisbury. The area also includes Torrens Island and Garden Island. Other suburbs in this division are Alberton, Beverley, Birkenhead, Cheltenham, Findon, Kilkenny, Largs Bay, Mansfield Park, North Haven, Ottoway, Parafield Gardens, Paralowie, Pennington, Port Adelaide, Queenstown, Rosewater, Salisbury Downs, Seaton (part), Semaphore, Woodville and West Croydon.",
     "Area": 0.0,
@@ -1062,7 +1062,7 @@
   },
   {
     "Name": "Sturt",
-    "ShortName": "Sturt",
+    "ShortName": "sturt",
     "State": "SA",
     "Description": "<p>The Division of Sturt consists of:</p><ul><li>Campbelltown City Council,</li><li>City of Norwood Payneham and St Peters,</li><li>part of Adelaide Hills Council,</li><li>part of the City of Burnside,</li><li>part of the City of Port Adelaide Enfield,</li><li>part of the City of Tea Tree Gully, and</li><li>part of the City of Unley</li></ul>",
     "Area": 97.0,
@@ -1116,7 +1116,7 @@
   },
   {
     "Name": "Wakefield",
-    "ShortName": "Wakefield",
+    "ShortName": "wakefield",
     "State": "SA",
     "Description": "Wakefield covers an area of approximately 6&nbsp;407 sq km from Salisbury in the northern suburbs of Adelaide to Clare in the Clare Valley, 135 km north of Adelaide. The main suburbs include Elizabeth, Salisbury (part), Craigmore and Munno Para. The towns of Virginia, Gawler, Port Wakefield (part), Balaklava, Clare, Kapunda, Riverton, Mallala, Freeling, Tarlee and Williamstown are also included in this division.",
     "Area": 0.0,
@@ -1205,7 +1205,7 @@
   },
   {
     "Name": "Spence",
-    "ShortName": "Spence",
+    "ShortName": "spence",
     "State": "SA",
     "Description": "<p>The Division of Spence consists of:</p><ul><li>City of Playford,</li><li>Town of Gawler,</li><li>part of the Barossa Council,</li><li>part of the City of Salisbury, and</li><li>part of the Light Regional Council</li></ul>",
     "Area": 532.0,
@@ -1217,7 +1217,7 @@
   },
   {
     "Name": "Aston",
-    "ShortName": "Aston",
+    "ShortName": "aston",
     "State": "VIC",
     "Description": "<p>The Division of Aston consists of Knox City Council.</p>",
     "Area": 113.0,
@@ -1253,7 +1253,7 @@
   },
   {
     "Name": "Ballarat",
-    "ShortName": "Ballarat",
+    "ShortName": "ballarat",
     "State": "VIC",
     "Description": "<p>The Division of Ballarat consists of:</p><ul><li>Ballarat City Council,</li><li>Hepburn Shire Council, and</li><li>Moorabool Shire Council.</li></ul>",
     "Area": 4322.0,
@@ -1343,7 +1343,7 @@
   },
   {
     "Name": "Batman",
-    "ShortName": "Batman",
+    "ShortName": "batman",
     "State": "VIC",
     "Description": "The Division of Batman is located in Melbourne's northern suburbs. It covers an area of approximately 66 sq km from Thomastown/Bundoora in the north to Clifton Hill in the south, with Merri Creek providing the vast majority of the western boundary and Darebin Creek, parts of Macleod and Plenty Road Bundoora providing the eastern boundary. The suburbs of Alphington, Bundoora (part), Clifton Hill, Coburg North (part), Fairfield, Kingsbury, Macleod (part), Northcote, Preston, Reservoir, Thomastown (part) and Thornbury are in this division.",
     "Area": 0.0,
@@ -1426,7 +1426,7 @@
   },
   {
     "Name": "Bendigo",
-    "ShortName": "Bendigo",
+    "ShortName": "bendigo",
     "State": "VIC",
     "Description": "<p>The Division of Bendigo consists of:</p><ul><li>Greater Bendigo City Council,</li><li>Mount Alexander Shire Council,</li><li>part of the Macedon Ranges Shire Council, and</li><li>part of the Mitchell Shire Council.</li></ul>",
     "Area": 5496.0,
@@ -1534,7 +1534,7 @@
   },
   {
     "Name": "Bruce",
-    "ShortName": "Bruce",
+    "ShortName": "bruce",
     "State": "VIC",
     "Description": "<p>The Division of Bruce consists of:</p><ul><li>part of the Casey City Council, and</li><li>part of the Greater Dandenong City Council.</li></ul>",
     "Area": 95.0,
@@ -1576,7 +1576,7 @@
   },
   {
     "Name": "Calwell",
-    "ShortName": "Calwell",
+    "ShortName": "calwell",
     "State": "VIC",
     "Description": "<p>The Division of Calwell consists of:</p><ul><li>part of the Brimbank City Council, and</li><li>part of the Hume City Council.</li></ul>",
     "Area": 265.0,
@@ -1600,7 +1600,7 @@
   },
   {
     "Name": "Casey",
-    "ShortName": "Casey",
+    "ShortName": "casey",
     "State": "VIC",
     "Description": "<p>The Division of Casey consists of part of the Yarra Ranges Shire Council.</p>",
     "Area": 2466.0,
@@ -1654,7 +1654,7 @@
   },
   {
     "Name": "Chisholm",
-    "ShortName": "Chisholm",
+    "ShortName": "chisholm",
     "State": "VIC",
     "Description": "<p>The Division of Chisholm consists of:</p><ul><li>part of the Monash City Council, and</li><li>part of the Whitehorse City Council.</li></ul>",
     "Area": 65.0,
@@ -1708,7 +1708,7 @@
   },
   {
     "Name": "Corangamite",
-    "ShortName": "Corangamite",
+    "ShortName": "corangamite",
     "State": "VIC",
     "Description": "<p>The Division of Corangamite consists of:</p><ul><li>Borough of Queenscliff</li><li>Surf Coast Shire Council,</li><li>part of the Colac Otway Shire Council,</li><li>part of the Golden Plains Shire Council, and</li><li>part of the Greater Geelong City Council.</li></ul>",
     "Area": 5441.0,
@@ -1804,7 +1804,7 @@
   },
   {
     "Name": "Corio",
-    "ShortName": "Corio",
+    "ShortName": "corio",
     "State": "VIC",
     "Description": "<p>The Division of Corio consists of part of the Greater Geelong City Council.</p>",
     "Area": 773.0,
@@ -1888,7 +1888,7 @@
   },
   {
     "Name": "Deakin",
-    "ShortName": "Deakin",
+    "ShortName": "deakin",
     "State": "VIC",
     "Description": "<p>The Division of Deakin consists of:</p><ul><li>part of the Manningham City Council,</li><li>part of the Maroondah City Council, and </li><li>part of the Whitehorse City Council. </li></ul>",
     "Area": 79.0,
@@ -1954,7 +1954,7 @@
   },
   {
     "Name": "Dunkley",
-    "ShortName": "Dunkley",
+    "ShortName": "dunkley",
     "State": "VIC",
     "Description": "<p>The Division of Dunkley consists of:</p><ul><li>Frankston City Council, and</li><li>part of the Mornington Peninsula Shire Council.</li></ul>",
     "Area": 152.0,
@@ -1996,7 +1996,7 @@
   },
   {
     "Name": "Flinders",
-    "ShortName": "Flinders",
+    "ShortName": "flinders",
     "State": "VIC",
     "Description": "<p>The Division of Flinders consists of:</p><ul><li>part of the Mornington Peninsula Shire Council, and</li><li>The unincorporated areas of Elizabeth, French, and Sandstone Islands.</li></ul>",
     "Area": 871.0,
@@ -2098,7 +2098,7 @@
   },
   {
     "Name": "Gellibrand",
-    "ShortName": "Gellibrand",
+    "ShortName": "gellibrand",
     "State": "VIC",
     "Description": "<p>The Division of Gellibrand consists of:</p><ul><li>Hobsons Bay City Council,</li><li>part of the Maribyrnong City Council, and</li><li>part of Wyndham City Council.</li></ul>",
     "Area": 124.0,
@@ -2140,7 +2140,7 @@
   },
   {
     "Name": "Gippsland",
-    "ShortName": "Gippsland",
+    "ShortName": "gippsland",
     "State": "VIC",
     "Description": "<p>The Division of Gippsland consists of:</p><ul><li>East Gippsland Shire Council,</li><li>Wellington Shire Council,</li><li>part of Baw Baw Shire Council,</li><li>part of Latrobe City Council, and</li><li>The unincorporated area of Gabo Island.</li></ul>",
     "Area": 33182.0,
@@ -2206,7 +2206,7 @@
   },
   {
     "Name": "Goldstein",
-    "ShortName": "Goldstein",
+    "ShortName": "goldstein",
     "State": "VIC",
     "Description": "<p>The Division of Goldstein consists of:</p><ul><li>Bayside City Council, and</li><li>part of Glen Eira City Council.</li></ul>",
     "Area": 50.0,
@@ -2242,7 +2242,7 @@
   },
   {
     "Name": "Gorton",
-    "ShortName": "Gorton",
+    "ShortName": "gorton",
     "State": "VIC",
     "Description": "<p>The Division of Gorton consists of:</p><ul><li>Melton City Council, and</li><li>part of Brimbank City Council.</li></ul>",
     "Area": 540.0,
@@ -2260,7 +2260,7 @@
   },
   {
     "Name": "Higgins",
-    "ShortName": "Higgins",
+    "ShortName": "higgins",
     "State": "VIC",
     "Description": "<p>The Division of Higgins consists of:</p><ul><li>part of the Boroondara City Council,</li><li>part of the Glen Eira City Council,</li><li>part of the Monash City Council, and</li><li>part of the Stonnington City Council</li></ul>",
     "Area": 41.0,
@@ -2302,7 +2302,7 @@
   },
   {
     "Name": "Holt",
-    "ShortName": "Holt",
+    "ShortName": "holt",
     "State": "VIC",
     "Description": "<p>The Division of Holt consists of part of the Casey City Council.</p>",
     "Area": 266.0,
@@ -2344,7 +2344,7 @@
   },
   {
     "Name": "Hotham",
-    "ShortName": "Hotham",
+    "ShortName": "hotham",
     "State": "VIC",
     "Description": "<p>The Division of Hotham consists of:</p><ul><li>part of the Glen Eira City Council,</li><li>part of the Greater Dandenong City Council,</li><li>part of the Kingston City Council, and </li><li>part of the Monash City Council.</li></ul>",
     "Area": 83.0,
@@ -2386,7 +2386,7 @@
   },
   {
     "Name": "Indi",
-    "ShortName": "Indi",
+    "ShortName": "indi",
     "State": "VIC",
     "Description": "<p>The Division of Indi consists of:</p><ul><li>Alpine Shire Council,ÂƒÂƒ</li><li>Benalla Rural City Council,ÂƒÂƒ</li><li>Indigo Shire Council,ÂƒÂƒ</li><li>Mansfield Shire Council,ÂƒÂƒ</li><li>Murrindindi Shire Council,ÂƒÂƒ</li><li>Towong Shire Council,ÂƒÂƒ</li><li>Wangaratta Rural City Council,ÂƒÂƒ</li><li>Wodonga Rural City Council,ÂƒÂƒ</li><li>part of the Strathbogie Shire Council,ÂƒÂƒÂƒÂƒ</li><li>the unincorporated area of Falls Creek Alpine Resort,ÂƒÂƒ</li><li>the unincorporated area of Lake Mountain Alpine Resort,ÂƒÂƒ</li><li>the unincorporated area of Mount Buller Alpine Resort, andÂƒÂƒ</li><li>the unincorporated area of Mount Hotham Alpine Resort.</li></ul>",
     "Area": 29187.0,
@@ -2500,7 +2500,7 @@
   },
   {
     "Name": "Isaacs",
-    "ShortName": "Isaacs",
+    "ShortName": "isaacs",
     "State": "VIC",
     "Description": "<p>The Division of Isaacs consists of:</p><ul><li>part of the Greater Dandenong City Council, and</li><li>part of the Kingston City Council.</li></ul>",
     "Area": 155.0,
@@ -2572,7 +2572,7 @@
   },
   {
     "Name": "Jagajaga",
-    "ShortName": "Jagajaga",
+    "ShortName": "jagajaga",
     "State": "VIC",
     "Description": "<p>The Division of Jagajaga consists of:</p><ul><li>Banyule City Council, and</li><li>part of the Nillumbik Shire Council.</li></ul>",
     "Area": 104.0,
@@ -2596,7 +2596,7 @@
   },
   {
     "Name": "Kooyong",
-    "ShortName": "Kooyong",
+    "ShortName": "kooyong",
     "State": "VIC",
     "Description": "<p>The Division of Kooyong consists of:</p><ul><li>part of the Boroondara City Council, and</li><li>part of the Whitehorse City Council.</li></ul>",
     "Area": 55.0,
@@ -2650,7 +2650,7 @@
   },
   {
     "Name": "La Trobe",
-    "ShortName": "La-Trobe",
+    "ShortName": "la-trobe",
     "State": "VIC",
     "Description": "<p>The Division of La Trobe consists of:</p><ul><li>part of the Cardinia Shire Council, </li><li>part of the Casey City Council, and</li><li>part of the Yarra Ranges Shire Council.</li></ul>",
     "Area": 748.0,
@@ -2716,7 +2716,7 @@
   },
   {
     "Name": "Lalor",
-    "ShortName": "Lalor",
+    "ShortName": "lalor",
     "State": "VIC",
     "Description": "<p>The Division of Lalor consists of part of the Wyndham City Council.</p>",
     "Area": 493.0,
@@ -2764,7 +2764,7 @@
   },
   {
     "Name": "Mallee",
-    "ShortName": "Mallee",
+    "ShortName": "mallee",
     "State": "VIC",
     "Description": "<p>The Division of Mallee consists of:</p><ul><li>Buloke Shire Council,ÂƒÂƒ</li><li>Central Goldfields Shire Council,ÂƒÂƒ</li><li>Gannawarra Shire Council,ÂƒÂƒ</li><li>Hindmarsh Shire Council,ÂƒÂƒ</li><li>Horsham Rural City Council,ÂƒÂƒ</li><li>Loddon Shire Council,ÂƒÂƒ</li><li>Mildura Rural City Council,ÂƒÂƒ</li><li>Swan Hill Rural City Council,</li><li>ÂƒÂƒWest Wimmera Shire Council,ÂƒÂƒ</li><li>Yarriambiack Shire Council,ÂƒÂƒ</li><li>part of the Northern Grampians Shire Council, andÂƒÂƒ</li><li>part of the Pyrenees Shire Council.</li></ul>",
     "Area": 81962.0,
@@ -2800,7 +2800,7 @@
   },
   {
     "Name": "Maribyrnong",
-    "ShortName": "Maribyrnong",
+    "ShortName": "maribyrnong",
     "State": "VIC",
     "Description": "<p>The Division of Maribyrnong consists of:</p><ul><li>Moonee Valley City Council,</li><li>Part of the Brimbank City Council,</li><li>Part of the Hume City Council,</li><li>Part of the Maribyrnong City Council, and</li><li>Part of the Melbourne City Council.</li></ul>",
     "Area": 64.0,
@@ -2860,7 +2860,7 @@
   },
   {
     "Name": "McEwen",
-    "ShortName": "McEwen",
+    "ShortName": "mcewen",
     "State": "VIC",
     "Description": "<p>The Division of McEwen consists of:</p><ul><li>part of the Hume City Council,ÂƒÂƒ</li><li>part of the Macedon Ranges Shire Council,ÂƒÂƒ</li><li>part of the Mitchell Shire Council,ÂƒÂƒ</li><li>part of the Nillumbik Shire Council, andÂƒÂƒ</li><li>part of the Whittlesea City Council.</li></ul>",
     "Area": 2670.0,
@@ -2902,7 +2902,7 @@
   },
   {
     "Name": "McMillan",
-    "ShortName": "Mcmillan",
+    "ShortName": "mcmillan",
     "State": "VIC",
     "Description": "The Division of McMillan is located in south-eastern Victoria. It covers an area of approximately 8&nbsp;358 sq km from Pakenham in the west to Newborough in the east and Noojee in the north to Wilsons Promontory in the south. The main towns include Drouin, Erica, Foster, Inverloch, Korumburra, Leongatha, Mirboo North, Moe, Neerim South, Newborough, Nyora, Pakenham Trafalgar, Walhalla, Warragul, Wonthaggi, Yallourn North and Yarragon.",
     "Area": 0.0,
@@ -2973,7 +2973,7 @@
   },
   {
     "Name": "Melbourne",
-    "ShortName": "Melbourne",
+    "ShortName": "melbourne",
     "State": "VIC",
     "Description": "<p>The Division of Melbourne consists of:</p><ul><li>part of the Melbourne City Council,ÂƒÂƒ</li><li>part of the Moonee Valley City Council,ÂƒÂƒ</li><li>part of the Moreland City Council, andÂƒÂƒ</li><li>part of the Yarra City Council.</li></ul>",
     "Area": 40.0,
@@ -3027,7 +3027,7 @@
   },
   {
     "Name": "Melbourne Ports",
-    "ShortName": "Melbourne-Ports",
+    "ShortName": "melbourne-ports",
     "State": "VIC",
     "Description": "The Division of Melbourne Ports is located to the south of Melbourne's central business district. It covers an area of approximately 40 sq km around the north and north-eastern shores of Port Phillip Bay. The suburbs include Albert Park, Balaclava, Caulfield, Caulfield East, Caulfield North, part of Elsternwick, Elwood, Middle Park, Port Melbourne, Ripponlea, St Kilda, St Kilda East, St Kilda West, Southbank, South Melbourne and parts of South Yarra and Docklands.",
     "Area": 0.0,
@@ -3074,7 +3074,7 @@
   },
   {
     "Name": "Menzies",
-    "ShortName": "Menzies",
+    "ShortName": "menzies",
     "State": "VIC",
     "Description": "<p>The Division of Menzies consists of:</p><ul><li>Part of Manningham City Council,</li><li>Part of the Maroondah City Council, and</li><li>Part of the Nillumbik City Council.</li></ul>",
     "Area": 184.0,
@@ -3098,7 +3098,7 @@
   },
   {
     "Name": "Murray",
-    "ShortName": "Murray",
+    "ShortName": "murray",
     "State": "VIC",
     "Description": "The Division of Murray is located in northern Victoria. It covers an area of approximately 19&nbsp;500 sq km with boundaries extending from Boort in the north-west corner of the Loddon Shire bordering the Division of Mallee, south to Wedderburn and Inglewood bordering the divisions of Wannon and Bendigo and extending east taking in the local government areas of Campaspe, City of Greater Shepparton and Strathbogie, bordering the divisions of Indi and McEwen. It extends north-east to Yarrawonga joining the State border. The main towns include Avenel, Boort, Bridgewater on Loddon, Cobram, Echuca, Euroa, Kyabram, Mooroopna, Murchison, Nagambie, Nathalia, Numurkah, Rochester, Rushworth, Shepparton, Tatura, Violet Town, Wedderburn and Yarrawonga.",
     "Area": 0.0,
@@ -3133,7 +3133,7 @@
   },
   {
     "Name": "Scullin",
-    "ShortName": "Scullin",
+    "ShortName": "scullin",
     "State": "VIC",
     "Description": "<p>The Division of Scullin consists of part of the Whittlesea City Council.</p>",
     "Area": 116.0,
@@ -3169,7 +3169,7 @@
   },
   {
     "Name": "Wannon",
-    "ShortName": "Wannon",
+    "ShortName": "wannon",
     "State": "VIC",
     "Description": "<p>The Division of Wannon consists of:ÂƒÂƒ</p><ul><li>Ararat Rural City Council,ÂƒÂƒ</li><li>Corangamite Shire Council,ÂƒÂƒ</li><li>Glenelg Shire Council,ÂƒÂƒ</li><li>Moyne Shire Council,ÂƒÂƒ</li><li>Southern Grampians Shire Council,ÂƒÂƒ</li><li>Warrnambool City Council,ÂƒÂƒ</li><li>part of the Colac Otway Shire Council,ÂƒÂƒ</li><li>part of the Golden Plains Shire Council,ÂƒÂƒ</li><li>part of the Northern Grampians Shire Council, andÂƒÂƒ</li><li>part of the Pyrenees Shire Council.</li></ul>",
     "Area": 33419.0,
@@ -3265,7 +3265,7 @@
   },
   {
     "Name": "Wills",
-    "ShortName": "Wills",
+    "ShortName": "wills",
     "State": "VIC",
     "Description": "<p>The Division of Wills consists of part of the Moreland City Council.ÂƒÂƒ</p>",
     "Area": 46.0,
@@ -3313,7 +3313,7 @@
   },
   {
     "Name": "Cooper",
-    "ShortName": "Cooper",
+    "ShortName": "cooper",
     "State": "VIC",
     "Description": "<p>The Division of Cooper consists of:</p><ul><li>Darebin City Council,</li><li>part of the Moreland City Council, and</li><li>part of the Yarra City Council.</li></ul>",
     "Area": 60.0,
@@ -3325,7 +3325,7 @@
   },
   {
     "Name": "Fraser",
-    "ShortName": "Fraser",
+    "ShortName": "fraser",
     "State": "VIC",
     "Description": "<p>The Division of Fraser consists of:</p><ul><li>part of the Brimbank City Council, and</li><li>part of the Maribyrnong City Council.</li></ul>",
     "Area": 106.0,
@@ -3337,7 +3337,7 @@
   },
   {
     "Name": "Macnamara",
-    "ShortName": "Macnamara",
+    "ShortName": "macnamara",
     "State": "VIC",
     "Description": "<p>The Division of Macnamara consists of:</p><ul><li>Port Phillip City Council,</li><li>part of Glen Eira City Council,</li><li>part of Melbourne City Council, and</li><li>part of Stonnington City Council.</li></ul>",
     "Area": 41.0,
@@ -3348,50 +3348,8 @@
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
   },
   {
-    "Name": "McEwen",
-    "ShortName": "Mcewen",
-    "State": "VIC",
-    "Description": "<p>The Division of McEwen consists of:</p><ul><li>part of the Hume City Council,ÂƒÂƒ</li><li>part of the Macedon Ranges Shire Council,ÂƒÂƒ</li><li>part of the Mitchell Shire Council,ÂƒÂƒ</li><li>part of the Nillumbik Shire Council, andÂƒÂƒ</li><li>part of the Whittlesea City Council.</li></ul>",
-    "Area": 2670.0,
-    "ProductsAndIndustry": "Cattle grazing, wool growing, market gardening, wines, dairying, various small businesses and tourism.",
-    "NameDerivation": "Named in honour of the Rt Hon. Sir John McEwen GCMG CH, 1900-80. McEwen was Prime Minister of Australia (1967-68) and a Member of the House of Representatives (1934-71).",
-    "DateGazetted": "2018-07-13",
-    "Members": [
-      {
-        "Name": "Mitchell, R",
-        "Begin": 2010,
-        "Party": "ALP"
-      },
-      {
-        "Name": "Bailey, F",
-        "Begin": 1996,
-        "End": 2010,
-        "Party": "LP"
-      },
-      {
-        "Name": "Cleeland, P R",
-        "Begin": 1993,
-        "End": 1996,
-        "Party": "ALP"
-      },
-      {
-        "Name": "Bailey, F E",
-        "Begin": 1990,
-        "End": 1993,
-        "Party": "LP"
-      },
-      {
-        "Name": "Cleeland, P R",
-        "Begin": 1984,
-        "End": 1990,
-        "Party": "ALP"
-      }
-    ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
-  },
-  {
     "Name": "Monash",
-    "ShortName": "Monash",
+    "ShortName": "monash",
     "State": "VIC",
     "Description": "<p>The Division of Monash consists of:</p><ul><li>Bass Coast Shire Council,</li><li>South Gippsland Shire Council,</li><li>part of the Cardinia Shire Council,</li><li>part of the Latrobe City Council,</li><li>part of the Baw Baw Shire Council, and</li><li>the unincorporated area of Mount Baw Baw Alpine Resort.</li></ul>",
     "Area": 8879.0,
@@ -3403,7 +3361,7 @@
   },
   {
     "Name": "Nicholls",
-    "ShortName": "Nicholls",
+    "ShortName": "nicholls",
     "State": "VIC",
     "Description": "<p>The Division of Nicholls consists of:</p><ul><li>Campaspe Shire Council,</li><li>Greater Shepparton City Council,</li><li>Moira Shire Council,</li><li>part of the Mitchell Shire Council, and</li><li>part of the Strathbogie Shire Council.</li></ul>",
     "Area": 14768.0,
@@ -3415,7 +3373,7 @@
   },
   {
     "Name": "Blair",
-    "ShortName": "Blair",
+    "ShortName": "blair",
     "State": "QLD",
     "Description": "<p>The Division of Blair consists of:</p><ul><li>part of the Brisbane City Council,</li><li>part of the Ipswich City Council,</li><li>part of the Scenic Rim Regional Council, and </li><li>part of the Somerset Regional Council.</li></ul>",
     "Area": 6472.0,
@@ -3439,7 +3397,7 @@
   },
   {
     "Name": "Bonner",
-    "ShortName": "Bonner",
+    "ShortName": "bonner",
     "State": "QLD",
     "Description": "<p>The Division of Bonner consists of:</p><ul><li>part of the Brisbane City Council, and</li><li>part of the Redland City Council.</li></ul>",
     "Area": 374.0,
@@ -3469,7 +3427,7 @@
   },
   {
     "Name": "Bowman",
-    "ShortName": "Bowman",
+    "ShortName": "bowman",
     "State": "QLD",
     "Description": "<p>The Division of Bonner consists of:</p><ul><li>part of the Redland City Council, and</li><li>part of the Brisbane City Council.</li></ul>",
     "Area": 536.0,
@@ -3541,7 +3499,7 @@
   },
   {
     "Name": "Brisbane",
-    "ShortName": "Brisbane",
+    "ShortName": "brisbane",
     "State": "QLD",
     "Description": "<p>The Division of Brisbane consists of part of the Brisbane City Council.</p>",
     "Area": 57.0,
@@ -3625,7 +3583,7 @@
   },
   {
     "Name": "Capricornia",
-    "ShortName": "Capricornia",
+    "ShortName": "capricornia",
     "State": "QLD",
     "Description": "<p>The Division of Capricornia consists of:</p><ul><li>Isaac Regional Council,</li><li>Livingstone Shire Council,</li><li>part of the Mackay Regional Council,</li><li>part of the Rockhampton Regional Council, and </li><li>part of the Whitsunday Regional Council.</li></ul>",
     "Area": 90903.0,
@@ -3733,7 +3691,7 @@
   },
   {
     "Name": "Dawson",
-    "ShortName": "Dawson",
+    "ShortName": "dawson",
     "State": "QLD",
     "Description": "<p>The Division of Dawson consists of:</p><ul><li>part of the Burdekin Shire Council,</li><li>part of the Mackay Regional Council,</li><li>part of the Townsville City Council, and </li><li>part of the Whitsunday Regional Council.</li></ul>",
     "Area": 14630.0,
@@ -3787,7 +3745,7 @@
   },
   {
     "Name": "Dickson",
-    "ShortName": "Dickson",
+    "ShortName": "dickson",
     "State": "QLD",
     "Description": "<p>The Division of Dickson consists of:</p><ul><li>part of the Brisbane City Council, and</li><li>part of the Moreton Bay Regional Council.</li></ul>",
     "Area": 724.0,
@@ -3823,7 +3781,7 @@
   },
   {
     "Name": "Fadden",
-    "ShortName": "Fadden",
+    "ShortName": "fadden",
     "State": "QLD",
     "Description": "<p>The Division of Fadden consists of:</p><ul><li>part of the Gold Coast City Council, and</li><li>part of the Redland City Council.</li></ul>",
     "Area": 387.0,
@@ -3859,7 +3817,7 @@
   },
   {
     "Name": "Fairfax",
-    "ShortName": "Fairfax",
+    "ShortName": "fairfax",
     "State": "QLD",
     "Description": "<p>The Division of Fairfax consists of part of the Sunshine Coast Regional Council.</p>",
     "Area": 1004.0,
@@ -3895,7 +3853,7 @@
   },
   {
     "Name": "Fisher",
-    "ShortName": "Fisher",
+    "ShortName": "fisher",
     "State": "QLD",
     "Description": "<p>The Division of Fisher consists of part of the Sunshine Coast Regional Council.</p>",
     "Area": 1198.0,
@@ -3949,7 +3907,7 @@
   },
   {
     "Name": "Flynn",
-    "ShortName": "Flynn",
+    "ShortName": "flynn",
     "State": "QLD",
     "Description": "<p>The Division of Flynn consists of:</p><ul><li>Banana Shire Council, </li><li>Central Highlands Regional Council, </li><li>Gladstone Regional Council, </li><li>North Burnett Regional Council, </li><li>Woorabinda Aboriginal Shire Council, </li><li>part of the Bundaberg Regional Council, </li><li>part of the Rockhampton Regional Council, and </li><li>part of the South Burnett Regional Council.</li></ul>",
     "Area": 132824.0,
@@ -3973,7 +3931,7 @@
   },
   {
     "Name": "Forde",
-    "ShortName": "Forde",
+    "ShortName": "forde",
     "State": "QLD",
     "Description": "<p>The Division of Forde consists of:</p><ul><li>part of the Gold Coast City Council, and </li><li>part of the Logan City Council.</li></ul>",
     "Area": 418.0,
@@ -4015,7 +3973,7 @@
   },
   {
     "Name": "Griffith",
-    "ShortName": "Griffith",
+    "ShortName": "griffith",
     "State": "QLD",
     "Description": "<p>The Division of Griffith consists of part of the Brisbane City Council.</p>",
     "Area": 57.0,
@@ -4093,7 +4051,7 @@
   },
   {
     "Name": "Groom",
-    "ShortName": "Groom",
+    "ShortName": "groom",
     "State": "QLD",
     "Description": "<p>The Division of Groom consists of part of the Toowoomba Regional Council.</p>",
     "Area": 5586.0,
@@ -4129,7 +4087,7 @@
   },
   {
     "Name": "Herbert",
-    "ShortName": "Herbert",
+    "ShortName": "herbert",
     "State": "QLD",
     "Description": "<ul><li>Palm Island Aboriginal Shire Council,</li><li>part of Hinchinbrook Shire Council, and</li><li>part of the Townsville City Council.</li></ul>",
     "Area": 941.0,
@@ -4213,7 +4171,7 @@
   },
   {
     "Name": "Hinkler",
-    "ShortName": "Hinkler",
+    "ShortName": "hinkler",
     "State": "QLD",
     "Description": "<p>The Division of Hinkler consists of:</p><ul><li>part of the Bundaberg Regional Council, and</li><li>part of the Fraser Coast Regional Council.</li></ul>",
     "Area": 3818.0,
@@ -4249,7 +4207,7 @@
   },
   {
     "Name": "Kennedy",
-    "ShortName": "Kennedy",
+    "ShortName": "kennedy",
     "State": "QLD",
     "Description": "<p>The Division of Kennedy consists of:</p><ul><li>Boulia Shire Council, </li><li>Burke Shire Council, </li><li>Cassowary Coast Regional Council, </li><li>Charters Towers Regional Shire Council, </li><li>Cloncurry Shire Council, </li><li>Croydon Shire Council, </li><li>Doomadgee Aboriginal Shire Council, </li><li>Etheridge Shire Council, </li><li>Flinders Shire Council, </li><li>McKinlay Shire Council, </li><li>Mornington Shire Council, </li><li>Mt Isa City Council, </li><li>Richmond Shire Council, </li><li>Tablelands Regional Council, </li><li>Yarrabah Aboriginal Shire Council, </li><li>part of the Burdekin Shire Council, </li><li>part of the Cairns Regional Council, </li><li>part of the Carpentaria Shire Council, </li><li>part of the Hinchinbrook Shire Council, </li><li>part of the Mareeba Shire Council, and </li><li>part of the Townsville City Council.</li></ul>",
     "Area": 567377.0,
@@ -4303,7 +4261,7 @@
   },
   {
     "Name": "Leichhardt",
-    "ShortName": "Leichhardt",
+    "ShortName": "leichhardt",
     "State": "QLD",
     "Description": "<p>The Division of Leichhardt consists of:</p><ul><li>Aurukun Shire Council, </li><li>Cook Shire Council, </li><li>Douglas Shire Council, </li><li>Hope Vale Aboriginal Shire Council, </li><li>Kowanyama Aboriginal Shire Council, </li><li>Lockhart River Aboriginal Shire Council, </li><li>Mapoon Aboriginal Shire Council, </li><li>Napranum Aboriginal Shire Council, </li><li>Northern Peninsula Area Regional Council, </li><li>Pormpuraaw Aboriginal Shire Council, </li><li>Torres Shire Council, </li><li>Torres Strait Island Regional Council, </li><li>Weipa Town Council, </li><li>Wujal Wujal Aboriginal Shire Council,</li><li>part of the Cairns Regional Council, </li><li>part of the Carpentaria Shire Council, and </li><li>part of the Mareeba Shire Council.</li></ul>",
     "Area": 148559.0,
@@ -4369,7 +4327,7 @@
   },
   {
     "Name": "Lilley",
-    "ShortName": "Lilley",
+    "ShortName": "lilley",
     "State": "QLD",
     "Description": "<p>The Division of Lilley consists of:</p><ul><li>part of the Brisbane City Council, and </li><li>part of the Moreton Bay Regional Council.</li></ul>",
     "Area": 144.0,
@@ -4465,7 +4423,7 @@
   },
   {
     "Name": "Longman",
-    "ShortName": "Longman",
+    "ShortName": "longman",
     "State": "QLD",
     "Description": "<p>The Division of Longman consists of:</p><ul><li>part of the Moreton Bay Regional Council, </li><li>part of the Somerset Regional Council, and </li><li>part of the Sunshine Coast Regional Council.</li></ul>",
     "Area": 1237.0,
@@ -4501,7 +4459,7 @@
   },
   {
     "Name": "Maranoa",
-    "ShortName": "Maranoa",
+    "ShortName": "maranoa",
     "State": "QLD",
     "Description": "<p>The Division of Maranoa consists of:</p><ul><li>Balonne Shire Council, </li><li>Barcaldine Regional Council, </li><li>Barcoo Shire Council, </li><li>Blackall Tambo Regional Council, </li><li>Bulloo Shire Council, </li><li>Diamantina Shire Council, </li><li>Goondiwindi Regional Council, </li><li>Longreach Regional Council, </li><li>Maranoa Regional Council, </li><li>Murweh Shire Council, </li><li>Paroo Shire Council, </li><li>Quilpie Shire Council, </li><li>Western Downs Regional Council, </li><li>Winton Shire Council, </li><li>part of the South Burnett Regional Council, </li><li>part of the Southern Downs Regional Council, and </li><li>part of the Toowoomba Regional Council.</li></ul>",
     "Area": 729897.0,
@@ -4573,7 +4531,7 @@
   },
   {
     "Name": "McPherson",
-    "ShortName": "Mcpherson",
+    "ShortName": "mcpherson",
     "State": "QLD",
     "Description": "<p>The Division of McPherson consists of part of the Gold Coast City Council.</p>",
     "Area": 229.0,
@@ -4627,7 +4585,7 @@
   },
   {
     "Name": "Moncrieff",
-    "ShortName": "Moncrieff",
+    "ShortName": "moncrieff",
     "State": "QLD",
     "Description": "<p>The Division of Moncrieff consists of part of the Gold Coast City Council.</p>",
     "Area": 100.0,
@@ -4651,7 +4609,7 @@
   },
   {
     "Name": "Moreton",
-    "ShortName": "Moreton",
+    "ShortName": "moreton",
     "State": "QLD",
     "Description": "<p>The Division of Moreton consists of part of the Brisbane City Council.</p>",
     "Area": 109.0,
@@ -4717,7 +4675,7 @@
   },
   {
     "Name": "Oxley",
-    "ShortName": "Oxley",
+    "ShortName": "oxley",
     "State": "QLD",
     "Description": "<p>The Division of Oxley consists of:</p><ul><li>part of the Brisbane City Council,</li><li>part of the Ipswich City Council, and</li><li>part of the Logan City Council.</li></ul>",
     "Area": 159.0,
@@ -4765,7 +4723,7 @@
   },
   {
     "Name": "Petrie",
-    "ShortName": "Petrie",
+    "ShortName": "petrie",
     "State": "QLD",
     "Description": "<p>The Division of Petrie consists of:</p><ul><li>part of the Brisbane City Council, and</li><li>part of the Moreton Bay Regional Council.</li></ul>",
     "Area": 152.0,
@@ -4843,7 +4801,7 @@
   },
   {
     "Name": "Rankin",
-    "ShortName": "Rankin",
+    "ShortName": "rankin",
     "State": "QLD",
     "Description": "<p>The Division of Rankin consists of:</p><ul><li>part of the Brisbane City Council, and</li><li>part of the Logan City Council.</li></ul>",
     "Area": 131.0,
@@ -4873,7 +4831,7 @@
   },
   {
     "Name": "Ryan",
-    "ShortName": "Ryan",
+    "ShortName": "ryan",
     "State": "QLD",
     "Description": "<p>The Division of Ryan consists of:</p><ul><li>part of the Brisbane City Council, and</li><li>part of the Moreton Bay Regional Council.</li></ul>",
     "Area": 370.0,
@@ -4915,7 +4873,7 @@
   },
   {
     "Name": "Wide Bay",
-    "ShortName": "Wide-Bay",
+    "ShortName": "wide-bay",
     "State": "QLD",
     "Description": "<p>The Division of Wide Bay consists of:</p><ul><li>Cherbourg Aboriginal Shire Council, </li><li>Gympie Regional Council, </li><li>Noosa Shire Council, </li><li>part of the Fraser Coast Regional Council, </li><li>part of the South Burnett Regional Council, and </li><li>part of the Sunshine Coast Regional Council.</li></ul>",
     "Area": 14227.0,
@@ -4981,7 +4939,7 @@
   },
   {
     "Name": "Wright",
-    "ShortName": "Wright",
+    "ShortName": "wright",
     "State": "QLD",
     "Description": "<p>The Division of Wright consists of:</p><ul><li>Lockyer Valley Regional Council, </li><li>part of the Gold Coast City Council, </li><li>part of the Ipswich City Council, </li><li>part of the Logan City Council, </li><li>part of the Scenic Rim Regional Council, and </li><li>part of the Southern Downs Regional Council.</li></ul>",
     "Area": 7577.0,
@@ -4999,7 +4957,7 @@
   },
   {
     "Name": "Lingiari",
-    "ShortName": "Lingiari",
+    "ShortName": "lingiari",
     "State": "NT",
     "Description": "Lingiari covers the majority of the Northern Territory, with the exception of the Darwin Municipality and most of the Palmerston Municipality.<br> Lingiari includes the Territory of Cocos (Keeling) Islands and the Territory of Christmas Island.",
     "Area": 1348157.94,
@@ -5017,7 +4975,7 @@
   },
   {
     "Name": "Solomon",
-    "ShortName": "Solomon",
+    "ShortName": "solomon",
     "State": "NT",
     "Description": "Solomon covers the Darwin Municipality, the Palmerston Municipality (with the exception of the suburbs of Farrar, Johnston, Mitchell, Yarrawonga and Zuccoli), and the unincorporated areas of the Darwin Rates Act Area and East Arm.",
     "Area": 190.61,
@@ -5053,7 +5011,7 @@
   },
   {
     "Name": "Banks",
-    "ShortName": "Banks",
+    "ShortName": "banks",
     "State": "NSW",
     "Description": "Banks is bound by the Georges River in the south and west, the South Western Motorway in the north and King Georges Road, the Illawarra railway line, Jubilee Avenue the Princes Highway and Terry Street in the east. The main suburbs include Allawah, Carlton (part), Connells Point, East Hills, Lugarno, Mortdale, Oatley, Panania, Padstow, Padstow Heights, Hurstville Grove, Picnic Point, Revesby, Riverwood and South Hurstville.<br>This description reflects local government areas in existence in 2015.",
     "Area": 53.0,
@@ -5095,7 +5053,7 @@
   },
   {
     "Name": "Barton",
-    "ShortName": "Barton",
+    "ShortName": "barton",
     "State": "NSW",
     "Description": "Barton covers an area from Canterbury Road, Sydenham Bankstown Railway and the Good Railway in the north, to the Illawarra Railway line, Jubilee Avenue, Princess Highway and President Avenue in the south, Kingsgrove Road, the M5 and King Georges Road in the west to Cooks River and Botany Bay in the east. The main suburbs include Bexley, Brighton-Le-Sands, Campsie (part), Canterbury (part), Carlton (part), Earlwood, Hurlstone Park (part), Hurstville, Kingsgrove (part), Kyemagh, Marrickville (part), Rockdale, Tempe and Wolli Creek.<br>This description reflects local government areas in existence in 2015.",
     "Area": 40.0,
@@ -5185,7 +5143,7 @@
   },
   {
     "Name": "Bennelong",
-    "ShortName": "Bennelong",
+    "ShortName": "bennelong",
     "State": "NSW",
     "Description": "Bennelong covers an area from Ermington (part) and Melrose Park in the west, bounded by the Parramatta River in the south and Pittwater Road and the Lane Cove River in the east, with the M2 Motorway, Devlins Creek and Lane Cove River providing the northern boundary. Suburbs include Denistone, Epping, Gladesville (part), Macquarie Park, Meadowbank, Melrose Park, Putney, North Ryde, Ryde and parts of Carlingford (part).<br>This description reflects local government areas in existence in 2015.",
     "Area": 60.0,
@@ -5221,7 +5179,7 @@
   },
   {
     "Name": "Berowra",
-    "ShortName": "Berowra",
+    "ShortName": "berowra",
     "State": "NSW",
     "Description": "Berowra covers an area from Hawkesbury River in the north, to the M2, Pennant Hills Road and North Rocks Road in the South. Osborn and Normanhurst Rd and Main Northern Railway and Belmont Parade, Cockle and Cowan Creeks in the east, Hawkesbury, Bellbird and Cattai Creeks, Boundary Road, Taylor Street, High Road, Castle Hill Road, Main Northern Railway, Old Northern Road, Gilbert Road, Merrick Way, Gawin Court and Linksley Avenue in the west. Suburbs include Annangrove, Arcadia, Berowra, Brooklyn, Cattai, Cherrybrook, Cowan, Dangar Island, Galston, Glenorie, Hornsby (part), Maroota, Middle Dural, Mount Colah (part), Mount Kuring-gai, Pennant Hills, Westleigh, West Pennant Hills and Wisemans Ferry.<br>This description reflects local government areas in existence in 2015.",
     "Area": 786.0,
@@ -5257,7 +5215,7 @@
   },
   {
     "Name": "Blaxland",
-    "ShortName": "Blaxland",
+    "ShortName": "blaxland",
     "State": "NSW",
     "Description": "Blaxland is bordered by Georges River, Prospect Creek and Woodville Road on the west, along Boorea Street, St Hilliers Road, the Western Motorway, Duck River, Mackay Road, Bennett Road, Clyde Street, Dellwood Street, Blaxcell Street, Adam Street, Excelsior Street and Constance Street in the north. Follows Olympic Drive, Joseph Street, Rookwood and Stacey Street and Fairford Road on the east and along the South Western Motorway in the south. The main suburbs include Auburn (part), Bankstown (part), Berala, Chester Hill, Condell Park, Georges Hall, Guilford (part), Lidcombe (part), Milperra, South Grandville, Villawood and Yagoona.<br>This description reflects local government areas in existence in 2015.",
     "Area": 61.0,
@@ -5293,7 +5251,7 @@
   },
   {
     "Name": "Bradfield",
-    "ShortName": "Bradfield",
+    "ShortName": "bradfield",
     "State": "NSW",
     "Description": "Bradfield's border in the east follows Cowan Creek and Middle Harbour Creek to include the suburbs of North Turramurra, St Ives Chase, St Ives, East Killara, East Lindfield and Roseville Chase. The southern side is bordered by Scotts Creek, Eastern Valley Way, Warrane Rd, Victoria Avenue, Fullers Road and Lane Cove River. The western border moves northwest along the Shire of Ku-ring-gai to the Powerline Trail, Ku-ring-gai Chase Road, Belmont Parade, Main Northern Railway, Normanhurst Road and Osborn Road and includes West Lindfield, West Pymble, South Turramurra, Normanhurst (part), Waitara, Hornsby (part) and Asquith.<br>This description reflects local government areas in existence in 2015.",
     "Area": 101.0,
@@ -5335,7 +5293,7 @@
   },
   {
     "Name": "Calare",
-    "ShortName": "Calare",
+    "ShortName": "calare",
     "State": "NSW",
     "Description": "Calare covers an area from Lithgow in the east to Eugowra in the west, Wellington and Mid-Western Regional Councils in the north to Blayney Shire Council and Oberon Council in the south. The main cities and towns include Bathurst, Blayney, Canowindra, Eugowra, Gulgong, Kandos, Lithgow, Molong, Oberon, Orange, Mudgee, Portland, Rylstone, Wallerawang and Yeoval.<br>This description reflects local government areas in existence in 2015.",
     "Area": 32666.0,
@@ -5431,7 +5389,7 @@
   },
   {
     "Name": "Chifley",
-    "ShortName": "Chifley",
+    "ShortName": "chifley",
     "State": "NSW",
     "Description": "Chifley covers an area from South Creek in the north to the Great Western Highway in the south. The division is borded by Blacktown-Richmond Railway, Reservoir Road, Balmoral Street and Third Avenue in the East, South Creek and Ropes Creek in the West. Suburbs include: Arndell Park, Blacktown (part), Colebee, Dean Park, Doonside, Glendenning, Hassall Grove, Marayong, Marsden Park, Mount Druitt, Plumpton, Rooty Hill, Quakers Hill (part), Riverstone (part), Ropes Crossing, Shanes Park, Schofields (part), Tregear and Whalan.<br>This description reflects local government areas in existence in 2015.",
     "Area": 126.0,
@@ -5467,7 +5425,7 @@
   },
   {
     "Name": "Cook",
-    "ShortName": "Cook",
+    "ShortName": "cook",
     "State": "NSW",
     "Description": "Cook covers an area from Kurnell and Cronulla in the east to Sylvania and Gymea Bay in the west and from Kyle Bay, Monterey and Botany Bay in the north to Dents Creek and Hacking River in the south. Suburbs include Monterey, Beverley Park, Blakehurst, Burraneer, Caringbah, Carss Park, Cronulla, Greenhills Beach, Gymea, Gymea Bay, Kyle Bay, Kurnell, Lilli Pilli, Miranda, Sandringham, Sans Souci, Sylvania, Sylvania Waters, Taren Point and Yowie Bay.<br>This description reflects local government areas in existence in 2015.",
     "Area": 94.0,
@@ -5544,7 +5502,7 @@
   },
   {
     "Name": "Cowper",
-    "ShortName": "Cowper",
+    "ShortName": "cowper",
     "State": "NSW",
     "Description": "Cowper covers an area from Port Macquarie in the south to Coffs Harbour in the north. The main towns include Bellingen, Bowraville, Coffs Harbour, Crescent Head, Dorrigo, Gladstone, Hat Head, Kempsey, Macksville, Nambucca Heads, Sawtell, South West Rocks, Port Macquarie, Ulong and Urunga.<br>This description reflects local government areas in existence in 2015.",
     "Area": 7296.0,
@@ -5604,7 +5562,7 @@
   },
   {
     "Name": "Cunningham",
-    "ShortName": "Cunningham",
+    "ShortName": "cunningham",
     "State": "NSW",
     "Description": "Cunningham covers an area from Warrawong, Unanderra (part) and Farborough Heights in the south to Helensburgh in the north. The main towns include Balgownie, Bellambi, Bulli, Corrimal, Darkes Forest, Fairy Meadow, Farmborough Heights, Helensburgh, Maddens Plains, Mount Keira, Mount Kembla, Otford, Port Kembla, Scarborough, Stanwell Park, Unanderra (part), Warrawong and Wollongong.<br>This description reflects local government areas in existence in 2015.",
     "Area": 519.0,
@@ -5658,7 +5616,7 @@
   },
   {
     "Name": "Dobell",
-    "ShortName": "Dobell",
+    "ShortName": "dobell",
     "State": "NSW",
     "Description": "Dobell covers an area from Ravensdale in the north to Erina Heights in the south. The main towns include Bateau Bay, Berkeley Vale, Blue Haven, Chittaway Bay, Charmhaven, Dooralong, Erina Heights (part), Gorokan, Hamlyn Terrace, Jilliby, Kanwal, Killarney Vale, Kulnura (part), Lake Haven, Lisarow (part), Long Jetty, Magenta, Mardi, Narara (part), Niagara Park (part), Norah Head, Noraville, Ourimbah, Ravensdale, Tacoma, The Entrance, Toowoon Bay, Toukley, Tuggerah, Tuggerawong, Tumbi Umbi, Wallarah, Wamberal (part), Warnervale, Woongarrah, Wyoming, Wyong, Wyong Creek and Yarramalong.<br>This description reflects local government areas in existence in 2015.",
     "Area": 787.0,
@@ -5700,7 +5658,7 @@
   },
   {
     "Name": "Eden-Monaro",
-    "ShortName": "Eden-Monaro",
+    "ShortName": "eden-monaro",
     "State": "NSW",
     "Description": "Eden-Monaro covers an area from Yass, Murrumbateman and Bungendore in the north and south to the Victorian border, excluding the Australian Capital Territory. The main towns include Adaminaby, Adelong, Batlow, Bega, Berridale, Bodalla, Bombala, Braidwood, Bungendore, Cabramurra, Captains Flat, Cooma, Dalmeny, Delegate, Eden, Jindabyne, Merimbula, Murrumbateman, Narooma, Queanbeyan, Talbingo, Tathra, Tumbarumba, Tumut and Yass.<br>This description reflects local government areas in existence in 2015.",
     "Area": 41617.0,
@@ -5796,7 +5754,7 @@
   },
   {
     "Name": "Farrer",
-    "ShortName": "Farrer",
+    "ShortName": "farrer",
     "State": "NSW",
     "Description": "Farrer covers an area in southern New South Wales stretching along the Murray River from the Shire Councils of Greater Hume and Narrandera in the east to the South Australian border in the west and the Shire Councils of Wentworth, Balranald, Hay and Carrathool in the north. Farrer is made up of the Shires of Albury, Balranald, Berrigan, Carrathool, Conargo, Corowa, Deniliquin, Greater Hume, Griffith, Hay, Jerilderie, Leeton, Murray, Murrumbidgee, Narrandera, Urana, Wakool and Wentworth.<br>This description reflects local government areas in existence in 2015.",
     "Area": 126590.0,
@@ -5832,7 +5790,7 @@
   },
   {
     "Name": "Fowler",
-    "ShortName": "Fowler",
+    "ShortName": "fowler",
     "State": "NSW",
     "Description": "Fowler covers an area from Chipping Norton, Lansvale and Fairfiled East in the east to Liverpool, Bonnyrigg (part), Edensor Park and Abbotsbury in the west. The southern boundary extends south along Newbridge Road, Georges River, the Western Motorway, Liverpool Street, Calabro Avenue and Park Road. The northern boundary follows Fairfield Street, Pine Road, Prospect Creek, Orphan School Creek, King Road, Polding Street, Mimosa Road, The Horsley Drive, Cowpasture Road and part of the western boundary of Abbotsbury. Suburbs include Abbotsbury, Bonnyrigg (part), Bossley Park (part), Cabramatta, Cabramatta West, Canley Heights, Canley Vale, Carramar, Chipping Norton, Edensor park (part), Fairfield East, Greenfield Park (part), Lansvale, Liverpool, Mount Pritchard, Prairiewood (part), Wakeley and Warwick Farm.<br>This description reflects local government areas in existence in 2015.",
     "Area": 60.0,
@@ -5862,7 +5820,7 @@
   },
   {
     "Name": "Gilmore",
-    "ShortName": "Gilmore",
+    "ShortName": "gilmore",
     "State": "NSW",
     "Description": "Gilmore covers an area along the coast from Kiama in the north to Tuross Head in the south. Towns and suburbs include Bawley Point, Batemans Bay, Berry, Callala Bay, Cunjurong, Currarong, Fishermans Paradise, Gerroa, Kiama, Malua Bay, Mogo, Moruya, Nowra, Sussex Inlet, Tomerong, Tuross Head, and Ulladulla.<br>This description reflects local government areas in existence in 2015.",
     "Area": 6342.0,
@@ -5898,7 +5856,7 @@
   },
   {
     "Name": "Grayndler",
-    "ShortName": "Grayndler",
+    "ShortName": "grayndler",
     "State": "NSW",
     "Description": "Grayndler covers an area in the inner-southern Sydney metropolitan area. Bound by the Parramatta River in the north and the Sydenham Bankstown Railway line and the Goods Railway line in the south. To the east follows the Leichhardt Municipal Council boundary to Parramatta Road, along Kingston Road, Main Suburban Railway line and part of the Marrickville Council boundary. In the west follows Canterbury Road, Prospect Road, Liverpool Road, Frederick Street, Parramatta Road, Iron Cove Creek then along the western bank of Iron Cove. The main suburbs include Annandale, Balmain, Birchgrove, Canterbury (part), Dulwich Hill (part), Enmore, Haberfield, Hurlstone Park (part), Marickville (part), Rozelle, Stanmore, St. Peters, Summer Hill, Sydneham.<br>This description reflects local government areas in existence in 2015.",
     "Area": 32.0,
@@ -5946,7 +5904,7 @@
   },
   {
     "Name": "Greenway",
-    "ShortName": "Greenway",
+    "ShortName": "greenway",
     "State": "NSW",
     "Description": "Greenway covers an area from Prospect and Girraween in the south to Riverstone (part) and Vineyard (part) in the North. Suburbs and towns include Blacktown (part), Glenwood, Girraween, Kellyville Ridge, Kings Langley, Kings Park, Lalor Park, Parklea, Prospect, Quakers Hill (part), Riverstone (part), Rouse Hill (part), Schofields (part), Seven Hills, Stanhope Gardens and Vineyard (part).<br>This description reflects local government areas in existence in 2015.",
     "Area": 81.0,
@@ -5982,7 +5940,7 @@
   },
   {
     "Name": "Hughes",
-    "ShortName": "Hughes",
+    "ShortName": "hughes",
     "State": "NSW",
     "Description": "Hughes is bound by Georges River, Newbridge Road and Davy Robinson Drive in the north, Liverpool City Council and Sutherland Shire Council in the west and south, follows Georges River, Oyster Bay, Kareela Golf Course, Box Road, Princes Highway, Kingsway, Hotham Road, North West Arm Road, Dent Creek and the Hacking River in the east. The main suburbs include Alfords Point, Bangor, Barden Ridge, Bundeena, Como, Engadine, Grays Point, Heathcote, Illawong, Kareela, Kirrawee, Lucas Heights, Maianbar, Menai, Moorebank, Sandy Point, Sutherland (part), Waterfall and Wattle Grove.<br>This description reflects local government areas in existence in 2015.",
     "Area": 369.0,
@@ -6030,7 +5988,7 @@
   },
   {
     "Name": "Hume",
-    "ShortName": "Hume",
+    "ShortName": "hume",
     "State": "NSW",
     "Description": "Hume includes the entire Councils of Boorowa, Goulburn Mulwaree and Upper Lachlan and parts of Camden Council, Liverpool City Council, Wingecarribee Shire Council and Wollondilly Shire Council. Towns include Appin, Boorowa, Bundanoon, Camden Park, Colo Vale, Crookwell, Exeter, Goulburn, Gunning, Hill Top, Marulan, Menangle, Meryla, Oak Dale, Penrose, Taralga, Werai (part), Wingello (part) and Yerrinbool (part).<br>This description reflects local government areas in existence in 2015.",
     "Area": 17240.0,
@@ -6144,7 +6102,7 @@
   },
   {
     "Name": "Hunter",
-    "ShortName": "Hunter",
+    "ShortName": "hunter",
     "State": "NSW",
     "Description": "Hunter includes the Muswellbrook Shire Council, Singleton Council, Cessnock City Council (part) and Lake Macquarie City Council (part). The main towns include Broke, Cessnock, Denman, Mulbring, Muswellbrook, Paxton, Putty, Singleton, Widden and Wyee.<br>This description reflects local government areas in existence in 2015.",
     "Area": 10640.0,
@@ -6240,7 +6198,7 @@
   },
   {
     "Name": "Kingsford Smith",
-    "ShortName": "Kingsford-Smith",
+    "ShortName": "kingsford-smith",
     "State": "NSW",
     "Description": "Kingsford Smith covers an area from La Perouse in the south to Randwick and Coogee in the north. The main suburbs include Banksmeadow, Botany, Chifley, Clovelly (part), Coogee, Daceyville, Eastgardens, Eastlakes, Hillsdale, Kensington, Kingsford, La Perouse, Little Bay, Malabar, Maroubra, Mascot, Matraville, Pagewood, Phillip Bay, Port Botany, Randwick (part) and South Coogee.<br>This description reflects local government areas in existence in 2015.",
     "Area": 91.0,
@@ -6288,7 +6246,7 @@
   },
   {
     "Name": "Lindsay",
-    "ShortName": "Lindsay",
+    "ShortName": "lindsay",
     "State": "NSW",
     "Description": "Lindsay covers an area from Agnes Banks and Londonderry in the north to Mulgoa and Badgerys Creek (part) in the south, Colyton in the east and Leonay in the west. Suburbs include Anges Banks, Badgerys Creek (part), Berkshire Park, Cambridge Gardens, Castlereagh, Claremont Meadows, Colyton, Cranebrook, Emu Plains, Glenmore Park, Kingswood, Leonay, Llandilo, Luddenham, Mulgoa, Orchard Hills, Penrith, Regentville, St Marys, Werrington and Werrington County.<br>This description reflects local government areas in existence in 2015.",
     "Area": 339.0,
@@ -6330,7 +6288,7 @@
   },
   {
     "Name": "Lyne",
-    "ShortName": "Lyne",
+    "ShortName": "lyne",
     "State": "NSW",
     "Description": "Lyne covers an area from Ballengarra in the north to Paterson and Karuah in the south and inland to the western boundaries of the Shires of Greater Taree, Port Macquarie - Hastings, Gloucester, Dungog and Maitland (part). The main towns include Bonny Hills, Bulahdelah, Dungog, Forster, Gloucester, Gresford, Harrington, Hawks Nest, Lake Cathie, Lansdowne, Laurieton, Nabiac, North Haven, Old Bar, Paterson, Smiths Lake, Stroud, Taree and Wauchope.<br>This description reflects local government areas in existence in 2015.",
     "Area": 16099.0,
@@ -6378,7 +6336,7 @@
   },
   {
     "Name": "Macarthur",
-    "ShortName": "Macarthur",
+    "ShortName": "macarthur",
     "State": "NSW",
     "Description": "Macarthur covers an area from The Northern Road, Narellan Road, and the western border of the Campbelltown City Council in the west to the eastern border of the Shire of Campbelltown in the east. The northern boundary follows the northern border of the Camden Council and Campbelltown City Council, Campbelltown Road, Williamson and Henderson Roads. The southern boundary follows the southern boundary of the Campbelltown City Council. The main suburbs include Airds, Blairmount, Bradbury, Campbelltown, Catherine Field, Claymore, Currans Hill, Denham Court, Glen Alpine, Gilead, Harrington Park, Ingleburn, Leppington, Leumeah, Menangle Park, Minto, Oran Park, Raby, Rosemedow, St. Andrews, St. Helens Park and Wedderburn.<br>This description reflects local government areas in existence in 2015.",
     "Area": 363.0,
@@ -6450,7 +6408,7 @@
   },
   {
     "Name": "Mackellar",
-    "ShortName": "Mackellar",
+    "ShortName": "mackellar",
     "State": "NSW",
     "Description": "Mackellar covers an area from the northern part of Palm Beach, south to Dee Why and west to Duffys Forest. The main suburbs include Avalon, Bayview, Beacon Hill, Belrose, Bilgola Plateau, Church Point, Clareville, Collaroy, Cottage Point, Cromer, Davidson, Dee Why, Duffys Forest, Frenchs Forest (part), Forestville (part), Ingleside, Ku-Ring-Gai Chase, Mona Vale, Morning Bay, Narrabeen, Narraweena, Newport, Palm Beach, Scotland Island, Terrey Hills and Warriewood.<br>This description reflects local government areas in existence in 2015.",
     "Area": 233.0,
@@ -6486,7 +6444,7 @@
   },
   {
     "Name": "Macquarie",
-    "ShortName": "Macquarie",
+    "ShortName": "macquarie",
     "State": "NSW",
     "Description": "Macquarie covers an area from the Hawkesbury and Nepean Rivers in the east, the City Councils of Blue Mountains and Hawkesbury border in the west. The Wollemi and Yengo National Parks form the northern border and the Coxs River, Lake Burragorang and Warragamba River form the southern border. Suburbs and towns include: Bilpin, Blackheath, Central Macdonald, Faulconbridge, Glenbrook, Katoomba, Lower Portland (part), Mellong, Mogo Creek, Mount Victoria, Mount Wilson, Richmond, Sackville (part), St. Albans and Windsor.<br>This description reflects local government areas in existence in 2015.",
     "Area": 4374.0,
@@ -6594,7 +6552,7 @@
   },
   {
     "Name": "McMahon",
-    "ShortName": "McMahon",
+    "ShortName": "mcmahon",
     "State": "NSW",
     "Description": "McMahon is bound by South Creek in the west, the north boundary follows the Western Motorway, Ropes Creek and the Great Western Highway. The eastern boundary follows Centenary Road, Merrylands Road, Oxford Street, Woodville Road, Fairfield St, Pine Road, Prospect Creek and Orphan School Creek. The southern boundary follows King Road, Polding Street, Mimosa Road, The Horsley Road, Cowpasture Road, part of the western boundary of Abbotsbury, the westlink M7 motorway and Elizabeth Drive. Suburbs include Canley Vale, Eastern Creek, Fairfield, Fairfield West, Guildford (part), Huntingwood, Kemps Creek, Merrylands, Minchinbury, Mount Vernon, Old Guildford, Orchard Hills, Pemulwuy, Smithfield, South Wentworthville, St Clair, Wetherill Park, Woodpark and Yennora.<br>This description reflects local government areas in existence in 2015.",
     "Area": 168.0,
@@ -6624,7 +6582,7 @@
   },
   {
     "Name": "Mitchell",
-    "ShortName": "Mitchell",
+    "ShortName": "mitchell",
     "State": "NSW",
     "Description": "Mitchell covers an area from Nelson and Box Hill in the northwest to Northmead and North Rocks in the southeast. The main suburbs include Baulkham Hills, Beaumont Hills, Bella Vista, Box Hill, Castle Hill, Kellyville, Nelson, Northmead, North Rocks, Rouse Hill, Winston Hills and West Pennant Hills.<br>This description reflects local government areas in existence in 2015.",
     "Area": 101.0,
@@ -6672,7 +6630,7 @@
   },
   {
     "Name": "New England",
-    "ShortName": "New-England",
+    "ShortName": "new-england",
     "State": "NSW",
     "Description": "New England covers an area from the Queensland border in the north to Merriwa, Aberdeen and Scone in the south. The main towns include Aberdeen, Armidale, Ashford, Barraba, Bingara, Glenn Innes, Guyra, Inverell, Manilla, Merriwa, Murrurundi, Nundle, Quirindi, Satur, Scone, Tamworth, Tenterfield, Tingha, Urbenville and Walcha.<br>This description reflects local government areas in existence in 2015.",
     "Area": 66394.0,
@@ -6756,7 +6714,7 @@
   },
   {
     "Name": "Newcastle",
-    "ShortName": "Newcastle",
+    "ShortName": "newcastle",
     "State": "NSW",
     "Description": "Newcastle covers an area from the Hunter River and the Rail Trail in the north, Minmi in the west and Newcastle Link Road, Lake Road, Reservoir Road, Wallsend Road, Newcastle Inner City Bypass, the Main Northern Railway line, Marshall Street and Main Road in the south and the coast from Merewether to Stockton in the east. The main suburbs include Adamstown, Broadmeadow, Cardiff Heights, Carrington, Elermore Vale, Fletcher, Jesmond, Kooragang, Kotara, Lambton, Maryland, Merewether, Minmi, Newcastle, New Lambton, Sandgate, Shortland, Stockton, Waratah and Wallsend.<br>This description reflects local government areas in existence in 2015.",
     "Area": 171.0,
@@ -6804,7 +6762,7 @@
   },
   {
     "Name": "North Sydney",
-    "ShortName": "North-Sydney",
+    "ShortName": "north-sydney",
     "State": "NSW",
     "Description": "North Sydney covers an area from Sydney Harbour in the south to Fullers Road, Victoria Avenue, Warrane Road, Warrane Reserve, Eastern Valley Way and Scotts Creek in the north and from Middle Harbour, Wyong Road, Macpherson Street, Military Road, Falcon Street, Bent Street, Forsyth Park, Montpelier Street, Eaton Street, Rawson Street, Kurraba Road, Andersons Park and Neutral Bay in the east to Punt Road, Pittwater Road and Lane Cove River in the west. Suburbs include Artarmon, Castlecrag, Cremorne, Crows Nest, Greenwich, Henley, Hunters Hill, Kirribilli, Lane Cove, McMahons Point, Middle Cove, Naremburn, Northbridge, North Sydney, Riverview, Waverton, Willoughby and Woolwich.<br>This description reflects local government areas in existence in 2015.",
     "Area": 53.0,
@@ -6876,7 +6834,7 @@
   },
   {
     "Name": "Page",
-    "ShortName": "Page",
+    "ShortName": "page",
     "State": "NSW",
     "Description": "Page covers an area from Sapphire Beach in the south to Nimbin in the north on the coastal side, and from Nymboida in the south to the Queensland border on the inland side. The main towns include Casino, Dunoon, Evans Head, Grafton, Iluka, Kyogle, Lismore, Nimbin, Sapphire Beach and Wooli.<br>This description reflects local government areas in existence in 2015.",
     "Area": 19342.0,
@@ -6918,7 +6876,7 @@
   },
   {
     "Name": "Parkes",
-    "ShortName": "Parkes",
+    "ShortName": "parkes",
     "State": "NSW",
     "Description": "Parkes covers an area from the Queensland border in the North including Unincorporated NSW, the City Councils of Broken Hill and Dubbo and the Shire Councils of Central Darling, Cobar, Lachlan, Bogan, Bourke, Brewarrina, Walgett, Moree Plains, Narrabri, Coonamble, Warren, Narromine, Gilgandra, Warrumbungle, Gunnedah and part of Gwydir. The main towns include Bourke, Brewarrina, Broken Hill, Cobar, Condobolin, Coonabarabran, Coonamble, Dubbo, Gilgandra, Ivanhoe, Menindee, Moree, Narrabri, Nyngan, Tibooburra, Walgett, Warren and Wilcannia.<br>This description reflects local government areas in existence in 2015.",
     "Area": 393413.0,
@@ -6954,7 +6912,7 @@
   },
   {
     "Name": "Parramatta",
-    "ShortName": "Parramatta",
+    "ShortName": "parramatta",
     "State": "NSW",
     "Description": "Parramatta covers an area from Carlingford (part) and Rydalmere in the east to Toongabbie and South Wentworthville in the west. The main suburbs include Carlingford (part), Constitution Hill, Dundas, Granville, Harris Park, Holroyd, Merrylands, Mays Hill, Oatlands, Old Toongabbie, Parramatta, Pendle Hill, Rosehill, Rydalmere, Telopea, Toongabbie, South Wentworthville, Wentworthville and Westmead.<br>This description reflects local government areas in existence in 2015.",
     "Area": 57.0,
@@ -7044,7 +7002,7 @@
   },
   {
     "Name": "Paterson",
-    "ShortName": "Paterson",
+    "ShortName": "paterson",
     "State": "NSW",
     "Description": "Paterson extends from Neath, Kurri Kurri and Williamtown in the south, along the Hunter River and Port Stephens in the north and along the Hunter Expressway to the west. The main towns include Kurri Kurri, Maitland, Medowie, Neath, Nelson Bay, Raymond Terrace and Williamtown.<br>This description reflects local government areas in existence in 2015.",
     "Area": 1123.0,
@@ -7098,7 +7056,7 @@
   },
   {
     "Name": "Reid",
-    "ShortName": "Reid",
+    "ShortName": "reid",
     "State": "NSW",
     "Description": "Reid covers an area from the Parramatta River in the north, Drummoyne and Rodd Point in the east, Silverwater, Auburn (part) and Lidcombe (part) in the west and Strathfield, Burwood and Croydon in the south. The main suburbs include Abbotsford, Auburn (part), Burwood, Cabarita, Chiswick, Concord, Croydon, Drummoyne, Five Dock, Homebush, Lidcombe (part), Mortlake, Newington, Rodd Point, Russell Lea, Silverwater, Strathfield, Sydney Olympic Park and Wareemba.<br>This description reflects local government areas in existence in 2015.",
     "Area": 55.0,
@@ -7164,7 +7122,7 @@
   },
   {
     "Name": "Richmond",
-    "ShortName": "Richmond",
+    "ShortName": "richmond",
     "State": "NSW",
     "Description": "Richmond covers an area from the New South Wales/Queensland border in the north to Ballina and Pimlico in the south. The main towns include Ballina, Bangalow, Brunswick Heads, Burringbar, Byron Bay, Hastings Point, Kingscliff, Lennox Head, Mullumbimby, Murwillumbah, Suffolk Park, and Tweed Heads.<br>This description reflects local government areas in existence in 2015.",
     "Area": 2148.0,
@@ -7230,7 +7188,7 @@
   },
   {
     "Name": "Riverina",
-    "ShortName": "Riverina",
+    "ShortName": "riverina",
     "State": "NSW",
     "Description": "Riverina is located in the south of NSW and extends from Parkes, Cowra, Harden and Gundagai in the east to Ungarie, Ardlethan and Coolamon in the west and from Tullamore, Peak Hill and Parkes in the north to Lockhart, Tarcutta and Gundagai in the south. Towns include Ardlethan, Coolamon, Cootamundra, Cowra, Forbes, Grenfell, Gundagai, Harden, Junee, Parkes, Peak Hill, Tarcutta, Temora, Tullamore, Ungarie, Wagga Wagga, West Wyalong and Young.<br>This description reflects local government areas in existence in 2015.",
     "Area": 48988.0,
@@ -7338,7 +7296,7 @@
   },
   {
     "Name": "Robertson",
-    "ShortName": "Robertson",
+    "ShortName": "robertson",
     "State": "NSW",
     "Description": "Robertson covers an area from the Hawkesbury River and Broken Bay in the south, west to Gunderman, north along the Gosford City Council Boundary to Kulnura, then east and south along the Gosford City Council boundary until it crosses the main Northern Railway Line at Lisarow. South along the main Northern Railway line to North Gosford, then east along Glennie Street, Clyde Road, Carlton Road, The Entrance Road, Ocean View Drive and Wamberal Lagoon inlet to the coast. The main towns include Erina, Gosford, Gunderman, Kulnura, Mooney Mooney, Narara, Patonga, Somersby, Terrigal and Woy Woy.<br>This description reflects local government areas in existence in 2015.",
     "Area": 980.0,
@@ -7434,7 +7392,7 @@
   },
   {
     "Name": "Shortland",
-    "ShortName": "Shortland",
+    "ShortName": "shortland",
     "State": "NSW",
     "Description": "Shortland covers an area from Highfields, Cardiff and Boolaroo in the north to Budgewoi and San Remo in the south and is bounded on the east by the Pacific Ocean and on the west by Wallsend Road, Reservoir Road, Lowry Street, Main Road, Lake Macquarie, Wyee Road and Pacific Highway. The main suburbs include Belmont, Boolaroo, Budgewoi, Catherine Hill Bay, Cardiff, Caves Beach, Chain Valley Bay, Charlestown, Doyalson, Dudley, Eleebana, Gateshead, Gwandalan, Highfields, Hillsborough, Mannering Park, Redhead, San Remo, Speers Point, Swansea, Valentine and Windale.<br>This description reflects local government areas in existence in 2015.",
     "Area": 265.0,
@@ -7470,7 +7428,7 @@
   },
   {
     "Name": "Sydney",
-    "ShortName": "Sydney",
+    "ShortName": "sydney",
     "State": "NSW",
     "Description": "Sydney covers an area from Pyrmont, The Rocks and Potts Point (including Sydney Harbour) in the north to Rosebery in the south. Bounded in the east by the eastern border of Potts Point and Darlinghurst to Oxford Street, Flinders Street, South Dowling Street and Southern Cross Drive, the division extends to Glebe, Camperdown, Newtown and Erskineville in the west. The main suburbs include Camperdown, Darlinghurst (part), Erskineville, Glebe, Haymarket, Newtown, Potts Point, Pyrmont, Rosebery, Surry Hills, The Rocks, Waterloo and Woolloomooloo.<br>This description reflects local government areas in existence in 2015.",
     "Area": 44.0,
@@ -7506,7 +7464,7 @@
   },
   {
     "Name": "Warringah",
-    "ShortName": "Warringah",
+    "ShortName": "warringah",
     "State": "NSW",
     "Description": "Warringah covers an area from Neutral Bay, Mosman and Manly in the south to Curl Curl and Frenchs Forest (part) in the north. Bound by Middle Harbour, Military Road, Falcon Street, Bent Street, Forsyth Park, Montpelier Street, Eaton Street, Rawson Street, Kurraba Road, Anderson Park and Neutral Bay in the west. The main suburbs include Allambie Heights, Balgowlah, Brookvale, Cremorne Point, Curl Curl, Fairlight, Forestville (part), Frenchs Forest (part), Killarney Heights, Manly, Manly Vale, Mosman, Netural Bay, Queenscliff and Seaforth.<br>This description reflects local government areas in existence in 2015.",
     "Area": 68.0,
@@ -7566,7 +7524,7 @@
   },
   {
     "Name": "Watson",
-    "ShortName": "Watson",
+    "ShortName": "watson",
     "State": "NSW",
     "Description": "Watson covers an area from the Main Suburban Railway, Centenary Drive and the Hume Highway in the north to the South Western Motorway, Kingsgrove Road and Canterbury Road in the south. In the east by Old Canterbury Road and Prospect Road and in the west by Fairford Road, Stacey Street, Rookwood Road, Joseph Street and Olympic Dive. The main suburbs include Ashfield, Bankstown (part), Belfield, Belmore, Campsie, Canterbury (part), Chullora, Croydon Park, Enfiled, Greenacre, Kingsgrove, Lakemba, Mount Lewis, Punchbowl, Rookwood, Roselands and Strathfield South.<br>This description reflects local government areas in existence in 2015.",
     "Area": 47.0,
@@ -7614,7 +7572,7 @@
   },
   {
     "Name": "Wentworth",
-    "ShortName": "Wentworth",
+    "ShortName": "wentworth",
     "State": "NSW",
     "Description": "Wentworth covers an area from Elizabeth Bay along the southern shore of Sydney Harbour to Watsons Bay and down the coast to Clovelly. The western boundary runs along the eastern border of Potts Point and Darlinghurst to Oxford Street, Flinders Street, South Dowling Street and Dacey Avenue. The southern boundary follows Alison Road, King Street, Wentworth Street, Stanley Street, Avoca Street, Frenchmans Road, Clovelly Road, Walker Avenue and Bundock Park. The main suburbs include Bellevue Hill, Bondi, Clovelly (part), Darlinghurst (part), Darling Point, Dover Heights, Elizabeth Bay, Moore Park, Paddington, Point Piper, Rose Bay, Vaucluse, Watsons Bay and Waverley.<br>This description reflects local government areas in existence in 2015.",
     "Area": 38.0,
@@ -7692,7 +7650,7 @@
   },
   {
     "Name": "Werriwa",
-    "ShortName": "Werriwa",
+    "ShortName": "werriwa",
     "State": "NSW",
     "Description": "Werriwa covers an area from Badgerys Creek, Cecil Hills and Bonnyrigg (part) in the north, to Denham Court, Bardia, Macquarie Links and Macquarie Fields in the south. Bounded by the Georges River, South Western Motorway, Liverpool Street, Calabro Avenue, Hoxton Park Road and Maxwells Creek to the east and Bringelly Road, The Northern Road, the western boarder of Badgerys Creek and Oaky Creek to the west. The main suburbs include Ashcroft, Austral, Badgerys Creek, Bardia, Bonnyrigg Heights, Bringelly, Cartwright, Casula, Cecil Hills, Cecil Park, Denham Court, Edmondson Park, Elizabeth Hills, Glenfield, Green Valley, Heckenberg, Hinchinbrook, Horningsea Park, Hoxton Park, Long Point, Lurnea, Macquarie Fields, Macquarie Links, Prestons and West Hoxton.<br>This description reflects local government areas in existence in 2015.",
     "Area": 172.0,
@@ -7788,7 +7746,7 @@
   },
   {
     "Name": "Whitlam",
-    "ShortName": "Whitlam",
+    "ShortName": "whitlam",
     "State": "NSW",
     "Description": "Whitlam covers an area from Fitzroy Falls, Robertson and Dunmore in the south to Lake Avon, Alpine, Welby, Kembla Grange and Primbee in the north. In the east follows the coast from Primbee to Shell Cove and in the west Sutton Forest and Werai (part). The main localities include Alpine, Berrima, Bowral, Dapto, Dunmore, Fitzroy Falls, Kembla Grange, Mittagong, Moss Vale, Primbee, Robertson, Shellharbour, Sutton Forest, Unanderra, Welby and Werai (part).<br>This description reflects local government areas in existence in 2015.",
     "Area": 1331.0,
@@ -7818,7 +7776,7 @@
   },
   {
     "Name": "Brand",
-    "ShortName": "Brand",
+    "ShortName": "brand",
     "State": "WA",
     "Description": "Brand covers the Shire of Kwinana and the City of Rockingham including Garden Island. The main suburbs include Anketell, Baldivis, Bertram, Calista, Casuarina, Cooloongup, East Rockingham, Golden Bay, Hillman, Hope Valley, Karnup, Keralup (part), Kwinana Beach, Kwinana Town Centre, Leda, Mandogalup, Medina, Naval Base, Orelia, Parmelia, Peron, Port Kennedy, Postans, Rockingham, Safety Bay, Secret Harbour, Singleton, Shoalwater, The Spectacles, Waikiki, Wandi, Warnbro and Wellard.",
     "Area": 377.0,
@@ -7854,7 +7812,7 @@
   },
   {
     "Name": "Canning",
-    "ShortName": "Canning",
+    "ShortName": "canning",
     "State": "WA",
     "Description": "Canning covers an area from the south-east metropolitan areas of Perth to the adjoining rural areas in the east and south. It encompasses the Cities of Armadale (part) and Mandurah and the Shires of Boddington, Kalamunda (part), Murray, Serpentine-Jarrahdale and Waroona. It includes the boundary suburbs of Armadale (part), Ashendon, Bannister (part), Bedfordale, Byford, Canning Mills, Carmel, Crossman, Darling Downs, Gosnells (part), Hilbert (part), Hopeland, Jarrahdale, Keralup (part), Keysbrook, Lake Clifton, Lakelands, Lesley, Lower Hotham, Madora Bay, Mardella, Marradong, Martin, Mount Richon, Mount Wells, Nanga Brook, Oakford, Oldbury, Orange Grove, Pickering Brook, Preston Beach, Quindanning, Roleystone, Solus, Stake Hill, Upper Murray, Wagerup, Wungong (part), and Wuraming.",
     "Area": 6304.0,
@@ -7926,7 +7884,7 @@
   },
   {
     "Name": "Cowan",
-    "ShortName": "Cowan",
+    "ShortName": "cowan",
     "State": "WA",
     "Description": "Cowan covers an area from Tapping and Wanneroo in the north to Kiara and Lockridge in the south. The division covers the City of Joondalup, the City of Wanneroo and the City of Swan. It includes the suburbs of Alexander Heights, Ashby, Ballajura, Beechboro, Bennett Springs, Cullacabardee, Darch, Girrawheen, Gnangara, Greenwood, Hocking, Jandabup, Kiara, Kingsley (part), Koondoola, Landsdale, Lockridge, Madeley, Malaga, Marangaroo, Pearsall, Sinagra, Tapping, Wangara, Wanneroo, Warwick and Whiteman.",
     "Area": 180.0,
@@ -7968,7 +7926,7 @@
   },
   {
     "Name": "Curtin",
-    "ShortName": "Curtin",
+    "ShortName": "curtin",
     "State": "WA",
     "Description": "Curtin covers an area west of Perth, bordered by the Indian Ocean in the west and the Swan River in the south. The suburbs include Churchlands, City Beach, Claremont, Cottesloe, Crawley, Daglish, Dalkeith, Doubleview, Floreat, Glendalough, Herdsman, Innaloo, Jolimont, Karrakatta, Karrinyup (part), Mount Claremont, Mosman Park, Osborne Park (part), Nedlands, Peppermint Grove, Scarborough (part), Shenton Park, Swanbourne, Subiaco, West Leederville, Wembley, Wembley Downs and Woodlands.",
     "Area": 98.0,
@@ -8004,7 +7962,7 @@
   },
   {
     "Name": "Durack",
-    "ShortName": "Durack",
+    "ShortName": "durack",
     "State": "WA",
     "Description": "Durack covers a large area from Kununurra in the north to Quairading in the south and includes coastal islands. The division includes the Cities of Greater Geraldton and Karratha and the Shires of Broome, Carnarvon, Cunderdin, Dandaragan, Derby-West Kimberley, East Pilbara, Exmouth, Goomalling, Narembeen, Quairading, Sandstone, Shark Bay, Victoria Plains, Wiluna and Yilgarn.",
     "Area": 1629858.0,
@@ -8028,7 +7986,7 @@
   },
   {
     "Name": "Forrest",
-    "ShortName": "Forrest",
+    "ShortName": "forrest",
     "State": "WA",
     "Description": "Forrest covers an area in the south west corner of Western Australia from the Shire of Harvey in the north to the Shires of Augusta-Margaret River and Nannup in the south. The Division includes the cities of Bunbury and Busselton and the shires of Augusta-Margaret River, Capel, Dardanup, Donnybrook-Balingup, Harvey and Nannup.",
     "Area": 11072.0,
@@ -8082,7 +8040,7 @@
   },
   {
     "Name": "Fremantle",
-    "ShortName": "Fremantle",
+    "ShortName": "fremantle",
     "State": "WA",
     "Description": "Fremantle covers the Cities of Cockburn, Fremantle and Melville (part) and the town of East Fremantle. It is situated south west of Perth and includes Rottnest Island. The suburbs include Atwell, Aubin Grove, Banjup, Beaconsfield, Beeliar, Bibra Lake, Coolbellup, Coogee, Cockburn Central, East Fremantle, Fremantle, Hamilton Hill, Hammond Park, Henderson, Hilton, Jandakot, Kardinya (part), Leeming (part), Munster, North Coogee, North Fremantle, North Lake, O'Connor, Palmyra, Samson, South Fremantle, South Lake, Spearwood, Success, Wattleup, White Gum Valley and Yangebup.",
     "Area": 196.0,
@@ -8172,7 +8130,7 @@
   },
   {
     "Name": "Hasluck",
-    "ShortName": "Hasluck",
+    "ShortName": "hasluck",
     "State": "WA",
     "Description": "Hasluck covers the Shires of Mundaring and Kalamunda (part), and the Cities of Gosnells (part) and Swan (part). It includes the suburbs of Bailup, Beckenham, Beechina, Bickley, Caversham, Forrestfield (part), Gidgegannup, Gorrie, Guildford, Hazelmere, Helena Valley, Jane Brook, Kalamunda, Kenwick, Lesmurdie, Maddington, Maida Vale, Malmalling, Middle Swan (part), Midland, Red Hill (part), Reservoir, Sawyers Valley, South Guildford (part), Stratton, The Lakes, Viveash, Walliston, Wattle Grove, and Wooroloo.",
     "Area": 1192.0,
@@ -8208,7 +8166,7 @@
   },
   {
     "Name": "Moore",
-    "ShortName": "Moore",
+    "ShortName": "moore",
     "State": "WA",
     "Description": "Moore contains most of the City of Joondalup and a small portion of the City of Wanneroo. It includes the suburbs of Burns Beach, Connolly, Craigie, Currambine, Duncraig, Edgewater, Greenwood, Heathridge, Hillarys, Iluka, Joondalup, Kallaroo, Kingsley (part), Kinross, Marmion, Mullaloo, Ocean Reef, Padbury, Sorrento and Woodvale.",
     "Area": 90.0,
@@ -8274,7 +8232,7 @@
   },
   {
     "Name": "Burt",
-    "ShortName": "Burt",
+    "ShortName": "burt",
     "State": "WA",
     "Description": "Burt covers parts of the Cities of Armadale, Canning and Gosnells. The division is constructed from suburbs in the south-east metropolitan areas of Perth including the suburbs of Armadale (part), Brookdale, Camillo, Canning Vale, Champion Lakes, Forrestdale, Gosnells (part), Harrisdale, Haynes, Hilbert (part), Huntingdale, Kelmscott, Langford, Mount Nasura, Piara Waters, Seville Grove, Southern River, Thornlie and Wungong (part).",
     "Area": 172.0,
@@ -8292,7 +8250,7 @@
   },
   {
     "Name": "O'Connor",
-    "ShortName": "OConnor",
+    "ShortName": "oconnor",
     "State": "WA",
     "Description": "O'Connor covers a large area from the Shire of Ngaanyatjarraku in the north to the Shire of Dundas in the south following the coast west to Manjimup. The Division includes the Cities of Albany and Kalgoorlie-Boulder, and the Shires of Boyup Brook, Bridgetown-Greenbushes, Brookton, Collie, Coolgardie, Corrigin, Denmark, Dundas, Esperance, Kondinin, Laverton, Manjimup, Ngaanyatjarraku, Wandering and Williams.",
     "Area": 868576.0,
@@ -8322,7 +8280,7 @@
   },
   {
     "Name": "Pearce",
-    "ShortName": "Pearce",
+    "ShortName": "pearce",
     "State": "WA",
     "Description": "Pearce contains all of the Shires of Beverly, Chittering, Gingin, Northam, Toodyay and York and parts of the Cities of Swan and Wanneroo. The Division includes the suburbs of Aveley, Banksia Grove, Baskerville, Brabham, Brigadoon, Bullsbrook, Carramar, Clarkson, Dayton, Ellenbrook, Henley Brook, Herne Hill, Lexia, Mariginiup, Melaleuca, Middle Swan (part), Mindarie, Morangup, Neerabup, Red Hill (part), Tamala Park, West Swan and Wundowie.",
     "Area": 13250.0,
@@ -8352,7 +8310,7 @@
   },
   {
     "Name": "Perth",
-    "ShortName": "Perth",
+    "ShortName": "perth",
     "State": "WA",
     "Description": "Perth is bordered by the Swan River to the south and east, the Mitchell Freeway and Kings Park to the west and the Cities of Vincent and Bassendean, the suburbs of Coolbinia (part), Menora, Inglewood (part), Bedford, Morley(part) and Noranda to the north. Suburbs include Ashfield, Bassendean, Bayswater, Bedford, Coolbinia (part), Dianella (part), East Perth, Eden Hill, Embleton, Highgate, Inglewood, Kings Park, Leederville, Maylands, Menora, Morley (part), Mount Hawthorn, Mount Lawley, Noranda, Northbridge, North Perth, Perth and West Perth.",
     "Area": 80.0,
@@ -8431,7 +8389,7 @@
   },
   {
     "Name": "Stirling",
-    "ShortName": "Stirling",
+    "ShortName": "stirling",
     "State": "WA",
     "Description": "Stirling contains the majority of the City of Stirling and a small portion of the City of Bayswater. Suburbs include Balcatta, Balga, Carine, Dianella (part), Gwelup, Hamersley, Joondanna, Karrinyup (part), Mirrabooka, Morley (part), Nollamara, North Beach, Osborne park (part), Scarborough (part), Stirling, Trigg, Tuart Hill, Watermans Bay, Westminster and Yokine.",
     "Area": 74.0,
@@ -8491,7 +8449,7 @@
   },
   {
     "Name": "Swan",
-    "ShortName": "Swan",
+    "ShortName": "swan",
     "State": "WA",
     "Description": "Swan is bordered by the Swan River in the north and west, the Canning River and the City of Canning in the south, and the Roe Highway, Great Eastern Highway and Perth Airport in the east. Suburbs include Ascot, Belmont, Burswood, Bentley, Cannington, Carlisle, Cloverdale, Como, East Cannington, East Victoria Park, Forrestfield (part), High Wycombe, Karawara, Kensington, Kewdale, Lathlain, Manning, Redcliffe, Rivervale, Perth Airport, Queens Park, Salter Point, South Guildford (part), South Perth, St James, Victoria Park, Waterford, Welshpool and Wilson.",
     "Area": 134.0,
@@ -8599,7 +8557,7 @@
   },
   {
     "Name": "Tangney",
-    "ShortName": "Tangney",
+    "ShortName": "tangney",
     "State": "WA",
     "Description": "Tangney is bordered by the Swan and Canning Rivers to the north and east. It contains most of the City of Melville, a part of the City of Canning and a small portion of the City of Cockburn. The suburbs include Alfred Cove, Applecross, Ardross, Attadale, Bateman, Bicton, Booragoon, Brentwood, Bull Creek, Ferndale, Kardinya (part), Leeming (part), Lynwood, Melville, Mount Pleasant, Murdoch, Myaree, Parkwood, Riverton, Rossmoyne, Shelley, Willagee, Willetton and Winthrop.",
     "Area": 83.0,

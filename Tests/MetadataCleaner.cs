@@ -17,7 +17,7 @@ static class MetadataCleaner
             var stateFromProperties = GetState(feature, state);
             var area = (double) feature.Properties["Area_SqKm"];
 
-            var shortName = electorate.Replace(" ", "-").Replace("'", "");
+            var shortName = electorate.ToLowerInvariant().Replace(" ", "-").Replace("'", "");
             feature.Properties.Clear();
             feature.Properties["electorateName"] = electorate;
             feature.Properties["electorateShortName"] = shortName;

@@ -26,28 +26,28 @@ public class MapsLoaderTests
     public void Load2016State()
     {
         var data = MapsLoader.LoadState2016Map(State.ACT);
-        ObjectApprover.VerifyWithJson(data);
+        ObjectApprover.VerifyWithJson(data.Substring(0,200));
     }
 
     [Fact]
     public void LoadFutureState()
     {
         var data = MapsLoader.LoadStateFutureMap(State.ACT);
-        ObjectApprover.VerifyWithJson(data);
+        ObjectApprover.VerifyWithJson(data.Substring(0,200));
     }
 
     [Fact]
     public void Load2016Electorate()
     {
         var data = MapsLoader.LoadElectorateFutureMap("fenner");
-        ObjectApprover.VerifyWithJson(data);
+        ObjectApprover.VerifyWithJson(data.Substring(0,200));
     }
 
     [Fact]
     public void LoadFutureElectorate()
     {
         var data = MapsLoader.LoadElectorateFutureMap("fenner");
-        ObjectApprover.VerifyWithJson(data);
+        ObjectApprover.VerifyWithJson(data.Substring(0,200));
     }
 
     [Fact]
@@ -56,7 +56,7 @@ public class MapsLoaderTests
         MapsLoader.LoadAll();
         ObjectApprover.VerifyWithJson(new
         {
-            FutureElectorateMapsCount = MapsLoader.LoadedFutureElectorateMaps.Count,
+            LoadedFutureElectorateMapsCount = MapsLoader.LoadedFutureElectorateMaps.Count,
             LoadedFutureStateMapsCount = MapsLoader.LoadedFutureStateMaps.Count,
             Loaded2016ElectorateMapsCount = MapsLoader.Loaded2016ElectorateMaps.Count,
             Loaded2016StateMapsCount = MapsLoader.Loaded2016StateMaps.Count,

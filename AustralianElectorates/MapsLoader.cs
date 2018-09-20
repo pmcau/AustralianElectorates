@@ -52,7 +52,7 @@ namespace AustralianElectorates
 
         public static string LoadState2016Map(State state)
         {
-            return cacheFuture.GetOrAdd($@"2016\{state.ToString().ToLowerInvariant()}", Inner);
+            return cache2016.GetOrAdd($@"2016\{state.ToString().ToLowerInvariant()}", Inner);
         }
 
         public static string LoadAustralia2016Map()
@@ -96,24 +96,24 @@ namespace AustralianElectorates
             {
                 foreach (var entry in archive.Entries)
                 {
-                    var key = entry.Name.Split('.').First();
+                    var key = entry.FullName.Split('.').First();
                     var mapString = ReadString(entry);
-                    if (key.StartsWith("Future/Electorates"))
+                    if (key.StartsWith(@"Future\Electorates"))
                     {
                         cacheFuture[key] = mapString;
                         continue;
                     }
-                    if (key.StartsWith("2016/Electorates"))
+                    if (key.StartsWith(@"2016\Electorates"))
                     {
                         cache2016[key] = mapString;
                         continue;
                     }
-                    if (key=="2016/australia")
+                    if (key==@"2016\australia")
                     {
                         australia2016 = mapString;
                         continue;
                     }
-                    if (key=="Future/australia")
+                    if (key==@"Future\australia")
                     {
                         australiaFuture = mapString;
                         continue;
@@ -134,10 +134,9 @@ namespace AustralianElectorates
             }
         }
 
-        private static State ParseState(string key)
+        static State ParseState(string key)
         {
-            var state = (State) Enum.Parse(typeof(State), key.Split('/')[1], true);
-            return state;
+            return (State) Enum.Parse(typeof(State), key.Split('\\')[1], true);
         }
 
         static string ReadString(ZipArchiveEntry entry)
