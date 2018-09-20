@@ -1,12 +1,16 @@
 ﻿using System.Collections.Generic;
+using System.IO;
+using System.IO.Compression;
+using System.Reflection;
 
 namespace AustralianElectorates
 {
     public static class DataLoader
     {
+        static Assembly assembly;
         static DataLoader()
         {
-            var assembly = typeof(DataLoader).Assembly;
+            assembly = typeof(DataLoader).Assembly;
             using (var stream = assembly.GetManifestResourceStream("electorates.json"))
             {
                 Electorates = Serializer.Deserialize<List<Electorate>>(stream);
@@ -21,6 +25,22 @@ namespace AustralianElectorates
         {
             FutureMaps.LoadAll();
             CurrentMaps.LoadAll();
+        }
+
+        public static void Export(string directory)
+        {
+            Guard.AgainstNull(directory,nameof(directory));
+            using (var stream = assembly.GetManifestResourceStream("electorates.json"))
+            using (var target = File.Create(Path.Combine(directory, "electorates.json")))
+            {
+                stream.CopyTo(target);
+            }
+
+            using (var stream = assembly.GetManifestResourceStream("Maps.zip"))
+            using (var archive = new ZipArchive(stream))
+            {
+                archive.ExtractToDirectory(directory);
+            }
         }
     }
 }

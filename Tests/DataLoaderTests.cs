@@ -1,4 +1,7 @@
+using System;
+using System.IO;
 using System.Linq;
+using ApprovalTests;
 using AustralianElectorates;
 using ObjectApproval;
 using Xunit;
@@ -20,6 +23,22 @@ public class DataLoaderTests
         var dataFuture = DataLoader.FutureMaps.GetAustralia();
         Assert.NotEmpty(dataFuture);
         Assert.NotNull(dataFuture);
+    }
+
+    [Fact]
+    public void Export()
+    {
+        var directory = Path.Combine(Environment.CurrentDirectory,"export");
+        Directory.CreateDirectory(directory);
+        try
+        {
+            DataLoader.Export(directory);
+            Approvals.Verify(Directory.EnumerateFiles(directory,"*.*",SearchOption.AllDirectories).Count());
+        }
+        finally
+        {
+            Directory.Delete(directory,true);
+        }
     }
 
     [Fact]
