@@ -1,1 +1,6 @@
-﻿ 
+﻿{
+  "LoadedFutureElectorateMapsCount": 152,
+  "LoadedFutureStateMapsCount": 8,
+  "Loaded2016ElectorateMapsCount": 151,
+  "Loaded2016StateMapsCount": 8
+}
