@@ -11,6 +11,8 @@ public class Sync
 {
     static List<int> percents;
 
+    private static Dictionary<string, List<string>> electoratesByYear = new Dictionary<string, List<string>>();
+
     static Dictionary<State, HashSet<string>> electorateNames = new Dictionary<State, HashSet<string>>
     {
         {State.ACT, new HashSet<string>()},
@@ -49,32 +51,34 @@ public class Sync
 
         await Get2016();
 
-
         await FutureToCountry.Run();
 
-        foreach (var directory in Directory.EnumerateDirectories(DataLocations.MapsPath))
+        foreach (var yearPath in Directory.EnumerateDirectories(DataLocations.MapsPath))
         {
-            WriteOptimised(directory);
+            var electorates = new List<string>();
+            electoratesByYear.Add(Path.GetFileName(yearPath), electorates);
+            WriteOptimised(yearPath);
 
-            foreach (var australiaPath in Directory.EnumerateFiles(directory, "australia*"))
+            foreach (var australiaPath in Directory.EnumerateFiles(yearPath, "australia*"))
             {
                 var australiaFeatures = JsonSerializer.DeserializeGeo(australiaPath);
 
-                var electoratesDirectory = Path.Combine(directory, "Electorates");
+                var electoratesDirectory = Path.Combine(yearPath, "Electorates");
                 Directory.CreateDirectory(electoratesDirectory);
                 foreach (var state in states)
                 {
                     var lower = state.ToString().ToLower();
                     var featureCollectionForState = australiaFeatures.FeaturesCollectionForState(state);
                     var suffix = Path.GetFileName(australiaPath).Replace("australia", "");
-                    var stateJson = Path.Combine(directory, $"{lower}{suffix}");
+                    var stateJson = Path.Combine(yearPath, $"{lower}{suffix}");
                     JsonSerializer.SerializeGeo(featureCollectionForState, stateJson);
 
                     foreach (var electorateFeature in featureCollectionForState.Features)
                     {
-                        var electorate = (string)electorateFeature.Properties["electorateShortName"];
+                        var electorate = (string) electorateFeature.Properties["electorateShortName"];
                         var electorateNameList = electorateNames[state];
                         electorateNameList.Add(electorate);
+                        electorates.Add(electorate);
 
                         var electorateJsonPath = Path.Combine(electoratesDirectory, $"{electorate}{suffix}");
                         JsonSerializer.SerializeGeo(electorateFeature.ToCollection(), electorateJsonPath);
@@ -97,7 +101,7 @@ public class Sync
         var extractDirectory = Path.Combine(DataLocations.TempPath, "australia2016_extract");
         ZipFile.ExtractToDirectory(australia2016zip, extractDirectory);
 
-        MapToGeoJson.ConvertTab(australia2016, Path.Combine(extractDirectory,"COM_ELB.tab"));
+        MapToGeoJson.ConvertTab(australia2016, Path.Combine(extractDirectory, "COM_ELB.tab"));
 
         var featureCollection = JsonSerializer.Deserialize<FeatureCollection>(australia2016);
         featureCollection.FixBoundingBox();
@@ -137,11 +141,18 @@ public class Sync
     static async Task WriteElectoratesMetaData()
     {
         var electorates = new List<Electorate>();
+        var electorates2016 = electoratesByYear["2016"];
+        var electoratesFuture = electoratesByYear["Future"];
         foreach (var electoratePair in electorateNames)
         {
             foreach (var electorateName in electoratePair.Value)
             {
-                electorates.Add(await ElectoratesScraper.ScrapeElectorate(electorateName, electoratePair.Key));
+                var existIn2016 = electorates2016.Contains(electorateName);
+                var existInFuture = electoratesFuture.Contains(electorateName);
+                var electorate = await ElectoratesScraper.ScrapeElectorate(electorateName, electoratePair.Key);
+                electorate.ExistIn2016 = existIn2016;
+                electorate.ExistInFuture = existInFuture;
+                electorates.Add(electorate);
             }
         }
 

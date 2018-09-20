@@ -15,5 +15,7 @@ namespace AustralianElectorates
         public DateTime? DateGazetted { get; set; }
         public List<Member> Members { get; set; }
         public string DemographicRating { get; set; }
+        public bool ExistIn2016 { get; set; }
+        public bool ExistInFuture { get; set; }
     }
 }

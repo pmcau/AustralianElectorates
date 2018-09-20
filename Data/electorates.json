@@ -51,7 +51,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs"
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Fenner",
@@ -93,7 +95,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs"
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Bean",
@@ -105,7 +109,9 @@
     "NameDerivation": "Named after Charles Edwin Woodrow Bean, 1879-1968, Australia's official correspondent to the Australian Imperial Force in World War One, editor of the <em>Official History of Australia in the War of 1914-1918</em> and primary advocate to establish the Australian War Memorial.",
     "DateGazetted": "2018-07-13",
     "Members": [],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs"
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
+    "ExistIn2016": false,
+    "ExistInFuture": true
   },
   {
     "Name": "Bass",
@@ -219,7 +225,9 @@
         "Party": "PROT"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Braddon",
@@ -285,7 +293,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Denison",
@@ -351,7 +361,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": false
   },
   {
     "Name": "Franklin",
@@ -435,7 +447,9 @@
         "Party": "ANTI-SOC/LIB/NAT/CP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion"
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Lyons",
@@ -471,7 +485,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Clark",
@@ -483,7 +499,9 @@
     "NameDerivation": "Named in honour of Andrew Inglis Clark, 1848-1907, in recognition of his contributions to the political and legal systems which have had a lasting and perpetual impact on Australia through his involvement with Federation and the development of the Australian Constitution.",
     "DateGazetted": "2017-11-14",
     "Members": [],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": false,
+    "ExistInFuture": true
   },
   {
     "Name": "Adelaide",
@@ -579,7 +597,9 @@
         "Party": "PROT"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs"
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Barker",
@@ -645,7 +665,9 @@
         "Party": "PROT"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Boothby",
@@ -735,7 +757,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion"
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Grey",
@@ -813,7 +837,9 @@
         "Party": "FT/ALP/NAT"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Hindmarsh",
@@ -885,7 +911,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Kingston",
@@ -957,7 +985,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Makin",
@@ -987,7 +1017,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Mayo",
@@ -1017,7 +1049,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Port Adelaide",
@@ -1058,7 +1092,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "Inner Metropolitan"
+    "DemographicRating": "Inner Metropolitan",
+    "ExistIn2016": true,
+    "ExistInFuture": false
   },
   {
     "Name": "Sturt",
@@ -1112,7 +1148,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs"
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Wakefield",
@@ -1201,7 +1239,9 @@
         "Party": "PROT/ANTI-SOC"
       }
     ],
-    "DemographicRating": "Rural"
+    "DemographicRating": "Rural",
+    "ExistIn2016": true,
+    "ExistInFuture": false
   },
   {
     "Name": "Spence",
@@ -1213,7 +1253,9 @@
     "NameDerivation": "Named in honour of Catherine Helen Spence, 1825-1910. Spence was an advocate for female suffrage and electoral reform and was the first female political candidate in Australia when she stood (unsuccessfully) for a seat at the Federal Convention elections of 1897.",
     "DateGazetted": "2018-07-20",
     "Members": [],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion"
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
+    "ExistIn2016": false,
+    "ExistInFuture": true
   },
   {
     "Name": "Aston",
@@ -1249,7 +1291,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Ballarat",
@@ -1339,7 +1383,9 @@
         "Party": "PROT/LIB"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Batman",
@@ -1422,7 +1468,9 @@
         "Party": "PROT"
       }
     ],
-    "DemographicRating": "Inner Metropolitan"
+    "DemographicRating": "Inner Metropolitan",
+    "ExistIn2016": true,
+    "ExistInFuture": false
   },
   {
     "Name": "Bendigo",
@@ -1530,7 +1578,9 @@
         "Party": "PROT/IND PROT/LIB"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Bruce",
@@ -1572,7 +1622,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Calwell",
@@ -1596,7 +1648,9 @@
         "Party": "ALP/IND"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Casey",
@@ -1650,7 +1704,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Chisholm",
@@ -1704,7 +1760,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Corangamite",
@@ -1800,7 +1858,9 @@
         "Party": "PROT"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Corio",
@@ -1884,7 +1944,9 @@
         "Party": "PROT"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Deakin",
@@ -1950,7 +2012,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Dunkley",
@@ -1992,7 +2056,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Flinders",
@@ -2094,7 +2160,9 @@
         "Party": "FT"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Gellibrand",
@@ -2136,7 +2204,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Gippsland",
@@ -2202,7 +2272,9 @@
         "Party": "PROT"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Goldstein",
@@ -2238,7 +2310,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Gorton",
@@ -2256,7 +2330,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Higgins",
@@ -2298,7 +2374,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Holt",
@@ -2340,7 +2418,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Hotham",
@@ -2382,7 +2462,9 @@
         "Party": "LP/IND/DEM"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Indi",
@@ -2496,7 +2578,9 @@
         "Party": "PROT"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Isaacs",
@@ -2568,7 +2652,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Jagajaga",
@@ -2592,7 +2678,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Kooyong",
@@ -2646,7 +2734,9 @@
         "Party": "LIB"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "La Trobe",
@@ -2712,7 +2802,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Lalor",
@@ -2760,7 +2852,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Mallee",
@@ -2796,7 +2890,9 @@
         "Party": "CP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Maribyrnong",
@@ -2856,7 +2952,9 @@
         "Party": "PROT"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "McEwen",
@@ -2898,7 +2996,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "McMillan",
@@ -2969,7 +3069,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "Rural"
+    "DemographicRating": "Rural",
+    "ExistIn2016": true,
+    "ExistInFuture": false
   },
   {
     "Name": "Melbourne",
@@ -3023,7 +3125,9 @@
         "Party": "PROT"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Melbourne Ports",
@@ -3070,7 +3174,9 @@
         "Party": "PROT"
       }
     ],
-    "DemographicRating": "Inner Metropolitan"
+    "DemographicRating": "Inner Metropolitan",
+    "ExistIn2016": true,
+    "ExistInFuture": false
   },
   {
     "Name": "Menzies",
@@ -3094,7 +3200,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Murray",
@@ -3129,7 +3237,9 @@
         "Party": "CP"
       }
     ],
-    "DemographicRating": "Rural"
+    "DemographicRating": "Rural",
+    "ExistIn2016": true,
+    "ExistInFuture": false
   },
   {
     "Name": "Scullin",
@@ -3165,7 +3275,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Wannon",
@@ -3261,7 +3373,9 @@
         "Party": "FT"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Wills",
@@ -3309,7 +3423,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Cooper",
@@ -3321,7 +3437,9 @@
     "NameDerivation": "Named in honour of William Cooper, 1861-1941. Cooper was a Yorta Yorta man who as a spokesman for Aboriginal people called for direct representation in parliament, enfranchisement, land rights and federal control of Aboriginal affairs.",
     "DateGazetted": "2018-07-13",
     "Members": [],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": false,
+    "ExistInFuture": true
   },
   {
     "Name": "Fraser",
@@ -3333,7 +3451,9 @@
     "NameDerivation": "Named in honour of the Rt Hon. John Malcom Fraser AC CH, 1930-2015. Fraser was Prime Minister of Australia (1975-83) and a Member of the House of Representatives (1955-83).",
     "DateGazetted": "2018-07-13",
     "Members": [],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": false,
+    "ExistInFuture": true
   },
   {
     "Name": "Macnamara",
@@ -3345,7 +3465,9 @@
     "NameDerivation": "Named in honour of Dame Annie Jean Macnamara DBE, 1899-1968. Macnamara was a medical researcher and doctor who discovered there was more than one type of the polio virus and worked extensively with children suffering from poliomyelitis, training doctors and physiotherapists in the management of the disease.",
     "DateGazetted": "2018-07-13",
     "Members": [],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": false,
+    "ExistInFuture": true
   },
   {
     "Name": "Monash",
@@ -3357,7 +3479,9 @@
     "NameDerivation": "Named in honour of Sir John Monash CB(M) KCB(M) GCMG, 1865-1931. Monash was one of the foremost Allied military commanders of the First World War and was recognised for his outstanding contributions to the community.",
     "DateGazetted": "2018-07-13",
     "Members": [],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": false,
+    "ExistInFuture": true
   },
   {
     "Name": "Nicholls",
@@ -3369,7 +3493,9 @@
     "NameDerivation": "<p>In recognition of their significant contribution in advocating for Aboriginal rights and welfare, the electoral divison is jointly named in honour of:</p><ul><li>Sir Douglas Ralph Nicholls MBE(C) OBE(C) KCVO, 1906-88, a Yorta Yorta, Baraparapa, Dja Dja Wurrung, Jupagalk and Wergaia man, and</li><li>Lady Gladys Nicholls, 1906-81, a Baraparapa and Dja Dja Wurrung woman.</li></ul>",
     "DateGazetted": "2018-07-13",
     "Members": [],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": false,
+    "ExistInFuture": true
   },
   {
     "Name": "Blair",
@@ -3393,7 +3519,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities"
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Bonner",
@@ -3423,7 +3551,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion"
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Bowman",
@@ -3495,7 +3625,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion"
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Brisbane",
@@ -3579,7 +3711,9 @@
         "Party": "FT"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs"
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Capricornia",
@@ -3687,7 +3821,9 @@
         "Party": "IND"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities"
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Dawson",
@@ -3741,7 +3877,9 @@
         "Party": "CP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities"
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Dickson",
@@ -3777,7 +3915,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion"
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Fadden",
@@ -3813,7 +3953,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion"
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Fairfax",
@@ -3849,7 +3991,9 @@
         "Party": "NP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities"
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Fisher",
@@ -3903,7 +4047,9 @@
         "Party": "CP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities"
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Flynn",
@@ -3927,7 +4073,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities"
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Forde",
@@ -3969,7 +4117,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion"
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Griffith",
@@ -4047,7 +4197,9 @@
         "Party": "FLP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs"
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Groom",
@@ -4083,7 +4235,9 @@
         "Party": "NP"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities"
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Herbert",
@@ -4167,7 +4321,9 @@
         "Party": "ALP/NAT"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities"
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Hinkler",
@@ -4203,7 +4359,9 @@
         "Party": "NP"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities"
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Kennedy",
@@ -4257,7 +4415,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities"
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Leichhardt",
@@ -4323,7 +4483,9 @@
         "Party": "CP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities"
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Lilley",
@@ -4419,7 +4581,9 @@
         "Party": "LIB"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs"
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Longman",
@@ -4455,7 +4619,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities"
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Maranoa",
@@ -4527,7 +4693,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities"
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "McPherson",
@@ -4581,7 +4749,9 @@
         "Party": "CP"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities"
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Moncrieff",
@@ -4605,7 +4775,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities"
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Moreton",
@@ -4671,7 +4843,9 @@
         "Party": "IND LAB/ALP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs"
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Oxley",
@@ -4719,7 +4893,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion"
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Petrie",
@@ -4797,7 +4973,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion"
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Rankin",
@@ -4827,7 +5005,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion"
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Ryan",
@@ -4869,7 +5049,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion"
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Wide Bay",
@@ -4935,7 +5117,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities"
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Wright",
@@ -4953,7 +5137,9 @@
         "Party": "LNQ"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities"
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Lingiari",
@@ -4971,7 +5157,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Solomon",
@@ -5007,7 +5195,9 @@
         "Party": "CLP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Banks",
@@ -5049,7 +5239,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Barton",
@@ -5139,7 +5331,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Bennelong",
@@ -5175,7 +5369,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Berowra",
@@ -5211,7 +5407,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Blaxland",
@@ -5247,7 +5445,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Bradfield",
@@ -5289,7 +5489,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Calare",
@@ -5385,7 +5587,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Chifley",
@@ -5421,7 +5625,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Cook",
@@ -5498,7 +5704,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Cowper",
@@ -5558,7 +5766,9 @@
         "Party": "PROT"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Cunningham",
@@ -5612,7 +5822,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Dobell",
@@ -5654,7 +5866,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Eden-Monaro",
@@ -5750,7 +5964,9 @@
         "Party": "PROT/LIB/NAT"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Farrer",
@@ -5786,7 +6002,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Fowler",
@@ -5816,7 +6034,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Gilmore",
@@ -5852,7 +6072,9 @@
         "Party": "NP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Grayndler",
@@ -5900,7 +6122,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Greenway",
@@ -5936,7 +6160,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Hughes",
@@ -5984,7 +6210,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Hume",
@@ -6098,7 +6326,9 @@
         "Party": "PROT/IND"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Hunter",
@@ -6194,7 +6424,9 @@
         "Party": "PROT"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Kingsford Smith",
@@ -6242,7 +6474,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Lindsay",
@@ -6284,7 +6518,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Lyne",
@@ -6332,7 +6568,9 @@
         "Party": "CP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Macarthur",
@@ -6404,7 +6642,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Mackellar",
@@ -6440,7 +6680,9 @@
         "Party": "LP/IND"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Macquarie",
@@ -6548,7 +6790,9 @@
         "Party": "FT"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "McMahon",
@@ -6578,7 +6822,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Mitchell",
@@ -6626,7 +6872,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "New England",
@@ -6710,7 +6958,9 @@
         "Party": "PROT"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Newcastle",
@@ -6758,7 +7008,9 @@
         "Party": "ALP/FLP"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "North Sydney",
@@ -6830,7 +7082,9 @@
         "Party": "FT"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Page",
@@ -6872,7 +7126,9 @@
         "Party": "NP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Parkes",
@@ -6908,7 +7164,9 @@
         "Party": "NP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Parramatta",
@@ -6998,7 +7256,9 @@
         "Party": "FT/ANTI-SOC/LIB/NAT"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Paterson",
@@ -7052,7 +7312,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Reid",
@@ -7118,7 +7380,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Richmond",
@@ -7184,7 +7448,9 @@
         "Party": "PROT"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Riverina",
@@ -7292,7 +7558,9 @@
         "Party": "PROT"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Robertson",
@@ -7388,7 +7656,9 @@
         "Party": "FT/ANTI-SOC"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Shortland",
@@ -7424,7 +7694,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Sydney",
@@ -7460,7 +7732,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Warringah",
@@ -7520,7 +7794,9 @@
         "Party": "NAT"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Watson",
@@ -7568,7 +7844,9 @@
         "Party": "UAP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Wentworth",
@@ -7646,7 +7924,9 @@
         "Party": "FT"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Werriwa",
@@ -7742,7 +8022,9 @@
         "Party": "FT"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Whitlam",
@@ -7772,7 +8054,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Brand",
@@ -7808,7 +8092,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Canning",
@@ -7880,7 +8166,9 @@
         "Party": "CP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Cowan",
@@ -7922,7 +8210,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Curtin",
@@ -7958,7 +8248,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Durack",
@@ -7982,7 +8274,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Forrest",
@@ -8036,7 +8330,9 @@
         "Party": "CP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Fremantle",
@@ -8126,7 +8422,9 @@
         "Party": "FT"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Hasluck",
@@ -8162,7 +8460,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Moore",
@@ -8228,7 +8528,9 @@
         "Party": "CP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Burt",
@@ -8246,7 +8548,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "O'Connor",
@@ -8276,7 +8580,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities."
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Pearce",
@@ -8306,7 +8612,9 @@
         "Party": "LP"
       }
     ],
-    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion."
+    "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Perth",
@@ -8385,7 +8693,9 @@
         "Party": "ALP/LIB/NAT"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Stirling",
@@ -8445,7 +8755,9 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Swan",
@@ -8553,7 +8865,9 @@
         "Party": "PROT/WAP/LIB/NAT"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   },
   {
     "Name": "Tangney",
@@ -8613,6 +8927,8 @@
         "Party": "ALP"
       }
     ],
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs."
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "ExistIn2016": true,
+    "ExistInFuture": true
   }
 ]
