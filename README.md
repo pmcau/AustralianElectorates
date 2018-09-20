@@ -59,11 +59,11 @@ Below is the combinations for [Bass](https://www.aec.gov.au/profiles/tas/bass.ht
 
 | Size  | File name              | Simplification |
 | -----:| ---------------------- | --------------:|
-| 2.8MB | [Bass.geojson](/blob/master/Data/Maps/Future/TAS/Bass.geojson)           | none           |
-| 231KB | [Bass_20.geojson](/blob/master/Data/Maps/Future/TAS/Bass_20.geojson)        | 20%            |
-| 94KB  | [Bass_10.geojson](/blob/master/Data/Maps/Future/TAS/Bass_10.geojson)        | 20%            |
-| 46KB  | [Bass_05.geojson](/blob/master/Data/Maps/Future/TAS/Bass_05.geojson)         | 5%             |
-| 8KB   | [Bass_01.geojson](/blob/master/Data/Maps/Future/TAS/Bass_01.geojson)         | 1%             |
+| 2.8MB | [Bass.geojson](/blob/master/Data/Maps/Future/Electorates/Bass.geojson)       | none |
+| 231KB | [Bass_20.geojson](/blob/master/Data/Maps/Future/Electorates/Bass_20.geojson) | 20%  |
+| 94KB  | [Bass_10.geojson](/blob/master/Data/Maps/Future/Electorates/Bass_10.geojson) | 20%  |
+| 46KB  | [Bass_05.geojson](/blob/master/Data/Maps/Future/Electorates/Bass_05.geojson) | 5%   |
+| 8KB   | [Bass_01.geojson](/blob/master/Data/Maps/Future/Electorates/Bass_01.geojson) | 1%   |
 
 
 #### Simplification
@@ -78,13 +78,21 @@ The level of simplification is represented as a percent number. 20, 10 and 5. re
 
 The code in this repository is licensed under MIT.
 
-The content that is rendered is sourced from the [Australian Electoral Commision (AEC)](https://www.aec.gov.au/). See the [AEC Copyright](https://www.aec.gov.au/footer/Copyright.htm)  for more information on data usage.
+The content that is rendered is sourced from the [Australian Electoral Commission (AEC)](https://www.aec.gov.au/). See the [AEC Copyright](https://www.aec.gov.au/footer/Copyright.htm) for more information on data usage.
 
 ## Re-Generating the data
 
+Some tools are required for GIS operations.
+
+### ogr2ogr 
+
+Part of [Geospatial Data Abstraction Library (GDAL)](https://www.gdal.org/)
+
+ * Download https://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries
+
 ### MapShaper
 
-[MapShaper](https://github.com/mbloch/mapshaper/) is required for GIS operations.
+[MapShaper](https://github.com/mbloch/mapshaper/)
 
 Installation:
 
