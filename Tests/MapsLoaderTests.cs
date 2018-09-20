@@ -3,63 +3,63 @@ using AustralianElectorates;
 using ObjectApproval;
 using Xunit;
 
-public class MapsLoaderTests
+public class DataLoaderTests
 {
     [Fact]
     public void Electorates()
     {
-        ObjectApprover.VerifyWithJson(MapsLoader.Electorates.Select(x=>x.Name));
+        ObjectApprover.VerifyWithJson(DataLoader.Electorates.Select(x=>x.Name));
     }
 
     [Fact]
-    public void LoadAustraliaMaps()
+    public void GetAustralia()
     {
-        var dataCurrent = MapsLoader.Current.LoadAustralia();
+        var dataCurrent = DataLoader.CurrentMaps.GetAustralia();
         Assert.NotEmpty(dataCurrent);
         Assert.NotNull(dataCurrent);
-        var dataFuture = MapsLoader.Future.LoadAustralia();
+        var dataFuture = DataLoader.FutureMaps.GetAustralia();
         Assert.NotEmpty(dataFuture);
         Assert.NotNull(dataFuture);
     }
 
     [Fact]
-    public void MapsCurrentLoadStateMap()
+    public void GetCurrentState()
     {
-        var data = MapsLoader.Current.LoadState(State.ACT);
+        var data = DataLoader.CurrentMaps.GetState(State.ACT);
         ObjectApprover.VerifyWithJson(data.Substring(0,200));
     }
 
     [Fact]
-    public void FutureLoadState()
+    public void GetFutureState()
     {
-        var data = MapsLoader.Future.LoadState(State.ACT);
+        var data = DataLoader.FutureMaps.GetState(State.ACT);
         ObjectApprover.VerifyWithJson(data.Substring(0,200));
     }
 
     [Fact]
-    public void CurrentLoadElectorate()
+    public void GetCurrentElectorate()
     {
-        var data = MapsLoader.Current.LoadElectorate("fenner");
+        var data = DataLoader.CurrentMaps.GetElectorate("fenner");
         ObjectApprover.VerifyWithJson(data.Substring(0,200));
     }
 
     [Fact]
-    public void FutureLoadElectorate()
+    public void GetFutureElectorate()
     {
-        var data = MapsLoader.Future.LoadElectorate("fenner");
+        var data = DataLoader.FutureMaps.GetElectorate("fenner");
         ObjectApprover.VerifyWithJson(data.Substring(0,200));
     }
 
     [Fact]
     public void LoadAll()
     {
-        MapsLoader.LoadAll();
+        DataLoader.LoadAll();
         ObjectApprover.VerifyWithJson(new
         {
-            FutureLoadedElectorateMaps = MapsLoader.Future.LoadedElectorates.Count,
-            FutureLoadedStateMaps = MapsLoader.Future.LoadedStates.Count,
-            CurrentLoadedElectorateMaps = MapsLoader.Current.LoadedElectorates.Count,
-            CurrentLoadedStateMaps = MapsLoader.Current.LoadedStates.Count,
+            FutureLoadedElectorateMaps = DataLoader.FutureMaps.LoadedElectorates.Count,
+            FutureLoadedStateMaps = DataLoader.FutureMaps.LoadedStates.Count,
+            CurrentLoadedElectorateMaps = DataLoader.CurrentMaps.LoadedElectorates.Count,
+            CurrentLoadedStateMaps = DataLoader.CurrentMaps.LoadedStates.Count,
         });
     }
 }

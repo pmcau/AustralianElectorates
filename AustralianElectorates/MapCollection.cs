@@ -19,29 +19,29 @@ namespace AustralianElectorates
         public IReadOnlyDictionary<string, string> LoadedElectorates => electoratesCache;
         public IReadOnlyDictionary<State, string> LoadedStates => statesCache;
 
-        public MapCollection(string prefix)
+        internal MapCollection(string prefix)
         {
             this.prefix = prefix;
         }
 
         static MapCollection()
         {
-            assembly = typeof(MapsLoader).Assembly;
+            assembly = typeof(DataLoader).Assembly;
         }
 
-        public string LoadElectorate(string electorateName)
+        public string GetElectorate(string electorateName)
         {
             Guard.AgainstNullWhiteSpace(electorateName, nameof(electorateName));
             return electoratesCache.GetOrAdd($@"{prefix}\Electorates\{electorateName}", Inner);
         }
 
-        public string LoadState(State state)
+        public string GetState(State state)
         {
             var key = $@"{prefix}\{state.ToString().ToLowerInvariant()}";
             return statesCache.GetOrAdd(state, s => Inner(key));
         }
 
-        public string LoadAustralia()
+        public string GetAustralia()
         {
             if (australia == null)
             {

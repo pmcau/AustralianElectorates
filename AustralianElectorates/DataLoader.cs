@@ -2,11 +2,11 @@
 
 namespace AustralianElectorates
 {
-    public static class MapsLoader
+    public static class DataLoader
     {
-        static MapsLoader()
+        static DataLoader()
         {
-            var assembly = typeof(MapsLoader).Assembly;
+            var assembly = typeof(DataLoader).Assembly;
             using (var stream = assembly.GetManifestResourceStream("electorates.json"))
             {
                 Electorates = Serializer.Deserialize<List<Electorate>>(stream);
@@ -14,13 +14,13 @@ namespace AustralianElectorates
         }
 
         public static IReadOnlyList<Electorate> Electorates { get; }
-        public static MapCollection Current { get; } = new MapCollection("Current");
-        public static MapCollection Future { get; } = new MapCollection("Future");
+        public static MapCollection CurrentMaps { get; } = new MapCollection("Current");
+        public static MapCollection FutureMaps { get; } = new MapCollection("Future");
 
         public static void LoadAll()
         {
-            Future.LoadAll();
-            Current.LoadAll();
+            FutureMaps.LoadAll();
+            CurrentMaps.LoadAll();
         }
     }
 }

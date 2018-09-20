@@ -5,7 +5,7 @@
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">true</GeneratePackageOnBuild>
     <GenerateDocumentationFile Condition="'$(Configuration)'=='Release'">true</GenerateDocumentationFile>
-    <Description>Provides a .net wrapper around the Australian Electoral Commission (AEC) data https://www.geonames.org/).</Description>
+    <Description>Provides geojson maps and a .net wrapper around the Australian Electoral Commission (AEC) data (https://www.aec.gov.au/).</Description>
   </PropertyGroup>
 
   <ItemGroup>
