@@ -59,11 +59,11 @@ Below is the combinations for [Bass](https://www.aec.gov.au/profiles/tas/bass.ht
 
 | Size  | File name              | Simplification |
 | -----:| ---------------------- | --------------:|
-| 2.8MB | [Bass.geojson](/blob/master/Data/Maps/Future/Electorates/Bass.geojson)       | none |
-| 231KB | [Bass_20.geojson](/blob/master/Data/Maps/Future/Electorates/Bass_20.geojson) | 20%  |
-| 94KB  | [Bass_10.geojson](/blob/master/Data/Maps/Future/Electorates/Bass_10.geojson) | 20%  |
-| 46KB  | [Bass_05.geojson](/blob/master/Data/Maps/Future/Electorates/Bass_05.geojson) | 5%   |
-| 8KB   | [Bass_01.geojson](/blob/master/Data/Maps/Future/Electorates/Bass_01.geojson) | 1%   |
+| 2.8MB | [Bass.geojson](/Data/Maps/Future/Electorates/Bass.geojson)       | none |
+| 231KB | [Bass_20.geojson](/Data/Maps/Future/Electorates/Bass_20.geojson) | 20%  |
+| 94KB  | [Bass_10.geojson](/Data/Maps/Future/Electorates/Bass_10.geojson) | 20%  |
+| 46KB  | [Bass_05.geojson](/Data/Maps/Future/Electorates/Bass_05.geojson) | 5%   |
+| 8KB   | [Bass_01.geojson](/Data/Maps/Future/Electorates/Bass_01.geojson) | 1%   |
 
 
 #### Simplification
