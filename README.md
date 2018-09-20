@@ -57,17 +57,17 @@ Each of the above groupings have the following structure.
 
 Each maps has multiple variants based on simplification.
 
-With the two options combined, there are 10 different options for each map.
+With the two options combined, there are 5 different options for each map.
 
 Below is the combinations for [Bass](https://www.aec.gov.au/profiles/tas/bass.htm)
 
 | Size  | File name              | Simplification |
 | -----:| ---------------------- | --------------:|
-| 2.8MB | [Bass.geojson](/Data/Maps/Future/Electorates/bass.geojson)       | none |
-| 231KB | [Bass_20.geojson](/Data/Maps/Future/Electorates/bass_20.geojson) | 20%  |
-| 94KB  | [Bass_10.geojson](/Data/Maps/Future/Electorates/bass_10.geojson) | 20%  |
-| 46KB  | [Bass_05.geojson](/Data/Maps/Future/Electorates/bass_05.geojson) | 5%   |
-| 8KB   | [Bass_01.geojson](/Data/Maps/Future/Electorates/bass_01.geojson) | 1%   |
+| 2.8MB | [bass.geojson](/Data/Maps/Future/Electorates/bass.geojson)       | none |
+| 231KB | [bass_20.geojson](/Data/Maps/Future/Electorates/bass_20.geojson) | 20%  |
+| 94KB  | [bass_10.geojson](/Data/Maps/Future/Electorates/bass_10.geojson) | 20%  |
+| 46KB  | [bass_05.geojson](/Data/Maps/Future/Electorates/bass_05.geojson) | 5%   |
+| 8KB   | [bass_01.geojson](/Data/Maps/Future/Electorates/bass_01.geojson) | 1%   |
 
 
 #### Simplification
