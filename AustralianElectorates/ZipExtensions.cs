@@ -14,13 +14,13 @@ static class ZipExtensions
         foreach (var file in archive.Entries)
         {
             var completeFileName = Path.Combine(directory, file.FullName);
+            var fileDirectory = Path.GetDirectoryName(completeFileName);
+            Directory.CreateDirectory(fileDirectory);
+
             if (file.Name == "")
             {
-                // Assuming Empty for Directory
-                Directory.CreateDirectory(Path.GetDirectoryName(completeFileName));
                 continue;
             }
-
             file.ExtractToFile(completeFileName, true);
         }
     }

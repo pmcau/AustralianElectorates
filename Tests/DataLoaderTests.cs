@@ -28,16 +28,28 @@ public class DataLoaderTests
     [Fact]
     public void Export()
     {
-        var directory = Path.Combine(Environment.CurrentDirectory,"export");
+        InnerExport(false);
+    }
+
+    [Fact]
+    public void Export_overwrite()
+    {
+        InnerExport(true);
+    }
+
+    private static void InnerExport(bool overwrite)
+    {
+        var directory = Path.Combine(Environment.CurrentDirectory, "export");
         Directory.CreateDirectory(directory);
+        //IoHelpers.PurgeDirectoryRecursive(directory);
         try
         {
-            DataLoader.Export(directory);
-            Approvals.Verify(Directory.EnumerateFiles(directory,"*.*",SearchOption.AllDirectories).Count());
+            DataLoader.Export(directory,overwrite);
+            Approvals.Verify(Directory.EnumerateFiles(directory, "*.*", SearchOption.AllDirectories).Count());
         }
         finally
         {
-            Directory.Delete(directory,true);
+            Directory.Delete(directory, true);
         }
     }
 
