@@ -130,3 +130,8 @@ Installation:
 * [Install MapShaper globally](https://github.com/mbloch/mapshaper#installation) `npm install -g mapshaper`
 
 https://github.com/mbloch/mapshaper/wiki/Command-Reference
+
+
+## Icon
+
+<a href="https://thenounproject.com/term/gerrymandering/15219/" target="_blank">Gerrymandering</a> designed by <a href="https://thenounproject.com/Iconathon1" target="_blank">Iconathon</a> from The Noun Project
