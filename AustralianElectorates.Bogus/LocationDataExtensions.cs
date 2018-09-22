@@ -7,7 +7,7 @@ namespace AustralianElectorates.Bogus
 {
     public static class LocationDataExtensions
     {
-        public static ElectorateDataSet Electorates(this Faker faker)
+        public static ElectorateDataSet AustralianElectorates(this Faker faker)
         {
             return ContextHelper.GetOrSet(faker, () => new ElectorateDataSet());
         }

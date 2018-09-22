@@ -129,12 +129,12 @@ Debug.WriteLine(futureCanberraGeoJson);
 
 ```
 var faker = new Faker<Target>()
-    .RuleFor(u => u.RandomElectorate, (f, u) => f.Electorates().Electorate())
-    .RuleFor(u => u.RandomElectorateName, (f, u) => f.Electorates().Name())
-    .RuleFor(u => u.RandomCurrentMember, (f, u) => f.Electorates().CurrentMember())
-    .RuleFor(u => u.RandomCurrentMemberName, (f, u) => f.Electorates().CurrentMemberName())
-    .RuleFor(u => u.RandomMember, (f, u) => f.Electorates().Member())
-    .RuleFor(u => u.RandomMemberName, (f, u) => f.Electorates().MemberName());
+    .RuleFor(u => u.RandomElectorate, (f, u) => f.AustralianElectorates().Electorate())
+    .RuleFor(u => u.RandomElectorateName, (f, u) => f.AustralianElectorates().Name())
+    .RuleFor(u => u.RandomCurrentMember, (f, u) => f.AustralianElectorates().CurrentMember())
+    .RuleFor(u => u.RandomCurrentMemberName, (f, u) => f.AustralianElectorates().CurrentMemberName())
+    .RuleFor(u => u.RandomMember, (f, u) => f.AustralianElectorates().Member())
+    .RuleFor(u => u.RandomMemberName, (f, u) => f.AustralianElectorates().MemberName());
 var targetInstance = faker.Generate();
 ```
 

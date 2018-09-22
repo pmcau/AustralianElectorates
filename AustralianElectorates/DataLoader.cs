@@ -27,8 +27,13 @@ namespace AustralianElectorates
                 }
             }
 
-            AllMembers = Electorates.SelectMany(x => x.Members).ToList();
-            AllCurrentMembers = Electorates.Select(x => x.Members.First()).ToList();
+            AllMembers = Electorates
+                .SelectMany(x => x.Members)
+                .ToList();
+            AllCurrentMembers = Electorates
+                .Where(x=>x.Members.Any())
+                .Select(x => x.Members.First())
+                .ToList();
             InitNamed();
         }
 
