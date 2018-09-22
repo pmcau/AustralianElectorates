@@ -10,7 +10,7 @@
     <PackageReference Include="ApprovalTests" Version="3.0.16" />
     <PackageReference Include="ObjectApproval" Version="2.2.0" />
     <PackageReference Include="GeoJSON.Net" Version="1.1.68" />
-    <PackageReference Include="HtmlAgilityPack" Version="1.8.7" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.8.8" />
     <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="Xunit" Version="2.4.0" />

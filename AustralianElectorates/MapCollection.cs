@@ -69,7 +69,7 @@ namespace AustralianElectorates
 
         public static string GetElectorateShortName(string electorate)
         {
-            return electorate.ToLowerInvariant().Replace(" ", "-").Replace("'", "");
+            return electorate.Replace(" ", "-").Replace("'", "").ToLowerInvariant();
         }
 
         public void LoadAll()

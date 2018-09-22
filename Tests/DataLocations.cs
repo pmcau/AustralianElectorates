@@ -19,10 +19,12 @@ public static class DataLocations
         Directory.CreateDirectory(MapsCurrentPath);
         MapsCuratedPath = Path.GetFullPath(Path.Combine(DataPath, "MapsCurated"));
         Directory.CreateDirectory(MapsCuratedPath);
+        AustralianElectoratesProjectPath = Path.GetFullPath(Path.Combine(SlnPath, "AustralianElectorates"));
         MapsCuratedZipPath = Path.GetFullPath(Path.Combine(DataPath, "MapsCurated.zip"));
         FutureAustraliaJsonPath = Path.GetFullPath(Path.Combine(MapsPath, "Future/australia.geojson"));
     }
 
+    public static string AustralianElectoratesProjectPath;
     public static string MapsPath;
     public static string MapsCurrentPath;
     public static string MapsFuturePath;

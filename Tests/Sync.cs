@@ -57,7 +57,8 @@ public class Sync
         ProcessYear(DataLocations.MapsCurrentPath, electoratesCurrent);
         ProcessYear(DataLocations.MapsFuturePath, electoratesFuture);
 
-        await WriteElectoratesMetaData();
+        var electorates = await WriteElectoratesMetaData();
+        WriteNamedCs(electorates);
         Export.ExportElectorates();
         Zipper.ZipDir(DataLocations.MapsCuratedZipPath, DataLocations.MapsCuratedPath);
     }
@@ -140,7 +141,7 @@ public class Sync
         }
     }
 
-    static async Task WriteElectoratesMetaData()
+    static async Task<List<Electorate>> WriteElectoratesMetaData()
     {
         var electorates = new List<Electorate>();
         foreach (var electoratePair in electorateNames)
@@ -159,5 +160,45 @@ public class Sync
         var combine = Path.Combine(DataLocations.DataPath, "electorates.json");
         File.Delete(combine);
         JsonSerializer.Serialize(electorates, combine);
+        return electorates;
+    }
+
+    static void WriteNamedCs(List<Electorate> electorates)
+    {
+        var namedData = Path.Combine(DataLocations.AustralianElectoratesProjectPath, "DataLoader_named.cs");
+        File.Delete(namedData);
+
+        using (var writer = File.CreateText(namedData))
+        {
+            writer.WriteLine(@"
+// ReSharper disable IdentifierTypo
+using System.Linq;
+
+namespace AustralianElectorates
+{
+    public static partial class DataLoader
+    {");
+
+            writer.WriteLine(@"
+        static void InitNamed()
+        {");
+            foreach (var electorate in electorates)
+            {
+                var name = electorate.Name.Replace(" ", "").Replace("-", "").Replace("'", "");
+                writer.WriteLine($@"
+            {name} = Electorates.Single(x => x.Name == ""{electorate.Name}"");");
+            }
+            writer.WriteLine("        }");
+
+            foreach (var electorate in electorates)
+            {
+                var name = electorate.Name.Replace(" ", "").Replace("-", "").Replace("'", "");
+                writer.WriteLine($@"
+        public static Electorate {name} {{ get; private set;}}");
+            }
+
+            writer.WriteLine("    }");
+            writer.WriteLine("}");
+        }
     }
 }

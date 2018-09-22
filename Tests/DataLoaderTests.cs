@@ -74,7 +74,6 @@ public class DataLoaderTests
         ObjectApprover.VerifyWithJson(data.Substring(0,200));
     }
 
-
     [Fact]
     public void GetElectorateFull()
     {
@@ -86,6 +85,20 @@ public class DataLoaderTests
     public void GetFutureElectorate()
     {
         var data = DataLoader.FutureMaps.GetElectorate("fenner");
+        ObjectApprover.VerifyWithJson(data.Substring(0,200));
+    }
+
+    [Fact]
+    public void GetFutureElectorateExtension()
+    {
+        var data = DataLoader.Fenner.GetFutureMap();
+        ObjectApprover.VerifyWithJson(data.Substring(0,200));
+    }
+
+    [Fact]
+    public void GetCurrentElectorateExtension()
+    {
+        var data = DataLoader.Fenner.GetFutureMap();
         ObjectApprover.VerifyWithJson(data.Substring(0,200));
     }
 

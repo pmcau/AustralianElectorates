@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
 using System.Reflection;
 
 namespace AustralianElectorates
 {
-    public static class DataLoader
+    public static partial class DataLoader
     {
         static Assembly assembly;
 
@@ -16,6 +17,8 @@ namespace AustralianElectorates
             {
                 Electorates = Serializer.Deserialize<List<Electorate>>(stream);
             }
+
+            InitNamed();
         }
 
         public static IReadOnlyList<Electorate> Electorates { get; }
@@ -42,6 +45,26 @@ namespace AustralianElectorates
             {
                 archive.ExtractToDirectory(directory, overwrite);
             }
+        }
+
+        public static string GetCurrentMap(this Electorate electorate)
+        {
+            if (!electorate.ExistInCurrent)
+            {
+                throw new Exception($"Electorate '{electorate.Name}' does not have a current map");
+            }
+
+            return CurrentMaps.GetElectorate(electorate.ShortName);
+        }
+
+        public static string GetFutureMap(this Electorate electorate)
+        {
+            if (!electorate.ExistInFuture)
+            {
+                throw new Exception($"Electorate '{electorate.Name}' does not have a future map");
+            }
+
+            return CurrentMaps.GetElectorate(electorate.ShortName);
         }
     }
 }
