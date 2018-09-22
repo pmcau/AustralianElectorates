@@ -57,6 +57,6 @@ public class Target
     public Member RandomMember;
     public string RandomMemberName;
     public Electorate RandomElectorate;
-    public Member RandomCurrentMember { get; set; }
-    public string RandomCurrentMemberName { get; set; }
+    public Member RandomCurrentMember;
+    public string RandomCurrentMemberName;
 }

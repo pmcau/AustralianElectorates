@@ -66,7 +66,7 @@ namespace AustralianElectorates
             }
         }
 
-        public static string GetCurrentMap(this Electorate electorate)
+        public static ElectorateMap GetCurrentMap(this Electorate electorate)
         {
             if (!electorate.ExistInCurrent)
             {
@@ -76,7 +76,7 @@ namespace AustralianElectorates
             return CurrentMaps.GetElectorate(electorate.ShortName);
         }
 
-        public static string GetFutureMap(this Electorate electorate)
+        public static ElectorateMap GetFutureMap(this Electorate electorate)
         {
             if (!electorate.ExistInFuture)
             {

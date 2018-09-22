@@ -57,21 +57,21 @@ public class DataLoaderTests
     public void GetCurrentState()
     {
         var data = DataLoader.CurrentMaps.GetState(State.ACT);
-        ObjectApprover.VerifyWithJson(data.Substring(0,200));
+        ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
     }
 
     [Fact]
     public void GetFutureState()
     {
         var data = DataLoader.FutureMaps.GetState(State.ACT);
-        ObjectApprover.VerifyWithJson(data.Substring(0,200));
+        ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
     }
 
     [Fact]
     public void GetCurrentElectorate()
     {
         var data = DataLoader.CurrentMaps.GetElectorate("fenner");
-        ObjectApprover.VerifyWithJson(data.Substring(0,200));
+        ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
     }
 
     [Fact]
@@ -85,21 +85,21 @@ public class DataLoaderTests
     public void GetFutureElectorate()
     {
         var data = DataLoader.FutureMaps.GetElectorate("fenner");
-        ObjectApprover.VerifyWithJson(data.Substring(0,200));
+        ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
     }
 
     [Fact]
     public void GetFutureElectorateExtension()
     {
         var data = DataLoader.Fenner.GetFutureMap();
-        ObjectApprover.VerifyWithJson(data.Substring(0,200));
+        ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
     }
 
     [Fact]
     public void GetCurrentElectorateExtension()
     {
         var data = DataLoader.Fenner.GetFutureMap();
-        ObjectApprover.VerifyWithJson(data.Substring(0,200));
+        ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
     }
 
     [Fact]

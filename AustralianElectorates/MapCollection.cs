@@ -11,13 +11,13 @@ namespace AustralianElectorates
     public class MapCollection
     {
         string prefix;
-        ConcurrentDictionary<string, string> electoratesCache = new ConcurrentDictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-        ConcurrentDictionary<State, string> statesCache = new ConcurrentDictionary<State, string>();
+        ConcurrentDictionary<string, ElectorateMap> electoratesCache = new ConcurrentDictionary<string, ElectorateMap>(StringComparer.OrdinalIgnoreCase);
+        ConcurrentDictionary<State, StateMap> statesCache = new ConcurrentDictionary<State, StateMap>();
         string australia;
         static Assembly assembly;
 
-        public IReadOnlyDictionary<string, string> LoadedElectorates => electoratesCache;
-        public IReadOnlyDictionary<State, string> LoadedStates => statesCache;
+        public IReadOnlyDictionary<string, ElectorateMap> LoadedElectorates => electoratesCache;
+        public IReadOnlyDictionary<State, StateMap> LoadedStates => statesCache;
 
         internal MapCollection(string prefix)
         {
@@ -29,17 +29,35 @@ namespace AustralianElectorates
             assembly = typeof(DataLoader).Assembly;
         }
 
-        public string GetElectorate(string electorateName)
+        public ElectorateMap GetElectorate(string electorateName)
         {
             electorateName = GetElectorateShortName(electorateName);
             Guard.AgainstNullWhiteSpace(electorateName, nameof(electorateName));
-            return electoratesCache.GetOrAdd($@"{prefix}\Electorates\{electorateName}", Inner);
+            return electoratesCache.GetOrAdd($@"{prefix}\Electorates\{electorateName}",
+                s =>
+                {
+                    var geoJson = Inner(s);
+                    var electorate = DataLoader.Electorates.Single(x => x.ShortName == electorateName);
+                    return new ElectorateMap
+                    {
+                        Electorate = electorate,
+                        GeoJson = geoJson
+                    };
+                });
         }
 
-        public string GetState(State state)
+        public StateMap GetState(State state)
         {
             var key = $@"{prefix}\{state.ToString().ToLowerInvariant()}";
-            return statesCache.GetOrAdd(state, s => Inner(key));
+            return statesCache.GetOrAdd(state, s =>
+            {
+                var geoJson = Inner(key);
+                return new StateMap
+                {
+                    State = state,
+                    GeoJson = geoJson
+                };
+            });
         }
 
         public string GetAustralia()
@@ -84,7 +102,13 @@ namespace AustralianElectorates
 
                     if (key.Contains("Electorates"))
                     {
-                        electoratesCache[key] = mapString;
+                        var shortName = Path.GetFileName(key);
+                        var electorate = DataLoader.Electorates.Single(x => x.ShortName == shortName);
+                        electoratesCache[key] = new ElectorateMap
+                        {
+                            Electorate = electorate,
+                            GeoJson = mapString
+                        };
                         continue;
                     }
 
@@ -95,7 +119,11 @@ namespace AustralianElectorates
                     }
 
                     var state = ParseState(key);
-                    statesCache[state] = mapString;
+                    statesCache[state] = new StateMap
+                    {
+                        GeoJson = mapString,
+                        State = state
+                    };
                 }
             }
         }
