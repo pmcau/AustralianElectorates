@@ -184,7 +184,7 @@ namespace AustralianElectorates
         {");
             foreach (var electorate in electorates)
             {
-                var name = electorate.Name.Replace(" ", "").Replace("-", "").Replace("'", "");
+                var name = GetCSharpName(electorate);
                 writer.WriteLine($@"
             {name} = Electorates.Single(x => x.Name == ""{electorate.Name}"");");
             }
@@ -192,7 +192,7 @@ namespace AustralianElectorates
 
             foreach (var electorate in electorates)
             {
-                var name = electorate.Name.Replace(" ", "").Replace("-", "").Replace("'", "");
+                var name = GetCSharpName(electorate);
                 writer.WriteLine($@"
         public static Electorate {name} {{ get; private set;}}");
             }
@@ -200,5 +200,36 @@ namespace AustralianElectorates
             writer.WriteLine("    }");
             writer.WriteLine("}");
         }
+
+
+        var namedBogusData = Path.Combine(DataLocations.BogusProjectPath, "ElectorateDataSet_named.cs");
+        File.Delete(namedBogusData);
+        using (var writer = File.CreateText(namedBogusData))
+        {
+            writer.WriteLine(@"
+// ReSharper disable IdentifierTypo
+using Bogus;
+
+namespace AustralianElectorates.Bogus
+{
+    public partial class ElectorateDataSet : DataSet
+    {");
+            foreach (var electorate in electorates)
+            {
+                var name = GetCSharpName(electorate);
+                writer.WriteLine($@"
+        public Electorate {name}()
+        {{
+            return DataLoader.{name};
+        }}");
+            }
+            writer.WriteLine("    }");
+            writer.WriteLine("}");
+        }
+    }
+
+    private static string GetCSharpName(Electorate electorate)
+    {
+        return electorate.Name.Replace(" ", "").Replace("-", "").Replace("'", "");
     }
 }

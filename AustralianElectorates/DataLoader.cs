@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
+using System.Linq;
 using System.Reflection;
 
 namespace AustralianElectorates
@@ -18,8 +19,19 @@ namespace AustralianElectorates
                 Electorates = Serializer.Deserialize<List<Electorate>>(stream);
             }
 
+            foreach (var electorate in Electorates)
+            {
+                foreach (var member in electorate.Members)
+                {
+                    member.Electorate = electorate;
+                }
+            }
+
+            AllMembers = Electorates.SelectMany(x => x.Members).ToList();
             InitNamed();
         }
+
+        public static IReadOnlyList<Member> AllMembers { get; }
 
         public static IReadOnlyList<Electorate> Electorates { get; }
         public static MapCollection CurrentMaps { get; } = new MapCollection("Current");

@@ -64,13 +64,13 @@ With the two options combined, there are 5 different options for each map.
 
 Below is the combinations for [Bass](https://www.aec.gov.au/profiles/tas/bass.htm)
 
-| Size  | File name              | Simplification |
-| -----:| ---------------------- | --------------:|
-| 2.8MB | [bass.geojson](/Data/Maps/Future/Electorates/bass.geojson)       | none |
-| 231KB | [bass_20.geojson](/Data/Maps/Future/Electorates/bass_20.geojson) | 20%  |
-| 94KB  | [bass_10.geojson](/Data/Maps/Future/Electorates/bass_10.geojson) | 20%  |
-| 46KB  | [bass_05.geojson](/Data/Maps/Future/Electorates/bass_05.geojson) | 5%   |
-| 8KB   | [bass_01.geojson](/Data/Maps/Future/Electorates/bass_01.geojson) | 1%   |
+| Size  | File name                                                        | Simplification |
+| -----:| ---------------------------------------------------------------- | --------------:|
+| 2.8MB | [bass.geojson](/Data/Maps/Future/Electorates/bass.geojson)       | none           |
+| 231KB | [bass_20.geojson](/Data/Maps/Future/Electorates/bass_20.geojson) | 20%            |
+| 94KB  | [bass_10.geojson](/Data/Maps/Future/Electorates/bass_10.geojson) | 20%            |
+| 46KB  | [bass_05.geojson](/Data/Maps/Future/Electorates/bass_05.geojson) | 5%             |
+| 8KB   | [bass_01.geojson](/Data/Maps/Future/Electorates/bass_01.geojson) | 1%             |
 
 
 #### Simplification
@@ -82,24 +82,59 @@ Simplification uses [MapShaper simplify option](https://github.com/mbloch/mapsha
 The level of simplification is represented as a percent number. 20, 10, 5, and 1. representing 20%, 10%, 5%, and 1%. The smaller the number the smaller the file, but with the loss of some accuracy.
 
 
-## NuGet
+## NuGets
 
 https://nuget.org/packages/AustralianElectorates/ [![NuGet Status](http://img.shields.io/nuget/v/AustralianElectorates.svg?longCache=true&style=flat)](https://www.nuget.org/packages/AustralianElectorates/)
 
     PM> Install-Package AustralianElectorates
 
 
+https://nuget.org/packages/AustralianElectorates.Bogus/ [![NuGet Status](http://img.shields.io/nuget/v/AustralianElectorates.Bogus.svg?longCache=true&style=flat)](https://www.nuget.org/packages/AustralianElectorates.Bogus/)
+
+    PM> Install-Package AustralianElectorates.Bogus
+
+
 ## Usage
 
 ```
-var canberraInfo = DataLoader.Electorates.Single(x => x.Name == "Canberra");
-Debug.WriteLine(canberraInfo.Description);
-var currentMember = canberraInfo.Members.First();
+
+// get an electorate by name
+var fenner = DataLoader.Fenner;
+Debug.WriteLine(fenner.Description);
+
+// get an electorate by string
+var canberra = DataLoader.Electorates.Single(x => x.Name == "Canberra");
+Debug.WriteLine(canberra.Description);
+
+// access the current member
+var currentMember = canberra.Members.First();
 Debug.WriteLine(currentMember.Name);
 Debug.WriteLine(currentMember.Party);
-var canberraGeoJson = DataLoader.CurrentMaps.GetElectorate("Canberra");
+
+// get an electorates maps (geojson) by string
+var currentFennerGeoJson = DataLoader.Fenner.GetCurrentMap();
+Debug.WriteLine(currentFennerGeoJson);
+var futureFennerGeoJson = DataLoader.Fenner.GetFutureMap();
+Debug.WriteLine(futureFennerGeoJson);
+
+// get an electorates maps (geojson) by string
+var currentCanberraGeoJson = DataLoader.CurrentMaps.GetElectorate("Canberra");
+Debug.WriteLine(currentCanberraGeoJson);
+var futureCanberraGeoJson = DataLoader.FutureMaps.GetElectorate("Canberra");
+Debug.WriteLine(futureCanberraGeoJson);
 ```
 
+
+## Bogus Usage
+
+```
+var faker = new Faker<Target>()
+    .RuleFor(u => u.RandomElectorate, (f, u) => f.Electorates().Electorate())
+    .RuleFor(u => u.RandomElectorateName, (f, u) => f.Electorates().Name())
+    .RuleFor(u => u.RandomMember, (f, u) => f.Electorates().Member())
+    .RuleFor(u => u.RandomMemberName, (f, u) => f.Electorates().MemberName());
+var targetInstance = faker.Generate();
+```
 
 ## Copyright
 

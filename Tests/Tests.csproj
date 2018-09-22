@@ -8,6 +8,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="ApprovalTests" Version="3.0.16" />
+    <PackageReference Include="Bogus" Version="23.0.3" />
     <PackageReference Include="ObjectApproval" Version="2.2.0" />
     <PackageReference Include="GeoJSON.Net" Version="1.1.68" />
     <PackageReference Include="HtmlAgilityPack" Version="1.8.8" />
@@ -20,6 +21,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AustralianElectorates.Bogus\AustralianElectorates.Bogus.csproj" />
     <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
   </ItemGroup>
   <ItemGroup>
