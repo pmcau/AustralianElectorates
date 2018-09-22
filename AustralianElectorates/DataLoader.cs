@@ -28,10 +28,12 @@ namespace AustralianElectorates
             }
 
             AllMembers = Electorates.SelectMany(x => x.Members).ToList();
+            AllCurrentMembers = Electorates.Select(x => x.Members.First()).ToList();
             InitNamed();
         }
 
         public static IReadOnlyList<Member> AllMembers { get; }
+        public static IReadOnlyList<Member> AllCurrentMembers { get; }
 
         public static IReadOnlyList<Electorate> Electorates { get; }
         public static MapCollection CurrentMaps { get; } = new MapCollection("Current");

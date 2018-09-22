@@ -29,6 +29,32 @@ namespace AustralianElectorates.Bogus
             }
         }
 
+        public Member CurrentMember()
+        {
+            var index = Random.Number(DataLoader.AllCurrentMembers.Count - 1);
+            return DataLoader.AllCurrentMembers[index];
+        }
+
+        public IEnumerable<Member> CurrentMember(int num = 1)
+        {
+            Guard.AgainstNegative(num, nameof(num));
+            for (var i = 0; i < num; i++)
+            {
+                yield return CurrentMember();
+            }
+        }
+
+        public string CurrentMemberName()
+        {
+            return CurrentMember().Name;
+        }
+
+        public IEnumerable<string> CurrentMemberName(int num = 1)
+        {
+            Guard.AgainstNegative(num, nameof(num));
+            return CurrentMember(num).Select(x => x.Name);
+        }
+
         public Member Member()
         {
             var index = Random.Number(DataLoader.AllMembers.Count - 1);
