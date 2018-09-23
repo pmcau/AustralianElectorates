@@ -122,6 +122,17 @@ var currentCanberraGeoJson = DataLoader.CurrentMaps.GetElectorate("Canberra");
 Debug.WriteLine(currentCanberraGeoJson);
 var futureCanberraGeoJson = DataLoader.FutureMaps.GetElectorate("Canberra");
 Debug.WriteLine(futureCanberraGeoJson);
+
+// export all data to a directory
+// structure will be
+// /electorates.json
+// /Current (current states and australia geojson files)
+// /Current/Electorates (current electorate geojson files)
+// /Future (future states and australia geojson files)
+// /Future/Electorates (future electorate geojson files)
+DataLoader.Export(
+    directory: Path.Combine(Environment.CurrentDirectory,"Maps"),
+    overwrite: true);
 ```
 
 
