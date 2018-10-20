@@ -1,10 +1,16 @@
 ﻿using System;
 using System.IO;
+using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 
 static class Downloader
 {
+    static Downloader()
+    {
+        ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
+    }
+
     static HttpClient httpClient = new HttpClient
     {
         Timeout = TimeSpan.FromSeconds(30)
