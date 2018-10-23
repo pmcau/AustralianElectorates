@@ -7,12 +7,12 @@
     <Version>1.4.0</Version>
     <AssemblyVersion>1.0</AssemblyVersion>
     <AssemblyInformationalVersion>$(Version)</AssemblyInformationalVersion>
-    <Authors>https://github.com/pmcau/AustralianElectorates/graphs/contributors</Authors>
-    <PackageLicenseUrl>https://github.com/AustralianElectorates/AustralianElectorates/blob/master/license.txt</PackageLicenseUrl>
+    <Authors>Simon Cropp</Authors>
+    <PackageLicenseUrl>https://github.com/pmcau/AustralianElectorates/blob/master/license.txt</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Copyright>Code under MIT. Data under AEC Copyright https://www.aec.gov.au/footer/Copyright.htm.</Copyright>
-    <PackageIconUrl>https://raw.githubusercontent.com/AustralianElectorates/AustralianElectorates/master/icon.png</PackageIconUrl>
-    <PackageProjectUrl>http://github.com/SimonCropp/AustralianElectorates</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/pmcau/AustralianElectorates/master/icon.png</PackageIconUrl>
+    <PackageProjectUrl>http://github.com/pmcau/AustralianElectorates</PackageProjectUrl>
     <PackageOutputPath>..\nugets</PackageOutputPath>
     <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);IncludePDBsInPackage</TargetsForTfmSpecificContentInPackage>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
