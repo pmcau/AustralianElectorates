@@ -9,6 +9,26 @@ using Xunit;
 
 public class Sync
 {
+    [Fact]
+    [Trait("Category", "Integration")]
+    public async Task SyncData()
+    {
+        IoHelpers.PurgeDirectory(DataLocations.MapsPath);
+        IoHelpers.PurgeDirectory(DataLocations.TempPath);
+
+        await GetCurrent();
+
+        await FutureToCountry.Run();
+
+        ProcessYear(DataLocations.MapsCurrentPath, electoratesCurrent);
+        ProcessYear(DataLocations.MapsFuturePath, electoratesFuture);
+
+        var electorates = await WriteElectoratesMetaData();
+        WriteNamedCs(electorates);
+        Export.ExportElectorates();
+        Zipper.ZipDir(DataLocations.MapsCuratedZipPath, DataLocations.MapsCuratedPath);
+    }
+
     static List<int> percents;
 
     static List<string> electoratesFuture = new List<string>();
@@ -41,26 +61,6 @@ public class Sync
     static Sync()
     {
         percents = new List<int> {20, 10, 5, 1};
-    }
-
-    [Fact]
-    [Trait("Category", "Integration")]
-    public async Task SyncData()
-    {
-        IoHelpers.PurgeDirectory(DataLocations.MapsPath);
-        IoHelpers.PurgeDirectory(DataLocations.TempPath);
-
-        await GetCurrent();
-
-        await FutureToCountry.Run();
-
-        ProcessYear(DataLocations.MapsCurrentPath, electoratesCurrent);
-        ProcessYear(DataLocations.MapsFuturePath, electoratesFuture);
-
-        var electorates = await WriteElectoratesMetaData();
-        WriteNamedCs(electorates);
-        Export.ExportElectorates();
-        Zipper.ZipDir(DataLocations.MapsCuratedZipPath, DataLocations.MapsCuratedPath);
     }
 
     static void ProcessYear(string yearPath, List<string> electorates)

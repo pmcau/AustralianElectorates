@@ -14,6 +14,7 @@ public class MapToGeoJson
         arguments += $@" -o format=geojson ""{targetFile}"" ";
         Run("cmd.exe", arguments);
     }
+
     public static void ConvertTab(string targetFile, string tabFile)
     {
         var arguments = $@"-f GeoJSON {targetFile} {tabFile}";
