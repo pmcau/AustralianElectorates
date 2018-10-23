@@ -7,7 +7,7 @@
     <Version>1.4.0</Version>
     <AssemblyVersion>1.0</AssemblyVersion>
     <AssemblyInformationalVersion>$(Version)</AssemblyInformationalVersion>
-    <Authors>Simon Cropp</Authors>
+    <Authors>https://github.com/pmcau/AustralianElectorates/graphs/contributors</Authors>
     <PackageLicenseUrl>https://github.com/pmcau/AustralianElectorates/blob/master/license.txt</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Copyright>Code under MIT. Data under AEC Copyright https://www.aec.gov.au/footer/Copyright.htm.</Copyright>
