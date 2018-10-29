@@ -15,12 +15,7 @@
     <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="Xunit" Version="2.4.0" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
     <ProjectReference Include="..\AustralianElectorates.Bogus\AustralianElectorates.Bogus.csproj" />
     <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
   </ItemGroup>
