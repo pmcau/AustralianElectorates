@@ -7,14 +7,14 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="ApprovalTests" Version="3.0.16" />
-    <PackageReference Include="Bogus" Version="23.0.3" />
-    <PackageReference Include="ObjectApproval" Version="2.2.0" />
-    <PackageReference Include="GeoJSON.Net" Version="1.1.68" />
-    <PackageReference Include="HtmlAgilityPack" Version="1.8.8" />
+    <PackageReference Include="ApprovalTests" Version="3.0.18" />
+    <PackageReference Include="Bogus" Version="24.3.1" />
+    <PackageReference Include="ObjectApproval" Version="2.3.0" />
+    <PackageReference Include="GeoJSON.Net" Version="1.1.70" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.8.9" />
     <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
-    <PackageReference Include="Xunit" Version="2.4.0" />
+    <PackageReference Include="Xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
     <ProjectReference Include="..\AustralianElectorates.Bogus\AustralianElectorates.Bogus.csproj" />
     <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />

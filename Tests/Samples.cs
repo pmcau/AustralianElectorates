@@ -45,8 +45,10 @@ public class Samples
         // /Current/Electorates (current electorate geojson files)
         // /Future (future states and australia geojson files)
         // /Future/Electorates (future electorate geojson files)
+        var directory = Path.Combine(Environment.CurrentDirectory,"Maps");
+        Directory.CreateDirectory(directory);
         DataLoader.Export(
-            directory: Path.Combine(Environment.CurrentDirectory,"Maps"),
+            directory: directory,
             overwrite: true);
 
     }
