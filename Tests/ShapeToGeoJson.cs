@@ -17,7 +17,7 @@ public class MapToGeoJson
 
     public static void ConvertTab(string targetFile, string tabFile)
     {
-        var arguments = $@"-f GeoJSON {targetFile} {tabFile}";
+        var arguments = $"-f GeoJSON {targetFile} {tabFile}";
         Run("ogr2ogr", arguments);
     }
 
