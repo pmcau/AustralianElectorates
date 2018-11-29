@@ -103,7 +103,7 @@ namespace AustralianElectorates
                     if (key.Contains("Electorates"))
                     {
                         var shortName = Path.GetFileName(key);
-                        var electorate = DataLoader.Electorates.Single(x => x.ShortName == shortName);
+                        var electorate = DataLoader.Electorates.SingleOrDefault(x => x.ShortName == shortName);
                         electoratesCache[key] = new ElectorateMap
                         {
                             Electorate = electorate,

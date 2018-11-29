@@ -9,6 +9,7 @@ public class ElectoratesScraperTests
     [Trait("Category", "Integration")]
     public async Task Run()
     {
+        Assert.Null(await ElectoratesScraper.ScrapeElectorate("denison", State.TAS));
         var bass = await ElectoratesScraper.ScrapeElectorate("bass", State.TAS);
         var fenner = await ElectoratesScraper.ScrapeElectorate("fenner", State.ACT);
         var hunter = await ElectoratesScraper.ScrapeElectorate("hunter", State.NSW);

@@ -15,6 +15,10 @@ public static class ElectoratesScraper
         {
             var tempElectorateHtmlPath = Path.Combine(DataLocations.TempPath, $"{shortName}.html");
             await Downloader.DownloadFile(tempElectorateHtmlPath, $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm");
+            if (!File.Exists(tempElectorateHtmlPath))
+            {
+                return null;
+            }
             var document = new HtmlDocument();
             document.Load(tempElectorateHtmlPath);
 

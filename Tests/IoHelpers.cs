@@ -10,6 +10,7 @@ static class IoHelpers
             Directory.CreateDirectory(directory);
             return;
         }
+
         var root = new DirectoryInfo(directory);
 
         foreach (var file in root.GetFiles("*.*", SearchOption.AllDirectories))
@@ -17,6 +18,7 @@ static class IoHelpers
             file.Delete();
         }
     }
+
     public static void PurgeDirectoryRecursive(string directory)
     {
         if (!Directory.Exists(directory))
@@ -24,12 +26,14 @@ static class IoHelpers
             Directory.CreateDirectory(directory);
             return;
         }
+
         var root = new DirectoryInfo(directory);
 
         foreach (var file in root.GetFiles())
         {
             file.Delete();
         }
+
         foreach (var dir in root.GetDirectories())
         {
             dir.Delete(true);

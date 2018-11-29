@@ -20,8 +20,6 @@ namespace AustralianElectorates
 
             Braddon = Electorates.Single(x => x.Name == "Braddon");
 
-            Denison = Electorates.Single(x => x.Name == "Denison");
-
             Franklin = Electorates.Single(x => x.Name == "Franklin");
 
             Lyons = Electorates.Single(x => x.Name == "Lyons");
@@ -336,8 +334,6 @@ namespace AustralianElectorates
         public static Electorate Bass { get; private set;}
 
         public static Electorate Braddon { get; private set;}
-
-        public static Electorate Denison { get; private set;}
 
         public static Electorate Franklin { get; private set;}
 

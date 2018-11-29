@@ -32,11 +32,6 @@ namespace AustralianElectorates.Bogus
             return DataLoader.Braddon;
         }
 
-        public Electorate Denison()
-        {
-            return DataLoader.Denison;
-        }
-
         public Electorate Franklin()
         {
             return DataLoader.Franklin;

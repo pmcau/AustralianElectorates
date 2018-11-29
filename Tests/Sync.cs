@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
+using System.Linq;
 using System.Threading.Tasks;
 using AustralianElectorates;
 using GeoJSON.Net.Feature;
@@ -24,6 +26,7 @@ public class Sync
         ProcessYear(DataLocations.MapsFuturePath, electoratesFuture);
 
         var electorates = await WriteElectoratesMetaData();
+
         WriteNamedCs(electorates);
         Export.ExportElectorates();
         Zipper.ZipDir(DataLocations.MapsCuratedZipPath, DataLocations.MapsCuratedPath);
@@ -60,7 +63,7 @@ public class Sync
 
     static Sync()
     {
-        percents = new List<int> {20, 10, 5, 1};
+        percents = new List<int> { 20, 10, 5, 1 };
     }
 
     static void ProcessYear(string yearPath, List<string> electorates)
@@ -151,9 +154,12 @@ public class Sync
                 var existInCurrent = electoratesCurrent.Contains(electorateName);
                 var existInFuture = electoratesFuture.Contains(electorateName);
                 var electorate = await ElectoratesScraper.ScrapeElectorate(electorateName, electoratePair.Key);
-                electorate.ExistInCurrent = existInCurrent;
-                electorate.ExistInFuture = existInFuture;
-                electorates.Add(electorate);
+                if (electorate != null)
+                {
+                    electorate.ExistInCurrent = existInCurrent;
+                    electorate.ExistInFuture = existInFuture;
+                    electorates.Add(electorate);
+                }
             }
         }
 
