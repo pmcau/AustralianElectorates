@@ -72,8 +72,11 @@ public static class ElectoratesScraper
 
     static string GetFullName(HtmlDocument document)
     {
-        var headings = document.DocumentNode.Descendants("h1").Skip(1).ToList();
-        var strings = headings.Single().InnerText.Replace("Profile of the electoral division of ", "").Split(new[] {" ("}, StringSplitOptions.None);
+        var headings = document.DocumentNode.Descendants("h1")
+            .Select(x=>x.InnerText).ToList();
+        var strings =headings.Single(x => x.StartsWith("Profile of the electoral division of "))
+            .Replace("Profile of the electoral division of ","")
+            .Split(new[] {" ("}, StringSplitOptions.None);
         var fullName = strings[0];
         Assert.NotEmpty(fullName);
         return fullName;
