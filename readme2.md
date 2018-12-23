@@ -1,5 +1,3 @@
-
-
 ## Electorate information
 
 All information about electorates is available at [/Data/electorates.json](/Data/electorates.json)
@@ -83,6 +81,12 @@ The level of simplification is represented as a percent number. 20, 10, 5, and 1
 
 
 ## NuGets
+
+The NuGets contain a static copy of all the electorate data. This data is embedded as resources inside the assembly. No network calls are done by the assembly. To get the latests version of the data do a NuGet update. There are several options to help keep a NuGet update:
+
+ * [Dependabot](https://dependabot.com/): creates pull requests to keep your dependencies secure and up-to-date.
+ * [Using NuGet wildcards](https://docs.microsoft.com/en-us/nuget/reference/package-versioning#version-ranges-and-wildcards).
+ * [Libraries.io](https://libraries.io/) supports subscribing to NuGet package updates.
 
 https://nuget.org/packages/AustralianElectorates/ [![NuGet Status](http://img.shields.io/nuget/v/AustralianElectorates.svg?longCache=true&style=flat)](https://www.nuget.org/packages/AustralianElectorates/)
 
