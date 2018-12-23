@@ -206,6 +206,7 @@ Installation:
 
 * Install [Node](https://nodejs.org/)
 * [Install MapShaper globally](https://github.com/mbloch/mapshaper#installation) `npm install -g mapshaper`
+* Ensure `C:\Users\USER\AppData\Roaming\npm` is in path
 
 https://github.com/mbloch/mapshaper/wiki/Command-Reference
 
