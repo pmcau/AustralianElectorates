@@ -96,8 +96,7 @@ https://nuget.org/packages/AustralianElectorates.Bogus/ [![NuGet Status](http://
 
 ## Usage
 
-```
-
+```cs
 // get an electorate by name
 var fenner = DataLoader.Fenner;
 Debug.WriteLine(fenner.Description);
@@ -138,7 +137,7 @@ DataLoader.Export(
 
 ## Bogus Usage
 
-```
+```cs
 var faker = new Faker<Target>()
     .RuleFor(u => u.RandomElectorate, (f, u) => f.AustralianElectorates().Electorate())
     .RuleFor(u => u.RandomElectorateName, (f, u) => f.AustralianElectorates().Name())
@@ -149,9 +148,12 @@ var faker = new Faker<Target>()
 var targetInstance = faker.Generate();
 ```
 
+
 ## Copyright
 
+
 ### Code
+
 The code in this repository is licensed under MIT.
 
 Copyright &copy; 2018 Commonwealth of Australia (Department of the Prime Minister and Cabinet)
@@ -174,7 +176,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+
 ### Content/Data
+
 The content/data that is rendered (all files under [/Data/](/Data/)) is sourced from the [Australian Electoral Commission (AEC)](https://www.aec.gov.au/) and remains under the [AEC Copyright](https://www.aec.gov.au/footer/Copyright.htm).
 
 The content/data in this repository does not necessarily represent the latest data made available by the AEC. The Department of the Prime Minister and Cabinet gives no warranty regarding the accuracy, completeness, currency or suitability of the content/data for any particular purpose.
@@ -185,6 +189,7 @@ This product (AustralianElectorates) incorporates data that is:
 The Data (Commonwealth Electoral Boundaries (various years)) has been used in AustralianElectorates with the permission of the Australian Electoral Commission. The Australian Electoral Commission has not evaluated the Data as altered and incorporated within AustralianElectorates, and therefore gives no warranty regarding its accuracy, completeness, currency or suitability for any particular purpose.
 
 Limited End-user licence provided by the Australian Electoral Commission: You may use AustralianElectorates to load, display, print and reproduce views obtained from the Data, retaining this notice, for your personal use, or use within your organisation only.
+
 
 ## Re-Generating the data
 
