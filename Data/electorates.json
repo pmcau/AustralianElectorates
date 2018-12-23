@@ -969,7 +969,7 @@
       {
         "Name": "Sharkie, R",
         "Begin": 2016,
-        "Party": "NSXT"
+        "Party": "Centre Alliance"
       },
       {
         "Name": "Briggs, J",
@@ -7794,8 +7794,14 @@
     "NameDerivation": "Named in honour of William Charles Wentworth, 1790 -1872. Wentworth accompanied Blaxland and Lawson on their 1813 crossing of the Blue Mountains and advocated the establishment of free and representative government.",
     "Members": [
       {
-        "Name": "*Turnbull, M",
+        "Name": "Phelps, K",
+        "Begin": 2018,
+        "Party": "IND"
+      },
+      {
+        "Name": "Turnbull, M",
         "Begin": 2004,
+        "End": 2018,
         "Party": "LP"
       },
       {
@@ -8561,6 +8567,11 @@
     "ProductsAndIndustry": "Industries include medical, education, retail, recreation, light industrial, commercial, tourism, transport, professional services, public services and hospitality.",
     "NameDerivation": "Named after the city of Perth which was founded in 1829 under Lieutenant-Governor James Stirling, who became Governor in 1831.",
     "Members": [
+      {
+        "Name": "Gorman, P",
+        "Begin": 2018,
+        "Party": "ALP"
+      },
       {
         "Name": "Hammond, T",
         "Begin": 2016,
