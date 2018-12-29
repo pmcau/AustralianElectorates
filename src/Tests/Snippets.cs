@@ -8,7 +8,7 @@ using Bogus;
 using Xunit;
 // ReSharper disable UnusedVariable
 
-public class Samples
+class Snippets
 {
     [Fact]
     public void Foo()
@@ -45,12 +45,11 @@ public class Samples
         // /Current/Electorates (current electorate geojson files)
         // /Future (future states and australia geojson files)
         // /Future/Electorates (future electorate geojson files)
-        var directory = Path.Combine(Environment.CurrentDirectory,"Maps");
+        var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
         Directory.CreateDirectory(directory);
         DataLoader.Export(
             directory: directory,
             overwrite: true);
-
     }
 
     [Fact]
@@ -65,14 +64,14 @@ public class Samples
             .RuleFor(u => u.RandomMemberName, (f, u) => f.AustralianElectorates().MemberName());
         var targetInstance = faker.Generate();
     }
-}
 
-public class Target
-{
-    public string RandomElectorateName;
-    public Member RandomMember;
-    public string RandomMemberName;
-    public Electorate RandomElectorate;
-    public Member RandomCurrentMember;
-    public string RandomCurrentMemberName;
+    public class Target
+    {
+        public string RandomElectorateName;
+        public Member RandomMember;
+        public string RandomMemberName;
+        public Electorate RandomElectorate;
+        public Member RandomCurrentMember;
+        public string RandomCurrentMemberName;
+    }
 }

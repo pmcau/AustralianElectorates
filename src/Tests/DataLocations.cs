@@ -1,15 +1,14 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
+using CaptureSnippets;
 
 public static class DataLocations
 {
     static DataLocations()
     {
-        var currentDirectory = Environment.CurrentDirectory;
-        SlnPath = Path.GetFullPath(Path.Combine(currentDirectory, "../../../../"));
-        TempPath = Path.GetFullPath(Path.Combine(SlnPath, "temp"));
+        RootDir = GitRepoDirectoryFinder.Find();
+        TempPath = Path.GetFullPath(Path.Combine(RootDir, "temp"));
         Directory.CreateDirectory(TempPath);
-        DataPath = Path.GetFullPath(Path.Combine(SlnPath, "Data"));
+        DataPath = Path.GetFullPath(Path.Combine(RootDir, "Data"));
         Directory.CreateDirectory(DataPath);
         MapsPath = Path.GetFullPath(Path.Combine(DataPath, "Maps"));
         Directory.CreateDirectory(MapsPath);
@@ -19,8 +18,8 @@ public static class DataLocations
         Directory.CreateDirectory(MapsCurrentPath);
         MapsCuratedPath = Path.GetFullPath(Path.Combine(DataPath, "MapsCurated"));
         Directory.CreateDirectory(MapsCuratedPath);
-        AustralianElectoratesProjectPath = Path.GetFullPath(Path.Combine(SlnPath, "AustralianElectorates"));
-        BogusProjectPath = Path.GetFullPath(Path.Combine(SlnPath, "AustralianElectorates.Bogus"));
+        AustralianElectoratesProjectPath = Path.GetFullPath(Path.Combine(RootDir, "src/AustralianElectorates"));
+        BogusProjectPath = Path.GetFullPath(Path.Combine(RootDir, "src/AustralianElectorates.Bogus"));
         MapsCuratedZipPath = Path.GetFullPath(Path.Combine(DataPath, "MapsCurated.zip"));
         FutureAustraliaJsonPath = Path.GetFullPath(Path.Combine(MapsPath, "Future/australia.geojson"));
     }
@@ -34,8 +33,7 @@ public static class DataLocations
     public static string MapsCuratedZipPath;
     public static string FutureAustraliaJsonPath;
 
-
-    public static string SlnPath;
+    public static string RootDir;
 
     public static string DataPath;
 
