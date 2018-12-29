@@ -9,12 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Condition="Exists('..\Data\MapsCurated.zip')"
-                      Include="..\Data\MapsCurated.zip"
+    <EmbeddedResource Condition="Exists('..\..\Data\MapsCurated.zip')"
+                      Include="..\..\Data\MapsCurated.zip"
                       LogicalName="Maps.zip"
                       Link="Maps.zip" />
-    <EmbeddedResource Condition="Exists('..\Data\electorates.json')"
-                      Include="..\Data\electorates.json"
+    <EmbeddedResource Condition="Exists('..\..\Data\electorates.json')"
+                      Include="..\..\Data\electorates.json"
                       LogicalName="electorates.json"
                       Link="electorates.json" />
   </ItemGroup>

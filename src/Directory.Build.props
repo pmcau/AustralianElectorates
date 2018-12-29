@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <LangVersion>latest</LangVersion>
-    <NoWarn>CS1591</NoWarn>
+    <NoWarn>CS1591;NU5125</NoWarn>
     <Version>1.10.0</Version>
     <PackageLicenseUrl>https://github.com/pmcau/AustralianElectorates/blob/master/license.txt</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
