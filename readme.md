@@ -5,7 +5,7 @@ All information about electorates is available at [/Data/electorates.json](/Data
 
 ### Example content
 
-```
+```json
 [
   {
     "Name": "Canberra",
@@ -100,6 +100,7 @@ https://nuget.org/packages/AustralianElectorates.Bogus/ [![NuGet Status](http://
 
 ## Usage
 
+<!-- snippet: usage -->
 ```cs
 // get an electorate by name
 var fenner = DataLoader.Fenner;
@@ -133,14 +134,18 @@ Debug.WriteLine(futureCanberraGeoJson);
 // /Current/Electorates (current electorate geojson files)
 // /Future (future states and australia geojson files)
 // /Future/Electorates (future electorate geojson files)
+var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
+Directory.CreateDirectory(directory);
 DataLoader.Export(
-    directory: Path.Combine(Environment.CurrentDirectory,"Maps"),
+    directory: directory,
     overwrite: true);
 ```
+<!-- endsnippet -->
 
 
 ## Bogus Usage
 
+<!-- snippet: usagebogus -->
 ```cs
 var faker = new Faker<Target>()
     .RuleFor(u => u.RandomElectorate, (f, u) => f.AustralianElectorates().Electorate())
@@ -151,6 +156,7 @@ var faker = new Faker<Target>()
     .RuleFor(u => u.RandomMemberName, (f, u) => f.AustralianElectorates().MemberName());
 var targetInstance = faker.Generate();
 ```
+<!-- endsnippet -->
 
 
 ## Copyright

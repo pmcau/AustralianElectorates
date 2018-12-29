@@ -8,11 +8,12 @@ using Bogus;
 using Xunit;
 // ReSharper disable UnusedVariable
 
-class Snippets
+public class Snippets
 {
     [Fact]
     public void Foo()
     {
+        #region usage
         // get an electorate by name
         var fenner = DataLoader.Fenner;
         Debug.WriteLine(fenner.Description);
@@ -50,11 +51,13 @@ class Snippets
         DataLoader.Export(
             directory: directory,
             overwrite: true);
+        #endregion
     }
 
     [Fact]
     public void Bogus()
     {
+        #region usagebogus
         var faker = new Faker<Target>()
             .RuleFor(u => u.RandomElectorate, (f, u) => f.AustralianElectorates().Electorate())
             .RuleFor(u => u.RandomElectorateName, (f, u) => f.AustralianElectorates().Name())
@@ -63,6 +66,7 @@ class Snippets
             .RuleFor(u => u.RandomMember, (f, u) => f.AustralianElectorates().Member())
             .RuleFor(u => u.RandomMemberName, (f, u) => f.AustralianElectorates().MemberName());
         var targetInstance = faker.Generate();
+        #endregion
     }
 
     public class Target
