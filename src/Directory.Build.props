@@ -6,7 +6,6 @@
     <NoWarn>CS1591;NU5125</NoWarn>
     <Version>1.10.0</Version>
     <PackageLicenseUrl>https://github.com/pmcau/AustralianElectorates/blob/master/license.txt</PackageLicenseUrl>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Copyright>Code under MIT. Data under AEC Copyright https://www.aec.gov.au/footer/Copyright.htm.</Copyright>
     <PackageIconUrl>https://raw.githubusercontent.com/pmcau/AustralianElectorates/master/icon.png</PackageIconUrl>
     <PackageProjectUrl>http://github.com/pmcau/AustralianElectorates</PackageProjectUrl>
