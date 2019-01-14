@@ -2351,6 +2351,12 @@
         "Begin": 1972,
         "End": 1975,
         "Party": "ALP"
+      },
+      {
+        "Name": "Reid, S L",
+        "Begin": 1969,
+        "End": 1972,
+        "Party": "LP"
       }
     ]
   },
@@ -2796,7 +2802,7 @@
     "ExistInCurrent": true,
     "ExistInFuture": true,
     "DateGazetted": "2018-07-13",
-    "Description": "<p>The Division of Mallee consists of:</p><ul><li>Buloke Shire Council,ÂƒÂƒ</li><li>Central Goldfields Shire Council,ÂƒÂƒ</li><li>Gannawarra Shire Council,ÂƒÂƒ</li><li>Hindmarsh Shire Council,ÂƒÂƒ</li><li>Horsham Rural City Council,ÂƒÂƒ</li><li>Loddon Shire Council,ÂƒÂƒ</li><li>Mildura Rural City Council,ÂƒÂƒ</li><li>Swan Hill Rural City Council,</li><li>ÂƒÂƒWest Wimmera Shire Council,ÂƒÂƒ</li><li>Yarriambiack Shire Council,ÂƒÂƒ</li><li>part of the Northern Grampians Shire Council, andÂƒÂƒ</li><li>part of the Pyrenees Shire Council.</li></ul>",
+    "Description": "<p>The Division of Mallee consists of:</p><ul><li>Buloke Shire Council,</li><li>Central Goldfields Shire Council,</li><li>Gannawarra Shire Council,</li><li>Hindmarsh Shire Council,</li><li>Horsham Rural City Council,</li><li>Loddon Shire Council,</li><li>Mildura Rural City Council,</li><li>Swan Hill Rural City Council,</li><li>West Wimmera Shire Council,</li><li>Yarriambiack Shire Council,</li><li>part of the Northern Grampians Shire Council, and</li><li>part of the Pyrenees Shire Council.</li></ul>",
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
     "ProductsAndIndustry": "Dried fruit, citrus and stone fruit, wheat and cereals, wool, sheep, vegetables, vineyards, olive oil, dairy and beef cattle, meat works, mining and flour milling.",
     "NameDerivation": "Named after the georaphic location covered by the electoral division. 'Mallee' is believe to be an Aboriginal word for dwarf eucalypts which grow in the area.",
@@ -3495,7 +3501,7 @@
     "ExistInCurrent": true,
     "ExistInFuture": true,
     "DateGazetted": "2018-03-27",
-    "Description": "<p>The Division of Bonner consists of:</p><ul><li>part of the Redland City Council, and</li><li>part of the Brisbane City Council.</li></ul>",
+    "Description": "<p>The Division of Bowman consists of:</p><ul><li>part of the Redland City Council, and</li><li>part of the Brisbane City Council.</li></ul>",
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
     "ProductsAndIndustry": "Farming, retail and industrial activities. Tourism on the islands and a winery at Mount Cotton.",
     "NameDerivation": "Named in honour of David Bowman, 1860-1916, one of the first members of the Labour party in the Queensland Parliament (1899-1902 and 1904-1916) who rendered valuable service in the interests of the community.",
