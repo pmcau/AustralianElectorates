@@ -7,12 +7,12 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="CaptureSnippetsSimple" Version="8.0.0-beta.4" />
+    <PackageReference Include="CaptureSnippetsSimple" Version="8.0.0-beta.7" />
     <PackageReference Include="ApprovalTests" Version="3.0.18" />
-    <PackageReference Include="Bogus" Version="25.0.2" />
-    <PackageReference Include="ObjectApproval" Version="3.0.0" />
+    <PackageReference Include="Bogus" Version="25.0.3" />
+    <PackageReference Include="ObjectApproval" Version="3.1.1" />
     <PackageReference Include="GeoJSON.Net" Version="1.1.70" />
-    <PackageReference Include="HtmlAgilityPack" Version="1.8.11" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.8.12" />
     <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
     <PackageReference Include="Xunit" Version="2.4.1" />
