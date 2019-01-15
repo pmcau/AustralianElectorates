@@ -1,6 +1,6 @@
 # <img src="https://raw.github.com/pmcau/AustralianElectorates/master/icon.png" height="40px"> Australian Electorate information
 
-All information about electorates is available at [/Data/electorates.json](/Data/electorates.json)
+All information about electorates are available at [/Data/electorates.json](/Data/electorates.json)
 
 
 ### Example content
@@ -151,6 +151,8 @@ Limited End-user licence provided by the Australian Electoral Commission: You ma
 
 
 ## Re-Generating the data
+
+Note: The below are only required by the maintainers and contributors of this project. They are not required when consuming the NuGet package.
 
 Some tools are required for GIS operations.
 
