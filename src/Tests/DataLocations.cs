@@ -5,7 +5,7 @@ public static class DataLocations
 {
     static DataLocations()
     {
-        RootDir = GitRepoDirectoryFinder.Find();
+        RootDir = GitRepoDirectoryFinder.FindForFilePath();
         TempPath = Path.GetFullPath(Path.Combine(RootDir, "temp"));
         Directory.CreateDirectory(TempPath);
         DataPath = Path.GetFullPath(Path.Combine(RootDir, "Data"));

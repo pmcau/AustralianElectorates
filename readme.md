@@ -1,4 +1,4 @@
-## Electorate information
+# <img src="https://raw.github.com/pmcau/AustralianElectorates/master/icon.png" height="40px"> Australian Electorate information
 
 All information about electorates is available at [/Data/electorates.json](/Data/electorates.json)
 
@@ -66,7 +66,7 @@ Below is the combinations for [Bass](https://www.aec.gov.au/profiles/tas/bass.ht
 | -----:| ---------------------------------------------------------------- | --------------:|
 | 2.8MB | [bass.geojson](/Data/Maps/Future/Electorates/bass.geojson)       | none           |
 | 231KB | [bass_20.geojson](/Data/Maps/Future/Electorates/bass_20.geojson) | 20%            |
-| 94KB  | [bass_10.geojson](/Data/Maps/Future/Electorates/bass_10.geojson) | 20%            |
+| 94KB  | [bass_10.geojson](/Data/Maps/Future/Electorates/bass_10.geojson) | 10%            |
 | 46KB  | [bass_05.geojson](/Data/Maps/Future/Electorates/bass_05.geojson) | 5%             |
 | 8KB   | [bass_01.geojson](/Data/Maps/Future/Electorates/bass_01.geojson) | 1%             |
 

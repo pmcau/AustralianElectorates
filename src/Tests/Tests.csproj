@@ -7,7 +7,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="CaptureSnippetsSimple" Version="8.0.0-beta.7" />
+    <PackageReference Include="CaptureSnippetsSimple" Version="8.0.0-beta.9" />
     <PackageReference Include="ApprovalTests" Version="3.0.18" />
     <PackageReference Include="Bogus" Version="25.0.3" />
     <PackageReference Include="ObjectApproval" Version="3.1.1" />
