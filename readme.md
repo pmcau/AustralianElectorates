@@ -140,6 +140,7 @@ DataLoader.Export(
     directory: directory,
     overwrite: true);
 ```
+<sup>[snippet source](/src/Tests/Snippets.cs#L16-L54)</sup>
 <!-- endsnippet -->
 
 
@@ -156,6 +157,7 @@ var faker = new Faker<Target>()
     .RuleFor(u => u.RandomMemberName, (f, u) => f.AustralianElectorates().MemberName());
 var targetInstance = faker.Generate();
 ```
+<sup>[snippet source](/src/Tests/Snippets.cs#L60-L69)</sup>
 <!-- endsnippet -->
 
 
