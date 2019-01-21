@@ -19,8 +19,6 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
     <ProjectReference Include="..\AustralianElectorates.Bogus\AustralianElectorates.Bogus.csproj" />
     <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="System.IO.Compression" />
   </ItemGroup>
 
