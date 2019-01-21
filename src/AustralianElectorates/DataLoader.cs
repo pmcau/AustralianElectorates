@@ -31,7 +31,7 @@ namespace AustralianElectorates
                 .SelectMany(x => x.Members)
                 .ToList();
             AllCurrentMembers = Electorates
-                .Where(x=>x.Members.Any())
+                .Where(x => x.Members.Any())
                 .Select(x => x.Members.First())
                 .ToList();
             InitNamed();
