@@ -102,7 +102,7 @@ public static class ElectoratesScraper
         }
         foreach (var text in texts)
         {
-            var cleaned = text.TrimEnd('(').Trim();
+            var cleaned = text.TrimEnd('(').TrimmedInnerHtml();
             if (cleaned.Length == 0)
             {
                 continue;
@@ -112,7 +112,7 @@ public static class ElectoratesScraper
             split = split[1].Split(new[] { ") " }, 2, StringSplitOptions.None);
             var party = split[0];
 
-            split = split[1].Split(new[] {"&ndash;", "â€“", "-" }, 2, StringSplitOptions.RemoveEmptyEntries);
+            split = split[1].Split(new[] {"-" }, 2, StringSplitOptions.RemoveEmptyEntries);
             var begin = ushort.Parse(split[0].Trim());
             ushort? end = null;
             if (split.Length > 1)
