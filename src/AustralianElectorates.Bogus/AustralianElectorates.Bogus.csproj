@@ -18,9 +18,6 @@
   <ItemGroup>
     <PackageReference Include="Bogus" Version="26.0.1" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-18618-05" PrivateAssets="All" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
   </ItemGroup>
 

@@ -17,5 +17,13 @@ namespace AustralianElectorates
         public string ProductsAndIndustry { get; set; }
         public string NameDerivation { get; set; }
         public List<Member> Members { get; set; }
+
+        public static string GetShortName(string name)
+        {
+            Guard.AgainstNullWhiteSpace(name, nameof(name));
+            return name.Replace(" ", "-")
+                .Replace("'", "")
+                .ToLowerInvariant();
+        }
     }
 }

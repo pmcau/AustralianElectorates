@@ -31,13 +31,27 @@ namespace AustralianElectorates
 
         public ElectorateMap GetElectorate(string electorateName)
         {
-            electorateName = GetElectorateShortName(electorateName);
             Guard.AgainstNullWhiteSpace(electorateName, nameof(electorateName));
-            return electoratesCache.GetOrAdd($@"{prefix}\Electorates\{electorateName}",
+            return GetElectorateInner(Electorate.GetShortName(electorateName),electorateName);
+        }
+
+        public ElectorateMap GetElectorate(Electorate electorate)
+        {
+            Guard.AgainstNull(electorate, nameof(electorate));
+            return GetElectorateInner(electorate.ShortName,electorate.Name);
+        }
+
+        private ElectorateMap GetElectorateInner(string electorateShortName, string electorateName)
+        {
+            return electoratesCache.GetOrAdd($@"{prefix}\Electorates\{electorateShortName}",
                 s =>
                 {
-                    var geoJson = Inner(s);
-                    var electorate = DataLoader.Electorates.Single(x => x.ShortName == electorateName);
+                    var geoJson = GetMap(s);
+                    var electorate = DataLoader.Electorates.SingleOrDefault(x => x.ShortName == electorateShortName);
+                    if (electorate == null)
+                    {
+                        throw new Exception($"Unable to find electorate named '{electorateName}'.");
+                    }
                     return new ElectorateMap
                     {
                         Electorate = electorate,
@@ -51,7 +65,7 @@ namespace AustralianElectorates
             var key = $@"{prefix}\{state.ToString().ToLowerInvariant()}";
             return statesCache.GetOrAdd(state, s =>
             {
-                var geoJson = Inner(key);
+                var geoJson = GetMap(key);
                 return new StateMap
                 {
                     State = state,
@@ -64,13 +78,13 @@ namespace AustralianElectorates
         {
             if (australia == null)
             {
-                australia = Inner($@"{prefix}\australia");
+                australia = GetMap($@"{prefix}\australia");
             }
 
             return australia;
         }
 
-        static string Inner(string path)
+        static string GetMap(string path)
         {
             using (var stream = assembly.GetManifestResourceStream("Maps.zip"))
             using (var archive = new ZipArchive(stream))
@@ -81,13 +95,8 @@ namespace AustralianElectorates
                     throw new Exception($"Could not find data for '{path}'.");
                 }
 
-                return ReadString(entry);
+                return entry.ReadString();
             }
-        }
-
-        public static string GetElectorateShortName(string electorate)
-        {
-            return electorate.Replace(" ", "-").Replace("'", "").ToLowerInvariant();
         }
 
         public void LoadAll()
@@ -98,7 +107,7 @@ namespace AustralianElectorates
                 foreach (var entry in archive.Entries.Where(x => x.FullName.StartsWith(prefix)))
                 {
                     var key = entry.FullName.Split('.').First();
-                    var mapString = ReadString(entry);
+                    var mapString = entry.ReadString();
 
                     if (key.Contains("Electorates"))
                     {
@@ -131,15 +140,6 @@ namespace AustralianElectorates
         static State ParseState(string key)
         {
             return (State) Enum.Parse(typeof(State), key.Split('\\')[1], true);
-        }
-
-        static string ReadString(ZipArchiveEntry entry)
-        {
-            using (var entryStream = entry.Open())
-            using (var reader = new StreamReader(entryStream))
-            {
-                return reader.ReadToEnd();
-            }
         }
     }
 }
