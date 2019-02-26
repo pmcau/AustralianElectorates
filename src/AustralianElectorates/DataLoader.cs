@@ -68,6 +68,7 @@ namespace AustralianElectorates
 
         public static ElectorateMap GetCurrentMap(this Electorate electorate)
         {
+            Guard.AgainstNull(electorate, nameof(electorate));
             if (!electorate.ExistInCurrent)
             {
                 throw new Exception($"Electorate '{electorate.Name}' does not have a current map");
@@ -78,6 +79,7 @@ namespace AustralianElectorates
 
         public static ElectorateMap GetFutureMap(this Electorate electorate)
         {
+            Guard.AgainstNull(electorate, nameof(electorate));
             if (!electorate.ExistInFuture)
             {
                 throw new Exception($"Electorate '{electorate.Name}' does not have a future map");
