@@ -25,5 +25,15 @@ namespace AustralianElectorates
                 .Replace("'", "")
                 .ToLowerInvariant();
         }
+
+        public ElectorateMap GetCurrentMap()
+        {
+            return DataLoader.GetCurrentMap(this);
+        }
+
+        public ElectorateMap GetFutureMap()
+        {
+            return DataLoader.GetFutureMap(this);
+        }
     }
 }
