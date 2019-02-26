@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
     <Optimize>false</Optimize>
@@ -7,7 +6,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="MarkdownSnippets" Version="8.6.8" />
+    <PackageReference Include="MarkdownSnippets" Version="8.7.1" />
     <PackageReference Include="ApprovalTests" Version="3.0.19" />
     <PackageReference Include="Bogus" Version="25.0.4" />
     <PackageReference Include="ObjectApproval" Version="6.0.0" />
@@ -21,5 +20,4 @@
     <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
     <Reference Include="System.IO.Compression" />
   </ItemGroup>
-
 </Project>
