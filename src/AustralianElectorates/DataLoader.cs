@@ -52,9 +52,14 @@ namespace AustralianElectorates
 
         public static void Export(string directory, bool overwrite = false)
         {
-            Guard.AgainstNull(directory, nameof(directory));
+            Guard.AgainstNullWhiteSpace(nameof(directory), directory);
+            var electoratesJsonPath = Path.Combine(directory, "electorates.json");
+            if (!overwrite && File.Exists(electoratesJsonPath))
+            {
+                throw new Exception($"File exists: {electoratesJsonPath}");
+            }
             using (var stream = assembly.GetManifestResourceStream("electorates.json"))
-            using (var target = File.Create(Path.Combine(directory, "electorates.json")))
+            using (var target = File.Create(electoratesJsonPath))
             {
                 stream.CopyTo(target);
             }
