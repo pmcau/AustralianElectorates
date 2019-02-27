@@ -26,6 +26,22 @@ public class DataLoaderTests
     }
 
     [Fact]
+    public void TryFindElectorate_not_found()
+    {
+        Assert.False(DataLoader.TryFindElectorate("not Found", out _));
+        var exception = Assert.Throws<Exception>(() => DataLoader.FindElectorate("not Found"));
+        Approvals.Verify(exception.Message);
+    }
+
+    [Fact]
+    public void TryFindElectorate()
+    {
+        Assert.True(DataLoader.TryFindElectorate("Bass", out var electorate));
+        Assert.NotNull(electorate);
+        Assert.NotNull(DataLoader.FindElectorate("Bass"));
+    }
+
+    [Fact]
     public void Export()
     {
         InnerExport(false);

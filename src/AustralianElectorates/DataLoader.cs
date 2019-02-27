@@ -44,6 +44,29 @@ namespace AustralianElectorates
         public static MapCollection CurrentMaps { get; } = new MapCollection("Current");
         public static MapCollection FutureMaps { get; } = new MapCollection("Future");
 
+        public static Electorate FindElectorate(string name)
+        {
+            Guard.AgainstNullWhiteSpace(nameof(name),name);
+            if (TryFindElectorate(name, out var electorate))
+            {
+                return electorate;
+            }
+
+            throw new Exception($"Unable to find electorate named '{name}'.");
+        }
+
+        public static bool TryFindElectorate(string name, out Electorate electorate)
+        {
+            Guard.AgainstNullWhiteSpace(nameof(name),name);
+            electorate = Electorates.SingleOrDefault(x => x.Name == name);
+            if (electorate != null)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
         public static void LoadAll()
         {
             FutureMaps.LoadAll();
