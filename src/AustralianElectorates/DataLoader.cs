@@ -58,7 +58,7 @@ namespace AustralianElectorates
         public static bool TryFindElectorate(string name, out Electorate electorate)
         {
             Guard.AgainstNullWhiteSpace(nameof(name),name);
-            electorate = Electorates.SingleOrDefault(x => x.Name == name);
+            electorate = Electorates.SingleOrDefault(x => string.Equals(x.Name, name, StringComparison.OrdinalIgnoreCase));
             if (electorate != null)
             {
                 return true;
