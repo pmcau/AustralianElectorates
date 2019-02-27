@@ -1,1 +1,4 @@
-﻿Unable to find electorate named 'not Found'.
+﻿{
+  Name: 'not Found',
+  Message: 'Unable to find electorate named \'not Found\'.'
+}

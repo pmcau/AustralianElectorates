@@ -46,18 +46,18 @@ namespace AustralianElectorates
 
         public static Electorate FindElectorate(string name)
         {
-            Guard.AgainstNullWhiteSpace(nameof(name),name);
+            Guard.AgainstNullWhiteSpace(nameof(name), name);
             if (TryFindElectorate(name, out var electorate))
             {
                 return electorate;
             }
 
-            throw new Exception($"Unable to find electorate named '{name}'.");
+            throw new ElectorateNotFoundException(name);
         }
 
         public static bool TryFindElectorate(string name, out Electorate electorate)
         {
-            Guard.AgainstNullWhiteSpace(nameof(name),name);
+            Guard.AgainstNullWhiteSpace(nameof(name), name);
             electorate = Electorates.SingleOrDefault(x => string.Equals(x.Name, name, StringComparison.OrdinalIgnoreCase));
             if (electorate != null)
             {
@@ -81,6 +81,7 @@ namespace AustralianElectorates
             {
                 throw new Exception($"File exists: {electoratesJsonPath}");
             }
+
             using (var stream = assembly.GetManifestResourceStream("electorates.json"))
             using (var target = File.Create(electoratesJsonPath))
             {

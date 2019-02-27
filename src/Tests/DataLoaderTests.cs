@@ -29,8 +29,8 @@ public class DataLoaderTests
     public void TryFindElectorate_not_found()
     {
         Assert.False(DataLoader.TryFindElectorate("not Found", out _));
-        var exception = Assert.Throws<Exception>(() => DataLoader.FindElectorate("not Found"));
-        Approvals.Verify(exception.Message);
+        var exception = Assert.Throws<ElectorateNotFoundException>(() => DataLoader.FindElectorate("not Found"));
+        ObjectApprover.VerifyWithJson(new {exception.Name, exception.Message});
     }
 
     [Fact]
