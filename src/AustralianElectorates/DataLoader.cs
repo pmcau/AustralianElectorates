@@ -67,6 +67,30 @@ namespace AustralianElectorates
             return false;
         }
 
+        public static void ValidateElectorates(params string[] names)
+        {
+            ValidateElectorates((IEnumerable<string>)names);
+        }
+
+        public static void ValidateElectorates(IEnumerable<string> names)
+        {
+            var missing = FindInvalidateElectorates(names).ToList();
+            if (missing.Any())
+            {
+                throw new ElectoratesNotFoundException(missing);
+            }
+        }
+        public static IEnumerable<string> FindInvalidateElectorates(params string[] names)
+        {
+           return FindInvalidateElectorates((IEnumerable<string>)names);
+        }
+
+        public static IEnumerable<string> FindInvalidateElectorates(IEnumerable<string> names)
+        {
+            Guard.AgainstNull(names, nameof(names));
+            return names.Where(name => !Electorates.Any(x => string.Equals(x.Name, name, StringComparison.OrdinalIgnoreCase)));
+        }
+
         public static void LoadAll()
         {
             FutureMaps.LoadAll();

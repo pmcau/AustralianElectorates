@@ -6,11 +6,12 @@ namespace AustralianElectorates
     {
         public string Name { get; }
 
-        public ElectorateNotFoundException(string name) :
-            base($"Unable to find electorate named '{name}'.")
+        public ElectorateNotFoundException(string name)
         {
             Guard.AgainstNullWhiteSpace(nameof(name), name);
             Name = name;
         }
+
+        public override string Message => $"Unable to find electorate: '{Name}'.";
     }
 }

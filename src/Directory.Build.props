@@ -4,7 +4,7 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <LangVersion>latest</LangVersion>
     <NoWarn>CS1591;NU5125</NoWarn>
-    <Version>1.15.2</Version>
+    <Version>1.16.0</Version>
     <PackageLicenseUrl>https://github.com/pmcau/AustralianElectorates/blob/master/license.txt</PackageLicenseUrl>
     <Copyright>Code under MIT. Data under AEC Copyright https://www.aec.gov.au/footer/Copyright.htm.</Copyright>
     <PackageIconUrl>https://raw.githubusercontent.com/pmcau/AustralianElectorates/master/icon.png</PackageIconUrl>

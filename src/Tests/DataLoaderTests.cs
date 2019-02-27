@@ -34,6 +34,19 @@ public class DataLoaderTests
     }
 
     [Fact]
+    public void ValidateElectorates()
+    {
+        var exception = Assert.Throws<ElectoratesNotFoundException>(() => DataLoader.ValidateElectorates("not Found", "Bass"));
+        ObjectApprover.VerifyWithJson(new {exception.Names, exception.Message});
+    }
+
+    [Fact]
+    public void FindInvalidateElectorates()
+    {
+        ObjectApprover.VerifyWithJson(DataLoader.FindInvalidateElectorates("not Found", "Bass"));
+    }
+
+    [Fact]
     public void TryFindElectorate()
     {
         Assert.True(DataLoader.TryFindElectorate("Bass", out var electorate));
