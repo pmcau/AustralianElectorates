@@ -9,6 +9,7 @@ namespace AustralianElectorates
 {
     public static partial class DataLoader
     {
+        static object exportLocker = new object();
         static Assembly assembly;
 
         static DataLoader()
@@ -100,12 +101,15 @@ namespace AustralianElectorates
         public static void Export(string directory)
         {
             Guard.AgainstNullWhiteSpace(nameof(directory), directory);
-            WriteElectoratesJson(directory);
-
-            using (var stream = assembly.GetManifestResourceStream("Maps.zip"))
-            using (var archive = new ZipArchive(stream))
+            lock (exportLocker)
             {
-                archive.ExtractToDirectory(directory);
+                WriteElectoratesJson(directory);
+
+                using (var stream = assembly.GetManifestResourceStream("Maps.zip"))
+                using (var archive = new ZipArchive(stream))
+                {
+                    archive.ExtractToDirectory(directory);
+                }
             }
         }
 
