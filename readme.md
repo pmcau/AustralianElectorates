@@ -142,11 +142,9 @@ Debug.WriteLine(futureCanberraGeoJson);
 // /Future/Electorates (future electorate geojson files)
 var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
 Directory.CreateDirectory(directory);
-DataLoader.Export(
-    directory: directory,
-    overwrite: true);
+DataLoader.Export(directory);
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L16-L54)</sup>
+<sup>[snippet source](/src/Tests/Snippets.cs#L16-L52)</sup>
 <!-- endsnippet -->
 
 
@@ -163,7 +161,7 @@ var faker = new Faker<Target>()
     .RuleFor(u => u.RandomMemberName, (f, u) => f.AustralianElectorates().MemberName());
 var targetInstance = faker.Generate();
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L60-L69)</sup>
+<sup>[snippet source](/src/Tests/Snippets.cs#L58-L67)</sup>
 <!-- endsnippet -->
 
 

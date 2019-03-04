@@ -70,10 +70,13 @@ public class DataLoaderTests
     {
         var directory = Path.Combine(Environment.CurrentDirectory, "export");
         Directory.CreateDirectory(directory);
-        //IoHelpers.PurgeDirectoryRecursive(directory);
+
         try
-        {
-            DataLoader.Export(directory,overwrite);
+        {   if (overwrite)
+            {
+                DataLoader.Export(directory);
+            }
+            DataLoader.Export(directory);
             Approvals.Verify(Directory.EnumerateFiles(directory, "*.*", SearchOption.AllDirectories).Count());
         }
         finally

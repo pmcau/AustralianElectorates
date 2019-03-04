@@ -48,9 +48,7 @@ public class Snippets
         // /Future/Electorates (future electorate geojson files)
         var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
         Directory.CreateDirectory(directory);
-        DataLoader.Export(
-            directory: directory,
-            overwrite: true);
+        DataLoader.Export(directory);
         #endregion
     }
 

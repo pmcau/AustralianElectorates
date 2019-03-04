@@ -97,13 +97,28 @@ namespace AustralianElectorates
             CurrentMaps.LoadAll();
         }
 
-        public static void Export(string directory, bool overwrite = false)
+        public static void Export(string directory)
         {
             Guard.AgainstNullWhiteSpace(nameof(directory), directory);
-            var electoratesJsonPath = Path.Combine(directory, "electorates.json");
-            if (!overwrite && File.Exists(electoratesJsonPath))
+            WriteElectoratesJson(directory);
+
+            using (var stream = assembly.GetManifestResourceStream("Maps.zip"))
+            using (var archive = new ZipArchive(stream))
             {
-                throw new Exception($"File exists: {electoratesJsonPath}");
+                archive.ExtractToDirectory(directory);
+            }
+        }
+
+        static void WriteElectoratesJson(string directory)
+        {
+            var electoratesJsonPath = Path.Combine(directory, "electorates.json");
+            if (File.Exists(electoratesJsonPath))
+            {
+                var existingCreationTime = File.GetCreationTimeUtc(electoratesJsonPath);
+                if (AssemblyTimestamp.Value == existingCreationTime)
+                {
+                    return;
+                }
             }
 
             using (var stream = assembly.GetManifestResourceStream("electorates.json"))
@@ -112,11 +127,7 @@ namespace AustralianElectorates
                 stream.CopyTo(target);
             }
 
-            using (var stream = assembly.GetManifestResourceStream("Maps.zip"))
-            using (var archive = new ZipArchive(stream))
-            {
-                archive.ExtractToDirectory(directory, overwrite);
-            }
+            File.SetCreationTimeUtc(electoratesJsonPath, AssemblyTimestamp.Value);
         }
 
         public static ElectorateMap GetCurrentMap(this Electorate electorate)
