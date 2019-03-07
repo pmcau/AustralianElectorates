@@ -1,11 +1,117 @@
 ﻿{
+  denison: {
+    Name: 'Denison',
+    ShortName: 'denison',
+    State: 'TAS',
+    Description: 'Denison covers an area of approximately 289 sq km from Austins Ferry in the north to Kingston in the south, from Hobart in the east to Collinsvale in the west. The City of Hobart and environs, the City of Glenorchy and parts of the Kingborough municipality are in this division.',
+    DemographicRating: 'Inner Metropolitan',
+    ProductsAndIndustry: 'Banking and retail, chocolate and confectionery, catamaran construction, brewery, zinc works, food and timber processing, heavy transport, wholesale trade, engineering works, glass products and port facilities at Hobart.',
+    NameDerivation: 'Named after Sir William Denison 1804-71, Lieutenant-Governor of Tasmania 1847-55 and Governor of New South Wales 1855-61.',
+    Members: [
+      {
+        Name: 'Wilkie, A',
+        Begin: 2010,
+        Party: 'IND'
+      },
+      {
+        Name: 'Kerr, D',
+        Begin: 1987,
+        End: 2010,
+        Party: 'ALP'
+      },
+      {
+        Name: 'Hodgman, W M',
+        Begin: 1975,
+        End: 1987,
+        Party: 'LP'
+      },
+      {
+        Name: 'Coates, J',
+        Begin: 1972,
+        End: 1975,
+        Party: 'ALP'
+      },
+      {
+        Name: 'Solomon, R J',
+        Begin: 1969,
+        End: 1972,
+        Party: 'LP'
+      },
+      {
+        Name: 'Gibson, A',
+        Begin: 1964,
+        End: 1969,
+        Party: 'LP'
+      },
+      {
+        Name: 'Townley, A G',
+        Begin: 1949,
+        End: 1963,
+        Party: 'LP'
+      },
+      {
+        Name: 'Gaha, J F',
+        Begin: 1943,
+        End: 1949,
+        Party: 'ALP'
+      },
+      {
+        Name: 'Beck, A J',
+        Begin: 1940,
+        End: 1943,
+        Party: 'UAP'
+      },
+      {
+        Name: 'Mahoney, G W',
+        Begin: 1934,
+        End: 1940,
+        Party: 'ALP'
+      },
+      {
+        Name: 'Hutchin, A W',
+        Begin: 1931,
+        End: 1934,
+        Party: 'UAP'
+      },
+      {
+        Name: 'Culley, C E',
+        Begin: 1928,
+        End: 1931,
+        Party: 'ALP'
+      },
+      {
+        Name: 'Gellibrand, J',
+        Begin: 1925,
+        End: 1928,
+        Party: 'NAT'
+      },
+      {
+        Name: 'O\'Keefe, D J',
+        Begin: 1922,
+        End: 1925,
+        Party: 'ALP'
+      },
+      {
+        Name: 'Smith, W H',
+        Begin: 1910,
+        End: 1922,
+        Party: 'ALP/NAT'
+      },
+      {
+        Name: 'Fysh, P',
+        Begin: 1903,
+        End: 1910,
+        Party: 'PROT/ANTI-SOC'
+      }
+    ]
+  },
   melbourne: {
     Name: 'Melbourne',
     ShortName: 'melbourne',
     State: 'VIC',
     Area: 40.0,
     DateGazetted: 'DateTime 1',
-    Description: '<p>The Division of Melbourne consists of:</p><ul><li>part of the Melbourne City Council,ÂƒÂƒ</li><li>part of the Moonee Valley City Council,ÂƒÂƒ</li><li>part of the Moreland City Council, andÂƒÂƒ</li><li>part of the Yarra City Council.</li></ul>',
+    Description: '<p>The Division of Melbourne consists of:</p><ul><li>part of the Melbourne City Council,</li><li>part of the Moonee Valley City Council,</li><li>part of the Moreland City Council, and</li><li>part of the Yarra City Council.</li></ul>',
     DemographicRating: '<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.',
     ProductsAndIndustry: 'Professional, scientific and technical services, financial services, accommodation and food services, health care, education and training, retail and manufacturing.',
     NameDerivation: 'Named after the City of Melbourne. The settlement of Port Phillip was named \'Melbourne\' on 5 March 1837 in honour of Lord Melbourne who was the Prime Minister of Great Britain at the time.',
@@ -432,7 +538,7 @@
     Description: '<p>The Division of Bass is located on Launceston and consists of the:</p><ul><li>City of Launceston</li><li>Municipality of Dorset</li><li>Municipality of Flinders</li><li>Municipality of George Town</li><li>Municipality of West Tamar </li></ul><p>The Division of Bass includes Flinders Island.</p>',
     DemographicRating: '<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.',
     ProductsAndIndustry: 'Aluminium and ferrous metal smelting, brewery, cattle (dairy and beef) farming, manufacturing, mining, ports and shipping, ship building, timber, tourism, fishing, wineries and wool.',
-    NameDerivation: 'Named in honour of George Bass, 1771-1803. Bass was a surgeon, scientist and explorer who was one of those responsible for the early geographical investigation of the Australian coast. Bassâ€™ explorations included the islands in Bass Strait, Tamar estuary, Derwent estuary and Mount Wellington.',
+    NameDerivation: 'Named in honour of George Bass, 1771-1803. Bass was a surgeon, scientist and explorer who was one of those responsible for the early geographical investigation of the Australian coast. Bass\' explorations included the islands in Bass Strait, Tamar estuary, Derwent estuary and Mount Wellington.',
     Members: [
       {
         Name: 'Hart, R',

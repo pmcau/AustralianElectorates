@@ -15,14 +15,20 @@ public static class ElectoratesScraper
         {
             var tempElectorateHtmlPath = Path.Combine(DataLocations.TempPath, $"{shortName}.html");
             await Downloader.DownloadFile(tempElectorateHtmlPath, $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm");
+            var prefix = "Profile of the electoral division of ";
             if (!File.Exists(tempElectorateHtmlPath))
             {
-                return null;
+                await Downloader.DownloadFile(tempElectorateHtmlPath, $"https://www.aec.gov.au/Elections/federal_elections/2016/profiles/{state}/{shortName}.htm");
+                prefix = "2016 federal election: profile of the electoral division of ";
+            }
+            if (!File.Exists(tempElectorateHtmlPath))
+            {
+                throw new Exception($"Could not download {shortName}");
             }
             var document = new HtmlDocument();
             document.Load(tempElectorateHtmlPath);
 
-            var fullName = GetFullName(document);
+            var fullName = GetFullName(document, prefix);
             var values = new Dictionary<string, HtmlNode>(StringComparer.OrdinalIgnoreCase);
             var profileId = FindProfileTable(document);
             var htmlNodeCollection = profileId.SelectNodes("dt");
@@ -70,12 +76,17 @@ public static class ElectoratesScraper
         }
     }
 
-    static string GetFullName(HtmlDocument document)
+    private static string GetFullName(HtmlDocument document, string prefix)
     {
-        var headings = document.DocumentNode.Descendants("h1")
-            .Select(x=>x.InnerText).ToList();
-        var strings =headings.Single(x => x.StartsWith("Profile of the electoral division of "))
-            .Replace("Profile of the electoral division of ","")
+        var headings = document.Headings();
+        var caseless = headings.Single(x => x.StartsWith(prefix))
+            .ReplaceCaseless(prefix, "");
+        return TrimState(caseless);
+    }
+
+    static string TrimState(string caseless)
+    {
+        var strings = caseless
             .Split(new[] {" ("}, StringSplitOptions.None);
         var fullName = strings[0];
         Assert.NotEmpty(fullName);

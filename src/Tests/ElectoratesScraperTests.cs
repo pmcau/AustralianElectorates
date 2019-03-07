@@ -9,7 +9,7 @@ public class ElectoratesScraperTests
     [Trait("Category", "Integration")]
     public async Task Run()
     {
-        Assert.Null(await ElectoratesScraper.ScrapeElectorate("denison", State.TAS));
+        var denison =await ElectoratesScraper.ScrapeElectorate("denison", State.TAS);
         var bass = await ElectoratesScraper.ScrapeElectorate("bass", State.TAS);
         var fenner = await ElectoratesScraper.ScrapeElectorate("fenner", State.ACT);
         var hunter = await ElectoratesScraper.ScrapeElectorate("hunter", State.NSW);
@@ -19,6 +19,6 @@ public class ElectoratesScraperTests
         var bean = await ElectoratesScraper.ScrapeElectorate("bean", State.ACT);
         var batman = await ElectoratesScraper.ScrapeElectorate("batman", State.VIC);
         var melbourne = await ElectoratesScraper.ScrapeElectorate("melbourne", State.VIC);
-        ObjectApprover.VerifyWithJson(new {melbourne, hunter, batman, spence, cook, bean, fenner , canberra , bass });
+        ObjectApprover.VerifyWithJson(new {denison, melbourne, hunter, batman, spence, cook, bean, fenner , canberra , bass });
     }
 }

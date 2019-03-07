@@ -298,6 +298,115 @@
     ]
   },
   {
+    "Name": "Denison",
+    "ShortName": "denison",
+    "State": "TAS",
+    "Area": 0.0,
+    "Exist2016": true,
+    "ExistInFuture": false,
+    "Description": "Denison covers an area of approximately 289 sq km from Austins Ferry in the north to Kingston in the south, from Hobart in the east to Collinsvale in the west. The City of Hobart and environs, the City of Glenorchy and parts of the Kingborough municipality are in this division.",
+    "DemographicRating": "Inner Metropolitan",
+    "ProductsAndIndustry": "Banking and retail, chocolate and confectionery, catamaran construction, brewery, zinc works, food and timber processing, heavy transport, wholesale trade, engineering works, glass products and port facilities at Hobart.",
+    "NameDerivation": "Named after Sir William Denison 1804-71, Lieutenant-Governor of Tasmania 1847-55 and Governor of New South Wales 1855-61.",
+    "Members": [
+      {
+        "Name": "Wilkie, A",
+        "Begin": 2010,
+        "Party": "IND"
+      },
+      {
+        "Name": "Kerr, D",
+        "Begin": 1987,
+        "End": 2010,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Hodgman, W M",
+        "Begin": 1975,
+        "End": 1987,
+        "Party": "LP"
+      },
+      {
+        "Name": "Coates, J",
+        "Begin": 1972,
+        "End": 1975,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Solomon, R J",
+        "Begin": 1969,
+        "End": 1972,
+        "Party": "LP"
+      },
+      {
+        "Name": "Gibson, A",
+        "Begin": 1964,
+        "End": 1969,
+        "Party": "LP"
+      },
+      {
+        "Name": "Townley, A G",
+        "Begin": 1949,
+        "End": 1963,
+        "Party": "LP"
+      },
+      {
+        "Name": "Gaha, J F",
+        "Begin": 1943,
+        "End": 1949,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Beck, A J",
+        "Begin": 1940,
+        "End": 1943,
+        "Party": "UAP"
+      },
+      {
+        "Name": "Mahoney, G W",
+        "Begin": 1934,
+        "End": 1940,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Hutchin, A W",
+        "Begin": 1931,
+        "End": 1934,
+        "Party": "UAP"
+      },
+      {
+        "Name": "Culley, C E",
+        "Begin": 1928,
+        "End": 1931,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Gellibrand, J",
+        "Begin": 1925,
+        "End": 1928,
+        "Party": "NAT"
+      },
+      {
+        "Name": "O'Keefe, D J",
+        "Begin": 1922,
+        "End": 1925,
+        "Party": "ALP"
+      },
+      {
+        "Name": "Smith, W H",
+        "Begin": 1910,
+        "End": 1922,
+        "Party": "ALP/NAT"
+      },
+      {
+        "Name": "Fysh, P",
+        "Begin": 1903,
+        "End": 1910,
+        "Party": "PROT/ANTI-SOC"
+      }
+    ]
+  },
+  {
     "Name": "Franklin",
     "ShortName": "franklin",
     "State": "TAS",

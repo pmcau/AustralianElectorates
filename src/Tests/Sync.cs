@@ -152,12 +152,9 @@ public class Sync
                 var existIn2016 = electorates2016.Contains(electorateName);
                 var existInFuture = electoratesFuture.Contains(electorateName);
                 var electorate = await ElectoratesScraper.ScrapeElectorate(electorateName, electoratePair.Key);
-                if (electorate != null)
-                {
-                    electorate.Exist2016 = existIn2016;
-                    electorate.ExistInFuture = existInFuture;
-                    electorates.Add(electorate);
-                }
+                electorate.Exist2016 = existIn2016;
+                electorate.ExistInFuture = existInFuture;
+                electorates.Add(electorate);
             }
         }
 
