@@ -17,10 +17,10 @@ public class DataLoaderTests
     [Fact]
     public void GetAustralia()
     {
-        var dataCurrent = DataLoader.CurrentMaps.GetAustralia();
-        Assert.NotEmpty(dataCurrent);
-        Assert.NotNull(dataCurrent);
-        var dataFuture = DataLoader.FutureMaps.GetAustralia();
+        var data2016 = DataLoader.Maps2016.GetAustralia();
+        Assert.NotEmpty(data2016);
+        Assert.NotNull(data2016);
+        var dataFuture = DataLoader.MapsFuture.GetAustralia();
         Assert.NotEmpty(dataFuture);
         Assert.NotNull(dataFuture);
     }
@@ -88,35 +88,35 @@ public class DataLoaderTests
     [Fact]
     public void GetCurrentState()
     {
-        var data = DataLoader.CurrentMaps.GetState(State.ACT);
+        var data = DataLoader.Maps2016.GetState(State.ACT);
         ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
     }
 
     [Fact]
     public void GetFutureState()
     {
-        var data = DataLoader.FutureMaps.GetState(State.ACT);
+        var data = DataLoader.MapsFuture.GetState(State.ACT);
         ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
     }
 
     [Fact]
     public void GetCurrentElectorate()
     {
-        var data = DataLoader.CurrentMaps.GetElectorate("fenner");
+        var data = DataLoader.Maps2016.GetElectorate("fenner");
         ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
     }
 
     [Fact]
     public void GetElectorateFull()
     {
-        var data = DataLoader.CurrentMaps.GetElectorate("O'Connor");
+        var data = DataLoader.Maps2016.GetElectorate("O'Connor");
         Assert.NotNull(data);
     }
 
     [Fact]
     public void GetFutureElectorate()
     {
-        var data = DataLoader.FutureMaps.GetElectorate("fenner");
+        var data = DataLoader.MapsFuture.GetElectorate("fenner");
         ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
     }
 
@@ -140,10 +140,10 @@ public class DataLoaderTests
         DataLoader.LoadAll();
         ObjectApprover.VerifyWithJson(new
         {
-            FutureLoadedElectorateMaps = DataLoader.FutureMaps.LoadedElectorates.Count,
-            FutureLoadedStateMaps = DataLoader.FutureMaps.LoadedStates.Count,
-            CurrentLoadedElectorateMaps = DataLoader.CurrentMaps.LoadedElectorates.Count,
-            CurrentLoadedStateMaps = DataLoader.CurrentMaps.LoadedStates.Count,
+            FutureLoadedElectorateMaps = DataLoader.MapsFuture.LoadedElectorates.Count,
+            FutureLoadedStateMaps = DataLoader.MapsFuture.LoadedStates.Count,
+            CurrentLoadedElectorateMaps = DataLoader.Maps2016.LoadedElectorates.Count,
+            CurrentLoadedStateMaps = DataLoader.Maps2016.LoadedStates.Count,
         });
     }
 }

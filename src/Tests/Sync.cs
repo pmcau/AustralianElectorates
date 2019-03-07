@@ -16,11 +16,11 @@ public class Sync
         IoHelpers.PurgeDirectory(DataLocations.MapsPath);
         IoHelpers.PurgeDirectory(DataLocations.TempPath);
 
-        await GetCurrent();
+        await Get2016();
 
         await FutureToCountry.Run();
 
-        ProcessYear(DataLocations.MapsCurrentPath, electoratesCurrent);
+        ProcessYear(DataLocations.Maps2016Path, electorates2016);
         ProcessYear(DataLocations.MapsFuturePath, electoratesFuture);
 
         var electorates = await WriteElectoratesMetaData();
@@ -33,7 +33,7 @@ public class Sync
     static List<int> percents;
 
     static List<string> electoratesFuture = new List<string>();
-    static List<string> electoratesCurrent = new List<string>();
+    static List<string> electorates2016 = new List<string>();
 
     static Dictionary<State, HashSet<string>> electorateNames = new Dictionary<State, HashSet<string>>
     {
@@ -96,13 +96,13 @@ public class Sync
         }
     }
 
-    static async Task GetCurrent()
+    static async Task Get2016()
     {
-        var zip = Path.Combine(DataLocations.TempPath, "current.zip");
+        var zip = Path.Combine(DataLocations.TempPath, "2016.zip");
         await Downloader.DownloadFile(zip, "https://www.aec.gov.au/Electorates/gis/files/national-midmif-09052016.zip");
-        var targetPath = Path.Combine(DataLocations.MapsCurrentPath, "australia.geojson");
+        var targetPath = Path.Combine(DataLocations.Maps2016Path, "australia.geojson");
 
-        var extractDirectory = Path.Combine(DataLocations.TempPath, "australiaCurrent_extract");
+        var extractDirectory = Path.Combine(DataLocations.TempPath, "australia2016_extract");
         ZipFile.ExtractToDirectory(zip, extractDirectory);
 
         MapToGeoJson.ConvertTab(targetPath, Path.Combine(extractDirectory, "COM_ELB.tab"));
@@ -149,12 +149,12 @@ public class Sync
         {
             foreach (var electorateName in electoratePair.Value)
             {
-                var existInCurrent = electoratesCurrent.Contains(electorateName);
+                var existIn2016 = electorates2016.Contains(electorateName);
                 var existInFuture = electoratesFuture.Contains(electorateName);
                 var electorate = await ElectoratesScraper.ScrapeElectorate(electorateName, electoratePair.Key);
                 if (electorate != null)
                 {
-                    electorate.ExistInCurrent = existInCurrent;
+                    electorate.Exist2016 = existIn2016;
                     electorate.ExistInFuture = existInFuture;
                     electorates.Add(electorate);
                 }

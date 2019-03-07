@@ -18,7 +18,7 @@ All information about electorates are available at [/Data/electorates.json](/Dat
     "ShortName": "canberra",
     "State": "ACT",
     "Area": 312.0,
-    "ExistInCurrent": true,
+    "ExistIn2016": true,
     "ExistInFuture": true,
     "DateGazetted": "2018-07-13",
     "Description": "<p>The Division of Canberra covers an area in central ACT consisting of the Districts of:</p><ul><li>Canberra Central,</li><li>Kowen,</li><li>Majura,</li><li>part of Belconnen,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul>",
@@ -49,7 +49,7 @@ All maps are in [geojson format](http://geojson.org/).
 The following grouping of maps exist:
 
  * Future (Next election) [/Data/Maps/Future](/Data/Maps/Future)
- * Current (2016 election) [/Data/Maps/Current](/Data/Maps/Current)
+ * 2016 election [/Data/Maps/2016](/Data/Maps/2016)
 
 
 ### Structure
@@ -122,15 +122,15 @@ Debug.WriteLine(currentMember.Name);
 Debug.WriteLine(currentMember.Party);
 
 // get an electorates maps (geojson) by string
-var currentFennerGeoJson = DataLoader.Fenner.GetCurrentMap();
+var currentFennerGeoJson = DataLoader.Fenner.Get2016Map();
 Debug.WriteLine(currentFennerGeoJson);
 var futureFennerGeoJson = DataLoader.Fenner.GetFutureMap();
 Debug.WriteLine(futureFennerGeoJson);
 
 // get an electorates maps (geojson) by string
-var currentCanberraGeoJson = DataLoader.CurrentMaps.GetElectorate("Canberra");
+var currentCanberraGeoJson = DataLoader.Maps2016.GetElectorate("Canberra");
 Debug.WriteLine(currentCanberraGeoJson);
-var futureCanberraGeoJson = DataLoader.FutureMaps.GetElectorate("Canberra");
+var futureCanberraGeoJson = DataLoader.MapsFuture.GetElectorate("Canberra");
 Debug.WriteLine(futureCanberraGeoJson);
 
 // export all data to a directory

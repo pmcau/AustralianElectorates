@@ -14,8 +14,8 @@ public static class DataLocations
         Directory.CreateDirectory(MapsPath);
         MapsFuturePath = Path.GetFullPath(Path.Combine(MapsPath, "Future"));
         Directory.CreateDirectory(MapsFuturePath);
-        MapsCurrentPath = Path.GetFullPath(Path.Combine(MapsPath, "Current"));
-        Directory.CreateDirectory(MapsCurrentPath);
+        Maps2016Path = Path.GetFullPath(Path.Combine(MapsPath, "2016"));
+        Directory.CreateDirectory(Maps2016Path);
         MapsCuratedPath = Path.GetFullPath(Path.Combine(DataPath, "MapsCurated"));
         Directory.CreateDirectory(MapsCuratedPath);
         AustralianElectoratesProjectPath = Path.GetFullPath(Path.Combine(RootDir, "src/AustralianElectorates"));
@@ -27,7 +27,7 @@ public static class DataLocations
     public static string AustralianElectoratesProjectPath;
     public static string BogusProjectPath;
     public static string MapsPath;
-    public static string MapsCurrentPath;
+    public static string Maps2016Path;
     public static string MapsFuturePath;
     public static string MapsCuratedPath;
     public static string MapsCuratedZipPath;

@@ -25,9 +25,9 @@ public static class FutureToCountry
         foreach (var stateUrl in stateUrls)
         {
             var state = stateUrl.Key;
-            var targetPath = Path.Combine(DataLocations.TempPath, $"current_{state}.zip");
+            var targetPath = Path.Combine(DataLocations.TempPath, $"2016_{state}.zip");
             await Downloader.DownloadFile(targetPath, stateUrl.Value);
-            var extractDirectory = Path.Combine(DataLocations.TempPath, $"current_{state}_extract");
+            var extractDirectory = Path.Combine(DataLocations.TempPath, $"2016_{state}_extract");
             ZipFile.ExtractToDirectory(targetPath, extractDirectory);
             DeleteStatisticalAreaFiles(extractDirectory);
             var featureCollection = WriteState(state, IoHelpers.FindFile(extractDirectory, "shp"));

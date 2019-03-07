@@ -9,7 +9,7 @@ namespace AustralianElectorates
         public string ShortName { get; set; }
         public State State { get; set; }
         public double Area { get; set; }
-        public bool ExistInCurrent { get; set; }
+        public bool Exist2016 { get; set; }
         public bool ExistInFuture { get; set; }
         public DateTime? DateGazetted { get; set; }
         public string Description { get; set; }
@@ -26,9 +26,9 @@ namespace AustralianElectorates
                 .ToLowerInvariant();
         }
 
-        public ElectorateMap GetCurrentMap()
+        public ElectorateMap Get2016Map()
         {
-            return DataLoader.GetCurrentMap(this);
+            return DataLoader.Get2016Map(this);
         }
 
         public ElectorateMap GetFutureMap()

@@ -28,15 +28,15 @@ public class Snippets
         Debug.WriteLine(currentMember.Party);
 
         // get an electorates maps (geojson) by string
-        var currentFennerGeoJson = DataLoader.Fenner.GetCurrentMap();
+        var currentFennerGeoJson = DataLoader.Fenner.Get2016Map();
         Debug.WriteLine(currentFennerGeoJson);
         var futureFennerGeoJson = DataLoader.Fenner.GetFutureMap();
         Debug.WriteLine(futureFennerGeoJson);
 
         // get an electorates maps (geojson) by string
-        var currentCanberraGeoJson = DataLoader.CurrentMaps.GetElectorate("Canberra");
+        var currentCanberraGeoJson = DataLoader.Maps2016.GetElectorate("Canberra");
         Debug.WriteLine(currentCanberraGeoJson);
-        var futureCanberraGeoJson = DataLoader.FutureMaps.GetElectorate("Canberra");
+        var futureCanberraGeoJson = DataLoader.MapsFuture.GetElectorate("Canberra");
         Debug.WriteLine(futureCanberraGeoJson);
 
         // export all data to a directory

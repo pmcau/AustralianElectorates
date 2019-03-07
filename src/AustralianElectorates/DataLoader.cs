@@ -42,8 +42,8 @@ namespace AustralianElectorates
         public static IReadOnlyList<Member> AllCurrentMembers { get; }
 
         public static IReadOnlyList<Electorate> Electorates { get; }
-        public static MapCollection CurrentMaps { get; } = new MapCollection("Current");
-        public static MapCollection FutureMaps { get; } = new MapCollection("Future");
+        public static MapCollection Maps2016 { get; } = new MapCollection("2016");
+        public static MapCollection MapsFuture { get; } = new MapCollection("Future");
 
         public static Electorate FindElectorate(string name)
         {
@@ -81,6 +81,7 @@ namespace AustralianElectorates
                 throw new ElectoratesNotFoundException(missing);
             }
         }
+
         public static IEnumerable<string> FindInvalidateElectorates(params string[] names)
         {
            return FindInvalidateElectorates((IEnumerable<string>)names);
@@ -94,8 +95,8 @@ namespace AustralianElectorates
 
         public static void LoadAll()
         {
-            FutureMaps.LoadAll();
-            CurrentMaps.LoadAll();
+            MapsFuture.LoadAll();
+            Maps2016.LoadAll();
         }
 
         public static void Export(string directory)
@@ -134,15 +135,15 @@ namespace AustralianElectorates
             File.SetCreationTimeUtc(electoratesJsonPath, AssemblyTimestamp.Value);
         }
 
-        public static ElectorateMap GetCurrentMap(this Electorate electorate)
+        public static ElectorateMap Get2016Map(this Electorate electorate)
         {
             Guard.AgainstNull(electorate, nameof(electorate));
-            if (!electorate.ExistInCurrent)
+            if (!electorate.Exist2016)
             {
-                throw new Exception($"Electorate '{electorate.Name}' does not have a current map");
+                throw new Exception($"Electorate '{electorate.Name}' does not have a 2016 map");
             }
 
-            return CurrentMaps.GetElectorate(electorate.ShortName);
+            return Maps2016.GetElectorate(electorate.ShortName);
         }
 
         public static ElectorateMap GetFutureMap(this Electorate electorate)
@@ -153,7 +154,7 @@ namespace AustralianElectorates
                 throw new Exception($"Electorate '{electorate.Name}' does not have a future map");
             }
 
-            return CurrentMaps.GetElectorate(electorate.ShortName);
+            return Maps2016.GetElectorate(electorate.ShortName);
         }
     }
 }
