@@ -721,7 +721,7 @@
     "Description": "<p>The Division of Boothby consists of:</p><ul><li>City of Holdfast Bay, </li><li>part of the City of Marion,</li><li>part of the City of Mitcham, and</li><li>part of the City of Unley</li></ul>",
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion",
     "ProductsAndIndustry": "Major retailing, army camp and military barracks, tertiary education, tourism, several hospitals and various small industries.",
-    "NameDerivation": "Named in honour of William Robinson Boothby CMG, 1829-1903. Boothby introduced many electoral innovations in South Australia. From 1856 to 1903 superintended every State parliamentary election and drafted every Electoral Act in South Austalia. Boothby was State Returning Officer for the first House of Representatives election in South Australia in 1901 and, prior to his death, completed the 1903 redistribution of federal electoral divisions in South Australia.",
+    "NameDerivation": "Named in honour of William Robinson Boothby CMG, 1829-1903. Boothby introduced many electoral innovations in South Australia and from 1856 to 1903 superintended every State parliamentary election and drafted every Electoral Act in South Austalia. Boothby was State Returning Officer for the first House of Representatives election in South Australia in 1901 and, prior to his death, completed the 1903 redistribution of federal electoral divisions in South Australia.",
     "Members": [
       {
         "Name": "Flint, N",
@@ -1309,7 +1309,7 @@
     "Description": "<p>The Division of Aston consists of Knox City Council.</p>",
     "DemographicRating": "<strong>Outer Metropolitan</strong> - situated in capital cities and containing large areas of recent suburban expansion.",
     "ProductsAndIndustry": "Light industry, including electronics, chemical production, food manufacturing, retail and healthcare services.",
-    "NameDerivation": "Named in honour of Matilda 'Tilly' Ann Aston, 1873-1947. Aston was a blind writer and teacher who founded the Victorian Association of Braille Writers in 1894 and the Associateion for the Advancement of the Blind. Aston was also the head of the School for the Blind.",
+    "NameDerivation": "Named in honour of Matilda 'Tilly' Ann Aston, 1873-1947. Aston was a blind writer and teacher who founded the Victorian Association of Braille Writers in 1894 and the Association for the Advancement of the Blind. Aston was also the head of the School for the Blind.",
     "Members": [
       {
         "Name": "Tudge, A",
@@ -2328,7 +2328,7 @@
     "Description": "<p>The Division of Goldstein consists of:</p><ul><li>Bayside City Council, and</li><li>part of Glen Eira City Council.</li></ul>",
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
     "ProductsAndIndustry": "Light industrial and commercial activities and retail trade.",
-    "NameDerivation": "Named in honour of Vida Jane Goldstein, 1869-1949. Goldstein was a suffragist, feminist and invovled in social welfare. As a Senate candidate in 1903, Goldstein was one of the first women in the British Empirt to be nominated for and to stand for election to a national parliament. Goldstein made a further four attempts to be elected to Federal parliament.",
+    "NameDerivation": "Named in honour of Vida Jane Goldstein, 1869-1949. Goldstein was a suffragist, feminist and invovled in social welfare. As a Senate candidate in 1903, Goldstein was one of the first women in the British Empire to be nominated for and to stand for election to a national parliament. Goldstein made a further four attempts to be elected to Federal parliament.",
     "Members": [
       {
         "Name": "Wilson, T",
@@ -4294,7 +4294,7 @@
     "Exist2016": true,
     "ExistInFuture": true,
     "DateGazetted": "2018-03-27",
-    "Description": "<ul><li>Palm Island Aboriginal Shire Council,</li><li>part of Hinchinbrook Shire Council, and</li><li>part of the Townsville City Council.</li></ul>",
+    "Description": "<p>The Division of Herbert consists of:</p><ul><li>Palm Island Aboriginal Shire Council,</li><li>part of Hinchinbrook Shire Council, and</li><li>part of the Townsville City Council.</li></ul>",
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities",
     "ProductsAndIndustry": "Copper, nickel and zinc refineries, bulk sugar terminal, and tropical fruits, prawn and fishing industry, beef cattle and tourism. Townsville, noted for its port facilities, is also home to James Cook University, the Great Barrier Reef Marine Park Authority and large defence establishments at Lavarack Barracks (Army) and Garbutt (RAAF).",
     "NameDerivation": "Named in honour of Sir Robert George Wyndham Herbert, 1831-1905, the first Premier of Queensland (1859-66).",
@@ -7226,7 +7226,7 @@
     "Description": "Parramatta covers an area from Carlingford (part) and Rydalmere in the east to Toongabbie and South Wentworthville in the west. The main suburbs include Carlingford (part), Constitution Hill, Dundas, Granville, Harris Park, Holroyd, Merrylands, Mays Hill, Oatlands, Old Toongabbie, Parramatta, Pendle Hill, Rosehill, Rydalmere, Telopea, Toongabbie, South Wentworthville, Wentworthville and Westmead.<br>This description reflects local government areas in existence in 2015.",
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
     "ProductsAndIndustry": "Retail, financial services, transport industry, building materials, major industry, tourism and higher education with the Western Sydney University's Parramatta campus.",
-    "NameDerivation": "Named after the city covered by the electoral division. The name 'Parramatta' is variously believed to be:<br> * the Dharuk work for 'head of the river', or<br> * derived from an Aboriginal word meaning 'place where the eels lie down' or 'dark jungle head of a river', or<br> * derived from the name of the tribe 'Burramattagal'.",
+    "NameDerivation": "Named after the city covered by the electoral division. The name 'Parramatta' is variously believed to be:<br> * the Dharuk word for 'head of the river', or<br> * derived from an Aboriginal word meaning 'place where the eels lie down' or 'dark jungle head of a river', or<br> * derived from the name of the tribe 'Burramattagal'.",
     "Members": [
       {
         "Name": "Owens, J",
