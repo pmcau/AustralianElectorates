@@ -143,7 +143,7 @@ var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
 Directory.CreateDirectory(directory);
 DataLoader.Export(directory);
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L16-L52)</sup>
+<sup>[snippet source](/src/Tests/Snippets.cs#L19-L55)</sup>
 <!-- endsnippet -->
 
 
@@ -160,7 +160,7 @@ var faker = new Faker<Target>()
     .RuleFor(u => u.RandomMemberName, (f, u) => f.AustralianElectorates().MemberName());
 var targetInstance = faker.Generate();
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L58-L67)</sup>
+<sup>[snippet source](/src/Tests/Snippets.cs#L61-L70)</sup>
 <!-- endsnippet -->
 
 
