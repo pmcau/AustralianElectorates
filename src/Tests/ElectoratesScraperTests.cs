@@ -2,8 +2,10 @@
 using AustralianElectorates;
 using ObjectApproval;
 using Xunit;
+using Xunit.Abstractions;
 
-public class ElectoratesScraperTests
+public class ElectoratesScraperTests :
+    XunitLoggingBase
 {
     [Fact]
     [Trait("Category", "Integration")]
@@ -20,5 +22,9 @@ public class ElectoratesScraperTests
         var batman = await ElectoratesScraper.ScrapeElectorate("batman", State.VIC);
         var melbourne = await ElectoratesScraper.ScrapeElectorate("melbourne", State.VIC);
         ObjectApprover.VerifyWithJson(new {denison, melbourne, hunter, batman, spence, cook, bean, fenner , canberra , bass });
+    }
+
+    public ElectoratesScraperTests(ITestOutputHelper output) : base(output)
+    {
     }
 }

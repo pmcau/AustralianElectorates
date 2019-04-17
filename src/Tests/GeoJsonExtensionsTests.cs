@@ -2,8 +2,10 @@
 using GeoJSON.Net.Feature;
 using GeoJSON.Net.Geometry;
 using Xunit;
+using Xunit.Abstractions;
 
-public class GeoJsonExtensionsTests
+public class GeoJsonExtensionsTests :
+    XunitLoggingBase
 {
     [Fact]
     public void BoundingBox()
@@ -30,5 +32,10 @@ public class GeoJsonExtensionsTests
                         new LineString(positions)
                     }))
         };
+    }
+
+    public GeoJsonExtensionsTests(ITestOutputHelper output) : 
+        base(output)
+    {
     }
 }

@@ -6,9 +6,12 @@ using AustralianElectorates;
 using AustralianElectorates.Bogus;
 using Bogus;
 using Xunit;
+using Xunit.Abstractions;
+
 // ReSharper disable UnusedVariable
 
-public class Snippets
+public class Snippets :
+    XunitLoggingBase
 {
     [Fact]
     public void Foo()
@@ -75,5 +78,10 @@ public class Snippets
         public Electorate RandomElectorate;
         public Member RandomCurrentMember;
         public string RandomCurrentMemberName;
+    }
+
+    public Snippets(ITestOutputHelper output) : 
+        base(output)
+    {
     }
 }

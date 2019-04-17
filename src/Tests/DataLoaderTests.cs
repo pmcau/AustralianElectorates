@@ -5,8 +5,10 @@ using ApprovalTests;
 using AustralianElectorates;
 using ObjectApproval;
 using Xunit;
+using Xunit.Abstractions;
 
-public class DataLoaderTests
+public class DataLoaderTests :
+    XunitLoggingBase
 {
     [Fact]
     public void Electorates()
@@ -145,5 +147,10 @@ public class DataLoaderTests
             CurrentLoadedElectorateMaps = DataLoader.Maps2016.LoadedElectorates.Count,
             CurrentLoadedStateMaps = DataLoader.Maps2016.LoadedStates.Count,
         });
+    }
+
+    public DataLoaderTests(ITestOutputHelper output) :
+        base(output)
+    {
     }
 }

@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 using AustralianElectorates;
 using GeoJSON.Net.Feature;
 using Xunit;
+using Xunit.Abstractions;
 
-public class Sync
+public class Sync :
+    XunitLoggingBase
 {
     [Fact]
     [Trait("Category", "Integration")]
@@ -232,5 +234,10 @@ namespace AustralianElectorates.Bogus
     private static string GetCSharpName(Electorate electorate)
     {
         return electorate.Name.Replace(" ", "").Replace("-", "").Replace("'", "");
+    }
+
+    public Sync(ITestOutputHelper output) : 
+        base(output)
+    {
     }
 }
