@@ -6,4 +6,4 @@ test:
     except:
     - Integration
 artifacts:
-- path: nugets\**\*.nupkg
+- path: nugets\*.nupkg
