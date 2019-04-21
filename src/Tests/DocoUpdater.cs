@@ -1,12 +1,18 @@
 ﻿using MarkdownSnippets;
 using Xunit;
+using Xunit.Abstractions;
 
-public class DocoUpdater
+public class DocoUpdater:
+    XunitLoggingBase
 {
     [Fact]
     public void Run()
     {
-        var root = GitRepoDirectoryFinder.FindForFilePath();
-        GitHubMarkdownProcessor.Run(root);
+        DirectoryMarkdownProcessor.RunForFilePath();
+    }
+
+    public DocoUpdater(ITestOutputHelper output) : 
+        base(output)
+    {
     }
 }
