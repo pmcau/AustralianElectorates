@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">true</GeneratePackageOnBuild>
@@ -10,7 +9,6 @@
   <PropertyGroup>
     <DefineConstants>$(DefineConstants);Bogus</DefineConstants>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Include="..\AustralianElectorates\Guard.cs" Link="Guard.cs" />
   </ItemGroup>
@@ -20,5 +18,4 @@
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-18618-05" PrivateAssets="All" />
     <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
   </ItemGroup>
-
 </Project>
