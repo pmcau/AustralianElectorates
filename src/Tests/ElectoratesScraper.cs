@@ -75,7 +75,7 @@ public static class ElectoratesScraper
             throw new Exception("Failed to parse " + shortName, exception);
         }
     }
-    
+
     static string GetFullName(HtmlDocument document, string prefix)
     {
         var headings = document.Headings();
