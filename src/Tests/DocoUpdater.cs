@@ -11,7 +11,7 @@ public class DocoUpdater:
         DirectoryMarkdownProcessor.RunForFilePath();
     }
 
-    public DocoUpdater(ITestOutputHelper output) : 
+    public DocoUpdater(ITestOutputHelper output) :
         base(output)
     {
     }
