@@ -236,7 +236,7 @@ namespace AustralianElectorates.Bogus
         return electorate.Name.Replace(" ", "").Replace("-", "").Replace("'", "");
     }
 
-    public Sync(ITestOutputHelper output) : 
+    public Sync(ITestOutputHelper output) :
         base(output)
     {
     }
