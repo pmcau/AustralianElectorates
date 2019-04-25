@@ -9,7 +9,7 @@
     <PackageReference Include="MarkdownSnippets" Version="10.0.1" />
     <PackageReference Include="ApprovalTests" Version="3.0.22" />
     <PackageReference Include="Bogus" Version="26.0.2" />
-    <PackageReference Include="ObjectApproval" Version="8.2.0" />
+    <PackageReference Include="ObjectApproval" Version="8.3.0" />
     <PackageReference Include="GeoJSON.Net" Version="1.1.72" />
     <PackageReference Include="HtmlAgilityPack" Version="1.11.3" />
     <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
