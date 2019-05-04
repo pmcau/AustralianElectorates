@@ -6,7 +6,6 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="MarkdownSnippets" Version="10.0.2" />
     <PackageReference Include="ApprovalTests" Version="3.0.22" />
     <PackageReference Include="Bogus" Version="27.0.1" />
     <PackageReference Include="MarkdownSnippets.MsBuild" Version="10.1.1" />
