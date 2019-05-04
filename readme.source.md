@@ -1,6 +1,6 @@
 # <img src="https://raw.github.com/pmcau/AustralianElectorates/master/icon.png" height="40px"> Australian Electorate information
 
-All information about electorates are available at [/Data/electorates.json](/Data/electorates.json)
+All information about electorates is available at [/Data/electorates.json](/Data/electorates.json).
 
 
 ### Example content
