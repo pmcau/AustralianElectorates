@@ -80,6 +80,7 @@ public class Snippets :
         public string RandomCurrentMemberName;
     }
 
+    public Snippets(ITestOutputHelper output) :
         base(output)
     {
     }
