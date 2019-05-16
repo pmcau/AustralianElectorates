@@ -31,8 +31,8 @@ public class Snippets :
         Debug.WriteLine(currentMember.Party);
 
         // get an electorates maps (geojson) by string
-        var currentFennerGeoJson = DataLoader.Fenner.Get2016Map();
-        Debug.WriteLine(currentFennerGeoJson);
+        var fennerGeoJson2016 = DataLoader.Fenner.Get2016Map();
+        Debug.WriteLine(fennerGeoJson2016);
         var futureFennerGeoJson = DataLoader.Fenner.GetFutureMap();
         Debug.WriteLine(futureFennerGeoJson);
 
