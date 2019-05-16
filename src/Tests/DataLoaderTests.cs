@@ -88,7 +88,7 @@ public class DataLoaderTests :
     }
 
     [Fact]
-    public void GetCurrentState()
+    public void Get2016State()
     {
         var data = DataLoader.Maps2016.GetState(State.ACT);
         ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
@@ -102,7 +102,7 @@ public class DataLoaderTests :
     }
 
     [Fact]
-    public void GetCurrentElectorate()
+    public void Get2016Electorate()
     {
         var data = DataLoader.Maps2016.GetElectorate("fenner");
         ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
