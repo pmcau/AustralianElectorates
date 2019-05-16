@@ -37,8 +37,8 @@ public class Snippets :
         Debug.WriteLine(futureFennerGeoJson);
 
         // get an electorates maps (geojson) by string
-        var currentCanberraGeoJson = DataLoader.Maps2016.GetElectorate("Canberra");
-        Debug.WriteLine(currentCanberraGeoJson);
+        var canberraGeoJson2016 = DataLoader.Maps2016.GetElectorate("Canberra");
+        Debug.WriteLine(canberraGeoJson2016);
         var futureCanberraGeoJson = DataLoader.MapsFuture.GetElectorate("Canberra");
         Debug.WriteLine(futureCanberraGeoJson);
 
@@ -80,7 +80,6 @@ public class Snippets :
         public string RandomCurrentMemberName;
     }
 
-    public Snippets(ITestOutputHelper output) : 
         base(output)
     {
     }
