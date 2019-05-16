@@ -154,7 +154,7 @@ namespace AustralianElectorates
                 throw new Exception($"Electorate '{electorate.Name}' does not have a future map");
             }
 
-            return Maps2016.GetElectorate(electorate.ShortName);
+            return MapsFuture.GetElectorate(electorate.ShortName);
         }
     }
 }
