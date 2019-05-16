@@ -7,6 +7,7 @@ using GeoJSON.Net.Feature;
 
 public static class FutureToCountry
 {
+    //https://www.aec.gov.au/Electorates/gis/gis_datadownload.htm
     static Dictionary<State, string> stateUrls = new Dictionary<State, string>
     {
         {State.ACT, "https://www.aec.gov.au/Electorates/gis/files/act-july-2018-esri.zip"},
