@@ -144,8 +144,8 @@ public class DataLoaderTests :
         {
             FutureLoadedElectorateMaps = DataLoader.MapsFuture.LoadedElectorates.Count,
             FutureLoadedStateMaps = DataLoader.MapsFuture.LoadedStates.Count,
-            CurrentLoadedElectorateMaps = DataLoader.Maps2016.LoadedElectorates.Count,
-            CurrentLoadedStateMaps = DataLoader.Maps2016.LoadedStates.Count,
+            LoadedElectorateMaps2016 = DataLoader.Maps2016.LoadedElectorates.Count,
+            LoadedStateMaps2016 = DataLoader.Maps2016.LoadedStates.Count,
         });
     }
 
