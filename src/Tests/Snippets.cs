@@ -45,8 +45,8 @@ public class Snippets :
         // export all data to a directory
         // structure will be
         // /electorates.json
-        // /Current (current states and australia geojson files)
-        // /Current/Electorates (current electorate geojson files)
+        // /2016 (2016 states and australia geojson files)
+        // /2016/Electorates (2016 electorate geojson files)
         // /Future (future states and australia geojson files)
         // /Future/Electorates (future electorate geojson files)
         var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
