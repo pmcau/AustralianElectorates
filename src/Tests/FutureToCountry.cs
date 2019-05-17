@@ -30,7 +30,7 @@ public static class FutureToCountry
             await Downloader.DownloadFile(targetPath, stateUrl.Value);
             var extractDirectory = Path.Combine(DataLocations.TempPath, $"2016_{state}_extract");
             ZipFile.ExtractToDirectory(targetPath, extractDirectory);
-            DeleteStatisticalAreaFiles(extractDirectory);
+            StatisticalAreaCleaner.DeleteStatisticalAreaFiles(extractDirectory);
             var featureCollection = WriteState(state, IoHelpers.FindFile(extractDirectory, "shp"));
             features.AddRange(featureCollection.Features);
         }
@@ -51,11 +51,4 @@ public static class FutureToCountry
         return stateCollection;
     }
 
-    static void DeleteStatisticalAreaFiles(string extract)
-    {
-        foreach (var saFile in Directory.EnumerateFiles(extract, "*_SA1s_*", SearchOption.AllDirectories))
-        {
-            File.Delete(saFile);
-        }
-    }
 }
