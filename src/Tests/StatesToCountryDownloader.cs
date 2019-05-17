@@ -57,5 +57,4 @@ public static class StatesToCountryDownloader
         MetadataCleaner.CleanMetadata(stateCollection, state);
         return stateCollection;
     }
-
 }
