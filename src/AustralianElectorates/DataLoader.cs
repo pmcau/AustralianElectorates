@@ -43,6 +43,7 @@ namespace AustralianElectorates
 
         public static IReadOnlyList<Electorate> Electorates { get; }
         public static MapCollection Maps2016 { get; } = new MapCollection("2016");
+        public static MapCollection Maps2019 { get; } = new MapCollection("2019");
         public static MapCollection MapsFuture { get; } = new MapCollection("Future");
 
         public static Electorate FindElectorate(string name)
@@ -97,6 +98,7 @@ namespace AustralianElectorates
         {
             MapsFuture.LoadAll();
             Maps2016.LoadAll();
+            Maps2019.LoadAll();
         }
 
         public static void Export(string directory)
@@ -144,6 +146,17 @@ namespace AustralianElectorates
             }
 
             return Maps2016.GetElectorate(electorate.ShortName);
+        }
+
+        public static ElectorateMap Get2019Map(this Electorate electorate)
+        {
+            Guard.AgainstNull(electorate, nameof(electorate));
+            if (!electorate.Exist2019)
+            {
+                throw new Exception($"Electorate '{electorate.Name}' does not have a 2019 map");
+            }
+
+            return Maps2019.GetElectorate(electorate.ShortName);
         }
 
         public static ElectorateMap GetFutureMap(this Electorate electorate)

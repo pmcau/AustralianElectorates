@@ -16,6 +16,9 @@ public static class DataLocations
         Maps2016Path = Path.GetFullPath(Path.Combine(MapsPath, "2016"));
         Directory.CreateDirectory(Maps2016Path);
         Australia2016JsonPath = Path.GetFullPath(Path.Combine(Maps2016Path, "australia.geojson"));
+        Maps2019Path = Path.GetFullPath(Path.Combine(MapsPath, "2019"));
+        Directory.CreateDirectory(Maps2019Path);
+        Australia2019JsonPath = Path.GetFullPath(Path.Combine(Maps2019Path, "australia.geojson"));
         MapsCuratedPath = Path.GetFullPath(Path.Combine(DataPath, "MapsCurated"));
         Directory.CreateDirectory(MapsCuratedPath);
         AustralianElectoratesProjectPath = Path.GetFullPath(Path.Combine(RootDir, "src/AustralianElectorates"));
@@ -28,15 +31,14 @@ public static class DataLocations
     public static string BogusProjectPath;
     public static string MapsPath;
     public static string Maps2016Path;
+    public static string Maps2019Path;
     public static string MapsFuturePath;
     public static string MapsCuratedPath;
     public static string MapsCuratedZipPath;
     public static string FutureAustraliaJsonPath;
     public static string Australia2016JsonPath;
-
+    public static string Australia2019JsonPath;
     public static string RootDir;
-
     public static string DataPath;
-
     public static string TempPath;
 }

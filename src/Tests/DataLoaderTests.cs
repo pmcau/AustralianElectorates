@@ -22,6 +22,9 @@ public class DataLoaderTests :
         var data2016 = DataLoader.Maps2016.GetAustralia();
         Assert.NotEmpty(data2016);
         Assert.NotNull(data2016);
+        var data2019 = DataLoader.Maps2019.GetAustralia();
+        Assert.NotEmpty(data2019);
+        Assert.NotNull(data2019);
         var dataFuture = DataLoader.MapsFuture.GetAustralia();
         Assert.NotEmpty(dataFuture);
         Assert.NotNull(dataFuture);
@@ -95,6 +98,13 @@ public class DataLoaderTests :
     }
 
     [Fact]
+    public void Get2019State()
+    {
+        var data = DataLoader.Maps2019.GetState(State.ACT);
+        ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
+    }
+
+    [Fact]
     public void GetFutureState()
     {
         var data = DataLoader.MapsFuture.GetState(State.ACT);
@@ -105,6 +115,13 @@ public class DataLoaderTests :
     public void Get2016Electorate()
     {
         var data = DataLoader.Maps2016.GetElectorate("fenner");
+        ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
+    }
+
+    [Fact]
+    public void Get2019Electorate()
+    {
+        var data = DataLoader.Maps2019.GetElectorate("fenner");
         ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
     }
 
@@ -146,6 +163,8 @@ public class DataLoaderTests :
             FutureLoadedStateMaps = DataLoader.MapsFuture.LoadedStates.Count,
             LoadedElectorateMaps2016 = DataLoader.Maps2016.LoadedElectorates.Count,
             LoadedStateMaps2016 = DataLoader.Maps2016.LoadedStates.Count,
+            LoadedElectorateMaps2019 = DataLoader.Maps2019.LoadedElectorates.Count,
+            LoadedStateMaps2019 = DataLoader.Maps2019.LoadedStates.Count,
         });
     }
 

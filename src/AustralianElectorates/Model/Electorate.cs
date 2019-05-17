@@ -10,6 +10,7 @@ namespace AustralianElectorates
         public State State { get; set; }
         public double Area { get; set; }
         public bool Exist2016 { get; set; }
+        public bool Exist2019 { get; set; }
         public bool ExistInFuture { get; set; }
         public DateTime? DateGazetted { get; set; }
         public string Description { get; set; }
@@ -29,6 +30,11 @@ namespace AustralianElectorates
         public ElectorateMap Get2016Map()
         {
             return DataLoader.Get2016Map(this);
+        }
+
+        public ElectorateMap Get2019Map()
+        {
+            return DataLoader.Get2019Map(this);
         }
 
         public ElectorateMap GetFutureMap()

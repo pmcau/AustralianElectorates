@@ -13,6 +13,7 @@ All information about electorates is available at [/Data/electorates.json](/Data
     "State": "ACT",
     "Area": 312.0,
     "ExistIn2016": true,
+    "ExistIn2019": true,
     "ExistInFuture": true,
     "DateGazetted": "2018-07-13",
     "Description": "<p>The Division of Canberra covers an area in central ACT consisting of the Districts of:</p><ul><li>Canberra Central,</li><li>Kowen,</li><li>Majura,</li><li>part of Belconnen,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul>",
@@ -43,6 +44,7 @@ All maps are in [geojson format](http://geojson.org/).
 The following grouping of maps exist:
 
  * Future (Next election) [/Data/Maps/Future](/Data/Maps/Future)
+ * 2019 election [/Data/Maps/2019](/Data/Maps/2019)
  * 2016 election [/Data/Maps/2016](/Data/Maps/2016)
 
 

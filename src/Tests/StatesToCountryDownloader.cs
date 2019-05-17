@@ -10,21 +10,21 @@ using GeoJSON.Net.Feature;
 public static class StatesToCountryDownloader
 {
     //https://www.aec.gov.au/Electorates/gis/gis_datadownload.htm
-    static Dictionary<State, string> stateUrls = new Dictionary<State, string>
-    {
-        {State.ACT, "https://www.aec.gov.au/Electorates/gis/files/act-july-2018-esri.zip"},
-        {State.TAS, "https://www.aec.gov.au/Electorates/gis/files/tas-november-2017-esri.zip"},
-        {State.SA, "https://www.aec.gov.au/Electorates/gis/files/sa-july-2018-esri.zip"},
-        {State.VIC, "https://www.aec.gov.au/Electorates/gis/files/vic-july-2018-esri.zip"},
-        {State.QLD, "https://www.aec.gov.au/Electorates/gis/files/qld-march-2018-esri.zip"},
-        {State.NT, "https://www.aec.gov.au/Electorates/gis/files/nt-esri-07022017.zip"},
-        {State.NSW, "https://www.aec.gov.au/Electorates/gis/files/nsw-esri-06042016.zip"},
-        {State.WA, "https://www.aec.gov.au/Electorates/gis/files/wa-esri-19012016.zip"},
-    };
+    private static Dictionary<State, string> stateUrls = new Dictionary<State, string>();
+    //{
+        //{State.ACT, "https://www.aec.gov.au/Electorates/gis/files/act-july-2018-esri.zip"},
+        //{State.TAS, "https://www.aec.gov.au/Electorates/gis/files/tas-november-2017-esri.zip"},
+        //{State.SA, "https://www.aec.gov.au/Electorates/gis/files/sa-july-2018-esri.zip"},
+        //{State.VIC, "https://www.aec.gov.au/Electorates/gis/files/vic-july-2018-esri.zip"},
+        //{State.QLD, "https://www.aec.gov.au/Electorates/gis/files/qld-march-2018-esri.zip"},
+        //{State.NT, "https://www.aec.gov.au/Electorates/gis/files/nt-esri-07022017.zip"},
+        //{State.NSW, "https://www.aec.gov.au/Electorates/gis/files/nsw-esri-06042016.zip"},
+        //{State.WA, "https://www.aec.gov.au/Electorates/gis/files/wa-esri-19012016.zip"},
+    //};
 
     public static Task RunFuture()
     {
-        return Run(stateUrls, DataLocations.Australia2016JsonPath, DataLocations.FutureAustraliaJsonPath);
+        return Run(stateUrls, DataLocations.Australia2019JsonPath, DataLocations.FutureAustraliaJsonPath);
     }
 
     static async Task Run(Dictionary<State, string> dictionary, string sourceJsonPath, string targetJsonPath)

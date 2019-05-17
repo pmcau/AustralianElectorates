@@ -11,11 +11,16 @@ public static class ElectoratesScraper
 {
     public static async Task<Electorate> ScrapeElectorate(string shortName, State state)
     {
+        var tempElectorateHtmlPath = Path.Combine(DataLocations.TempPath, $"{shortName}.html");
         try
         {
-            var tempElectorateHtmlPath = Path.Combine(DataLocations.TempPath, $"{shortName}.html");
             await Downloader.DownloadFile(tempElectorateHtmlPath, $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm");
             var prefix = "Profile of the electoral division of ";
+            //if (!File.Exists(tempElectorateHtmlPath))
+            //{
+            //    await Downloader.DownloadFile(tempElectorateHtmlPath, $"https://www.aec.gov.au/Elections/federal_elections/2019/profiles/{state}/{shortName}.htm");
+            //    prefix = "2019 federal election: profile of the electoral division of ";
+            //}
             if (!File.Exists(tempElectorateHtmlPath))
             {
                 await Downloader.DownloadFile(tempElectorateHtmlPath, $"https://www.aec.gov.au/Elections/federal_elections/2016/profiles/{state}/{shortName}.htm");
@@ -72,7 +77,7 @@ public static class ElectoratesScraper
         }
         catch (Exception exception)
         {
-            throw new Exception("Failed to parse " + shortName, exception);
+            throw new Exception($"Failed to parse {shortName} {tempElectorateHtmlPath}", exception);
         }
     }
 

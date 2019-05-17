@@ -33,12 +33,16 @@ public class Snippets :
         // get an electorates maps (geojson) by string
         var fennerGeoJson2016 = DataLoader.Fenner.Get2016Map();
         Debug.WriteLine(fennerGeoJson2016);
+        var fennerGeoJson2019 = DataLoader.Fenner.Get2019Map();
+        Debug.WriteLine(fennerGeoJson2019);
         var futureFennerGeoJson = DataLoader.Fenner.GetFutureMap();
         Debug.WriteLine(futureFennerGeoJson);
 
         // get an electorates maps (geojson) by string
         var canberraGeoJson2016 = DataLoader.Maps2016.GetElectorate("Canberra");
         Debug.WriteLine(canberraGeoJson2016);
+        var canberraGeoJson2019 = DataLoader.Maps2019.GetElectorate("Canberra");
+        Debug.WriteLine(canberraGeoJson2019);
         var futureCanberraGeoJson = DataLoader.MapsFuture.GetElectorate("Canberra");
         Debug.WriteLine(futureCanberraGeoJson);
 
@@ -47,6 +51,8 @@ public class Snippets :
         // /electorates.json
         // /2016 (2016 states and australia geojson files)
         // /2016/Electorates (2016 electorate geojson files)
+        // /2019 (2019 states and australia geojson files)
+        // /2019/Electorates (2019 electorate geojson files)
         // /Future (future states and australia geojson files)
         // /Future/Electorates (future electorate geojson files)
         var directory = Path.Combine(Environment.CurrentDirectory, "Maps");

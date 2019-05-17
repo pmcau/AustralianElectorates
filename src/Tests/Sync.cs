@@ -19,12 +19,14 @@ public class Sync :
         IoHelpers.PurgeDirectory(DataLocations.TempPath);
 
         await Get2016();
+        await Get2019();
 
 
-        File.Copy(DataLocations.Australia2016JsonPath, DataLocations.FutureAustraliaJsonPath);
+        File.Copy(DataLocations.Australia2019JsonPath, DataLocations.FutureAustraliaJsonPath);
         await StatesToCountryDownloader.RunFuture();
 
         ProcessYear(DataLocations.Maps2016Path, electorates2016);
+        ProcessYear(DataLocations.Maps2019Path, electorates2019);
         ProcessYear(DataLocations.MapsFuturePath, electoratesFuture);
 
         var electorates = await WriteElectoratesMetaData();
@@ -38,6 +40,7 @@ public class Sync :
 
     static List<string> electoratesFuture = new List<string>();
     static List<string> electorates2016 = new List<string>();
+    static List<string> electorates2019 = new List<string>();
 
     static Dictionary<State, HashSet<string>> electorateNames = new Dictionary<State, HashSet<string>>
     {
@@ -105,6 +108,11 @@ public class Sync :
         return GetCountry(2016, "https://www.aec.gov.au/Electorates/gis/files/national-midmif-09052016.zip", DataLocations.Maps2016Path);
     }
 
+    static Task Get2019()
+    {
+        return GetCountry(2019, "https://www.aec.gov.au/Electorates/gis/files/national-mapinfo-fe2019.zip", DataLocations.Maps2019Path);
+    }
+
     static async Task GetCountry(int year, string url, string mapsPath)
     {
         var zip = Path.Combine(DataLocations.TempPath, year + ".zip");
@@ -159,9 +167,11 @@ public class Sync :
             foreach (var electorateName in electoratePair.Value)
             {
                 var existIn2016 = electorates2016.Contains(electorateName);
+                var existIn2019 = electorates2019.Contains(electorateName);
                 var existInFuture = electoratesFuture.Contains(electorateName);
                 var electorate = await ElectoratesScraper.ScrapeElectorate(electorateName, electoratePair.Key);
                 electorate.Exist2016 = existIn2016;
+                electorate.Exist2019 = existIn2019;
                 electorate.ExistInFuture = existInFuture;
                 electorates.Add(electorate);
             }
@@ -238,7 +248,7 @@ namespace AustralianElectorates.Bogus
         }
     }
 
-    private static string GetCSharpName(Electorate electorate)
+    static string GetCSharpName(Electorate electorate)
     {
         return electorate.Name.Replace(" ", "").Replace("-", "").Replace("'", "");
     }

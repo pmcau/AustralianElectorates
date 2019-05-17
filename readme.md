@@ -18,6 +18,7 @@ All information about electorates is available at [/Data/electorates.json](/Data
     "State": "ACT",
     "Area": 312.0,
     "ExistIn2016": true,
+    "ExistIn2019": true,
     "ExistInFuture": true,
     "DateGazetted": "2018-07-13",
     "Description": "<p>The Division of Canberra covers an area in central ACT consisting of the Districts of:</p><ul><li>Canberra Central,</li><li>Kowen,</li><li>Majura,</li><li>part of Belconnen,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul>",
@@ -48,6 +49,7 @@ All maps are in [geojson format](http://geojson.org/).
 The following grouping of maps exist:
 
  * Future (Next election) [/Data/Maps/Future](/Data/Maps/Future)
+ * 2019 election [/Data/Maps/2019](/Data/Maps/2019)
  * 2016 election [/Data/Maps/2016](/Data/Maps/2016)
 
 
@@ -123,12 +125,16 @@ Debug.WriteLine(currentMember.Party);
 // get an electorates maps (geojson) by string
 var fennerGeoJson2016 = DataLoader.Fenner.Get2016Map();
 Debug.WriteLine(fennerGeoJson2016);
+var fennerGeoJson2019 = DataLoader.Fenner.Get2019Map();
+Debug.WriteLine(fennerGeoJson2019);
 var futureFennerGeoJson = DataLoader.Fenner.GetFutureMap();
 Debug.WriteLine(futureFennerGeoJson);
 
 // get an electorates maps (geojson) by string
 var canberraGeoJson2016 = DataLoader.Maps2016.GetElectorate("Canberra");
 Debug.WriteLine(canberraGeoJson2016);
+var canberraGeoJson2019 = DataLoader.Maps2019.GetElectorate("Canberra");
+Debug.WriteLine(canberraGeoJson2019);
 var futureCanberraGeoJson = DataLoader.MapsFuture.GetElectorate("Canberra");
 Debug.WriteLine(futureCanberraGeoJson);
 
@@ -137,13 +143,15 @@ Debug.WriteLine(futureCanberraGeoJson);
 // /electorates.json
 // /2016 (2016 states and australia geojson files)
 // /2016/Electorates (2016 electorate geojson files)
+// /2019 (2019 states and australia geojson files)
+// /2019/Electorates (2019 electorate geojson files)
 // /Future (future states and australia geojson files)
 // /Future/Electorates (future electorate geojson files)
 var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
 Directory.CreateDirectory(directory);
 DataLoader.Export(directory);
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L19-L55)</sup>
+<sup>[snippet source](/src/Tests/Snippets.cs#L19-L61)</sup>
 <!-- endsnippet -->
 
 
@@ -160,7 +168,7 @@ var faker = new Faker<Target>()
     .RuleFor(u => u.RandomMemberName, (f, u) => f.AustralianElectorates().MemberName());
 var targetInstance = faker.Generate();
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L61-L70)</sup>
+<sup>[snippet source](/src/Tests/Snippets.cs#L67-L76)</sup>
 <!-- endsnippet -->
 
 
