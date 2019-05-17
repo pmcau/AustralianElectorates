@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
+using System.Linq;
 using System.Threading.Tasks;
 using AustralianElectorates;
 using GeoJSON.Net.Feature;
@@ -22,29 +24,44 @@ public static class StatesToCountryDownloader
 
     public static Task RunFuture()
     {
-        return Run(stateUrls, DataLocations.FutureAustraliaJsonPath);
+        return Run(stateUrls, DataLocations.Australia2016JsonPath, DataLocations.FutureAustraliaJsonPath);
     }
 
-    static async Task Run(Dictionary<State, string> dictionary, string countryJsonPath)
+    static async Task Run(Dictionary<State, string> dictionary, string sourceJsonPath, string targetJsonPath)
     {
-        var features = new List<Feature>();
+        var features = JsonSerializer.DeserializeGeo(sourceJsonPath);
+
         foreach (var stateUrl in dictionary)
         {
             var state = stateUrl.Key;
+            RemoveStateFromFeatures(features, state);
+
             var targetPath = Path.Combine(DataLocations.TempPath, $"{state}.zip");
             await Downloader.DownloadFile(targetPath, stateUrl.Value);
             var extractDirectory = Path.Combine(DataLocations.TempPath, $"{state}_extract");
             ZipFile.ExtractToDirectory(targetPath, extractDirectory);
             StatisticalAreaCleaner.DeleteStatisticalAreaFiles(extractDirectory);
             var featureCollection = WriteState(state, IoHelpers.FindFile(extractDirectory, "shp"));
-            features.AddRange(featureCollection.Features);
+            features.Features.AddRange(featureCollection.Features);
             File.Delete(targetPath);
             Directory.Delete(extractDirectory, true);
         }
 
-        var collection = new FeatureCollection(features);
-        collection.FixBoundingBox();
-        JsonSerializer.SerializeGeo(collection, countryJsonPath);
+        features.FixBoundingBox();
+        JsonSerializer.SerializeGeo(features, targetJsonPath);
+    }
+
+    static void RemoveStateFromFeatures(FeatureCollection features, State state)
+    {
+        var stateString = state.ToString();
+        foreach (var feature in features.Features.ToList())
+        {
+            var featureProperty = (string) feature.Properties["state"];
+            if (string.Equals(featureProperty, stateString, StringComparison.OrdinalIgnoreCase))
+            {
+                features.Features.Remove(feature);
+            }
+        }
     }
 
     static FeatureCollection WriteState(State state, string shpFile)

@@ -15,7 +15,7 @@ public static class DataLocations
         Directory.CreateDirectory(MapsFuturePath);
         Maps2016Path = Path.GetFullPath(Path.Combine(MapsPath, "2016"));
         Directory.CreateDirectory(Maps2016Path);
-        Australia2016JsonPath = Path.GetFullPath(Path.Combine(MapsFuturePath, "australia.geojson"));
+        Australia2016JsonPath = Path.GetFullPath(Path.Combine(Maps2016Path, "australia.geojson"));
         MapsCuratedPath = Path.GetFullPath(Path.Combine(DataPath, "MapsCurated"));
         Directory.CreateDirectory(MapsCuratedPath);
         AustralianElectoratesProjectPath = Path.GetFullPath(Path.Combine(RootDir, "src/AustralianElectorates"));

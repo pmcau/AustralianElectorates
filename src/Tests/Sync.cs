@@ -20,6 +20,8 @@ public class Sync :
 
         await Get2016();
 
+
+        File.Copy(DataLocations.Australia2016JsonPath, DataLocations.FutureAustraliaJsonPath);
         await StatesToCountryDownloader.RunFuture();
 
         ProcessYear(DataLocations.Maps2016Path, electorates2016);
