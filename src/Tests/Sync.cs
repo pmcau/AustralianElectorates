@@ -98,13 +98,18 @@ public class Sync :
         }
     }
 
-    static async Task Get2016()
+    static Task Get2016()
     {
-        var zip = Path.Combine(DataLocations.TempPath, "2016.zip");
-        await Downloader.DownloadFile(zip, "https://www.aec.gov.au/Electorates/gis/files/national-midmif-09052016.zip");
-        var targetPath = Path.Combine(DataLocations.Maps2016Path, "australia.geojson");
+        return GetCountry(2016, "https://www.aec.gov.au/Electorates/gis/files/national-midmif-09052016.zip", DataLocations.Maps2016Path);
+    }
 
-        var extractDirectory = Path.Combine(DataLocations.TempPath, "australia2016_extract");
+    static async Task GetCountry(int year, string url, string mapsPath)
+    {
+        var zip = Path.Combine(DataLocations.TempPath, year + ".zip");
+        await Downloader.DownloadFile(zip, url);
+        var targetPath = Path.Combine(mapsPath, "australia.geojson");
+
+        var extractDirectory = Path.Combine(DataLocations.TempPath, $"australia{year}_extract");
         ZipFile.ExtractToDirectory(zip, extractDirectory);
 
         MapToGeoJson.ConvertTab(targetPath, Path.Combine(extractDirectory, "COM_ELB.tab"));
