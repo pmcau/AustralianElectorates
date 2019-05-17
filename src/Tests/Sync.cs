@@ -20,7 +20,7 @@ public class Sync :
 
         await Get2016();
 
-        await FutureToCountry.Run();
+        await StatesToCountryDownloader.RunFuture();
 
         ProcessYear(DataLocations.Maps2016Path, electorates2016);
         ProcessYear(DataLocations.MapsFuturePath, electoratesFuture);
