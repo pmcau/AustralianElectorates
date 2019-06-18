@@ -83,6 +83,13 @@ namespace AustralianElectorates
             }
         }
 
+        public static bool TryFindInvalidateElectorates(IEnumerable<string> names, out List<string> invalid)
+        {
+            Guard.AgainstNull(names, nameof(names));
+            invalid = FindInvalidateElectorates(names).ToList();
+            return invalid.Any();
+        }
+
         public static IEnumerable<string> FindInvalidateElectorates(params string[] names)
         {
            return FindInvalidateElectorates((IEnumerable<string>)names);
