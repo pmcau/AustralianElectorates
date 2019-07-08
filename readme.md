@@ -98,12 +98,8 @@ The NuGets contain a static copy of all the electorate data. This data is embedd
 
 https://nuget.org/packages/AustralianElectorates/ [![NuGet Status](http://img.shields.io/nuget/v/AustralianElectorates.svg?longCache=true&style=flat)](https://www.nuget.org/packages/AustralianElectorates/)
 
-    PM> Install-Package AustralianElectorates
-
 
 https://nuget.org/packages/AustralianElectorates.Bogus/ [![NuGet Status](http://img.shields.io/nuget/v/AustralianElectorates.Bogus.svg?longCache=true&style=flat)](https://www.nuget.org/packages/AustralianElectorates.Bogus/)
-
-    PM> Install-Package AustralianElectorates.Bogus
 
 
 ## Usage
