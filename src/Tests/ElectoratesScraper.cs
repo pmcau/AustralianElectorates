@@ -14,16 +14,16 @@ public static class ElectoratesScraper
         var tempElectorateHtmlPath = Path.Combine(DataLocations.TempPath, $"{shortName}.html");
         try
         {
-            await Downloader.DownloadFile(tempElectorateHtmlPath, $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm");
+            await Downloader.DownloadFile(tempElectorateHtmlPath, $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm".ToLower());
             var prefix = "Profile of the electoral division of ";
             //if (!File.Exists(tempElectorateHtmlPath))
             //{
-            //    await Downloader.DownloadFile(tempElectorateHtmlPath, $"https://www.aec.gov.au/Elections/federal_elections/2019/profiles/{state}/{shortName}.htm");
+            //    await Downloader.DownloadFile(tempElectorateHtmlPath, $"https://www.aec.gov.au/Elections/federal_elections/2019/profiles/{state}/{shortName}.htm".ToLower());
             //    prefix = "2019 federal election: profile of the electoral division of ";
             //}
             if (!File.Exists(tempElectorateHtmlPath))
             {
-                await Downloader.DownloadFile(tempElectorateHtmlPath, $"https://www.aec.gov.au/Elections/federal_elections/2016/profiles/{state}/{shortName}.htm");
+                await Downloader.DownloadFile(tempElectorateHtmlPath, $"https://www.aec.gov.au/Elections/federal_elections/2016/profiles/{state}/{shortName}.htm".ToLower());
                 prefix = "2016 federal election: profile of the electoral division of ";
             }
             if (!File.Exists(tempElectorateHtmlPath))
