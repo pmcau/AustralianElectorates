@@ -2,8 +2,10 @@
 
 All information about electorates is available at [/Data/electorates.json](/Data/electorates.json).
 
+toc
 
-### Example content
+
+## Example content
 
 ```json
 [
