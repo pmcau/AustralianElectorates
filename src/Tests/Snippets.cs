@@ -27,7 +27,7 @@ public class Snippets :
 
         // access the current member
         var currentMember = canberra.Members.First();
-        Debug.WriteLine(currentMember.Name);
+        Debug.WriteLine($"{currentMember.FamilyName}, {currentMember.GivenName}");
         Debug.WriteLine(currentMember.Party);
 
         // get an electorates maps (geojson) by string

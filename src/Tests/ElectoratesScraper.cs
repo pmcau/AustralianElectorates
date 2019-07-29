@@ -9,9 +9,9 @@ using Xunit;
 
 public static class ElectoratesScraper
 {
-    public static async Task<Electorate> ScrapeElectorate(string shortName, State state)
+    public static async Task<Electorate> ScrapeElectorate(string shortName, State state, List<Elected> currentElected)
     {
-        var tempElectorateHtmlPath = Path.Combine(DataLocations.TempPath, $"{shortName}.html");
+        var tempElectorateHtmlPath = Path.Combine(DataLocations.TempPath, $"{shortName}.htm");
         try
         {
             await Downloader.DownloadFile(tempElectorateHtmlPath, $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm".ToLower());
@@ -54,7 +54,10 @@ public static class ElectoratesScraper
                 electorate.DateGazetted = DateTime.ParseExact(gazettedHtml.InnerText, "d MMMM yyyy", null);
             }
 
-            electorate.Members = ElectorateMembers(values).ToList();
+            var electorateMembers = ElectorateMembers(values).ToList();
+            //if (electorateMembers.First())
+
+            electorate.Members = electorateMembers;
             electorate.DemographicRating = values["Demographic Rating"].TrimmedInnerHtml();
             electorate.ProductsAndIndustry = values["Products/Industries of the Area"].TrimmedInnerHtml();
             electorate.NameDerivation = values["Name derivation"].TrimmedInnerHtml();
@@ -135,9 +138,12 @@ public static class ElectoratesScraper
             {
                 end = ushort.Parse(split[1].Trim());
             }
+
+            var memberSplit = member.Split(',');
             yield return new Member
             {
-                Name = member,
+                FamilyName = memberSplit[0],
+                GivenName = memberSplit[1],
                 Party = party,
                 Begin = begin,
                 End = end,
