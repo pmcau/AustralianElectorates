@@ -46,13 +46,13 @@ namespace AustralianElectorates.Bogus
 
         public string CurrentMemberName()
         {
-            return CurrentMember().Name;
+            return CurrentMember().FullName();
         }
 
         public IEnumerable<string> CurrentMemberName(int num = 1)
         {
             Guard.AgainstNegative(num, nameof(num));
-            return CurrentMember(num).Select(x => x.Name);
+            return CurrentMember(num).Select(x => x.FullName());
         }
 
         public Member Member()
@@ -72,13 +72,13 @@ namespace AustralianElectorates.Bogus
 
         public string MemberName()
         {
-            return Member().Name;
+            return Member().FullName();
         }
 
         public IEnumerable<string> MemberName(int num = 1)
         {
             Guard.AgainstNegative(num, nameof(num));
-            return Member(num).Select(x => x.Name);
+            return Member(num).Select(x => x.FullName());
         }
 
         public Electorate Electorate()
