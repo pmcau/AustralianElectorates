@@ -9,27 +9,31 @@ using Xunit;
 
 public static class ElectoratesScraper
 {
-    public static async Task<Electorate> ScrapeElectorate(string shortName, State state)
+    public static async Task<Electorate> ScrapeCurrentElectorate(string shortName, State state)
     {
+        var requestUri = $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm";
+        return await ScrapeElectorate(shortName, state, requestUri,"Profile of the electoral division of ");
+    }
+
+    public static async Task<Electorate> Scrape2016Electorate(string shortName, State state)
+    {
+        var requestUri = $"https://www.aec.gov.au/Elections/federal_elections/2016/profiles/{state}/{shortName}.htm";
+        return await ScrapeElectorate(shortName, state, requestUri, "2016 federal election: profile of the electoral division of ");
+    }
+
+    static async Task<Electorate> ScrapeElectorate(string shortName, State state, string requestUri, string prefix)
+    {
+        requestUri = requestUri.ToLowerInvariant();
         var tempElectorateHtmlPath = Path.Combine(DataLocations.TempPath, $"{shortName}.html");
         try
         {
-            await Downloader.DownloadFile(tempElectorateHtmlPath, $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm".ToLower());
-            var prefix = "Profile of the electoral division of ";
-            //if (!File.Exists(tempElectorateHtmlPath))
-            //{
-            //    await Downloader.DownloadFile(tempElectorateHtmlPath, $"https://www.aec.gov.au/Elections/federal_elections/2019/profiles/{state}/{shortName}.htm".ToLower());
-            //    prefix = "2019 federal election: profile of the electoral division of ";
-            //}
-            if (!File.Exists(tempElectorateHtmlPath))
-            {
-                await Downloader.DownloadFile(tempElectorateHtmlPath, $"https://www.aec.gov.au/Elections/federal_elections/2016/profiles/{state}/{shortName}.htm".ToLower());
-                prefix = "2016 federal election: profile of the electoral division of ";
-            }
+            await Downloader.DownloadFile(tempElectorateHtmlPath, requestUri);
+
             if (!File.Exists(tempElectorateHtmlPath))
             {
                 throw new Exception($"Could not download {shortName}");
             }
+
             var document = new HtmlDocument();
             document.Load(tempElectorateHtmlPath);
 

@@ -11,16 +11,16 @@ public class ElectoratesScraperTests :
     [Trait("Category", "Integration")]
     public async Task Run()
     {
-        var denison =await ElectoratesScraper.ScrapeElectorate("denison", State.TAS);
-        var bass = await ElectoratesScraper.ScrapeElectorate("bass", State.TAS);
-        var fenner = await ElectoratesScraper.ScrapeElectorate("fenner", State.ACT);
-        var hunter = await ElectoratesScraper.ScrapeElectorate("hunter", State.NSW);
-        var spence = await ElectoratesScraper.ScrapeElectorate("spence", State.SA);
-        var cook = await ElectoratesScraper.ScrapeElectorate("cook", State.NSW);
-        var canberra = await ElectoratesScraper.ScrapeElectorate("canberra", State.ACT);
-        var bean = await ElectoratesScraper.ScrapeElectorate("bean", State.ACT);
-        var batman = await ElectoratesScraper.ScrapeElectorate("batman", State.VIC);
-        var melbourne = await ElectoratesScraper.ScrapeElectorate("melbourne", State.VIC);
+        var denison =await ElectoratesScraper.Scrape2016Electorate("denison", State.TAS);
+        var bass = await ElectoratesScraper.ScrapeCurrentElectorate("clark", State.TAS);
+        var fenner = await ElectoratesScraper.ScrapeCurrentElectorate("fenner", State.ACT);
+        var hunter = await ElectoratesScraper.ScrapeCurrentElectorate("hunter", State.NSW);
+        var spence = await ElectoratesScraper.ScrapeCurrentElectorate("spence", State.SA);
+        var cook = await ElectoratesScraper.ScrapeCurrentElectorate("cook", State.NSW);
+        var canberra = await ElectoratesScraper.ScrapeCurrentElectorate("canberra", State.ACT);
+        var bean = await ElectoratesScraper.ScrapeCurrentElectorate("bean", State.ACT);
+        var batman = await ElectoratesScraper.ScrapeCurrentElectorate("batman", State.VIC);
+        var melbourne = await ElectoratesScraper.ScrapeCurrentElectorate("melbourne", State.VIC);
         ObjectApprover.VerifyWithJson(new {denison, melbourne, hunter, batman, spence, cook, bean, fenner , canberra , bass });
     }
 
