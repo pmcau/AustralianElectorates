@@ -1,4 +1,5 @@
-﻿using ObjectApproval;
+﻿using System.Linq;
+using ObjectApproval;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -8,7 +9,7 @@ public class ElectedParserTests :
     [Fact]
     public void Run()
     {
-        ObjectApprover.VerifyWithJson(ElectedParser.Read("electedSample.csv"));
+        ObjectApprover.VerifyWithJson(ElectedParser.Read("CsvParsers/electedSample.csv").Take(10));
     }
 
     public ElectedParserTests(ITestOutputHelper output) :

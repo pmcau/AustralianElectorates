@@ -1,0 +1,102 @@
+﻿[
+  {
+    DivisionNm: 'Adelaide',
+    StateAb: 'SA',
+    LibNatVotes: 44819,
+    LibNatPercent: '41.82',
+    LaborVotes: 62362,
+    LaborPercent: '58.18',
+    TotalVotes: 107181,
+    Swing: 0.12
+  },
+  {
+    DivisionNm: 'Aston',
+    StateAb: 'VIC',
+    LibNatVotes: 60180,
+    LibNatPercent: '60.13',
+    LaborVotes: 39910,
+    LaborPercent: '39.87',
+    TotalVotes: 100090,
+    Swing: 2.72
+  },
+  {
+    DivisionNm: 'Ballarat',
+    StateAb: 'VIC',
+    LibNatVotes: 40068,
+    LibNatPercent: '39.02',
+    LaborVotes: 62615,
+    LaborPercent: '60.98',
+    TotalVotes: 102683,
+    Swing: -3.62
+  },
+  {
+    DivisionNm: 'Banks',
+    StateAb: 'NSW',
+    LibNatVotes: 51609,
+    LibNatPercent: '56.26',
+    LaborVotes: 40121,
+    LaborPercent: '43.74',
+    TotalVotes: 91730,
+    Swing: 4.82
+  },
+  {
+    DivisionNm: 'Barker',
+    StateAb: 'SA',
+    LibNatVotes: 72851,
+    LibNatPercent: '68.94',
+    LaborVotes: 32815,
+    LaborPercent: '31.06',
+    TotalVotes: 105666,
+    Swing: 5.07
+  },
+  {
+    DivisionNm: 'Barton',
+    StateAb: 'NSW',
+    LibNatVotes: 36489,
+    LibNatPercent: '40.59',
+    LaborVotes: 53418,
+    LaborPercent: '59.41',
+    TotalVotes: 89907,
+    Swing: -1.11
+  },
+  {
+    DivisionNm: 'Bass',
+    StateAb: 'TAS',
+    LibNatVotes: 34648,
+    LibNatPercent: '50.41',
+    LaborVotes: 34085,
+    LaborPercent: '49.59',
+    TotalVotes: 68733,
+    Swing: 5.83
+  },
+  {
+    DivisionNm: 'Bean',
+    StateAb: 'ACT',
+    LibNatVotes: 39484,
+    LibNatPercent: '42.48',
+    LaborVotes: 53455,
+    LaborPercent: '57.52',
+    TotalVotes: 92939,
+    Swing: 1.33
+  },
+  {
+    DivisionNm: 'Bendigo',
+    StateAb: 'VIC',
+    LibNatVotes: 41645,
+    LibNatPercent: '40.96',
+    LaborVotes: 60016,
+    LaborPercent: '59.04',
+    TotalVotes: 101661,
+    Swing: -5.17
+  },
+  {
+    DivisionNm: 'Bennelong',
+    StateAb: 'NSW',
+    LibNatVotes: 54809,
+    LibNatPercent: '56.91',
+    LaborVotes: 41496,
+    LaborPercent: '43.09',
+    TotalVotes: 96305,
+    Swing: -2.81
+  }
+]
