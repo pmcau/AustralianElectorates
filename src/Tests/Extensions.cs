@@ -12,6 +12,24 @@ static class Extensions
             .Select(x => x.InnerText).ToList();
     }
 
+    public static string ToTitleCase(this string value)
+    {
+        var words = value.Split(' ');
+        for (var i = 0; i < words.Length; i++)
+        {
+            if (words[i].Length == 0) continue;
+
+            var firstChar = char.ToUpper(words[i][0]);
+            var rest = "";
+            if (words[i].Length > 1)
+            {
+                rest = words[i].Substring(1).ToLower();
+            }
+            words[i] = firstChar + rest;
+        }
+        return string.Join(" ", words);
+    }
+
     public static string ReplaceCaseless(this string str, string oldValue, string newValue)
     {
         var stringBuilder = new StringBuilder();

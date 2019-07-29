@@ -9,19 +9,19 @@ using Xunit;
 
 public static class ElectoratesScraper
 {
-    public static async Task<Electorate> ScrapeCurrentElectorate(string shortName, State state)
+    public static async Task<Electorate> ScrapeCurrentElectorate(string shortName, State state, List<Elected> elected)
     {
         var requestUri = $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm";
-        return await ScrapeElectorate(shortName, state, requestUri,"Profile of the electoral division of ");
+        return await ScrapeElectorate(shortName, state, requestUri, "Profile of the electoral division of ", elected);
     }
 
     public static async Task<Electorate> Scrape2016Electorate(string shortName, State state)
     {
         var requestUri = $"https://www.aec.gov.au/Elections/federal_elections/2016/profiles/{state}/{shortName}.htm";
-        return await ScrapeElectorate(shortName, state, requestUri, "2016 federal election: profile of the electoral division of ");
+        return await ScrapeElectorate(shortName, state, requestUri, "2016 federal election: profile of the electoral division of ", new List<Elected>());
     }
 
-    static async Task<Electorate> ScrapeElectorate(string shortName, State state, string requestUri, string prefix)
+    static async Task<Electorate> ScrapeElectorate(string shortName, State state, string requestUri, string prefix, List<Elected> elected)
     {
         requestUri = requestUri.ToLowerInvariant();
         var tempElectorateHtmlPath = Path.Combine(DataLocations.TempPath, $"{shortName}.html");
@@ -59,7 +59,23 @@ public static class ElectoratesScraper
             }
 
             var electorateMembers = ElectorateMembers(values).ToList();
-            //if (electorateMembers.First())
+            var first = electorateMembers.FirstOrDefault();
+            if (first != null && first.End == null)
+            {
+                first.End = 2019;
+            }
+            var single = elected.SingleOrDefault(x => x.DivisionNm == fullName);
+            if (single != null)
+            {
+                electorateMembers.Insert(0,
+                    new Member
+                    {
+                        GivenNames = single.GivenNm,
+                        FamilyName = single.Surname.ToTitleCase(),
+                        Begin = 2019,
+                        Party = single.PartyAb
+                    });
+            }
 
             electorate.Members = electorateMembers;
             electorate.DemographicRating = values["Demographic Rating"].TrimmedInnerHtml();
@@ -112,6 +128,7 @@ public static class ElectoratesScraper
         {
             yield break;
         }
+
         var texts = members
             .Descendants("li")
             .Select(x => x.ChildNodes.First().InnerText)
@@ -123,6 +140,7 @@ public static class ElectoratesScraper
                 .Select(x => x.InnerText)
                 .ToList();
         }
+
         foreach (var text in texts)
         {
             var cleaned = text.TrimEnd('(').TrimmedInnerHtml();
@@ -130,12 +148,13 @@ public static class ElectoratesScraper
             {
                 continue;
             }
-            var split = cleaned.Split(new[] {" ("},2, StringSplitOptions.None);
+
+            var split = cleaned.Split(new[] {" ("}, 2, StringSplitOptions.None);
             var member = split[0];
-            split = split[1].Split(new[] { ") " }, 2, StringSplitOptions.None);
+            split = split[1].Split(new[] {") "}, 2, StringSplitOptions.None);
             var party = split[0];
 
-            split = split[1].Split(new[] {"-" }, 2, StringSplitOptions.RemoveEmptyEntries);
+            split = split[1].Split(new[] {"-"}, 2, StringSplitOptions.RemoveEmptyEntries);
             var begin = ushort.Parse(split[0].Trim());
             ushort? end = null;
             if (split.Length > 1)
@@ -147,7 +166,7 @@ public static class ElectoratesScraper
             yield return new Member
             {
                 FamilyName = memberSplit[0],
-                GivenName = memberSplit[1],
+                GivenNames = memberSplit[1].Trim(),
                 Party = party,
                 Begin = begin,
                 End = end,

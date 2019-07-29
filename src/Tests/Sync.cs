@@ -187,7 +187,7 @@ public class Sync :
                 Electorate electorate;
                 if (existIn2019)
                 {
-                    electorate = await ElectoratesScraper.ScrapeCurrentElectorate(electorateName, electoratePair.Key);
+                    electorate = await ElectoratesScraper.ScrapeCurrentElectorate(electorateName, electoratePair.Key, elected2019);
                 }
                 else
                 {

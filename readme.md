@@ -137,7 +137,7 @@ Debug.WriteLine(canberra.Description);
 
 // access the current member
 var currentMember = canberra.Members.First();
-Debug.WriteLine($"{currentMember.FamilyName}, {currentMember.GivenName}");
+Debug.WriteLine($"{currentMember.FamilyName}, {currentMember.GivenNames}");
 Debug.WriteLine(currentMember.Party);
 
 // get an electorates maps (geojson) by string

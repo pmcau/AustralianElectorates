@@ -12,7 +12,7 @@ public class ElectoratesScraperTests :
     [Trait("Category", "Integration")]
     public async Task Run()
     {
-        var denison =await ElectoratesScraper.Scrape2016Electorate("denison", State.TAS, new List<Elected>());
+        var denison =await ElectoratesScraper.Scrape2016Electorate("denison", State.TAS);
         var bass = await ElectoratesScraper.ScrapeCurrentElectorate("clark", State.TAS, new List<Elected>());
         var fenner = await ElectoratesScraper.ScrapeCurrentElectorate("fenner", State.ACT, new List<Elected>());
         var hunter = await ElectoratesScraper.ScrapeCurrentElectorate("hunter", State.NSW, new List<Elected>());
