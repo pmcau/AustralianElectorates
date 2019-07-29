@@ -24,7 +24,8 @@ public class ElectoratesScraperTests :
         ObjectApprover.VerifyWithJson(new {denison, melbourne, hunter, batman, spence, cook, bean, fenner , canberra , bass });
     }
 
-    public ElectoratesScraperTests(ITestOutputHelper output) : base(output)
+    public ElectoratesScraperTests(ITestOutputHelper output) :
+        base(output)
     {
     }
 }

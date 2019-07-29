@@ -8,6 +8,7 @@
   <ItemGroup>
     <PackageReference Include="ApprovalTests" Version="4.0.0" />
     <PackageReference Include="Bogus" Version="28.0.2" />
+    <PackageReference Include="CsvHelper" Version="12.1.2" />
     <PackageReference Include="MarkdownSnippets.MsBuild" Version="15.0.0" />
     <PackageReference Include="ObjectApproval" Version="9.1.0" />
     <PackageReference Include="GeoJSON.Net" Version="1.1.72" />
@@ -21,5 +22,10 @@
     <ProjectReference Include="..\AustralianElectorates.Bogus\AustralianElectorates.Bogus.csproj" />
     <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
     <Reference Include="System.IO.Compression" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="electedSample.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>

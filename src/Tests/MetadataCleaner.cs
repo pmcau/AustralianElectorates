@@ -11,6 +11,7 @@ static class MetadataCleaner
         {
             return;
         }
+
         foreach (var feature in featureCollection.Features)
         {
             var electorate = (string) feature.Properties["Elect_div"];
@@ -21,18 +22,18 @@ static class MetadataCleaner
             feature.Properties.Clear();
             feature.Properties["electorateName"] = electorate;
             feature.Properties["electorateShortName"] = shortName;
-            feature.Properties["area"] = Math.Round(area,6);
+            feature.Properties["area"] = Math.Round(area, 6);
             feature.Properties["state"] = stateFromProperties;
         }
     }
 
-
-    private static string GetState(Feature feature, State? state)
+    static string GetState(Feature feature, State? state)
     {
         if (feature.Properties.TryGetValue("State", out var stateFromProperties))
         {
             return (string) stateFromProperties;
         }
+
         return state.ToString();
     }
 }

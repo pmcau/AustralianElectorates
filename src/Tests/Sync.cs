@@ -105,11 +105,15 @@ public class Sync :
 
     static Task Get2016()
     {
+        // elected https://results.aec.gov.au/20499/Website/Downloads/HouseMembersElectedDownload-20499.csv
+        // 2 party pref https://results.aec.gov.au/20499/Website/Downloads/HouseTppByDivisionDownload-20499.csv
         return GetCountry(2016, "https://www.aec.gov.au/Electorates/gis/files/national-midmif-09052016.zip", DataLocations.Maps2016Path);
     }
 
     static Task Get2019()
     {
+        // elected https://tallyroom.aec.gov.au/Downloads/HouseMembersElectedDownload-24310.csv
+        // 2 party pref https://tallyroom.aec.gov.au/Downloads/HouseTppByDivisionDownload-24310.csv
         return GetCountry(2019, "https://www.aec.gov.au/Electorates/gis/files/national-mapinfo-fe2019.zip", DataLocations.Maps2019Path);
     }
 
