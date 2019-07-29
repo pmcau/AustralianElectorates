@@ -1119,7 +1119,7 @@
     "Exist2016": true,
     "Exist2019": false,
     "ExistInFuture": false,
-    "Description": "Port Adelaide covers an area of approximately 181 sq km from Waterloo Corner in the north down to Grange Road in the south whilst its eastern boundary takes in parts of Salisbury. The area also includes Torrens Island and Garden Island. Other suburbs in this division are Alberton, Beverley, Birkenhead, Cheltenham, Findon, Kilkenny, Largs Bay, Mansfield Park, North Haven, Ottoway, Parafield Gardens, Paralowie, Pennington, Port Adelaide, Queenstown, Rosewater, Salisbury Downs, Seaton (part), Semaphore, Woodville and West Croydon.",
+    "Description": "Port Adelaide covers an area of approximately 181 sq km from Buckland Park in the north down to Grange Road in the south whilst its eastern boundary takes in parts of Salisbury. The area also includes Torrens Island and Garden Island. Other suburbs in this division are Alberton, Beverley, Birkenhead, Cheltenham, Findon, Kilkenny, Largs Bay, Mansfield Park, North Haven, Ottoway, Parafield Gardens, Paralowie, Pennington, Port Adelaide, Queenstown, Rosewater, Salisbury Downs, Seaton (part), Semaphore, Woodville and West Croydon.",
     "DemographicRating": "Inner Metropolitan",
     "ProductsAndIndustry": "Brewery, cement, commercial fishing, electricity generation, flour mills, grain bulk handling, heavy engineering, manufacturing industry, motion picture production, petroleum storage, police academy, salt, shipping, stevedoring, warship &amp; submarine construction, waste disposal and wool stores.",
     "NameDerivation": "Named after the locality which was discovered by Collet Barker in 1831.",
@@ -1465,14 +1465,8 @@
     "NameDerivation": "Named after John Batman 1801-39, the early settler and explorer, known as the 'Founder of Melbourne'.",
     "Members": [
       {
-        "Name": "Kearney, G",
-        "Begin": 2018,
-        "Party": "ALP"
-      },
-      {
         "Name": "Feeney, D",
         "Begin": 2013,
-        "End": 2018,
         "Party": "ALP"
       },
       {
@@ -3319,14 +3313,8 @@
     "NameDerivation": "Named after the Murray River which was named by Charles Sturt in 1830 after Sir George Murray, Colonial Secretary.",
     "Members": [
       {
-        "Name": "Drum, D",
-        "Begin": 2016,
-        "Party": "NP"
-      },
-      {
         "Name": "Stone, S",
         "Begin": 1996,
-        "End": 2016,
         "Party": "LP"
       },
       {

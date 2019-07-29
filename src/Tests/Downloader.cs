@@ -32,7 +32,7 @@ static class Downloader
                 return;
             }
 
-            remoteLastModified = headResponse.Content.Headers.LastModified.Value.UtcDateTime;
+            remoteLastModified = headResponse.Content.Headers.LastModified.GetValueOrDefault(DateTimeOffset.UtcNow).UtcDateTime;
         }
 
         if (File.Exists(targetPath))
