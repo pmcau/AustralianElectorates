@@ -5,5 +5,6 @@ public class HouseTcpByCandidateByPollingPlace
     public char Elected { get; set; }
     public char HistoricElected { get; set; }
     public string PartyAb { get; set; }
+    public int OrdinaryVotes { get; set; }
     public decimal Swing { get; set; }
 }

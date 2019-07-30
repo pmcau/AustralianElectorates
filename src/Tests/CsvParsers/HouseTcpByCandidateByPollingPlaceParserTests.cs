@@ -11,6 +11,11 @@ public class HouseTcpByCandidateByPollingPlaceParserTests :
     {
         ObjectApprover.VerifyWithJson(HouseTcpByCandidateByPollingPlaceParser.Read("CsvParsers/HouseTcpByCandidateByPollingPlaceSample.csv").Take(10));
     }
+    [Fact]
+    public void ReadPaired()
+    {
+        HouseTcpByCandidateByPollingPlaceParser.ReadPaired("CsvParsers/HouseTcpByCandidateByPollingPlaceSample.csv");
+    }
 
     public HouseTcpByCandidateByPollingPlaceParserTests(ITestOutputHelper output) :
         base(output)
