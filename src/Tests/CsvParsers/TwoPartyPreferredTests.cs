@@ -9,7 +9,7 @@ public class TwoPartyPreferredTests :
     [Fact]
     public void Run()
     {
-        ObjectApprover.VerifyWithJson(TwoPartyPreferredParser.Read("CsvParsers/TwoPartyPreferredSample.csv").Take(10));
+        ObjectApprover.Verify(TwoPartyPreferredParser.Read("CsvParsers/TwoPartyPreferredSample.csv").Take(10));
     }
 
     public TwoPartyPreferredTests(ITestOutputHelper output) :

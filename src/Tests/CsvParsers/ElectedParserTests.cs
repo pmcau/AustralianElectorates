@@ -9,7 +9,7 @@ public class ElectedParserTests :
     [Fact]
     public void Run()
     {
-        ObjectApprover.VerifyWithJson(ElectedParser.Read("CsvParsers/electedSample.csv").Take(10));
+        ObjectApprover.Verify(ElectedParser.Read("CsvParsers/electedSample.csv").Take(10));
     }
 
     public ElectedParserTests(ITestOutputHelper output) :

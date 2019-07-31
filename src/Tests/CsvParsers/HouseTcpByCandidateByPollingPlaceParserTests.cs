@@ -9,7 +9,7 @@ public class HouseTcpByCandidateByPollingPlaceParserTests :
     [Fact]
     public void Run()
     {
-        ObjectApprover.VerifyWithJson(HouseTcpByCandidateByPollingPlaceParser.Read("CsvParsers/HouseTcpByCandidateByPollingPlaceSample.csv").Take(10));
+        ObjectApprover.Verify(HouseTcpByCandidateByPollingPlaceParser.Read("CsvParsers/HouseTcpByCandidateByPollingPlaceSample.csv").Take(10));
     }
     [Fact]
     public void ReadPaired()

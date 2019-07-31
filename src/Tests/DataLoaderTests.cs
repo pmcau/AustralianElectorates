@@ -13,7 +13,7 @@ public class DataLoaderTests :
     [Fact]
     public void Electorates()
     {
-        ObjectApprover.VerifyWithJson(DataLoader.Electorates.Select(x=>x.Name));
+        ObjectApprover.Verify(DataLoader.Electorates.Select(x=>x.Name));
     }
 
     [Fact]
@@ -35,20 +35,20 @@ public class DataLoaderTests :
     {
         Assert.False(DataLoader.TryFindElectorate("not Found", out _));
         var exception = Assert.Throws<ElectorateNotFoundException>(() => DataLoader.FindElectorate("not Found"));
-        ObjectApprover.VerifyWithJson(new {exception.Name, exception.Message});
+        ObjectApprover.Verify(new {exception.Name, exception.Message});
     }
 
     [Fact]
     public void ValidateElectorates()
     {
         var exception = Assert.Throws<ElectoratesNotFoundException>(() => DataLoader.ValidateElectorates("not Found", "Bass"));
-        ObjectApprover.VerifyWithJson(new {exception.Names, exception.Message});
+        ObjectApprover.Verify(new {exception.Names, exception.Message});
     }
 
     [Fact]
     public void FindInvalidateElectorates()
     {
-        ObjectApprover.VerifyWithJson(DataLoader.FindInvalidateElectorates("not Found", "Bass"));
+        ObjectApprover.Verify(DataLoader.FindInvalidateElectorates("not Found", "Bass"));
     }
 
     [Fact]
@@ -94,35 +94,35 @@ public class DataLoaderTests :
     public void Get2016State()
     {
         var data = DataLoader.Maps2016.GetState(State.ACT);
-        ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
+        ObjectApprover.Verify(data.GeoJson.Substring(0,200));
     }
 
     [Fact]
     public void Get2019State()
     {
         var data = DataLoader.Maps2019.GetState(State.ACT);
-        ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
+        ObjectApprover.Verify(data.GeoJson.Substring(0,200));
     }
 
     [Fact]
     public void GetFutureState()
     {
         var data = DataLoader.MapsFuture.GetState(State.ACT);
-        ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
+        ObjectApprover.Verify(data.GeoJson.Substring(0,200));
     }
 
     [Fact]
     public void Get2016Electorate()
     {
         var data = DataLoader.Maps2016.GetElectorate("fenner");
-        ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
+        ObjectApprover.Verify(data.GeoJson.Substring(0,200));
     }
 
     [Fact]
     public void Get2019Electorate()
     {
         var data = DataLoader.Maps2019.GetElectorate("fenner");
-        ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
+        ObjectApprover.Verify(data.GeoJson.Substring(0,200));
     }
 
     [Fact]
@@ -136,28 +136,28 @@ public class DataLoaderTests :
     public void GetFutureElectorate()
     {
         var data = DataLoader.MapsFuture.GetElectorate("fenner");
-        ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
+        ObjectApprover.Verify(data.GeoJson.Substring(0,200));
     }
 
     [Fact]
     public void GetFutureElectorateExtension()
     {
         var data = DataLoader.Fenner.GetFutureMap();
-        ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
+        ObjectApprover.Verify(data.GeoJson.Substring(0,200));
     }
 
     [Fact]
     public void GetCurrentElectorateExtension()
     {
         var data = DataLoader.Fenner.GetFutureMap();
-        ObjectApprover.VerifyWithJson(data.GeoJson.Substring(0,200));
+        ObjectApprover.Verify(data.GeoJson.Substring(0,200));
     }
 
     [Fact]
     public void LoadAll()
     {
         DataLoader.LoadAll();
-        ObjectApprover.VerifyWithJson(new
+        ObjectApprover.Verify(new
         {
             FutureLoadedElectorateMaps = DataLoader.MapsFuture.LoadedElectorates.Count,
             FutureLoadedStateMaps = DataLoader.MapsFuture.LoadedStates.Count,
