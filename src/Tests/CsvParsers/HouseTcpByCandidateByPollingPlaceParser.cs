@@ -3,7 +3,6 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using CsvHelper;
-using Xunit;
 
 static class HouseTcpByCandidateByPollingPlaceParser
 {

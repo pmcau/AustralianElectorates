@@ -1,1 +1,92 @@
-﻿ 
+﻿[
+  {
+    PollingPlaceID: 93925,
+    DivisionNm: 'Bean',
+    Elected: "N",
+    HistoricElected: "N",
+    PartyAb: 'LP',
+    OrdinaryVotes: 288,
+    Swing: 0.93
+  },
+  {
+    PollingPlaceID: 93925,
+    DivisionNm: 'Bean',
+    Elected: "Y",
+    HistoricElected: "N",
+    PartyAb: 'ALP',
+    OrdinaryVotes: 418,
+    Swing: -0.93
+  },
+  {
+    PollingPlaceID: 93927,
+    DivisionNm: 'Bean',
+    Elected: "N",
+    HistoricElected: "N",
+    PartyAb: 'LP',
+    OrdinaryVotes: 2,
+    Swing: -34.62
+  },
+  {
+    PollingPlaceID: 93927,
+    DivisionNm: 'Bean',
+    Elected: "Y",
+    HistoricElected: "N",
+    PartyAb: 'ALP',
+    OrdinaryVotes: 11,
+    Swing: 34.62
+  },
+  {
+    PollingPlaceID: 11877,
+    DivisionNm: 'Bean',
+    Elected: "N",
+    HistoricElected: "N",
+    PartyAb: 'LP',
+    OrdinaryVotes: 504,
+    Swing: 0.62
+  },
+  {
+    PollingPlaceID: 11877,
+    DivisionNm: 'Bean',
+    Elected: "Y",
+    HistoricElected: "N",
+    PartyAb: 'ALP',
+    OrdinaryVotes: 826,
+    Swing: -0.62
+  },
+  {
+    PollingPlaceID: 11452,
+    DivisionNm: 'Bean',
+    Elected: "N",
+    HistoricElected: "N",
+    PartyAb: 'LP',
+    OrdinaryVotes: 794,
+    Swing: 1.99
+  },
+  {
+    PollingPlaceID: 11452,
+    DivisionNm: 'Bean',
+    Elected: "Y",
+    HistoricElected: "N",
+    PartyAb: 'ALP',
+    OrdinaryVotes: 1092,
+    Swing: -1.99
+  },
+  {
+    PollingPlaceID: 8761,
+    DivisionNm: 'Bean',
+    Elected: "N",
+    HistoricElected: "N",
+    PartyAb: 'LP',
+    OrdinaryVotes: 804,
+    Swing: -4.49
+  },
+  {
+    PollingPlaceID: 8761,
+    DivisionNm: 'Bean',
+    Elected: "Y",
+    HistoricElected: "N",
+    PartyAb: 'ALP',
+    OrdinaryVotes: 1405,
+    Swing: 4.49
+  }
+]
