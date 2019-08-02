@@ -24,9 +24,6 @@
     <Reference Include="System.IO.Compression" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="CsvParsers\electedSample.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Update="MediaFeed\aec-mediafeed-results-standard-verbose-24310.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
