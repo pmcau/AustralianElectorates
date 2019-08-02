@@ -23,6 +23,7 @@ public static class ElectoratesScraper
 
     static async Task<Electorate> ScrapeElectorate(string shortName, State state, string requestUri, string prefix, List<Elected> elected)
     {
+        //TODO: should not need elected here. should be able to use 2candidatepref
         requestUri = requestUri.ToLowerInvariant();
         var tempElectorateHtmlPath = Path.Combine(DataLocations.TempPath, $"{shortName}.html");
         try
@@ -47,13 +48,43 @@ public static class ElectoratesScraper
                 values[keyNode.InnerText.Trim().Trim(':').Replace("  ", " ")] = valueNode;
             }
 
+            var contest = MediaFeedService.HouseOfReps.Contests.SingleOrDefault(x => x.ContestIdentifier.ContestName == fullName);
             var electorate = new Electorate
             {
                 Name = fullName,
                 ShortName = shortName,
-                State = state,
-                Enrollment = MediaFeedService.HouseOfReps.Contests.SingleOrDefault(x => x.ContestIdentifier.ContestName == fullName)?.Enrolment.Value
+                State = state
             };
+            if (contest != null)
+            {
+                electorate.Enrollment = contest.Enrolment.Value;
+                var candidatePreferred = contest.TwoCandidatePreferred;
+                var electedCandidate = candidatePreferred.Candidate.Single(x => x.Elected.Value);
+                var electedCandidateName = SplitName(electedCandidate.CandidateIdentifier.CandidateName);
+
+                var other = candidatePreferred.Candidate.Single(x => !x.Elected.Value);
+                var otherName = SplitName(other.CandidateIdentifier.CandidateName);
+
+                electorate.TwoCandidatePreferred = new TwoCandidatePreferred
+                {
+                    Elected = new Candidate
+                    {
+                        FamilyName = electedCandidateName.familyName,
+                        GivenNames = electedCandidateName.givenNames,
+                        Party = electedCandidate.AffiliationIdentifier?.ShortCode,
+                        Votes = electedCandidate.Votes.Value,
+                        Swing = electedCandidate.Votes.Swing,
+                    },
+                    Other = new Candidate
+                    {
+                        FamilyName = otherName.familyName,
+                        GivenNames = otherName.givenNames,
+                        Party = other.AffiliationIdentifier?.ShortCode,
+                        Votes = other.Votes.Value,
+                        Swing = other.Votes.Swing,
+                    }
+                };
+            }
 
             if (values.TryGetValue("Date this name and boundary was gazetted", out var gazettedHtml))
             {
@@ -164,16 +195,24 @@ public static class ElectoratesScraper
                 end = ushort.Parse(split[1].Trim());
             }
 
-            var memberSplit = member.Split(',');
+            var (familyName, givenNames) = SplitName(member);
             yield return new Member
             {
-                FamilyName = memberSplit[0],
-                GivenNames = memberSplit[1].Trim(),
+                FamilyName = familyName,
+                GivenNames = givenNames,
                 Party = party,
                 Begin = begin,
                 End = end,
             };
         }
+    }
+
+    static (string familyName, string givenNames) SplitName(string member)
+    {
+        var memberSplit = member.Split(',');
+        var familyName = memberSplit[0].ToTitleCase();
+        var givenNames = memberSplit[1].Trim();
+        return (familyName, givenNames);
     }
 
     static HtmlNode FindProfileTable(HtmlDocument document)

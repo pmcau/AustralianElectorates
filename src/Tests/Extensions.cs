@@ -17,7 +17,10 @@ static class Extensions
         var words = value.Split(' ');
         for (var i = 0; i < words.Length; i++)
         {
-            if (words[i].Length == 0) continue;
+            if (words[i].Length == 0)
+            {
+                continue;
+            }
 
             var firstChar = char.ToUpper(words[i][0]);
             var rest = "";
