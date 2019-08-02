@@ -68,7 +68,8 @@
         "End": 1975,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 95348
   },
   {
     "Name": "Fenner",
@@ -125,7 +126,8 @@
         "End": 1984,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 96017
   },
   {
     "Name": "Bean",
@@ -147,7 +149,8 @@
         "Begin": 2019,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 104482
   },
   {
     "Name": "Bass",
@@ -288,7 +291,8 @@
         "End": 1910,
         "Party": "PROT"
       }
-    ]
+    ],
+    "Enrollment": 76532
   },
   {
     "Name": "Braddon",
@@ -373,7 +377,8 @@
         "End": 1958,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 79194
   },
   {
     "Name": "Denison",
@@ -606,7 +611,8 @@
         "End": 1922,
         "Party": "ANTI-SOC/LIB/NAT/CP"
       }
-    ]
+    ],
+    "Enrollment": 76619
   },
   {
     "Name": "Lyons",
@@ -656,7 +662,8 @@
         "End": 1993,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 79625
   },
   {
     "Name": "Clark",
@@ -678,7 +685,8 @@
         "Begin": 2019,
         "Party": "IND"
       }
-    ]
+    ],
+    "Enrollment": 73846
   },
   {
     "Name": "Adelaide",
@@ -798,7 +806,8 @@
         "End": 1908,
         "Party": "PROT"
       }
-    ]
+    ],
+    "Enrollment": 121606
   },
   {
     "Name": "Barker",
@@ -883,7 +892,8 @@
         "End": 1906,
         "Party": "PROT"
       }
-    ]
+    ],
+    "Enrollment": 118371
   },
   {
     "Name": "Boothby",
@@ -996,7 +1006,8 @@
         "End": 1911,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 123949
   },
   {
     "Name": "Grey",
@@ -1095,7 +1106,8 @@
         "End": 1922,
         "Party": "FT/ALP/NAT"
       }
-    ]
+    ],
+    "Enrollment": 119949
   },
   {
     "Name": "Hindmarsh",
@@ -1187,7 +1199,8 @@
         "End": 1909,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 122645
   },
   {
     "Name": "Kingston",
@@ -1279,7 +1292,8 @@
         "End": 1951,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 118735
   },
   {
     "Name": "Makin",
@@ -1322,7 +1336,8 @@
         "End": 1996,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 119982
   },
   {
     "Name": "Mayo",
@@ -1365,7 +1380,8 @@
         "End": 2008,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 122377
   },
   {
     "Name": "Port Adelaide",
@@ -1486,7 +1502,8 @@
         "End": 1954,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 123818
   },
   {
     "Name": "Wakefield",
@@ -1614,7 +1631,8 @@
         "Begin": 2019,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 119385
   },
   {
     "Name": "Aston",
@@ -1664,7 +1682,8 @@
         "End": 1990,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 110342
   },
   {
     "Name": "Ballarat",
@@ -1777,7 +1796,8 @@
         "End": 1913,
         "Party": "PROT/LIB"
       }
-    ]
+    ],
+    "Enrollment": 114954
   },
   {
     "Name": "Batman",
@@ -2003,7 +2023,8 @@
         "End": 1913,
         "Party": "PROT/IND PROT/LIB"
       }
-    ]
+    ],
+    "Enrollment": 112755
   },
   {
     "Name": "Bruce",
@@ -2060,7 +2081,8 @@
         "End": 1983,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 109195
   },
   {
     "Name": "Calwell",
@@ -2096,7 +2118,8 @@
         "End": 2001,
         "Party": "ALP/IND"
       }
-    ]
+    ],
+    "Enrollment": 107507
   },
   {
     "Name": "Casey",
@@ -2167,7 +2190,8 @@
         "End": 1972,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 113307
   },
   {
     "Name": "Chisholm",
@@ -2238,7 +2262,8 @@
         "End": 1970,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 106323
   },
   {
     "Name": "Corangamite",
@@ -2358,7 +2383,8 @@
         "End": 1903,
         "Party": "PROT"
       }
-    ]
+    ],
+    "Enrollment": 111601
   },
   {
     "Name": "Corio",
@@ -2464,7 +2490,8 @@
         "End": 1910,
         "Party": "PROT"
       }
-    ]
+    ],
+    "Enrollment": 110304
   },
   {
     "Name": "Deakin",
@@ -2549,7 +2576,8 @@
         "End": 1949,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 107493
   },
   {
     "Name": "Dunkley",
@@ -2606,7 +2634,8 @@
         "End": 1990,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 110636
   },
   {
     "Name": "Flinders",
@@ -2733,7 +2762,8 @@
         "End": 1903,
         "Party": "FT"
       }
-    ]
+    ],
+    "Enrollment": 110703
   },
   {
     "Name": "Gellibrand",
@@ -2790,7 +2820,8 @@
         "End": 1955,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 111194
   },
   {
     "Name": "Gippsland",
@@ -2875,7 +2906,8 @@
         "End": 1906,
         "Party": "PROT"
       }
-    ]
+    ],
+    "Enrollment": 110538
   },
   {
     "Name": "Goldstein",
@@ -2925,7 +2957,8 @@
         "End": 1990,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 108514
   },
   {
     "Name": "Gorton",
@@ -2954,7 +2987,8 @@
         "End": 2019,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 110416
   },
   {
     "Name": "Higgins",
@@ -3011,7 +3045,8 @@
         "End": 1967,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 111013
   },
   {
     "Name": "Holt",
@@ -3075,7 +3110,8 @@
         "End": 1972,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 106812
   },
   {
     "Name": "Hotham",
@@ -3132,7 +3168,8 @@
         "End": 1977,
         "Party": "LP/IND/DEM"
       }
-    ]
+    ],
+    "Enrollment": 107833
   },
   {
     "Name": "Indi",
@@ -3273,7 +3310,8 @@
         "End": 1906,
         "Party": "PROT"
       }
-    ]
+    ],
+    "Enrollment": 112775
   },
   {
     "Name": "Isaacs",
@@ -3365,7 +3403,8 @@
         "End": 1969,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 108297
   },
   {
     "Name": "Jagajaga",
@@ -3401,7 +3440,8 @@
         "End": 1996,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 107553
   },
   {
     "Name": "Kooyong",
@@ -3472,7 +3512,8 @@
         "End": 1910,
         "Party": "LIB"
       }
-    ]
+    ],
+    "Enrollment": 108413
   },
   {
     "Name": "La Trobe",
@@ -3557,7 +3598,8 @@
         "End": 1960,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 110721
   },
   {
     "Name": "Lalor",
@@ -3621,7 +3663,8 @@
         "End": 1966,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 106783
   },
   {
     "Name": "Mallee",
@@ -3671,7 +3714,8 @@
         "End": 1972,
         "Party": "CP"
       }
-    ]
+    ],
+    "Enrollment": 113767
   },
   {
     "Name": "Maribyrnong",
@@ -3749,7 +3793,8 @@
         "End": 1910,
         "Party": "PROT"
       }
-    ]
+    ],
+    "Enrollment": 112866
   },
   {
     "Name": "McEwen",
@@ -3806,7 +3851,8 @@
         "End": 1990,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 108041
   },
   {
     "Name": "McMillan",
@@ -3962,7 +4008,8 @@
         "End": 1904,
         "Party": "PROT"
       }
-    ]
+    ],
+    "Enrollment": 107572
   },
   {
     "Name": "Melbourne Ports",
@@ -4055,7 +4102,8 @@
         "End": 1991,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 107801
   },
   {
     "Name": "Murray",
@@ -4141,7 +4189,8 @@
         "End": 1969,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 105154
   },
   {
     "Name": "Wannon",
@@ -4261,7 +4310,8 @@
         "End": 1903,
         "Party": "FT"
       }
-    ]
+    ],
+    "Enrollment": 114572
   },
   {
     "Name": "Wills",
@@ -4325,7 +4375,8 @@
         "End": 1955,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 110658
   },
   {
     "Name": "Cooper",
@@ -4347,7 +4398,8 @@
         "Begin": 2019,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 110836
   },
   {
     "Name": "Fraser",
@@ -4369,7 +4421,8 @@
         "Begin": 2019,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 109408
   },
   {
     "Name": "Macnamara",
@@ -4391,7 +4444,8 @@
         "Begin": 2019,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 113802
   },
   {
     "Name": "Monash",
@@ -4413,7 +4467,8 @@
         "Begin": 2019,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 112483
   },
   {
     "Name": "Nicholls",
@@ -4435,7 +4490,8 @@
         "Begin": 2019,
         "Party": "NP"
       }
-    ]
+    ],
+    "Enrollment": 111134
   },
   {
     "Name": "Blair",
@@ -4471,7 +4527,8 @@
         "End": 2007,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 113520
   },
   {
     "Name": "Bonner",
@@ -4514,7 +4571,8 @@
         "End": 2007,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 104599
   },
   {
     "Name": "Bowman",
@@ -4606,7 +4664,8 @@
         "End": 1961,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 109425
   },
   {
     "Name": "Brisbane",
@@ -4712,7 +4771,8 @@
         "End": 1903,
         "Party": "FT"
       }
-    ]
+    ],
+    "Enrollment": 115557
   },
   {
     "Name": "Capricornia",
@@ -4846,7 +4906,8 @@
         "End": 1903,
         "Party": "IND"
       }
-    ]
+    ],
+    "Enrollment": 102585
   },
   {
     "Name": "Dawson",
@@ -4917,7 +4978,8 @@
         "End": 1963,
         "Party": "CP"
       }
-    ]
+    ],
+    "Enrollment": 105248
   },
   {
     "Name": "Dickson",
@@ -4967,7 +5029,8 @@
         "End": 1996,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 108211
   },
   {
     "Name": "Fadden",
@@ -5017,7 +5080,8 @@
         "End": 1983,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 114061
   },
   {
     "Name": "Fairfax",
@@ -5067,7 +5131,8 @@
         "End": 1990,
         "Party": "NP"
       }
-    ]
+    ],
+    "Enrollment": 114123
   },
   {
     "Name": "Fisher",
@@ -5138,7 +5203,8 @@
         "End": 1972,
         "Party": "CP"
       }
-    ]
+    ],
+    "Enrollment": 113134
   },
   {
     "Name": "Flynn",
@@ -5174,7 +5240,8 @@
         "End": 2010,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 103061
   },
   {
     "Name": "Forde",
@@ -5231,7 +5298,8 @@
         "End": 1987,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 107261
   },
   {
     "Name": "Griffith",
@@ -5330,7 +5398,8 @@
         "End": 1939,
         "Party": "FLP"
       }
-    ]
+    ],
+    "Enrollment": 111937
   },
   {
     "Name": "Groom",
@@ -5380,7 +5449,8 @@
         "End": 1988,
         "Party": "NP"
       }
-    ]
+    ],
+    "Enrollment": 105978
   },
   {
     "Name": "Herbert",
@@ -5486,7 +5556,8 @@
         "End": 1925,
         "Party": "ALP/NAT"
       }
-    ]
+    ],
+    "Enrollment": 108453
   },
   {
     "Name": "Hinkler",
@@ -5536,7 +5607,8 @@
         "End": 1987,
         "Party": "NP"
       }
-    ]
+    ],
+    "Enrollment": 107742
   },
   {
     "Name": "Kennedy",
@@ -5607,7 +5679,8 @@
         "End": 1925,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 107679
   },
   {
     "Name": "Leichhardt",
@@ -5692,7 +5765,8 @@
         "End": 1951,
         "Party": "CP"
       }
-    ]
+    ],
+    "Enrollment": 109458
   },
   {
     "Name": "Lilley",
@@ -5812,7 +5886,8 @@
         "End": 1917,
         "Party": "LIB"
       }
-    ]
+    ],
+    "Enrollment": 108608
   },
   {
     "Name": "Longman",
@@ -5862,7 +5937,8 @@
         "End": 2007,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 114718
   },
   {
     "Name": "Maranoa",
@@ -5954,7 +6030,8 @@
         "End": 1921,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 105051
   },
   {
     "Name": "McPherson",
@@ -6025,7 +6102,8 @@
         "End": 1958,
         "Party": "CP"
       }
-    ]
+    ],
+    "Enrollment": 109261
   },
   {
     "Name": "Moncrieff",
@@ -6061,7 +6139,8 @@
         "End": 2001,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 111386
   },
   {
     "Name": "Moreton",
@@ -6146,7 +6225,8 @@
         "End": 1906,
         "Party": "IND LAB/ALP"
       }
-    ]
+    ],
+    "Enrollment": 102769
   },
   {
     "Name": "Oxley",
@@ -6210,7 +6290,8 @@
         "End": 1961,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 104214
   },
   {
     "Name": "Petrie",
@@ -6309,7 +6390,8 @@
         "End": 1961,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 115449
   },
   {
     "Name": "Rankin",
@@ -6352,7 +6434,8 @@
         "End": 1998,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 103551
   },
   {
     "Name": "Ryan",
@@ -6409,7 +6492,8 @@
         "End": 1975,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 106249
   },
   {
     "Name": "Wide Bay",
@@ -6494,7 +6578,8 @@
         "End": 1915,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 107495
   },
   {
     "Name": "Wright",
@@ -6523,7 +6608,8 @@
         "End": 2019,
         "Party": "LNQ"
       }
-    ]
+    ],
+    "Enrollment": 112115
   },
   {
     "Name": "Lingiari",
@@ -6552,7 +6638,8 @@
         "End": 2019,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 70023
   },
   {
     "Name": "Solomon",
@@ -6602,7 +6689,8 @@
         "End": 2007,
         "Party": "CLP"
       }
-    ]
+    ],
+    "Enrollment": 69336
   },
   {
     "Name": "Banks",
@@ -6659,7 +6747,8 @@
         "End": 1969,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 106253
   },
   {
     "Name": "Barton",
@@ -6772,7 +6861,8 @@
         "End": 1925,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 108992
   },
   {
     "Name": "Bennelong",
@@ -6822,7 +6912,8 @@
         "End": 1974,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 108815
   },
   {
     "Name": "Berowra",
@@ -6872,7 +6963,8 @@
         "End": 1972,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 106331
   },
   {
     "Name": "Blaxland",
@@ -6922,7 +7014,8 @@
         "End": 1969,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 105383
   },
   {
     "Name": "Bradfield",
@@ -6979,7 +7072,8 @@
         "End": 1952,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 107304
   },
   {
     "Name": "Calare",
@@ -7099,7 +7193,8 @@
         "End": 1913,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 118099
   },
   {
     "Name": "Chifley",
@@ -7149,7 +7244,8 @@
         "End": 1983,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 111980
   },
   {
     "Name": "Cook",
@@ -7247,7 +7343,8 @@
         "End": 1922,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 106957
   },
   {
     "Name": "Cowper",
@@ -7325,7 +7422,8 @@
         "End": 1903,
         "Party": "PROT"
       }
-    ]
+    ],
+    "Enrollment": 124340
   },
   {
     "Name": "Cunningham",
@@ -7396,7 +7494,8 @@
         "End": 1956,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 115231
   },
   {
     "Name": "Dobell",
@@ -7453,7 +7552,8 @@
         "End": 2001,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 117206
   },
   {
     "Name": "Eden-Monaro",
@@ -7573,7 +7673,8 @@
         "End": 1926,
         "Party": "PROT/LIB/NAT"
       }
-    ]
+    ],
+    "Enrollment": 114147
   },
   {
     "Name": "Farrer",
@@ -7623,7 +7724,8 @@
         "End": 1975,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 115525
   },
   {
     "Name": "Fowler",
@@ -7666,7 +7768,8 @@
         "End": 1998,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 106941
   },
   {
     "Name": "Gilmore",
@@ -7716,7 +7819,8 @@
         "End": 1993,
         "Party": "NP"
       }
-    ]
+    ],
+    "Enrollment": 122364
   },
   {
     "Name": "Grayndler",
@@ -7780,7 +7884,8 @@
         "End": 1975,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 109567
   },
   {
     "Name": "Greenway",
@@ -7830,7 +7935,8 @@
         "End": 1996,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 110299
   },
   {
     "Name": "Hughes",
@@ -7894,7 +8000,8 @@
         "End": 1966,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 106204
   },
   {
     "Name": "Hume",
@@ -8035,7 +8142,8 @@
         "End": 1913,
         "Party": "PROT/IND"
       }
-    ]
+    ],
+    "Enrollment": 116405
   },
   {
     "Name": "Hunter",
@@ -8155,7 +8263,8 @@
         "End": 1903,
         "Party": "PROT"
       }
-    ]
+    ],
+    "Enrollment": 121436
   },
   {
     "Name": "Kingsford Smith",
@@ -8219,7 +8328,8 @@
         "End": 1955,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 111098
   },
   {
     "Name": "Lindsay",
@@ -8276,7 +8386,8 @@
         "End": 1996,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 118734
   },
   {
     "Name": "Lyne",
@@ -8340,7 +8451,8 @@
         "End": 1952,
         "Party": "CP"
       }
-    ]
+    ],
+    "Enrollment": 118726
   },
   {
     "Name": "Macarthur",
@@ -8432,7 +8544,8 @@
         "End": 1972,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 119094
   },
   {
     "Name": "Mackellar",
@@ -8482,7 +8595,8 @@
         "End": 1977,
         "Party": "LP/IND"
       }
-    ]
+    ],
+    "Enrollment": 110817
   },
   {
     "Name": "Macquarie",
@@ -8616,7 +8730,8 @@
         "End": 1906,
         "Party": "FT"
       }
-    ]
+    ],
+    "Enrollment": 107962
   },
   {
     "Name": "McMahon",
@@ -8659,7 +8774,8 @@
         "End": 1990,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 106754
   },
   {
     "Name": "Mitchell",
@@ -8723,7 +8839,8 @@
         "End": 1961,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 110345
   },
   {
     "Name": "New England",
@@ -8829,7 +8946,8 @@
         "End": 1903,
         "Party": "PROT"
       }
-    ]
+    ],
+    "Enrollment": 111893
   },
   {
     "Name": "Newcastle",
@@ -8893,7 +9011,8 @@
         "End": 1935,
         "Party": "ALP/FLP"
       }
-    ]
+    ],
+    "Enrollment": 117650
   },
   {
     "Name": "North Sydney",
@@ -8985,7 +9104,8 @@
         "End": 1910,
         "Party": "FT"
       }
-    ]
+    ],
+    "Enrollment": 109218
   },
   {
     "Name": "Page",
@@ -9042,7 +9162,8 @@
         "End": 1990,
         "Party": "NP"
       }
-    ]
+    ],
+    "Enrollment": 122709
   },
   {
     "Name": "Parkes",
@@ -9092,7 +9213,8 @@
         "End": 1998,
         "Party": "NP"
       }
-    ]
+    ],
+    "Enrollment": 109513
   },
   {
     "Name": "Parramatta",
@@ -9205,7 +9327,8 @@
         "End": 1921,
         "Party": "FT/ANTI-SOC/LIB/NAT"
       }
-    ]
+    ],
+    "Enrollment": 103122
   },
   {
     "Name": "Paterson",
@@ -9276,7 +9399,8 @@
         "End": 1969,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 122820
   },
   {
     "Name": "Reid",
@@ -9361,7 +9485,8 @@
         "End": 1931,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 108876
   },
   {
     "Name": "Richmond",
@@ -9446,7 +9571,8 @@
         "End": 1910,
         "Party": "PROT"
       }
-    ]
+    ],
+    "Enrollment": 119332
   },
   {
     "Name": "Riverina",
@@ -9580,7 +9706,8 @@
         "End": 1903,
         "Party": "PROT"
       }
-    ]
+    ],
+    "Enrollment": 113960
   },
   {
     "Name": "Robertson",
@@ -9700,7 +9827,8 @@
         "End": 1910,
         "Party": "FT/ANTI-SOC"
       }
-    ]
+    ],
+    "Enrollment": 111142
   },
   {
     "Name": "Shortland",
@@ -9750,7 +9878,8 @@
         "End": 1972,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 114054
   },
   {
     "Name": "Sydney",
@@ -9800,7 +9929,8 @@
         "End": 1975,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 114215
   },
   {
     "Name": "Warringah",
@@ -9878,7 +10008,8 @@
         "End": 1927,
         "Party": "NAT"
       }
-    ]
+    ],
+    "Enrollment": 104995
   },
   {
     "Name": "Watson",
@@ -9942,7 +10073,8 @@
         "End": 40,
         "Party": "UAP"
       }
-    ]
+    ],
+    "Enrollment": 107774
   },
   {
     "Name": "Wentworth",
@@ -10048,7 +10180,8 @@
         "End": 1903,
         "Party": "FT"
       }
-    ]
+    ],
+    "Enrollment": 103498
   },
   {
     "Name": "Werriwa",
@@ -10168,7 +10301,8 @@
         "End": 1906,
         "Party": "FT"
       }
-    ]
+    ],
+    "Enrollment": 117693
   },
   {
     "Name": "Whitlam",
@@ -10211,7 +10345,8 @@
         "End": 2001,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 118695
   },
   {
     "Name": "Brand",
@@ -10261,7 +10396,8 @@
         "End": 1996,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 106998
   },
   {
     "Name": "Canning",
@@ -10353,7 +10489,8 @@
         "End": 1961,
         "Party": "CP"
       }
-    ]
+    ],
+    "Enrollment": 107207
   },
   {
     "Name": "Cowan",
@@ -10410,7 +10547,8 @@
         "End": 1993,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 98665
   },
   {
     "Name": "Curtin",
@@ -10460,7 +10598,8 @@
         "End": 1969,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 100422
   },
   {
     "Name": "Durack",
@@ -10496,7 +10635,8 @@
         "End": 2013,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 97104
   },
   {
     "Name": "Forrest",
@@ -10567,7 +10707,8 @@
         "End": 1943,
         "Party": "CP"
       }
-    ]
+    ],
+    "Enrollment": 105452
   },
   {
     "Name": "Fremantle",
@@ -10680,7 +10821,8 @@
         "End": 1903,
         "Party": "FT"
       }
-    ]
+    ],
+    "Enrollment": 105465
   },
   {
     "Name": "Hasluck",
@@ -10730,7 +10872,8 @@
         "End": 2004,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 98624
   },
   {
     "Name": "Moore",
@@ -10815,7 +10958,8 @@
         "End": 1958,
         "Party": "CP"
       }
-    ]
+    ],
+    "Enrollment": 101523
   },
   {
     "Name": "Burt",
@@ -10844,7 +10988,8 @@
         "End": 2019,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 105236
   },
   {
     "Name": "O'Connor",
@@ -10887,7 +11032,8 @@
         "End": 2010,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 101983
   },
   {
     "Name": "Pearce",
@@ -10930,7 +11076,8 @@
         "End": 1993,
         "Party": "LP"
       }
-    ]
+    ],
+    "Enrollment": 119583
   },
   {
     "Name": "Perth",
@@ -11036,7 +11183,8 @@
         "End": 1922,
         "Party": "ALP/LIB/NAT"
       }
-    ]
+    ],
+    "Enrollment": 101535
   },
   {
     "Name": "Stirling",
@@ -11114,7 +11262,8 @@
         "End": 1958,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 101243
   },
   {
     "Name": "Swan",
@@ -11248,7 +11397,8 @@
         "End": 1918,
         "Party": "PROT/WAP/LIB/NAT"
       }
-    ]
+    ],
+    "Enrollment": 100857
   },
   {
     "Name": "Tangney",
@@ -11326,6 +11476,7 @@
         "End": 1975,
         "Party": "ALP"
       }
-    ]
+    ],
+    "Enrollment": 94365
   }
 ]

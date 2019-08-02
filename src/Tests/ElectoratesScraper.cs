@@ -51,8 +51,10 @@ public static class ElectoratesScraper
             {
                 Name = fullName,
                 ShortName = shortName,
-                State = state
+                State = state,
+                Enrollment = MediaFeedService.HouseOfReps.Contests.SingleOrDefault(x => x.ContestIdentifier.ContestName == fullName)?.Enrolment.Value
             };
+
             if (values.TryGetValue("Date this name and boundary was gazetted", out var gazettedHtml))
             {
                 electorate.DateGazetted = DateTime.ParseExact(gazettedHtml.InnerText, "d MMMM yyyy", null);
