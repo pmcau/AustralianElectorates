@@ -21,10 +21,11 @@ All information about electorates is available at [/Data/electorates.json](/Data
   * [Bogus Usage](#bogus-usage)
   * [Copyright](#copyright)
     * [Code](#code)
-    * [Content/Data](#content/data)
+    * [Content/Data](#contentdata)
   * [Re-Generating the data](#re-generating-the-data)
     * [ogr2ogr](#ogr2ogr)
     * [MapShaper](#mapshaper)
+  * [Notes](#notes)
   * [Icon](#icon)
 <!-- endtoc -->
 
@@ -257,6 +258,15 @@ Installation:
 * Ensure `C:\Users\USER\AppData\Roaming\npm` is in path
 
 https://github.com/mbloch/mapshaper/wiki/Command-Reference
+
+
+## Notes
+
+Media feed ftp://mediafeed.aec.gov.au/24310/Standard/Verbose/
+
+> Verbose Feed: Contains up-to-date election results and information. The feed contains static data, such as candidate names, and dynamic data such as votes. The verbose feed also contains calculated results like swings and aggregated results to the state and national level. This feed is suitable for users who have their own IT system and who may or may not have pre-loaded data and is also suitable for those users who do not have an IT system and simply wish to transform the XMLfile into another format.
+
+From: https://www.aec.gov.au/media/mediafeed/files/media-feed-user-guide-v4.pdf
 
 
 ## Icon
