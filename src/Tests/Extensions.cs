@@ -28,7 +28,7 @@ static class Extensions
                 builder.Append(ch);
             }
 
-            if (ch == ' ')
+            if (!char.IsLetter(ch))
             {
                 lowerNext = false;
                 continue;

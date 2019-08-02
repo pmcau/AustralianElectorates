@@ -11,7 +11,6 @@ using Xunit.Abstractions;
 public class Sync :
     XunitLoggingBase
 {
-    List<Elected> elected2019;
     [Fact]
     [Trait("Category", "Integration")]
     public async Task SyncData()
@@ -22,11 +21,6 @@ public class Sync :
 
         // 2019 elected https://tallyroom.aec.gov.au/Downloads/HouseMembersElectedDownload-24310.csv
         // 2 party pref https://tallyroom.aec.gov.au/Downloads/HouseTppByDivisionDownload-24310.csv
-
-        var elected2019File = Path.Combine(DataLocations.TempPath, "2019Elected.csv");
-        await Downloader.DownloadFile(elected2019File,"https://tallyroom.aec.gov.au/Downloads/HouseMembersElectedDownload-24310.csv");
-
-        elected2019 = ElectedParser.Read(elected2019File);
 
         await Get2016();
         await Get2019();
@@ -187,7 +181,7 @@ public class Sync :
                 Electorate electorate;
                 if (existIn2019)
                 {
-                    electorate = await ElectoratesScraper.ScrapeCurrentElectorate(electorateName, electoratePair.Key, elected2019);
+                    electorate = await ElectoratesScraper.ScrapeCurrentElectorate(electorateName, electoratePair.Key);
                 }
                 else
                 {

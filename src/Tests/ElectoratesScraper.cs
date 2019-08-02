@@ -9,21 +9,20 @@ using Xunit;
 
 public static class ElectoratesScraper
 {
-    public static async Task<Electorate> ScrapeCurrentElectorate(string shortName, State state, List<Elected> elected)
+    public static async Task<Electorate> ScrapeCurrentElectorate(string shortName, State state)
     {
         var requestUri = $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm";
-        return await ScrapeElectorate(shortName, state, requestUri, "Profile of the electoral division of ", elected);
+        return await ScrapeElectorate(shortName, state, requestUri, "Profile of the electoral division of ");
     }
 
     public static async Task<Electorate> Scrape2016Electorate(string shortName, State state)
     {
         var requestUri = $"https://www.aec.gov.au/Elections/federal_elections/2016/profiles/{state}/{shortName}.htm";
-        return await ScrapeElectorate(shortName, state, requestUri, "2016 federal election: profile of the electoral division of ", new List<Elected>());
+        return await ScrapeElectorate(shortName, state, requestUri, "2016 federal election: profile of the electoral division of ");
     }
 
-    static async Task<Electorate> ScrapeElectorate(string shortName, State state, string requestUri, string prefix, List<Elected> elected)
+    static async Task<Electorate> ScrapeElectorate(string shortName, State state, string requestUri, string prefix)
     {
-        //TODO: should not need elected here. should be able to use 2candidatepref
         requestUri = requestUri.ToLowerInvariant();
         var tempElectorateHtmlPath = Path.Combine(DataLocations.TempPath, $"{shortName}.html");
         try
@@ -48,13 +47,26 @@ public static class ElectoratesScraper
                 values[keyNode.InnerText.Trim().Trim(':').Replace("  ", " ")] = valueNode;
             }
 
-            var contest = MediaFeedService.HouseOfReps.Contests.SingleOrDefault(x => x.ContestIdentifier.ContestName == fullName);
             var electorate = new Electorate
             {
                 Name = fullName,
                 ShortName = shortName,
                 State = state
             };
+
+            if (values.TryGetValue("Date this name and boundary was gazetted", out var gazettedHtml))
+            {
+                electorate.DateGazetted = DateTime.ParseExact(gazettedHtml.InnerText, "d MMMM yyyy", null);
+            }
+
+            var electorateMembers = ElectorateMembers(values).ToList();
+            var first = electorateMembers.FirstOrDefault();
+            if (first != null && first.End == null)
+            {
+                first.End = 2019;
+            }
+
+            var contest = MediaFeedService.HouseOfReps.Contests.SingleOrDefault(x => x.ContestIdentifier.ContestName == fullName);
             if (contest != null)
             {
                 electorate.Enrollment = contest.Enrolment.Value;
@@ -84,29 +96,14 @@ public static class ElectoratesScraper
                         Swing = other.Votes.Swing,
                     }
                 };
-            }
 
-            if (values.TryGetValue("Date this name and boundary was gazetted", out var gazettedHtml))
-            {
-                electorate.DateGazetted = DateTime.ParseExact(gazettedHtml.InnerText, "d MMMM yyyy", null);
-            }
-
-            var electorateMembers = ElectorateMembers(values).ToList();
-            var first = electorateMembers.FirstOrDefault();
-            if (first != null && first.End == null)
-            {
-                first.End = 2019;
-            }
-            var single = elected.SingleOrDefault(x => x.DivisionNm == fullName);
-            if (single != null)
-            {
                 electorateMembers.Insert(0,
                     new Member
                     {
-                        GivenNames = single.GivenNm,
-                        FamilyName = single.Surname.ToTitleCase(),
+                        GivenNames = electedCandidateName.givenNames,
+                        FamilyName = electedCandidateName.familyName.ToTitleCase(),
                         Begin = 2019,
-                        Party = single.PartyAb
+                        Party = electedCandidate.AffiliationIdentifier?.ShortCode
                     });
             }
 

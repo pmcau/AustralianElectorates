@@ -69,7 +69,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 95348
+    "Enrollment": 95348,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Payne",
+        "GivenNames": "Alicia",
+        "Party": "ALP",
+        "Votes": 57961,
+        "Swing": 4.14
+      },
+      "Other": {
+        "FamilyName": "Zaki",
+        "GivenNames": "Mina",
+        "Party": "LP",
+        "Votes": 28442,
+        "Swing": -4.14
+      }
+    }
   },
   {
     "Name": "Fenner",
@@ -127,7 +143,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 96017
+    "Enrollment": 96017,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Leigh",
+        "GivenNames": "Andrew",
+        "Party": "ALP",
+        "Votes": 52462,
+        "Swing": -1.28
+      },
+      "Other": {
+        "FamilyName": "Castley",
+        "GivenNames": "Leanne",
+        "Party": "LP",
+        "Votes": 34171,
+        "Swing": 1.28
+      }
+    }
   },
   {
     "Name": "Bean",
@@ -150,7 +182,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 104482
+    "Enrollment": 104482,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Smith",
+        "GivenNames": "David",
+        "Party": "ALP",
+        "Votes": 53455,
+        "Swing": -1.33
+      },
+      "Other": {
+        "FamilyName": "Cocks",
+        "GivenNames": "Ed",
+        "Party": "LP",
+        "Votes": 39484,
+        "Swing": 1.33
+      }
+    }
   },
   {
     "Name": "Bass",
@@ -292,7 +340,23 @@
         "Party": "PROT"
       }
     ],
-    "Enrollment": 76532
+    "Enrollment": 76532,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Archer",
+        "GivenNames": "Bridget",
+        "Party": "LP",
+        "Votes": 34648,
+        "Swing": 5.83
+      },
+      "Other": {
+        "FamilyName": "Hart",
+        "GivenNames": "Ross",
+        "Party": "ALP",
+        "Votes": 34085,
+        "Swing": -5.83
+      }
+    }
   },
   {
     "Name": "Braddon",
@@ -378,7 +442,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 79194
+    "Enrollment": 79194,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Pearce",
+        "GivenNames": "Gavin",
+        "Party": "LP",
+        "Votes": 37151,
+        "Swing": 4.82
+      },
+      "Other": {
+        "FamilyName": "Keay",
+        "GivenNames": "Justine",
+        "Party": "ALP",
+        "Votes": 32822,
+        "Swing": -4.82
+      }
+    }
   },
   {
     "Name": "Denison",
@@ -612,7 +692,23 @@
         "Party": "ANTI-SOC/LIB/NAT/CP"
       }
     ],
-    "Enrollment": 76619
+    "Enrollment": 76619,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Collins",
+        "GivenNames": "Julie",
+        "Party": "ALP",
+        "Votes": 43706,
+        "Swing": 1.48
+      },
+      "Other": {
+        "FamilyName": "Young",
+        "GivenNames": "Dean",
+        "Party": "LP",
+        "Votes": 26555,
+        "Swing": -1.48
+      }
+    }
   },
   {
     "Name": "Lyons",
@@ -663,7 +759,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 79625
+    "Enrollment": 79625,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Mitchell",
+        "GivenNames": "Brian",
+        "Party": "ALP",
+        "Votes": 39491,
+        "Swing": 1.35
+      },
+      "Other": {
+        "FamilyName": "Whelan",
+        "GivenNames": "Jessica",
+        "Party": "LP",
+        "Votes": 32073,
+        "Swing": -1.35
+      }
+    }
   },
   {
     "Name": "Clark",
@@ -682,11 +794,25 @@
       {
         "FamilyName": "Wilkie",
         "GivenNames": "Andrew",
-        "Begin": 2019,
-        "Party": "IND"
+        "Begin": 2019
       }
     ],
-    "Enrollment": 73846
+    "Enrollment": 73846,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Wilkie",
+        "GivenNames": "Andrew",
+        "Votes": 48653,
+        "Swing": 4.35
+      },
+      "Other": {
+        "FamilyName": "McGregor",
+        "GivenNames": "Ben",
+        "Party": "ALP",
+        "Votes": 18808,
+        "Swing": -4.35
+      }
+    }
   },
   {
     "Name": "Adelaide",
@@ -807,7 +933,23 @@
         "Party": "PROT"
       }
     ],
-    "Enrollment": 121606
+    "Enrollment": 121606,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Georganas",
+        "GivenNames": "Steve",
+        "Party": "ALP",
+        "Votes": 62362,
+        "Swing": -0.12
+      },
+      "Other": {
+        "FamilyName": "Osborn",
+        "GivenNames": "Shaun",
+        "Party": "LP",
+        "Votes": 44819,
+        "Swing": 0.12
+      }
+    }
   },
   {
     "Name": "Barker",
@@ -893,7 +1035,23 @@
         "Party": "PROT"
       }
     ],
-    "Enrollment": 118371
+    "Enrollment": 118371,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Pasin",
+        "GivenNames": "Tony",
+        "Party": "LP",
+        "Votes": 72851,
+        "Swing": 5.07
+      },
+      "Other": {
+        "FamilyName": "O'Brien",
+        "GivenNames": "Mat",
+        "Party": "ALP",
+        "Votes": 32815,
+        "Swing": -5.07
+      }
+    }
   },
   {
     "Name": "Boothby",
@@ -1007,7 +1165,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 123949
+    "Enrollment": 123949,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Flint",
+        "GivenNames": "Nicolle",
+        "Party": "LP",
+        "Votes": 56812,
+        "Swing": -1.33
+      },
+      "Other": {
+        "FamilyName": "Clancy",
+        "GivenNames": "Nadia",
+        "Party": "ALP",
+        "Votes": 53765,
+        "Swing": 1.33
+      }
+    }
   },
   {
     "Name": "Grey",
@@ -1107,7 +1281,23 @@
         "Party": "FT/ALP/NAT"
       }
     ],
-    "Enrollment": 119949
+    "Enrollment": 119949,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Ramsey",
+        "GivenNames": "Rowan",
+        "Party": "LP",
+        "Votes": 65504,
+        "Swing": 5.57
+      },
+      "Other": {
+        "FamilyName": "Bolton",
+        "GivenNames": "Karin",
+        "Party": "ALP",
+        "Votes": 37943,
+        "Swing": -5.57
+      }
+    }
   },
   {
     "Name": "Hindmarsh",
@@ -1200,7 +1390,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 122645
+    "Enrollment": 122645,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Butler",
+        "GivenNames": "Mark",
+        "Party": "ALP",
+        "Votes": 61606,
+        "Swing": -1.89
+      },
+      "Other": {
+        "FamilyName": "Hall-Evans",
+        "GivenNames": "Jake",
+        "Party": "LP",
+        "Votes": 47349,
+        "Swing": 1.89
+      }
+    }
   },
   {
     "Name": "Kingston",
@@ -1293,7 +1499,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 118735
+    "Enrollment": 118735,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Rishworth",
+        "GivenNames": "Amanda",
+        "Party": "ALP",
+        "Votes": 65708,
+        "Swing": -1.61
+      },
+      "Other": {
+        "FamilyName": "Curran",
+        "GivenNames": "Laura",
+        "Party": "LP",
+        "Votes": 40373,
+        "Swing": 1.61
+      }
+    }
   },
   {
     "Name": "Makin",
@@ -1337,7 +1559,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 119982
+    "Enrollment": 119982,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Zappia",
+        "GivenNames": "Tony",
+        "Party": "ALP",
+        "Votes": 63726,
+        "Swing": -1.07
+      },
+      "Other": {
+        "FamilyName": "Dave",
+        "GivenNames": "Hemant",
+        "Party": "LP",
+        "Votes": 42978,
+        "Swing": 1.07
+      }
+    }
   },
   {
     "Name": "Mayo",
@@ -1381,7 +1619,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 122377
+    "Enrollment": 122377,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Sharkie",
+        "GivenNames": "Rebekha",
+        "Party": "XEN",
+        "Votes": 62124,
+        "Swing": 2.22
+      },
+      "Other": {
+        "FamilyName": "Downer",
+        "GivenNames": "Georgina",
+        "Party": "LP",
+        "Votes": 50552,
+        "Swing": -2.22
+      }
+    }
   },
   {
     "Name": "Port Adelaide",
@@ -1503,7 +1757,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 123818
+    "Enrollment": 123818,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Stevens",
+        "GivenNames": "James",
+        "Party": "LP",
+        "Votes": 62404,
+        "Swing": 1.48
+      },
+      "Other": {
+        "FamilyName": "O'Hanlon",
+        "GivenNames": "Cressida",
+        "Party": "ALP",
+        "Votes": 47328,
+        "Swing": -1.48
+      }
+    }
   },
   {
     "Name": "Wakefield",
@@ -1632,7 +1902,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 119385
+    "Enrollment": 119385,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Champion",
+        "GivenNames": "Nick",
+        "Party": "ALP",
+        "Votes": 65174,
+        "Swing": -3.04
+      },
+      "Other": {
+        "FamilyName": "Bourne",
+        "GivenNames": "Kathleen",
+        "Party": "LP",
+        "Votes": 36455,
+        "Swing": 3.04
+      }
+    }
   },
   {
     "Name": "Aston",
@@ -1683,7 +1969,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 110342
+    "Enrollment": 110342,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Tudge",
+        "GivenNames": "Alan",
+        "Party": "LP",
+        "Votes": 60180,
+        "Swing": 2.72
+      },
+      "Other": {
+        "FamilyName": "Pethiyagoda",
+        "GivenNames": "Kadira",
+        "Party": "ALP",
+        "Votes": 39910,
+        "Swing": -2.72
+      }
+    }
   },
   {
     "Name": "Ballarat",
@@ -1797,7 +2099,23 @@
         "Party": "PROT/LIB"
       }
     ],
-    "Enrollment": 114954
+    "Enrollment": 114954,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "King",
+        "GivenNames": "Catherine",
+        "Party": "ALP",
+        "Votes": 62615,
+        "Swing": 3.62
+      },
+      "Other": {
+        "FamilyName": "Vo",
+        "GivenNames": "Tim",
+        "Party": "LP",
+        "Votes": 40068,
+        "Swing": -3.62
+      }
+    }
   },
   {
     "Name": "Batman",
@@ -2024,7 +2342,23 @@
         "Party": "PROT/IND PROT/LIB"
       }
     ],
-    "Enrollment": 112755
+    "Enrollment": 112755,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Chesters",
+        "GivenNames": "Lisa",
+        "Party": "ALP",
+        "Votes": 60016,
+        "Swing": 5.17
+      },
+      "Other": {
+        "FamilyName": "Gayed",
+        "GivenNames": "Sam",
+        "Party": "LP",
+        "Votes": 41645,
+        "Swing": -5.17
+      }
+    }
   },
   {
     "Name": "Bruce",
@@ -2082,7 +2416,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 109195
+    "Enrollment": 109195,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Hill",
+        "GivenNames": "Julian",
+        "Party": "ALP",
+        "Votes": 59689,
+        "Swing": 0.1
+      },
+      "Other": {
+        "FamilyName": "MacIsaac",
+        "GivenNames": "John",
+        "Party": "LP",
+        "Votes": 33351,
+        "Swing": -0.1
+      }
+    }
   },
   {
     "Name": "Calwell",
@@ -2119,7 +2469,23 @@
         "Party": "ALP/IND"
       }
     ],
-    "Enrollment": 107507
+    "Enrollment": 107507,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Vamvakinou",
+        "GivenNames": "Maria",
+        "Party": "ALP",
+        "Votes": 60164,
+        "Swing": -0.93
+      },
+      "Other": {
+        "FamilyName": "Hamilton",
+        "GivenNames": "Genevieve",
+        "Party": "LP",
+        "Votes": 27288,
+        "Swing": 0.93
+      }
+    }
   },
   {
     "Name": "Casey",
@@ -2191,7 +2557,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 113307
+    "Enrollment": 113307,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Smith",
+        "GivenNames": "Tony",
+        "Party": "LP",
+        "Votes": 54551,
+        "Swing": 0.1
+      },
+      "Other": {
+        "FamilyName": "Brindle",
+        "GivenNames": "Bill",
+        "Party": "ALP",
+        "Votes": 45277,
+        "Swing": -0.1
+      }
+    }
   },
   {
     "Name": "Chisholm",
@@ -2263,7 +2645,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 106323
+    "Enrollment": 106323,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Liu",
+        "GivenNames": "Gladys",
+        "Party": "LP",
+        "Votes": 48005,
+        "Swing": -2.34
+      },
+      "Other": {
+        "FamilyName": "Yang",
+        "GivenNames": "Jennifer",
+        "Party": "ALP",
+        "Votes": 46915,
+        "Swing": 2.34
+      }
+    }
   },
   {
     "Name": "Corangamite",
@@ -2384,7 +2782,23 @@
         "Party": "PROT"
       }
     ],
-    "Enrollment": 111601
+    "Enrollment": 111601,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Coker",
+        "GivenNames": "Libby",
+        "Party": "ALP",
+        "Votes": 51895,
+        "Swing": 1.04
+      },
+      "Other": {
+        "FamilyName": "Henderson",
+        "GivenNames": "Sarah",
+        "Party": "LP",
+        "Votes": 49725,
+        "Swing": -1.04
+      }
+    }
   },
   {
     "Name": "Corio",
@@ -2491,7 +2905,23 @@
         "Party": "PROT"
       }
     ],
-    "Enrollment": 110304
+    "Enrollment": 110304,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Marles",
+        "GivenNames": "Richard",
+        "Party": "ALP",
+        "Votes": 59572,
+        "Swing": 2.12
+      },
+      "Other": {
+        "FamilyName": "Thomson",
+        "GivenNames": "Alastair",
+        "Party": "LP",
+        "Votes": 39180,
+        "Swing": -2.12
+      }
+    }
   },
   {
     "Name": "Deakin",
@@ -2577,7 +3007,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 107493
+    "Enrollment": 107493,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Sukkar",
+        "GivenNames": "Michael",
+        "Party": "LP",
+        "Votes": 53288,
+        "Swing": -1.66
+      },
+      "Other": {
+        "FamilyName": "Morris",
+        "GivenNames": "Shireen",
+        "Party": "ALP",
+        "Votes": 43981,
+        "Swing": 1.66
+      }
+    }
   },
   {
     "Name": "Dunkley",
@@ -2635,7 +3081,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 110636
+    "Enrollment": 110636,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Murphy",
+        "GivenNames": "Peta",
+        "Party": "ALP",
+        "Votes": 51066,
+        "Swing": 1.71
+      },
+      "Other": {
+        "FamilyName": "Crewther",
+        "GivenNames": "Chris",
+        "Party": "LP",
+        "Votes": 45762,
+        "Swing": -1.71
+      }
+    }
   },
   {
     "Name": "Flinders",
@@ -2763,7 +3225,23 @@
         "Party": "FT"
       }
     ],
-    "Enrollment": 110703
+    "Enrollment": 110703,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Hunt",
+        "GivenNames": "Greg",
+        "Party": "LP",
+        "Votes": 53943,
+        "Swing": -1.37
+      },
+      "Other": {
+        "FamilyName": "Sinclair",
+        "GivenNames": "Josh",
+        "Party": "ALP",
+        "Votes": 43009,
+        "Swing": 1.37
+      }
+    }
   },
   {
     "Name": "Gellibrand",
@@ -2821,7 +3299,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 111194
+    "Enrollment": 111194,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Watts",
+        "GivenNames": "Tim",
+        "Party": "ALP",
+        "Votes": 63878,
+        "Swing": -0.29
+      },
+      "Other": {
+        "FamilyName": "Mitchell",
+        "GivenNames": "Anthony",
+        "Party": "LP",
+        "Votes": 34653,
+        "Swing": 0.29
+      }
+    }
   },
   {
     "Name": "Gippsland",
@@ -2907,7 +3401,23 @@
         "Party": "PROT"
       }
     ],
-    "Enrollment": 110538
+    "Enrollment": 110538,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Chester",
+        "GivenNames": "Darren",
+        "Party": "NP",
+        "Votes": 64456,
+        "Swing": -1.54
+      },
+      "Other": {
+        "FamilyName": "Holm",
+        "GivenNames": "Antoinette",
+        "Party": "ALP",
+        "Votes": 32222,
+        "Swing": 1.54
+      }
+    }
   },
   {
     "Name": "Goldstein",
@@ -2958,7 +3468,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 108514
+    "Enrollment": 108514,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Wilson",
+        "GivenNames": "Tim",
+        "Party": "LP",
+        "Votes": 57408,
+        "Swing": -4.89
+      },
+      "Other": {
+        "FamilyName": "Pollock",
+        "GivenNames": "Daniel",
+        "Party": "ALP",
+        "Votes": 41928,
+        "Swing": 4.89
+      }
+    }
   },
   {
     "Name": "Gorton",
@@ -2975,7 +3501,7 @@
     "NameDerivation": "Named in honour of the Rt Hon. Sir John Grey Gorton GCMG AC CH, 1911-2002. Gorton was Prime Minister of Australia (1968-71), a Senator for Victoria (1949-68) and a Member of the House of Representatives (1968-75).",
     "Members": [
       {
-        "FamilyName": "O'connor",
+        "FamilyName": "O'Connor",
         "GivenNames": "Brendan",
         "Begin": 2019,
         "Party": "ALP"
@@ -2988,7 +3514,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 110416
+    "Enrollment": 110416,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "O'Connor",
+        "GivenNames": "Brendan",
+        "Party": "ALP",
+        "Votes": 61861,
+        "Swing": -3.13
+      },
+      "Other": {
+        "FamilyName": "Di Noia",
+        "GivenNames": "Nathan",
+        "Party": "LP",
+        "Votes": 32780,
+        "Swing": 3.13
+      }
+    }
   },
   {
     "Name": "Higgins",
@@ -3046,7 +3588,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 111013
+    "Enrollment": 111013,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Allen",
+        "GivenNames": "Katie",
+        "Party": "LP",
+        "Votes": 54139,
+        "Swing": -6.09
+      },
+      "Other": {
+        "FamilyName": "McLeod",
+        "GivenNames": "Fiona",
+        "Party": "ALP",
+        "Votes": 46339,
+        "Swing": 6.09
+      }
+    }
   },
   {
     "Name": "Holt",
@@ -3111,7 +3669,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 106812
+    "Enrollment": 106812,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Byrne",
+        "GivenNames": "Anthony",
+        "Party": "ALP",
+        "Votes": 55577,
+        "Swing": -1.24
+      },
+      "Other": {
+        "FamilyName": "Van Den Broek",
+        "GivenNames": "Jennifer",
+        "Party": "LP",
+        "Votes": 39110,
+        "Swing": 1.24
+      }
+    }
   },
   {
     "Name": "Hotham",
@@ -3128,7 +3702,7 @@
     "NameDerivation": "Named after Sir Charles Hotham RN KCB, 1806-55. Hotham was Lieutenant-Governor of Victoria (1854-55) and the first Governor of Victoria (1855).",
     "Members": [
       {
-        "FamilyName": "O'neil",
+        "FamilyName": "O'Neil",
         "GivenNames": "Clare",
         "Begin": 2019,
         "Party": "ALP"
@@ -3169,7 +3743,23 @@
         "Party": "LP/IND/DEM"
       }
     ],
-    "Enrollment": 107833
+    "Enrollment": 107833,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "O'Neil",
+        "GivenNames": "Clare",
+        "Party": "ALP",
+        "Votes": 53597,
+        "Swing": 1.7
+      },
+      "Other": {
+        "FamilyName": "Hua",
+        "GivenNames": "George",
+        "Party": "LP",
+        "Votes": 42271,
+        "Swing": -1.7
+      }
+    }
   },
   {
     "Name": "Indi",
@@ -3188,8 +3778,7 @@
       {
         "FamilyName": "Haines",
         "GivenNames": "Helen",
-        "Begin": 2019,
-        "Party": "IND"
+        "Begin": 2019
       },
       {
         "FamilyName": "McGowan",
@@ -3311,7 +3900,22 @@
         "Party": "PROT"
       }
     ],
-    "Enrollment": 112775
+    "Enrollment": 112775,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Haines",
+        "GivenNames": "Helen",
+        "Votes": 51886,
+        "Swing": -4.13
+      },
+      "Other": {
+        "FamilyName": "Martin",
+        "GivenNames": "Steve",
+        "Party": "LP",
+        "Votes": 49070,
+        "Swing": 4.13
+      }
+    }
   },
   {
     "Name": "Isaacs",
@@ -3404,7 +4008,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 108297
+    "Enrollment": 108297,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Dreyfus",
+        "GivenNames": "Mark",
+        "Party": "ALP",
+        "Votes": 54645,
+        "Swing": 3.45
+      },
+      "Other": {
+        "FamilyName": "Hearn",
+        "GivenNames": "Jeremy",
+        "Party": "LP",
+        "Votes": 42192,
+        "Swing": -3.45
+      }
+    }
   },
   {
     "Name": "Jagajaga",
@@ -3441,7 +4061,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 107553
+    "Enrollment": 107553,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Thwaites",
+        "GivenNames": "Kate",
+        "Party": "ALP",
+        "Votes": 55304,
+        "Swing": 0.97
+      },
+      "Other": {
+        "FamilyName": "Welch",
+        "GivenNames": "Richard",
+        "Party": "LP",
+        "Votes": 42463,
+        "Swing": -0.97
+      }
+    }
   },
   {
     "Name": "Kooyong",
@@ -3513,7 +4149,23 @@
         "Party": "LIB"
       }
     ],
-    "Enrollment": 108413
+    "Enrollment": 108413,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Frydenberg",
+        "GivenNames": "Josh",
+        "Party": "LP",
+        "Votes": 55159,
+        "Swing": 55.7
+      },
+      "Other": {
+        "FamilyName": "Burnside",
+        "GivenNames": "Julian",
+        "Party": "GVIC",
+        "Votes": 43870,
+        "Swing": 44.3
+      }
+    }
   },
   {
     "Name": "La Trobe",
@@ -3599,7 +4251,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 110721
+    "Enrollment": 110721,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Wood",
+        "GivenNames": "Jason",
+        "Party": "LP",
+        "Votes": 53776,
+        "Swing": 1.27
+      },
+      "Other": {
+        "FamilyName": "Curtis",
+        "GivenNames": "Simon",
+        "Party": "ALP",
+        "Votes": 44913,
+        "Swing": -1.27
+      }
+    }
   },
   {
     "Name": "Lalor",
@@ -3664,7 +4332,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 106783
+    "Enrollment": 106783,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Ryan",
+        "GivenNames": "Joanne",
+        "Party": "ALP",
+        "Votes": 58341,
+        "Swing": -1.78
+      },
+      "Other": {
+        "FamilyName": "Murphy",
+        "GivenNames": "Gayle",
+        "Party": "LP",
+        "Votes": 35137,
+        "Swing": 1.78
+      }
+    }
   },
   {
     "Name": "Mallee",
@@ -3715,7 +4399,23 @@
         "Party": "CP"
       }
     ],
-    "Enrollment": 113767
+    "Enrollment": 113767,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Webster",
+        "GivenNames": "Anne",
+        "Party": "NP",
+        "Votes": 62143,
+        "Swing": -3.57
+      },
+      "Other": {
+        "FamilyName": "Hart",
+        "GivenNames": "Carole",
+        "Party": "ALP",
+        "Votes": 31684,
+        "Swing": 3.57
+      }
+    }
   },
   {
     "Name": "Maribyrnong",
@@ -3794,7 +4494,23 @@
         "Party": "PROT"
       }
     ],
-    "Enrollment": 112866
+    "Enrollment": 112866,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Shorten",
+        "GivenNames": "Bill",
+        "Party": "ALP",
+        "Votes": 61767,
+        "Swing": 0.8
+      },
+      "Other": {
+        "FamilyName": "Stow",
+        "GivenNames": "Christine",
+        "Party": "LP",
+        "Votes": 39157,
+        "Swing": -0.8
+      }
+    }
   },
   {
     "Name": "McEwen",
@@ -3852,7 +4568,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 108041
+    "Enrollment": 108041,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Mitchell",
+        "GivenNames": "Rob",
+        "Party": "ALP",
+        "Votes": 52892,
+        "Swing": -0.98
+      },
+      "Other": {
+        "FamilyName": "Fusco",
+        "GivenNames": "Phillip",
+        "Party": "LP",
+        "Votes": 43236,
+        "Swing": 0.98
+      }
+    }
   },
   {
     "Name": "McMillan",
@@ -3957,7 +4689,7 @@
         "FamilyName": "Bandt",
         "GivenNames": "Adam",
         "Begin": 2019,
-        "Party": "GRN"
+        "Party": "GVIC"
       },
       {
         "FamilyName": "Bandt",
@@ -4009,7 +4741,23 @@
         "Party": "PROT"
       }
     ],
-    "Enrollment": 107572
+    "Enrollment": 107572,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Bandt",
+        "GivenNames": "Adam",
+        "Party": "GVIC",
+        "Votes": 66852,
+        "Swing": 2.79
+      },
+      "Other": {
+        "FamilyName": "Sherson",
+        "GivenNames": "Lauren",
+        "Party": "LP",
+        "Votes": 26212,
+        "Swing": -2.79
+      }
+    }
   },
   {
     "Name": "Melbourne Ports",
@@ -4103,7 +4851,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 107801
+    "Enrollment": 107801,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Andrews",
+        "GivenNames": "Kevin",
+        "Party": "LP",
+        "Votes": 56568,
+        "Swing": -0.28
+      },
+      "Other": {
+        "FamilyName": "Yee",
+        "GivenNames": "Stella",
+        "Party": "ALP",
+        "Votes": 41758,
+        "Swing": 0.28
+      }
+    }
   },
   {
     "Name": "Murray",
@@ -4190,7 +4954,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 105154
+    "Enrollment": 105154,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Giles",
+        "GivenNames": "Andrew",
+        "Party": "ALP",
+        "Votes": 65787,
+        "Swing": 2.08
+      },
+      "Other": {
+        "FamilyName": "Singh",
+        "GivenNames": "Gurpal",
+        "Party": "LP",
+        "Votes": 26022,
+        "Swing": -2.08
+      }
+    }
   },
   {
     "Name": "Wannon",
@@ -4311,7 +5091,23 @@
         "Party": "FT"
       }
     ],
-    "Enrollment": 114572
+    "Enrollment": 114572,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Tehan",
+        "GivenNames": "Dan",
+        "Party": "LP",
+        "Votes": 62733,
+        "Swing": 1.23
+      },
+      "Other": {
+        "FamilyName": "Billi",
+        "GivenNames": "Maurice",
+        "Party": "ALP",
+        "Votes": 41156,
+        "Swing": -1.23
+      }
+    }
   },
   {
     "Name": "Wills",
@@ -4376,7 +5172,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 110658
+    "Enrollment": 110658,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Khalil",
+        "GivenNames": "Peter",
+        "Party": "ALP",
+        "Votes": 55898,
+        "Swing": 3.24
+      },
+      "Other": {
+        "FamilyName": "Pulford",
+        "GivenNames": "Adam",
+        "Party": "GVIC",
+        "Votes": 40192,
+        "Swing": -3.24
+      }
+    }
   },
   {
     "Name": "Cooper",
@@ -4399,7 +5211,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 110836
+    "Enrollment": 110836,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Kearney",
+        "GivenNames": "Ged",
+        "Party": "ALP",
+        "Votes": 63017,
+        "Swing": 13.38
+      },
+      "Other": {
+        "FamilyName": "Risstrom",
+        "GivenNames": "David",
+        "Party": "GVIC",
+        "Votes": 34464,
+        "Swing": -13.38
+      }
+    }
   },
   {
     "Name": "Fraser",
@@ -4422,7 +5250,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 109408
+    "Enrollment": 109408,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Mulino",
+        "GivenNames": "Daniel",
+        "Party": "ALP",
+        "Votes": 59403,
+        "Swing": -5.61
+      },
+      "Other": {
+        "FamilyName": "Bain",
+        "GivenNames": "Peter",
+        "Party": "LP",
+        "Votes": 33156,
+        "Swing": 5.61
+      }
+    }
   },
   {
     "Name": "Macnamara",
@@ -4445,7 +5289,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 113802
+    "Enrollment": 113802,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Burns",
+        "GivenNames": "Josh",
+        "Party": "ALP",
+        "Votes": 54613,
+        "Swing": 5.04
+      },
+      "Other": {
+        "FamilyName": "Ashmor",
+        "GivenNames": "Kate",
+        "Party": "LP",
+        "Votes": 42479,
+        "Swing": -5.04
+      }
+    }
   },
   {
     "Name": "Monash",
@@ -4468,7 +5328,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 112483
+    "Enrollment": 112483,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Broadbent",
+        "GivenNames": "Russell",
+        "Party": "LP",
+        "Votes": 57631,
+        "Swing": -0.15
+      },
+      "Other": {
+        "FamilyName": "O'Donnell",
+        "GivenNames": "Jessica",
+        "Party": "ALP",
+        "Votes": 42850,
+        "Swing": 0.15
+      }
+    }
   },
   {
     "Name": "Nicholls",
@@ -4491,7 +5367,23 @@
         "Party": "NP"
       }
     ],
-    "Enrollment": 111134
+    "Enrollment": 111134,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Drum",
+        "GivenNames": "Damian",
+        "Party": "NP",
+        "Votes": 66732,
+        "Swing": -2.49
+      },
+      "Other": {
+        "FamilyName": "Lodwick",
+        "GivenNames": "Bill",
+        "Party": "ALP",
+        "Votes": 28560,
+        "Swing": 2.49
+      }
+    }
   },
   {
     "Name": "Blair",
@@ -4528,7 +5420,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 113520
+    "Enrollment": 113520,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Neumann",
+        "GivenNames": "Shayne Kenneth",
+        "Party": "ALP",
+        "Votes": 49123,
+        "Swing": -6.93
+      },
+      "Other": {
+        "FamilyName": "Shearman",
+        "GivenNames": "Robert",
+        "Party": "LNP",
+        "Votes": 46802,
+        "Swing": 6.93
+      }
+    }
   },
   {
     "Name": "Bonner",
@@ -4572,7 +5480,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 104599
+    "Enrollment": 104599,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Vasta",
+        "GivenNames": "Ross",
+        "Party": "LNP",
+        "Votes": 54072,
+        "Swing": 4.02
+      },
+      "Other": {
+        "FamilyName": "Briskey",
+        "GivenNames": "Jo",
+        "Party": "ALP",
+        "Votes": 40115,
+        "Swing": -4.02
+      }
+    }
   },
   {
     "Name": "Bowman",
@@ -4665,7 +5589,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 109425
+    "Enrollment": 109425,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Laming",
+        "GivenNames": "Andrew",
+        "Party": "LNP",
+        "Votes": 59237,
+        "Swing": 3.17
+      },
+      "Other": {
+        "FamilyName": "Baster",
+        "GivenNames": "Tom",
+        "Party": "ALP",
+        "Votes": 39102,
+        "Swing": -3.17
+      }
+    }
   },
   {
     "Name": "Brisbane",
@@ -4772,7 +5712,23 @@
         "Party": "FT"
       }
     ],
-    "Enrollment": 115557
+    "Enrollment": 115557,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Evans",
+        "GivenNames": "Trevor",
+        "Party": "LNP",
+        "Votes": 55995,
+        "Swing": -1.08
+      },
+      "Other": {
+        "FamilyName": "Newbury",
+        "GivenNames": "Paul",
+        "Party": "ALP",
+        "Votes": 45962,
+        "Swing": 1.08
+      }
+    }
   },
   {
     "Name": "Capricornia",
@@ -4907,7 +5863,23 @@
         "Party": "IND"
       }
     ],
-    "Enrollment": 102585
+    "Enrollment": 102585,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Landry",
+        "GivenNames": "Michelle",
+        "Party": "LNP",
+        "Votes": 55475,
+        "Swing": 11.72
+      },
+      "Other": {
+        "FamilyName": "Robertson",
+        "GivenNames": "Russell",
+        "Party": "ALP",
+        "Votes": 33492,
+        "Swing": -11.72
+      }
+    }
   },
   {
     "Name": "Dawson",
@@ -4979,7 +5951,23 @@
         "Party": "CP"
       }
     ],
-    "Enrollment": 105248
+    "Enrollment": 105248,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Christensen",
+        "GivenNames": "George",
+        "Party": "LNP",
+        "Votes": 57405,
+        "Swing": 11.24
+      },
+      "Other": {
+        "FamilyName": "Hassan",
+        "GivenNames": "Belinda",
+        "Party": "ALP",
+        "Votes": 31446,
+        "Swing": -11.24
+      }
+    }
   },
   {
     "Name": "Dickson",
@@ -5030,7 +6018,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 108211
+    "Enrollment": 108211,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Dutton",
+        "GivenNames": "Peter",
+        "Party": "LNP",
+        "Votes": 52968,
+        "Swing": 2.95
+      },
+      "Other": {
+        "FamilyName": "France",
+        "GivenNames": "Ali",
+        "Party": "ALP",
+        "Votes": 43980,
+        "Swing": -2.95
+      }
+    }
   },
   {
     "Name": "Fadden",
@@ -5081,7 +6085,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 114061
+    "Enrollment": 114061,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Robert",
+        "GivenNames": "Stuart",
+        "Party": "LNP",
+        "Votes": 62387,
+        "Swing": 2.94
+      },
+      "Other": {
+        "FamilyName": "Stanton",
+        "GivenNames": "Luz",
+        "Party": "ALP",
+        "Votes": 34825,
+        "Swing": -2.94
+      }
+    }
   },
   {
     "Name": "Fairfax",
@@ -5098,7 +6118,7 @@
     "NameDerivation": "Named in honour of Ruth Beatrice Fairfax OBE, 1878-1948, a founder of the Country Women's Association and its first Queensland president.",
     "Members": [
       {
-        "FamilyName": "O'brien",
+        "FamilyName": "O'Brien",
         "GivenNames": "Ted",
         "Begin": 2019,
         "Party": "LNP"
@@ -5132,7 +6152,23 @@
         "Party": "NP"
       }
     ],
-    "Enrollment": 114123
+    "Enrollment": 114123,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "O'Brien",
+        "GivenNames": "Ted",
+        "Party": "LNP",
+        "Votes": 61944,
+        "Swing": 2.57
+      },
+      "Other": {
+        "FamilyName": "McGlone",
+        "GivenNames": "Julie",
+        "Party": "ALP",
+        "Votes": 35696,
+        "Swing": -2.57
+      }
+    }
   },
   {
     "Name": "Fisher",
@@ -5204,7 +6240,23 @@
         "Party": "CP"
       }
     ],
-    "Enrollment": 113134
+    "Enrollment": 113134,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Wallace",
+        "GivenNames": "Andrew",
+        "Party": "LNP",
+        "Votes": 62100,
+        "Swing": 3.55
+      },
+      "Other": {
+        "FamilyName": "Parsell",
+        "GivenNames": "Daniel",
+        "Party": "ALP",
+        "Votes": 36948,
+        "Swing": -3.55
+      }
+    }
   },
   {
     "Name": "Flynn",
@@ -5221,7 +6273,7 @@
     "NameDerivation": "Named in honour of the Reverend John Flynn OBE, 1880-1951, founder of the Royal Flying Doctor Service, who, in the early days of flying and also of radio harnessed both to the relief of suffering and the saving of lives in the remote regions of Queensland and, ultimately, Australia.",
     "Members": [
       {
-        "FamilyName": "O'dowd",
+        "FamilyName": "O'Dowd",
         "GivenNames": "Ken",
         "Begin": 2019,
         "Party": "LNP"
@@ -5241,7 +6293,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 103061
+    "Enrollment": 103061,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "O'Dowd",
+        "GivenNames": "Ken",
+        "Party": "LNP",
+        "Votes": 52472,
+        "Swing": 7.62
+      },
+      "Other": {
+        "FamilyName": "Beers",
+        "GivenNames": "Zac",
+        "Party": "ALP",
+        "Votes": 36985,
+        "Swing": -7.62
+      }
+    }
   },
   {
     "Name": "Forde",
@@ -5299,7 +6367,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 107261
+    "Enrollment": 107261,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Van Manen",
+        "GivenNames": "Bert",
+        "Party": "LNP",
+        "Votes": 53635,
+        "Swing": 7.97
+      },
+      "Other": {
+        "FamilyName": "Hardman",
+        "GivenNames": "Des",
+        "Party": "ALP",
+        "Votes": 37899,
+        "Swing": -7.97
+      }
+    }
   },
   {
     "Name": "Griffith",
@@ -5399,7 +6483,23 @@
         "Party": "FLP"
       }
     ],
-    "Enrollment": 111937
+    "Enrollment": 111937,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Butler",
+        "GivenNames": "Terri",
+        "Party": "ALP",
+        "Votes": 52659,
+        "Swing": 1.43
+      },
+      "Other": {
+        "FamilyName": "Roberts",
+        "GivenNames": "Olivia",
+        "Party": "LNP",
+        "Votes": 46958,
+        "Swing": -1.43
+      }
+    }
   },
   {
     "Name": "Groom",
@@ -5416,7 +6516,7 @@
     "NameDerivation": "Named in honour of Sir Littleton Ernest Groom, 1867-1936, Speaker of the House of Representatives (1926-29 ) and a Member of the House of Representatives (1901-29 and 1931-36).",
     "Members": [
       {
-        "FamilyName": "Mcveigh",
+        "FamilyName": "McVeigh",
         "GivenNames": "John",
         "Begin": 2019,
         "Party": "LNP"
@@ -5450,7 +6550,23 @@
         "Party": "NP"
       }
     ],
-    "Enrollment": 105978
+    "Enrollment": 105978,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "McVeigh",
+        "GivenNames": "John",
+        "Party": "LNP",
+        "Votes": 67274,
+        "Swing": 5.17
+      },
+      "Other": {
+        "FamilyName": "Kay",
+        "GivenNames": "Troy",
+        "Party": "ALP",
+        "Votes": 28174,
+        "Swing": -5.17
+      }
+    }
   },
   {
     "Name": "Herbert",
@@ -5557,7 +6673,23 @@
         "Party": "ALP/NAT"
       }
     ],
-    "Enrollment": 108453
+    "Enrollment": 108453,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Thompson",
+        "GivenNames": "Phillip",
+        "Party": "LNP",
+        "Votes": 53641,
+        "Swing": 8.38
+      },
+      "Other": {
+        "FamilyName": "O'Toole",
+        "GivenNames": "Cathy",
+        "Party": "ALP",
+        "Votes": 38276,
+        "Swing": -8.38
+      }
+    }
   },
   {
     "Name": "Hinkler",
@@ -5608,7 +6740,23 @@
         "Party": "NP"
       }
     ],
-    "Enrollment": 107742
+    "Enrollment": 107742,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Pitt",
+        "GivenNames": "Keith",
+        "Party": "LNP",
+        "Votes": 59384,
+        "Swing": 6.12
+      },
+      "Other": {
+        "FamilyName": "Pascoe",
+        "GivenNames": "Richard",
+        "Party": "ALP",
+        "Votes": 32683,
+        "Swing": -6.12
+      }
+    }
   },
   {
     "Name": "Kennedy",
@@ -5680,7 +6828,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 107679
+    "Enrollment": 107679,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Katter",
+        "GivenNames": "Bob",
+        "Party": "KAP",
+        "Votes": 58231,
+        "Swing": 2.33
+      },
+      "Other": {
+        "FamilyName": "Beveridge",
+        "GivenNames": "Frank",
+        "Party": "LNP",
+        "Votes": 33717,
+        "Swing": -2.33
+      }
+    }
   },
   {
     "Name": "Leichhardt",
@@ -5766,7 +6930,23 @@
         "Party": "CP"
       }
     ],
-    "Enrollment": 109458
+    "Enrollment": 109458,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Entsch",
+        "GivenNames": "Warren",
+        "Party": "LNP",
+        "Votes": 48638,
+        "Swing": 0.22
+      },
+      "Other": {
+        "FamilyName": "Faith",
+        "GivenNames": "Elida",
+        "Party": "ALP",
+        "Votes": 41147,
+        "Swing": -0.22
+      }
+    }
   },
   {
     "Name": "Lilley",
@@ -5887,7 +7067,23 @@
         "Party": "LIB"
       }
     ],
-    "Enrollment": 108608
+    "Enrollment": 108608,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Wells",
+        "GivenNames": "Anika",
+        "Party": "ALP",
+        "Votes": 48917,
+        "Swing": -5.04
+      },
+      "Other": {
+        "FamilyName": "Carswell",
+        "GivenNames": "Brad",
+        "Party": "LNP",
+        "Votes": 47688,
+        "Swing": 5.04
+      }
+    }
   },
   {
     "Name": "Longman",
@@ -5938,7 +7134,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 114718
+    "Enrollment": 114718,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Young",
+        "GivenNames": "Terry",
+        "Party": "LNP",
+        "Votes": 53037,
+        "Swing": 4.07
+      },
+      "Other": {
+        "FamilyName": "Lamb",
+        "GivenNames": "Susan",
+        "Party": "ALP",
+        "Votes": 46512,
+        "Swing": -4.07
+      }
+    }
   },
   {
     "Name": "Maranoa",
@@ -6031,7 +7243,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 105051
+    "Enrollment": 105051,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Littleproud",
+        "GivenNames": "David",
+        "Party": "LNP",
+        "Votes": 67239,
+        "Swing": 6.63
+      },
+      "Other": {
+        "FamilyName": "Moulden",
+        "GivenNames": "Rosemary",
+        "Party": "ON",
+        "Votes": 25521,
+        "Swing": -6.63
+      }
+    }
   },
   {
     "Name": "McPherson",
@@ -6103,7 +7331,23 @@
         "Party": "CP"
       }
     ],
-    "Enrollment": 109261
+    "Enrollment": 109261,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Andrews",
+        "GivenNames": "Karen",
+        "Party": "LNP",
+        "Votes": 57545,
+        "Swing": 0.56
+      },
+      "Other": {
+        "FamilyName": "Santelises",
+        "GivenNames": "Aaron",
+        "Party": "ALP",
+        "Votes": 34976,
+        "Swing": -0.56
+      }
+    }
   },
   {
     "Name": "Moncrieff",
@@ -6140,7 +7384,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 111386
+    "Enrollment": 111386,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Bell",
+        "GivenNames": "Angie",
+        "Party": "LNP",
+        "Votes": 60079,
+        "Swing": 0.75
+      },
+      "Other": {
+        "FamilyName": "Bell",
+        "GivenNames": "Tracey",
+        "Party": "ALP",
+        "Votes": 31840,
+        "Swing": -0.75
+      }
+    }
   },
   {
     "Name": "Moreton",
@@ -6226,7 +7486,23 @@
         "Party": "IND LAB/ALP"
       }
     ],
-    "Enrollment": 102769
+    "Enrollment": 102769,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Perrett",
+        "GivenNames": "Graham",
+        "Party": "ALP",
+        "Votes": 47045,
+        "Swing": -2.12
+      },
+      "Other": {
+        "FamilyName": "Owen",
+        "GivenNames": "Angela",
+        "Party": "LNP",
+        "Votes": 43597,
+        "Swing": 2.12
+      }
+    }
   },
   {
     "Name": "Oxley",
@@ -6291,7 +7567,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 104214
+    "Enrollment": 104214,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Dick",
+        "GivenNames": "Milton",
+        "Party": "ALP",
+        "Votes": 51050,
+        "Swing": -2.62
+      },
+      "Other": {
+        "FamilyName": "Bauer",
+        "GivenNames": "Russell",
+        "Party": "LNP",
+        "Votes": 39473,
+        "Swing": 2.62
+      }
+    }
   },
   {
     "Name": "Petrie",
@@ -6391,7 +7683,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 115449
+    "Enrollment": 115449,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Howarth",
+        "GivenNames": "Luke",
+        "Party": "LNP",
+        "Votes": 59331,
+        "Swing": 6.75
+      },
+      "Other": {
+        "FamilyName": "Mulholland",
+        "GivenNames": "Corinne",
+        "Party": "ALP",
+        "Votes": 42266,
+        "Swing": -6.75
+      }
+    }
   },
   {
     "Name": "Rankin",
@@ -6435,7 +7743,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 103551
+    "Enrollment": 103551,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Chalmers",
+        "GivenNames": "Jim",
+        "Party": "ALP",
+        "Votes": 47893,
+        "Swing": -4.86
+      },
+      "Other": {
+        "FamilyName": "Pattison",
+        "GivenNames": "Clinton",
+        "Party": "LNP",
+        "Votes": 36971,
+        "Swing": 4.86
+      }
+    }
   },
   {
     "Name": "Ryan",
@@ -6493,7 +7817,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 106249
+    "Enrollment": 106249,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Simmonds",
+        "GivenNames": "Julian",
+        "Party": "LNP",
+        "Votes": 54023,
+        "Swing": -2.95
+      },
+      "Other": {
+        "FamilyName": "Cossar",
+        "GivenNames": "Peter",
+        "Party": "ALP",
+        "Votes": 42403,
+        "Swing": 2.95
+      }
+    }
   },
   {
     "Name": "Wide Bay",
@@ -6510,7 +7850,7 @@
     "NameDerivation": "Named after the bay sighted by Lieutenant James Cook RN, navigator on HM Bark Endeavour, on 18 May 1770.",
     "Members": [
       {
-        "FamilyName": "O'brien",
+        "FamilyName": "O'Brien",
         "GivenNames": "Llew",
         "Begin": 2019,
         "Party": "LNP"
@@ -6579,7 +7919,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 107495
+    "Enrollment": 107495,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "O'Brien",
+        "GivenNames": "Llew",
+        "Party": "LNP",
+        "Votes": 59279,
+        "Swing": 4.96
+      },
+      "Other": {
+        "FamilyName": "Scanes",
+        "GivenNames": "Jason",
+        "Party": "ALP",
+        "Votes": 34593,
+        "Swing": -4.96
+      }
+    }
   },
   {
     "Name": "Wright",
@@ -6609,7 +7965,23 @@
         "Party": "LNQ"
       }
     ],
-    "Enrollment": 112115
+    "Enrollment": 112115,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Buchholz",
+        "GivenNames": "Scott",
+        "Party": "LNP",
+        "Votes": 62571,
+        "Swing": 4.96
+      },
+      "Other": {
+        "FamilyName": "McCreadie",
+        "GivenNames": "Pam",
+        "Party": "ALP",
+        "Votes": 34322,
+        "Swing": -4.96
+      }
+    }
   },
   {
     "Name": "Lingiari",
@@ -6639,7 +8011,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 70023
+    "Enrollment": 70023,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Snowdon",
+        "GivenNames": "Warren",
+        "Party": "ALP",
+        "Votes": 26863,
+        "Swing": -2.73
+      },
+      "Other": {
+        "FamilyName": "Price",
+        "GivenNames": "Jacinta",
+        "Party": "CLP",
+        "Votes": 21571,
+        "Swing": 2.73
+      }
+    }
   },
   {
     "Name": "Solomon",
@@ -6690,7 +8078,23 @@
         "Party": "CLP"
       }
     ],
-    "Enrollment": 69336
+    "Enrollment": 69336,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Gosling",
+        "GivenNames": "Luke John",
+        "Party": "ALP",
+        "Votes": 29240,
+        "Swing": -3.01
+      },
+      "Other": {
+        "FamilyName": "Ganley",
+        "GivenNames": "Kathy",
+        "Party": "CLP",
+        "Votes": 25844,
+        "Swing": 3.01
+      }
+    }
   },
   {
     "Name": "Banks",
@@ -6748,7 +8152,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 106253
+    "Enrollment": 106253,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Coleman",
+        "GivenNames": "David",
+        "Party": "LP",
+        "Votes": 51609,
+        "Swing": 4.82
+      },
+      "Other": {
+        "FamilyName": "Gambian",
+        "GivenNames": "Chris",
+        "Party": "ALP",
+        "Votes": 40121,
+        "Swing": -4.82
+      }
+    }
   },
   {
     "Name": "Barton",
@@ -6862,7 +8282,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 108992
+    "Enrollment": 108992,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Burney",
+        "GivenNames": "Linda",
+        "Party": "ALP",
+        "Votes": 53418,
+        "Swing": 1.11
+      },
+      "Other": {
+        "FamilyName": "Shrestha",
+        "GivenNames": "Pramej",
+        "Party": "LP",
+        "Votes": 36489,
+        "Swing": -1.11
+      }
+    }
   },
   {
     "Name": "Bennelong",
@@ -6913,7 +8349,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 108815
+    "Enrollment": 108815,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Alexander",
+        "GivenNames": "John",
+        "Party": "LP",
+        "Votes": 54809,
+        "Swing": -2.81
+      },
+      "Other": {
+        "FamilyName": "Owler",
+        "GivenNames": "Brian",
+        "Party": "ALP",
+        "Votes": 41496,
+        "Swing": 2.81
+      }
+    }
   },
   {
     "Name": "Berowra",
@@ -6964,7 +8416,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 106331
+    "Enrollment": 106331,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Leeser",
+        "GivenNames": "Julian",
+        "Party": "LP",
+        "Votes": 61675,
+        "Swing": -0.8
+      },
+      "Other": {
+        "FamilyName": "Gompertz",
+        "GivenNames": "Katie",
+        "Party": "ALP",
+        "Votes": 32272,
+        "Swing": 0.8
+      }
+    }
   },
   {
     "Name": "Blaxland",
@@ -7015,7 +8483,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 105383
+    "Enrollment": 105383,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Clare",
+        "GivenNames": "Jason",
+        "Party": "ALP",
+        "Votes": 52299,
+        "Swing": -4.76
+      },
+      "Other": {
+        "FamilyName": "Guney",
+        "GivenNames": "Oz",
+        "Party": "LP",
+        "Votes": 28509,
+        "Swing": 4.76
+      }
+    }
   },
   {
     "Name": "Bradfield",
@@ -7073,7 +8557,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 107304
+    "Enrollment": 107304,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Fletcher",
+        "GivenNames": "Paul",
+        "Party": "LP",
+        "Votes": 63997,
+        "Swing": -4.48
+      },
+      "Other": {
+        "FamilyName": "Haviland",
+        "GivenNames": "Chris",
+        "Party": "ALP",
+        "Votes": 32146,
+        "Swing": 4.48
+      }
+    }
   },
   {
     "Name": "Calare",
@@ -7194,7 +8694,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 118099
+    "Enrollment": 118099,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Gee",
+        "GivenNames": "Andrew",
+        "Party": "NP",
+        "Votes": 66006,
+        "Swing": 1.48
+      },
+      "Other": {
+        "FamilyName": "Jennings",
+        "GivenNames": "Jess",
+        "Party": "ALP",
+        "Votes": 38282,
+        "Swing": -1.48
+      }
+    }
   },
   {
     "Name": "Chifley",
@@ -7245,7 +8761,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 111980
+    "Enrollment": 111980,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Husic",
+        "GivenNames": "Ed",
+        "Party": "ALP",
+        "Votes": 56761,
+        "Swing": -6.82
+      },
+      "Other": {
+        "FamilyName": "Chettipally",
+        "GivenNames": "Livingston",
+        "Party": "LP",
+        "Votes": 34245,
+        "Swing": 6.82
+      }
+    }
   },
   {
     "Name": "Cook",
@@ -7344,7 +8876,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 106957
+    "Enrollment": 106957,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Morrison",
+        "GivenNames": "Scott",
+        "Party": "LP",
+        "Votes": 64894,
+        "Swing": 3.63
+      },
+      "Other": {
+        "FamilyName": "O'Brien",
+        "GivenNames": "Simon",
+        "Party": "ALP",
+        "Votes": 29129,
+        "Swing": -3.63
+      }
+    }
   },
   {
     "Name": "Cowper",
@@ -7423,7 +8971,22 @@
         "Party": "PROT"
       }
     ],
-    "Enrollment": 124340
+    "Enrollment": 124340,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Conaghan",
+        "GivenNames": "Pat",
+        "Party": "NP",
+        "Votes": 59932,
+        "Swing": 2.23
+      },
+      "Other": {
+        "FamilyName": "Oakeshott",
+        "GivenNames": "Robert",
+        "Votes": 45596,
+        "Swing": -2.23
+      }
+    }
   },
   {
     "Name": "Cunningham",
@@ -7495,7 +9058,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 115231
+    "Enrollment": 115231,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Bird",
+        "GivenNames": "Sharon",
+        "Party": "ALP",
+        "Votes": 63836,
+        "Swing": 0.09
+      },
+      "Other": {
+        "FamilyName": "Atlee",
+        "GivenNames": "Chris",
+        "Party": "LP",
+        "Votes": 36841,
+        "Swing": -0.09
+      }
+    }
   },
   {
     "Name": "Dobell",
@@ -7512,7 +9091,7 @@
     "NameDerivation": "Named in honour of Sir William Dobell OBE, 1899-1970. Dobell was a prominent Australian painter and portrait artist who won the Archibald Prize in 1943.",
     "Members": [
       {
-        "FamilyName": "Mcbride",
+        "FamilyName": "McBride",
         "GivenNames": "Emma",
         "Begin": 2019,
         "Party": "ALP"
@@ -7553,7 +9132,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 117206
+    "Enrollment": 117206,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "McBride",
+        "GivenNames": "Emma",
+        "Party": "ALP",
+        "Votes": 52244,
+        "Swing": -3.31
+      },
+      "Other": {
+        "FamilyName": "Pilon",
+        "GivenNames": "Jilly",
+        "Party": "LP",
+        "Votes": 49209,
+        "Swing": 3.31
+      }
+    }
   },
   {
     "Name": "Eden-Monaro",
@@ -7674,7 +9269,23 @@
         "Party": "PROT/LIB/NAT"
       }
     ],
-    "Enrollment": 114147
+    "Enrollment": 114147,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Kelly",
+        "GivenNames": "Mike",
+        "Party": "ALP",
+        "Votes": 50472,
+        "Swing": -2.08
+      },
+      "Other": {
+        "FamilyName": "Kotvojs",
+        "GivenNames": "Fiona",
+        "Party": "LP",
+        "Votes": 48787,
+        "Swing": 2.08
+      }
+    }
   },
   {
     "Name": "Farrer",
@@ -7725,7 +9336,22 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 115525
+    "Enrollment": 115525,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Ley",
+        "GivenNames": "Sussan",
+        "Party": "LP",
+        "Votes": 59260,
+        "Swing": 60.94
+      },
+      "Other": {
+        "FamilyName": "Mack",
+        "GivenNames": "Kevin Francis",
+        "Votes": 37989,
+        "Swing": 39.06
+      }
+    }
   },
   {
     "Name": "Fowler",
@@ -7769,7 +9395,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 106941
+    "Enrollment": 106941,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Hayes",
+        "GivenNames": "Chris",
+        "Party": "ALP",
+        "Votes": 53540,
+        "Swing": -3.5
+      },
+      "Other": {
+        "FamilyName": "Blewitt",
+        "GivenNames": "Wayne",
+        "Party": "LP",
+        "Votes": 30124,
+        "Swing": 3.5
+      }
+    }
   },
   {
     "Name": "Gilmore",
@@ -7820,7 +9462,23 @@
         "Party": "NP"
       }
     ],
-    "Enrollment": 122364
+    "Enrollment": 122364,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Phillips",
+        "GivenNames": "Fiona",
+        "Party": "ALP",
+        "Votes": 56652,
+        "Swing": 3.34
+      },
+      "Other": {
+        "FamilyName": "Mundine",
+        "GivenNames": "Warren",
+        "Party": "LP",
+        "Votes": 51025,
+        "Swing": -3.34
+      }
+    }
   },
   {
     "Name": "Grayndler",
@@ -7885,7 +9543,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 109567
+    "Enrollment": 109567,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Albanese",
+        "GivenNames": "Anthony",
+        "Party": "ALP",
+        "Votes": 63529,
+        "Swing": 0.48
+      },
+      "Other": {
+        "FamilyName": "Casey",
+        "GivenNames": "Jim",
+        "Party": "GRN",
+        "Votes": 32285,
+        "Swing": -0.48
+      }
+    }
   },
   {
     "Name": "Greenway",
@@ -7936,7 +9610,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 110299
+    "Enrollment": 110299,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Rowland",
+        "GivenNames": "Michelle",
+        "Party": "ALP",
+        "Votes": 50425,
+        "Swing": -3.51
+      },
+      "Other": {
+        "FamilyName": "Green",
+        "GivenNames": "Allan",
+        "Party": "LP",
+        "Votes": 45082,
+        "Swing": 3.51
+      }
+    }
   },
   {
     "Name": "Hughes",
@@ -8001,7 +9691,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 106204
+    "Enrollment": 106204,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Kelly",
+        "GivenNames": "Craig",
+        "Party": "LP",
+        "Votes": 57149,
+        "Swing": 0.52
+      },
+      "Other": {
+        "FamilyName": "Steinwall",
+        "GivenNames": "Diedree",
+        "Party": "ALP",
+        "Votes": 38342,
+        "Swing": -0.52
+      }
+    }
   },
   {
     "Name": "Hume",
@@ -8143,7 +9849,23 @@
         "Party": "PROT/IND"
       }
     ],
-    "Enrollment": 116405
+    "Enrollment": 116405,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Taylor",
+        "GivenNames": "Angus",
+        "Party": "LP",
+        "Votes": 64527,
+        "Swing": 2.81
+      },
+      "Other": {
+        "FamilyName": "Champion",
+        "GivenNames": "Aoife",
+        "Party": "ALP",
+        "Votes": 37915,
+        "Swing": -2.81
+      }
+    }
   },
   {
     "Name": "Hunter",
@@ -8264,7 +9986,23 @@
         "Party": "PROT"
       }
     ],
-    "Enrollment": 121436
+    "Enrollment": 121436,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Fitzgibbon",
+        "GivenNames": "Joel",
+        "Party": "ALP",
+        "Votes": 54050,
+        "Swing": -9.48
+      },
+      "Other": {
+        "FamilyName": "Angus",
+        "GivenNames": "Josh",
+        "Party": "NP",
+        "Votes": 47976,
+        "Swing": 9.48
+      }
+    }
   },
   {
     "Name": "Kingsford Smith",
@@ -8329,7 +10067,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 111098
+    "Enrollment": 111098,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Thistlethwaite",
+        "GivenNames": "Matt",
+        "Party": "ALP",
+        "Votes": 55501,
+        "Swing": 0.24
+      },
+      "Other": {
+        "FamilyName": "Wilmot",
+        "GivenNames": "Amanda",
+        "Party": "LP",
+        "Votes": 38875,
+        "Swing": -0.24
+      }
+    }
   },
   {
     "Name": "Lindsay",
@@ -8346,7 +10100,7 @@
     "NameDerivation": "Named in honour of Norman Alfred Lindsay, 1879-1969. Lindsay was a prominent Australian painter, novelist and artist who is known for creating 'The Magic Pudding'.",
     "Members": [
       {
-        "FamilyName": "Mcintosh",
+        "FamilyName": "McIntosh",
         "GivenNames": "Melissa",
         "Begin": 2019,
         "Party": "LP"
@@ -8387,7 +10141,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 118734
+    "Enrollment": 118734,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "McIntosh",
+        "GivenNames": "Melissa",
+        "Party": "LP",
+        "Votes": 53614,
+        "Swing": 6.15
+      },
+      "Other": {
+        "FamilyName": "Beamer",
+        "GivenNames": "Diane",
+        "Party": "ALP",
+        "Votes": 43789,
+        "Swing": -6.15
+      }
+    }
   },
   {
     "Name": "Lyne",
@@ -8452,7 +10222,23 @@
         "Party": "CP"
       }
     ],
-    "Enrollment": 118726
+    "Enrollment": 118726,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Gillespie",
+        "GivenNames": "David",
+        "Party": "NP",
+        "Votes": 65942,
+        "Swing": 3.54
+      },
+      "Other": {
+        "FamilyName": "Costa",
+        "GivenNames": "Phil",
+        "Party": "ALP",
+        "Votes": 35238,
+        "Swing": -3.54
+      }
+    }
   },
   {
     "Name": "Macarthur",
@@ -8545,7 +10331,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 119094
+    "Enrollment": 119094,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Freelander",
+        "GivenNames": "Mike",
+        "Party": "ALP",
+        "Votes": 58110,
+        "Swing": 0.07
+      },
+      "Other": {
+        "FamilyName": "Munro",
+        "GivenNames": "Riley",
+        "Party": "LP",
+        "Votes": 41394,
+        "Swing": -0.07
+      }
+    }
   },
   {
     "Name": "Mackellar",
@@ -8596,7 +10398,23 @@
         "Party": "LP/IND"
       }
     ],
-    "Enrollment": 110817
+    "Enrollment": 110817,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Falinski",
+        "GivenNames": "Jason",
+        "Party": "LP",
+        "Votes": 62124,
+        "Swing": -2.52
+      },
+      "Other": {
+        "FamilyName": "Steele",
+        "GivenNames": "Declan",
+        "Party": "ALP",
+        "Votes": 36138,
+        "Swing": 2.52
+      }
+    }
   },
   {
     "Name": "Macquarie",
@@ -8731,7 +10549,23 @@
         "Party": "FT"
       }
     ],
-    "Enrollment": 107962
+    "Enrollment": 107962,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Templeman",
+        "GivenNames": "Susan",
+        "Party": "ALP",
+        "Votes": 48661,
+        "Swing": -2.0
+      },
+      "Other": {
+        "FamilyName": "Richards",
+        "GivenNames": "Sarah",
+        "Party": "LP",
+        "Votes": 48290,
+        "Swing": 2.0
+      }
+    }
   },
   {
     "Name": "McMahon",
@@ -8775,7 +10609,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 106754
+    "Enrollment": 106754,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Bowen",
+        "GivenNames": "Chris",
+        "Party": "ALP",
+        "Votes": 48364,
+        "Swing": -5.47
+      },
+      "Other": {
+        "FamilyName": "Singha",
+        "GivenNames": "Vivek",
+        "Party": "LP",
+        "Votes": 37029,
+        "Swing": 5.47
+      }
+    }
   },
   {
     "Name": "Mitchell",
@@ -8840,7 +10690,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 110345
+    "Enrollment": 110345,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Hawke",
+        "GivenNames": "Alex",
+        "Party": "LP",
+        "Votes": 67698,
+        "Swing": 0.81
+      },
+      "Other": {
+        "FamilyName": "Selvaraj",
+        "GivenNames": "Immanuel",
+        "Party": "ALP",
+        "Votes": 30938,
+        "Swing": -0.81
+      }
+    }
   },
   {
     "Name": "New England",
@@ -8947,7 +10813,22 @@
         "Party": "PROT"
       }
     ],
-    "Enrollment": 111893
+    "Enrollment": 111893,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Joyce",
+        "GivenNames": "Barnaby",
+        "Party": "NP",
+        "Votes": 62637,
+        "Swing": 64.36
+      },
+      "Other": {
+        "FamilyName": "Blakester",
+        "GivenNames": "Adam",
+        "Votes": 34683,
+        "Swing": 35.64
+      }
+    }
   },
   {
     "Name": "Newcastle",
@@ -9012,7 +10893,23 @@
         "Party": "ALP/FLP"
       }
     ],
-    "Enrollment": 117650
+    "Enrollment": 117650,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Claydon",
+        "GivenNames": "Sharon",
+        "Party": "ALP",
+        "Votes": 65784,
+        "Swing": -0.01
+      },
+      "Other": {
+        "FamilyName": "Wark",
+        "GivenNames": "Katrina",
+        "Party": "LP",
+        "Votes": 37283,
+        "Swing": 0.01
+      }
+    }
   },
   {
     "Name": "North Sydney",
@@ -9105,7 +11002,23 @@
         "Party": "FT"
       }
     ],
-    "Enrollment": 109218
+    "Enrollment": 109218,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Zimmerman",
+        "GivenNames": "Trent",
+        "Party": "LP",
+        "Votes": 57398,
+        "Swing": -4.34
+      },
+      "Other": {
+        "FamilyName": "Stone",
+        "GivenNames": "Brett",
+        "Party": "ALP",
+        "Votes": 39438,
+        "Swing": 4.34
+      }
+    }
   },
   {
     "Name": "Page",
@@ -9163,7 +11076,23 @@
         "Party": "NP"
       }
     ],
-    "Enrollment": 122709
+    "Enrollment": 122709,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Hogan",
+        "GivenNames": "Kevin",
+        "Party": "NP",
+        "Votes": 64295,
+        "Swing": 7.15
+      },
+      "Other": {
+        "FamilyName": "Deegan",
+        "GivenNames": "Patrick",
+        "Party": "ALP",
+        "Votes": 43856,
+        "Swing": -7.15
+      }
+    }
   },
   {
     "Name": "Parkes",
@@ -9214,7 +11143,23 @@
         "Party": "NP"
       }
     ],
-    "Enrollment": 109513
+    "Enrollment": 109513,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Coulton",
+        "GivenNames": "Mark",
+        "Party": "NP",
+        "Votes": 62859,
+        "Swing": 1.81
+      },
+      "Other": {
+        "FamilyName": "Ayoub",
+        "GivenNames": "Jack",
+        "Party": "ALP",
+        "Votes": 31093,
+        "Swing": -1.81
+      }
+    }
   },
   {
     "Name": "Parramatta",
@@ -9328,7 +11273,23 @@
         "Party": "FT/ANTI-SOC/LIB/NAT"
       }
     ],
-    "Enrollment": 103122
+    "Enrollment": 103122,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Owens",
+        "GivenNames": "Julie",
+        "Party": "ALP",
+        "Votes": 45302,
+        "Swing": -4.17
+      },
+      "Other": {
+        "FamilyName": "Camenzuli",
+        "GivenNames": "Charles",
+        "Party": "LP",
+        "Votes": 39368,
+        "Swing": 4.17
+      }
+    }
   },
   {
     "Name": "Paterson",
@@ -9400,7 +11361,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 122820
+    "Enrollment": 122820,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Swanson",
+        "GivenNames": "Meryl",
+        "Party": "ALP",
+        "Votes": 59348,
+        "Swing": -5.7
+      },
+      "Other": {
+        "FamilyName": "Joshi",
+        "GivenNames": "Sachin",
+        "Party": "LP",
+        "Votes": 48471,
+        "Swing": 5.7
+      }
+    }
   },
   {
     "Name": "Reid",
@@ -9486,7 +11463,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 108876
+    "Enrollment": 108876,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Martin",
+        "GivenNames": "Fiona",
+        "Party": "LP",
+        "Votes": 49844,
+        "Swing": -1.51
+      },
+      "Other": {
+        "FamilyName": "Crosby",
+        "GivenNames": "Sam",
+        "Party": "ALP",
+        "Votes": 43884,
+        "Swing": 1.51
+      }
+    }
   },
   {
     "Name": "Richmond",
@@ -9572,7 +11565,23 @@
         "Party": "PROT"
       }
     ],
-    "Enrollment": 119332
+    "Enrollment": 119332,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Elliot",
+        "GivenNames": "Justine",
+        "Party": "ALP",
+        "Votes": 54251,
+        "Swing": 0.12
+      },
+      "Other": {
+        "FamilyName": "Fraser",
+        "GivenNames": "Matthew",
+        "Party": "NP",
+        "Votes": 46069,
+        "Swing": -0.12
+      }
+    }
   },
   {
     "Name": "Riverina",
@@ -9589,7 +11598,7 @@
     "NameDerivation": "Named after the area covered by the electoral division.",
     "Members": [
       {
-        "FamilyName": "Mccormack",
+        "FamilyName": "McCormack",
         "GivenNames": "Michael",
         "Begin": 2019,
         "Party": "NP"
@@ -9707,7 +11716,23 @@
         "Party": "PROT"
       }
     ],
-    "Enrollment": 113960
+    "Enrollment": 113960,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "McCormack",
+        "GivenNames": "Michael",
+        "Party": "NP",
+        "Votes": 70136,
+        "Swing": 3.04
+      },
+      "Other": {
+        "FamilyName": "Jeffreson",
+        "GivenNames": "Mark",
+        "Party": "ALP",
+        "Votes": 30805,
+        "Swing": -3.04
+      }
+    }
   },
   {
     "Name": "Robertson",
@@ -9828,7 +11853,23 @@
         "Party": "FT/ANTI-SOC"
       }
     ],
-    "Enrollment": 111142
+    "Enrollment": 111142,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Wicks",
+        "GivenNames": "Lucy",
+        "Party": "LP",
+        "Votes": 52100,
+        "Swing": 3.1
+      },
+      "Other": {
+        "FamilyName": "Charlton",
+        "GivenNames": "Anne",
+        "Party": "ALP",
+        "Votes": 43961,
+        "Swing": -3.1
+      }
+    }
   },
   {
     "Name": "Shortland",
@@ -9879,7 +11920,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 114054
+    "Enrollment": 114054,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Conroy",
+        "GivenNames": "Pat",
+        "Party": "ALP",
+        "Votes": 54437,
+        "Swing": -5.49
+      },
+      "Other": {
+        "FamilyName": "McGill",
+        "GivenNames": "Nell",
+        "Party": "LP",
+        "Votes": 45543,
+        "Swing": 5.49
+      }
+    }
   },
   {
     "Name": "Sydney",
@@ -9930,7 +11987,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 114215
+    "Enrollment": 114215,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Plibersek",
+        "GivenNames": "Tanya",
+        "Party": "ALP",
+        "Votes": 65110,
+        "Swing": 3.36
+      },
+      "Other": {
+        "FamilyName": "Munro",
+        "GivenNames": "Jacqui",
+        "Party": "LP",
+        "Votes": 29705,
+        "Swing": -3.36
+      }
+    }
   },
   {
     "Name": "Warringah",
@@ -9949,8 +12022,7 @@
       {
         "FamilyName": "Steggall",
         "GivenNames": "Zali",
-        "Begin": 2019,
-        "Party": "IND"
+        "Begin": 2019
       },
       {
         "FamilyName": "Abbott",
@@ -10009,7 +12081,22 @@
         "Party": "NAT"
       }
     ],
-    "Enrollment": 104995
+    "Enrollment": 104995,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Steggall",
+        "GivenNames": "Zali",
+        "Votes": 52728,
+        "Swing": 57.24
+      },
+      "Other": {
+        "FamilyName": "Abbott",
+        "GivenNames": "Tony",
+        "Party": "LP",
+        "Votes": 39395,
+        "Swing": 42.76
+      }
+    }
   },
   {
     "Name": "Watson",
@@ -10074,7 +12161,23 @@
         "Party": "UAP"
       }
     ],
-    "Enrollment": 107774
+    "Enrollment": 107774,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Burke",
+        "GivenNames": "Tony",
+        "Party": "ALP",
+        "Votes": 53518,
+        "Swing": -4.06
+      },
+      "Other": {
+        "FamilyName": "Zaman",
+        "GivenNames": "Mohammad",
+        "Party": "LP",
+        "Votes": 30732,
+        "Swing": 4.06
+      }
+    }
   },
   {
     "Name": "Wentworth",
@@ -10181,7 +12284,22 @@
         "Party": "FT"
       }
     ],
-    "Enrollment": 103498
+    "Enrollment": 103498,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Sharma",
+        "GivenNames": "Dave",
+        "Party": "LP",
+        "Votes": 46050,
+        "Swing": 51.31
+      },
+      "Other": {
+        "FamilyName": "Phelps",
+        "GivenNames": "Kerryn",
+        "Votes": 43704,
+        "Swing": 48.69
+      }
+    }
   },
   {
     "Name": "Werriwa",
@@ -10302,7 +12420,23 @@
         "Party": "FT"
       }
     ],
-    "Enrollment": 117693
+    "Enrollment": 117693,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Stanley",
+        "GivenNames": "Anne Maree",
+        "Party": "ALP",
+        "Votes": 52270,
+        "Swing": -2.73
+      },
+      "Other": {
+        "FamilyName": "Miller",
+        "GivenNames": "Shayne",
+        "Party": "LP",
+        "Votes": 41959,
+        "Swing": 2.73
+      }
+    }
   },
   {
     "Name": "Whitlam",
@@ -10346,7 +12480,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 118695
+    "Enrollment": 118695,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Jones",
+        "GivenNames": "Stephen",
+        "Party": "ALP",
+        "Votes": 62541,
+        "Swing": 60.91
+      },
+      "Other": {
+        "FamilyName": "Wentworth",
+        "GivenNames": "Stephen",
+        "Party": "NP",
+        "Votes": 40130,
+        "Swing": 39.09
+      }
+    }
   },
   {
     "Name": "Brand",
@@ -10397,7 +12547,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 106998
+    "Enrollment": 106998,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "King",
+        "GivenNames": "Madeleine",
+        "Party": "ALP",
+        "Votes": 50333,
+        "Swing": -4.77
+      },
+      "Other": {
+        "FamilyName": "Pleiter",
+        "GivenNames": "Jack",
+        "Party": "LP",
+        "Votes": 38508,
+        "Swing": 4.77
+      }
+    }
   },
   {
     "Name": "Canning",
@@ -10490,7 +12656,23 @@
         "Party": "CP"
       }
     ],
-    "Enrollment": 107207
+    "Enrollment": 107207,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Hastie",
+        "GivenNames": "Andrew",
+        "Party": "LP",
+        "Votes": 55947,
+        "Swing": 4.76
+      },
+      "Other": {
+        "FamilyName": "Teede",
+        "GivenNames": "Mellisa",
+        "Party": "ALP",
+        "Votes": 34945,
+        "Swing": -4.76
+      }
+    }
   },
   {
     "Name": "Cowan",
@@ -10548,7 +12730,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 98665
+    "Enrollment": 98665,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Aly",
+        "GivenNames": "Anne",
+        "Party": "ALP",
+        "Votes": 43135,
+        "Swing": 0.15
+      },
+      "Other": {
+        "FamilyName": "Stewart",
+        "GivenNames": "Isaac",
+        "Party": "LP",
+        "Votes": 41718,
+        "Swing": -0.15
+      }
+    }
   },
   {
     "Name": "Curtin",
@@ -10599,7 +12797,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 100422
+    "Enrollment": 100422,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Hammond",
+        "GivenNames": "Celia",
+        "Party": "LP",
+        "Votes": 57296,
+        "Swing": -6.37
+      },
+      "Other": {
+        "FamilyName": "Meecham",
+        "GivenNames": "Rob",
+        "Party": "ALP",
+        "Votes": 31766,
+        "Swing": 6.37
+      }
+    }
   },
   {
     "Name": "Durack",
@@ -10636,7 +12850,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 97104
+    "Enrollment": 97104,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Price",
+        "GivenNames": "Melissa",
+        "Party": "LP",
+        "Votes": 50332,
+        "Swing": 3.7
+      },
+      "Other": {
+        "FamilyName": "Morrow",
+        "GivenNames": "Sharyn",
+        "Party": "ALP",
+        "Votes": 27389,
+        "Swing": -3.7
+      }
+    }
   },
   {
     "Name": "Forrest",
@@ -10708,7 +12938,23 @@
         "Party": "CP"
       }
     ],
-    "Enrollment": 105452
+    "Enrollment": 105452,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Marino",
+        "GivenNames": "Nola",
+        "Party": "LP",
+        "Votes": 58405,
+        "Swing": 2.0
+      },
+      "Other": {
+        "FamilyName": "Sanford",
+        "GivenNames": "Wayne",
+        "Party": "ALP",
+        "Votes": 32057,
+        "Swing": -2.0
+      }
+    }
   },
   {
     "Name": "Fremantle",
@@ -10822,7 +13068,23 @@
         "Party": "FT"
       }
     ],
-    "Enrollment": 105465
+    "Enrollment": 105465,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Wilson",
+        "GivenNames": "Josh",
+        "Party": "ALP",
+        "Votes": 51852,
+        "Swing": -0.6
+      },
+      "Other": {
+        "FamilyName": "Robins",
+        "GivenNames": "Nicole",
+        "Party": "LP",
+        "Votes": 39251,
+        "Swing": 0.6
+      }
+    }
   },
   {
     "Name": "Hasluck",
@@ -10873,7 +13135,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 98624
+    "Enrollment": 98624,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Wyatt",
+        "GivenNames": "Ken",
+        "Party": "LP",
+        "Votes": 46637,
+        "Swing": 3.34
+      },
+      "Other": {
+        "FamilyName": "Martin",
+        "GivenNames": "James",
+        "Party": "ALP",
+        "Votes": 37563,
+        "Swing": -3.34
+      }
+    }
   },
   {
     "Name": "Moore",
@@ -10959,7 +13237,23 @@
         "Party": "CP"
       }
     ],
-    "Enrollment": 101523
+    "Enrollment": 101523,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Goodenough",
+        "GivenNames": "Ian",
+        "Party": "LP",
+        "Votes": 54735,
+        "Swing": 0.63
+      },
+      "Other": {
+        "FamilyName": "O'Gorman",
+        "GivenNames": "Tony",
+        "Party": "ALP",
+        "Votes": 34044,
+        "Swing": -0.63
+      }
+    }
   },
   {
     "Name": "Burt",
@@ -10989,7 +13283,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 105236
+    "Enrollment": 105236,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Keogh",
+        "GivenNames": "Matt",
+        "Party": "ALP",
+        "Votes": 48414,
+        "Swing": -2.12
+      },
+      "Other": {
+        "FamilyName": "Goode",
+        "GivenNames": "David",
+        "Party": "LP",
+        "Votes": 39626,
+        "Swing": 2.12
+      }
+    }
   },
   {
     "Name": "O'Connor",
@@ -11033,7 +13343,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 101983
+    "Enrollment": 101983,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Wilson",
+        "GivenNames": "Rick",
+        "Party": "LP",
+        "Votes": 55421,
+        "Swing": -0.56
+      },
+      "Other": {
+        "FamilyName": "Payne",
+        "GivenNames": "Shelley",
+        "Party": "ALP",
+        "Votes": 30536,
+        "Swing": 0.56
+      }
+    }
   },
   {
     "Name": "Pearce",
@@ -11077,7 +13403,23 @@
         "Party": "LP"
       }
     ],
-    "Enrollment": 119583
+    "Enrollment": 119583,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Porter",
+        "GivenNames": "Christian",
+        "Party": "LP",
+        "Votes": 57478,
+        "Swing": 3.89
+      },
+      "Other": {
+        "FamilyName": "Travers",
+        "GivenNames": "Kim",
+        "Party": "ALP",
+        "Votes": 42445,
+        "Swing": -3.89
+      }
+    }
   },
   {
     "Name": "Perth",
@@ -11184,7 +13526,23 @@
         "Party": "ALP/LIB/NAT"
       }
     ],
-    "Enrollment": 101535
+    "Enrollment": 101535,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Gorman",
+        "GivenNames": "Patrick",
+        "Party": "ALP",
+        "Votes": 48176,
+        "Swing": 1.6
+      },
+      "Other": {
+        "FamilyName": "Grayden",
+        "GivenNames": "Jim",
+        "Party": "LP",
+        "Votes": 39530,
+        "Swing": -1.6
+      }
+    }
   },
   {
     "Name": "Stirling",
@@ -11263,7 +13621,23 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 101243
+    "Enrollment": 101243,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Connelly",
+        "GivenNames": "Vince",
+        "Party": "LP",
+        "Votes": 48289,
+        "Swing": -0.47
+      },
+      "Other": {
+        "FamilyName": "Markey",
+        "GivenNames": "Melita",
+        "Party": "ALP",
+        "Votes": 38490,
+        "Swing": 0.47
+      }
+    }
   },
   {
     "Name": "Swan",
@@ -11398,7 +13772,23 @@
         "Party": "PROT/WAP/LIB/NAT"
       }
     ],
-    "Enrollment": 100857
+    "Enrollment": 100857,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Irons",
+        "GivenNames": "Steve",
+        "Party": "LP",
+        "Votes": 44333,
+        "Swing": -0.9
+      },
+      "Other": {
+        "FamilyName": "Beazley",
+        "GivenNames": "Hannah",
+        "Party": "ALP",
+        "Votes": 39804,
+        "Swing": 0.9
+      }
+    }
   },
   {
     "Name": "Tangney",
@@ -11477,6 +13867,22 @@
         "Party": "ALP"
       }
     ],
-    "Enrollment": 94365
+    "Enrollment": 94365,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Morton",
+        "GivenNames": "Ben",
+        "Party": "LP",
+        "Votes": 51275,
+        "Swing": 0.4
+      },
+      "Other": {
+        "FamilyName": "Boswell",
+        "GivenNames": "Marion",
+        "Party": "ALP",
+        "Votes": 32144,
+        "Swing": -0.4
+      }
+    }
   }
 ]
