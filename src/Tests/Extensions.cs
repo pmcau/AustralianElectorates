@@ -14,23 +14,34 @@ static class Extensions
 
     public static string ToTitleCase(this string value)
     {
-        var words = value.Split(' ');
-        for (var i = 0; i < words.Length; i++)
+        var builder = new StringBuilder(value.Length);
+
+        var lowerNext = false;
+        foreach (var ch in value)
         {
-            if (words[i].Length == 0)
+            if (lowerNext)
             {
-                continue;
+                builder.Append(char.ToLower(ch));
+            }
+            else
+            {
+                builder.Append(ch);
             }
 
-            var firstChar = char.ToUpper(words[i][0]);
-            var rest = "";
-            if (words[i].Length > 1)
+            if (ch == ' ')
             {
-                rest = words[i].Substring(1).ToLower();
+                lowerNext = false;
+                continue;
             }
-            words[i] = firstChar + rest;
+            if (char.IsLower(ch))
+            {
+                lowerNext = false;
+                continue;
+            }
+            lowerNext = true;
         }
-        return string.Join(" ", words);
+
+        return builder.ToString();
     }
 
     public static string ReplaceCaseless(this string str, string oldValue, string newValue)

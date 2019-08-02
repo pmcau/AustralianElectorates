@@ -9,7 +9,6 @@ public class ExtensionsTests :
     public void ToTitleCase(string input, string expected)
     {
         Assert.Equal(expected, input.ToTitleCase());
-
     }
 
     public ExtensionsTests(ITestOutputHelper output) :
