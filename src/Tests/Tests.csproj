@@ -18,7 +18,7 @@
     <ProjectReference Include="..\AustralianElectorates.Bogus\AustralianElectorates.Bogus.csproj" />
     <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
     <Reference Include="System.IO.Compression" />
-    <PackageReference Include="ProjectDefaults" Version="1.0.7" PrivateAssets="All" />
+    <PackageReference Include="ProjectDefaults" Version="1.0.8" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup>
     <None Update="MediaFeed\aec-mediafeed-results-standard-verbose-24310.xml">
