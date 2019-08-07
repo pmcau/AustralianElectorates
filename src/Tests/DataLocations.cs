@@ -13,8 +13,8 @@ public static class DataLocations
         Directory.CreateDirectory(MapsPath);
         MapsFuturePath = Path.GetFullPath(Path.Combine(MapsPath, "Future"));
         Directory.CreateDirectory(MapsFuturePath);
-        MapsPdfPath = Path.GetFullPath(Path.Combine(DataPath, "PdfMaps"));
-        Directory.CreateDirectory(MapsPdfPath);
+        MapsImage = Path.GetFullPath(Path.Combine(DataPath, "ImageMaps"));
+        Directory.CreateDirectory(MapsImage);
         Maps2016Path = Path.GetFullPath(Path.Combine(MapsPath, "2016"));
         Directory.CreateDirectory(Maps2016Path);
         Australia2016JsonPath = Path.GetFullPath(Path.Combine(Maps2016Path, "australia.geojson"));
@@ -32,7 +32,7 @@ public static class DataLocations
     public static string AustralianElectoratesProjectPath;
     public static string BogusProjectPath;
     public static string MapsPath;
-    public static string MapsPdfPath;
+    public static string MapsImage;
     public static string Maps2016Path;
     public static string Maps2019Path;
     public static string MapsFuturePath;

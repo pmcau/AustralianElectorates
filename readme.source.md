@@ -154,7 +154,7 @@ Limited End-user licence provided by the Australian Electoral Commission: You ma
 
 Note: The below are only required by the maintainers and contributors of this project. They are not required when consuming the NuGet package.
 
-Some tools are required for GIS operations.
+Some tools are required.
 
 
 ### ogr2ogr
@@ -175,6 +175,16 @@ Installation:
 * Ensure `C:\Users\USER\AppData\Roaming\npm` is in path
 
 https://github.com/mbloch/mapshaper/wiki/Command-Reference
+
+
+### GhostScript
+
+C:\Program Files\gs\gs9.27\bin\
+
+
+### pngquant
+
+https://pngquant.org/
 
 
 ## Purge history
