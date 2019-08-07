@@ -1,0 +1,1 @@
+﻿'{"type":"FeatureCollection","features":[\r\n{"properties":{"electorateName":"Bean","electorateShortName":"bean","area":1913.969737,"state":"ACT"},"type":"Feature","geometry":{"type":"MultiPolygon","coor'

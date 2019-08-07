@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <NoWarn>CS1591</NoWarn>
+    <Version>3.9.1</Version>
+    <Copyright>Code under MIT. Data under AEC Copyright https://www.aec.gov.au/footer/Copyright.htm </Copyright>
+  </PropertyGroup>
+</Project>
