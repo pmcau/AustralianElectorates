@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2016
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29201.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AustralianElectorates", "AustralianElectorates\AustralianElectorates.csproj", "{275E5FED-B1F0-4F7D-BD9E-EE307BD82F25}"
 EndProject
@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AustralianElectorates.Bogus", "AustralianElectorates.Bogus\AustralianElectorates.Bogus.csproj", "{09F7913A-2B29-49D9-98CF-7B2505F62691}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AustralianElectorates.DetailMaps", "AustralianElectorates.DetailMaps\AustralianElectorates.DetailMaps.csproj", "{64024F93-78A8-4D52-833C-948330C953B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +36,10 @@ Global
 		{09F7913A-2B29-49D9-98CF-7B2505F62691}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09F7913A-2B29-49D9-98CF-7B2505F62691}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09F7913A-2B29-49D9-98CF-7B2505F62691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64024F93-78A8-4D52-833C-948330C953B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64024F93-78A8-4D52-833C-948330C953B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64024F93-78A8-4D52-833C-948330C953B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64024F93-78A8-4D52-833C-948330C953B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

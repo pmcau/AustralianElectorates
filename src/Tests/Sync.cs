@@ -31,14 +31,14 @@ public class Sync :
 
         var electorates = await WriteElectoratesMetaData();
 
-        IoHelpers.PurgeDirectoryRecursive(DataLocations.MapsImage);
+        IoHelpers.PurgeDirectoryRecursive(DataLocations.MapsDetail);
         foreach (var electorate in electorates)
         {
-            var targetPath = Path.Combine(DataLocations.MapsImage, $"{electorate.ShortName}.pdf");
+            var targetPath = Path.Combine(DataLocations.MapsDetail, $"{electorate.ShortName}.pdf");
             await Downloader.DownloadFile(targetPath, electorate.MapUrl);
         }
 
-        foreach (var file in Directory.EnumerateFiles(DataLocations.MapsImage))
+        foreach (var file in Directory.EnumerateFiles(DataLocations.MapsDetail))
         {
             PdfToPng.Convert(file);
             File.Delete(file);

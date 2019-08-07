@@ -9,7 +9,7 @@ public class PdfToPngTests :
     [Trait("Category", "Integration")]
     public void Convert()
     {
-        foreach (var file in Directory.EnumerateFiles(DataLocations.MapsImage,"*.pdf"))
+        foreach (var file in Directory.EnumerateFiles(DataLocations.MapsDetail,"*.pdf"))
         {
             PdfToPng.Convert(file);
         }
@@ -19,7 +19,7 @@ public class PdfToPngTests :
     [Trait("Category", "Integration")]
     public void ConvertSingle()
     {
-        PdfToPng.Convert(Path.Combine(DataLocations.MapsImage, "sydney.pdf"));
+        PdfToPng.Convert(Path.Combine(DataLocations.MapsDetail, "sydney.pdf"));
     }
 
     public PdfToPngTests(ITestOutputHelper output) :
