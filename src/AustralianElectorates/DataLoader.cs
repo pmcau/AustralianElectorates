@@ -60,13 +60,19 @@ namespace AustralianElectorates
         public static bool TryFindElectorate(string name, out Electorate electorate)
         {
             Guard.AgainstNullWhiteSpace(nameof(name), name);
-            electorate = Electorates.SingleOrDefault(x => string.Equals(x.Name, name, StringComparison.OrdinalIgnoreCase));
+            electorate = Electorates.SingleOrDefault(x => MatchName(name, x));
             if (electorate != null)
             {
                 return true;
             }
 
             return false;
+        }
+
+        static bool MatchName(string name, Electorate x)
+        {
+            return string.Equals(x.Name, name, StringComparison.OrdinalIgnoreCase) ||
+                   string.Equals(x.ShortName, name, StringComparison.OrdinalIgnoreCase);
         }
 
         public static void ValidateElectorates(params string[] names)
@@ -98,7 +104,7 @@ namespace AustralianElectorates
         public static IEnumerable<string> FindInvalidateElectorates(IEnumerable<string> names)
         {
             Guard.AgainstNull(names, nameof(names));
-            return names.Where(name => !Electorates.Any(x => string.Equals(x.Name, name, StringComparison.OrdinalIgnoreCase)));
+            return names.Where(name => !Electorates.Any(x => MatchName(name, x)));
         }
 
         public static void LoadAll()

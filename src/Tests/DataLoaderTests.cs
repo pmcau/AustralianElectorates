@@ -52,11 +52,20 @@ public class DataLoaderTests :
     }
 
     [Fact]
+    public void FindInvalidateElectorates_by_short_name()
+    {
+        ObjectApprover.Verify(DataLoader.FindInvalidateElectorates("not Found", "port-adelaide"));
+    }
+
+    [Fact]
     public void TryFindElectorate()
     {
-        Assert.True(DataLoader.TryFindElectorate("Bass", out var electorate));
+        Assert.True(DataLoader.TryFindElectorate("Port Adelaide", out var electorate));
         Assert.NotNull(electorate);
-        Assert.NotNull(DataLoader.FindElectorate("Bass"));
+        Assert.NotNull(DataLoader.FindElectorate("Port Adelaide"));
+        Assert.True(DataLoader.TryFindElectorate("port-adelaide", out electorate));
+        Assert.NotNull(electorate);
+        Assert.NotNull(DataLoader.FindElectorate("port-adelaide"));
     }
 
     [Fact]
