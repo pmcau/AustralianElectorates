@@ -327,4 +327,4 @@ From: https://www.aec.gov.au/media/mediafeed/files/media-feed-user-guide-v4.pdf
 
 ## Icon
 
-<a href="https://thenounproject.com/term/gerrymandering/15219/" target="_blank">Gerrymandering</a> designed by <a href="https://thenounproject.com/Iconathon1" target="_blank">Iconathon</a> from The Noun Project
+[Gerrymandering](https://thenounproject.com/term/gerrymandering/15219/) designed by [Iconathon](https://thenounproject.com/Iconathon1) from [The Noun Project](https://thenounproject.com).
