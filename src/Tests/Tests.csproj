@@ -16,6 +16,7 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
     <PackageReference Include="XunitLogger" Version="2.4.0" />
     <ProjectReference Include="..\AustralianElectorates.Bogus\AustralianElectorates.Bogus.csproj" />
+    <ProjectReference Include="..\AustralianElectorates.DetailMaps\AustralianElectorates.DetailMaps.csproj" />
     <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
     <Reference Include="System.IO.Compression" />
     <PackageReference Include="ProjectDefaults" Version="1.0.8" PrivateAssets="All" />

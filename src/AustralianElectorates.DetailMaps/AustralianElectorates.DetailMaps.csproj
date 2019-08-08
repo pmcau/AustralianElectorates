@@ -9,10 +9,15 @@
       <Pack>true</Pack>
       <PackageCopyToOutput>true</PackageCopyToOutput>
       <PackagePath>contentFiles/any/any/ElectorateMaps</PackagePath>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="ProjectDefaults" Version="1.0.8" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
   </ItemGroup>
 </Project>
