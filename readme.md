@@ -126,6 +126,8 @@ https://nuget.org/packages/AustralianElectorates/ [![NuGet Status](http://img.sh
 
 https://nuget.org/packages/AustralianElectorates.Bogus/ [![NuGet Status](http://img.shields.io/nuget/v/AustralianElectorates.Bogus.svg?longCache=true&style=flat)](https://www.nuget.org/packages/AustralianElectorates.Bogus/)
 
+https://nuget.org/packages/AustralianElectorates.DetailMaps/ [![NuGet Status](http://img.shields.io/nuget/v/AustralianElectorates.DetailMaps.svg?longCache=true&style=flat)](https://www.nuget.org/packages/AustralianElectorates.DetailMaps/)
+
 
 ## Usage
 
