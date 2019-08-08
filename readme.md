@@ -13,12 +13,14 @@ All information about electorates is available at [/Data/electorates.json](/Data
 ## Contents
 
   * [Example content](#example-content)
-  * [Maps](#maps)
+  * [Detail Maps](#detail-maps)
+  * [GeoJson Maps](#geojson-maps)
     * [Structure](#structure)
     * [Map variants](#map-variants)
   * [NuGets](#nugets)
   * [Usage](#usage)
   * [Bogus Usage](#bogus-usage)
+  * [DetailMaps Usage](#detailmaps-usage)
   * [Copyright](#copyright)
     * [Code](#code)
     * [Content/Data](#contentdata)
@@ -67,10 +69,22 @@ All information about electorates is available at [/Data/electorates.json](/Data
   },
 ```
 
+## Detail Maps
 
-## Maps
+AEC publishes pdf electorate maps with some extra detail. eg:
 
-All maps are in [geojson format](http://geojson.org/).
+ * Rivers
+ * Main Roads
+ * Neighboring electorates
+
+The size pf these pdfs is significant. The smaller file variants are approx 600MB in total.
+
+To change these to a more manageable size and format, they have been converted to png and are now approx 30MB in total. Located in [/Data/DetailMaps](/Data/DetailMaps).
+
+
+## GeoJson Maps
+
+Maps in [geojson format](http://geojson.org/).
 
 The following grouping of maps exist:
 
@@ -122,7 +136,6 @@ The NuGets contain a static copy of all the electorate data. This data is embedd
  * [Libraries.io](https://libraries.io/): Supports subscribing to NuGet package updates.
 
 https://nuget.org/packages/AustralianElectorates/ [![NuGet Status](http://img.shields.io/nuget/v/AustralianElectorates.svg?longCache=true&style=flat)](https://www.nuget.org/packages/AustralianElectorates/)
-
 
 https://nuget.org/packages/AustralianElectorates.Bogus/ [![NuGet Status](http://img.shields.io/nuget/v/AustralianElectorates.Bogus.svg?longCache=true&style=flat)](https://www.nuget.org/packages/AustralianElectorates.Bogus/)
 
@@ -192,7 +205,17 @@ var faker = new Faker<Target>()
     .RuleFor(u => u.RandomMemberName, (f, u) => f.AustralianElectorates().MemberName());
 var targetInstance = faker.Generate();
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L67-L76)</sup>
+<sup>[snippet source](/src/Tests/Snippets.cs#L75-L84)</sup>
+<!-- endsnippet -->
+
+
+## DetailMaps Usage
+
+<!-- snippet: usageDetailMaps -->
+```cs
+var pathToPng = DetailMaps.MapForElectorate("Bass");
+```
+<sup>[snippet source](/src/Tests/Snippets.cs#L67-L69)</sup>
 <!-- endsnippet -->
 
 

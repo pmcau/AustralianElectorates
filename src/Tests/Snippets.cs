@@ -62,6 +62,14 @@ public class Snippets :
     }
 
     [Fact]
+    public void DetailMapsUsage()
+    {
+        #region usageDetailMaps
+        var pathToPng = DetailMaps.MapForElectorate("Bass");
+        #endregion
+    }
+
+    [Fact]
     public void Bogus()
     {
         #region usagebogus

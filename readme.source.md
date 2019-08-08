@@ -38,10 +38,22 @@ toc
   },
 ```
 
+## Detail Maps
 
-## Maps
+AEC publishes pdf electorate maps with some extra detail. eg:
 
-All maps are in [geojson format](http://geojson.org/).
+ * Rivers
+ * Main Roads
+ * Neighboring electorates
+
+The size pf these pdfs is significant. The smaller file variants are approx 600MB in total.
+
+To change these to a more manageable size and format, they have been converted to png and are now approx 30MB in total. Located in [/Data/DetailMaps](/Data/DetailMaps).
+
+
+## GeoJson Maps
+
+Maps in [geojson format](http://geojson.org/).
 
 The following grouping of maps exist:
 
@@ -94,7 +106,6 @@ The NuGets contain a static copy of all the electorate data. This data is embedd
 
 https://nuget.org/packages/AustralianElectorates/ [![NuGet Status](http://img.shields.io/nuget/v/AustralianElectorates.svg?longCache=true&style=flat)](https://www.nuget.org/packages/AustralianElectorates/)
 
-
 https://nuget.org/packages/AustralianElectorates.Bogus/ [![NuGet Status](http://img.shields.io/nuget/v/AustralianElectorates.Bogus.svg?longCache=true&style=flat)](https://www.nuget.org/packages/AustralianElectorates.Bogus/)
 
 https://nuget.org/packages/AustralianElectorates.DetailMaps/ [![NuGet Status](http://img.shields.io/nuget/v/AustralianElectorates.DetailMaps.svg?longCache=true&style=flat)](https://www.nuget.org/packages/AustralianElectorates.DetailMaps/)
@@ -108,6 +119,11 @@ snippet: usage
 ## Bogus Usage
 
 snippet: usagebogus
+
+
+## DetailMaps Usage
+
+snippet: usageDetailMaps
 
 
 ## Copyright
