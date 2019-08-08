@@ -77,7 +77,7 @@ AEC publishes pdf electorate maps with some extra detail. eg:
  * Main Roads
  * Neighboring electorates
 
-The size pf these pdfs is significant. The smaller file variants are approx 600MB in total.
+The size of these pdfs is significant. The smaller file variants are approx 600MB in total.
 
 To change these to a more manageable size and format, they have been converted to png and are now approx 30MB in total. Located in [/Data/DetailMaps](/Data/DetailMaps).
 
