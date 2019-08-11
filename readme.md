@@ -145,6 +145,7 @@ https://nuget.org/packages/AustralianElectorates.DetailMaps/ [![NuGet Status](ht
 ## Usage
 
 <!-- snippet: usage -->
+<a id='snippet-usage'/></a>
 ```cs
 // get an electorate by name
 var fenner = DataLoader.Fenner;
@@ -188,13 +189,14 @@ var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
 Directory.CreateDirectory(directory);
 DataLoader.Export(directory);
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L19-L61)</sup>
+<sup>[snippet source](/src/Tests/Snippets.cs#L19-L61) / [anchor](#snippet-usage)</sup>
 <!-- endsnippet -->
 
 
 ## Bogus Usage
 
 <!-- snippet: usagebogus -->
+<a id='snippet-usagebogus'/></a>
 ```cs
 var faker = new Faker<Target>()
     .RuleFor(u => u.RandomElectorate, (f, u) => f.AustralianElectorates().Electorate())
@@ -205,17 +207,18 @@ var faker = new Faker<Target>()
     .RuleFor(u => u.RandomMemberName, (f, u) => f.AustralianElectorates().MemberName());
 var targetInstance = faker.Generate();
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L75-L84)</sup>
+<sup>[snippet source](/src/Tests/Snippets.cs#L75-L84) / [anchor](#snippet-usagebogus)</sup>
 <!-- endsnippet -->
 
 
 ## DetailMaps Usage
 
 <!-- snippet: usageDetailMaps -->
+<a id='snippet-usagedetailmaps'/></a>
 ```cs
 var pathToPng = DetailMaps.MapForElectorate("Bass");
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L67-L69)</sup>
+<sup>[snippet source](/src/Tests/Snippets.cs#L67-L69) / [anchor](#snippet-usagedetailmaps)</sup>
 <!-- endsnippet -->
 
 
