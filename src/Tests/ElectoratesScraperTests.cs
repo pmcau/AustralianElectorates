@@ -1,6 +1,5 @@
 ﻿using System.Threading.Tasks;
 using AustralianElectorates;
-using ObjectApproval;
 using Xunit;
 using Xunit.Abstractions;
 

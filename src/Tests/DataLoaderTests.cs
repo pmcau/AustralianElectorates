@@ -3,7 +3,6 @@ using System.IO;
 using System.Linq;
 using ApprovalTests;
 using AustralianElectorates;
-using ObjectApproval;
 using Xunit;
 using Xunit.Abstractions;
 
