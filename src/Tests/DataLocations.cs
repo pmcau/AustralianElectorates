@@ -8,6 +8,7 @@ public static class DataLocations
         TempPath = Path.GetFullPath(Path.Combine(RootDir, "temp"));
         Directory.CreateDirectory(TempPath);
         DataPath = Path.GetFullPath(Path.Combine(RootDir, "Data"));
+        LocalitiesPath = Path.GetFullPath(Path.Combine(DataPath, "Localities.json"));
         Directory.CreateDirectory(DataPath);
         MapsPath = Path.GetFullPath(Path.Combine(DataPath, "Maps"));
         Directory.CreateDirectory(MapsPath);
@@ -29,6 +30,7 @@ public static class DataLocations
         FutureAustraliaJsonPath = Path.GetFullPath(Path.Combine(MapsFuturePath, "australia.geojson"));
     }
 
+    public static string LocalitiesPath;
     public static string AustralianElectoratesProjectPath;
     public static string BogusProjectPath;
     public static string MapsPath;

@@ -1,0 +1,62 @@
+﻿[
+  {
+    State: 'NT',
+    LocalityOrSuburb: 'DARWIN',
+    Postcode: 800,
+    Electorate: 'SOLOMON'
+  },
+  {
+    State: 'NT',
+    LocalityOrSuburb: 'NGARLU NGARLU',
+    Postcode: 801,
+    Electorate: 'LINGIARI'
+  },
+  {
+    State: 'NT',
+    LocalityOrSuburb: 'SANDY BAY',
+    Postcode: 801,
+    Electorate: 'LINGIARI'
+  },
+  {
+    State: 'NT',
+    LocalityOrSuburb: 'ALAWA',
+    Postcode: 810,
+    Electorate: 'SOLOMON'
+  },
+  {
+    State: 'NT',
+    LocalityOrSuburb: 'BRINKIN',
+    Postcode: 810,
+    Electorate: 'SOLOMON'
+  },
+  {
+    State: 'NT',
+    LocalityOrSuburb: 'BUFFALO CREEK',
+    Postcode: 810,
+    Electorate: 'SOLOMON'
+  },
+  {
+    State: 'NT',
+    LocalityOrSuburb: 'CASUARINA',
+    Postcode: 810,
+    Electorate: 'SOLOMON'
+  },
+  {
+    State: 'NT',
+    LocalityOrSuburb: 'COCONUT GROVE',
+    Postcode: 810,
+    Electorate: 'SOLOMON'
+  },
+  {
+    State: 'NT',
+    LocalityOrSuburb: 'JINGILI',
+    Postcode: 810,
+    Electorate: 'SOLOMON'
+  },
+  {
+    State: 'NT',
+    LocalityOrSuburb: 'KULALUK',
+    Postcode: 810,
+    Electorate: 'SOLOMON'
+  }
+]
