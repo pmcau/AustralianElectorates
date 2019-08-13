@@ -1,62 +1,52 @@
 ﻿[
   {
-    State: 'NT',
-    LocalityOrSuburb: 'DARWIN',
-    Postcode: 800,
-    Electorate: 'SOLOMON'
+    Place: 'Acton',
+    Postcode: 2601,
+    Electorate: 'CANBERRA'
   },
   {
-    State: 'NT',
-    LocalityOrSuburb: 'NGARLU NGARLU',
-    Postcode: 801,
-    Electorate: 'LINGIARI'
+    Place: 'Canberra Central',
+    Postcode: 2601,
+    Electorate: 'CANBERRA'
   },
   {
-    State: 'NT',
-    LocalityOrSuburb: 'SANDY BAY',
-    Postcode: 801,
-    Electorate: 'LINGIARI'
+    Place: 'Canberra City',
+    Postcode: 2601,
+    Electorate: 'CANBERRA'
   },
   {
-    State: 'NT',
-    LocalityOrSuburb: 'ALAWA',
-    Postcode: 810,
-    Electorate: 'SOLOMON'
+    Place: 'Ainslie',
+    Postcode: 2602,
+    Electorate: 'CANBERRA'
   },
   {
-    State: 'NT',
-    LocalityOrSuburb: 'BRINKIN',
-    Postcode: 810,
-    Electorate: 'SOLOMON'
+    Place: 'Dickson',
+    Postcode: 2602,
+    Electorate: 'CANBERRA'
   },
   {
-    State: 'NT',
-    LocalityOrSuburb: 'BUFFALO CREEK',
-    Postcode: 810,
-    Electorate: 'SOLOMON'
+    Place: 'Downer',
+    Postcode: 2602,
+    Electorate: 'CANBERRA'
   },
   {
-    State: 'NT',
-    LocalityOrSuburb: 'CASUARINA',
-    Postcode: 810,
-    Electorate: 'SOLOMON'
+    Place: 'Hackett',
+    Postcode: 2602,
+    Electorate: 'CANBERRA'
   },
   {
-    State: 'NT',
-    LocalityOrSuburb: 'COCONUT GROVE',
-    Postcode: 810,
-    Electorate: 'SOLOMON'
+    Place: 'Lyneham',
+    Postcode: 2602,
+    Electorate: 'CANBERRA'
   },
   {
-    State: 'NT',
-    LocalityOrSuburb: 'JINGILI',
-    Postcode: 810,
-    Electorate: 'SOLOMON'
+    Place: 'O\'Connor',
+    Postcode: 2602,
+    Electorate: 'CANBERRA'
   },
   {
-    State: 'NT',
-    LocalityOrSuburb: 'KULALUK',
-    Postcode: 810,
-    Electorate: 'SOLOMON'
+    Place: 'Watson',
+    Postcode: 2602,
+    Electorate: 'CANBERRA'
   }
 ]

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
+using System.Linq;
 using System.Threading.Tasks;
 using AustralianElectorates;
 using GeoJSON.Net.Feature;
@@ -178,6 +179,7 @@ public class Sync :
 
     static async Task<List<Electorate>> WriteElectoratesMetaData()
     {
+        var localityData = JsonSerializer.Deserialize<List<AecLocalityData>>(DataLocations.LocalitiesPath);
         var electorates = new List<Electorate>();
         foreach (var electoratePair in electorateNames)
         {
@@ -199,6 +201,7 @@ public class Sync :
                 electorate.Exist2016 = existIn2016;
                 electorate.Exist2019 = existIn2019;
                 electorate.ExistInFuture = existInFuture;
+                electorate.Locations = SelectLocations(electorateName,localityData).ToList();
                 electorates.Add(electorate);
             }
         }
@@ -207,6 +210,20 @@ public class Sync :
         File.Delete(combine);
         JsonSerializer.Serialize(electorates, combine);
         return electorates;
+    }
+
+    static List<Location> SelectLocations(string electorateName, List<AecLocalityData> localityData)
+    {
+        return localityData
+            .Where(x => string.Equals(x.Electorate, electorateName, StringComparison.OrdinalIgnoreCase))
+            .GroupBy(x => x.Postcode)
+            .Select(group =>
+                new Location
+                {
+                    Postcode = group.Key,
+                    Localities = group.Select(x => x.Place).ToList()
+                })
+            .ToList();
     }
 
     static void WriteNamedCs(List<Electorate> electorates)

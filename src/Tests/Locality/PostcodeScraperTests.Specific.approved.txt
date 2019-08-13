@@ -1,25 +1,21 @@
 ﻿[
   {
-    State: 'ACT',
-    LocalityOrSuburb: 'BRADDON',
+    Place: 'Braddon',
     Postcode: 2612,
     Electorate: 'CANBERRA'
   },
   {
-    State: 'ACT',
-    LocalityOrSuburb: 'CAMPBELL',
+    Place: 'Campbell',
     Postcode: 2612,
     Electorate: 'CANBERRA'
   },
   {
-    State: 'ACT',
-    LocalityOrSuburb: 'REID',
+    Place: 'Reid',
     Postcode: 2612,
     Electorate: 'CANBERRA'
   },
   {
-    State: 'ACT',
-    LocalityOrSuburb: 'TURNER',
+    Place: 'Turner',
     Postcode: 2612,
     Electorate: 'CANBERRA'
   }

@@ -11,16 +11,17 @@ static class PostcodeScraper
 {
     static HttpClient client = new HttpClient();
     static HtmlDocument doc = new HtmlDocument();
+    static ICountry australia = CountryLoader.LoadAustraliaLocationData();
 
     public static async Task<List<AecLocalityData>> Run()
     {
         var items = new List<AecLocalityData>();
-        var postcodes = CountryLoader.LoadAustraliaLocationData()
+        var postcodes = australia
             .PostCodes()
             .ToList();
         foreach (var postcode in postcodes)
         {
-            items.AddRange(await GetAECDataForPostcode(postcode.Key));
+            items.AddRange(await GetAECDataForPostcode(postcode));
         }
 
         return items;
@@ -28,6 +29,7 @@ static class PostcodeScraper
 
     static IEnumerable<AecLocalityData> GetLocalityData(HtmlDocument doc, int postcode)
     {
+
         var table = doc.DocumentNode.SelectSingleNode("//table[@id='ContentPlaceHolderBody_gridViewLocalities']");
 
         foreach (var tr in table.SelectNodes("tr").Where(p => !p.HasAttributes))
@@ -37,8 +39,8 @@ static class PostcodeScraper
             {
                 yield return new AecLocalityData
                 {
-                    State = tds[0].InnerText.ToUpper().Trim(),
-                    LocalityOrSuburb = tds[1].InnerText.ToUpper().Trim(),
+                    //State = tds[0].InnerText.ToUpper().Trim(),
+                    Place = tds[1].InnerText.ToUpper().Trim().ToTitleCase(),
                     Postcode = postcode,
                     //Postcode = tds[2].InnerText.ToUpper().Trim(),
                     Electorate = tds[3].InnerText.ToUpper().Trim()
@@ -73,9 +75,9 @@ static class PostcodeScraper
         return nodeCount + 1;
     }
 
-    public static async Task<List<AecLocalityData>> GetAECDataForPostcode(string postcode)
+    public static async Task<List<AecLocalityData>> GetAECDataForPostcode(KeyValuePair<string, IReadOnlyList<IPlace>> postcode)
     {
-        if (!int.TryParse(postcode, out var result))
+        if (!int.TryParse(postcode.Key, out var result))
         {
             throw new Exception("Invalid Postcode");
         }
@@ -84,10 +86,12 @@ static class PostcodeScraper
         {
             throw new Exception("Invalid Postcode");
         }
+
         if (result % 50 == 0)
         {
-            Trace.WriteLine(postcode);
+            Trace.WriteLine(postcode.Key);
         }
+
         var url = $"https://electorate.aec.gov.au/LocalitySearchResults.aspx?filter={result:D4}&filterby=Postcode";
 
         var response = await client.GetAsync(url);
@@ -98,7 +102,7 @@ static class PostcodeScraper
 
         var data = new List<AecLocalityData>();
 
-        data.AddRange(GetLocalityData(doc,result));
+        data.AddRange(GetLocalityData(doc, result));
         var lastPage = GetPageCount(doc);
 
         var page = 1;
@@ -115,7 +119,7 @@ static class PostcodeScraper
             response = await client.PostAsync(url, encodedContent);
             response.EnsureSuccessStatusCode();
             doc.LoadHtml(await response.Content.ReadAsStringAsync());
-            data.AddRange(GetLocalityData(doc,result));
+            data.AddRange(GetLocalityData(doc, result));
         }
 
         return data;

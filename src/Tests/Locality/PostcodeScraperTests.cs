@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using CountryData;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -20,7 +21,8 @@ public class PostcodeScraperTests :
     [Fact]
     public async Task Specific()
     {
-        ObjectApprover.Verify(await PostcodeScraper.GetAECDataForPostcode("2612"));
+        var place = CountryLoader.LoadAustraliaLocationData().PostCodes().Single(x=>x.Key == "2612");
+        ObjectApprover.Verify(await PostcodeScraper.GetAECDataForPostcode(place));
     }
 
     public PostcodeScraperTests(ITestOutputHelper output) :

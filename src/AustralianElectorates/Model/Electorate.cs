@@ -19,6 +19,7 @@ namespace AustralianElectorates
         public string ProductsAndIndustry { get; set; }
         public string NameDerivation { get; set; }
         public List<Member> Members { get; set; }
+        public List<Location> Locations { get; set; }
         public uint? Enrollment { get; set; }
         public TwoCandidatePreferred TwoCandidatePreferred { get; set; }
 
