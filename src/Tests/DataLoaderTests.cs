@@ -79,16 +79,18 @@ public class DataLoaderTests :
         InnerExport(true);
     }
 
-    private static void InnerExport(bool overwrite)
+    static void InnerExport(bool overwrite)
     {
-        var directory = Path.Combine(Environment.CurrentDirectory, "export");
+        var directory = Path.Combine(Environment.CurrentDirectory, $"export_overwrite-{overwrite}");
         Directory.CreateDirectory(directory);
 
         try
-        {   if (overwrite)
+        {
+            if (overwrite)
             {
                 DataLoader.Export(directory);
             }
+
             DataLoader.Export(directory);
             Approvals.Verify(Directory.EnumerateFiles(directory, "*.*", SearchOption.AllDirectories).Count());
         }
