@@ -1,0 +1,9 @@
+image: Visual Studio 2019
+build_script:
+- cmd: dotnet build src --configuration Release
+test:
+  categories:
+    except:
+    - Integration
+artifacts:
+- path: nugets\*.nupkg

@@ -1,0 +1,1 @@
+﻿'{"type":"FeatureCollection","features":[\r\n{"properties":{"electorateName":"Canberra","electorateShortName":"canberra","area":1967.229702,"state":"ACT"},"type":"Feature","geometry":{"type":"Polygon","c'

@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="ApprovalTests" Version="4.0.0" />
+    <PackageReference Include="Bogus" Version="28.0.2" />
+    <PackageReference Include="CountryData" Version="3.6.4" />
+    <PackageReference Include="MarkdownSnippets.MsBuild" Version="16.2.0" />
+    <PackageReference Include="ObjectApproval" Version="11.0.0" />
+    <PackageReference Include="GeoJSON.Net" Version="1.1.73" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.12" />
+    <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+    <PackageReference Include="XunitLogger" Version="2.4.0" />
+    <ProjectReference Include="..\AustralianElectorates.Bogus\AustralianElectorates.Bogus.csproj" />
+    <ProjectReference Include="..\AustralianElectorates.DetailMaps\AustralianElectorates.DetailMaps.csproj" />
+    <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
+    <Reference Include="System.IO.Compression" />
+    <PackageReference Include="ProjectDefaults" Version="1.0.16" PrivateAssets="All" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="MediaFeed\aec-mediafeed-results-standard-verbose-24310.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="sample_electorate_map.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

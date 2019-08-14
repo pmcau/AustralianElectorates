@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageTags>Australia, Electorates</PackageTags>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Provides geojson maps and a .net wrapper around the Australian Electoral Commission (AEC) data (https://www.aec.gov.au/).</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Condition="Exists('..\..\Data\MapsCurated.zip')" Include="..\..\Data\MapsCurated.zip" LogicalName="Maps.zip" Link="Maps.zip" />
+    <EmbeddedResource Condition="Exists('..\..\Data\electorates.json')" Include="..\..\Data\electorates.json" LogicalName="electorates.json" Link="electorates.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.Compression.ZipFile" Version="4.3.0" />
+    <PackageReference Include="ProjectDefaults" Version="1.0.16" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-19367-01" PrivateAssets="All" />
+  </ItemGroup>
+</Project>

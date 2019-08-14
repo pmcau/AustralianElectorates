@@ -1,0 +1,52 @@
+﻿[
+  {
+    Place: 'Acton',
+    Postcode: 2601,
+    Electorate: 'CANBERRA'
+  },
+  {
+    Place: 'Canberra Central',
+    Postcode: 2601,
+    Electorate: 'CANBERRA'
+  },
+  {
+    Place: 'Canberra City',
+    Postcode: 2601,
+    Electorate: 'CANBERRA'
+  },
+  {
+    Place: 'Ainslie',
+    Postcode: 2602,
+    Electorate: 'CANBERRA'
+  },
+  {
+    Place: 'Dickson',
+    Postcode: 2602,
+    Electorate: 'CANBERRA'
+  },
+  {
+    Place: 'Downer',
+    Postcode: 2602,
+    Electorate: 'CANBERRA'
+  },
+  {
+    Place: 'Hackett',
+    Postcode: 2602,
+    Electorate: 'CANBERRA'
+  },
+  {
+    Place: 'Lyneham',
+    Postcode: 2602,
+    Electorate: 'CANBERRA'
+  },
+  {
+    Place: 'O\'Connor',
+    Postcode: 2602,
+    Electorate: 'CANBERRA'
+  },
+  {
+    Place: 'Watson',
+    Postcode: 2602,
+    Electorate: 'CANBERRA'
+  }
+]
