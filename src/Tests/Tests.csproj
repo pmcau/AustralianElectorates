@@ -4,7 +4,7 @@
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="ApprovalTests" Version="4.0.0" />
+    <PackageReference Include="ApprovalTests" Version="4.2.0" />
     <PackageReference Include="Bogus" Version="28.0.2" />
     <PackageReference Include="CountryData" Version="3.6.4" />
     <PackageReference Include="MarkdownSnippets.MsBuild" Version="16.2.0" />
