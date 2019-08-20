@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
 
 namespace AustralianElectorates
 {
@@ -27,6 +28,12 @@ namespace AustralianElectorates
         {
             Guard.AgainstNull(electorate, nameof(electorate));
             return Path.Combine(Directory, $"{electorate.ShortName}.png");
+        }
+
+        public static IEnumerable<string> Files(Electorate electorate)
+        {
+            Guard.AgainstNull(electorate, nameof(electorate));
+            return System.IO.Directory.EnumerateFiles(Directory);
         }
 
         public static readonly string Directory;
