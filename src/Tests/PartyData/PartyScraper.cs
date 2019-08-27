@@ -27,22 +27,24 @@ public static class PartyScraper
                 .Split('"')[1];
             await Downloader.DownloadFile(partyRegisterPath, $"https://www.aec.gov.au{jsonUrl}");
             var aecParties = JsonSerializerService.Deserialize<PartyData>(partyRegisterPath);
-            var list = new List<Party>();
+            Parties = new List<Party>();
             foreach (var detail in aecParties.Details)
             {
                 var party = DetailToParty(detail);
-                list.Add(party);
+                Parties.Add(party);
             }
 
             var combine = Path.Combine(DataLocations.DataPath, "parties.json");
             File.Delete(combine);
-            JsonSerializerService.Serialize(list, combine);
+            JsonSerializerService.Serialize(Parties, combine);
         }
         catch (Exception exception)
         {
             throw new Exception($"Failed to parse {htmlPath} {htmlPath}", exception);
         }
     }
+
+    public static List<Party> Parties;
 
     static Party DetailToParty(Detail detail)
     {

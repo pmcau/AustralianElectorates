@@ -38,10 +38,10 @@ public class DataLoaderTests :
         var exception = Assert.Throws<ElectorateNotFoundException>(() => DataLoader.FindElectorate("not Found"));
         ObjectApprover.Verify(new {exception.Name, exception.Message});
     }
+
     [Fact]
     public void Foo()
     {
-        var set = new HashSet<string>();
         foreach (var electorate in DataLoader.Electorates)
         {
             var preferred = electorate.TwoCandidatePreferred;
@@ -49,20 +49,16 @@ public class DataLoaderTests :
             {
                 continue;
             }
+
             if (DataLoader.PartiesAndBranches.All(x => x.Id != preferred.Elected.PartyId))
             {
-                set.Add($"{preferred.Elected.Party} {preferred.Elected.PartyId}");
+                Debug.WriteLine(preferred.Elected.PartyId);
             }
 
             if (DataLoader.PartiesAndBranches.All(x => x.Id != preferred.Other.PartyId))
             {
-                set.Add($"{preferred.Other.Party} {preferred.Other.PartyId}");
+                Debug.WriteLine(preferred.Other.PartyId);
             }
-        }
-
-        foreach (var v in set)
-        {
-            Debug.WriteLine(v);
         }
     }
 

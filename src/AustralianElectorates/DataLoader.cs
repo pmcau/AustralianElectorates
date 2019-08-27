@@ -42,9 +42,19 @@ namespace AustralianElectorates
 
             foreach (var electorate in Electorates)
             {
+                var preferred = electorate.TwoCandidatePreferred;
+                if (preferred != null)
+                {
+                    preferred.Elected.Party = PartiesAndBranches.SingleOrDefault(x => x.Id == preferred.Elected.PartyId);
+                    preferred.Other.Party = PartiesAndBranches.SingleOrDefault(x => x.Id == preferred.Other.PartyId);
+                }
                 foreach (var member in electorate.Members)
                 {
                     member.Electorate = electorate;
+                    if (member.PartyId != null)
+                    {
+                        member.Party = PartiesAndBranches.SingleOrDefault(x=>x.Id == member.PartyId);
+                    }
                 }
             }
 

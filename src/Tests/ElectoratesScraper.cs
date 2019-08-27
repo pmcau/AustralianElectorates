@@ -83,7 +83,7 @@ public static class ElectoratesScraper
                     {
                         FamilyName = electedCandidateName.familyName,
                         GivenNames = electedCandidateName.givenNames,
-                        Party = electedCandidate.AffiliationIdentifier?.ShortCode,
+                        PartyCode = electedCandidate.AffiliationIdentifier?.ShortCode,
                         PartyId = electedCandidate.AffiliationIdentifier?.Id,
                         Votes = electedCandidate.Votes.Value,
                         Swing = electedCandidate.Votes.Swing,
@@ -92,7 +92,7 @@ public static class ElectoratesScraper
                     {
                         FamilyName = otherName.familyName,
                         GivenNames = otherName.givenNames,
-                        Party = other.AffiliationIdentifier?.ShortCode,
+                        PartyCode = other.AffiliationIdentifier?.ShortCode,
                         PartyId = other.AffiliationIdentifier?.Id,
                         Votes = other.Votes.Value,
                         Swing = other.Votes.Swing,
@@ -117,7 +117,8 @@ public static class ElectoratesScraper
                         GivenNames = electedCandidateName.givenNames,
                         FamilyName = familyName,
                         Begin = 2019,
-                        Party = electedCandidate.AffiliationIdentifier?.ShortCode
+                        PartyCode = electedCandidate.AffiliationIdentifier?.ShortCode,
+                        PartyId = electedCandidate.AffiliationIdentifier?.Id
                     });
                 }
             }
@@ -249,7 +250,9 @@ public static class ElectoratesScraper
             {
                 FamilyName = familyName,
                 GivenNames = givenNames,
-                Party = party,
+                PartyCode = party,
+                //TODO:
+                // PartyId = PartyScraper.
                 Begin = begin,
                 End = end,
             };

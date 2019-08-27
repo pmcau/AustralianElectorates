@@ -19,6 +19,9 @@ public class Sync :
         IoHelpers.PurgeDirectory(DataLocations.MapsPath);
         IoHelpers.PurgeDirectory(DataLocations.TempPath);
 
+        await PartyScraper.Run();
+
+
         await Get2016();
         await Get2019();
 
