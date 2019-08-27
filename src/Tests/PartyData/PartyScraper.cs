@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using AecModels;
 using AustralianElectorates;
-using HtmlAgilityPack;
 using Officer = AustralianElectorates.Officer;
 using Address = AustralianElectorates.Address;
+using Branch = AustralianElectorates.Branch;
 
 public static class PartyScraper
 {
@@ -44,60 +44,92 @@ public static class PartyScraper
         }
     }
 
-    private static Party DetailToParty(Detail detail)
+    static Party DetailToParty(Detail detail)
     {
-        var officer = detail.Officer;
-        var officerAddress = officer.Address;
         var party = new Party
         {
+            Id = detail.Id,
             Name = detail.NameOfParty,
-            Abbreviation = detail.Abbreviation,
+            Code = detail.Abbreviation?.Replace(".", ""),
             RegisterDate = detail.PartyRegisterDate,
             AmendmentDate = detail.PartyRegisterDate,
             Address = detail.PostalAddress,
-            Officer = new Officer
-            {
-                Capacity = officer.Capacity,
-                FamilyName = officer.Surname,
-                GivenNames = officer.FirstName,
-                Title = officer.Title,
-                Address = new Address
-                {
-                    State = (State) Enum.Parse(typeof(State), officerAddress.State),
-                    Line1 = officerAddress.Line1,
-                    Line2 = officerAddress.Line2,
-                    Line3 = officerAddress.Line3,
-                    Postcode = Convert.ToInt32(officerAddress.Postcode),
-                    Suburb = officerAddress.Suburb,
-                },
-            },
+            Officer = ToOfficer(detail.Officer),
+            DeputyOfficers = ToOfficers(detail.DeputyOfficers),
+            Branches = ToBranches(detail.Branches),
         };
-        if (detail.DeputyOfficers != null)
-        {
-            party.DeputyOfficers = new List<Officer>();
-            foreach (var deputyOfficer in detail.DeputyOfficers)
-            {
-                var deputyOfficerAddress = deputyOfficer.Address;
-                party.DeputyOfficers.Add(
-                    new Officer
-                    {
-                        Capacity = deputyOfficer.Capacity,
-                        FamilyName = deputyOfficer.Surname,
-                        GivenNames = deputyOfficer.FirstName,
-                        Title = deputyOfficer.Title,
-                        Address = new Address
-                        {
-                            State = (State) Enum.Parse(typeof(State), deputyOfficerAddress.State),
-                            Line1 = deputyOfficerAddress.Line1,
-                            Line2 = deputyOfficerAddress.Line2,
-                            Line3 = deputyOfficerAddress.Line3,
-                            Postcode = Convert.ToInt32(deputyOfficerAddress.Postcode),
-                            Suburb = deputyOfficerAddress.Suburb,
-                        },
-                    });
-            }
 
+        return party;
+    }
+
+    static List<Branch> ToBranches(AecModels.Branch[] branches)
+    {
+        if (branches == null)
+        {
+            return null;
         }
-            return party;
+
+        var list = new List<Branch>();
+        foreach (var branch in branches)
+        {
+            var item = ToBranch(branch);
+            list.Add(item);
+        }
+        return list;
+    }
+
+    static Branch ToBranch(AecModels.Branch branch)
+    {
+        return new Branch
+        {
+            Id = branch.Id,
+            Name = branch.NameOfParty,
+            Code = branch.Abbreviation?.Replace(".", ""),
+            RegisterDate = branch.PartyRegisterDate,
+            AmendmentDate = branch.PartyRegisterDate,
+            Address = branch.PostalAddress,
+            Officer = ToOfficer(branch.Officer),
+            DeputyOfficers = ToOfficers(branch.DeputyOfficers)
+        };
+    }
+    static List<Officer> ToOfficers(AecModels.Officer[] detail)
+    {
+        if (detail == null)
+        {
+            return null;
+        }
+
+        var officers = new List<Officer>();
+        foreach (var deputyOfficer in detail)
+        {
+            var item = ToOfficer(deputyOfficer);
+            officers.Add(item);
+        }
+        return officers;
+    }
+
+    static Officer ToOfficer(AecModels.Officer deputyOfficer)
+    {
+        return new Officer
+        {
+            Capacity = deputyOfficer.Capacity,
+            FamilyName = deputyOfficer.Surname,
+            GivenNames = deputyOfficer.FirstName,
+            Title = deputyOfficer.Title,
+            Address = ToAddress(deputyOfficer.Address),
+        };
+    }
+
+    static Address ToAddress(AecModels.Address deputyOfficerAddress)
+    {
+        return new Address
+        {
+            State = (State) Enum.Parse(typeof(State), deputyOfficerAddress.State),
+            Line1 = deputyOfficerAddress.Line1,
+            Line2 = deputyOfficerAddress.Line2,
+            Line3 = deputyOfficerAddress.Line3,
+            Postcode = Convert.ToInt32(deputyOfficerAddress.Postcode),
+            Suburb = deputyOfficerAddress.Suburb,
+        };
     }
 }

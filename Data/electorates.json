@@ -191,14 +191,16 @@
         "GivenNames": "Alicia",
         "Party": "ALP",
         "Votes": 57961,
-        "Swing": 4.14
+        "Swing": 4.14,
+        "PartyId": 200
       },
       "Other": {
         "FamilyName": "Zaki",
         "GivenNames": "Mina",
         "Party": "LP",
         "Votes": 28442,
-        "Swing": -4.14
+        "Swing": -4.14,
+        "PartyId": 177
       }
     }
   },
@@ -344,14 +346,16 @@
         "GivenNames": "Andrew",
         "Party": "ALP",
         "Votes": 52462,
-        "Swing": -1.28
+        "Swing": -1.28,
+        "PartyId": 200
       },
       "Other": {
         "FamilyName": "Castley",
         "GivenNames": "Leanne",
         "Party": "LP",
         "Votes": 34171,
-        "Swing": 1.28
+        "Swing": 1.28,
+        "PartyId": 177
       }
     }
   },
@@ -518,14 +522,16 @@
         "GivenNames": "David",
         "Party": "ALP",
         "Votes": 53455,
-        "Swing": -1.33
+        "Swing": -1.33,
+        "PartyId": 200
       },
       "Other": {
         "FamilyName": "Cocks",
         "GivenNames": "Ed",
         "Party": "LP",
         "Votes": 39484,
-        "Swing": 1.33
+        "Swing": 1.33,
+        "PartyId": 177
       }
     }
   },
@@ -946,14 +952,16 @@
         "GivenNames": "Bridget",
         "Party": "LP",
         "Votes": 34648,
-        "Swing": 5.83
+        "Swing": 5.83,
+        "PartyId": 171
       },
       "Other": {
         "FamilyName": "Hart",
         "GivenNames": "Ross",
         "Party": "ALP",
         "Votes": 34085,
-        "Swing": -5.83
+        "Swing": -5.83,
+        "PartyId": 31
       }
     }
   },
@@ -1335,14 +1343,16 @@
         "GivenNames": "Gavin",
         "Party": "LP",
         "Votes": 37151,
-        "Swing": 4.82
+        "Swing": 4.82,
+        "PartyId": 171
       },
       "Other": {
         "FamilyName": "Keay",
         "GivenNames": "Justine",
         "Party": "ALP",
         "Votes": 32822,
-        "Swing": -4.82
+        "Swing": -4.82,
+        "PartyId": 31
       }
     }
   },
@@ -1819,14 +1829,16 @@
         "GivenNames": "Julie",
         "Party": "ALP",
         "Votes": 43706,
-        "Swing": 1.48
+        "Swing": 1.48,
+        "PartyId": 31
       },
       "Other": {
         "FamilyName": "Young",
         "GivenNames": "Dean",
         "Party": "LP",
         "Votes": 26555,
-        "Swing": -1.48
+        "Swing": -1.48,
+        "PartyId": 171
       }
     }
   },
@@ -2444,14 +2456,16 @@
         "GivenNames": "Brian",
         "Party": "ALP",
         "Votes": 39491,
-        "Swing": 1.35
+        "Swing": 1.35,
+        "PartyId": 31
       },
       "Other": {
         "FamilyName": "Whelan",
         "GivenNames": "Jessica",
         "Party": "LP",
         "Votes": 32073,
-        "Swing": -1.35
+        "Swing": -1.35,
+        "PartyId": 171
       }
     }
   },
@@ -2605,7 +2619,8 @@
         "GivenNames": "Ben",
         "Party": "ALP",
         "Votes": 18808,
-        "Swing": -4.35
+        "Swing": -4.35,
+        "PartyId": 31
       }
     }
   },
@@ -2925,14 +2940,16 @@
         "GivenNames": "Steve",
         "Party": "ALP",
         "Votes": 62362,
-        "Swing": -0.12
+        "Swing": -0.12,
+        "PartyId": 198
       },
       "Other": {
         "FamilyName": "Osborn",
         "GivenNames": "Shaun",
         "Party": "LP",
         "Votes": 44819,
-        "Swing": 0.12
+        "Swing": 0.12,
+        "PartyId": 184
       }
     }
   },
@@ -3828,14 +3845,16 @@
         "GivenNames": "Tony",
         "Party": "LP",
         "Votes": 72851,
-        "Swing": 5.07
+        "Swing": 5.07,
+        "PartyId": 184
       },
       "Other": {
         "FamilyName": "O'Brien",
         "GivenNames": "Mat",
         "Party": "ALP",
         "Votes": 32815,
-        "Swing": -5.07
+        "Swing": -5.07,
+        "PartyId": 198
       }
     }
   },
@@ -4130,14 +4149,16 @@
         "GivenNames": "Nicolle",
         "Party": "LP",
         "Votes": 56812,
-        "Swing": -1.33
+        "Swing": -1.33,
+        "PartyId": 184
       },
       "Other": {
         "FamilyName": "Clancy",
         "GivenNames": "Nadia",
         "Party": "ALP",
         "Votes": 53765,
-        "Swing": 1.33
+        "Swing": 1.33,
+        "PartyId": 198
       }
     }
   },
@@ -5478,14 +5499,16 @@
         "GivenNames": "Rowan",
         "Party": "LP",
         "Votes": 65504,
-        "Swing": 5.57
+        "Swing": 5.57,
+        "PartyId": 184
       },
       "Other": {
         "FamilyName": "Bolton",
         "GivenNames": "Karin",
         "Party": "ALP",
         "Votes": 37943,
-        "Swing": -5.57
+        "Swing": -5.57,
+        "PartyId": 198
       }
     }
   },
@@ -5763,14 +5786,16 @@
         "GivenNames": "Mark",
         "Party": "ALP",
         "Votes": 61606,
-        "Swing": -1.89
+        "Swing": -1.89,
+        "PartyId": 198
       },
       "Other": {
         "FamilyName": "Hall-Evans",
         "GivenNames": "Jake",
         "Party": "LP",
         "Votes": 47349,
-        "Swing": 1.89
+        "Swing": 1.89,
+        "PartyId": 184
       }
     }
   },
@@ -5970,14 +5995,16 @@
         "GivenNames": "Amanda",
         "Party": "ALP",
         "Votes": 65708,
-        "Swing": -1.61
+        "Swing": -1.61,
+        "PartyId": 198
       },
       "Other": {
         "FamilyName": "Curran",
         "GivenNames": "Laura",
         "Party": "LP",
         "Votes": 40373,
-        "Swing": 1.61
+        "Swing": 1.61,
+        "PartyId": 184
       }
     }
   },
@@ -6171,14 +6198,16 @@
         "GivenNames": "Tony",
         "Party": "ALP",
         "Votes": 63726,
-        "Swing": -1.07
+        "Swing": -1.07,
+        "PartyId": 198
       },
       "Other": {
         "FamilyName": "Dave",
         "GivenNames": "Hemant",
         "Party": "LP",
         "Votes": 42978,
-        "Swing": 1.07
+        "Swing": 1.07,
+        "PartyId": 184
       }
     }
   },
@@ -6772,14 +6801,16 @@
         "GivenNames": "Rebekha",
         "Party": "XEN",
         "Votes": 62124,
-        "Swing": 2.22
+        "Swing": 2.22,
+        "PartyId": 1388
       },
       "Other": {
         "FamilyName": "Downer",
         "GivenNames": "Georgina",
         "Party": "LP",
         "Votes": 50552,
-        "Swing": -2.22
+        "Swing": -2.22,
+        "PartyId": 184
       }
     }
   },
@@ -7082,14 +7113,16 @@
         "GivenNames": "James",
         "Party": "LP",
         "Votes": 62404,
-        "Swing": 1.48
+        "Swing": 1.48,
+        "PartyId": 184
       },
       "Other": {
         "FamilyName": "O'Hanlon",
         "GivenNames": "Cressida",
         "Party": "ALP",
         "Votes": 47328,
-        "Swing": -1.48
+        "Swing": -1.48,
+        "PartyId": 198
       }
     }
   },
@@ -7372,14 +7405,16 @@
         "GivenNames": "Nick",
         "Party": "ALP",
         "Votes": 65174,
-        "Swing": -3.04
+        "Swing": -3.04,
+        "PartyId": 198
       },
       "Other": {
         "FamilyName": "Bourne",
         "GivenNames": "Kathleen",
         "Party": "LP",
         "Votes": 36455,
-        "Swing": 3.04
+        "Swing": 3.04,
+        "PartyId": 184
       }
     }
   },
@@ -7493,14 +7528,16 @@
         "GivenNames": "Alan",
         "Party": "LP",
         "Votes": 60180,
-        "Swing": 2.72
+        "Swing": 2.72,
+        "PartyId": 180
       },
       "Other": {
         "FamilyName": "Pethiyagoda",
         "GivenNames": "Kadira",
         "Party": "ALP",
         "Votes": 39910,
-        "Swing": -2.72
+        "Swing": -2.72,
+        "PartyId": 195
       }
     }
   },
@@ -7922,14 +7959,16 @@
         "GivenNames": "Catherine",
         "Party": "ALP",
         "Votes": 62615,
-        "Swing": 3.62
+        "Swing": 3.62,
+        "PartyId": 195
       },
       "Other": {
         "FamilyName": "Vo",
         "GivenNames": "Tim",
         "Party": "LP",
         "Votes": 40068,
-        "Swing": -3.62
+        "Swing": -3.62,
+        "PartyId": 180
       }
     }
   },
@@ -8463,14 +8502,16 @@
         "GivenNames": "Lisa",
         "Party": "ALP",
         "Votes": 60016,
-        "Swing": 5.17
+        "Swing": 5.17,
+        "PartyId": 195
       },
       "Other": {
         "FamilyName": "Gayed",
         "GivenNames": "Sam",
         "Party": "LP",
         "Votes": 41645,
-        "Swing": -5.17
+        "Swing": -5.17,
+        "PartyId": 180
       }
     }
   },
@@ -8607,14 +8648,16 @@
         "GivenNames": "Julian",
         "Party": "ALP",
         "Votes": 59689,
-        "Swing": 0.1
+        "Swing": 0.1,
+        "PartyId": 195
       },
       "Other": {
         "FamilyName": "MacIsaac",
         "GivenNames": "John",
         "Party": "LP",
         "Votes": 33351,
-        "Swing": -0.1
+        "Swing": -0.1,
+        "PartyId": 180
       }
     }
   },
@@ -8743,14 +8786,16 @@
         "GivenNames": "Maria",
         "Party": "ALP",
         "Votes": 60164,
-        "Swing": -0.93
+        "Swing": -0.93,
+        "PartyId": 195
       },
       "Other": {
         "FamilyName": "Hamilton",
         "GivenNames": "Genevieve",
         "Party": "LP",
         "Votes": 27288,
-        "Swing": 0.93
+        "Swing": 0.93,
+        "PartyId": 180
       }
     }
   },
@@ -9053,14 +9098,16 @@
         "GivenNames": "Tony",
         "Party": "LP",
         "Votes": 54551,
-        "Swing": 0.1
+        "Swing": 0.1,
+        "PartyId": 180
       },
       "Other": {
         "FamilyName": "Brindle",
         "GivenNames": "Bill",
         "Party": "ALP",
         "Votes": 45277,
-        "Swing": -0.1
+        "Swing": -0.1,
+        "PartyId": 195
       }
     }
   },
@@ -9223,14 +9270,16 @@
         "GivenNames": "Gladys",
         "Party": "LP",
         "Votes": 48005,
-        "Swing": -2.34
+        "Swing": -2.34,
+        "PartyId": 180
       },
       "Other": {
         "FamilyName": "Yang",
         "GivenNames": "Jennifer",
         "Party": "ALP",
         "Votes": 46915,
-        "Swing": 2.34
+        "Swing": 2.34,
+        "PartyId": 195
       }
     }
   },
@@ -9672,14 +9721,16 @@
         "GivenNames": "Libby",
         "Party": "ALP",
         "Votes": 51895,
-        "Swing": 1.04
+        "Swing": 1.04,
+        "PartyId": 195
       },
       "Other": {
         "FamilyName": "Henderson",
         "GivenNames": "Sarah",
         "Party": "LP",
         "Votes": 49725,
-        "Swing": -1.04
+        "Swing": -1.04,
+        "PartyId": 180
       }
     }
   },
@@ -9878,14 +9929,16 @@
         "GivenNames": "Richard",
         "Party": "ALP",
         "Votes": 59572,
-        "Swing": 2.12
+        "Swing": 2.12,
+        "PartyId": 195
       },
       "Other": {
         "FamilyName": "Thomson",
         "GivenNames": "Alastair",
         "Party": "LP",
         "Votes": 39180,
-        "Swing": -2.12
+        "Swing": -2.12,
+        "PartyId": 180
       }
     }
   },
@@ -10045,14 +10098,16 @@
         "GivenNames": "Michael",
         "Party": "LP",
         "Votes": 53288,
-        "Swing": -1.66
+        "Swing": -1.66,
+        "PartyId": 180
       },
       "Other": {
         "FamilyName": "Morris",
         "GivenNames": "Shireen",
         "Party": "ALP",
         "Votes": 43981,
-        "Swing": 1.66
+        "Swing": 1.66,
+        "PartyId": 195
       }
     }
   },
@@ -10172,14 +10227,16 @@
         "GivenNames": "Peta",
         "Party": "ALP",
         "Votes": 51066,
-        "Swing": 1.71
+        "Swing": 1.71,
+        "PartyId": 195
       },
       "Other": {
         "FamilyName": "Crewther",
         "GivenNames": "Chris",
         "Party": "LP",
         "Votes": 45762,
-        "Swing": -1.71
+        "Swing": -1.71,
+        "PartyId": 180
       }
     }
   },
@@ -10481,14 +10538,16 @@
         "GivenNames": "Greg",
         "Party": "LP",
         "Votes": 53943,
-        "Swing": -1.37
+        "Swing": -1.37,
+        "PartyId": 180
       },
       "Other": {
         "FamilyName": "Sinclair",
         "GivenNames": "Josh",
         "Party": "ALP",
         "Votes": 43009,
-        "Swing": 1.37
+        "Swing": 1.37,
+        "PartyId": 195
       }
     }
   },
@@ -10633,14 +10692,16 @@
         "GivenNames": "Tim",
         "Party": "ALP",
         "Votes": 63878,
-        "Swing": -0.29
+        "Swing": -0.29,
+        "PartyId": 195
       },
       "Other": {
         "FamilyName": "Mitchell",
         "GivenNames": "Anthony",
         "Party": "LP",
         "Votes": 34653,
-        "Swing": 0.29
+        "Swing": 0.29,
+        "PartyId": 180
       }
     }
   },
@@ -11299,14 +11360,16 @@
         "GivenNames": "Darren",
         "Party": "NP",
         "Votes": 64456,
-        "Swing": -1.54
+        "Swing": -1.54,
+        "PartyId": 174
       },
       "Other": {
         "FamilyName": "Holm",
         "GivenNames": "Antoinette",
         "Party": "ALP",
         "Votes": 32222,
-        "Swing": 1.54
+        "Swing": 1.54,
+        "PartyId": 195
       }
     }
   },
@@ -11433,14 +11496,16 @@
         "GivenNames": "Tim",
         "Party": "LP",
         "Votes": 57408,
-        "Swing": -4.89
+        "Swing": -4.89,
+        "PartyId": 180
       },
       "Other": {
         "FamilyName": "Pollock",
         "GivenNames": "Daniel",
         "Party": "ALP",
         "Votes": 41928,
-        "Swing": 4.89
+        "Swing": 4.89,
+        "PartyId": 195
       }
     }
   },
@@ -11561,14 +11626,16 @@
         "GivenNames": "Brendan",
         "Party": "ALP",
         "Votes": 61861,
-        "Swing": -3.13
+        "Swing": -3.13,
+        "PartyId": 195
       },
       "Other": {
         "FamilyName": "Di Noia",
         "GivenNames": "Nathan",
         "Party": "LP",
         "Votes": 32780,
-        "Swing": 3.13
+        "Swing": 3.13,
+        "PartyId": 180
       }
     }
   },
@@ -11725,14 +11792,16 @@
         "GivenNames": "Katie",
         "Party": "LP",
         "Votes": 54139,
-        "Swing": -6.09
+        "Swing": -6.09,
+        "PartyId": 180
       },
       "Other": {
         "FamilyName": "McLeod",
         "GivenNames": "Fiona",
         "Party": "ALP",
         "Votes": 46339,
-        "Swing": 6.09
+        "Swing": 6.09,
+        "PartyId": 195
       }
     }
   },
@@ -11856,14 +11925,16 @@
         "GivenNames": "Anthony",
         "Party": "ALP",
         "Votes": 55577,
-        "Swing": -1.24
+        "Swing": -1.24,
+        "PartyId": 195
       },
       "Other": {
         "FamilyName": "Van Den Broek",
         "GivenNames": "Jennifer",
         "Party": "LP",
         "Votes": 39110,
-        "Swing": 1.24
+        "Swing": 1.24,
+        "PartyId": 180
       }
     }
   },
@@ -12014,14 +12085,16 @@
         "GivenNames": "Clare",
         "Party": "ALP",
         "Votes": 53597,
-        "Swing": 1.7
+        "Swing": 1.7,
+        "PartyId": 195
       },
       "Other": {
         "FamilyName": "Hua",
         "GivenNames": "George",
         "Party": "LP",
         "Votes": 42271,
-        "Swing": -1.7
+        "Swing": -1.7,
+        "PartyId": 180
       }
     }
   },
@@ -12788,7 +12861,8 @@
         "GivenNames": "Steve",
         "Party": "LP",
         "Votes": 49070,
-        "Swing": 4.13
+        "Swing": 4.13,
+        "PartyId": 180
       }
     }
   },
@@ -12971,14 +13045,16 @@
         "GivenNames": "Mark",
         "Party": "ALP",
         "Votes": 54645,
-        "Swing": 3.45
+        "Swing": 3.45,
+        "PartyId": 195
       },
       "Other": {
         "FamilyName": "Hearn",
         "GivenNames": "Jeremy",
         "Party": "LP",
         "Votes": 42192,
-        "Swing": -3.45
+        "Swing": -3.45,
+        "PartyId": 180
       }
     }
   },
@@ -13116,14 +13192,16 @@
         "GivenNames": "Kate",
         "Party": "ALP",
         "Votes": 55304,
-        "Swing": 0.97
+        "Swing": 0.97,
+        "PartyId": 195
       },
       "Other": {
         "FamilyName": "Welch",
         "GivenNames": "Richard",
         "Party": "LP",
         "Votes": 42463,
-        "Swing": -0.97
+        "Swing": -0.97,
+        "PartyId": 180
       }
     }
   },
@@ -13262,14 +13340,16 @@
         "GivenNames": "Josh",
         "Party": "LP",
         "Votes": 55159,
-        "Swing": 55.7
+        "Swing": 55.7,
+        "PartyId": 180
       },
       "Other": {
         "FamilyName": "Burnside",
         "GivenNames": "Julian",
         "Party": "GVIC",
         "Votes": 43870,
-        "Swing": 44.3
+        "Swing": 44.3,
+        "PartyId": 1424
       }
     }
   },
@@ -13358,14 +13438,16 @@
         "GivenNames": "Jason",
         "Party": "LP",
         "Votes": 53776,
-        "Swing": 1.27
+        "Swing": 1.27,
+        "PartyId": 180
       },
       "Other": {
         "FamilyName": "Curtis",
         "GivenNames": "Simon",
         "Party": "ALP",
         "Votes": 44913,
-        "Swing": -1.27
+        "Swing": -1.27,
+        "PartyId": 195
       }
     }
   },
@@ -13474,14 +13556,16 @@
         "GivenNames": "Joanne",
         "Party": "ALP",
         "Votes": 58341,
-        "Swing": -1.78
+        "Swing": -1.78,
+        "PartyId": 195
       },
       "Other": {
         "FamilyName": "Murphy",
         "GivenNames": "Gayle",
         "Party": "LP",
         "Votes": 35137,
-        "Swing": 1.78
+        "Swing": 1.78,
+        "PartyId": 180
       }
     }
   },
@@ -14639,14 +14723,16 @@
         "GivenNames": "Anne",
         "Party": "NP",
         "Votes": 62143,
-        "Swing": -3.57
+        "Swing": -3.57,
+        "PartyId": 174
       },
       "Other": {
         "FamilyName": "Hart",
         "GivenNames": "Carole",
         "Party": "ALP",
         "Votes": 31684,
-        "Swing": 3.57
+        "Swing": 3.57,
+        "PartyId": 195
       }
     }
   },
@@ -14812,14 +14898,16 @@
         "GivenNames": "Bill",
         "Party": "ALP",
         "Votes": 61767,
-        "Swing": 0.8
+        "Swing": 0.8,
+        "PartyId": 195
       },
       "Other": {
         "FamilyName": "Stow",
         "GivenNames": "Christine",
         "Party": "LP",
         "Votes": 39157,
-        "Swing": -0.8
+        "Swing": -0.8,
+        "PartyId": 180
       }
     }
   },
@@ -15127,14 +15215,16 @@
         "GivenNames": "Rob",
         "Party": "ALP",
         "Votes": 52892,
-        "Swing": -0.98
+        "Swing": -0.98,
+        "PartyId": 195
       },
       "Other": {
         "FamilyName": "Fusco",
         "GivenNames": "Phillip",
         "Party": "LP",
         "Votes": 43236,
-        "Swing": 0.98
+        "Swing": 0.98,
+        "PartyId": 180
       }
     }
   },
@@ -15388,14 +15478,16 @@
         "GivenNames": "Adam",
         "Party": "GVIC",
         "Votes": 66852,
-        "Swing": 2.79
+        "Swing": 2.79,
+        "PartyId": 1424
       },
       "Other": {
         "FamilyName": "Sherson",
         "GivenNames": "Lauren",
         "Party": "LP",
         "Votes": 26212,
-        "Swing": -2.79
+        "Swing": -2.79,
+        "PartyId": 180
       }
     }
   },
@@ -15582,14 +15674,16 @@
         "GivenNames": "Kevin",
         "Party": "LP",
         "Votes": 56568,
-        "Swing": -0.28
+        "Swing": -0.28,
+        "PartyId": 180
       },
       "Other": {
         "FamilyName": "Yee",
         "GivenNames": "Stella",
         "Party": "ALP",
         "Votes": 41758,
-        "Swing": 0.28
+        "Swing": 0.28,
+        "PartyId": 195
       }
     }
   },
@@ -15732,14 +15826,16 @@
         "GivenNames": "Andrew",
         "Party": "ALP",
         "Votes": 65787,
-        "Swing": 2.08
+        "Swing": 2.08,
+        "PartyId": 195
       },
       "Other": {
         "FamilyName": "Singh",
         "GivenNames": "Gurpal",
         "Party": "LP",
         "Votes": 26022,
-        "Swing": -2.08
+        "Swing": -2.08,
+        "PartyId": 180
       }
     }
   },
@@ -16643,14 +16739,16 @@
         "GivenNames": "Dan",
         "Party": "LP",
         "Votes": 62733,
-        "Swing": 1.23
+        "Swing": 1.23,
+        "PartyId": 180
       },
       "Other": {
         "FamilyName": "Billi",
         "GivenNames": "Maurice",
         "Party": "ALP",
         "Votes": 41156,
-        "Swing": -1.23
+        "Swing": -1.23,
+        "PartyId": 195
       }
     }
   },
@@ -16777,14 +16875,16 @@
         "GivenNames": "Peter",
         "Party": "ALP",
         "Votes": 55898,
-        "Swing": 3.24
+        "Swing": 3.24,
+        "PartyId": 195
       },
       "Other": {
         "FamilyName": "Pulford",
         "GivenNames": "Adam",
         "Party": "GVIC",
         "Votes": 40192,
-        "Swing": -3.24
+        "Swing": -3.24,
+        "PartyId": 1424
       }
     }
   },
@@ -16890,14 +16990,16 @@
         "GivenNames": "Ged",
         "Party": "ALP",
         "Votes": 63017,
-        "Swing": 13.38
+        "Swing": 13.38,
+        "PartyId": 195
       },
       "Other": {
         "FamilyName": "Risstrom",
         "GivenNames": "David",
         "Party": "GVIC",
         "Votes": 34464,
-        "Swing": -13.38
+        "Swing": -13.38,
+        "PartyId": 1424
       }
     }
   },
@@ -17003,14 +17105,16 @@
         "GivenNames": "Daniel",
         "Party": "ALP",
         "Votes": 59403,
-        "Swing": -5.61
+        "Swing": -5.61,
+        "PartyId": 195
       },
       "Other": {
         "FamilyName": "Bain",
         "GivenNames": "Peter",
         "Party": "LP",
         "Votes": 33156,
-        "Swing": 5.61
+        "Swing": 5.61,
+        "PartyId": 180
       }
     }
   },
@@ -17150,14 +17254,16 @@
         "GivenNames": "Josh",
         "Party": "ALP",
         "Votes": 54613,
-        "Swing": 5.04
+        "Swing": 5.04,
+        "PartyId": 195
       },
       "Other": {
         "FamilyName": "Ashmor",
         "GivenNames": "Kate",
         "Party": "LP",
         "Votes": 42479,
-        "Swing": -5.04
+        "Swing": -5.04,
+        "PartyId": 180
       }
     }
   },
@@ -17674,14 +17780,16 @@
         "GivenNames": "Russell",
         "Party": "LP",
         "Votes": 57631,
-        "Swing": -0.15
+        "Swing": -0.15,
+        "PartyId": 180
       },
       "Other": {
         "FamilyName": "O'Donnell",
         "GivenNames": "Jessica",
         "Party": "ALP",
         "Votes": 42850,
-        "Swing": 0.15
+        "Swing": 0.15,
+        "PartyId": 195
       }
     }
   },
@@ -18230,14 +18338,16 @@
         "GivenNames": "Damian",
         "Party": "NP",
         "Votes": 66732,
-        "Swing": -2.49
+        "Swing": -2.49,
+        "PartyId": 174
       },
       "Other": {
         "FamilyName": "Lodwick",
         "GivenNames": "Bill",
         "Party": "ALP",
         "Votes": 28560,
-        "Swing": 2.49
+        "Swing": 2.49,
+        "PartyId": 195
       }
     }
   },
@@ -18502,14 +18612,16 @@
         "GivenNames": "Shayne Kenneth",
         "Party": "ALP",
         "Votes": 49123,
-        "Swing": -6.93
+        "Swing": -6.93,
+        "PartyId": 196
       },
       "Other": {
         "FamilyName": "Shearman",
         "GivenNames": "Robert",
         "Party": "LNP",
         "Votes": 46802,
-        "Swing": 6.93
+        "Swing": 6.93,
+        "PartyId": 1323
       }
     }
   },
@@ -18673,14 +18785,16 @@
         "GivenNames": "Ross",
         "Party": "LNP",
         "Votes": 54072,
-        "Swing": 4.02
+        "Swing": 4.02,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "Briskey",
         "GivenNames": "Jo",
         "Party": "ALP",
         "Votes": 40115,
-        "Swing": -4.02
+        "Swing": -4.02,
+        "PartyId": 196
       }
     }
   },
@@ -18851,14 +18965,16 @@
         "GivenNames": "Andrew",
         "Party": "LNP",
         "Votes": 59237,
-        "Swing": 3.17
+        "Swing": 3.17,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "Baster",
         "GivenNames": "Tom",
         "Party": "ALP",
         "Votes": 39102,
-        "Swing": -3.17
+        "Swing": -3.17,
+        "PartyId": 196
       }
     }
   },
@@ -19098,14 +19214,16 @@
         "GivenNames": "Trevor",
         "Party": "LNP",
         "Votes": 55995,
-        "Swing": -1.08
+        "Swing": -1.08,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "Newbury",
         "GivenNames": "Paul",
         "Party": "ALP",
         "Votes": 45962,
-        "Swing": 1.08
+        "Swing": 1.08,
+        "PartyId": 196
       }
     }
   },
@@ -19579,14 +19697,16 @@
         "GivenNames": "Michelle",
         "Party": "LNP",
         "Votes": 55475,
-        "Swing": 11.72
+        "Swing": 11.72,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "Robertson",
         "GivenNames": "Russell",
         "Party": "ALP",
         "Votes": 33492,
-        "Swing": -11.72
+        "Swing": -11.72,
+        "PartyId": 196
       }
     }
   },
@@ -19924,14 +20044,16 @@
         "GivenNames": "George",
         "Party": "LNP",
         "Votes": 57405,
-        "Swing": 11.24
+        "Swing": 11.24,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "Hassan",
         "GivenNames": "Belinda",
         "Party": "ALP",
         "Votes": 31446,
-        "Swing": -11.24
+        "Swing": -11.24,
+        "PartyId": 196
       }
     }
   },
@@ -20092,14 +20214,16 @@
         "GivenNames": "Peter",
         "Party": "LNP",
         "Votes": 52968,
-        "Swing": 2.95
+        "Swing": 2.95,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "France",
         "GivenNames": "Ali",
         "Party": "ALP",
         "Votes": 43980,
-        "Swing": -2.95
+        "Swing": -2.95,
+        "PartyId": 196
       }
     }
   },
@@ -20227,14 +20351,16 @@
         "GivenNames": "Stuart",
         "Party": "LNP",
         "Votes": 62387,
-        "Swing": 2.94
+        "Swing": 2.94,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "Stanton",
         "GivenNames": "Luz",
         "Party": "ALP",
         "Votes": 34825,
-        "Swing": -2.94
+        "Swing": -2.94,
+        "PartyId": 196
       }
     }
   },
@@ -20402,14 +20528,16 @@
         "GivenNames": "Ted",
         "Party": "LNP",
         "Votes": 61944,
-        "Swing": 2.57
+        "Swing": 2.57,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "McGlone",
         "GivenNames": "Julie",
         "Party": "ALP",
         "Votes": 35696,
-        "Swing": -2.57
+        "Swing": -2.57,
+        "PartyId": 196
       }
     }
   },
@@ -20628,14 +20756,16 @@
         "GivenNames": "Andrew",
         "Party": "LNP",
         "Votes": 62100,
-        "Swing": 3.55
+        "Swing": 3.55,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "Parsell",
         "GivenNames": "Daniel",
         "Party": "ALP",
         "Votes": 36948,
-        "Swing": -3.55
+        "Swing": -3.55,
+        "PartyId": 196
       }
     }
   },
@@ -21292,14 +21422,16 @@
         "GivenNames": "Ken",
         "Party": "LNP",
         "Votes": 52472,
-        "Swing": 7.62
+        "Swing": 7.62,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "Beers",
         "GivenNames": "Zac",
         "Party": "ALP",
         "Votes": 36985,
-        "Swing": -7.62
+        "Swing": -7.62,
+        "PartyId": 196
       }
     }
   },
@@ -21478,14 +21610,16 @@
         "GivenNames": "Bert",
         "Party": "LNP",
         "Votes": 53635,
-        "Swing": 7.97
+        "Swing": 7.97,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "Hardman",
         "GivenNames": "Des",
         "Party": "ALP",
         "Votes": 37899,
-        "Swing": -7.97
+        "Swing": -7.97,
+        "PartyId": 196
       }
     }
   },
@@ -21670,14 +21804,16 @@
         "GivenNames": "Terri",
         "Party": "ALP",
         "Votes": 52659,
-        "Swing": 1.43
+        "Swing": 1.43,
+        "PartyId": 196
       },
       "Other": {
         "FamilyName": "Roberts",
         "GivenNames": "Olivia",
         "Party": "LNP",
         "Votes": 46958,
-        "Swing": -1.43
+        "Swing": -1.43,
+        "PartyId": 1323
       }
     }
   },
@@ -21967,14 +22103,16 @@
         "GivenNames": "John",
         "Party": "LNP",
         "Votes": 67274,
-        "Swing": 5.17
+        "Swing": 5.17,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "Kay",
         "GivenNames": "Troy",
         "Party": "ALP",
         "Votes": 28174,
-        "Swing": -5.17
+        "Swing": -5.17,
+        "PartyId": 196
       }
     }
   },
@@ -22221,14 +22359,16 @@
         "GivenNames": "Phillip",
         "Party": "LNP",
         "Votes": 53641,
-        "Swing": 8.38
+        "Swing": 8.38,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "O'Toole",
         "GivenNames": "Cathy",
         "Party": "ALP",
         "Votes": 38276,
-        "Swing": -8.38
+        "Swing": -8.38,
+        "PartyId": 196
       }
     }
   },
@@ -22416,14 +22556,16 @@
         "GivenNames": "Keith",
         "Party": "LNP",
         "Votes": 59384,
-        "Swing": 6.12
+        "Swing": 6.12,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "Pascoe",
         "GivenNames": "Richard",
         "Party": "ALP",
         "Votes": 32683,
-        "Swing": -6.12
+        "Swing": -6.12,
+        "PartyId": 196
       }
     }
   },
@@ -23093,14 +23235,16 @@
         "GivenNames": "Bob",
         "Party": "KAP",
         "Votes": 58231,
-        "Swing": 2.33
+        "Swing": 2.33,
+        "PartyId": 1346
       },
       "Other": {
         "FamilyName": "Beveridge",
         "GivenNames": "Frank",
         "Party": "LNP",
         "Votes": 33717,
-        "Swing": -2.33
+        "Swing": -2.33,
+        "PartyId": 1323
       }
     }
   },
@@ -23424,14 +23568,16 @@
         "GivenNames": "Warren",
         "Party": "LNP",
         "Votes": 48638,
-        "Swing": 0.22
+        "Swing": 0.22,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "Faith",
         "GivenNames": "Elida",
         "Party": "ALP",
         "Votes": 41147,
-        "Swing": -0.22
+        "Swing": -0.22,
+        "PartyId": 196
       }
     }
   },
@@ -23652,14 +23798,16 @@
         "GivenNames": "Anika",
         "Party": "ALP",
         "Votes": 48917,
-        "Swing": -5.04
+        "Swing": -5.04,
+        "PartyId": 196
       },
       "Other": {
         "FamilyName": "Carswell",
         "GivenNames": "Brad",
         "Party": "LNP",
         "Votes": 47688,
-        "Swing": 5.04
+        "Swing": 5.04,
+        "PartyId": 1323
       }
     }
   },
@@ -23828,14 +23976,16 @@
         "GivenNames": "Terry",
         "Party": "LNP",
         "Votes": 53037,
-        "Swing": 4.07
+        "Swing": 4.07,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "Lamb",
         "GivenNames": "Susan",
         "Party": "ALP",
         "Votes": 46512,
-        "Swing": -4.07
+        "Swing": -4.07,
+        "PartyId": 196
       }
     }
   },
@@ -24999,14 +25149,16 @@
         "GivenNames": "David",
         "Party": "LNP",
         "Votes": 67239,
-        "Swing": 6.63
+        "Swing": 6.63,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "Moulden",
         "GivenNames": "Rosemary",
         "Party": "ON",
         "Votes": 25521,
-        "Swing": -6.63
+        "Swing": -6.63,
+        "PartyId": 1133
       }
     }
   },
@@ -25149,14 +25301,16 @@
         "GivenNames": "Karen",
         "Party": "LNP",
         "Votes": 57545,
-        "Swing": 0.56
+        "Swing": 0.56,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "Santelises",
         "GivenNames": "Aaron",
         "Party": "ALP",
         "Votes": 34976,
-        "Swing": -0.56
+        "Swing": -0.56,
+        "PartyId": 196
       }
     }
   },
@@ -25271,14 +25425,16 @@
         "GivenNames": "Angie",
         "Party": "LNP",
         "Votes": 60079,
-        "Swing": 0.75
+        "Swing": 0.75,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "Bell",
         "GivenNames": "Tracey",
         "Party": "ALP",
         "Votes": 31840,
-        "Swing": -0.75
+        "Swing": -0.75,
+        "PartyId": 196
       }
     }
   },
@@ -25468,14 +25624,16 @@
         "GivenNames": "Graham",
         "Party": "ALP",
         "Votes": 47045,
-        "Swing": -2.12
+        "Swing": -2.12,
+        "PartyId": 196
       },
       "Other": {
         "FamilyName": "Owen",
         "GivenNames": "Angela",
         "Party": "LNP",
         "Votes": 43597,
-        "Swing": 2.12
+        "Swing": 2.12,
+        "PartyId": 1323
       }
     }
   },
@@ -25622,14 +25780,16 @@
         "GivenNames": "Milton",
         "Party": "ALP",
         "Votes": 51050,
-        "Swing": -2.62
+        "Swing": -2.62,
+        "PartyId": 196
       },
       "Other": {
         "FamilyName": "Bauer",
         "GivenNames": "Russell",
         "Party": "LNP",
         "Votes": 39473,
-        "Swing": 2.62
+        "Swing": 2.62,
+        "PartyId": 1323
       }
     }
   },
@@ -25823,14 +25983,16 @@
         "GivenNames": "Luke",
         "Party": "LNP",
         "Votes": 59331,
-        "Swing": 6.75
+        "Swing": 6.75,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "Mulholland",
         "GivenNames": "Corinne",
         "Party": "ALP",
         "Votes": 42266,
-        "Swing": -6.75
+        "Swing": -6.75,
+        "PartyId": 196
       }
     }
   },
@@ -25958,14 +26120,16 @@
         "GivenNames": "Jim",
         "Party": "ALP",
         "Votes": 47893,
-        "Swing": -4.86
+        "Swing": -4.86,
+        "PartyId": 196
       },
       "Other": {
         "FamilyName": "Pattison",
         "GivenNames": "Clinton",
         "Party": "LNP",
         "Votes": 36971,
-        "Swing": 4.86
+        "Swing": 4.86,
+        "PartyId": 1323
       }
     }
   },
@@ -26148,14 +26312,16 @@
         "GivenNames": "Julian",
         "Party": "LNP",
         "Votes": 54023,
-        "Swing": -2.95
+        "Swing": -2.95,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "Cossar",
         "GivenNames": "Peter",
         "Party": "ALP",
         "Votes": 42403,
-        "Swing": 2.95
+        "Swing": 2.95,
+        "PartyId": 196
       }
     }
   },
@@ -26244,14 +26410,16 @@
         "GivenNames": "Llew",
         "Party": "LNP",
         "Votes": 59279,
-        "Swing": 4.96
+        "Swing": 4.96,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "Scanes",
         "GivenNames": "Jason",
         "Party": "ALP",
         "Votes": 34593,
-        "Swing": -4.96
+        "Swing": -4.96,
+        "PartyId": 196
       }
     }
   },
@@ -26661,14 +26829,16 @@
         "GivenNames": "Scott",
         "Party": "LNP",
         "Votes": 62571,
-        "Swing": 4.96
+        "Swing": 4.96,
+        "PartyId": 1323
       },
       "Other": {
         "FamilyName": "McCreadie",
         "GivenNames": "Pam",
         "Party": "ALP",
         "Votes": 34322,
-        "Swing": -4.96
+        "Swing": -4.96,
+        "PartyId": 196
       }
     }
   },
@@ -27683,14 +27853,16 @@
         "GivenNames": "Warren",
         "Party": "ALP",
         "Votes": 26863,
-        "Swing": -2.73
+        "Swing": -2.73,
+        "PartyId": 229
       },
       "Other": {
         "FamilyName": "Price",
         "GivenNames": "Jacinta",
         "Party": "CLP",
         "Votes": 21571,
-        "Swing": 2.73
+        "Swing": 2.73,
+        "PartyId": 26
       }
     }
   },
@@ -27870,14 +28042,16 @@
         "GivenNames": "Luke John",
         "Party": "ALP",
         "Votes": 29240,
-        "Swing": -3.01
+        "Swing": -3.01,
+        "PartyId": 229
       },
       "Other": {
         "FamilyName": "Ganley",
         "GivenNames": "Kathy",
         "Party": "CLP",
         "Votes": 25844,
-        "Swing": 3.01
+        "Swing": 3.01,
+        "PartyId": 26
       }
     }
   },
@@ -28018,14 +28192,16 @@
         "GivenNames": "David",
         "Party": "LP",
         "Votes": 51609,
-        "Swing": 4.82
+        "Swing": 4.82,
+        "PartyId": 188
       },
       "Other": {
         "FamilyName": "Gambian",
         "GivenNames": "Chris",
         "Party": "ALP",
         "Votes": 40121,
-        "Swing": -4.82
+        "Swing": -4.82,
+        "PartyId": 194
       }
     }
   },
@@ -28250,14 +28426,16 @@
         "GivenNames": "Linda",
         "Party": "ALP",
         "Votes": 53418,
-        "Swing": 1.11
+        "Swing": 1.11,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Shrestha",
         "GivenNames": "Pramej",
         "Party": "LP",
         "Votes": 36489,
-        "Swing": -1.11
+        "Swing": -1.11,
+        "PartyId": 188
       }
     }
   },
@@ -28391,14 +28569,16 @@
         "GivenNames": "John",
         "Party": "LP",
         "Votes": 54809,
-        "Swing": -2.81
+        "Swing": -2.81,
+        "PartyId": 188
       },
       "Other": {
         "FamilyName": "Owler",
         "GivenNames": "Brian",
         "Party": "ALP",
         "Votes": 41496,
-        "Swing": 2.81
+        "Swing": 2.81,
+        "PartyId": 194
       }
     }
   },
@@ -28603,14 +28783,16 @@
         "GivenNames": "Julian",
         "Party": "LP",
         "Votes": 61675,
-        "Swing": -0.8
+        "Swing": -0.8,
+        "PartyId": 188
       },
       "Other": {
         "FamilyName": "Gompertz",
         "GivenNames": "Katie",
         "Party": "ALP",
         "Votes": 32272,
-        "Swing": 0.8
+        "Swing": 0.8,
+        "PartyId": 194
       }
     }
   },
@@ -28756,14 +28938,16 @@
         "GivenNames": "Jason",
         "Party": "ALP",
         "Votes": 52299,
-        "Swing": -4.76
+        "Swing": -4.76,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Guney",
         "GivenNames": "Oz",
         "Party": "LP",
         "Votes": 28509,
-        "Swing": 4.76
+        "Swing": 4.76,
+        "PartyId": 188
       }
     }
   },
@@ -28905,14 +29089,16 @@
         "GivenNames": "Paul",
         "Party": "LP",
         "Votes": 63997,
-        "Swing": -4.48
+        "Swing": -4.48,
+        "PartyId": 188
       },
       "Other": {
         "FamilyName": "Haviland",
         "GivenNames": "Chris",
         "Party": "ALP",
         "Votes": 32146,
-        "Swing": 4.48
+        "Swing": 4.48,
+        "PartyId": 194
       }
     }
   },
@@ -29595,14 +29781,16 @@
         "GivenNames": "Andrew",
         "Party": "NP",
         "Votes": 66006,
-        "Swing": 1.48
+        "Swing": 1.48,
+        "PartyId": 172
       },
       "Other": {
         "FamilyName": "Jennings",
         "GivenNames": "Jess",
         "Party": "ALP",
         "Votes": 38282,
-        "Swing": -1.48
+        "Swing": -1.48,
+        "PartyId": 194
       }
     }
   },
@@ -29738,14 +29926,16 @@
         "GivenNames": "Ed",
         "Party": "ALP",
         "Votes": 56761,
-        "Swing": -6.82
+        "Swing": -6.82,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Chettipally",
         "GivenNames": "Livingston",
         "Party": "LP",
         "Votes": 34245,
-        "Swing": 6.82
+        "Swing": 6.82,
+        "PartyId": 188
       }
     }
   },
@@ -29924,14 +30114,16 @@
         "GivenNames": "Scott",
         "Party": "LP",
         "Votes": 64894,
-        "Swing": 3.63
+        "Swing": 3.63,
+        "PartyId": 188
       },
       "Other": {
         "FamilyName": "O'Brien",
         "GivenNames": "Simon",
         "Party": "ALP",
         "Votes": 29129,
-        "Swing": -3.63
+        "Swing": -3.63,
+        "PartyId": 194
       }
     }
   },
@@ -30262,7 +30454,8 @@
         "GivenNames": "Pat",
         "Party": "NP",
         "Votes": 59932,
-        "Swing": 2.23
+        "Swing": 2.23,
+        "PartyId": 172
       },
       "Other": {
         "FamilyName": "Oakeshott",
@@ -30458,14 +30651,16 @@
         "GivenNames": "Sharon",
         "Party": "ALP",
         "Votes": 63836,
-        "Swing": 0.09
+        "Swing": 0.09,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Atlee",
         "GivenNames": "Chris",
         "Party": "LP",
         "Votes": 36841,
-        "Swing": -0.09
+        "Swing": -0.09,
+        "PartyId": 188
       }
     }
   },
@@ -30629,14 +30824,16 @@
         "GivenNames": "Emma",
         "Party": "ALP",
         "Votes": 52244,
-        "Swing": -3.31
+        "Swing": -3.31,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Pilon",
         "GivenNames": "Jilly",
         "Party": "LP",
         "Votes": 49209,
-        "Swing": 3.31
+        "Swing": 3.31,
+        "PartyId": 188
       }
     }
   },
@@ -31369,14 +31566,16 @@
         "GivenNames": "Mike",
         "Party": "ALP",
         "Votes": 50472,
-        "Swing": -2.08
+        "Swing": -2.08,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Kotvojs",
         "GivenNames": "Fiona",
         "Party": "LP",
         "Votes": 48787,
-        "Swing": 2.08
+        "Swing": 2.08,
+        "PartyId": 188
       }
     }
   },
@@ -31899,7 +32098,8 @@
         "GivenNames": "Sussan",
         "Party": "LP",
         "Votes": 59260,
-        "Swing": 60.94
+        "Swing": 60.94,
+        "PartyId": 188
       },
       "Other": {
         "FamilyName": "Mack",
@@ -32006,14 +32206,16 @@
         "GivenNames": "Chris",
         "Party": "ALP",
         "Votes": 53540,
-        "Swing": -3.5
+        "Swing": -3.5,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Blewitt",
         "GivenNames": "Wayne",
         "Party": "LP",
         "Votes": 30124,
-        "Swing": 3.5
+        "Swing": 3.5,
+        "PartyId": 188
       }
     }
   },
@@ -32351,14 +32553,16 @@
         "GivenNames": "Fiona",
         "Party": "ALP",
         "Votes": 56652,
-        "Swing": 3.34
+        "Swing": 3.34,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Mundine",
         "GivenNames": "Warren",
         "Party": "LP",
         "Votes": 51025,
-        "Swing": -3.34
+        "Swing": -3.34,
+        "PartyId": 188
       }
     }
   },
@@ -32541,14 +32745,16 @@
         "GivenNames": "Anthony",
         "Party": "ALP",
         "Votes": 63529,
-        "Swing": 0.48
+        "Swing": 0.48,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Casey",
         "GivenNames": "Jim",
         "Party": "GRN",
         "Votes": 32285,
-        "Swing": -0.48
+        "Swing": -0.48,
+        "PartyId": 1058
       }
     }
   },
@@ -32673,14 +32879,16 @@
         "GivenNames": "Michelle",
         "Party": "ALP",
         "Votes": 50425,
-        "Swing": -3.51
+        "Swing": -3.51,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Green",
         "GivenNames": "Allan",
         "Party": "LP",
         "Votes": 45082,
-        "Swing": 3.51
+        "Swing": 3.51,
+        "PartyId": 188
       }
     }
   },
@@ -32847,14 +33055,16 @@
         "GivenNames": "Craig",
         "Party": "LP",
         "Votes": 57149,
-        "Swing": 0.52
+        "Swing": 0.52,
+        "PartyId": 188
       },
       "Other": {
         "FamilyName": "Steinwall",
         "GivenNames": "Diedree",
         "Party": "ALP",
         "Votes": 38342,
-        "Swing": -0.52
+        "Swing": -0.52,
+        "PartyId": 194
       }
     }
   },
@@ -33291,14 +33501,16 @@
         "GivenNames": "Angus",
         "Party": "LP",
         "Votes": 64527,
-        "Swing": 2.81
+        "Swing": 2.81,
+        "PartyId": 188
       },
       "Other": {
         "FamilyName": "Champion",
         "GivenNames": "Aoife",
         "Party": "ALP",
         "Votes": 37915,
-        "Swing": -2.81
+        "Swing": -2.81,
+        "PartyId": 194
       }
     }
   },
@@ -33730,14 +33942,16 @@
         "GivenNames": "Joel",
         "Party": "ALP",
         "Votes": 54050,
-        "Swing": -9.48
+        "Swing": -9.48,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Angus",
         "GivenNames": "Josh",
         "Party": "NP",
         "Votes": 47976,
-        "Swing": 9.48
+        "Swing": 9.48,
+        "PartyId": 172
       }
     }
   },
@@ -33805,14 +34019,16 @@
         "GivenNames": "Matt",
         "Party": "ALP",
         "Votes": 55501,
-        "Swing": 0.24
+        "Swing": 0.24,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Wilmot",
         "GivenNames": "Amanda",
         "Party": "LP",
         "Votes": 38875,
-        "Swing": -0.24
+        "Swing": -0.24,
+        "PartyId": 188
       }
     }
   },
@@ -33962,14 +34178,16 @@
         "GivenNames": "Melissa",
         "Party": "LP",
         "Votes": 53614,
-        "Swing": 6.15
+        "Swing": 6.15,
+        "PartyId": 188
       },
       "Other": {
         "FamilyName": "Beamer",
         "GivenNames": "Diane",
         "Party": "ALP",
         "Votes": 43789,
-        "Swing": -6.15
+        "Swing": -6.15,
+        "PartyId": 194
       }
     }
   },
@@ -34493,14 +34711,16 @@
         "GivenNames": "David",
         "Party": "NP",
         "Votes": 65942,
-        "Swing": 3.54
+        "Swing": 3.54,
+        "PartyId": 172
       },
       "Other": {
         "FamilyName": "Costa",
         "GivenNames": "Phil",
         "Party": "ALP",
         "Votes": 35238,
-        "Swing": -3.54
+        "Swing": -3.54,
+        "PartyId": 194
       }
     }
   },
@@ -34692,14 +34912,16 @@
         "GivenNames": "Mike",
         "Party": "ALP",
         "Votes": 58110,
-        "Swing": 0.07
+        "Swing": 0.07,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Munro",
         "GivenNames": "Riley",
         "Party": "LP",
         "Votes": 41394,
-        "Swing": -0.07
+        "Swing": -0.07,
+        "PartyId": 188
       }
     }
   },
@@ -34873,14 +35095,16 @@
         "GivenNames": "Jason",
         "Party": "LP",
         "Votes": 62124,
-        "Swing": -2.52
+        "Swing": -2.52,
+        "PartyId": 188
       },
       "Other": {
         "FamilyName": "Steele",
         "GivenNames": "Declan",
         "Party": "ALP",
         "Votes": 36138,
-        "Swing": 2.52
+        "Swing": 2.52,
+        "PartyId": 194
       }
     }
   },
@@ -35223,14 +35447,16 @@
         "GivenNames": "Susan",
         "Party": "ALP",
         "Votes": 48661,
-        "Swing": -2.0
+        "Swing": -2.0,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Richards",
         "GivenNames": "Sarah",
         "Party": "LP",
         "Votes": 48290,
-        "Swing": 2.0
+        "Swing": 2.0,
+        "PartyId": 188
       }
     }
   },
@@ -35379,14 +35605,16 @@
         "GivenNames": "Chris",
         "Party": "ALP",
         "Votes": 48364,
-        "Swing": -5.47
+        "Swing": -5.47,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Singha",
         "GivenNames": "Vivek",
         "Party": "LP",
         "Votes": 37029,
-        "Swing": 5.47
+        "Swing": 5.47,
+        "PartyId": 188
       }
     }
   },
@@ -35517,14 +35745,16 @@
         "GivenNames": "Alex",
         "Party": "LP",
         "Votes": 67698,
-        "Swing": 0.81
+        "Swing": 0.81,
+        "PartyId": 188
       },
       "Other": {
         "FamilyName": "Selvaraj",
         "GivenNames": "Immanuel",
         "Party": "ALP",
         "Votes": 30938,
-        "Swing": -0.81
+        "Swing": -0.81,
+        "PartyId": 194
       }
     }
   },
@@ -35634,7 +35864,8 @@
         "GivenNames": "Barnaby",
         "Party": "NP",
         "Votes": 62637,
-        "Swing": 64.36
+        "Swing": 64.36,
+        "PartyId": 172
       },
       "Other": {
         "FamilyName": "Blakester",
@@ -35861,14 +36092,16 @@
         "GivenNames": "Sharon",
         "Party": "ALP",
         "Votes": 65784,
-        "Swing": -0.01
+        "Swing": -0.01,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Wark",
         "GivenNames": "Katrina",
         "Party": "LP",
         "Votes": 37283,
-        "Swing": 0.01
+        "Swing": 0.01,
+        "PartyId": 188
       }
     }
   },
@@ -35964,14 +36197,16 @@
         "GivenNames": "Trent",
         "Party": "LP",
         "Votes": 57398,
-        "Swing": -4.34
+        "Swing": -4.34,
+        "PartyId": 188
       },
       "Other": {
         "FamilyName": "Stone",
         "GivenNames": "Brett",
         "Party": "ALP",
         "Votes": 39438,
-        "Swing": 4.34
+        "Swing": 4.34,
+        "PartyId": 194
       }
     }
   },
@@ -36561,14 +36796,16 @@
         "GivenNames": "Kevin",
         "Party": "NP",
         "Votes": 64295,
-        "Swing": 7.15
+        "Swing": 7.15,
+        "PartyId": 172
       },
       "Other": {
         "FamilyName": "Deegan",
         "GivenNames": "Patrick",
         "Party": "ALP",
         "Votes": 43856,
-        "Swing": -7.15
+        "Swing": -7.15,
+        "PartyId": 194
       }
     }
   },
@@ -37252,14 +37489,16 @@
         "GivenNames": "Mark",
         "Party": "NP",
         "Votes": 62859,
-        "Swing": 1.81
+        "Swing": 1.81,
+        "PartyId": 172
       },
       "Other": {
         "FamilyName": "Ayoub",
         "GivenNames": "Jack",
         "Party": "ALP",
         "Votes": 31093,
-        "Swing": -1.81
+        "Swing": -1.81,
+        "PartyId": 194
       }
     }
   },
@@ -37465,14 +37704,16 @@
         "GivenNames": "Julie",
         "Party": "ALP",
         "Votes": 45302,
-        "Swing": -4.17
+        "Swing": -4.17,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Camenzuli",
         "GivenNames": "Charles",
         "Party": "LP",
         "Votes": 39368,
-        "Swing": 4.17
+        "Swing": 4.17,
+        "PartyId": 188
       }
     }
   },
@@ -37708,14 +37949,16 @@
         "GivenNames": "Meryl",
         "Party": "ALP",
         "Votes": 59348,
-        "Swing": -5.7
+        "Swing": -5.7,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Joshi",
         "GivenNames": "Sachin",
         "Party": "LP",
         "Votes": 48471,
-        "Swing": 5.7
+        "Swing": 5.7,
+        "PartyId": 188
       }
     }
   },
@@ -37915,14 +38158,16 @@
         "GivenNames": "Fiona",
         "Party": "LP",
         "Votes": 49844,
-        "Swing": -1.51
+        "Swing": -1.51,
+        "PartyId": 188
       },
       "Other": {
         "FamilyName": "Crosby",
         "GivenNames": "Sam",
         "Party": "ALP",
         "Votes": 43884,
-        "Swing": 1.51
+        "Swing": 1.51,
+        "PartyId": 194
       }
     }
   },
@@ -38242,14 +38487,16 @@
         "GivenNames": "Justine",
         "Party": "ALP",
         "Votes": 54251,
-        "Swing": 0.12
+        "Swing": 0.12,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Fraser",
         "GivenNames": "Matthew",
         "Party": "NP",
         "Votes": 46069,
-        "Swing": -0.12
+        "Swing": -0.12,
+        "PartyId": 172
       }
     }
   },
@@ -38900,14 +39147,16 @@
         "GivenNames": "Michael",
         "Party": "NP",
         "Votes": 70136,
-        "Swing": 3.04
+        "Swing": 3.04,
+        "PartyId": 172
       },
       "Other": {
         "FamilyName": "Jeffreson",
         "GivenNames": "Mark",
         "Party": "ALP",
         "Votes": 30805,
-        "Swing": -3.04
+        "Swing": -3.04,
+        "PartyId": 194
       }
     }
   },
@@ -39144,14 +39393,16 @@
         "GivenNames": "Lucy",
         "Party": "LP",
         "Votes": 52100,
-        "Swing": 3.1
+        "Swing": 3.1,
+        "PartyId": 188
       },
       "Other": {
         "FamilyName": "Charlton",
         "GivenNames": "Anne",
         "Party": "ALP",
         "Votes": 43961,
-        "Swing": -3.1
+        "Swing": -3.1,
+        "PartyId": 194
       }
     }
   },
@@ -39326,14 +39577,16 @@
         "GivenNames": "Pat",
         "Party": "ALP",
         "Votes": 54437,
-        "Swing": -5.49
+        "Swing": -5.49,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "McGill",
         "GivenNames": "Nell",
         "Party": "LP",
         "Votes": 45543,
-        "Swing": 5.49
+        "Swing": 5.49,
+        "PartyId": 188
       }
     }
   },
@@ -39529,14 +39782,16 @@
         "GivenNames": "Tanya",
         "Party": "ALP",
         "Votes": 65110,
-        "Swing": 3.36
+        "Swing": 3.36,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Munro",
         "GivenNames": "Jacqui",
         "Party": "LP",
         "Votes": 29705,
-        "Swing": -3.36
+        "Swing": -3.36,
+        "PartyId": 188
       }
     }
   },
@@ -39724,7 +39979,8 @@
         "GivenNames": "Tony",
         "Party": "LP",
         "Votes": 39395,
-        "Swing": 42.76
+        "Swing": 42.76,
+        "PartyId": 188
       }
     }
   },
@@ -39917,14 +40173,16 @@
         "GivenNames": "Tony",
         "Party": "ALP",
         "Votes": 53518,
-        "Swing": -4.06
+        "Swing": -4.06,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Zaman",
         "GivenNames": "Mohammad",
         "Party": "LP",
         "Votes": 30732,
-        "Swing": 4.06
+        "Swing": 4.06,
+        "PartyId": 188
       }
     }
   },
@@ -40140,7 +40398,8 @@
         "GivenNames": "Dave",
         "Party": "LP",
         "Votes": 46050,
-        "Swing": 51.31
+        "Swing": 51.31,
+        "PartyId": 188
       },
       "Other": {
         "FamilyName": "Phelps",
@@ -40373,14 +40632,16 @@
         "GivenNames": "Anne Maree",
         "Party": "ALP",
         "Votes": 52270,
-        "Swing": -2.73
+        "Swing": -2.73,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Miller",
         "GivenNames": "Shayne",
         "Party": "LP",
         "Votes": 41959,
-        "Swing": 2.73
+        "Swing": 2.73,
+        "PartyId": 188
       }
     }
   },
@@ -40561,14 +40822,16 @@
         "GivenNames": "Stephen",
         "Party": "ALP",
         "Votes": 62541,
-        "Swing": 60.91
+        "Swing": 60.91,
+        "PartyId": 194
       },
       "Other": {
         "FamilyName": "Wentworth",
         "GivenNames": "Stephen",
         "Party": "NP",
         "Votes": 40130,
-        "Swing": 39.09
+        "Swing": 39.09,
+        "PartyId": 172
       }
     }
   },
@@ -40718,14 +40981,16 @@
         "GivenNames": "Madeleine",
         "Party": "ALP",
         "Votes": 50333,
-        "Swing": -4.77
+        "Swing": -4.77,
+        "PartyId": 197
       },
       "Other": {
         "FamilyName": "Pleiter",
         "GivenNames": "Jack",
         "Party": "LP",
         "Votes": 38508,
-        "Swing": 4.77
+        "Swing": 4.77,
+        "PartyId": 178
       }
     }
   },
@@ -41022,14 +41287,16 @@
         "GivenNames": "Andrew",
         "Party": "LP",
         "Votes": 55947,
-        "Swing": 4.76
+        "Swing": 4.76,
+        "PartyId": 178
       },
       "Other": {
         "FamilyName": "Teede",
         "GivenNames": "Mellisa",
         "Party": "ALP",
         "Votes": 34945,
-        "Swing": -4.76
+        "Swing": -4.76,
+        "PartyId": 197
       }
     }
   },
@@ -41173,14 +41440,16 @@
         "GivenNames": "Anne",
         "Party": "ALP",
         "Votes": 43135,
-        "Swing": 0.15
+        "Swing": 0.15,
+        "PartyId": 197
       },
       "Other": {
         "FamilyName": "Stewart",
         "GivenNames": "Isaac",
         "Party": "LP",
         "Votes": 41718,
-        "Swing": -0.15
+        "Swing": -0.15,
+        "PartyId": 178
       }
     }
   },
@@ -41329,14 +41598,16 @@
         "GivenNames": "Celia",
         "Party": "LP",
         "Votes": 57296,
-        "Swing": -6.37
+        "Swing": -6.37,
+        "PartyId": 178
       },
       "Other": {
         "FamilyName": "Meecham",
         "GivenNames": "Rob",
         "Party": "ALP",
         "Votes": 31766,
-        "Swing": 6.37
+        "Swing": 6.37,
+        "PartyId": 197
       }
     }
   },
@@ -42550,14 +42821,16 @@
         "GivenNames": "Melissa",
         "Party": "LP",
         "Votes": 50332,
-        "Swing": 3.7
+        "Swing": 3.7,
+        "PartyId": 178
       },
       "Other": {
         "FamilyName": "Morrow",
         "GivenNames": "Sharyn",
         "Party": "ALP",
         "Votes": 27389,
-        "Swing": -3.7
+        "Swing": -3.7,
+        "PartyId": 197
       }
     }
   },
@@ -42962,14 +43235,16 @@
         "GivenNames": "Nola",
         "Party": "LP",
         "Votes": 58405,
-        "Swing": 2.0
+        "Swing": 2.0,
+        "PartyId": 178
       },
       "Other": {
         "FamilyName": "Sanford",
         "GivenNames": "Wayne",
         "Party": "ALP",
         "Votes": 32057,
-        "Swing": -2.0
+        "Swing": -2.0,
+        "PartyId": 197
       }
     }
   },
@@ -43171,14 +43446,16 @@
         "GivenNames": "Josh",
         "Party": "ALP",
         "Votes": 51852,
-        "Swing": -0.6
+        "Swing": -0.6,
+        "PartyId": 197
       },
       "Other": {
         "FamilyName": "Robins",
         "GivenNames": "Nicole",
         "Party": "LP",
         "Votes": 39251,
-        "Swing": 0.6
+        "Swing": 0.6,
+        "PartyId": 178
       }
     }
   },
@@ -43375,14 +43652,16 @@
         "GivenNames": "Ken",
         "Party": "LP",
         "Votes": 46637,
-        "Swing": 3.34
+        "Swing": 3.34,
+        "PartyId": 178
       },
       "Other": {
         "FamilyName": "Martin",
         "GivenNames": "James",
         "Party": "ALP",
         "Votes": 37563,
-        "Swing": -3.34
+        "Swing": -3.34,
+        "PartyId": 197
       }
     }
   },
@@ -43522,14 +43801,16 @@
         "GivenNames": "Ian",
         "Party": "LP",
         "Votes": 54735,
-        "Swing": 0.63
+        "Swing": 0.63,
+        "PartyId": 178
       },
       "Other": {
         "FamilyName": "O'Gorman",
         "GivenNames": "Tony",
         "Party": "ALP",
         "Votes": 34044,
-        "Swing": -0.63
+        "Swing": -0.63,
+        "PartyId": 197
       }
     }
   },
@@ -43612,14 +43893,16 @@
         "GivenNames": "Matt",
         "Party": "ALP",
         "Votes": 48414,
-        "Swing": -2.12
+        "Swing": -2.12,
+        "PartyId": 197
       },
       "Other": {
         "FamilyName": "Goode",
         "GivenNames": "David",
         "Party": "LP",
         "Votes": 39626,
-        "Swing": 2.12
+        "Swing": 2.12,
+        "PartyId": 178
       }
     }
   },
@@ -43666,14 +43949,16 @@
         "GivenNames": "Rick",
         "Party": "LP",
         "Votes": 55421,
-        "Swing": -0.56
+        "Swing": -0.56,
+        "PartyId": 178
       },
       "Other": {
         "FamilyName": "Payne",
         "GivenNames": "Shelley",
         "Party": "ALP",
         "Votes": 30536,
-        "Swing": 0.56
+        "Swing": 0.56,
+        "PartyId": 197
       }
     }
   },
@@ -44037,14 +44322,16 @@
         "GivenNames": "Christian",
         "Party": "LP",
         "Votes": 57478,
-        "Swing": 3.89
+        "Swing": 3.89,
+        "PartyId": 178
       },
       "Other": {
         "FamilyName": "Travers",
         "GivenNames": "Kim",
         "Party": "ALP",
         "Votes": 42445,
-        "Swing": -3.89
+        "Swing": -3.89,
+        "PartyId": 197
       }
     }
   },
@@ -44255,14 +44542,16 @@
         "GivenNames": "Patrick",
         "Party": "ALP",
         "Votes": 48176,
-        "Swing": 1.6
+        "Swing": 1.6,
+        "PartyId": 197
       },
       "Other": {
         "FamilyName": "Grayden",
         "GivenNames": "Jim",
         "Party": "LP",
         "Votes": 39530,
-        "Swing": -1.6
+        "Swing": -1.6,
+        "PartyId": 178
       }
     }
   },
@@ -44440,14 +44729,16 @@
         "GivenNames": "Vince",
         "Party": "LP",
         "Votes": 48289,
-        "Swing": -0.47
+        "Swing": -0.47,
+        "PartyId": 178
       },
       "Other": {
         "FamilyName": "Markey",
         "GivenNames": "Melita",
         "Party": "ALP",
         "Votes": 38490,
-        "Swing": 0.47
+        "Swing": 0.47,
+        "PartyId": 197
       }
     }
   },
@@ -44680,14 +44971,16 @@
         "GivenNames": "Steve",
         "Party": "LP",
         "Votes": 44333,
-        "Swing": -0.9
+        "Swing": -0.9,
+        "PartyId": 178
       },
       "Other": {
         "FamilyName": "Beazley",
         "GivenNames": "Hannah",
         "Party": "ALP",
         "Votes": 39804,
-        "Swing": 0.9
+        "Swing": 0.9,
+        "PartyId": 197
       }
     }
   },
@@ -44847,14 +45140,16 @@
         "GivenNames": "Ben",
         "Party": "LP",
         "Votes": 51275,
-        "Swing": 0.4
+        "Swing": 0.4,
+        "PartyId": 178
       },
       "Other": {
         "FamilyName": "Boswell",
         "GivenNames": "Marion",
         "Party": "ALP",
         "Votes": 32144,
-        "Swing": -0.4
+        "Swing": -0.4,
+        "PartyId": 197
       }
     }
   }

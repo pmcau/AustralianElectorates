@@ -84,6 +84,7 @@ public static class ElectoratesScraper
                         FamilyName = electedCandidateName.familyName,
                         GivenNames = electedCandidateName.givenNames,
                         Party = electedCandidate.AffiliationIdentifier?.ShortCode,
+                        PartyId = electedCandidate.AffiliationIdentifier?.Id,
                         Votes = electedCandidate.Votes.Value,
                         Swing = electedCandidate.Votes.Swing,
                     },
@@ -92,6 +93,7 @@ public static class ElectoratesScraper
                         FamilyName = otherName.familyName,
                         GivenNames = otherName.givenNames,
                         Party = other.AffiliationIdentifier?.ShortCode,
+                        PartyId = other.AffiliationIdentifier?.Id,
                         Votes = other.Votes.Value,
                         Swing = other.Votes.Swing,
                     }

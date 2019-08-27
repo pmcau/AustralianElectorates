@@ -44,17 +44,19 @@ public class DataLoaderTests :
         var set = new HashSet<string>();
         foreach (var electorate in DataLoader.Electorates)
         {
-            if (electorate.TwoCandidatePreferred != null)
+            var preferred = electorate.TwoCandidatePreferred;
+            if (preferred == null)
             {
-                if (DataLoader.Parties.All(x => x.Abbreviation != electorate.TwoCandidatePreferred.Elected.Party))
-            {
-                set.Add(electorate.TwoCandidatePreferred.Elected.Party);
+                continue;
             }
-                if (DataLoader.Parties.All(x => x.Abbreviation != electorate.TwoCandidatePreferred.Other.Party))
+            if (DataLoader.PartiesAndBranches.All(x => x.Id != preferred.Elected.PartyId))
             {
-                set.Add(electorate.TwoCandidatePreferred.Other.Party);
+                set.Add($"{preferred.Elected.Party} {preferred.Elected.PartyId}");
             }
 
+            if (DataLoader.PartiesAndBranches.All(x => x.Id != preferred.Other.PartyId))
+            {
+                set.Add($"{preferred.Other.Party} {preferred.Other.PartyId}");
             }
         }
 

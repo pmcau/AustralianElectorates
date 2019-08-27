@@ -1,7 +1,8 @@
 [
   {
-    "Abbreviation": "Sustainable Australia",
+    "Id": 1336,
     "Name": "#Sustainable Australia",
+    "Code": "Sustainable Australia",
     "RegisterDate": "23 September 2010",
     "AmendmentDate": "23 September 2010",
     "Address": "PO Box 575\nCROWS NEST NSW 1585",
@@ -32,8 +33,9 @@
     ]
   },
   {
-    "Abbreviation": "AJP",
+    "Id": 1339,
     "Name": "Animal Justice Party",
+    "Code": "AJP",
     "RegisterDate": "3 May 2011",
     "AmendmentDate": "3 May 2011",
     "Address": "PO Box Q1688\nQUEEN VICTORIA BUILDING NSW 1230",
@@ -108,8 +110,9 @@
     ]
   },
   {
-    "Abbreviation": "Australia First Party",
+    "Id": 1330,
     "Name": "Australia First Party (NSW) Incorporated",
+    "Code": "Australia First Party",
     "RegisterDate": "16 June 2010",
     "AmendmentDate": "16 June 2010",
     "Address": "PO Box 593\nROCKDALE NSW 2216",
@@ -140,8 +143,9 @@
     ]
   },
   {
-    "Abbreviation": "Affordable Housing Party",
+    "Id": 1443,
     "Name": "Australian Affordable Housing Party",
+    "Code": "Affordable Housing Party",
     "RegisterDate": "24 January 2017",
     "AmendmentDate": "24 January 2017",
     "Address": "9/26 Tintern Road\nASHFIELD NSW 2131",
@@ -159,8 +163,9 @@
     }
   },
   {
-    "Abbreviation": "ABF",
+    "Id": 1464,
     "Name": "Australian Better Families",
+    "Code": "ABF",
     "RegisterDate": "31 August 2018",
     "AmendmentDate": "31 August 2018",
     "Address": "PO Box 3831\nROBINA TOWN CENTRE QLD 4230",
@@ -177,6 +182,7 @@
     }
   },
   {
+    "Id": 1347,
     "Name": "Australian Christians",
     "RegisterDate": "19 December 2011",
     "AmendmentDate": "19 December 2011",
@@ -218,6 +224,7 @@
     ]
   },
   {
+    "Id": 1344,
     "Name": "Australian Country Party",
     "RegisterDate": "26 July 2011",
     "AmendmentDate": "26 July 2011",
@@ -236,6 +243,7 @@
     }
   },
   {
+    "Id": 1472,
     "Name": "Australian Democrats",
     "RegisterDate": "7 April 2019",
     "AmendmentDate": "7 April 2019",
@@ -279,8 +287,9 @@
     ]
   },
   {
-    "Abbreviation": "A.L.P.",
+    "Id": 2,
     "Name": "Australian Labor Party (ALP)",
+    "Code": "ALP",
     "RegisterDate": "31 May 1984",
     "AmendmentDate": "31 May 1984",
     "Address": "PO Box 6222\nKINGSTON ACT 2604",
@@ -320,11 +329,284 @@
           "Postcode": 2604
         }
       }
+    ],
+    "Branches": [
+      {
+        "Id": 200,
+        "Name": "Australian Labor Party (ACT Branch)",
+        "Code": "Australian Labor Party",
+        "RegisterDate": "13 June 1985",
+        "AmendmentDate": "13 June 1985",
+        "Address": "GPO Box 3065\nCANBERRA ACT 2601",
+        "Officer": {
+          "Title": "Mr",
+          "FamilyName": "Byrne",
+          "GivenNames": "Matthew",
+          "Capacity": "ACT Secretary",
+          "Address": {
+            "Line1": "1st Floor",
+            "Line2": "222 City Walk",
+            "Suburb": "CANBERRA",
+            "State": "ACT",
+            "Postcode": 2601
+          }
+        },
+        "DeputyOfficers": [
+          {
+            "Title": "Ms",
+            "FamilyName": "Hay",
+            "GivenNames": "Elizabeth",
+            "Address": {
+              "Line1": "22 Alarmon Crescent",
+              "Suburb": "DUNLOP",
+              "State": "ACT",
+              "Postcode": 2615
+            }
+          }
+        ]
+      },
+      {
+        "Id": 194,
+        "Name": "Australian Labor Party (N.S.W. Branch)",
+        "Code": "Labor",
+        "RegisterDate": "13 June 1985",
+        "AmendmentDate": "13 June 1985",
+        "Address": "PO Box K408\nHAYMARKET NSW 1240",
+        "Officer": {
+          "Title": "Ms",
+          "FamilyName": "Murnain",
+          "GivenNames": "Kaila",
+          "Address": {
+            "Line1": "Level 9, 377 Sussex St",
+            "Suburb": "SYDNEY",
+            "State": "NSW",
+            "Postcode": 2000
+          }
+        },
+        "DeputyOfficers": [
+          {
+            "Title": "Mr",
+            "FamilyName": "Dobson",
+            "GivenNames": "David ",
+            "Address": {
+              "Line1": "PO BOX K408",
+              "Suburb": "HAYMARKET",
+              "State": "NSW",
+              "Postcode": 1240
+            }
+          },
+          {
+            "Title": "Mr",
+            "FamilyName": "Garcia",
+            "GivenNames": "Patrick",
+            "Address": {
+              "Line1": "PO Box K408",
+              "Suburb": "HAYMARKET",
+              "State": "NSW",
+              "Postcode": 1240
+            }
+          },
+          {
+            "Title": "Ms",
+            "FamilyName": "Jackson",
+            "GivenNames": "Rose ",
+            "Address": {
+              "Line1": "PO Box K408",
+              "Suburb": "HAYMARKET",
+              "State": "NSW",
+              "Postcode": 1240
+            }
+          }
+        ]
+      },
+      {
+        "Id": 229,
+        "Name": "Australian Labor Party (Northern Territory) Branch",
+        "Code": "ALP",
+        "RegisterDate": "18 July 1984",
+        "AmendmentDate": "18 July 1984",
+        "Address": "GPO Box 2026\nDARWIN NT 0801",
+        "Officer": {
+          "Title": "Mr",
+          "FamilyName": "Brereton",
+          "GivenNames": "Anthony ",
+          "Capacity": "Secretary",
+          "Address": {
+            "Line1": "3/63 Winnellie Road",
+            "Suburb": "WINNELLIE",
+            "State": "NT",
+            "Postcode": 820
+          }
+        }
+      },
+      {
+        "Id": 198,
+        "Name": "Australian Labor Party (South Australian Branch)",
+        "Code": "Australian Labor Party",
+        "RegisterDate": "13 June 1985",
+        "AmendmentDate": "13 June 1985",
+        "Address": "141 Gilles Street\nADELAIDE SA 5000",
+        "Officer": {
+          "Title": "Mr",
+          "FamilyName": "Martin",
+          "GivenNames": "Reggie Brian",
+          "Capacity": "State Secretary",
+          "Address": {
+            "Line1": "141 Gilles Street",
+            "Suburb": "ADELAIDE",
+            "State": "SA",
+            "Postcode": 5000
+          }
+        }
+      },
+      {
+        "Id": 196,
+        "Name": "Australian Labor Party (State of Queensland)",
+        "Code": "Australian Labor Party",
+        "RegisterDate": "13 June 1985",
+        "AmendmentDate": "13 June 1985",
+        "Address": "PO Box 5032\nWEST END QLD 4101",
+        "Officer": {
+          "Title": "Ms",
+          "FamilyName": "Campbell",
+          "GivenNames": "Julie-Ann",
+          "Capacity": "Secretary",
+          "Address": {
+            "Line1": "Level 1 ",
+            "Line2": "16 Peel Street",
+            "Suburb": "SOUTH BRISBANE",
+            "State": "QLD",
+            "Postcode": 4101
+          }
+        },
+        "DeputyOfficers": [
+          {
+            "Title": "Mr",
+            "FamilyName": "Beers",
+            "GivenNames": "Zac",
+            "Capacity": "Deputy Registered Officer",
+            "Address": {
+              "Line1": "PO Box 5032",
+              "Suburb": "WEST END",
+              "State": "QLD",
+              "Postcode": 4101
+            }
+          }
+        ]
+      },
+      {
+        "Id": 31,
+        "Name": "Australian Labor Party (Tasmanian Branch)",
+        "Code": "Australian Labor Party",
+        "RegisterDate": "13 June 1985",
+        "AmendmentDate": "13 June 1985",
+        "Address": "GPO Box 1115\nHOBART TAS 7001",
+        "Officer": {
+          "Title": "Mr ",
+          "FamilyName": "Benson",
+          "GivenNames": "Stuart",
+          "Address": {
+            "Line1": "GPO Box 1115",
+            "Suburb": "HOBART",
+            "State": "TAS",
+            "Postcode": 7001
+          }
+        },
+        "DeputyOfficers": [
+          {
+            "Title": "Ms",
+            "FamilyName": "Brown",
+            "GivenNames": "Carol Louise",
+            "Address": {
+              "Line1": "1 Websters Road",
+              "Suburb": "LESLIE VALE",
+              "State": "TAS",
+              "Postcode": 7054
+            }
+          }
+        ]
+      },
+      {
+        "Id": 195,
+        "Name": "Australian Labor Party (Victorian Branch)",
+        "Code": "Australian Labor Party",
+        "RegisterDate": "13 June 1985",
+        "AmendmentDate": "13 June 1985",
+        "Address": "Locked Bag 3240\nMELBOURNE VIC 3001",
+        "Officer": {
+          "Title": "Mr",
+          "FamilyName": "Samaras",
+          "GivenNames": "Kosmos",
+          "Capacity": "Party Agent",
+          "Address": {
+            "Line1": "438 Docklands Drive",
+            "Suburb": "DOCKLANDS",
+            "State": "VIC",
+            "Postcode": 3008
+          }
+        }
+      },
+      {
+        "Id": 197,
+        "Name": "Australian Labor Party (Western Australian Branch)",
+        "Code": "Australian Labor Party",
+        "RegisterDate": "13 June 1985",
+        "AmendmentDate": "13 June 1985",
+        "Address": "PO Box 8117\nPERTH BUSINESS CENTRE WA 6849",
+        "Officer": {
+          "Title": "Mr ",
+          "FamilyName": "Dixon",
+          "GivenNames": "Mathew",
+          "Capacity": "Deputy Registered Officer",
+          "Address": {
+            "Line1": "Level 1",
+            "Line2": "54 Cheriton Street",
+            "Suburb": "PERTH",
+            "State": "WA",
+            "Postcode": 6000
+          }
+        },
+        "DeputyOfficers": [
+          {
+            "Title": "Ms",
+            "FamilyName": "Whiteaker",
+            "GivenNames": "Eleanor",
+            "Address": {
+              "Line1": "Level 1",
+              "Line2": "54 Cheriton Street",
+              "Suburb": "PERTH",
+              "State": "WA",
+              "Postcode": 6000
+            }
+          }
+        ]
+      },
+      {
+        "Id": 1099,
+        "Name": "Country Labor Party",
+        "Code": "Country Labor",
+        "RegisterDate": "16 October 2000",
+        "AmendmentDate": "16 October 2000",
+        "Address": "PO Box K408\nHAYMARKET NSW 1240",
+        "Officer": {
+          "Title": "Mr",
+          "FamilyName": "Suvaal",
+          "GivenNames": "Jay",
+          "Address": {
+            "Line1": "Level 9 ",
+            "Line2": "377 Sussex Street",
+            "Suburb": "SYDNEY",
+            "State": "NSW",
+            "Postcode": 2000
+          }
+        }
+      }
     ]
   },
   {
-    "Abbreviation": "APP",
+    "Id": 1431,
     "Name": "Australian People's Party",
+    "Code": "APP",
     "RegisterDate": "20 March 2017",
     "AmendmentDate": "20 March 2017",
     "Address": "PO Box 5382\nPINEWOOD VIC 3149",
@@ -355,8 +637,9 @@
     ]
   },
   {
-    "Abbreviation": "The Progressives",
+    "Id": 1403,
     "Name": "Australian Progressives",
+    "Code": "The Progressives",
     "RegisterDate": "17 February 2015",
     "AmendmentDate": "17 February 2015",
     "Address": "8/22 Moore St\nCAMPBELLTOWN NSW 2560",
@@ -374,8 +657,9 @@
     }
   },
   {
-    "Abbreviation": "AWP",
+    "Id": 1441,
     "Name": "Australian Workers Party",
+    "Code": "AWP",
     "RegisterDate": "27 January 2017",
     "AmendmentDate": "27 January 2017",
     "Address": "P.O Box 4062\nWINMALEE NSW 2777",
@@ -393,8 +677,9 @@
     }
   },
   {
-    "Abbreviation": "Centre Alliance",
+    "Id": 1388,
     "Name": "Centre Alliance",
+    "Code": "Centre Alliance",
     "RegisterDate": "1 July 2013",
     "AmendmentDate": "1 July 2013",
     "Address": "PO Box 3192\nUNLEY SA 5061",
@@ -411,8 +696,9 @@
     }
   },
   {
-    "Abbreviation": "CPP",
+    "Id": 1466,
     "Name": "Child Protection Party",
+    "Code": "CPP",
     "RegisterDate": "14 January 2019",
     "AmendmentDate": "14 January 2019",
     "Address": "PO Box 582\nELIZABETH SA 5112",
@@ -430,8 +716,9 @@
     }
   },
   {
-    "Abbreviation": "Christian Democratic Party",
+    "Id": 1184,
     "Name": "Christian Democratic Party (Fred Nile Group)",
+    "Code": "Christian Democratic Party",
     "RegisterDate": "17 September 2007",
     "AmendmentDate": "17 September 2007",
     "Address": "PO Box 8456\nPARRAMATTA WESTFIELD NSW 2150",
@@ -463,8 +750,9 @@
     ]
   },
   {
-    "Abbreviation": "Citizens Electoral Council",
+    "Id": 1181,
     "Name": "Citizens Electoral Council of Australia",
+    "Code": "Citizens Electoral Council",
     "RegisterDate": "4 September 2007",
     "AmendmentDate": "4 September 2007",
     "Address": "PO Box 376\nCOBURG VIC 3058",
@@ -585,6 +873,7 @@
     ]
   },
   {
+    "Id": 1179,
     "Name": "Climate Action! Immigration Action! Accountable Politicians!",
     "RegisterDate": "31 August 2007",
     "AmendmentDate": "31 August 2007",
@@ -626,8 +915,9 @@
     ]
   },
   {
-    "Abbreviation": "Country Liberals (NT)",
+    "Id": 26,
     "Name": "Country Liberals (Northern Territory)",
+    "Code": "Country Liberals (NT)",
     "RegisterDate": "18 July 1984",
     "AmendmentDate": "18 July 1984",
     "Address": "PO Box 4194\nDARWIN NT 0801",
@@ -645,8 +935,9 @@
     }
   },
   {
-    "Abbreviation": "Labour DLP",
+    "Id": 32,
     "Name": "Democratic Labour Party",
+    "Code": "Labour DLP",
     "RegisterDate": "20 July 1984",
     "AmendmentDate": "20 July 1984",
     "Address": "GPO Box 1402\nMELBOURNE VIC 3001",
@@ -711,8 +1002,9 @@
     ]
   },
   {
-    "Abbreviation": "Hinch",
+    "Id": 1423,
     "Name": "Derryn Hinch's Justice Party",
+    "Code": "Hinch",
     "RegisterDate": "12 April 2016",
     "AmendmentDate": "12 April 2016",
     "Address": "PO Box 33018 LPO Domain\nMELBOURNE VIC 3004",
@@ -742,6 +1034,7 @@
     ]
   },
   {
+    "Id": 1478,
     "Name": "FRASER ANNING'S CONSERVATIVE NATIONAL PARTY",
     "RegisterDate": "2 April 2019",
     "AmendmentDate": "2 April 2019",
@@ -773,8 +1066,9 @@
     ]
   },
   {
-    "Abbreviation": "HAP",
+    "Id": 1384,
     "Name": "Health Australia Party",
+    "Code": "HAP",
     "RegisterDate": "7 November 2013",
     "AmendmentDate": "7 November 2013",
     "Address": "PO Box 695\nGISBORNE VIC 3437",
@@ -791,8 +1085,9 @@
     }
   },
   {
-    "Abbreviation": "Marijuana (HEMP) Party",
+    "Id": 1332,
     "Name": "Help End Marijuana Prohibition (HEMP) Party",
+    "Code": "Marijuana (HEMP) Party",
     "RegisterDate": "23 September 2010",
     "AmendmentDate": "23 September 2010",
     "Address": "465 Crofton Road\nNIMBIN NSW 2480",
@@ -822,8 +1117,9 @@
     ]
   },
   {
-    "Abbreviation": "ICAN",
+    "Id": 1474,
     "Name": "Independents For Climate Action Now",
+    "Code": "ICAN",
     "RegisterDate": "10 April 2019",
     "AmendmentDate": "10 April 2019",
     "Address": "1/53 Stuart Street\nMULLUMBIMBY NSW 2482",
@@ -841,8 +1137,9 @@
     }
   },
   {
-    "Abbreviation": "Involuntary Vaccine/Fluoride Objectors",
+    "Id": 1427,
     "Name": "Involuntary Medication Objectors (Vaccination/Fluoride) Party",
+    "Code": "Involuntary Vaccine/Fluoride Objectors",
     "RegisterDate": "26 October 2016",
     "AmendmentDate": "26 October 2016",
     "Address": "PO Box 3322\nWEST KEMPSEY NSW 2440",
@@ -859,8 +1156,9 @@
     }
   },
   {
-    "Abbreviation": "JLN",
+    "Id": 1408,
     "Name": "Jacqui Lambie Network",
+    "Code": "JLN",
     "RegisterDate": "14 May 2015",
     "AmendmentDate": "14 May 2015",
     "Address": "PO Box 264\nBurnie TAS 7320",
@@ -878,8 +1176,9 @@
     }
   },
   {
-    "Abbreviation": "KAP",
+    "Id": 1346,
     "Name": "Katter's Australian Party (KAP)",
+    "Code": "KAP",
     "RegisterDate": "27 September 2011",
     "AmendmentDate": "27 September 2011",
     "Address": "PO Box 1022\nTOWNSVILLE QLD 4810",
@@ -898,8 +1197,9 @@
     }
   },
   {
-    "Abbreviation": "Liberal",
+    "Id": 4,
     "Name": "Liberal Party of Australia",
+    "Code": "Liberal",
     "RegisterDate": "22 June 1984",
     "AmendmentDate": "22 June 1984",
     "Address": "PO Box 6004\nKINGSTON ACT 2604",
@@ -929,11 +1229,221 @@
           "Postcode": 2604
         }
       }
+    ],
+    "Branches": [
+      {
+        "Id": 1323,
+        "Name": "Liberal National Party of Queensland",
+        "Code": "LNP",
+        "RegisterDate": "18 February 2009",
+        "AmendmentDate": "18 February 2009",
+        "Address": "PO Box 940\nSPRING HILL QLD 4004",
+        "Officer": {
+          "Title": "Mr",
+          "FamilyName": "O'Dwyer",
+          "GivenNames": "Michael",
+          "Address": {
+            "Line1": "66-68 Bowen Street",
+            "Suburb": "SPRING HILL",
+            "State": "QLD",
+            "Postcode": 4000
+          }
+        },
+        "DeputyOfficers": [
+          {
+            "Title": "Ms",
+            "FamilyName": "Awabdy",
+            "GivenNames": "Angela",
+            "Address": {
+              "Line1": "PO Box 940",
+              "Suburb": "SPRING HILL",
+              "State": "QLD",
+              "Postcode": 4004
+            }
+          }
+        ]
+      },
+      {
+        "Id": 178,
+        "Name": "Liberal Party (W.A. Division) Inc",
+        "Code": "Liberal",
+        "RegisterDate": "5 July 1984",
+        "AmendmentDate": "5 July 1984",
+        "Address": "PO Box 49\nWEST PERTH WA 6872",
+        "Officer": {
+          "Title": "Mr",
+          "FamilyName": "Calabrese",
+          "GivenNames": "Samuel",
+          "Capacity": "Party Agent",
+          "Address": {
+            "Line1": "2/12 Parliament Place",
+            "Suburb": "WEST PERTH",
+            "State": "WA",
+            "Postcode": 6005
+          }
+        },
+        "DeputyOfficers": [
+          {
+            "Title": "Ms ",
+            "FamilyName": "Moir",
+            "GivenNames": "Cerena",
+            "Address": {
+              "Line1": "PO Box 49",
+              "Suburb": "WEST PERTH",
+              "State": "WA",
+              "Postcode": 6872
+            }
+          }
+        ]
+      },
+      {
+        "Id": 177,
+        "Name": "Liberal Party of Australia - ACT Division",
+        "Code": "Liberal",
+        "RegisterDate": "5 July 1984",
+        "AmendmentDate": "5 July 1984",
+        "Address": "PO Box 66\nDEAKIN WEST ACT 2600",
+        "Officer": {
+          "Title": "Mrs",
+          "FamilyName": "Gilchrist",
+          "GivenNames": "Kay",
+          "Address": {
+            "Line1": "Suite 4, 50 Geils Court",
+            "Suburb": "DEAKIN",
+            "State": "ACT",
+            "Postcode": 2600
+          }
+        }
+      },
+      {
+        "Id": 171,
+        "Name": "Liberal Party of Australia - Tasmanian Division",
+        "Code": "Liberal",
+        "RegisterDate": "22 June 1984",
+        "AmendmentDate": "22 June 1984",
+        "Address": "GPO Box 469\nHOBART TAS 7001",
+        "Officer": {
+          "Title": "Mr",
+          "FamilyName": "McQuestin",
+          "GivenNames": "Charles Sam",
+          "Capacity": "State Director",
+          "Address": {
+            "Line1": "Suite 4c, Level 3",
+            "Line2": "33 Salamanca Place",
+            "Suburb": "HOBART",
+            "State": "TAS",
+            "Postcode": 7000
+          }
+        },
+        "DeputyOfficers": [
+          {
+            "Title": "Mrs",
+            "FamilyName": "Skeggs",
+            "GivenNames": "Chantel",
+            "Capacity": "Office Manager",
+            "Address": {
+              "Line1": "Suite 4c, Level 3",
+              "Line2": "33 Salamanca Place",
+              "Line3": "",
+              "Suburb": "HOBART",
+              "State": "TAS",
+              "Postcode": 7000
+            }
+          }
+        ]
+      },
+      {
+        "Id": 184,
+        "Name": "Liberal Party of Australia (S.A. Division)",
+        "Code": "Liberal",
+        "RegisterDate": "18 July 1984",
+        "AmendmentDate": "18 July 1984",
+        "Address": "GPO Box 20\nADELAIDE SA 5001",
+        "Officer": {
+          "Title": "Ms",
+          "FamilyName": "Meldrum",
+          "GivenNames": "Sascha",
+          "Capacity": "Registered Officer",
+          "Address": {
+            "Line1": "104 Greenhill Road",
+            "Suburb": "UNLEY",
+            "State": "SA",
+            "Postcode": 5061
+          }
+        }
+      },
+      {
+        "Id": 180,
+        "Name": "Liberal Party of Australia (Victorian Division)",
+        "Code": "Liberal",
+        "RegisterDate": "18 July 1984",
+        "AmendmentDate": "18 July 1984",
+        "Address": "104 Exhibition Street\nMELBOURNE VIC 3000",
+        "Officer": {
+          "Title": "Mr",
+          "FamilyName": "Frost",
+          "GivenNames": "Simon",
+          "Capacity": "Secretary",
+          "Address": {
+            "Line1": "Level 3",
+            "Line2": "104 Exhibition Street",
+            "Suburb": "MELBOURNE",
+            "State": "VIC",
+            "Postcode": 3000
+          }
+        }
+      },
+      {
+        "Id": 188,
+        "Name": "Liberal Party of Australia, NSW Division",
+        "Code": "Liberal",
+        "RegisterDate": "17 August 1984",
+        "AmendmentDate": "17 August 1984",
+        "Address": "Locked Bag 2\nKINGS CROSS NSW 1340",
+        "Officer": {
+          "Title": "Mr",
+          "FamilyName": "Stone",
+          "GivenNames": "Christopher",
+          "Address": {
+            "Line1": "Level 12",
+            "Line2": "100 William Street",
+            "Suburb": "EAST SYDNEY",
+            "State": "NSW",
+            "Postcode": 2011
+          }
+        },
+        "DeputyOfficers": [
+          {
+            "Title": "Mr",
+            "FamilyName": "Wheatley",
+            "GivenNames": "Peter",
+            "Capacity": "Party Agent",
+            "Address": {
+              "Line1": "Locked Bag 2",
+              "Suburb": "KINGS CROSS",
+              "State": "NSW",
+              "Postcode": 1340
+            }
+          },
+          {
+            "Title": "Mr",
+            "FamilyName": "McInnes",
+            "GivenNames": "Simon",
+            "Address": {
+              "Line1": "Locked Bag 2",
+              "Suburb": "KINGS CROSS",
+              "State": "NSW",
+              "Postcode": 1340
+            }
+          }
+        ]
+      }
     ]
   },
   {
-    "Abbreviation": "Liberal Democrats",
+    "Id": 1166,
     "Name": "Liberal Democratic Party",
+    "Code": "Liberal Democrats",
     "RegisterDate": "7 September 2007",
     "AmendmentDate": "7 September 2007",
     "Address": "PO Box 636\nDRUMMOYNE NSW 1470",
@@ -950,8 +1460,9 @@
     }
   },
   {
-    "Abbreviation": "LAOL",
+    "Id": 1428,
     "Name": "Love Australia or Leave",
+    "Code": "LAOL",
     "RegisterDate": "12 October 2016",
     "AmendmentDate": "12 October 2016",
     "Address": "PO Box 10113\nRASMUSSEN QLD 4815",
@@ -968,6 +1479,7 @@
     }
   },
   {
+    "Id": 1188,
     "Name": "Non-Custodial Parents Party (Equal Parenting)",
     "RegisterDate": "30 August 2007",
     "AmendmentDate": "30 August 2007",
@@ -999,6 +1511,7 @@
     ]
   },
   {
+    "Id": 1133,
     "Name": "Pauline Hanson's One Nation",
     "RegisterDate": "2 June 2004",
     "AmendmentDate": "2 June 2004",
@@ -1038,11 +1551,13 @@
           "Postcode": 4010
         }
       }
-    ]
+    ],
+    "Branches": []
   },
   {
-    "Abbreviation": "Pirate Party",
+    "Id": 1369,
     "Name": "Pirate Party Australia",
+    "Code": "Pirate Party",
     "RegisterDate": "17 January 2013",
     "AmendmentDate": "17 January 2013",
     "Address": "PO Box 385\nFIGTREE NSW 2525",
@@ -1059,8 +1574,9 @@
     }
   },
   {
-    "Abbreviation": "Reason Australia",
+    "Id": 1463,
     "Name": "Reason Australia",
+    "Code": "Reason Australia",
     "RegisterDate": "30 August 2018",
     "AmendmentDate": "30 August 2018",
     "Address": "PO Box 621\nCOLLINS STREET WEST VIC 8007",
@@ -1078,8 +1594,9 @@
     }
   },
   {
-    "Abbreviation": "The Australian Republicans",
+    "Id": 1440,
     "Name": "Republican Party of Australia",
+    "Code": "The Australian Republicans",
     "RegisterDate": "31 July 2017",
     "AmendmentDate": "31 July 2017",
     "Address": "PO Box 843\nCASTLE HILL NSW 1765",
@@ -1111,6 +1628,7 @@
     ]
   },
   {
+    "Id": 1385,
     "Name": "Science Party",
     "RegisterDate": "2 July 2013",
     "AmendmentDate": "2 July 2013",
@@ -1162,6 +1680,7 @@
     ]
   },
   {
+    "Id": 1327,
     "Name": "Secular Party of Australia",
     "RegisterDate": "16 June 2010",
     "AmendmentDate": "16 June 2010",
@@ -1193,8 +1712,9 @@
     ]
   },
   {
-    "Abbreviation": "SUPA",
+    "Id": 1402,
     "Name": "Seniors United Party of Australia",
+    "Code": "SUPA",
     "RegisterDate": "4 March 2015",
     "AmendmentDate": "4 March 2015",
     "Address": "PO Box 6059\nMARRICKVILLE SOUTH NSW 2204",
@@ -1212,8 +1732,9 @@
     }
   },
   {
-    "Abbreviation": "Shooters, Fishers and Farmers",
+    "Id": 1171,
     "Name": "Shooters, Fishers and Farmers Party",
+    "Code": "Shooters, Fishers and Farmers",
     "RegisterDate": "21 August 2007",
     "AmendmentDate": "21 August 2007",
     "Address": "PO Box 376\nBAULKHAM HILLS NSW 1755",
@@ -1245,6 +1766,7 @@
     ]
   },
   {
+    "Id": 1183,
     "Name": "Socialist Alliance",
     "RegisterDate": "4 September 2007",
     "AmendmentDate": "4 September 2007",
@@ -1366,6 +1888,7 @@
     ]
   },
   {
+    "Id": 1195,
     "Name": "Socialist Equality Party",
     "RegisterDate": "17 September 2007",
     "AmendmentDate": "17 September 2007",
@@ -1397,8 +1920,9 @@
     ]
   },
   {
-    "Abbreviation": "AMHP",
+    "Id": 1417,
     "Name": "The Australian Mental Health Party",
+    "Code": "AMHP",
     "RegisterDate": "11 March 2016",
     "AmendmentDate": "11 March 2016",
     "Address": "PO Box 1505\nAPPLECROSS WA 6953",
@@ -1415,8 +1939,9 @@
     }
   },
   {
-    "Abbreviation": "GAP",
+    "Id": 1475,
     "Name": "The Great Australian Party",
+    "Code": "GAP",
     "RegisterDate": "7 April 2019",
     "AmendmentDate": "7 April 2019",
     "Address": "PO Box 8242\nSOUTH PERTH WA 6151",
@@ -1434,8 +1959,9 @@
     }
   },
   {
-    "Abbreviation": "The Greens",
+    "Id": 37,
     "Name": "Australian Greens",
+    "Code": "The Greens",
     "RegisterDate": "24 January 1985",
     "AmendmentDate": "24 January 1985",
     "Address": "2/97 Northbourne Avenue\nTURNER ACT 2612",
@@ -1543,11 +2069,183 @@
           "Postcode": 2617
         }
       }
+    ],
+    "Branches": [
+      {
+        "Id": 1173,
+        "Name": "Queensland Greens",
+        "Code": "The Greens",
+        "RegisterDate": "27 November 2008",
+        "AmendmentDate": "27 November 2008",
+        "Address": "PO Box 2335\nMILTON QLD 4064",
+        "Officer": {
+          "Title": "Ms",
+          "FamilyName": "Kennedy",
+          "GivenNames": "Kirsten",
+          "Capacity": "Registered Officer",
+          "Address": {
+            "Line1": "Albion Peace Centre",
+            "Line2": "102 McDonald Road",
+            "Suburb": "WINDSOR",
+            "State": "QLD",
+            "Postcode": 4030
+          }
+        },
+        "DeputyOfficers": [
+          {
+            "Title": "Mr",
+            "FamilyName": "Munro",
+            "GivenNames": "Duncan",
+            "Address": {
+              "Line1": "102 McDonald Road",
+              "Suburb": "WINDSOR",
+              "State": "QLD",
+              "Postcode": 4030
+            }
+          },
+          {
+            "Title": "Ms",
+            "FamilyName": "Mulkearns",
+            "GivenNames": "Jennifer",
+            "Address": {
+              "Line1": "49 Drummond Street",
+              "Suburb": "SINNAMON PARK",
+              "State": "QLD",
+              "Postcode": 4073
+            }
+          }
+        ]
+      },
+      {
+        "Id": 1424,
+        "Name": "The Australian Greens - Victoria",
+        "Code": "The Greens (VIC)",
+        "RegisterDate": "25 February 2016",
+        "AmendmentDate": "25 February 2016",
+        "Address": "GPO Box 4589\nMELBOURNE VIC 3001",
+        "Officer": {
+          "Title": "Mr",
+          "FamilyName": "Leppert",
+          "GivenNames": "Rohan ",
+          "Address": {
+            "Line1": "1/45 William Street",
+            "Suburb": "MELBOURNE",
+            "State": "VIC",
+            "Postcode": 3000
+          }
+        },
+        "DeputyOfficers": [
+          {
+            "Title": "Ms",
+            "FamilyName": "Allan",
+            "GivenNames": "Lucy",
+            "Address": {
+              "Line1": "1/45 William Street",
+              "Suburb": "MELBOURNE",
+              "State": "VIC",
+              "Postcode": 3000
+            }
+          },
+          {
+            "Title": "Mr",
+            "FamilyName": "Baxter",
+            "GivenNames": "Tim",
+            "Address": {
+              "Line1": "1/45 William Street",
+              "Suburb": "MELBOURNE",
+              "State": "VIC",
+              "Postcode": 3000
+            }
+          }
+        ]
+      },
+      {
+        "Id": 36,
+        "Name": "The Greens (WA) Inc",
+        "Code": "The Greens (WA)",
+        "RegisterDate": "19 July 1989",
+        "AmendmentDate": "19 July 1989",
+        "Address": "1st Floor, 1/440 William Street\nPERTH WA 6000",
+        "Officer": {
+          "Title": "Mr",
+          "FamilyName": "Roberts",
+          "GivenNames": "Matthew",
+          "Capacity": "Registered Officer",
+          "Address": {
+            "Line1": "1/440 William Street",
+            "Suburb": "PERTH",
+            "State": "WA",
+            "Postcode": 6000
+          }
+        },
+        "DeputyOfficers": [
+          {
+            "Title": "Ms",
+            "FamilyName": "Xamon",
+            "GivenNames": "Alison",
+            "Capacity": "Deputy Registered Officer",
+            "Address": {
+              "Line1": "37a Windsor Street",
+              "Suburb": "PERTH",
+              "State": "WA",
+              "Postcode": 6000
+            }
+          },
+          {
+            "Title": "Ms",
+            "FamilyName": "Harvey",
+            "GivenNames": "Nicole",
+            "Capacity": "Deputy Registered Officer",
+            "Address": {
+              "Line1": "1/440 William Street",
+              "Suburb": "PERTH",
+              "State": "WA",
+              "Postcode": 6000
+            }
+          }
+        ]
+      },
+      {
+        "Id": 1058,
+        "Name": "The Greens NSW",
+        "Code": "The Greens",
+        "RegisterDate": "20 May 1994",
+        "AmendmentDate": "20 May 1994",
+        "Address": "PO Box 48\nBROADWAY NSW 2007",
+        "Officer": {
+          "Title": "Mr",
+          "FamilyName": "Maltby",
+          "GivenNames": "Christopher",
+          "Address": {
+            "Line1": "Suite D, Level 1",
+            "Line2": "275 Broadway",
+            "Suburb": "GLEBE",
+            "State": "NSW",
+            "Postcode": 2037
+          }
+        },
+        "DeputyOfficers": [
+          {
+            "Title": "Ms",
+            "FamilyName": "Wallace",
+            "GivenNames": "Amalina",
+            "Address": {
+              "Line1": "Suite D",
+              "Line2": "Level 1",
+              "Line3": "275 Broadway",
+              "Suburb": "GLEBE",
+              "State": "NSW",
+              "Postcode": 2037
+            }
+          }
+        ]
+      }
     ]
   },
   {
-    "Abbreviation": "The Nationals",
+    "Id": 20,
     "Name": "National Party of Australia",
+    "Code": "The Nationals",
     "RegisterDate": "31 May 1984",
     "AmendmentDate": "31 May 1984",
     "Address": "PO Box 6190\nKINGSTON ACT 2604",
@@ -1561,11 +2259,134 @@
         "State": "ACT",
         "Postcode": 2600
       }
-    }
+    },
+    "Branches": [
+      {
+        "Id": 172,
+        "Name": "National Party of Australia - N.S.W.",
+        "Code": "The Nationals",
+        "RegisterDate": "22 June 1984",
+        "AmendmentDate": "22 June 1984",
+        "Address": "GPO Box 4558\nSYDNEY NSW 2001",
+        "Officer": {
+          "Title": "Mr",
+          "FamilyName": "Cadell",
+          "GivenNames": "Ross",
+          "Address": {
+            "Line1": "Level 2",
+            "Line2": "107 Pitt Street",
+            "Suburb": "SYDNEY",
+            "State": "NSW",
+            "Postcode": 2000
+          }
+        },
+        "DeputyOfficers": [
+          {
+            "Title": "Mr",
+            "FamilyName": "Aubert",
+            "GivenNames": "Thomas Malcolm",
+            "Address": {
+              "Line1": "Level 2",
+              "Line2": "107 Pitt Street",
+              "Suburb": "Sydney",
+              "State": "NSW",
+              "Postcode": 2000
+            }
+          }
+        ]
+      },
+      {
+        "Id": 174,
+        "Name": "National Party of Australia - Victoria",
+        "Code": "The Nationals",
+        "RegisterDate": "22 June 1984",
+        "AmendmentDate": "22 June 1984",
+        "Address": "Suite 908, Level 9\n343 Little Collins Street\nMELBOURNE VIC 3000",
+        "Officer": {
+          "Title": "Mr",
+          "FamilyName": "Harris",
+          "GivenNames": "Matthew",
+          "Capacity": "State Director",
+          "Address": {
+            "Line1": "Suite 908, Level 9",
+            "Line2": "343 Little Collins St",
+            "Suburb": "MELBOURNE",
+            "State": "VIC",
+            "Postcode": 3000
+          }
+        },
+        "DeputyOfficers": [
+          {
+            "Title": "Ms",
+            "FamilyName": "Buckley",
+            "GivenNames": "Claire",
+            "Address": {
+              "Line1": "Suite 908, Level 9",
+              "Line2": "343 Little Collins St",
+              "Suburb": "MELBOURNE",
+              "State": "VIC",
+              "Postcode": 3000
+            }
+          }
+        ]
+      },
+      {
+        "Id": 179,
+        "Name": "National Party of Australia (S.A.) Inc.",
+        "Code": "National Party",
+        "RegisterDate": "5 July 1984",
+        "AmendmentDate": "5 July 1984",
+        "Address": "5 Maple Court\nOAKBANK SA 5243",
+        "Officer": {
+          "Title": "Rev",
+          "FamilyName": "Venus",
+          "GivenNames": "John",
+          "Address": {
+            "Line1": "5 Maple Court",
+            "Suburb": "OAKBANK",
+            "State": "SA",
+            "Postcode": 5243
+          }
+        }
+      },
+      {
+        "Id": 193,
+        "Name": "National Party of Australia (WA) Inc",
+        "Code": "The Nationals",
+        "RegisterDate": "1 April 1985",
+        "AmendmentDate": "1 April 1985",
+        "Address": "PO Box 1418\nWEST PERTH WA 6872",
+        "Officer": {
+          "Title": "Mr",
+          "FamilyName": "Hayward",
+          "GivenNames": "James",
+          "Address": {
+            "Line1": "11 Haydock Street",
+            "Suburb": "BUNBURY",
+            "State": "WA",
+            "Postcode": 6230
+          }
+        },
+        "DeputyOfficers": [
+          {
+            "Title": "Mr",
+            "FamilyName": "Lundy",
+            "GivenNames": "Joseph",
+            "Address": {
+              "Line1": "PO Box 1418",
+              "Suburb": "WEST PERTH",
+              "State": "WA",
+              "Postcode": 6872
+            }
+          }
+        ]
+      }
+    ]
   },
   {
-    "Abbreviation": "SBP",
+    "Id": 1467,
     "Name": "The Small Business Party",
+    "Code": "SBP",
     "RegisterDate": "20 February 2019",
     "AmendmentDate": "20 February 2019",
     "Address": "Unit 204\n2 York Street\nSYDNEY NSW 2000",
@@ -1584,8 +2405,9 @@
     }
   },
   {
-    "Abbreviation": "Together.",
+    "Id": 1473,
     "Name": "The Together Party",
+    "Code": "Together",
     "RegisterDate": "4 April 2019",
     "AmendmentDate": "4 April 2019",
     "Address": "PO Box 1085\nMULLUMBIMBY NSW 2482",
@@ -1617,6 +2439,7 @@
     ]
   },
   {
+    "Id": 1470,
     "Name": "The Women's Party",
     "RegisterDate": "20 February 2019",
     "AmendmentDate": "20 February 2019",
@@ -1634,6 +2457,7 @@
     }
   },
   {
+    "Id": 1465,
     "Name": "Tim Storer Independent SA",
     "RegisterDate": "30 August 2018",
     "AmendmentDate": "30 August 2018",
@@ -1651,8 +2475,9 @@
     }
   },
   {
-    "Abbreviation": "UAP",
+    "Id": 1469,
     "Name": "United Australia Party",
+    "Code": "UAP",
     "RegisterDate": "12 December 2018",
     "AmendmentDate": "12 December 2018",
     "Address": "GPO Box 1538\nBRISBANE QLD 4001",
@@ -1670,6 +2495,7 @@
     }
   },
   {
+    "Id": 1477,
     "Name": "Victorian Socialists",
     "RegisterDate": "7 April 2019",
     "AmendmentDate": "7 April 2019",
@@ -1688,8 +2514,9 @@
     }
   },
   {
-    "Abbreviation": "VEP",
+    "Id": 1380,
     "Name": "Voluntary Euthanasia Party",
+    "Code": "VEP",
     "RegisterDate": "1 July 2013",
     "AmendmentDate": "1 July 2013",
     "Address": "PO Box 4401\nHAWKER ACT 2614",
@@ -1719,8 +2546,9 @@
     ]
   },
   {
-    "Abbreviation": "Flux",
+    "Id": 1419,
     "Name": "VOTEFLUX.ORG | Upgrade Democracy!",
+    "Code": "Flux",
     "RegisterDate": "29 March 2016",
     "AmendmentDate": "29 March 2016",
     "Address": "5/155 Clarence St\nSYDNEY NSW 2000",
@@ -1753,8 +2581,9 @@
     ]
   },
   {
-    "Abbreviation": "WESTERN AUSTRALIA PARTY",
+    "Id": 1462,
     "Name": "WESTERN AUSTRALIA PARTY",
+    "Code": "WESTERN AUSTRALIA PARTY",
     "RegisterDate": "30 August 2018",
     "AmendmentDate": "30 August 2018",
     "Address": "PO Box 8134\nSUBIACO WA 6008",
@@ -1772,8 +2601,9 @@
     }
   },
   {
-    "Abbreviation": "YVA",
+    "Id": 1413,
     "Name": "Yellow Vest Australia",
+    "Code": "YVA",
     "RegisterDate": "28 July 2015",
     "AmendmentDate": "28 July 2015",
     "Address": "PO Box 290\nSouth Melbourne VIC 3205",

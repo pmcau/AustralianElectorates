@@ -5,7 +5,7 @@ namespace AecModels
     public class Branch
     {
         [JsonProperty("id")]
-        public long Id { get; set; }
+        public ushort Id { get; set; }
 
         [JsonProperty("nameOfParty")]
         public string NameOfParty { get; set; }

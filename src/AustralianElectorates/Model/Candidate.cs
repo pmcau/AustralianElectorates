@@ -7,5 +7,6 @@
         public string Party { get; set; }
         public uint Votes { get; set; }
         public decimal Swing { get; set; }
+        public ushort? PartyId { get; set; }
     }
 }
