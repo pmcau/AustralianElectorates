@@ -158,7 +158,7 @@ Debug.WriteLine(canberra.Description);
 // access the current member
 var currentMember = canberra.Members.First();
 Debug.WriteLine($"{currentMember.FamilyName}, {currentMember.GivenNames}");
-Debug.WriteLine(currentMember.PartyCode);
+Debug.WriteLine(currentMember.Parties);
 
 // get an electorates maps (geojson) by string
 var fennerGeoJson2016 = DataLoader.Fenner.Get2016Map();

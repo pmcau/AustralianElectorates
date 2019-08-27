@@ -77,14 +77,15 @@ public static class ElectoratesScraper
                 var other = candidatePreferred.Candidate.Single(x => !x.Elected.Value);
                 var otherName = SplitName(other.CandidateIdentifier.CandidateName);
 
+                var affiliationIdentifier = electedCandidate.AffiliationIdentifier;
                 electorate.TwoCandidatePreferred = new TwoCandidatePreferred
                 {
                     Elected = new Candidate
                     {
                         FamilyName = electedCandidateName.familyName,
                         GivenNames = electedCandidateName.givenNames,
-                        PartyCode = electedCandidate.AffiliationIdentifier?.ShortCode,
-                        PartyId = electedCandidate.AffiliationIdentifier?.Id,
+                        PartyCode = affiliationIdentifier?.ShortCode,
+                        PartyId = affiliationIdentifier?.Id,
                         Votes = electedCandidate.Votes.Value,
                         Swing = electedCandidate.Votes.Swing,
                     },
@@ -111,15 +112,20 @@ public static class ElectoratesScraper
                 }
                 else
                 {
-                    electorateMembers.Insert(0,
-                    new Member
+                    var member = new Member
                     {
                         GivenNames = electedCandidateName.givenNames,
                         FamilyName = familyName,
-                        Begin = 2019,
-                        PartyCode = electedCandidate.AffiliationIdentifier?.ShortCode,
-                        PartyId = electedCandidate.AffiliationIdentifier?.Id
-                    });
+                        Begin = 2019
+                    };
+                    if (affiliationIdentifier != null)
+                    {
+                        member.PartyIds = new List<ushort> { affiliationIdentifier.Id};
+                        member.PartyCodes =new List<string> { affiliationIdentifier.ShortCode};
+                    }
+
+                    electorateMembers.Insert(0,
+                    member);
                 }
             }
 
@@ -235,7 +241,7 @@ public static class ElectoratesScraper
             var split = cleaned.Split(new[] {" ("}, 2, StringSplitOptions.None);
             var member = split[0];
             split = split[1].Split(new[] {") "}, 2, StringSplitOptions.None);
-            var party = split[0];
+            var parties = split[0].Split('/');
 
             split = split[1].Split(new[] {"-"}, 2, StringSplitOptions.RemoveEmptyEntries);
             var begin = ushort.Parse(split[0].Trim());
@@ -250,8 +256,11 @@ public static class ElectoratesScraper
             {
                 FamilyName = familyName,
                 GivenNames = givenNames,
-                PartyCode = party,
-                PartyId = PartyScraper.FindPartyId(party),
+                PartyCodes = parties.ToList(),
+                PartyIds = parties.Select(PartyScraper.FindPartyId)
+                    .Where(x=>x != null)
+                    .Select(x=>x.Value)
+                    .ToList(),
                 Begin = begin,
                 End = end,
             };

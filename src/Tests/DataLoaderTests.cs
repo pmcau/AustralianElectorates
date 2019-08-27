@@ -1,5 +1,4 @@
 using System;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using ApprovalTests;
@@ -36,21 +35,6 @@ public class DataLoaderTests :
         Assert.False(DataLoader.TryFindElectorate("not Found", out _));
         var exception = Assert.Throws<ElectorateNotFoundException>(() => DataLoader.FindElectorate("not Found"));
         ObjectApprover.Verify(new {exception.Name, exception.Message});
-    }
-
-    [Fact]
-    public void Foo()
-    {
-        foreach (var electorate in DataLoader.Electorates)
-        {
-            foreach (var member in electorate.Members)
-            {
-                if (member.PartyId == null)
-                {
-                    Debug.WriteLine(member.Electorate.Name +" "+ member.PartyCode);
-                }
-            }
-        }
     }
 
     [Fact]
