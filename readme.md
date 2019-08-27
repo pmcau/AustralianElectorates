@@ -45,8 +45,8 @@ All information about electorates is available at [/Data/electorates.json](/Data
     "ShortName": "canberra",
     "State": "ACT",
     "Area": 312.0,
-    "ExistIn2016": true,
-    "ExistIn2019": true,
+    "Exist2016": true,
+    "Exist2019": true,
     "ExistInFuture": true,
     "DateGazetted": "2018-07-13",
     "Description": "<p>The Division of Canberra covers an area in central ACT consisting of the Districts of:</p><ul><li>Canberra Central,</li><li>Kowen,</li><li>Majura,</li><li>part of Belconnen,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul>",
@@ -55,18 +55,24 @@ All information about electorates is available at [/Data/electorates.json](/Data
     "NameDerivation": "A locality name derived from an Aboriginal word which is held to mean 'meeting place'.",
     "Members": [
       {
-        "Name": "Brodtmann, G",
-        "Begin": 2010,
-        "Party": "ALP"
+        "FamilyName": "Payne",
+        "GivenNames": "Alicia",
+        "Begin": 2019,
+        "PartyCodes": [
+          "ALP"
+        ],
+        "PartyIds": [
+          200
+        ]
       },
       {
-        "Name": "Ellis, A",
-        "Begin": 1998,
-        "End": 2010,
-        "Party": "ALP"
-      }
-    ]
-  },
+        "FamilyName": "Brodtmann",
+        "GivenNames": "G",
+        "Begin": 2010,
+        "End": 2019,
+        "PartyCodes": [
+          "ALP"
+        ],
 ```
 
 ## Detail Maps
