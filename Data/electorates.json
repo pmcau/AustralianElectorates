@@ -25,21 +25,24 @@
         "GivenNames": "G",
         "Begin": 2010,
         "End": 2019,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Ellis",
         "GivenNames": "A",
         "Begin": 1998,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "McMullan",
         "GivenNames": "B",
         "Begin": 1996,
         "End": 1998,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Smyth",
@@ -53,7 +56,8 @@
         "GivenNames": "R J",
         "Begin": 1980,
         "End": 1995,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Haslem",
@@ -67,7 +71,8 @@
         "GivenNames": "K E",
         "Begin": 1974,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -223,35 +228,40 @@
         "FamilyName": "Leigh",
         "GivenNames": "Andrew",
         "Begin": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "McMullan",
         "GivenNames": "B",
         "Begin": 1998,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Dargavel",
         "GivenNames": "S",
         "Begin": 1997,
         "End": 1998,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Langmore",
         "GivenNames": "J",
         "Begin": 1984,
         "End": 1997,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Fry",
         "GivenNames": "K L",
         "Begin": 1974,
         "End": 1984,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -563,7 +573,8 @@
         "GivenNames": "R",
         "Begin": 2016,
         "End": 2019,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Nikolic",
@@ -577,14 +588,16 @@
         "GivenNames": "G",
         "Begin": 2010,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Campbell",
         "GivenNames": "J",
         "Begin": 2007,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Ferguson",
@@ -598,7 +611,8 @@
         "GivenNames": "M",
         "Begin": 1998,
         "End": 2004,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Smith",
@@ -612,7 +626,8 @@
         "GivenNames": "S J",
         "Begin": 1993,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Smith",
@@ -633,7 +648,8 @@
         "GivenNames": "L H",
         "Begin": 1954,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Kekwick",
@@ -647,7 +663,8 @@
         "GivenNames": "H C",
         "Begin": 1934,
         "End": 1949,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Guy",
@@ -668,7 +685,8 @@
         "GivenNames": "J A",
         "Begin": 1910,
         "End": 1919,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Storrer",
@@ -994,7 +1012,8 @@
         "GivenNames": "J",
         "Begin": 2016,
         "End": 2019,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Whiteley",
@@ -1008,7 +1027,8 @@
         "GivenNames": "S",
         "Begin": 2007,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Baker",
@@ -1022,7 +1042,8 @@
         "GivenNames": "S",
         "Begin": 1998,
         "End": 2004,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Miles",
@@ -1043,7 +1064,8 @@
         "GivenNames": "R",
         "Begin": 1958,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Luck",
@@ -1385,7 +1407,8 @@
         "GivenNames": "D",
         "Begin": 1987,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hodgman",
@@ -1399,7 +1422,8 @@
         "GivenNames": "J",
         "Begin": 1972,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Solomon",
@@ -1427,35 +1451,40 @@
         "GivenNames": "J F",
         "Begin": 1943,
         "End": 1949,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Beck",
         "GivenNames": "A J",
         "Begin": 1940,
         "End": 1943,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "Mahoney",
         "GivenNames": "G W",
         "Begin": 1934,
         "End": 1940,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hutchin",
         "GivenNames": "A W",
         "Begin": 1931,
         "End": 1934,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "Culley",
         "GivenNames": "C E",
         "Begin": 1928,
         "End": 1931,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Gellibrand",
@@ -1469,7 +1498,8 @@
         "GivenNames": "D J",
         "Begin": 1922,
         "End": 1925,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Smith",
@@ -1506,14 +1536,16 @@
         "FamilyName": "Collins",
         "GivenNames": "Julie",
         "Begin": 2007,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Quick",
         "GivenNames": "H",
         "Begin": 1993,
         "End": 2007,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Goodluck",
@@ -1527,7 +1559,8 @@
         "GivenNames": "R H",
         "Begin": 1969,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Pearsall",
@@ -1555,14 +1588,16 @@
         "GivenNames": "A C",
         "Begin": 1931,
         "End": 1934,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "Frost",
         "GivenNames": "C W",
         "Begin": 1929,
         "End": 1931,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "McWilliams",
@@ -1864,7 +1899,8 @@
         "FamilyName": "Mitchell",
         "GivenNames": "Brian",
         "Begin": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hutchinson",
@@ -1878,7 +1914,8 @@
         "GivenNames": "D",
         "Begin": 1993,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Burr",
@@ -2654,7 +2691,8 @@
         "GivenNames": "K",
         "Begin": 2004,
         "End": 2019,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Worth",
@@ -2668,7 +2706,8 @@
         "GivenNames": "R",
         "Begin": 1990,
         "End": 1993,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Pratt",
@@ -2682,7 +2721,8 @@
         "GivenNames": "C J",
         "Begin": 1969,
         "End": 1988,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Jones",
@@ -2696,28 +2736,32 @@
         "GivenNames": "J C L",
         "Begin": 1958,
         "End": 1966,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Chambers",
         "GivenNames": "C",
         "Begin": 1943,
         "End": 1958,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Stacey",
         "GivenNames": "F H",
         "Begin": 1931,
         "End": 1943,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "Yates",
         "GivenNames": "G E",
         "Begin": 1922,
         "End": 1931,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Blundell",
@@ -2731,14 +2775,16 @@
         "GivenNames": "G E",
         "Begin": 1914,
         "End": 1919,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Roberts",
         "GivenNames": "E A",
         "Begin": 1908,
         "End": 1913,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Kingston",
@@ -3916,14 +3962,16 @@
         "GivenNames": "T N",
         "Begin": 1943,
         "End": 1949,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Price",
         "GivenNames": "A G",
         "Begin": 1941,
         "End": 1943,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "Price",
@@ -3951,7 +3999,8 @@
         "GivenNames": "G",
         "Begin": 1913,
         "End": 1917,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Gordon",
@@ -3965,7 +4014,8 @@
         "GivenNames": "E L",
         "Begin": 1903,
         "End": 1911,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -4199,14 +4249,16 @@
         "GivenNames": "L R T",
         "Begin": 1983,
         "End": 1993,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Wallis",
         "GivenNames": "L",
         "Begin": 1969,
         "End": 1983,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Jessop",
@@ -4220,14 +4272,16 @@
         "GivenNames": "J",
         "Begin": 1963,
         "End": 1966,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Russell",
         "GivenNames": "E H D",
         "Begin": 1949,
         "End": 1963,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Badman",
@@ -4241,14 +4295,16 @@
         "GivenNames": "P A M",
         "Begin": 1931,
         "End": 1937,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "Lacey",
         "GivenNames": "A W",
         "Begin": 1922,
         "End": 1931,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Poynton",
@@ -5543,7 +5599,8 @@
         "GivenNames": "S",
         "Begin": 2016,
         "End": 2019,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Williams",
@@ -5557,7 +5614,8 @@
         "GivenNames": "S",
         "Begin": 2004,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Gallus",
@@ -5571,21 +5629,24 @@
         "GivenNames": "J L",
         "Begin": 1980,
         "End": 1993,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Cameron",
         "GivenNames": "C R",
         "Begin": 1949,
         "End": 1980,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Thompson",
         "GivenNames": "A V",
         "Begin": 1946,
         "End": 1949,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Makin",
@@ -5606,7 +5667,8 @@
         "GivenNames": "J",
         "Begin": 1903,
         "End": 1909,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -5823,7 +5885,8 @@
         "FamilyName": "Rishworth",
         "GivenNames": "Amanda",
         "Begin": 2007,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Richardson",
@@ -5837,7 +5900,8 @@
         "GivenNames": "D",
         "Begin": 1998,
         "End": 2004,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Jeanes",
@@ -5851,7 +5915,8 @@
         "GivenNames": "G N",
         "Begin": 1983,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Chapman",
@@ -5865,7 +5930,8 @@
         "GivenNames": "R",
         "Begin": 1969,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Brownbill",
@@ -5879,7 +5945,8 @@
         "GivenNames": "P",
         "Begin": 1951,
         "End": 1966,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Handby",
@@ -6040,7 +6107,8 @@
         "GivenNames": "A",
         "Begin": 2007,
         "End": 2019,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Draper",
@@ -6054,7 +6122,8 @@
         "GivenNames": "P",
         "Begin": 1984,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -6236,7 +6305,8 @@
         "FamilyName": "Sharkie",
         "GivenNames": "Rebekha",
         "Begin": 2016,
-        "PartyCode": "Centre Alliance"
+        "PartyCode": "Centre Alliance",
+        "PartyId": 1388
       },
       {
         "FamilyName": "Briggs",
@@ -6839,35 +6909,40 @@
         "GivenNames": "M",
         "Begin": 2007,
         "End": 2019,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Sawford",
         "GivenNames": "R",
         "Begin": 1988,
         "End": 2007,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Young",
         "GivenNames": "M J",
         "Begin": 1974,
         "End": 1988,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Birrell",
         "GivenNames": "F R",
         "Begin": 1963,
         "End": 1974,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Thompson",
         "GivenNames": "A V",
         "Begin": 1949,
         "End": 1963,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": []
@@ -6912,7 +6987,8 @@
         "GivenNames": "N K",
         "Begin": 1969,
         "End": 1972,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Wilson",
@@ -6933,7 +7009,8 @@
         "GivenNames": "N J O",
         "Begin": 1954,
         "End": 1955,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Wilson",
@@ -7152,7 +7229,8 @@
         "GivenNames": "N",
         "Begin": 2007,
         "End": 2019,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Fawcett",
@@ -7194,21 +7272,24 @@
         "GivenNames": "A E",
         "Begin": 1943,
         "End": 1946,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Duncan-Hughes",
         "GivenNames": "J G",
         "Begin": 1940,
         "End": 1943,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "McHugh",
         "GivenNames": "S",
         "Begin": 1938,
         "End": 1940,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hawker",
@@ -7222,7 +7303,8 @@
         "GivenNames": "M",
         "Begin": 1928,
         "End": 1929,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Foster",
@@ -7466,7 +7548,8 @@
         "GivenNames": "J",
         "Begin": 1984,
         "End": 1990,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -7568,7 +7651,8 @@
         "FamilyName": "King",
         "GivenNames": "Catherine",
         "Begin": 2001,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Ronaldson",
@@ -7582,7 +7666,8 @@
         "GivenNames": "J B",
         "Begin": 1980,
         "End": 1990,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Short",
@@ -7603,7 +7688,8 @@
         "GivenNames": "R",
         "Begin": 1951,
         "End": 1955,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Pittard",
@@ -7617,14 +7703,16 @@
         "GivenNames": "R T",
         "Begin": 1937,
         "End": 1949,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Fisken",
         "GivenNames": "A C W",
         "Begin": 1934,
         "End": 1937,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "McGrath",
@@ -7645,7 +7733,8 @@
         "GivenNames": "D C",
         "Begin": 1913,
         "End": 1919,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Deakin",
@@ -7999,28 +8088,32 @@
         "GivenNames": "D",
         "Begin": 2013,
         "End": 2019,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Ferguson",
         "GivenNames": "M",
         "Begin": 1996,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Howe",
         "GivenNames": "B L",
         "Begin": 1977,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Garrick",
         "GivenNames": "H J",
         "Begin": 1969,
         "End": 1977,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Benson",
@@ -8034,7 +8127,8 @@
         "GivenNames": "A C",
         "Begin": 1949,
         "End": 1962,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Brennan",
@@ -8048,21 +8142,24 @@
         "GivenNames": "S",
         "Begin": 1931,
         "End": 1934,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "Brennan",
         "GivenNames": "F",
         "Begin": 1911,
         "End": 1931,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Beard",
         "GivenNames": "H E",
         "Begin": 1910,
         "End": 1910,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Coon",
@@ -8092,14 +8189,16 @@
         "FamilyName": "Chesters",
         "GivenNames": "Lisa",
         "Begin": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Gibbons",
         "GivenNames": "S",
         "Begin": 1998,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Reid",
@@ -8113,7 +8212,8 @@
         "GivenNames": "J M",
         "Begin": 1983,
         "End": 1990,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Bourchier",
@@ -8127,21 +8227,24 @@
         "GivenNames": "A D",
         "Begin": 1969,
         "End": 1972,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Beaton",
         "GivenNames": "N L",
         "Begin": 1960,
         "End": 1969,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Clarey",
         "GivenNames": "P J",
         "Begin": 1949,
         "End": 1960,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Rankin",
@@ -8155,14 +8258,16 @@
         "GivenNames": "E F",
         "Begin": 1931,
         "End": 1937,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "Kean",
         "GivenNames": "R V",
         "Begin": 1929,
         "End": 1931,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hurry",
@@ -8183,14 +8288,16 @@
         "GivenNames": "A J",
         "Begin": 1915,
         "End": 1917,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Arthur",
         "GivenNames": "J A",
         "Begin": 1913,
         "End": 1914,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Quick",
@@ -8542,14 +8649,16 @@
         "FamilyName": "Hill",
         "GivenNames": "Julian",
         "Begin": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Griffin",
         "GivenNames": "A",
         "Begin": 1996,
         "End": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Beale",
@@ -8688,7 +8797,8 @@
         "FamilyName": "Vamvakinou",
         "GivenNames": "Maria",
         "Begin": 2001,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Theophanous",
@@ -8847,7 +8957,8 @@
         "GivenNames": "A P",
         "Begin": 1983,
         "End": 1984,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Falconer",
@@ -8861,7 +8972,8 @@
         "GivenNames": "C R",
         "Begin": 1972,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Howson",
@@ -9153,7 +9265,8 @@
         "GivenNames": "A",
         "Begin": 1998,
         "End": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Wooldridge",
@@ -9167,7 +9280,8 @@
         "GivenNames": "H",
         "Begin": 1983,
         "End": 1987,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Harris",
@@ -9326,7 +9440,8 @@
         "GivenNames": "D",
         "Begin": 2007,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "McArthur",
@@ -9361,21 +9476,24 @@
         "GivenNames": "G A",
         "Begin": 1934,
         "End": 1940,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "Gibson",
         "GivenNames": "W G",
         "Begin": 1931,
         "End": 1934,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Crouch",
         "GivenNames": "R A",
         "Begin": 1929,
         "End": 1931,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Gibson",
@@ -9396,7 +9514,8 @@
         "GivenNames": "J H",
         "Begin": 1910,
         "End": 1913,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Wilson",
@@ -9763,21 +9882,24 @@
         "FamilyName": "Marles",
         "GivenNames": "Richard",
         "Begin": 2007,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "O'Connor",
         "GivenNames": "G",
         "Begin": 1993,
         "End": 2007,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Scholes",
         "GivenNames": "G G D",
         "Begin": 1967,
         "End": 1993,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Opperman",
@@ -9791,21 +9913,24 @@
         "GivenNames": "J J",
         "Begin": 1940,
         "End": 1949,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Casey",
         "GivenNames": "R G",
         "Begin": 1931,
         "End": 1940,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "Lewis",
         "GivenNames": "A",
         "Begin": 1929,
         "End": 1931,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Lister",
@@ -9819,7 +9944,8 @@
         "GivenNames": "A T",
         "Begin": 1914,
         "End": 1917,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Kendell",
@@ -9833,7 +9959,8 @@
         "GivenNames": "A T",
         "Begin": 1910,
         "End": 1913,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Crouch",
@@ -9978,7 +10105,8 @@
         "GivenNames": "M",
         "Begin": 2007,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Barresi",
@@ -10006,7 +10134,8 @@
         "GivenNames": "J",
         "Begin": 1983,
         "End": 1984,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Jarman",
@@ -10162,7 +10291,8 @@
         "GivenNames": "R L",
         "Begin": 1993,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Ford",
@@ -10176,7 +10306,8 @@
         "GivenNames": "R L",
         "Begin": 1984,
         "End": 1990,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -10284,7 +10415,8 @@
         "GivenNames": "R L",
         "Begin": 1983,
         "End": 1984,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Reith",
@@ -10312,7 +10444,8 @@
         "GivenNames": "K W W",
         "Begin": 1952,
         "End": 1954,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Ryan",
@@ -10326,21 +10459,24 @@
         "GivenNames": "J V",
         "Begin": 1933,
         "End": 1940,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "Bruce",
         "GivenNames": "S M",
         "Begin": 1931,
         "End": 1933,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "Holloway",
         "GivenNames": "E J",
         "Begin": 1929,
         "End": 1931,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Bruce",
@@ -10581,35 +10717,40 @@
         "FamilyName": "Watts",
         "GivenNames": "Tim",
         "Begin": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Roxon",
         "GivenNames": "N",
         "Begin": 1998,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Willis",
         "GivenNames": "R",
         "Begin": 1972,
         "End": 1998,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "McIvor",
         "GivenNames": "H J",
         "Begin": 1955,
         "End": 1972,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Mullens",
         "GivenNames": "J M",
         "Begin": 1949,
         "End": 1955,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -10735,14 +10876,16 @@
         "FamilyName": "Chester",
         "GivenNames": "Darren",
         "Begin": 2008,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "McGauran",
         "GivenNames": "P",
         "Begin": 1983,
         "End": 2008,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Nixon",
@@ -10756,7 +10899,8 @@
         "GivenNames": "G J",
         "Begin": 1943,
         "End": 1961,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Paterson",
@@ -11539,7 +11683,8 @@
         "FamilyName": "O'Connor",
         "GivenNames": "Brendan",
         "Begin": 2004,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -11836,21 +11981,24 @@
         "FamilyName": "Byrne",
         "GivenNames": "Anthony",
         "Begin": 1999,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Evans",
         "GivenNames": "G J",
         "Begin": 1996,
         "End": 1999,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Duffy",
         "GivenNames": "M J",
         "Begin": 1980,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Yates",
@@ -11864,7 +12012,8 @@
         "GivenNames": "M W",
         "Begin": 1972,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Reid",
@@ -11969,21 +12118,24 @@
         "FamilyName": "O'Neil",
         "GivenNames": "Clare",
         "Begin": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Crean",
         "GivenNames": "S",
         "Begin": 1990,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Kent",
         "GivenNames": "L",
         "Begin": 1980,
         "End": 1990,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Johnston",
@@ -12191,14 +12343,16 @@
         "GivenNames": "W J",
         "Begin": 1931,
         "End": 1937,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "Jones",
         "GivenNames": "P",
         "Begin": 1928,
         "End": 1931,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Cook",
@@ -12212,14 +12366,16 @@
         "GivenNames": "J W",
         "Begin": 1917,
         "End": 1919,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Moloney",
         "GivenNames": "P J",
         "Begin": 1914,
         "End": 1917,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Ahern",
@@ -12233,7 +12389,8 @@
         "GivenNames": "P J",
         "Begin": 1910,
         "End": 1913,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Brown",
@@ -12897,21 +13054,24 @@
         "FamilyName": "Dreyfus",
         "GivenNames": "Mark",
         "Begin": 2007,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Corcoran",
         "GivenNames": "A",
         "Begin": 2000,
         "End": 2007,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Wilton",
         "GivenNames": "G S",
         "Begin": 1996,
         "End": 2000,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Atkinson",
@@ -12925,7 +13085,8 @@
         "GivenNames": "D E",
         "Begin": 1980,
         "End": 1990,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Burns",
@@ -12946,7 +13107,8 @@
         "GivenNames": "G",
         "Begin": 1974,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hamer",
@@ -13097,14 +13259,16 @@
         "GivenNames": "J",
         "Begin": 1996,
         "End": 2019,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Staples",
         "GivenNames": "P R",
         "Begin": 1984,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -13392,7 +13556,8 @@
         "GivenNames": "L",
         "Begin": 2010,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Wood",
@@ -13413,7 +13578,8 @@
         "GivenNames": "P",
         "Begin": 1980,
         "End": 1990,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Baillieu",
@@ -13427,7 +13593,8 @@
         "GivenNames": "A H",
         "Begin": 1972,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Jess",
@@ -13483,28 +13650,32 @@
         "FamilyName": "Ryan",
         "GivenNames": "Joanne",
         "Begin": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Gillard",
         "GivenNames": "J",
         "Begin": 1998,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Jones",
         "GivenNames": "B O",
         "Begin": 1977,
         "End": 1998,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Cairns",
         "GivenNames": "J F",
         "Begin": 1969,
         "End": 1977,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Lee",
@@ -13518,7 +13689,8 @@
         "GivenNames": "R T",
         "Begin": 1949,
         "End": 1966,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -13609,14 +13781,16 @@
         "GivenNames": "A",
         "Begin": 2013,
         "End": 2019,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Forrest",
         "GivenNames": "J",
         "Begin": 1993,
         "End": 2013,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Fisher",
@@ -13630,7 +13804,8 @@
         "GivenNames": "W G",
         "Begin": 1949,
         "End": 1972,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       }
     ],
     "Locations": [
@@ -14777,28 +14952,32 @@
         "GivenNames": "W",
         "Begin": 2007,
         "End": 2019,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Sercombe",
         "GivenNames": "B",
         "Begin": 1996,
         "End": 2007,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Griffiths",
         "GivenNames": "A G",
         "Begin": 1983,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Cass",
         "GivenNames": "M H",
         "Begin": 1969,
         "End": 1983,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Stokes",
@@ -14945,7 +15124,8 @@
         "FamilyName": "Mitchell",
         "GivenNames": "Rob",
         "Begin": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Bailey",
@@ -14959,7 +15139,8 @@
         "GivenNames": "P R",
         "Begin": 1993,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Bailey",
@@ -14973,7 +15154,8 @@
         "GivenNames": "P R",
         "Begin": 1984,
         "End": 1990,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -15269,7 +15451,8 @@
         "GivenNames": "C",
         "Begin": 1998,
         "End": 2004,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Broadbent",
@@ -15283,7 +15466,8 @@
         "GivenNames": "B T",
         "Begin": 1993,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Riggall",
@@ -15297,7 +15481,8 @@
         "GivenNames": "B T",
         "Begin": 1980,
         "End": 1990,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Simon",
@@ -15348,35 +15533,40 @@
         "FamilyName": "Bandt",
         "GivenNames": "Adam",
         "Begin": 2010,
-        "PartyCode": "GRN"
+        "PartyCode": "GRN",
+        "PartyId": 37
       },
       {
         "FamilyName": "Tanner",
         "GivenNames": "L",
         "Begin": 1993,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hand",
         "GivenNames": "G L",
         "Begin": 1983,
         "End": 1993,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Innes",
         "GivenNames": "U E",
         "Begin": 1972,
         "End": 1983,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Calwell",
         "GivenNames": "A A",
         "Begin": 1940,
         "End": 1972,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Malony",
@@ -15525,21 +15715,24 @@
         "GivenNames": "M",
         "Begin": 1998,
         "End": 2019,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Holding",
         "GivenNames": "C",
         "Begin": 1977,
         "End": 1998,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Crean",
         "GivenNames": "F",
         "Begin": 1951,
         "End": 1977,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Holloway",
@@ -15553,7 +15746,8 @@
         "GivenNames": "J",
         "Begin": 1906,
         "End": 1931,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Mauger",
@@ -15735,7 +15929,8 @@
         "GivenNames": "J",
         "Begin": 1949,
         "End": 1971,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       }
     ],
     "Locations": []
@@ -15758,28 +15953,32 @@
         "FamilyName": "Giles",
         "GivenNames": "Andrew",
         "Begin": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Jenkins",
         "GivenNames": "H",
         "Begin": 1986,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Jenkins",
         "GivenNames": "H A",
         "Begin": 1969,
         "End": 1986,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Peters",
         "GivenNames": "E W",
         "Begin": 1955,
         "End": 1969,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -15894,7 +16093,8 @@
         "GivenNames": "D",
         "Begin": 1951,
         "End": 1955,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "McKinnon",
@@ -15908,35 +16108,40 @@
         "GivenNames": "D",
         "Begin": 1940,
         "End": 1949,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Scholfield",
         "GivenNames": "T H",
         "Begin": 1931,
         "End": 1940,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "McNeill",
         "GivenNames": "J",
         "Begin": 1929,
         "End": 1931,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Rodgers",
         "GivenNames": "A S",
         "Begin": 1925,
         "End": 1929,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "McNeill",
         "GivenNames": "J",
         "Begin": 1922,
         "End": 1925,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Rodgers",
@@ -15950,7 +16155,8 @@
         "GivenNames": "J K",
         "Begin": 1906,
         "End": 1913,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Robinson",
@@ -16786,14 +16992,16 @@
         "FamilyName": "Khalil",
         "GivenNames": "Peter",
         "Begin": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Thomson",
         "GivenNames": "K",
         "Begin": 1996,
         "End": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Cleary",
@@ -16807,21 +17015,24 @@
         "GivenNames": "R J L",
         "Begin": 1980,
         "End": 1992,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Bryant",
         "GivenNames": "G M",
         "Begin": 1955,
         "End": 1980,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Bryson",
         "GivenNames": "W G",
         "Begin": 1949,
         "End": 1955,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -18390,7 +18601,8 @@
         "FamilyName": "Neumann",
         "GivenNames": "Shayne Kenneth",
         "Begin": 2007,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Thompson",
@@ -18664,14 +18876,16 @@
         "FamilyName": "Vasta",
         "GivenNames": "Ross",
         "Begin": 2010,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Rea",
         "GivenNames": "K",
         "Begin": 2007,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Vasta",
@@ -18837,14 +19051,16 @@
         "FamilyName": "Laming",
         "GivenNames": "Andrew",
         "Begin": 2004,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Sciacca",
         "GivenNames": "C",
         "Begin": 1998,
         "End": 2004,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "West",
@@ -18858,14 +19074,16 @@
         "GivenNames": "C A",
         "Begin": 1987,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Keogh",
         "GivenNames": "L J",
         "Begin": 1983,
         "End": 1987,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Jull",
@@ -18879,7 +19097,8 @@
         "GivenNames": "L J",
         "Begin": 1969,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Gibbs",
@@ -18893,7 +19112,8 @@
         "GivenNames": "J",
         "Begin": 1961,
         "End": 1963,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "McColm",
@@ -19017,28 +19237,32 @@
         "FamilyName": "Evans",
         "GivenNames": "Trevor",
         "Begin": 2016,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Gambaro",
         "GivenNames": "T",
         "Begin": 2010,
         "End": 2016,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Bevis",
         "GivenNames": "A",
         "Begin": 1990,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Cross",
         "GivenNames": "M D",
         "Begin": 1980,
         "End": 1990,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Johnson",
@@ -19052,14 +19276,16 @@
         "GivenNames": "M D",
         "Begin": 1961,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Lawson",
         "GivenNames": "G",
         "Begin": 1931,
         "End": 1961,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Cameron",
@@ -19073,7 +19299,8 @@
         "GivenNames": "W F",
         "Begin": 1910,
         "End": 1919,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Foxton",
@@ -19087,7 +19314,8 @@
         "GivenNames": "M",
         "Begin": 1903,
         "End": 1906,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Macdonald-Paterson",
@@ -19266,42 +19494,48 @@
         "FamilyName": "Landry",
         "GivenNames": "Michelle",
         "Begin": 2013,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Livermore",
         "GivenNames": "K",
         "Begin": 1998,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Marek",
         "GivenNames": "P",
         "Begin": 1996,
         "End": 1998,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Henzell",
         "GivenNames": "M M",
         "Begin": 1993,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Wright",
         "GivenNames": "K W",
         "Begin": 1984,
         "End": 1993,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Everingham",
         "GivenNames": "D N",
         "Begin": 1977,
         "End": 1984,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Carige",
@@ -19315,14 +19549,16 @@
         "GivenNames": "D N",
         "Begin": 1967,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Gray",
         "GivenNames": "G H",
         "Begin": 1961,
         "End": 1967,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Pearce",
@@ -19343,14 +19579,16 @@
         "GivenNames": "F M",
         "Begin": 1922,
         "End": 1946,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Higgs",
         "GivenNames": "W",
         "Begin": 1910,
         "End": 1922,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Archer",
@@ -19364,7 +19602,8 @@
         "GivenNames": "D A",
         "Begin": 1903,
         "End": 1906,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Paterson",
@@ -19749,49 +19988,56 @@
         "FamilyName": "Christensen",
         "GivenNames": "George",
         "Begin": 2010,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Bidgood",
         "GivenNames": "J",
         "Begin": 2007,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Kelly",
         "GivenNames": "D",
         "Begin": 1996,
         "End": 2007,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Braithwaite",
         "GivenNames": "R A",
         "Begin": 1975,
         "End": 1996,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Patterson",
         "GivenNames": "R A",
         "Begin": 1966,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Shaw",
         "GivenNames": "G W",
         "Begin": 1963,
         "End": 1966,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Davidson",
         "GivenNames": "C W",
         "Begin": 1949,
         "End": 1963,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       }
     ],
     "Locations": [
@@ -20096,14 +20342,16 @@
         "FamilyName": "Dutton",
         "GivenNames": "Peter",
         "Begin": 2001,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Kernot",
         "GivenNames": "C",
         "Begin": 1998,
         "End": 2001,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Smith",
@@ -20117,7 +20365,8 @@
         "GivenNames": "M H",
         "Begin": 1993,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -20266,7 +20515,8 @@
         "FamilyName": "Robert",
         "GivenNames": "Stuart",
         "Begin": 2007,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Jull",
@@ -20280,7 +20530,8 @@
         "GivenNames": "D P",
         "Begin": 1983,
         "End": 1984,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Cameron",
@@ -20403,7 +20654,8 @@
         "FamilyName": "O'Brien",
         "GivenNames": "Ted",
         "Begin": 2016,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Palmer",
@@ -20417,14 +20669,16 @@
         "GivenNames": "A",
         "Begin": 1990,
         "End": 2013,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Adermann",
         "GivenNames": "A E",
         "Begin": 1984,
         "End": 1990,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       }
     ],
     "Locations": [
@@ -20580,35 +20834,40 @@
         "FamilyName": "Wallace",
         "GivenNames": "Andrew",
         "Begin": 2016,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Brough",
         "GivenNames": "M",
         "Begin": 2013,
         "End": 2016,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Slipper",
         "GivenNames": "P",
         "Begin": 1993,
         "End": 2013,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Lavarch",
         "GivenNames": "M H",
         "Begin": 1987,
         "End": 1993,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Slipper",
         "GivenNames": "P N",
         "Begin": 1984,
         "End": 1987,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Adermann",
@@ -20622,7 +20881,8 @@
         "GivenNames": "C F",
         "Begin": 1949,
         "End": 1972,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       }
     ],
     "Locations": [
@@ -20808,14 +21068,16 @@
         "FamilyName": "O'Dowd",
         "GivenNames": "Ken",
         "Begin": 2010,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Trevor",
         "GivenNames": "C",
         "Begin": 2007,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -21474,14 +21736,16 @@
         "FamilyName": "Van Manen",
         "GivenNames": "Bert",
         "Begin": 2010,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Raguse",
         "GivenNames": "B",
         "Begin": 2007,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Elson",
@@ -21495,7 +21759,8 @@
         "GivenNames": "M C",
         "Begin": 1987,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Watson",
@@ -21662,14 +21927,16 @@
         "FamilyName": "Butler",
         "GivenNames": "Terri",
         "Begin": 2014,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Rudd",
         "GivenNames": "K",
         "Begin": 1998,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "McDougall",
@@ -21683,7 +21950,8 @@
         "GivenNames": "B C",
         "Begin": 1977,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Cameron",
@@ -21697,7 +21965,8 @@
         "GivenNames": "W C",
         "Begin": 1961,
         "End": 1966,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Chresby",
@@ -21711,7 +21980,8 @@
         "GivenNames": "W C",
         "Begin": 1954,
         "End": 1958,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Berry",
@@ -21725,7 +21995,8 @@
         "GivenNames": "W P",
         "Begin": 1939,
         "End": 1949,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Baker",
@@ -21856,14 +22127,16 @@
         "FamilyName": "McVeigh",
         "GivenNames": "John",
         "Begin": 2016,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Macfarlane",
         "GivenNames": "I",
         "Begin": 1998,
         "End": 2016,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Taylor",
@@ -21877,7 +22150,8 @@
         "GivenNames": "T",
         "Begin": 1984,
         "End": 1988,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       }
     ],
     "Locations": [
@@ -22163,14 +22437,16 @@
         "GivenNames": "C",
         "Begin": 2016,
         "End": 2019,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Jones",
         "GivenNames": "E",
         "Begin": 2010,
         "End": 2016,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Lindsay",
@@ -22184,7 +22460,8 @@
         "GivenNames": "E J",
         "Begin": 1983,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Dean",
@@ -22205,7 +22482,8 @@
         "GivenNames": "E W",
         "Begin": 1961,
         "End": 1966,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Murray",
@@ -22219,7 +22497,8 @@
         "GivenNames": "W F",
         "Begin": 1946,
         "End": 1958,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Martens",
@@ -22412,28 +22691,32 @@
         "FamilyName": "Pitt",
         "GivenNames": "Keith",
         "Begin": 2013,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Neville",
         "GivenNames": "P",
         "Begin": 1993,
         "End": 2013,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Courtice",
         "GivenNames": "B W",
         "Begin": 1987,
         "End": 1993,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Conquest",
         "GivenNames": "B J",
         "Begin": 1984,
         "End": 1987,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       }
     ],
     "Locations": [
@@ -22616,14 +22899,16 @@
         "GivenNames": "R J",
         "Begin": 1990,
         "End": 1993,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Katter",
         "GivenNames": "R C",
         "Begin": 1966,
         "End": 1990,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Riordan",
@@ -22651,7 +22936,8 @@
         "GivenNames": "C",
         "Begin": 1901,
         "End": 1925,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -23288,14 +23574,16 @@
         "FamilyName": "Entsch",
         "GivenNames": "Warren",
         "Begin": 2010,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Turnour",
         "GivenNames": "J",
         "Begin": 2007,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Entsch",
@@ -23309,14 +23597,16 @@
         "GivenNames": "P G",
         "Begin": 1993,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Gayler",
         "GivenNames": "J",
         "Begin": 1983,
         "End": 1993,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Thomson",
@@ -23330,21 +23620,24 @@
         "GivenNames": "W J",
         "Begin": 1958,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Bruce",
         "GivenNames": "H A",
         "Begin": 1951,
         "End": 1958,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Gilmore",
         "GivenNames": "T V",
         "Begin": 1949,
         "End": 1951,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       }
     ],
     "Locations": [
@@ -23629,7 +23922,8 @@
         "GivenNames": "W",
         "Begin": 1998,
         "End": 2019,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Grace",
@@ -23643,14 +23937,16 @@
         "GivenNames": "W M",
         "Begin": 1993,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Darling",
         "GivenNames": "E E",
         "Begin": 1980,
         "End": 1993,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Cairns",
@@ -23664,7 +23960,8 @@
         "GivenNames": "F E",
         "Begin": 1972,
         "End": 1974,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Cairns",
@@ -23678,7 +23975,8 @@
         "GivenNames": "D J",
         "Begin": 1961,
         "End": 1963,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Wight",
@@ -23692,21 +23990,24 @@
         "GivenNames": "J W",
         "Begin": 1943,
         "End": 1949,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Jolley",
         "GivenNames": "W A",
         "Begin": 1937,
         "End": 1943,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "Cameron",
         "GivenNames": "D C",
         "Begin": 1934,
         "End": 1937,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "Mackay",
@@ -23860,21 +24161,24 @@
         "GivenNames": "S",
         "Begin": 2016,
         "End": 2019,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Roy",
         "GivenNames": "W",
         "Begin": 2010,
         "End": 2016,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Sullivan",
         "GivenNames": "J",
         "Begin": 2007,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Brough",
@@ -24031,14 +24335,16 @@
         "FamilyName": "Littleproud",
         "GivenNames": "David",
         "Begin": 2016,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Scott",
         "GivenNames": "B",
         "Begin": 1990,
         "End": 2016,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Cameron",
@@ -24059,42 +24365,48 @@
         "GivenNames": "W J",
         "Begin": 1951,
         "End": 1966,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Russell",
         "GivenNames": "C W",
         "Begin": 1949,
         "End": 1951,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Adermann",
         "GivenNames": "C F",
         "Begin": 1943,
         "End": 1949,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Baker",
         "GivenNames": "F P",
         "Begin": 1940,
         "End": 1943,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hunter",
         "GivenNames": "J A J",
         "Begin": 1921,
         "End": 1940,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Page",
         "GivenNames": "J",
         "Begin": 1901,
         "End": 1921,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -25204,7 +25516,8 @@
         "FamilyName": "Andrews",
         "GivenNames": "Karen",
         "Begin": 2010,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "May",
@@ -25239,14 +25552,16 @@
         "GivenNames": "C E",
         "Begin": 1958,
         "End": 1972,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Fadden",
         "GivenNames": "A W",
         "Begin": 1949,
         "End": 1958,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       }
     ],
     "Locations": [
@@ -25364,7 +25679,8 @@
         "GivenNames": "S",
         "Begin": 2001,
         "End": 2019,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Sullivan",
@@ -25481,7 +25797,8 @@
         "FamilyName": "Perrett",
         "GivenNames": "Graham",
         "Begin": 2007,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hardgrave",
@@ -25495,7 +25812,8 @@
         "GivenNames": "G D",
         "Begin": 1990,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Cameron",
@@ -25680,14 +25998,16 @@
         "FamilyName": "Dick",
         "GivenNames": "Milton",
         "Begin": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Ripoll",
         "GivenNames": "B",
         "Begin": 1998,
         "End": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hanson",
@@ -25701,14 +26021,16 @@
         "GivenNames": "L J",
         "Begin": 1988,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hayden",
         "GivenNames": "B G",
         "Begin": 1961,
         "End": 1988,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Cameron",
@@ -25836,14 +26158,16 @@
         "FamilyName": "Howarth",
         "GivenNames": "Luke",
         "Begin": 2013,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "D'Ath",
         "GivenNames": "Y",
         "Begin": 2007,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Gambaro",
@@ -25857,7 +26181,8 @@
         "GivenNames": "G T",
         "Begin": 1987,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hodges",
@@ -25871,7 +26196,8 @@
         "GivenNames": "D M",
         "Begin": 1983,
         "End": 1984,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hodges",
@@ -25899,7 +26225,8 @@
         "GivenNames": "R C",
         "Begin": 1961,
         "End": 1963,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hulme",
@@ -26039,21 +26366,24 @@
         "FamilyName": "Chalmers",
         "GivenNames": "Jim",
         "Begin": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Emerson",
         "GivenNames": "C",
         "Begin": 1998,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Beddall",
         "GivenNames": "D",
         "Begin": 1984,
         "End": 1998,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -26184,7 +26514,8 @@
         "GivenNames": "J",
         "Begin": 2010,
         "End": 2019,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Johnson",
@@ -26198,7 +26529,8 @@
         "GivenNames": "L",
         "Begin": 2001,
         "End": 2001,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Moore",
@@ -26369,14 +26701,16 @@
         "FamilyName": "O'Brien",
         "GivenNames": "Llew",
         "Begin": 2016,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Truss",
         "GivenNames": "W",
         "Begin": 1990,
         "End": 2016,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       },
       {
         "FamilyName": "Millar",
@@ -26390,28 +26724,32 @@
         "GivenNames": "B P",
         "Begin": 1961,
         "End": 1974,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Bandidt",
         "GivenNames": "H N C",
         "Begin": 1958,
         "End": 1961,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Brand",
         "GivenNames": "W A",
         "Begin": 1954,
         "End": 1958,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Corser",
         "GivenNames": "B H",
         "Begin": 1928,
         "End": 1954,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Corser",
@@ -26425,7 +26763,8 @@
         "GivenNames": "A",
         "Begin": 1901,
         "End": 1915,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [],
@@ -26467,7 +26806,8 @@
         "FamilyName": "Buchholz",
         "GivenNames": "Scott",
         "Begin": 2010,
-        "PartyCode": "LNQ"
+        "PartyCode": "LNQ",
+        "PartyId": 1323
       }
     ],
     "Locations": [
@@ -26886,7 +27226,8 @@
         "FamilyName": "Snowdon",
         "GivenNames": "Warren",
         "Begin": 2001,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -27910,7 +28251,8 @@
         "FamilyName": "Gosling",
         "GivenNames": "Luke John",
         "Begin": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Griggs",
@@ -27924,7 +28266,8 @@
         "GivenNames": "D",
         "Begin": 2007,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Tollner",
@@ -28106,28 +28449,32 @@
         "GivenNames": "D",
         "Begin": 1990,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Mountford",
         "GivenNames": "J G",
         "Begin": 1980,
         "End": 1990,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Martin",
         "GivenNames": "V J",
         "Begin": 1969,
         "End": 1980,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Costa",
         "GivenNames": "D E",
         "Begin": 1949,
         "End": 1969,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -28249,7 +28596,8 @@
         "FamilyName": "Burney",
         "GivenNames": "Linda",
         "Begin": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Varvaris",
@@ -28263,14 +28611,16 @@
         "GivenNames": "R",
         "Begin": 1996,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Punch",
         "GivenNames": "G F",
         "Begin": 1983,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Bradfield",
@@ -28284,7 +28634,8 @@
         "GivenNames": "L J",
         "Begin": 1969,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Arthur",
@@ -28298,28 +28649,32 @@
         "GivenNames": "L J",
         "Begin": 1958,
         "End": 1966,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Evatt",
         "GivenNames": "H V",
         "Begin": 1940,
         "End": 1958,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Lane",
         "GivenNames": "A",
         "Begin": 1931,
         "End": 1940,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "Tully",
         "GivenNames": "J T",
         "Begin": 1928,
         "End": 1931,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Ley",
@@ -28333,7 +28688,8 @@
         "GivenNames": "F A",
         "Begin": 1922,
         "End": 1925,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -28490,7 +28846,8 @@
         "GivenNames": "M",
         "Begin": 2007,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Howard",
@@ -28840,28 +29197,32 @@
         "FamilyName": "Clare",
         "GivenNames": "Jason",
         "Begin": 2007,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hatton",
         "GivenNames": "M",
         "Begin": 1996,
         "End": 2007,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Keating",
         "GivenNames": "P J",
         "Begin": 1969,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Harrison",
         "GivenNames": "E J",
         "Begin": 1949,
         "End": 1969,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -29146,14 +29507,16 @@
         "FamilyName": "Gee",
         "GivenNames": "Andrew",
         "Begin": 2016,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Cobb",
         "GivenNames": "J",
         "Begin": 2007,
         "End": 2016,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Andren",
@@ -29167,7 +29530,8 @@
         "GivenNames": "D W",
         "Begin": 1983,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "MacKenzie",
@@ -29195,21 +29559,24 @@
         "GivenNames": "J P",
         "Begin": 1940,
         "End": 1946,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Thorby",
         "GivenNames": "H V",
         "Begin": 1931,
         "End": 1940,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Gibbons",
         "GivenNames": "G A",
         "Begin": 1929,
         "End": 1931,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Howse",
@@ -29223,7 +29590,8 @@
         "GivenNames": "T J",
         "Begin": 1919,
         "End": 1922,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Pigott",
@@ -29237,7 +29605,8 @@
         "GivenNames": "T",
         "Begin": 1906,
         "End": 1913,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -29838,28 +30207,32 @@
         "FamilyName": "Husic",
         "GivenNames": "Ed",
         "Begin": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Price",
         "GivenNames": "R",
         "Begin": 1984,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Gorman",
         "GivenNames": "R N J",
         "Begin": 1983,
         "End": 1984,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Armitage",
         "GivenNames": "J L",
         "Begin": 1969,
         "End": 1983,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -30011,7 +30384,8 @@
         "GivenNames": "R W",
         "Begin": 1972,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Dobie",
@@ -30024,35 +30398,40 @@
         "FamilyName": "Cope",
         "GivenNames": "J F",
         "Begin": 1955,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Sheehan",
         "GivenNames": "T",
         "Begin": 1937,
         "End": 1955,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Garden",
         "GivenNames": "J S",
         "Begin": 1934,
         "End": 1937,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Riley",
         "GivenNames": "E C",
         "Begin": 1922,
         "End": 1934,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Catts",
         "GivenNames": "J H",
         "Begin": 1906,
         "End": 1922,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -30179,14 +30558,16 @@
         "GivenNames": "L",
         "Begin": 2001,
         "End": 2019,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Nehl",
         "GivenNames": "G",
         "Begin": 1984,
         "End": 2001,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Robinson",
@@ -30200,7 +30581,8 @@
         "GivenNames": "F W",
         "Begin": 1961,
         "End": 1963,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Page",
@@ -30510,49 +30892,56 @@
         "FamilyName": "Bird",
         "GivenNames": "Sharon",
         "Begin": 2004,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Organ",
         "GivenNames": "M",
         "Begin": 2002,
         "End": 2004,
-        "PartyCode": "GRN"
+        "PartyCode": "GRN",
+        "PartyId": 37
       },
       {
         "FamilyName": "Martin",
         "GivenNames": "S",
         "Begin": 1993,
         "End": 2002,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "West",
         "GivenNames": "S J",
         "Begin": 1977,
         "End": 1993,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Connor",
         "GivenNames": "R F X",
         "Begin": 1963,
         "End": 1977,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Kearney",
         "GivenNames": "V D",
         "Begin": 1956,
         "End": 1963,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Davies",
         "GivenNames": "W",
         "Begin": 1949,
         "End": 1956,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -30709,7 +31098,8 @@
         "FamilyName": "McBride",
         "GivenNames": "Emma",
         "Begin": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "McNamara",
@@ -30723,7 +31113,8 @@
         "GivenNames": "C",
         "Begin": 2007,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Ticehurst",
@@ -30737,7 +31128,8 @@
         "GivenNames": "M",
         "Begin": 1984,
         "End": 2001,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -30882,7 +31274,8 @@
         "FamilyName": "Kelly",
         "GivenNames": "Mike",
         "Begin": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hendy",
@@ -30896,7 +31289,8 @@
         "GivenNames": "M",
         "Begin": 2007,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Nairn",
@@ -30910,7 +31304,8 @@
         "GivenNames": "J H J",
         "Begin": 1983,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Sainsbury",
@@ -30924,14 +31319,16 @@
         "GivenNames": "R B",
         "Begin": 1972,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Fraser",
         "GivenNames": "A D",
         "Begin": 1969,
         "End": 1972,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Munro",
@@ -30945,21 +31342,24 @@
         "GivenNames": "A D",
         "Begin": 1943,
         "End": 1966,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Perkins",
         "GivenNames": "J A",
         "Begin": 1931,
         "End": 1943,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "Cusack",
         "GivenNames": "J J",
         "Begin": 1929,
         "End": 1931,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Perkins",
@@ -31631,7 +32031,8 @@
         "GivenNames": "T",
         "Begin": 1984,
         "End": 2001,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Fife",
@@ -32154,21 +32555,24 @@
         "FamilyName": "Hayes",
         "GivenNames": "Chris",
         "Begin": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Irwin",
         "GivenNames": "J",
         "Begin": 1998,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Grace",
         "GivenNames": "T",
         "Begin": 1984,
         "End": 1998,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -32286,14 +32690,16 @@
         "GivenNames": "P J",
         "Begin": 1993,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Sharp",
         "GivenNames": "J R",
         "Begin": 1984,
         "End": 1993,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       }
     ],
     "Locations": [
@@ -32612,42 +33018,48 @@
         "FamilyName": "Albanese",
         "GivenNames": "Anthony",
         "Begin": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "McHugh",
         "GivenNames": "J",
         "Begin": 1993,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "McLeay",
         "GivenNames": "L B",
         "Begin": 1979,
         "End": 1993,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Stewart",
         "GivenNames": "F E",
         "Begin": 1977,
         "End": 1979,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Whitlam",
         "GivenNames": "A P",
         "Begin": 1975,
         "End": 1977,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Daly",
         "GivenNames": "F M",
         "Begin": 1949,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -32804,7 +33216,8 @@
         "FamilyName": "Rowland",
         "GivenNames": "Michelle",
         "Begin": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Markus",
@@ -32818,14 +33231,16 @@
         "GivenNames": "F",
         "Begin": 1996,
         "End": 2004,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Gorman",
         "GivenNames": "R N J",
         "Begin": 1984,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -32952,14 +33367,16 @@
         "GivenNames": "R E",
         "Begin": 1984,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Johnson",
         "GivenNames": "L R",
         "Begin": 1969,
         "End": 1983,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Dobie",
@@ -32973,7 +33390,8 @@
         "GivenNames": "L R",
         "Begin": 1955,
         "End": 1966,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -33128,7 +33546,8 @@
         "GivenNames": "J",
         "Begin": 1993,
         "End": 1998,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Fife",
@@ -33149,63 +33568,72 @@
         "GivenNames": "F",
         "Begin": 1972,
         "End": 1974,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Pettitt",
         "GivenNames": "J A",
         "Begin": 1963,
         "End": 1972,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Fuller",
         "GivenNames": "A N",
         "Begin": 1961,
         "End": 1963,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Anderson",
         "GivenNames": "C G W",
         "Begin": 1955,
         "End": 1961,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Fuller",
         "GivenNames": "A N",
         "Begin": 1951,
         "End": 1955,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Anderson",
         "GivenNames": "C G W",
         "Begin": 1949,
         "End": 1951,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Fuller",
         "GivenNames": "A N",
         "Begin": 1943,
         "End": 1949,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Collins",
         "GivenNames": "T J",
         "Begin": 1931,
         "End": 1943,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Moloney",
         "GivenNames": "P J",
         "Begin": 1919,
         "End": 1931,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Falkiner",
@@ -33560,84 +33988,96 @@
         "FamilyName": "Fitzgibbon",
         "GivenNames": "Joel",
         "Begin": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Conroy",
         "GivenNames": "P",
         "Begin": 2013,
         "End": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Combet",
         "GivenNames": "G",
         "Begin": 2007,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hoare",
         "GivenNames": "K",
         "Begin": 1998,
         "End": 2007,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Brown",
         "GivenNames": "B",
         "Begin": 1984,
         "End": 1998,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Fitzgibbon",
         "GivenNames": "J",
         "Begin": 1996,
         "End": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Fitzgibbon",
         "GivenNames": "E J",
         "Begin": 1984,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Brown",
         "GivenNames": "R J",
         "Begin": 1980,
         "End": 1984,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "James",
         "GivenNames": "A W",
         "Begin": 1960,
         "End": 1980,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Evatt",
         "GivenNames": "H V",
         "Begin": 1958,
         "End": 1960,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "James",
         "GivenNames": "R",
         "Begin": 1928,
         "End": 1958,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Charlton",
         "GivenNames": "M",
         "Begin": 1910,
         "End": 1928,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Liddell",
@@ -34001,42 +34441,48 @@
         "FamilyName": "Thistlethwaite",
         "GivenNames": "Matt",
         "Begin": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Garrett",
         "GivenNames": "P",
         "Begin": 2004,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Brereton",
         "GivenNames": "L",
         "Begin": 1990,
         "End": 2004,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Bowen",
         "GivenNames": "L F",
         "Begin": 1969,
         "End": 1990,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Curtin",
         "GivenNames": "D J",
         "Begin": 1955,
         "End": 1969,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Anderson",
         "GivenNames": "G",
         "Begin": 1949,
         "End": 1955,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [],
@@ -34086,7 +34532,8 @@
         "GivenNames": "E",
         "Begin": 2016,
         "End": 2019,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Scott",
@@ -34100,7 +34547,8 @@
         "GivenNames": "D",
         "Begin": 2007,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Kelly",
@@ -34114,7 +34562,8 @@
         "GivenNames": "R V",
         "Begin": 1984,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -34238,7 +34687,8 @@
         "FamilyName": "Gillespie",
         "GivenNames": "David",
         "Begin": 2013,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Oakeshott",
@@ -34252,7 +34702,8 @@
         "GivenNames": "M",
         "Begin": 1993,
         "End": 2008,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Cowan",
@@ -34273,7 +34724,8 @@
         "GivenNames": "E J",
         "Begin": 1949,
         "End": 1952,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       }
     ],
     "Locations": [
@@ -34771,7 +35223,8 @@
         "FamilyName": "Freelander",
         "GivenNames": "Mike",
         "Begin": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Matheson",
@@ -34799,21 +35252,24 @@
         "GivenNames": "C D",
         "Begin": 1993,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Martin",
         "GivenNames": "S P",
         "Begin": 1984,
         "End": 1993,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hollis",
         "GivenNames": "C",
         "Begin": 1983,
         "End": 1984,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Baume",
@@ -34827,7 +35283,8 @@
         "GivenNames": "J C",
         "Begin": 1972,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Bate",
@@ -35155,7 +35612,8 @@
         "FamilyName": "Templeman",
         "GivenNames": "Susan",
         "Begin": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Markus",
@@ -35169,7 +35627,8 @@
         "GivenNames": "R",
         "Begin": 2007,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Bartlett",
@@ -35183,7 +35642,8 @@
         "GivenNames": "M J",
         "Begin": 1993,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Webster",
@@ -35197,7 +35657,8 @@
         "GivenNames": "R V",
         "Begin": 1980,
         "End": 1984,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Gillard",
@@ -35211,28 +35672,32 @@
         "GivenNames": "A S",
         "Begin": 1951,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Chifley",
         "GivenNames": "J B",
         "Begin": 1940,
         "End": 1951,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Lawson",
         "GivenNames": "J N",
         "Begin": 1931,
         "End": 1940,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "Chifley",
         "GivenNames": "J B",
         "Begin": 1928,
         "End": 1931,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Manning",
@@ -35246,14 +35711,16 @@
         "GivenNames": "S R",
         "Begin": 1917,
         "End": 1922,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Carr",
         "GivenNames": "E S",
         "Begin": 1906,
         "End": 1917,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Smith",
@@ -35507,21 +35974,24 @@
         "FamilyName": "Bowen",
         "GivenNames": "Chris",
         "Begin": 2004,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Crosio",
         "GivenNames": "J",
         "Begin": 1990,
         "End": 2004,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Klugman",
         "GivenNames": "R E",
         "Begin": 1969,
         "End": 1990,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -35679,7 +36149,8 @@
         "GivenNames": "A",
         "Begin": 1972,
         "End": 1974,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Irwin",
@@ -35693,7 +36164,8 @@
         "GivenNames": "J L",
         "Begin": 1961,
         "End": 1963,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Wheeler",
@@ -35805,7 +36277,8 @@
         "FamilyName": "Joyce",
         "GivenNames": "Barnaby",
         "Begin": 2013,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Windsor",
@@ -35819,7 +36292,8 @@
         "GivenNames": "S",
         "Begin": 1998,
         "End": 2001,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Sinclair",
@@ -35833,21 +36307,24 @@
         "GivenNames": "D H",
         "Begin": 1949,
         "End": 1963,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Abbott",
         "GivenNames": "J P",
         "Begin": 1940,
         "End": 1949,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Thompson",
         "GivenNames": "V C",
         "Begin": 1922,
         "End": 1940,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Hay",
@@ -35868,7 +36345,8 @@
         "GivenNames": "F J",
         "Begin": 1906,
         "End": 1913,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Lonsdale",
@@ -35922,28 +36400,32 @@
         "FamilyName": "Claydon",
         "GivenNames": "Sharon",
         "Begin": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Grierson",
         "GivenNames": "S",
         "Begin": 2001,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Morris",
         "GivenNames": "A",
         "Begin": 1983,
         "End": 2001,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Jones",
         "GivenNames": "C K",
         "Begin": 1958,
         "End": 1983,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Watkins",
@@ -36257,35 +36739,40 @@
         "FamilyName": "Hogan",
         "GivenNames": "Kevin",
         "Begin": 2013,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Saffin",
         "GivenNames": "J",
         "Begin": 2007,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Causley",
         "GivenNames": "I",
         "Begin": 1996,
         "End": 2007,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Woods",
         "GivenNames": "H F",
         "Begin": 1990,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Robinson",
         "GivenNames": "I L",
         "Begin": 1984,
         "End": 1990,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       }
     ],
     "Locations": [
@@ -36856,28 +37343,32 @@
         "FamilyName": "Coulton",
         "GivenNames": "Mark",
         "Begin": 2007,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Cobb",
         "GivenNames": "J",
         "Begin": 2001,
         "End": 2007,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Lawler",
         "GivenNames": "A",
         "Begin": 1998,
         "End": 2001,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Cobb",
         "GivenNames": "M",
         "Begin": 1984,
         "End": 1998,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       }
     ],
     "Locations": [
@@ -37549,7 +38040,8 @@
         "FamilyName": "Owens",
         "GivenNames": "Julie",
         "Begin": 2004,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Cameron",
@@ -37563,14 +38055,16 @@
         "GivenNames": "R P",
         "Begin": 1990,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Brown",
         "GivenNames": "J J",
         "Begin": 1977,
         "End": 1990,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Ruddock",
@@ -37605,14 +38099,16 @@
         "GivenNames": "F H",
         "Begin": 1931,
         "End": 1946,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "Rowe",
         "GivenNames": "A E",
         "Begin": 1929,
         "End": 1931,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Bowden",
@@ -37764,7 +38260,8 @@
         "FamilyName": "Swanson",
         "GivenNames": "Meryl",
         "Begin": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Baldwin",
@@ -37778,7 +38275,8 @@
         "GivenNames": "R H",
         "Begin": 1998,
         "End": 2001,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Baldwin",
@@ -37792,7 +38290,8 @@
         "GivenNames": "R H",
         "Begin": 1993,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "O'Keefe",
@@ -38024,28 +38523,32 @@
         "GivenNames": "J",
         "Begin": 2010,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Ferguson",
         "GivenNames": "L",
         "Begin": 1990,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Uren",
         "GivenNames": "T",
         "Begin": 1958,
         "End": 1990,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Morgan",
         "GivenNames": "C A",
         "Begin": 1949,
         "End": 1958,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Lang",
@@ -38059,21 +38562,24 @@
         "GivenNames": "C A",
         "Begin": 1940,
         "End": 1946,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Gander",
         "GivenNames": "J H",
         "Begin": 1931,
         "End": 1940,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Coleman",
         "GivenNames": "P E",
         "Begin": 1922,
         "End": 1931,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -38219,28 +38725,32 @@
         "FamilyName": "Elliot",
         "GivenNames": "Justine",
         "Begin": 2004,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Anthony",
         "GivenNames": "L",
         "Begin": 1996,
         "End": 2004,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Newell",
         "GivenNames": "N J",
         "Begin": 1990,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Blunt",
         "GivenNames": "C W",
         "Begin": 1984,
         "End": 1990,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Anthony",
@@ -38254,14 +38764,16 @@
         "GivenNames": "H L",
         "Begin": 1937,
         "End": 1957,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Green",
         "GivenNames": "R F",
         "Begin": 1922,
         "End": 1937,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Massey-Greene",
@@ -38548,14 +39060,16 @@
         "FamilyName": "McCormack",
         "GivenNames": "Michael",
         "Begin": 2010,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Hull",
         "GivenNames": "K",
         "Begin": 1998,
         "End": 2010,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Hicks",
@@ -38569,7 +39083,8 @@
         "GivenNames": "J",
         "Begin": 1977,
         "End": 1980,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Sullivan",
@@ -38583,42 +39098,48 @@
         "GivenNames": "A J",
         "Begin": 1969,
         "End": 1974,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Armstrong",
         "GivenNames": "A A",
         "Begin": 1965,
         "End": 1969,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Roberton",
         "GivenNames": "H S",
         "Begin": 1949,
         "End": 1965,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Langtry",
         "GivenNames": "J I",
         "Begin": 1940,
         "End": 1949,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Nock",
         "GivenNames": "H K",
         "Begin": 1931,
         "End": 1940,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Killen",
         "GivenNames": "W W",
         "Begin": 1922,
         "End": 1931,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Chanter",
@@ -39215,14 +39736,16 @@
         "GivenNames": "D",
         "Begin": 2010,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Neal",
         "GivenNames": "B",
         "Begin": 2007,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Lloyd",
@@ -39236,14 +39759,16 @@
         "GivenNames": "F J",
         "Begin": 1990,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Cohen",
         "GivenNames": "B",
         "Begin": 1969,
         "End": 1990,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Bridges-Maxwell",
@@ -39264,14 +39789,16 @@
         "GivenNames": "T F",
         "Begin": 1943,
         "End": 1949,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Spooner",
         "GivenNames": "E S",
         "Begin": 1940,
         "End": 1943,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "Gardner",
@@ -39292,7 +39819,8 @@
         "GivenNames": "W J",
         "Begin": 1910,
         "End": 1913,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Willis",
@@ -39454,28 +39982,32 @@
         "FamilyName": "Conroy",
         "GivenNames": "Pat",
         "Begin": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hall",
         "GivenNames": "J",
         "Begin": 1998,
         "End": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Morris",
         "GivenNames": "P",
         "Begin": 1972,
         "End": 1998,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Griffiths",
         "GivenNames": "C E",
         "Begin": 1949,
         "End": 1972,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -39638,28 +40170,32 @@
         "FamilyName": "Plibersek",
         "GivenNames": "Tanya",
         "Begin": 1998,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Baldwin",
         "GivenNames": "P",
         "Begin": 1983,
         "End": 1998,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "McMahon",
         "GivenNames": "J L",
         "Begin": 1975,
         "End": 1983,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Cope",
         "GivenNames": "J F",
         "Begin": 1969,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -40032,42 +40568,48 @@
         "FamilyName": "Burke",
         "GivenNames": "Tony",
         "Begin": 2004,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "McLeay",
         "GivenNames": "L",
         "Begin": 1993,
         "End": 2004,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Cope",
         "GivenNames": "J",
         "Begin": 1955,
         "End": 69,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Curtin",
         "GivenNames": "D J",
         "Begin": 1949,
         "End": 55,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Falstein",
         "GivenNames": "S M",
         "Begin": 1940,
         "End": 49,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Jennings",
         "GivenNames": "J T",
         "Begin": 1934,
         "End": 40,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       }
     ],
     "Locations": [
@@ -40305,7 +40847,8 @@
         "GivenNames": "W M",
         "Begin": 1919,
         "End": 1931,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Kelly",
@@ -40458,63 +41001,72 @@
         "FamilyName": "Stanley",
         "GivenNames": "Anne Maree",
         "Begin": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Ferguson",
         "GivenNames": "L",
         "Begin": 2010,
         "End": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hayes",
         "GivenNames": "C",
         "Begin": 2005,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Latham",
         "GivenNames": "M",
         "Begin": 1994,
         "End": 2005,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Kerin",
         "GivenNames": "J C",
         "Begin": 1978,
         "End": 1993,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Whitlam",
         "GivenNames": "E G",
         "Begin": 1952,
         "End": 1978,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Lazzarini",
         "GivenNames": "H P",
         "Begin": 1934,
         "End": 1952,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "McNicoll",
         "GivenNames": "W R",
         "Begin": 1931,
         "End": 1934,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Lazzarini",
         "GivenNames": "H P",
         "Begin": 1919,
         "End": 1931,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Lynch",
@@ -40535,14 +41087,16 @@
         "GivenNames": "B H",
         "Begin": 1912,
         "End": 1913,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hall",
         "GivenNames": "D R",
         "Begin": 1906,
         "End": 1912,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Conroy",
@@ -40694,21 +41248,24 @@
         "FamilyName": "Jones",
         "GivenNames": "Stephen",
         "Begin": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "George",
         "GivenNames": "J",
         "Begin": 2001,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hollis",
         "GivenNames": "C",
         "Begin": 1984,
         "End": 2001,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -40884,28 +41441,32 @@
         "FamilyName": "King",
         "GivenNames": "Madeleine",
         "Begin": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Gray",
         "GivenNames": "G",
         "Begin": 2007,
         "End": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Beazley",
         "GivenNames": "K",
         "Begin": 1996,
         "End": 2007,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Fatin",
         "GivenNames": "W F",
         "Begin": 1984,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -41057,7 +41618,8 @@
         "GivenNames": "J",
         "Begin": 1998,
         "End": 2001,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Johnston",
@@ -41071,14 +41633,16 @@
         "GivenNames": "G",
         "Begin": 1984,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Fatin",
         "GivenNames": "W F",
         "Begin": 1983,
         "End": 1984,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Bungey",
@@ -41092,7 +41656,8 @@
         "GivenNames": "J M",
         "Begin": 1963,
         "End": 1974,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "McNeill",
@@ -41106,7 +41671,8 @@
         "GivenNames": "L W",
         "Begin": 1949,
         "End": 1961,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       }
     ],
     "Locations": [
@@ -41349,7 +41915,8 @@
         "FamilyName": "Aly",
         "GivenNames": "Anne",
         "Begin": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Simpkins",
@@ -41363,7 +41930,8 @@
         "GivenNames": "G",
         "Begin": 1998,
         "End": 2007,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Evans",
@@ -41377,7 +41945,8 @@
         "GivenNames": "C A",
         "Begin": 1984,
         "End": 1993,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -42905,7 +43474,8 @@
         "GivenNames": "F",
         "Begin": 1969,
         "End": 1972,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Freeth",
@@ -42919,14 +43489,16 @@
         "GivenNames": "N",
         "Begin": 1943,
         "End": 1949,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Prowse",
         "GivenNames": "J H",
         "Begin": 1922,
         "End": 1943,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       }
     ],
     "Locations": [
@@ -43298,35 +43870,40 @@
         "FamilyName": "Wilson",
         "GivenNames": "Josh",
         "Begin": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Parke",
         "GivenNames": "M",
         "Begin": 2007,
         "End": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Lawrence",
         "GivenNames": "C",
         "Begin": 1994,
         "End": 2007,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Dawkins",
         "GivenNames": "J S",
         "Begin": 1977,
         "End": 1994,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Beazley",
         "GivenNames": "K E",
         "Begin": 1945,
         "End": 1977,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Curtin",
@@ -43340,14 +43917,16 @@
         "GivenNames": "W",
         "Begin": 1931,
         "End": 1934,
-        "PartyCode": "UAP"
+        "PartyCode": "UAP",
+        "PartyId": 1469
       },
       {
         "FamilyName": "Curtin",
         "GivenNames": "J",
         "Begin": 1928,
         "End": 1931,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Watson",
@@ -43375,7 +43954,8 @@
         "GivenNames": "W H",
         "Begin": 1903,
         "End": 1906,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Solomon",
@@ -43516,7 +44096,8 @@
         "GivenNames": "S",
         "Begin": 2007,
         "End": 2010,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Henry",
@@ -43530,7 +44111,8 @@
         "GivenNames": "S",
         "Begin": 2001,
         "End": 2004,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -43736,7 +44318,8 @@
         "GivenNames": "C A",
         "Begin": 1983,
         "End": 1990,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hyde",
@@ -43750,14 +44333,16 @@
         "GivenNames": "D W",
         "Begin": 1963,
         "End": 1974,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Leslie",
         "GivenNames": "H A",
         "Begin": 1961,
         "End": 1963,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Halbert",
@@ -43771,7 +44356,8 @@
         "GivenNames": "H A",
         "Begin": 1949,
         "End": 1958,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       }
     ],
     "Locations": [
@@ -43864,7 +44450,8 @@
         "FamilyName": "Keogh",
         "GivenNames": "Matt",
         "Begin": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -43963,7 +44550,8 @@
         "GivenNames": "T",
         "Begin": 2010,
         "End": 2013,
-        "PartyCode": "NP"
+        "PartyCode": "NP",
+        "PartyId": 20
       },
       {
         "FamilyName": "Tuckey",
@@ -44385,35 +44973,40 @@
         "FamilyName": "Gorman",
         "GivenNames": "Patrick",
         "Begin": 2018,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Hammond",
         "GivenNames": "T",
         "Begin": 2016,
         "End": 2018,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "MacTiernan",
         "GivenNames": "A",
         "Begin": 2013,
         "End": 2016,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Smith",
         "GivenNames": "S",
         "Begin": 1993,
         "End": 2013,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Charlesworth",
         "GivenNames": "R",
         "Begin": 1983,
         "End": 1993,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "McLean",
@@ -44427,7 +45020,8 @@
         "GivenNames": "J M",
         "Begin": 1969,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Chaney",
@@ -44441,7 +45035,8 @@
         "GivenNames": "T P",
         "Begin": 1943,
         "End": 1955,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Nairn",
@@ -44620,7 +45215,8 @@
         "GivenNames": "J",
         "Begin": 1998,
         "End": 2004,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Cameron",
@@ -44634,7 +45230,8 @@
         "GivenNames": "R F",
         "Begin": 1983,
         "End": 1993,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Viner",
@@ -44648,7 +45245,8 @@
         "GivenNames": "C H",
         "Begin": 1961,
         "End": 1972,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Cash",
@@ -44662,7 +45260,8 @@
         "GivenNames": "C H",
         "Begin": 1955,
         "End": 1958,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [
@@ -44800,7 +45399,8 @@
         "GivenNames": "K",
         "Begin": 1998,
         "End": 2007,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Randall",
@@ -44814,7 +45414,8 @@
         "GivenNames": "K C",
         "Begin": 1980,
         "End": 1996,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Martyr",
@@ -44828,7 +45429,8 @@
         "GivenNames": "A F",
         "Begin": 1969,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Cleaver",
@@ -44842,7 +45444,8 @@
         "GivenNames": "C H",
         "Begin": 1954,
         "End": 1955,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Grayden",
@@ -44856,42 +45459,48 @@
         "GivenNames": "L W",
         "Begin": 1946,
         "End": 1949,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Mountjoy",
         "GivenNames": "D A",
         "Begin": 1943,
         "End": 1946,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Marwick",
         "GivenNames": "T W",
         "Begin": 1940,
         "End": 1943,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Gregory",
         "GivenNames": "H",
         "Begin": 1922,
         "End": 1940,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Prowse",
         "GivenNames": "J H",
         "Begin": 1919,
         "End": 1922,
-        "PartyCode": "CP"
+        "PartyCode": "CP",
+        "PartyId": 1344
       },
       {
         "FamilyName": "Corby",
         "GivenNames": "E W",
         "Begin": 1918,
         "End": 1919,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Forrest",
@@ -45063,7 +45672,8 @@
         "GivenNames": "G",
         "Begin": 1983,
         "End": 1984,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       },
       {
         "FamilyName": "Shack",
@@ -45084,7 +45694,8 @@
         "GivenNames": "J S",
         "Begin": 1974,
         "End": 1975,
-        "PartyCode": "ALP"
+        "PartyCode": "ALP",
+        "PartyId": 2
       }
     ],
     "Locations": [

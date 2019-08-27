@@ -13,6 +13,7 @@ public static class PartyScraper
 {
     public static async Task Run()
     {
+        await PartyCodeScraper.Run();
         var htmlPath = Path.Combine(DataLocations.TempPath, "partycodes.html");
         var partyRegisterPath = Path.Combine(DataLocations.TempPath, "partyRegister.json");
         File.Delete(htmlPath);
@@ -44,15 +45,48 @@ public static class PartyScraper
         }
     }
 
+    public static ushort? FindPartyId(string code)
+    {
+        foreach (var party in Parties)
+        {
+            if (party.Code == code)
+            {
+                return party.Id;
+            }
+            if (party.Abbreviation == code)
+            {
+                return party.Id;
+            }
+        }
+        foreach (var party in Parties)
+        {
+            foreach (var branch in party.Branches)
+            {
+                if (branch.Code == code)
+                {
+                    return branch.Id;
+                }
+                if (branch.Abbreviation == code)
+                {
+                    return branch.Id;
+                }
+            }
+        }
+
+        return null;
+    }
+
     public static List<Party> Parties;
 
     static Party DetailToParty(Detail detail)
     {
+        var abbreviation = detail.Abbreviation?.Replace(".", "");
         var party = new Party
         {
             Id = detail.Id,
             Name = detail.NameOfParty,
-            Code = detail.Abbreviation?.Replace(".", ""),
+            Code = GetCode(detail.NameOfParty, abbreviation),
+            Abbreviation = abbreviation ?? detail.NameOfParty,
             RegisterDate = detail.PartyRegisterDate,
             AmendmentDate = detail.PartyRegisterDate,
             Address = detail.PostalAddress,
@@ -64,14 +98,27 @@ public static class PartyScraper
         return party;
     }
 
-    static List<Branch> ToBranches(AecModels.Branch[] branches)
+    static string GetCode(string name, string abbreviation)
     {
-        if (branches == null)
+        if (PartyCodeScraper.Codes.TryGetKey(name, out var key))
         {
-            return null;
+            return key;
         }
 
+        if (abbreviation != null)
+        {
+            return abbreviation;
+        }
+        return name;
+    }
+
+    static List<Branch> ToBranches(AecModels.Branch[] branches)
+    {
         var list = new List<Branch>();
+        if (branches == null)
+        {
+            return list;
+        }
         foreach (var branch in branches)
         {
             var item = ToBranch(branch);
@@ -82,11 +129,13 @@ public static class PartyScraper
 
     static Branch ToBranch(AecModels.Branch branch)
     {
+        var abbreviation = branch.Abbreviation?.Replace(".", "");
         return new Branch
         {
             Id = branch.Id,
             Name = branch.NameOfParty,
-            Code = branch.Abbreviation?.Replace(".", ""),
+            Abbreviation = abbreviation ?? branch.NameOfParty,
+            Code = GetCode(branch.NameOfParty, abbreviation),
             RegisterDate = branch.PartyRegisterDate,
             AmendmentDate = branch.PartyRegisterDate,
             Address = branch.PostalAddress,
@@ -96,12 +145,11 @@ public static class PartyScraper
     }
     static List<Officer> ToOfficers(AecModels.Officer[] detail)
     {
+        var officers = new List<Officer>();
         if (detail == null)
         {
-            return null;
+            return officers;
         }
-
-        var officers = new List<Officer>();
         foreach (var deputyOfficer in detail)
         {
             var item = ToOfficer(deputyOfficer);

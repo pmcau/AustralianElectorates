@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -44,20 +43,12 @@ public class DataLoaderTests :
     {
         foreach (var electorate in DataLoader.Electorates)
         {
-            var preferred = electorate.TwoCandidatePreferred;
-            if (preferred == null)
+            foreach (var member in electorate.Members)
             {
-                continue;
-            }
-
-            if (DataLoader.PartiesAndBranches.All(x => x.Id != preferred.Elected.PartyId))
-            {
-                Debug.WriteLine(preferred.Elected.PartyId);
-            }
-
-            if (DataLoader.PartiesAndBranches.All(x => x.Id != preferred.Other.PartyId))
-            {
-                Debug.WriteLine(preferred.Other.PartyId);
+                if (member.PartyId == null)
+                {
+                    Debug.WriteLine(member.Electorate.Name +" "+ member.PartyCode);
+                }
             }
         }
     }

@@ -9,5 +9,10 @@
         public decimal Swing { get; set; }
         public ushort? PartyId { get; set; }
         public IParty Party { get; set; }
+
+        public string FullName()
+        {
+            return $"{FamilyName}, {GivenNames}";
+        }
     }
 }

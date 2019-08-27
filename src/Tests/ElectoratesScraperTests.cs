@@ -10,6 +10,7 @@ public class ElectoratesScraperTests :
     [Trait("Category", "Integration")]
     public async Task Run()
     {
+        await PartyScraper.Run();
         var banks = await ElectoratesScraper.ScrapeCurrentElectorate("banks", State.NSW);
         var denison = await ElectoratesScraper.Scrape2016Electorate("denison", State.TAS);
         var bass = await ElectoratesScraper.ScrapeCurrentElectorate("clark", State.TAS);

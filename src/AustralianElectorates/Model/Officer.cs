@@ -11,5 +11,10 @@
         public string Capacity { get; set; }
 
         public Address Address { get; set; }
+
+        public string FullName()
+        {
+            return $"{FamilyName}, {GivenNames}";
+        }
     }
 }

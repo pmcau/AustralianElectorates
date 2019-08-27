@@ -251,8 +251,7 @@ public static class ElectoratesScraper
                 FamilyName = familyName,
                 GivenNames = givenNames,
                 PartyCode = party,
-                //TODO:
-                // PartyId = PartyScraper.
+                PartyId = PartyScraper.FindPartyId(party),
                 Begin = begin,
                 End = end,
             };
