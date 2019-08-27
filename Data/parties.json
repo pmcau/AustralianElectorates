@@ -13,7 +13,6 @@
       "GivenNames": "William",
       "Address": {
         "Line1": "Suite 15, 20 Burlington Street",
-        "Line2": "",
         "Suburb": "CROWS NEST",
         "State": "NSW",
         "Postcode": 2065
@@ -650,7 +649,6 @@
         "GivenNames": "Gabriel",
         "Address": {
           "Line1": "221 Dromana Parade",
-          "Line3": "",
           "Suburb": "SAFETY BEACH",
           "State": "VIC",
           "Postcode": 3936
@@ -847,7 +845,6 @@
         "GivenNames": "Jean",
         "Address": {
           "Line1": "Lot 308 Potts Rd",
-          "Line2": "",
           "Suburb": "KOJONUP",
           "State": "WA",
           "Postcode": 6395
@@ -892,7 +889,6 @@
         "GivenNames": "Trudy",
         "Address": {
           "Line1": "695 Reedbeds Road",
-          "Line2": "",
           "Suburb": "DARWIN RIVER",
           "State": "NT",
           "Postcode": 838
@@ -1390,7 +1386,6 @@
             "Address": {
               "Line1": "Suite 4c, Level 3",
               "Line2": "33 Salamanca Place",
-              "Line3": "",
               "Suburb": "HOBART",
               "State": "TAS",
               "Postcode": 7000
@@ -1966,7 +1961,6 @@
       "GivenNames": "James",
       "Address": {
         "Line1": "Suite 906, 185 Elizabeth Street",
-        "Line2": "",
         "Suburb": "SYDNEY",
         "State": "NSW",
         "Postcode": 2000
@@ -2662,7 +2656,6 @@
         "Capacity": "Secretary",
         "Address": {
           "Line1": "406/58-60 King Street",
-          "Line2": "",
           "Suburb": "NEWTOWN",
           "State": "NSW",
           "Postcode": 2042

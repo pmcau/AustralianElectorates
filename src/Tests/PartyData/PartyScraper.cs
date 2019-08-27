@@ -172,12 +172,28 @@ public static class PartyScraper
 
     static Address ToAddress(AecModels.Address deputyOfficerAddress)
     {
+        var line1 = deputyOfficerAddress.Line1;
+        if (string.IsNullOrWhiteSpace(line1))
+        {
+            line1 = null;
+        }
+        var line2 = deputyOfficerAddress.Line2;
+        if (string.IsNullOrWhiteSpace(line2))
+        {
+            line2 = null;
+        }
+        var line3 = deputyOfficerAddress.Line3;
+        if (string.IsNullOrWhiteSpace(line3))
+        {
+            line3 = null;
+        }
+
         return new Address
         {
             State = (State) Enum.Parse(typeof(State), deputyOfficerAddress.State),
-            Line1 = deputyOfficerAddress.Line1,
-            Line2 = deputyOfficerAddress.Line2,
-            Line3 = deputyOfficerAddress.Line3,
+            Line1 = line1,
+            Line2 = line2,
+            Line3 = line3,
             Postcode = Convert.ToInt32(deputyOfficerAddress.Postcode),
             Suburb = deputyOfficerAddress.Suburb,
         };
