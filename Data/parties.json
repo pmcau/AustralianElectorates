@@ -31,8 +31,7 @@
           "Postcode": 2602
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1339,
@@ -110,8 +109,7 @@
           "Postcode": 3152
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1330,
@@ -145,8 +143,7 @@
           "Postcode": 2650
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1443,
@@ -167,9 +164,7 @@
         "State": "NSW",
         "Postcode": 2131
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1464,
@@ -189,9 +184,7 @@
         "State": "QLD",
         "Postcode": 4226
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1347,
@@ -235,8 +228,7 @@
           "Postcode": 6210
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1344,
@@ -257,9 +249,7 @@
         "State": "NSW",
         "Postcode": 2876
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1472,
@@ -305,8 +295,7 @@
           "Postcode": 3193
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 2,
@@ -463,8 +452,7 @@
             "State": "NT",
             "Postcode": 820
           }
-        },
-        "DeputyOfficers": []
+        }
       },
       {
         "Id": 198,
@@ -485,8 +473,7 @@
             "State": "SA",
             "Postcode": 5000
           }
-        },
-        "DeputyOfficers": []
+        }
       },
       {
         "Id": 196,
@@ -576,8 +563,7 @@
             "State": "VIC",
             "Postcode": 3008
           }
-        },
-        "DeputyOfficers": []
+        }
       },
       {
         "Id": 197,
@@ -634,8 +620,7 @@
             "State": "NSW",
             "Postcode": 2000
           }
-        },
-        "DeputyOfficers": []
+        }
       }
     ]
   },
@@ -671,8 +656,7 @@
           "Postcode": 3936
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1403,
@@ -693,9 +677,7 @@
         "State": "ACT",
         "Postcode": 2605
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1441,
@@ -716,9 +698,7 @@
         "State": "NSW",
         "Postcode": 2777
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1388,
@@ -738,9 +718,7 @@
         "State": "SA",
         "Postcode": 5061
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1466,
@@ -761,9 +739,7 @@
         "State": "SA",
         "Postcode": 5096
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1184,
@@ -798,8 +774,7 @@
           "Postcode": 2150
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1181,
@@ -923,8 +898,7 @@
           "Postcode": 838
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1179,
@@ -968,8 +942,7 @@
           "Postcode": 2096
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 26,
@@ -990,9 +963,7 @@
         "State": "NT",
         "Postcode": 810
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 32,
@@ -1060,8 +1031,7 @@
           "Postcode": 7053
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1423,
@@ -1094,8 +1064,7 @@
           "Postcode": 3016
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1478,
@@ -1129,8 +1098,7 @@
           "Postcode": 4129
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1384,
@@ -1150,9 +1118,7 @@
         "State": "VIC",
         "Postcode": 3088
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1332,
@@ -1185,8 +1151,7 @@
           "Postcode": 2480
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1474,
@@ -1207,9 +1172,7 @@
         "State": "NSW",
         "Postcode": 2482
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1427,
@@ -1229,9 +1192,7 @@
         "State": "NSW",
         "Postcode": 2323
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1408,
@@ -1252,9 +1213,7 @@
         "State": "TAS",
         "Postcode": 7320
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1346,
@@ -1276,14 +1235,12 @@
         "State": "NSW",
         "Postcode": 2866
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 4,
     "Name": "Liberal Party of Australia",
-    "Code": "Liberal",
+    "Code": "LP",
     "Abbreviation": "Liberal",
     "RegisterDate": "22 June 1984",
     "AmendmentDate": "22 June 1984",
@@ -1401,8 +1358,7 @@
             "State": "ACT",
             "Postcode": 2600
           }
-        },
-        "DeputyOfficers": []
+        }
       },
       {
         "Id": 171,
@@ -1461,8 +1417,7 @@
             "State": "SA",
             "Postcode": 5061
           }
-        },
-        "DeputyOfficers": []
+        }
       },
       {
         "Id": 180,
@@ -1484,8 +1439,7 @@
             "State": "VIC",
             "Postcode": 3000
           }
-        },
-        "DeputyOfficers": []
+        }
       },
       {
         "Id": 188,
@@ -1553,9 +1507,7 @@
         "State": "NSW",
         "Postcode": 2047
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1428,
@@ -1575,9 +1527,7 @@
         "State": "NSW",
         "Postcode": 2759
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1188,
@@ -1611,8 +1561,7 @@
           "Postcode": 2515
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1133,
@@ -1657,8 +1606,7 @@
           "Postcode": 4010
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1369,
@@ -1678,9 +1626,7 @@
         "State": "QLD",
         "Postcode": 4055
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1463,
@@ -1701,9 +1647,7 @@
         "State": "NSW",
         "Postcode": 2089
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1440,
@@ -1738,8 +1682,7 @@
           "Postcode": 2126
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1385,
@@ -1793,8 +1736,7 @@
           "Postcode": 2042
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1327,
@@ -1828,8 +1770,7 @@
           "Postcode": 3085
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1402,
@@ -1850,9 +1791,7 @@
         "State": "NSW",
         "Postcode": 2207
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1171,
@@ -1887,8 +1826,7 @@
           "Postcode": 2221
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1183,
@@ -2012,8 +1950,7 @@
           "Postcode": 7000
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1195,
@@ -2047,8 +1984,7 @@
           "Postcode": 2203
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1417,
@@ -2068,9 +2004,7 @@
         "State": "WA",
         "Postcode": 6154
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1475,
@@ -2091,9 +2025,7 @@
         "State": "QLD",
         "Postcode": 4510
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 37,
@@ -2403,7 +2335,6 @@
         "Postcode": 2600
       }
     },
-    "DeputyOfficers": [],
     "Branches": [
       {
         "Id": 172,
@@ -2494,8 +2425,7 @@
             "State": "SA",
             "Postcode": 5243
           }
-        },
-        "DeputyOfficers": []
+        }
       },
       {
         "Id": 193,
@@ -2552,9 +2482,7 @@
         "State": "NSW",
         "Postcode": 2000
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1473,
@@ -2589,8 +2517,7 @@
           "Postcode": 2482
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1470,
@@ -2610,9 +2537,7 @@
         "State": "NSW",
         "Postcode": 2480
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1465,
@@ -2632,9 +2557,7 @@
         "State": "SA",
         "Postcode": 5082
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1469,
@@ -2655,9 +2578,7 @@
         "State": "QLD",
         "Postcode": 4000
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1477,
@@ -2678,9 +2599,7 @@
         "State": "VIC",
         "Postcode": 3053
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1380,
@@ -2713,8 +2632,7 @@
           "Postcode": 2441
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1419,
@@ -2750,8 +2668,7 @@
           "Postcode": 2042
         }
       }
-    ],
-    "Branches": []
+    ]
   },
   {
     "Id": 1462,
@@ -2772,9 +2689,7 @@
         "State": "WA",
         "Postcode": 6008
       }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
+    }
   },
   {
     "Id": 1413,
@@ -2807,7 +2722,6 @@
           "Postcode": 3205
         }
       }
-    ],
-    "Branches": []
+    ]
   }
 ]

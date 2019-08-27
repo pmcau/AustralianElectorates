@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using ObjectApproval;
 
 public class CustomContractResolver : DefaultContractResolver
 {
@@ -18,5 +21,12 @@ public class CustomContractResolver : DefaultContractResolver
         var properties = new List<JsonProperty> {first};
         properties.AddRange(jsonProperties.Where(x => x.PropertyName != "properties"));
         return properties;
+    }
+
+    protected override JsonProperty CreateProperty(MemberInfo member, MemberSerialization memberSerialization)
+    {
+        var property = base.CreateProperty(member, memberSerialization);
+        property.SkipEmptyCollections(member);
+        return property;
     }
 }

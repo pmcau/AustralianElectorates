@@ -30,7 +30,7 @@ public static class PartyCodeScraper
             {
                 var nodes = node.ChildNodes.Where(x=>x.NodeType != HtmlNodeType.Text).ToList();
                 var abbreviation = nodes[0].InnerHtml;
-                var name = nodes[1].InnerHtml;
+                var name = nodes[1].InnerHtml.Split('(')[0].Trim();
                 Codes.Add(abbreviation, name);
             }
         }
