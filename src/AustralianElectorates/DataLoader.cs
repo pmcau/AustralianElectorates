@@ -19,6 +19,10 @@ namespace AustralianElectorates
             {
                 Electorates = Serializer.Deserialize<List<Electorate>>(stream);
             }
+            using (var stream = assembly.GetManifestResourceStream("parties.json"))
+            {
+                Parties = Serializer.Deserialize<List<Party>>(stream);
+            }
 
             foreach (var electorate in Electorates)
             {
@@ -42,6 +46,7 @@ namespace AustralianElectorates
         public static IReadOnlyList<Member> AllCurrentMembers { get; }
 
         public static IReadOnlyList<Electorate> Electorates { get; }
+        public static IReadOnlyList<Party> Parties { get; }
         public static MapCollection Maps2016 { get; } = new MapCollection("2016");
         public static MapCollection Maps2019 { get; } = new MapCollection("2019");
         public static MapCollection MapsFuture { get; } = new MapCollection("Future");

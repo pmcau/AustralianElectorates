@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using ApprovalTests;
@@ -35,6 +37,31 @@ public class DataLoaderTests :
         Assert.False(DataLoader.TryFindElectorate("not Found", out _));
         var exception = Assert.Throws<ElectorateNotFoundException>(() => DataLoader.FindElectorate("not Found"));
         ObjectApprover.Verify(new {exception.Name, exception.Message});
+    }
+    [Fact]
+    public void Foo()
+    {
+        var set = new HashSet<string>();
+        foreach (var electorate in DataLoader.Electorates)
+        {
+            if (electorate.TwoCandidatePreferred != null)
+            {
+                if (DataLoader.Parties.All(x => x.Abbreviation != electorate.TwoCandidatePreferred.Elected.Party))
+            {
+                set.Add(electorate.TwoCandidatePreferred.Elected.Party);
+            }
+                if (DataLoader.Parties.All(x => x.Abbreviation != electorate.TwoCandidatePreferred.Other.Party))
+            {
+                set.Add(electorate.TwoCandidatePreferred.Other.Party);
+            }
+
+            }
+        }
+
+        foreach (var v in set)
+        {
+            Debug.WriteLine(v);
+        }
     }
 
     [Fact]

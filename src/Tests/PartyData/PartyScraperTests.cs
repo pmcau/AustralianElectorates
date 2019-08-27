@@ -2,17 +2,17 @@
 using Xunit;
 using Xunit.Abstractions;
 
-public class PartyNameScraperTests :
+public class PartyScraperTests :
     XunitLoggingBase
 {
     [Fact]
     [Trait("Category", "Integration")]
     public Task Run()
     {
-        return PartyNameScraper.Run();
+        return PartyScraper.Run();
     }
 
-    public PartyNameScraperTests(ITestOutputHelper output) :
+    public PartyScraperTests(ITestOutputHelper output) :
         base(output)
     {
     }

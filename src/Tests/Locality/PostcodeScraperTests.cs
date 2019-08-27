@@ -14,7 +14,7 @@ public class PostcodeScraperTests :
     {
         var data = await PostcodeScraper.Run();
         File.Delete(DataLocations.LocalitiesPath);
-        JsonSerializer.Serialize(data, DataLocations.LocalitiesPath);
+        JsonSerializerService.Serialize(data, DataLocations.LocalitiesPath);
         ObjectApprover.Verify(data.Take(10));
     }
 

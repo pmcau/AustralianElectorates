@@ -29,7 +29,7 @@ public static class StatesToCountryDownloader
 
     static async Task Run(Dictionary<State, string> dictionary, string sourceJsonPath, string targetJsonPath)
     {
-        var features = JsonSerializer.DeserializeGeo(sourceJsonPath);
+        var features = JsonSerializerService.DeserializeGeo(sourceJsonPath);
 
         foreach (var stateUrl in dictionary)
         {
@@ -48,7 +48,7 @@ public static class StatesToCountryDownloader
         }
 
         features.FixBoundingBox();
-        JsonSerializer.SerializeGeo(features, targetJsonPath);
+        JsonSerializerService.SerializeGeo(features, targetJsonPath);
     }
 
     static void RemoveStateFromFeatures(FeatureCollection features, State state)
@@ -69,7 +69,7 @@ public static class StatesToCountryDownloader
         var stateJsonPath = Path.Combine(DataLocations.TempPath, $"{state}.geojson");
         MapToGeoJson.ConvertShape(stateJsonPath, shpFile);
 
-        var stateCollection = JsonSerializer.Deserialize<FeatureCollection>(stateJsonPath);
+        var stateCollection = JsonSerializerService.Deserialize<FeatureCollection>(stateJsonPath);
 
         MetadataCleaner.CleanMetadata(stateCollection, state);
         return stateCollection;

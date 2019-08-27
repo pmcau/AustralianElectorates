@@ -3,13 +3,13 @@ using GeoJSON.Net.Feature;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-static class JsonSerializer
+static class JsonSerializerService
 {
-    static Newtonsoft.Json.JsonSerializer jsonSerializer;
+    static JsonSerializer jsonSerializer;
 
-    static JsonSerializer()
+    static JsonSerializerService()
     {
-        jsonSerializer = new Newtonsoft.Json.JsonSerializer
+        jsonSerializer = new JsonSerializer
         {
             NullValueHandling = NullValueHandling.Ignore,
             Formatting = Formatting.Indented,

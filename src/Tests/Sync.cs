@@ -91,7 +91,7 @@ public class Sync :
 
         foreach (var australiaPath in Directory.EnumerateFiles(yearPath, "australia*"))
         {
-            var australiaFeatures = JsonSerializer.DeserializeGeo(australiaPath);
+            var australiaFeatures = JsonSerializerService.DeserializeGeo(australiaPath);
 
             var electoratesDirectory = Path.Combine(yearPath, "Electorates");
             Directory.CreateDirectory(electoratesDirectory);
@@ -101,7 +101,7 @@ public class Sync :
                 var featureCollectionForState = australiaFeatures.FeaturesCollectionForState(state);
                 var suffix = Path.GetFileName(australiaPath).Replace("australia", "");
                 var stateJson = Path.Combine(yearPath, $"{lower}{suffix}");
-                JsonSerializer.SerializeGeo(featureCollectionForState, stateJson);
+                JsonSerializerService.SerializeGeo(featureCollectionForState, stateJson);
 
                 foreach (var electorateFeature in featureCollectionForState.Features)
                 {
@@ -111,7 +111,7 @@ public class Sync :
                     electorates.Add(electorate);
 
                     var electorateJsonPath = Path.Combine(electoratesDirectory, $"{electorate}{suffix}");
-                    JsonSerializer.SerializeGeo(electorateFeature.ToCollection(), electorateJsonPath);
+                    JsonSerializerService.SerializeGeo(electorateFeature.ToCollection(), electorateJsonPath);
                 }
             }
         }
@@ -142,10 +142,10 @@ public class Sync :
 
         MapToGeoJson.ConvertTab(targetPath, Path.Combine(extractDirectory, "COM_ELB.tab"));
 
-        var featureCollection = JsonSerializer.Deserialize<FeatureCollection>(targetPath);
+        var featureCollection = JsonSerializerService.Deserialize<FeatureCollection>(targetPath);
         featureCollection.FixBoundingBox();
         MetadataCleaner.CleanMetadata(featureCollection);
-        JsonSerializer.SerializeGeo(featureCollection, targetPath);
+        JsonSerializerService.SerializeGeo(featureCollection, targetPath);
     }
 
     [Fact]
@@ -164,22 +164,22 @@ public class Sync :
     static void WriteOptimised(string directory)
     {
         var jsonPath = Path.Combine(directory, "australia.geojson");
-        var raw = JsonSerializer.DeserializeGeo(jsonPath);
+        var raw = JsonSerializerService.DeserializeGeo(jsonPath);
         raw.FixBoundingBox();
         foreach (var percent in percents)
         {
             var percentJsonPath = Path.Combine(directory, $"australia_{percent:D2}.geojson");
             MapToGeoJson.ConvertShape(percentJsonPath, jsonPath, percent);
-            var featureCollection = JsonSerializer.DeserializeGeo(percentJsonPath);
+            var featureCollection = JsonSerializerService.DeserializeGeo(percentJsonPath);
             featureCollection.FixBoundingBox();
 
-            JsonSerializer.SerializeGeo(featureCollection, percentJsonPath);
+            JsonSerializerService.SerializeGeo(featureCollection, percentJsonPath);
         }
     }
 
     static async Task<List<ElectorateEx>> WriteElectoratesMetaData()
     {
-        var localityData = JsonSerializer.Deserialize<List<AecLocalityData>>(DataLocations.LocalitiesPath);
+        var localityData = JsonSerializerService.Deserialize<List<AecLocalityData>>(DataLocations.LocalitiesPath);
         var electorates = new List<ElectorateEx>();
         foreach (var electoratePair in electorateNames)
         {
@@ -208,7 +208,7 @@ public class Sync :
 
         var combine = Path.Combine(DataLocations.DataPath, "electorates.json");
         File.Delete(combine);
-        JsonSerializer.Serialize(electorates, combine);
+        JsonSerializerService.Serialize(electorates, combine);
         return electorates;
     }
 

@@ -1,35 +1,1805 @@
-{
-  "ACP": "Australian Conservative Party",
-  "ALP": "Australian Labor Party",
-  "ANTI-SOC": "Anti-Socialist Party",
-  "ASP": "Australian Shooters Party",
-  "CLP": "Northern Territory Country Liberal Party",
-  "CP": "Australian Country Party",
-  "DEM": "Australian Democrats",
-  "FLP": "Federal Labor Party",
-  "FSU": "Farmers and Settlers Union",
-  "FT": "Free Trade",
-  "FU": "Farmers' Union",
-  "GRN": "Australian Greens",
-  "IND": "Independent",
-  "IND LAB": "Independent Labor",
-  "IND NAT": "Independent Nationalist",
-  "IND PROT": "Independent Protectionist",
-  "LANG LAB": "Lang Labor Party",
-  "LCL": "Liberal Country League",
-  "LCP": "Liberal Country Party",
-  "LIB": "Liberal Party (pre 1945)",
-  "LNQ": "Liberal National Party of Queensland",
-  "LP": "Liberal Party of Australia (formed in 1946)",
-  "NAT": "Nationalist Party",
-  "NAT &amp; FARMERS": "Nationalist and Farmers",
-  "NCP": "National Country Party",
-  "NP": "National Party of Australia",
-  "OTHERS": "Other parties, may include Independents",
-  "PROT": "Protectionist Party",
-  "ST CP": "State Country Party",
-  "UAP": "Unite Australia Party",
-  "UCP": "United Country Party",
-  "VFU": "Victorian Farmers' Union",
-  "WAP": "Western Australia Party"
-}
+[
+  {
+    "Abbreviation": "Sustainable Australia",
+    "Name": "#Sustainable Australia",
+    "RegisterDate": "23 September 2010",
+    "AmendmentDate": "23 September 2010",
+    "Address": "PO Box 575\nCROWS NEST NSW 1585",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Bourke",
+      "GivenNames": "William",
+      "Address": {
+        "Line1": "Suite 15, 20 Burlington Street",
+        "Line2": "",
+        "Suburb": "CROWS NEST",
+        "State": "NSW",
+        "Postcode": 2065
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Haydon",
+        "GivenNames": "John",
+        "Address": {
+          "Line1": "3/6 Hall Street",
+          "Suburb": "Lyneham",
+          "State": "ACT",
+          "Postcode": 2602
+        }
+      }
+    ]
+  },
+  {
+    "Abbreviation": "AJP",
+    "Name": "Animal Justice Party",
+    "RegisterDate": "3 May 2011",
+    "AmendmentDate": "3 May 2011",
+    "Address": "PO Box Q1688\nQUEEN VICTORIA BUILDING NSW 1230",
+    "Officer": {
+      "Title": "Ms",
+      "FamilyName": "Bellenger",
+      "GivenNames": "Carol",
+      "Address": {
+        "Line1": "8/80 John Street",
+        "Suburb": "PYRMONT",
+        "State": "NSW",
+        "Postcode": 2009
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Poon",
+        "GivenNames": "Bruce ",
+        "Address": {
+          "Line1": "4/15 Exploration Lane",
+          "Suburb": "MELBOURNE",
+          "State": "VIC",
+          "Postcode": 3000
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Russell",
+        "GivenNames": "Geoffrey",
+        "Address": {
+          "Line1": "6 Fifth Avenue",
+          "Suburb": "ST MORRIS",
+          "State": "SA",
+          "Postcode": 5068
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Love",
+        "GivenNames": "Katrina",
+        "Address": {
+          "Line1": "Site 111",
+          "Line2": "3 Powell Road",
+          "Suburb": "COOGEE",
+          "State": "WA",
+          "Postcode": 6166
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Cox",
+        "GivenNames": "Lindon",
+        "Address": {
+          "Line1": "59 Thorpe Street",
+          "Suburb": "INDOOROOPILLY",
+          "State": "QLD",
+          "Postcode": 4068
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Wozny",
+        "GivenNames": "Magdalena",
+        "Address": {
+          "Line1": "113 Milpera Crescent",
+          "Suburb": "WANTIRNA",
+          "State": "VIC",
+          "Postcode": 3152
+        }
+      }
+    ]
+  },
+  {
+    "Abbreviation": "Australia First Party",
+    "Name": "Australia First Party (NSW) Incorporated",
+    "RegisterDate": "16 June 2010",
+    "AmendmentDate": "16 June 2010",
+    "Address": "PO Box 593\nROCKDALE NSW 2216",
+    "Officer": {
+      "Title": "Dr",
+      "FamilyName": "Saleam",
+      "GivenNames": "James",
+      "Address": {
+        "Line1": "725 Princes Highway",
+        "Suburb": "TEMPE",
+        "State": "NSW",
+        "Postcode": 2044
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Ms",
+        "FamilyName": "Sharp",
+        "GivenNames": "Kim",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "26 Ticbourne Crescent",
+          "Suburb": "KOORINGAL",
+          "State": "NSW",
+          "Postcode": 2650
+        }
+      }
+    ]
+  },
+  {
+    "Abbreviation": "Affordable Housing Party",
+    "Name": "Australian Affordable Housing Party",
+    "RegisterDate": "24 January 2017",
+    "AmendmentDate": "24 January 2017",
+    "Address": "9/26 Tintern Road\nASHFIELD NSW 2131",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Potts",
+      "GivenNames": "Andrew",
+      "Capacity": "Secretary",
+      "Address": {
+        "Line1": "9/26 Tindern Road",
+        "Suburb": "ASHFIELD",
+        "State": "NSW",
+        "Postcode": 2131
+      }
+    }
+  },
+  {
+    "Abbreviation": "ABF",
+    "Name": "Australian Better Families",
+    "RegisterDate": "31 August 2018",
+    "AmendmentDate": "31 August 2018",
+    "Address": "PO Box 3831\nROBINA TOWN CENTRE QLD 4230",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Erikson",
+      "GivenNames": "Leith",
+      "Address": {
+        "Line1": "6A Oaklyn Place",
+        "Suburb": "MERRIMAC",
+        "State": "QLD",
+        "Postcode": 4226
+      }
+    }
+  },
+  {
+    "Name": "Australian Christians",
+    "RegisterDate": "19 December 2011",
+    "AmendmentDate": "19 December 2011",
+    "Address": "PO Box 4117\nVICTORIA PARK WA 6979",
+    "Officer": {
+      "Title": "Ms",
+      "FamilyName": "Groenewald",
+      "GivenNames": "Maryka ",
+      "Address": {
+        "Line1": "64 Canning Highway",
+        "Suburb": "VICTORIA PARK",
+        "State": "WA",
+        "Postcode": 6100
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Swarts",
+        "GivenNames": "Kevin Michael",
+        "Address": {
+          "Line1": "2.29 Pomona Road",
+          "Suburb": "RIVERSIDE",
+          "State": "TAS",
+          "Postcode": 7250
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Burdett",
+        "GivenNames": "Robert",
+        "Address": {
+          "Line1": "1 Liberton Place",
+          "Suburb": "Mandurah",
+          "State": "WA",
+          "Postcode": 6210
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Australian Country Party",
+    "RegisterDate": "26 July 2011",
+    "AmendmentDate": "26 July 2011",
+    "Address": "PO Box 160\nMARYBOROUGH VIC 3465",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "O'Rourke",
+      "GivenNames": "Glenn",
+      "Capacity": "Registered officer",
+      "Address": {
+        "Line1": "46 Lachlan Street ",
+        "Suburb": "BOGAN GATE",
+        "State": "NSW",
+        "Postcode": 2876
+      }
+    }
+  },
+  {
+    "Name": "Australian Democrats",
+    "RegisterDate": "7 April 2019",
+    "AmendmentDate": "7 April 2019",
+    "Address": "PO Box 547\nGLENELG SA 5045",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Churchill",
+      "GivenNames": "Darren Mark",
+      "Capacity": "National President",
+      "Address": {
+        "Line1": "15 Bassett Street",
+        "Suburb": "NAIRNE",
+        "State": "SA",
+        "Postcode": 5252
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Kanck",
+        "GivenNames": "Asbjorn Jan",
+        "Address": {
+          "Line1": "25 Meadowvale Road",
+          "Suburb": "ATHELSTONE",
+          "State": "SA",
+          "Postcode": 5076
+        }
+      },
+      {
+        "Title": "Mr ",
+        "FamilyName": "Urquhart",
+        "GivenNames": "Ian Alistair",
+        "Capacity": "Party Agent",
+        "Address": {
+          "Line1": "8 Morey Road",
+          "Suburb": "BEAUMARIS",
+          "State": "VIC",
+          "Postcode": 3193
+        }
+      }
+    ]
+  },
+  {
+    "Abbreviation": "A.L.P.",
+    "Name": "Australian Labor Party (ALP)",
+    "RegisterDate": "31 May 1984",
+    "AmendmentDate": "31 May 1984",
+    "Address": "PO Box 6222\nKINGSTON ACT 2604",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Carroll",
+      "GivenNames": "Noah",
+      "Capacity": "Party Agent",
+      "Address": {
+        "Line1": "5/9 Sydney Avenue",
+        "Suburb": "BARTON",
+        "State": "ACT",
+        "Postcode": 2600
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Erickson",
+        "GivenNames": "Paul",
+        "Address": {
+          "Line1": "5/9 Sydney Avenue ",
+          "Suburb": "BARTON",
+          "State": "ACT",
+          "Postcode": 2600
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Zwalf",
+        "GivenNames": "Sebastian",
+        "Capacity": "Assistant National Secretary",
+        "Address": {
+          "Line1": "290 Goyder Street",
+          "Suburb": "NARRABUNDAH ",
+          "State": "ACT",
+          "Postcode": 2604
+        }
+      }
+    ]
+  },
+  {
+    "Abbreviation": "APP",
+    "Name": "Australian People's Party",
+    "RegisterDate": "20 March 2017",
+    "AmendmentDate": "20 March 2017",
+    "Address": "PO Box 5382\nPINEWOOD VIC 3149",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Strangio",
+      "GivenNames": "Bruno",
+      "Address": {
+        "Line1": "221 Dromana Parade",
+        "Suburb": "SAFETY BEACH",
+        "State": "VIC",
+        "Postcode": 3936
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Harfouche",
+        "GivenNames": "Gabriel",
+        "Address": {
+          "Line1": "221 Dromana Parade",
+          "Line3": "",
+          "Suburb": "SAFETY BEACH",
+          "State": "VIC",
+          "Postcode": 3936
+        }
+      }
+    ]
+  },
+  {
+    "Abbreviation": "The Progressives",
+    "Name": "Australian Progressives",
+    "RegisterDate": "17 February 2015",
+    "AmendmentDate": "17 February 2015",
+    "Address": "8/22 Moore St\nCAMPBELLTOWN NSW 2560",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Knight",
+      "GivenNames": "Robert ",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "24B Harpur Place",
+        "Suburb": "GARRAN",
+        "State": "ACT",
+        "Postcode": 2605
+      }
+    }
+  },
+  {
+    "Abbreviation": "AWP",
+    "Name": "Australian Workers Party",
+    "RegisterDate": "27 January 2017",
+    "AmendmentDate": "27 January 2017",
+    "Address": "P.O Box 4062\nWINMALEE NSW 2777",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Ptolemy",
+      "GivenNames": "Mark",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "470 Hawkesbury Road",
+        "Suburb": "WINMALEE",
+        "State": "NSW",
+        "Postcode": 2777
+      }
+    }
+  },
+  {
+    "Abbreviation": "Centre Alliance",
+    "Name": "Centre Alliance",
+    "RegisterDate": "1 July 2013",
+    "AmendmentDate": "1 July 2013",
+    "Address": "PO Box 3192\nUNLEY SA 5061",
+    "Officer": {
+      "Title": "Senator",
+      "FamilyName": "Patrick",
+      "GivenNames": "Rex",
+      "Address": {
+        "Line1": "Level 1, 169 Unley Road",
+        "Suburb": "UNLEY",
+        "State": "SA",
+        "Postcode": 5061
+      }
+    }
+  },
+  {
+    "Abbreviation": "CPP",
+    "Name": "Child Protection Party",
+    "RegisterDate": "14 January 2019",
+    "AmendmentDate": "14 January 2019",
+    "Address": "PO Box 582\nELIZABETH SA 5112",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Hilditch",
+      "GivenNames": "Frank Avery ",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "8 Lido Court",
+        "Suburb": "PARA HILLS",
+        "State": "SA",
+        "Postcode": 5096
+      }
+    }
+  },
+  {
+    "Abbreviation": "Christian Democratic Party",
+    "Name": "Christian Democratic Party (Fred Nile Group)",
+    "RegisterDate": "17 September 2007",
+    "AmendmentDate": "17 September 2007",
+    "Address": "PO Box 8456\nPARRAMATTA WESTFIELD NSW 2150",
+    "Officer": {
+      "Title": "Reverend",
+      "FamilyName": "Nile",
+      "GivenNames": "Frederick John",
+      "Capacity": "National President",
+      "Address": {
+        "Line1": "10 Courtley Road",
+        "Suburb": "BEACON HILL",
+        "State": "NSW",
+        "Postcode": 2100
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Hall",
+        "GivenNames": "Craig",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "PO Box 8456",
+          "Suburb": "WESTFIELD PARRAMATTA",
+          "State": "NSW",
+          "Postcode": 2150
+        }
+      }
+    ]
+  },
+  {
+    "Abbreviation": "Citizens Electoral Council",
+    "Name": "Citizens Electoral Council of Australia",
+    "RegisterDate": "4 September 2007",
+    "AmendmentDate": "4 September 2007",
+    "Address": "PO Box 376\nCOBURG VIC 3058",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Isherwood",
+      "GivenNames": "Craig William",
+      "Capacity": "National Secretary",
+      "Address": {
+        "Line1": "29 Hare Street",
+        "Suburb": "FAWKNER",
+        "State": "VIC",
+        "Postcode": 3060
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Ms",
+        "FamilyName": "Lawler",
+        "GivenNames": "Ann",
+        "Address": {
+          "Line1": "312 Wollombi Road",
+          "Suburb": "FARLEY",
+          "State": "NSW",
+          "Postcode": 2320
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Mason",
+        "GivenNames": "Barry",
+        "Address": {
+          "Line1": "39 Tuscan Street",
+          "Suburb": "ROSSMOYNE",
+          "State": "WA",
+          "Postcode": 6148
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Pukallus",
+        "GivenNames": "Dennis",
+        "Address": {
+          "Line1": "30 Plover Driver",
+          "Suburb": "EAGLEBY",
+          "State": "QLD",
+          "Postcode": 4207
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Pukallus",
+        "GivenNames": "Jan",
+        "Address": {
+          "Line1": "30 Plover Drive",
+          "Suburb": "EAGLEBY",
+          "State": "QLD",
+          "Postcode": 4207
+        }
+      },
+      {
+        "Title": "Mrs",
+        "FamilyName": "Robinson",
+        "GivenNames": "Jean",
+        "Address": {
+          "Line1": "Lot 308 Potts Rd",
+          "Line2": "",
+          "Suburb": "KOJONUP",
+          "State": "WA",
+          "Postcode": 6395
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Beck",
+        "GivenNames": "Jeremy",
+        "Address": {
+          "Line1": "Unit 2, 27 Lockley Street",
+          "Suburb": "HADFIELD",
+          "State": "VIC",
+          "Postcode": 3046
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Williams",
+        "GivenNames": "Ray",
+        "Address": {
+          "Line1": "41 High Street",
+          "Suburb": "NEW NORFOLK",
+          "State": "TAS",
+          "Postcode": 7140
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Butler",
+        "GivenNames": "Robert",
+        "Address": {
+          "Line1": "27 De Villiers Avenue",
+          "Suburb": "CHATSWOOD",
+          "State": "NSW",
+          "Postcode": 2067
+        }
+      },
+      {
+        "Title": "Mrs",
+        "FamilyName": "Campbell",
+        "GivenNames": "Trudy",
+        "Address": {
+          "Line1": "695 Reedbeds Road",
+          "Line2": "",
+          "Suburb": "DARWIN RIVER",
+          "State": "NT",
+          "Postcode": 838
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Climate Action! Immigration Action! Accountable Politicians!",
+    "RegisterDate": "31 August 2007",
+    "AmendmentDate": "31 August 2007",
+    "Address": "70 Carrington Pde\nCURL CURL NSW 2096",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Der Sarkissian",
+      "GivenNames": "Berge",
+      "Address": {
+        "Line1": "70 Carrington Parade",
+        "Suburb": "CURL CURL",
+        "State": "NSW",
+        "Postcode": 2096
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Crespel",
+        "GivenNames": "Francois",
+        "Address": {
+          "Line1": "16 Gardere Avenue",
+          "Suburb": "CURL CURL",
+          "State": "NSW",
+          "Postcode": 2096
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Der Sarkissian",
+        "GivenNames": "Nea",
+        "Address": {
+          "Line1": "70 Carrington Parade",
+          "Suburb": "CURL CURL",
+          "State": "NSW",
+          "Postcode": 2096
+        }
+      }
+    ]
+  },
+  {
+    "Abbreviation": "Country Liberals (NT)",
+    "Name": "Country Liberals (Northern Territory)",
+    "RegisterDate": "18 July 1984",
+    "AmendmentDate": "18 July 1984",
+    "Address": "PO Box 4194\nDARWIN NT 0801",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Riley",
+      "GivenNames": "Jason",
+      "Capacity": "Treasurer",
+      "Address": {
+        "Line1": "2/229 McMillans Road",
+        "Suburb": "JINGILI",
+        "State": "NT",
+        "Postcode": 810
+      }
+    }
+  },
+  {
+    "Abbreviation": "Labour DLP",
+    "Name": "Democratic Labour Party",
+    "RegisterDate": "20 July 1984",
+    "AmendmentDate": "20 July 1984",
+    "Address": "GPO Box 1402\nMELBOURNE VIC 3001",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Campbell",
+      "GivenNames": "Stephen",
+      "Address": {
+        "Line1": "11 Wheatsheaf Rd",
+        "Suburb": "CERES",
+        "State": "VIC",
+        "Postcode": 3221
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Gough",
+        "GivenNames": "Jeffrey Keith Dominic",
+        "Address": {
+          "Line1": "19 Campbell Drive",
+          "Suburb": "WAHROONGA",
+          "State": "NSW",
+          "Postcode": 2076
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Quinn",
+        "GivenNames": "John Lawrence",
+        "Capacity": "Branch Secretary",
+        "Address": {
+          "Line1": "90 Baaring Drive",
+          "Line2": "Karana Downs",
+          "Suburb": "MOUNT CROSBY",
+          "State": "QLD",
+          "Postcode": 4306
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Lorrimar",
+        "GivenNames": "Rosemary Anne",
+        "Address": {
+          "Line1": "PO Box 1119",
+          "Suburb": "WILLAGEE",
+          "State": "WA",
+          "Postcode": 6156
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Williams",
+        "GivenNames": "Wayne",
+        "Address": {
+          "Line1": "2 Bareena Rd",
+          "Suburb": "TAROONA",
+          "State": "TAS",
+          "Postcode": 7053
+        }
+      }
+    ]
+  },
+  {
+    "Abbreviation": "Hinch",
+    "Name": "Derryn Hinch's Justice Party",
+    "RegisterDate": "12 April 2016",
+    "AmendmentDate": "12 April 2016",
+    "Address": "PO Box 33018 LPO Domain\nMELBOURNE VIC 3004",
+    "Officer": {
+      "Title": "Ms",
+      "FamilyName": "Philpott",
+      "GivenNames": "Annette",
+      "Address": {
+        "Line1": "1 Queens Road",
+        "Suburb": "MELBOURNE",
+        "State": "VIC",
+        "Postcode": 3004
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Powell",
+        "GivenNames": "Anthony",
+        "Address": {
+          "Line1": "PO Box 256",
+          "Suburb": "WILLIAMSTOWN",
+          "State": "VIC",
+          "Postcode": 3016
+        }
+      }
+    ]
+  },
+  {
+    "Name": "FRASER ANNING'S CONSERVATIVE NATIONAL PARTY",
+    "RegisterDate": "2 April 2019",
+    "AmendmentDate": "2 April 2019",
+    "Address": "GPO Box 1877\nBRISBANE QLD 4001",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Anning",
+      "GivenNames": "William Fraser",
+      "Address": {
+        "Line1": "27 Brisbane Crescent",
+        "Suburb": "DECEPTION BAY",
+        "State": "QLD",
+        "Postcode": 4508
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Taylor",
+        "GivenNames": "Paul",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "P.O.Box 4229",
+          "Suburb": "LOGANHOLME",
+          "State": "QLD",
+          "Postcode": 4129
+        }
+      }
+    ]
+  },
+  {
+    "Abbreviation": "HAP",
+    "Name": "Health Australia Party",
+    "RegisterDate": "7 November 2013",
+    "AmendmentDate": "7 November 2013",
+    "Address": "PO Box 695\nGISBORNE VIC 3437",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Hicks",
+      "GivenNames": "Andrew",
+      "Address": {
+        "Line1": "1 Erinne Court",
+        "Suburb": "ST HELENA",
+        "State": "VIC",
+        "Postcode": 3088
+      }
+    }
+  },
+  {
+    "Abbreviation": "Marijuana (HEMP) Party",
+    "Name": "Help End Marijuana Prohibition (HEMP) Party",
+    "RegisterDate": "23 September 2010",
+    "AmendmentDate": "23 September 2010",
+    "Address": "465 Crofton Road\nNIMBIN NSW 2480",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Carroll",
+      "GivenNames": "David",
+      "Address": {
+        "Line1": "136 Davis Rd",
+        "Suburb": "JIGGI",
+        "State": "NSW",
+        "Postcode": 2480
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Kavasilas",
+        "GivenNames": "Andrew",
+        "Address": {
+          "Line1": "51 Cullen Street",
+          "Suburb": "NIMBIN",
+          "State": "NSW",
+          "Postcode": 2480
+        }
+      }
+    ]
+  },
+  {
+    "Abbreviation": "ICAN",
+    "Name": "Independents For Climate Action Now",
+    "RegisterDate": "10 April 2019",
+    "AmendmentDate": "10 April 2019",
+    "Address": "1/53 Stuart Street\nMULLUMBIMBY NSW 2482",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Tait",
+      "GivenNames": "James ",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "1/53 Stuart Street",
+        "Suburb": "MULLUMBIMBY",
+        "State": "NSW",
+        "Postcode": 2482
+      }
+    }
+  },
+  {
+    "Abbreviation": "Involuntary Vaccine/Fluoride Objectors",
+    "Name": "Involuntary Medication Objectors (Vaccination/Fluoride) Party",
+    "RegisterDate": "26 October 2016",
+    "AmendmentDate": "26 October 2016",
+    "Address": "PO Box 3322\nWEST KEMPSEY NSW 2440",
+    "Officer": {
+      "Title": "Ms",
+      "FamilyName": "Bennetts",
+      "GivenNames": "Megan Therese",
+      "Address": {
+        "Line1": "23 Goodhugh Street",
+        "Suburb": "EAST MAITLAND",
+        "State": "NSW",
+        "Postcode": 2323
+      }
+    }
+  },
+  {
+    "Abbreviation": "JLN",
+    "Name": "Jacqui Lambie Network",
+    "RegisterDate": "14 May 2015",
+    "AmendmentDate": "14 May 2015",
+    "Address": "PO Box 264\nBurnie TAS 7320",
+    "Officer": {
+      "Title": "Ms",
+      "FamilyName": "Lambie",
+      "GivenNames": "Jacquiline",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "40 Blackwood Parade",
+        "Suburb": "ROMAINE",
+        "State": "TAS",
+        "Postcode": 7320
+      }
+    }
+  },
+  {
+    "Abbreviation": "KAP",
+    "Name": "Katter's Australian Party (KAP)",
+    "RegisterDate": "27 September 2011",
+    "AmendmentDate": "27 September 2011",
+    "Address": "PO Box 1022\nTOWNSVILLE QLD 4810",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Harris",
+      "GivenNames": "Thomas",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "Erambie",
+        "Line2": "2709 Mitchell Highway",
+        "Suburb": "MOLONG",
+        "State": "NSW",
+        "Postcode": 2866
+      }
+    }
+  },
+  {
+    "Abbreviation": "Liberal",
+    "Name": "Liberal Party of Australia",
+    "RegisterDate": "22 June 1984",
+    "AmendmentDate": "22 June 1984",
+    "Address": "PO Box 6004\nKINGSTON ACT 2604",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Hirst",
+      "GivenNames": "Andrew",
+      "Capacity": "Secretary",
+      "Address": {
+        "Line1": "Menzies House",
+        "Line2": "Cnr Blackall & Macquarie Streets",
+        "Suburb": "BARTON",
+        "State": "ACT",
+        "Postcode": 2600
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Berger",
+        "GivenNames": "Simon",
+        "Capacity": "deputy registered officer",
+        "Address": {
+          "Line1": "PO Box 6004",
+          "Suburb": "KINGSTON",
+          "State": "ACT",
+          "Postcode": 2604
+        }
+      }
+    ]
+  },
+  {
+    "Abbreviation": "Liberal Democrats",
+    "Name": "Liberal Democratic Party",
+    "RegisterDate": "7 September 2007",
+    "AmendmentDate": "7 September 2007",
+    "Address": "PO Box 636\nDRUMMOYNE NSW 1470",
+    "Officer": {
+      "Title": "Senator",
+      "FamilyName": "Leyonhjelm",
+      "GivenNames": "David",
+      "Address": {
+        "Line1": "405/19 Roseby Street",
+        "Suburb": "DRUMMOYNE",
+        "State": "NSW",
+        "Postcode": 2047
+      }
+    }
+  },
+  {
+    "Abbreviation": "LAOL",
+    "Name": "Love Australia or Leave",
+    "RegisterDate": "12 October 2016",
+    "AmendmentDate": "12 October 2016",
+    "Address": "PO Box 10113\nRASMUSSEN QLD 4815",
+    "Officer": {
+      "Title": "Ms",
+      "FamilyName": "Vuga",
+      "GivenNames": "Kim",
+      "Address": {
+        "Line1": "27 Lockheed Circuit",
+        "Suburb": "ST CLAIR",
+        "State": "NSW",
+        "Postcode": 2759
+      }
+    }
+  },
+  {
+    "Name": "Non-Custodial Parents Party (Equal Parenting)",
+    "RegisterDate": "30 August 2007",
+    "AmendmentDate": "30 August 2007",
+    "Address": "PO Box 97\nDOUGLAS PARK NSW 2569",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Thompson",
+      "GivenNames": "Andrew George",
+      "Capacity": "Party Secretary",
+      "Address": {
+        "Line1": "39 Dredge Avenue",
+        "Suburb": "DOUGLAS PARK",
+        "State": "NSW",
+        "Postcode": 2569
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Flanagan",
+        "GivenNames": "John Edward",
+        "Address": {
+          "Line1": "PO Box 57",
+          "Suburb": "THIRROUL",
+          "State": "NSW",
+          "Postcode": 2515
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Pauline Hanson's One Nation",
+    "RegisterDate": "2 June 2004",
+    "AmendmentDate": "2 June 2004",
+    "Address": "PO Box 96\nLUTWYCHE QLD 4030",
+    "Officer": {
+      "Title": "Senator",
+      "FamilyName": "Hanson",
+      "GivenNames": "Pauline",
+      "Address": {
+        "Line1": "Unit 2/38 Hudson Road",
+        "Suburb": "ALBION",
+        "State": "QLD",
+        "Postcode": 4010
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Ms",
+        "FamilyName": "McCulloch",
+        "GivenNames": "Kate",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "138 Molesworth Road",
+          "Suburb": "MALBONA",
+          "State": "TAS",
+          "Postcode": 7140
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Pucci",
+        "GivenNames": "Michael",
+        "Address": {
+          "Line1": "Unit 2/38 Hudson Road",
+          "Suburb": "ALBION",
+          "State": "QLD",
+          "Postcode": 4010
+        }
+      }
+    ]
+  },
+  {
+    "Abbreviation": "Pirate Party",
+    "Name": "Pirate Party Australia",
+    "RegisterDate": "17 January 2013",
+    "AmendmentDate": "17 January 2013",
+    "Address": "PO Box 385\nFIGTREE NSW 2525",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Jago",
+      "GivenNames": "Alexander",
+      "Address": {
+        "Line1": "39 Bel-Air Court",
+        "Suburb": "FERNY HILLS",
+        "State": "QLD",
+        "Postcode": 4055
+      }
+    }
+  },
+  {
+    "Abbreviation": "Reason Australia",
+    "Name": "Reason Australia",
+    "RegisterDate": "30 August 2018",
+    "AmendmentDate": "30 August 2018",
+    "Address": "PO Box 621\nCOLLINS STREET WEST VIC 8007",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Ellis",
+      "GivenNames": "Craig",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "116/4 Young Street",
+        "Suburb": "NEUTRAL BAY",
+        "State": "NSW",
+        "Postcode": 2089
+      }
+    }
+  },
+  {
+    "Abbreviation": "The Australian Republicans",
+    "Name": "Republican Party of Australia",
+    "RegisterDate": "31 July 2017",
+    "AmendmentDate": "31 July 2017",
+    "Address": "PO Box 843\nCASTLE HILL NSW 1765",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Consandine",
+      "GivenNames": "Peter",
+      "Capacity": "Registered Officer, Party Agent",
+      "Address": {
+        "Line1": "412/33 Lexington Drive",
+        "Suburb": "BELLA VISTA",
+        "State": "NSW",
+        "Postcode": 2153
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Harris",
+        "GivenNames": "Miles Hendon",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "11 Acer Court",
+          "Suburb": "CHERRYBROOK",
+          "State": "NSW",
+          "Postcode": 2126
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Science Party",
+    "RegisterDate": "2 July 2013",
+    "AmendmentDate": "2 July 2013",
+    "Address": "49 Harrington St\nENMORE NSW 2042",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Finno",
+      "GivenNames": "Andrea",
+      "Address": {
+        "Line1": "49 Harrington St",
+        "Suburb": "ENMORE",
+        "State": "NSW",
+        "Postcode": 2042
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "FamilyName": "Feigin",
+        "GivenNames": "Alexey",
+        "Address": {
+          "Line1": "39 Rodman Ave",
+          "Suburb": "MAROUBRA",
+          "State": "NSW",
+          "Postcode": 2035
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Wolfendale ",
+        "GivenNames": "Drew",
+        "Address": {
+          "Line1": "3/15 Kintore Avenue",
+          "Suburb": "PROSPECT",
+          "State": "SA",
+          "Postcode": 5082
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "James",
+        "GivenNames": "Lukanis",
+        "Address": {
+          "Line1": "49 Harrington Street",
+          "Suburb": "ENMORE",
+          "State": "NSW",
+          "Postcode": 2042
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Secular Party of Australia",
+    "RegisterDate": "16 June 2010",
+    "AmendmentDate": "16 June 2010",
+    "Address": "PO Box 6004\nMELBOURNE VIC 8008",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Haddrill",
+      "GivenNames": "Shaun",
+      "Address": {
+        "Line1": "30-40 The Esplanade",
+        "Suburb": "BURLEIGH HEADS",
+        "State": "QLD",
+        "Postcode": 4220
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Ms",
+        "FamilyName": "Sceats",
+        "GivenNames": "Rosemary",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "7 Cypress Court",
+          "Suburb": "MACLEOD",
+          "State": "VIC",
+          "Postcode": 3085
+        }
+      }
+    ]
+  },
+  {
+    "Abbreviation": "SUPA",
+    "Name": "Seniors United Party of Australia",
+    "RegisterDate": "4 March 2015",
+    "AmendmentDate": "4 March 2015",
+    "Address": "PO Box 6059\nMARRICKVILLE SOUTH NSW 2204",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Koliadis",
+      "GivenNames": "Kyriakos",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "4 Palmer Crescent",
+        "Suburb": "BEXLEY",
+        "State": "NSW",
+        "Postcode": 2207
+      }
+    }
+  },
+  {
+    "Abbreviation": "Shooters, Fishers and Farmers",
+    "Name": "Shooters, Fishers and Farmers Party",
+    "RegisterDate": "21 August 2007",
+    "AmendmentDate": "21 August 2007",
+    "Address": "PO Box 376\nBAULKHAM HILLS NSW 1755",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Borsak",
+      "GivenNames": "Robert",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "PO Box 376",
+        "Suburb": "BAULKHAM HILLS",
+        "State": "NSW",
+        "Postcode": 1755
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Despotoski",
+        "GivenNames": "Filip",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "2/1B Salisbury Street",
+          "Suburb": "South Hutsville",
+          "State": "NSW",
+          "Postcode": 2221
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Socialist Alliance",
+    "RegisterDate": "4 September 2007",
+    "AmendmentDate": "4 September 2007",
+    "Address": "PO Box 114\nBROADWAY NSW 2007",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Boyle",
+      "GivenNames": "Peter Gerard",
+      "Address": {
+        "Line1": "Suite C1.07, Level 1",
+        "Line2": "22-36 Mountain Street",
+        "Suburb": "ULTIMO",
+        "State": "NSW",
+        "Postcode": 2007
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Bainbridge",
+        "GivenNames": "Alex",
+        "Capacity": "Secretary",
+        "Address": {
+          "Line1": "PO Box 204",
+          "Suburb": "NORTHBRIDGE",
+          "State": "WA",
+          "Postcode": 6865
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Holmes",
+        "GivenNames": "David",
+        "Address": {
+          "Line1": "3/2a Loyola Ave",
+          "Suburb": "BRUNSWICK",
+          "State": "VIC",
+          "Postcode": 3056
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Weedall",
+        "GivenNames": "Gemma ",
+        "Address": {
+          "Line1": "Level 2",
+          "Line2": "95 Currie St",
+          "Suburb": "ADELAIDE",
+          "State": "SA",
+          "Postcode": 5000
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "McIlroy",
+        "GivenNames": "Jim",
+        "Address": {
+          "Line1": "44 Shepherd St",
+          "Suburb": "CHIPPENDALE",
+          "State": "NSW",
+          "Postcode": 2008
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Benedek",
+        "GivenNames": "Paul",
+        "Address": {
+          "Line1": "44 Shepherd St",
+          "Suburb": "CHIPPENDALE",
+          "State": "NSW",
+          "Postcode": 2008
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Bassi",
+        "GivenNames": "Raul",
+        "Address": {
+          "Line1": "2/19 Earle Avenue",
+          "Suburb": "ASHFIELD",
+          "State": "NSW",
+          "Postcode": 2131
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Ratcliffe",
+        "GivenNames": "Ruth",
+        "Address": {
+          "Line1": "205/95 Currie St",
+          "Suburb": "ADELAIDE",
+          "State": "SA",
+          "Postcode": 5000
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Wainwright",
+        "GivenNames": "Samuel",
+        "Address": {
+          "Line1": "21a Jarvis St",
+          "Suburb": "O'CONNOR",
+          "State": "WA",
+          "Postcode": 6163
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Austin",
+        "GivenNames": "Susan",
+        "Address": {
+          "Line1": "225 Murray St",
+          "Suburb": "HOBART",
+          "State": "TAS",
+          "Postcode": 7000
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Socialist Equality Party",
+    "RegisterDate": "17 September 2007",
+    "AmendmentDate": "17 September 2007",
+    "Address": "PO BOX 574\nSTRAWBERRY HILLS NSW 2012",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Cogan",
+      "GivenNames": "James",
+      "Address": {
+        "Line1": "Suite 906, 185 Elizabeth Street",
+        "Line2": "",
+        "Suburb": "SYDNEY",
+        "State": "NSW",
+        "Postcode": 2000
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Ms",
+        "FamilyName": "Lopez",
+        "GivenNames": "Kaye Lynne",
+        "Address": {
+          "Line1": "13 / 11 Williams Pde",
+          "Suburb": "DULWICH HILL",
+          "State": "NSW",
+          "Postcode": 2203
+        }
+      }
+    ]
+  },
+  {
+    "Abbreviation": "AMHP",
+    "Name": "The Australian Mental Health Party",
+    "RegisterDate": "11 March 2016",
+    "AmendmentDate": "11 March 2016",
+    "Address": "PO Box 1505\nAPPLECROSS WA 6953",
+    "Officer": {
+      "Title": "Ms",
+      "FamilyName": "Mullings",
+      "GivenNames": "Terri Jean",
+      "Address": {
+        "Line1": "507 Marmion Street",
+        "Suburb": "BOORAGOON",
+        "State": "WA",
+        "Postcode": 6154
+      }
+    }
+  },
+  {
+    "Abbreviation": "GAP",
+    "Name": "The Great Australian Party",
+    "RegisterDate": "7 April 2019",
+    "AmendmentDate": "7 April 2019",
+    "Address": "PO Box 8242\nSOUTH PERTH WA 6151",
+    "Officer": {
+      "Title": "Mr ",
+      "FamilyName": "Nelson",
+      "GivenNames": "Ian",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "65 Cardinal Circuit",
+        "Suburb": "CABOOLTURE",
+        "State": "QLD",
+        "Postcode": 4510
+      }
+    }
+  },
+  {
+    "Abbreviation": "The Greens",
+    "Name": "Australian Greens",
+    "RegisterDate": "24 January 1985",
+    "AmendmentDate": "24 January 1985",
+    "Address": "2/97 Northbourne Avenue\nTURNER ACT 2612",
+    "Officer": {
+      "Title": "Ms",
+      "FamilyName": "Watson",
+      "GivenNames": "Giz",
+      "Address": {
+        "Line1": "2/97 Northbourne Avenue",
+        "Suburb": "TURNER",
+        "State": "ACT",
+        "Postcode": 2612
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Pollock",
+        "GivenNames": "David Charles",
+        "Address": {
+          "Line1": "23 Pinaroo Cres",
+          "Suburb": "BATCHELOR",
+          "State": "NT",
+          "Postcode": 845
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Whisson",
+        "GivenNames": "Gary",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "PO Box 181",
+          "Suburb": "ORFORD",
+          "State": "TAS",
+          "Postcode": 7190
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Finlay",
+        "GivenNames": "Grant William",
+        "Address": {
+          "Line1": "108 Talbots Road",
+          "Suburb": "SANDFLY",
+          "State": "TAS",
+          "Postcode": 7150
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Green",
+        "GivenNames": "Ian",
+        "Address": {
+          "Line1": "239 Wright Street",
+          "Suburb": "ADELAIDE",
+          "State": "SA",
+          "Postcode": 5000
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Orfanidis",
+        "GivenNames": "Photius",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "171 Bolton Street",
+          "Suburb": "ELTHAM",
+          "State": "VIC",
+          "Postcode": 3095
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Waring",
+        "GivenNames": "Rohan",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "GPO Box 4589",
+          "Suburb": "MELBOURNE",
+          "State": "VIC",
+          "Postcode": 3001
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Lee",
+        "GivenNames": "Seamus Myles",
+        "Capacity": "Membership Officer",
+        "Address": {
+          "Line1": "25 Muttama Road",
+          "Suburb": "ARTARMON",
+          "State": "NSW",
+          "Postcode": 2064
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Liersch",
+        "GivenNames": "Timothy",
+        "Address": {
+          "Line1": "28/97 Eastern Valley Way",
+          "Suburb": "BELCONNEN",
+          "State": "ACT",
+          "Postcode": 2617
+        }
+      }
+    ]
+  },
+  {
+    "Abbreviation": "The Nationals",
+    "Name": "National Party of Australia",
+    "RegisterDate": "31 May 1984",
+    "AmendmentDate": "31 May 1984",
+    "Address": "PO Box 6190\nKINGSTON ACT 2604",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Hindmarsh",
+      "GivenNames": "Benjamin",
+      "Address": {
+        "Line1": "7 National Circuit",
+        "Suburb": "BARTON",
+        "State": "ACT",
+        "Postcode": 2600
+      }
+    }
+  },
+  {
+    "Abbreviation": "SBP",
+    "Name": "The Small Business Party",
+    "RegisterDate": "20 February 2019",
+    "AmendmentDate": "20 February 2019",
+    "Address": "Unit 204\n2 York Street\nSYDNEY NSW 2000",
+    "Officer": {
+      "Title": "Ms",
+      "FamilyName": "Vithoulkas",
+      "GivenNames": "Angela",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "Unit 204",
+        "Line2": "2 York Street",
+        "Suburb": "SYDNEY ",
+        "State": "NSW",
+        "Postcode": 2000
+      }
+    }
+  },
+  {
+    "Abbreviation": "Together.",
+    "Name": "The Together Party",
+    "RegisterDate": "4 April 2019",
+    "AmendmentDate": "4 April 2019",
+    "Address": "PO Box 1085\nMULLUMBIMBY NSW 2482",
+    "Officer": {
+      "Title": "Ms",
+      "FamilyName": "Kinkead",
+      "GivenNames": "Belinda",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "12/7 Grevillea Street",
+        "Suburb": "BYRON BAY",
+        "State": "NSW",
+        "Postcode": 2481
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Swivel",
+        "GivenNames": "Mark",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "PO Box 1085",
+          "Suburb": "MULLUMBIMBY",
+          "State": "NSW",
+          "Postcode": 2482
+        }
+      }
+    ]
+  },
+  {
+    "Name": "The Women's Party",
+    "RegisterDate": "20 February 2019",
+    "AmendmentDate": "20 February 2019",
+    "Address": "PO Box 5333\nEAST LISMORE NSW 2480",
+    "Officer": {
+      "Title": "Ms",
+      "FamilyName": "De Vendre ",
+      "GivenNames": "Divvi",
+      "Address": {
+        "Line1": "4 Showview Street",
+        "Suburb": "GIRARDS HILL ",
+        "State": "NSW",
+        "Postcode": 2480
+      }
+    }
+  },
+  {
+    "Name": "Tim Storer Independent SA",
+    "RegisterDate": "30 August 2018",
+    "AmendmentDate": "30 August 2018",
+    "Address": "118 Prospect Road\nPROSPECT SA 5082",
+    "Officer": {
+      "Title": "Senator",
+      "FamilyName": "Storer",
+      "GivenNames": "Timothy",
+      "Address": {
+        "Line1": "118 Prospect Road",
+        "Suburb": "PROSPECT",
+        "State": "SA",
+        "Postcode": 5082
+      }
+    }
+  },
+  {
+    "Abbreviation": "UAP",
+    "Name": "United Australia Party",
+    "RegisterDate": "12 December 2018",
+    "AmendmentDate": "12 December 2018",
+    "Address": "GPO Box 1538\nBRISBANE QLD 4001",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Palmer",
+      "GivenNames": "Clive Frederick",
+      "Address": {
+        "Line1": "Level 17",
+        "Line2": "240 Queen Street",
+        "Suburb": "BRISBANE",
+        "State": "QLD",
+        "Postcode": 4000
+      }
+    }
+  },
+  {
+    "Name": "Victorian Socialists",
+    "RegisterDate": "7 April 2019",
+    "AmendmentDate": "7 April 2019",
+    "Address": "54 Victoria Street\nCARLTON SOUTH VIC 3053",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Oakley",
+      "GivenNames": "Corey",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "54 Victoria Street",
+        "Suburb": "CARLTON SOUTH",
+        "State": "VIC",
+        "Postcode": 3053
+      }
+    }
+  },
+  {
+    "Abbreviation": "VEP",
+    "Name": "Voluntary Euthanasia Party",
+    "RegisterDate": "1 July 2013",
+    "AmendmentDate": "1 July 2013",
+    "Address": "PO Box 4401\nHAWKER ACT 2614",
+    "Officer": {
+      "Title": "Ms",
+      "FamilyName": "Steep",
+      "GivenNames": "Sandi",
+      "Address": {
+        "Line1": "28/23-27 McMahon Street",
+        "Suburb": "HURSTVILLE",
+        "State": "NSW",
+        "Postcode": 2220
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Ms",
+        "FamilyName": "Higson",
+        "GivenNames": "Shayne",
+        "Address": {
+          "Line1": "PO Box 73",
+          "Suburb": "STUARTS POINT",
+          "State": "NSW",
+          "Postcode": 2441
+        }
+      }
+    ]
+  },
+  {
+    "Abbreviation": "Flux",
+    "Name": "VOTEFLUX.ORG | Upgrade Democracy!",
+    "RegisterDate": "29 March 2016",
+    "AmendmentDate": "29 March 2016",
+    "Address": "5/155 Clarence St\nSYDNEY NSW 2000",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Spataro",
+      "GivenNames": "Nathan",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "1/63A Upper Pitt Street",
+        "Suburb": "KIRRIBILLI",
+        "State": "NSW",
+        "Postcode": 2061
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Kaye",
+        "GivenNames": "Max",
+        "Capacity": "Secretary",
+        "Address": {
+          "Line1": "406/58-60 King Street",
+          "Line2": "",
+          "Suburb": "NEWTOWN",
+          "State": "NSW",
+          "Postcode": 2042
+        }
+      }
+    ]
+  },
+  {
+    "Abbreviation": "WESTERN AUSTRALIA PARTY",
+    "Name": "WESTERN AUSTRALIA PARTY",
+    "RegisterDate": "30 August 2018",
+    "AmendmentDate": "30 August 2018",
+    "Address": "PO Box 8134\nSUBIACO WA 6008",
+    "Officer": {
+      "Title": "Ms",
+      "FamilyName": "Matheson",
+      "GivenNames": "Julie",
+      "Capacity": "Registered Offiicer",
+      "Address": {
+        "Line1": "139 Coghlan Road",
+        "Suburb": "SUBIACO",
+        "State": "WA",
+        "Postcode": 6008
+      }
+    }
+  },
+  {
+    "Abbreviation": "YVA",
+    "Name": "Yellow Vest Australia",
+    "RegisterDate": "28 July 2015",
+    "AmendmentDate": "28 July 2015",
+    "Address": "PO Box 290\nSouth Melbourne VIC 3205",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Schumann",
+      "GivenNames": "Ralf",
+      "Address": {
+        "Line1": "Suite 13 Level 4, 150 Albert Road",
+        "Suburb": "SOUTH MELBOURNE",
+        "State": "VIC",
+        "Postcode": 3205
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Ms",
+        "FamilyName": "Robinson",
+        "GivenNames": "Deborah",
+        "Address": {
+          "Line1": "PO Box 290",
+          "Suburb": "SOUTH MELBOURNE",
+          "State": "VIC",
+          "Postcode": 3205
+        }
+      }
+    ]
+  }
+]
