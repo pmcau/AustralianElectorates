@@ -13,120 +13,185 @@
         GivenNames: 'A',
         Begin: 2010,
         End: 2019,
-        PartyCode: 'IND'
+        PartyCodes: [
+          'IND'
+        ]
       },
       {
         FamilyName: 'Kerr',
         GivenNames: 'D',
         Begin: 1987,
         End: 2010,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Hodgman',
         GivenNames: 'W M',
         Begin: 1975,
         End: 1987,
-        PartyCode: 'LP'
+        PartyCodes: [
+          'LP'
+        ],
+        PartyIds: [
+          4
+        ]
       },
       {
         FamilyName: 'Coates',
         GivenNames: 'J',
         Begin: 1972,
         End: 1975,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Solomon',
         GivenNames: 'R J',
         Begin: 1969,
         End: 1972,
-        PartyCode: 'LP'
+        PartyCodes: [
+          'LP'
+        ],
+        PartyIds: [
+          4
+        ]
       },
       {
         FamilyName: 'Gibson',
         GivenNames: 'A',
         Begin: 1964,
         End: 1969,
-        PartyCode: 'LP'
+        PartyCodes: [
+          'LP'
+        ],
+        PartyIds: [
+          4
+        ]
       },
       {
         FamilyName: 'Townley',
         GivenNames: 'A G',
         Begin: 1949,
         End: 1963,
-        PartyCode: 'LP'
+        PartyCodes: [
+          'LP'
+        ],
+        PartyIds: [
+          4
+        ]
       },
       {
         FamilyName: 'Gaha',
         GivenNames: 'J F',
         Begin: 1943,
         End: 1949,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Beck',
         GivenNames: 'A J',
         Begin: 1940,
         End: 1943,
-        PartyCode: 'UAP',
-        PartyId: 1469
+        PartyCodes: [
+          'UAP'
+        ],
+        PartyIds: [
+          1469
+        ]
       },
       {
         FamilyName: 'Mahoney',
         GivenNames: 'G W',
         Begin: 1934,
         End: 1940,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Hutchin',
         GivenNames: 'A W',
         Begin: 1931,
         End: 1934,
-        PartyCode: 'UAP',
-        PartyId: 1469
+        PartyCodes: [
+          'UAP'
+        ],
+        PartyIds: [
+          1469
+        ]
       },
       {
         FamilyName: 'Culley',
         GivenNames: 'C E',
         Begin: 1928,
         End: 1931,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Gellibrand',
         GivenNames: 'J',
         Begin: 1925,
         End: 1928,
-        PartyCode: 'NAT'
+        PartyCodes: [
+          'NAT'
+        ]
       },
       {
         FamilyName: 'O\'Keefe',
         GivenNames: 'D J',
         Begin: 1922,
         End: 1925,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Smith',
         GivenNames: 'W H',
         Begin: 1910,
         End: 1922,
-        PartyCode: 'ALP/NAT'
+        PartyCodes: [
+          'ALP',
+          'NAT'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Fysh',
         GivenNames: 'P',
         Begin: 1903,
         End: 1910,
-        PartyCode: 'PROT/ANTI-SOC'
+        PartyCodes: [
+          'PROT',
+          'ANTI-SOC'
+        ]
       }
     ]
   },
@@ -145,53 +210,82 @@
         FamilyName: 'Bandt',
         GivenNames: 'Adam',
         Begin: 2010,
-        PartyCode: 'GRN'
+        PartyCodes: [
+          'GRN'
+        ],
+        PartyIds: [
+          37
+        ]
       },
       {
         FamilyName: 'Tanner',
         GivenNames: 'L',
         Begin: 1993,
         End: 2010,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Hand',
         GivenNames: 'G L',
         Begin: 1983,
         End: 1993,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Innes',
         GivenNames: 'U E',
         Begin: 1972,
         End: 1983,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Calwell',
         GivenNames: 'A A',
         Begin: 1940,
         End: 1972,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Malony',
         GivenNames: 'W R N',
         Begin: 1904,
         End: 1940,
-        PartyCode: 'ALP/FLP'
+        PartyCodes: [
+          'ALP',
+          'FLP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'McEacharn',
         GivenNames: 'M D',
         Begin: 1901,
         End: 1904,
-        PartyCode: 'PROT'
+        PartyCodes: [
+          'PROT'
+        ]
       }
     ],
     Enrollment: 107572,
@@ -229,39 +323,60 @@
         FamilyName: 'Coleman',
         GivenNames: 'David',
         Begin: 2013,
-        PartyCode: 'LP'
+        PartyCodes: [
+          'LP'
+        ],
+        PartyIds: [
+          4
+        ]
       },
       {
         FamilyName: 'Melham',
         GivenNames: 'D',
         Begin: 1990,
         End: 2013,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Mountford',
         GivenNames: 'J G',
         Begin: 1980,
         End: 1990,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Martin',
         GivenNames: 'V J',
         Begin: 1969,
         End: 1980,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Costa',
         GivenNames: 'D E',
         Begin: 1949,
         End: 1969,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       }
     ],
     Enrollment: 106253,
@@ -299,110 +414,163 @@
         FamilyName: 'Fitzgibbon',
         GivenNames: 'Joel',
         Begin: 2016,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Conroy',
         GivenNames: 'P',
         Begin: 2013,
         End: 2016,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Combet',
         GivenNames: 'G',
         Begin: 2007,
         End: 2013,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Hoare',
         GivenNames: 'K',
         Begin: 1998,
         End: 2007,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Brown',
         GivenNames: 'B',
         Begin: 1984,
         End: 1998,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Fitzgibbon',
         GivenNames: 'J',
         Begin: 1996,
         End: 2016,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Fitzgibbon',
         GivenNames: 'E J',
         Begin: 1984,
         End: 1996,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Brown',
         GivenNames: 'R J',
         Begin: 1980,
         End: 1984,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'James',
         GivenNames: 'A W',
         Begin: 1960,
         End: 1980,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Evatt',
         GivenNames: 'H V',
         Begin: 1958,
         End: 1960,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'James',
         GivenNames: 'R',
         Begin: 1928,
         End: 1958,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Charlton',
         GivenNames: 'M',
         Begin: 1910,
         End: 1928,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Liddell',
         GivenNames: 'F',
         Begin: 1903,
         End: 1910,
-        PartyCode: 'FT/ANTI-SOC'
+        PartyCodes: [
+          'FT',
+          'ANTI-SOC'
+        ]
       },
       {
         FamilyName: 'Barton',
         GivenNames: 'E',
         Begin: 1901,
         End: 1903,
-        PartyCode: 'PROT'
+        PartyCodes: [
+          'PROT'
+        ]
       }
     ],
     Enrollment: 121436,
@@ -439,93 +607,143 @@
         GivenNames: 'G',
         Begin: 2018,
         End: 2019,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Feeney',
         GivenNames: 'D',
         Begin: 2013,
         End: 2018,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Ferguson',
         GivenNames: 'M',
         Begin: 1996,
         End: 2013,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Howe',
         GivenNames: 'B L',
         Begin: 1977,
         End: 1996,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Garrick',
         GivenNames: 'H J',
         Begin: 1969,
         End: 1977,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Benson',
         GivenNames: 'S J',
         Begin: 1962,
         End: 1969,
-        PartyCode: 'ALP/IND'
+        PartyCodes: [
+          'ALP',
+          'IND'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Bird',
         GivenNames: 'A C',
         Begin: 1949,
         End: 1962,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Brennan',
         GivenNames: 'F',
         Begin: 1934,
         End: 1949,
-        PartyCode: 'FLP/ALP'
+        PartyCodes: [
+          'FLP',
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Dennis',
         GivenNames: 'S',
         Begin: 1931,
         End: 1934,
-        PartyCode: 'UAP',
-        PartyId: 1469
+        PartyCodes: [
+          'UAP'
+        ],
+        PartyIds: [
+          1469
+        ]
       },
       {
         FamilyName: 'Brennan',
         GivenNames: 'F',
         Begin: 1911,
         End: 1931,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Beard',
         GivenNames: 'H E',
         Begin: 1910,
         End: 1910,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Coon',
         GivenNames: 'J',
         Begin: 1906,
         End: 1910,
-        PartyCode: 'PROT'
+        PartyCodes: [
+          'PROT'
+        ]
       }
     ]
   },
@@ -544,8 +762,12 @@
         FamilyName: 'Champion',
         GivenNames: 'Nick',
         Begin: 2019,
-        PartyCode: 'ALP',
-        PartyId: 198
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          198
+        ]
       }
     ],
     Enrollment: 119385,
@@ -583,82 +805,131 @@
         FamilyName: 'Morrison',
         GivenNames: 'Scott',
         Begin: 2007,
-        PartyCode: 'LP'
+        PartyCodes: [
+          'LP'
+        ],
+        PartyIds: [
+          4
+        ]
       },
       {
         FamilyName: 'Baird',
         GivenNames: 'B',
         Begin: 1998,
         End: 2007,
-        PartyCode: 'LP'
+        PartyCodes: [
+          'LP'
+        ],
+        PartyIds: [
+          4
+        ]
       },
       {
         FamilyName: 'Mutch',
         GivenNames: 'S',
         Begin: 1996,
         End: 1998,
-        PartyCode: 'LP'
+        PartyCodes: [
+          'LP'
+        ],
+        PartyIds: [
+          4
+        ]
       },
       {
         FamilyName: 'Dobie',
         GivenNames: 'J D M',
         Begin: 1975,
         End: 1996,
-        PartyCode: 'LP'
+        PartyCodes: [
+          'LP'
+        ],
+        PartyIds: [
+          4
+        ]
       },
       {
         FamilyName: 'Thorburn',
         GivenNames: 'R W',
         Begin: 1972,
         End: 1975,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Dobie',
         GivenNames: 'J D M',
         Begin: 1969,
         End: 1972,
-        PartyCode: 'LP'
+        PartyCodes: [
+          'LP'
+        ],
+        PartyIds: [
+          4
+        ]
       },
       {
         FamilyName: 'Cope',
         GivenNames: 'J F',
         Begin: 1955,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Sheehan',
         GivenNames: 'T',
         Begin: 1937,
         End: 1955,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Garden',
         GivenNames: 'J S',
         Begin: 1934,
         End: 1937,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Riley',
         GivenNames: 'E C',
         Begin: 1922,
         End: 1934,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Catts',
         GivenNames: 'J H',
         Begin: 1906,
         End: 1922,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       }
     ],
     Enrollment: 106957,
@@ -695,8 +966,12 @@
         FamilyName: 'Smith',
         GivenNames: 'David',
         Begin: 2019,
-        PartyCode: 'ALP',
-        PartyId: 200
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          200
+        ]
       }
     ],
     Enrollment: 104482,
@@ -733,40 +1008,60 @@
         FamilyName: 'Leigh',
         GivenNames: 'Andrew',
         Begin: 2010,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'McMullan',
         GivenNames: 'B',
         Begin: 1998,
         End: 2010,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Dargavel',
         GivenNames: 'S',
         Begin: 1997,
         End: 1998,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Langmore',
         GivenNames: 'J',
         Begin: 1984,
         End: 1997,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Fry',
         GivenNames: 'K L',
         Begin: 1974,
         End: 1984,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       }
     ],
     Enrollment: 96017,
@@ -803,62 +1098,96 @@
         FamilyName: 'Payne',
         GivenNames: 'Alicia',
         Begin: 2019,
-        PartyCode: 'ALP',
-        PartyId: 200
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          200
+        ]
       },
       {
         FamilyName: 'Brodtmann',
         GivenNames: 'G',
         Begin: 2010,
         End: 2019,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Ellis',
         GivenNames: 'A',
         Begin: 1998,
         End: 2010,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'McMullan',
         GivenNames: 'B',
         Begin: 1996,
         End: 1998,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Smyth',
         GivenNames: 'B M',
         Begin: 1995,
         End: 1996,
-        PartyCode: 'LP'
+        PartyCodes: [
+          'LP'
+        ],
+        PartyIds: [
+          4
+        ]
       },
       {
         FamilyName: 'Kelly',
         GivenNames: 'R J',
         Begin: 1980,
         End: 1995,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       },
       {
         FamilyName: 'Haslem',
         GivenNames: 'J W',
         Begin: 1975,
         End: 1980,
-        PartyCode: 'LP'
+        PartyCodes: [
+          'LP'
+        ],
+        PartyIds: [
+          4
+        ]
       },
       {
         FamilyName: 'Enderby',
         GivenNames: 'K E',
         Begin: 1974,
         End: 1975,
-        PartyCode: 'ALP',
-        PartyId: 2
+        PartyCodes: [
+          'ALP'
+        ],
+        PartyIds: [
+          2
+        ]
       }
     ],
     Enrollment: 95348,
@@ -881,51 +1210,12 @@
       }
     }
   },
-  lingiari: {
-    Name: 'Lingiari',
-    ShortName: 'lingiari',
-    State: 'NT',
-    Area: 1348157.94,
-    DateGazetted: DateTime_4,
-    Description: 'Lingiari covers the majority of the Northern Territory, with the exception of the Darwin Municipality and most of the Palmerston Municipality.<br> Lingiari includes the Territory of Cocos (Keeling) Islands and the Territory of Christmas Island.',
-    DemographicRating: '<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.',
-    ProductsAndIndustry: 'Cattle, tourism, horticulture, fishing, light industry in Alice Springs, bauxite, copper, gold and uranium mining.',
-    NameDerivation: 'Named in honour of Vincent Lingiari AM 19??-88, who was a member of the Gurindji people from the Victoria River District. Mr Lingiari was a stockman and lands right leader who worked for many years to improve conditions for Aboriginal people. In 1966, he led the walk-off of his people from Wave Hill Station, which eventually resulted in the establishment of Wattie Creek and a land grant to the Gurindji people.',
-    Members: [
-      {
-        FamilyName: 'Snowdon',
-        GivenNames: 'Warren',
-        Begin: 2001,
-        PartyCode: 'ALP',
-        PartyId: 2
-      }
-    ],
-    Enrollment: 70023,
-    TwoCandidatePreferred: {
-      Elected: {
-        FamilyName: 'Snowdon',
-        GivenNames: 'Warren',
-        PartyCode: 'ALP',
-        Votes: 26863,
-        Swing: -2.73,
-        PartyId: 229
-      },
-      Other: {
-        FamilyName: 'Price',
-        GivenNames: 'Jacinta',
-        PartyCode: 'CLP',
-        Votes: 21571,
-        Swing: 2.73,
-        PartyId: 26
-      }
-    }
-  },
   bass: {
     Name: 'Clark',
     ShortName: 'clark',
     State: 'TAS',
     Area: 292.26,
-    DateGazetted: DateTime_5,
+    DateGazetted: DateTime_4,
     Description: '<p>The Division of Clark is centred on Hobart and consists of the:</p><ul><li>City of Glenorchy</li><li>City of Hobart, and</li><li>part of the Municipality of Kingborough</li></ul>',
     DemographicRating: '<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.',
     ProductsAndIndustry: 'Banking and retail, chocolate and confectionery, catamaran construction, brewery, zinc works, food and timber processing, heavy transport, wholesale trade, engineering works, glass products and port facilities at Hobart.',

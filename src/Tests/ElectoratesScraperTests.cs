@@ -18,12 +18,11 @@ public class ElectoratesScraperTests :
         var hunter = await ElectoratesScraper.ScrapeCurrentElectorate("hunter", State.NSW);
         var spence = await ElectoratesScraper.ScrapeCurrentElectorate("spence", State.SA);
         var cook = await ElectoratesScraper.ScrapeCurrentElectorate("cook", State.NSW);
-        var lingiari = await ElectoratesScraper.ScrapeCurrentElectorate("lingiari", State.NT);
         var canberra = await ElectoratesScraper.ScrapeCurrentElectorate("canberra", State.ACT);
         var bean = await ElectoratesScraper.ScrapeCurrentElectorate("bean", State.ACT);
         var batman = await ElectoratesScraper.ScrapeCurrentElectorate("batman", State.VIC);
         var melbourne = await ElectoratesScraper.ScrapeCurrentElectorate("melbourne", State.VIC);
-        ObjectApprover.Verify(new {denison, melbourne,banks, hunter, batman, spence, cook, bean, fenner, canberra, lingiari, bass});
+        ObjectApprover.Verify(new {denison, melbourne,banks, hunter, batman, spence, cook, bean, fenner, canberra, bass});
     }
 
     public ElectoratesScraperTests(ITestOutputHelper output) :
