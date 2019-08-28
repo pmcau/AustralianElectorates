@@ -345,7 +345,7 @@
       {
         "Id": 200,
         "Name": "Australian Labor Party (ACT Branch)",
-        "Code": "Australian Labor Party",
+        "Code": "ALP",
         "Abbreviation": "Australian Labor Party",
         "RegisterDate": "13 June 1985",
         "AmendmentDate": "13 June 1985",
@@ -380,7 +380,7 @@
       {
         "Id": 194,
         "Name": "Australian Labor Party (N.S.W. Branch)",
-        "Code": "Labor",
+        "Code": "ALP",
         "Abbreviation": "Labor",
         "RegisterDate": "13 June 1985",
         "AmendmentDate": "13 June 1985",
@@ -456,7 +456,7 @@
       {
         "Id": 198,
         "Name": "Australian Labor Party (South Australian Branch)",
-        "Code": "Australian Labor Party",
+        "Code": "ALP",
         "Abbreviation": "Australian Labor Party",
         "RegisterDate": "13 June 1985",
         "AmendmentDate": "13 June 1985",
@@ -477,7 +477,7 @@
       {
         "Id": 196,
         "Name": "Australian Labor Party (State of Queensland)",
-        "Code": "Australian Labor Party",
+        "Code": "ALP",
         "Abbreviation": "Australian Labor Party",
         "RegisterDate": "13 June 1985",
         "AmendmentDate": "13 June 1985",
@@ -513,7 +513,7 @@
       {
         "Id": 31,
         "Name": "Australian Labor Party (Tasmanian Branch)",
-        "Code": "Australian Labor Party",
+        "Code": "ALP",
         "Abbreviation": "Australian Labor Party",
         "RegisterDate": "13 June 1985",
         "AmendmentDate": "13 June 1985",
@@ -546,7 +546,7 @@
       {
         "Id": 195,
         "Name": "Australian Labor Party (Victorian Branch)",
-        "Code": "Australian Labor Party",
+        "Code": "ALP",
         "Abbreviation": "Australian Labor Party",
         "RegisterDate": "13 June 1985",
         "AmendmentDate": "13 June 1985",
@@ -567,7 +567,7 @@
       {
         "Id": 197,
         "Name": "Australian Labor Party (Western Australian Branch)",
-        "Code": "Australian Labor Party",
+        "Code": "ALP",
         "Abbreviation": "Australian Labor Party",
         "RegisterDate": "13 June 1985",
         "AmendmentDate": "13 June 1985",
@@ -603,7 +603,7 @@
       {
         "Id": 1099,
         "Name": "Country Labor Party",
-        "Code": "Country Labor",
+        "Code": "ALP",
         "Abbreviation": "Country Labor",
         "RegisterDate": "16 October 2000",
         "AmendmentDate": "16 October 2000",
@@ -1305,7 +1305,7 @@
       {
         "Id": 178,
         "Name": "Liberal Party (W.A. Division) Inc",
-        "Code": "Liberal",
+        "Code": "LP",
         "Abbreviation": "Liberal",
         "RegisterDate": "5 July 1984",
         "AmendmentDate": "5 July 1984",
@@ -1339,7 +1339,7 @@
       {
         "Id": 177,
         "Name": "Liberal Party of Australia - ACT Division",
-        "Code": "Liberal",
+        "Code": "LP",
         "Abbreviation": "Liberal",
         "RegisterDate": "5 July 1984",
         "AmendmentDate": "5 July 1984",
@@ -1359,7 +1359,7 @@
       {
         "Id": 171,
         "Name": "Liberal Party of Australia - Tasmanian Division",
-        "Code": "Liberal",
+        "Code": "LP",
         "Abbreviation": "Liberal",
         "RegisterDate": "22 June 1984",
         "AmendmentDate": "22 June 1984",
@@ -1396,7 +1396,7 @@
       {
         "Id": 184,
         "Name": "Liberal Party of Australia (S.A. Division)",
-        "Code": "Liberal",
+        "Code": "LP",
         "Abbreviation": "Liberal",
         "RegisterDate": "18 July 1984",
         "AmendmentDate": "18 July 1984",
@@ -1417,7 +1417,7 @@
       {
         "Id": 180,
         "Name": "Liberal Party of Australia (Victorian Division)",
-        "Code": "Liberal",
+        "Code": "LP",
         "Abbreviation": "Liberal",
         "RegisterDate": "18 July 1984",
         "AmendmentDate": "18 July 1984",
@@ -1439,7 +1439,7 @@
       {
         "Id": 188,
         "Name": "Liberal Party of Australia, NSW Division",
-        "Code": "Liberal",
+        "Code": "LP",
         "Abbreviation": "Liberal",
         "RegisterDate": "17 August 1984",
         "AmendmentDate": "17 August 1984",
@@ -2138,7 +2138,7 @@
       {
         "Id": 1173,
         "Name": "Queensland Greens",
-        "Code": "The Greens",
+        "Code": "GRN",
         "Abbreviation": "The Greens",
         "RegisterDate": "27 November 2008",
         "AmendmentDate": "27 November 2008",
@@ -2184,7 +2184,7 @@
       {
         "Id": 1424,
         "Name": "The Australian Greens - Victoria",
-        "Code": "The Greens (VIC)",
+        "Code": "GRN",
         "Abbreviation": "The Greens (VIC)",
         "RegisterDate": "25 February 2016",
         "AmendmentDate": "25 February 2016",
@@ -2228,7 +2228,7 @@
       {
         "Id": 36,
         "Name": "The Greens (WA) Inc",
-        "Code": "The Greens (WA)",
+        "Code": "GRN",
         "Abbreviation": "The Greens (WA)",
         "RegisterDate": "19 July 1989",
         "AmendmentDate": "19 July 1989",
@@ -2275,7 +2275,7 @@
       {
         "Id": 1058,
         "Name": "The Greens NSW",
-        "Code": "The Greens",
+        "Code": "GRN",
         "Abbreviation": "The Greens",
         "RegisterDate": "20 May 1994",
         "AmendmentDate": "20 May 1994",
@@ -2333,7 +2333,7 @@
       {
         "Id": 172,
         "Name": "National Party of Australia - N.S.W.",
-        "Code": "The Nationals",
+        "Code": "NP",
         "Abbreviation": "The Nationals",
         "RegisterDate": "22 June 1984",
         "AmendmentDate": "22 June 1984",
@@ -2368,7 +2368,7 @@
       {
         "Id": 174,
         "Name": "National Party of Australia - Victoria",
-        "Code": "The Nationals",
+        "Code": "NP",
         "Abbreviation": "The Nationals",
         "RegisterDate": "22 June 1984",
         "AmendmentDate": "22 June 1984",
@@ -2404,7 +2404,7 @@
       {
         "Id": 179,
         "Name": "National Party of Australia (S.A.) Inc.",
-        "Code": "National Party",
+        "Code": "NP",
         "Abbreviation": "National Party",
         "RegisterDate": "5 July 1984",
         "AmendmentDate": "5 July 1984",
@@ -2424,7 +2424,7 @@
       {
         "Id": 193,
         "Name": "National Party of Australia (WA) Inc",
-        "Code": "The Nationals",
+        "Code": "NP",
         "Abbreviation": "The Nationals",
         "RegisterDate": "1 April 1985",
         "AmendmentDate": "1 April 1985",

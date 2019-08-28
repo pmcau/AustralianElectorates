@@ -53,11 +53,13 @@ public static class PartyScraper
             {
                 return party.Id;
             }
+
             if (party.Abbreviation == code)
             {
                 return party.Id;
             }
         }
+
         foreach (var party in Parties)
         {
             foreach (var branch in party.Branches)
@@ -66,6 +68,7 @@ public static class PartyScraper
                 {
                     return branch.Id;
                 }
+
                 if (branch.Abbreviation == code)
                 {
                     return branch.Id;
@@ -81,53 +84,62 @@ public static class PartyScraper
     static Party DetailToParty(Detail detail)
     {
         var abbreviation = detail.Abbreviation?.Replace(".", "");
+        var code = GetCode(detail.NameOfParty, abbreviation, null);
         var party = new Party
         {
             Id = detail.Id,
             Name = detail.NameOfParty,
-            Code = GetCode(detail.NameOfParty, abbreviation),
+            Code = code,
             Abbreviation = abbreviation ?? detail.NameOfParty,
             RegisterDate = detail.PartyRegisterDate,
             AmendmentDate = detail.PartyRegisterDate,
             Address = detail.PostalAddress,
             Officer = ToOfficer(detail.Officer),
             DeputyOfficers = ToOfficers(detail.DeputyOfficers),
-            Branches = ToBranches(detail.Branches),
+            Branches = ToBranches(detail.Branches, code),
         };
 
         return party;
     }
 
-    static string GetCode(string name, string abbreviation)
+    static string GetCode(string name, string abbreviation, string parentCode)
     {
         if (PartyCodeScraper.Codes.TryGetKey(name, out var key))
         {
             return key;
         }
 
+        if (parentCode != null)
+        {
+            return parentCode;
+        }
+
         if (abbreviation != null)
         {
             return abbreviation;
         }
+
         return name;
     }
 
-    static List<Branch> ToBranches(AecModels.Branch[] branches)
+    static List<Branch> ToBranches(AecModels.Branch[] branches, string partyCode)
     {
         var list = new List<Branch>();
         if (branches == null)
         {
             return list;
         }
+
         foreach (var branch in branches)
         {
-            var item = ToBranch(branch);
+            var item = ToBranch(branch, partyCode);
             list.Add(item);
         }
+
         return list;
     }
 
-    static Branch ToBranch(AecModels.Branch branch)
+    static Branch ToBranch(AecModels.Branch branch, string partyCode)
     {
         var abbreviation = branch.Abbreviation?.Replace(".", "");
         return new Branch
@@ -135,7 +147,7 @@ public static class PartyScraper
             Id = branch.Id,
             Name = branch.NameOfParty,
             Abbreviation = abbreviation ?? branch.NameOfParty,
-            Code = GetCode(branch.NameOfParty, abbreviation),
+            Code = GetCode(branch.NameOfParty, abbreviation, partyCode),
             RegisterDate = branch.PartyRegisterDate,
             AmendmentDate = branch.PartyRegisterDate,
             Address = branch.PostalAddress,
@@ -143,6 +155,7 @@ public static class PartyScraper
             DeputyOfficers = ToOfficers(branch.DeputyOfficers)
         };
     }
+
     static List<Officer> ToOfficers(AecModels.Officer[] detail)
     {
         var officers = new List<Officer>();
@@ -150,11 +163,13 @@ public static class PartyScraper
         {
             return officers;
         }
+
         foreach (var deputyOfficer in detail)
         {
             var item = ToOfficer(deputyOfficer);
             officers.Add(item);
         }
+
         return officers;
     }
 
@@ -177,11 +192,13 @@ public static class PartyScraper
         {
             line1 = null;
         }
+
         var line2 = deputyOfficerAddress.Line2;
         if (string.IsNullOrWhiteSpace(line2))
         {
             line2 = null;
         }
+
         var line3 = deputyOfficerAddress.Line3;
         if (string.IsNullOrWhiteSpace(line3))
         {
