@@ -5,7 +5,7 @@ Source File: /readme.source.md
 To change this file edit the source file and then run MarkdownSnippets.
 -->
 
-# <img src="/src/icon.png" height="40px"> Australian Electorate information
+# <img src="/src/icon.png" height="30px"> Australian Electorate information
 
 [![Build status](https://ci.appveyor.com/api/projects/status/mds12hp4duduyie8/branch/master?svg=true)](https://ci.appveyor.com/project/SimonCropp/australianelectorates/branch/master) [![NuGet Status](http://img.shields.io/nuget/v/AustralianelEctorates.svg?cacheSeconds=86400)](https://www.nuget.org/packages/AustralianelEctorates/)
 
