@@ -7,6 +7,8 @@ To change this file edit the source file and then run MarkdownSnippets.
 
 # <img src="/src/icon.png" height="40px"> Australian Electorate information
 
+[![Build status](https://ci.appveyor.com/api/projects/status/mds12hp4duduyie8/branch/master?svg=true)](https://ci.appveyor.com/project/SimonCropp/australianelectorates/branch/master) [![NuGet Status](http://img.shields.io/nuget/v/AustralianelEctorates.svg?cacheSeconds=86400)](https://www.nuget.org/packages/AustralianelEctorates/)
+
 All information about electorates is available at [/Data/electorates.json](/Data/electorates.json).
 
 <!-- toc -->
@@ -31,7 +33,6 @@ All information about electorates is available at [/Data/electorates.json](/Data
     * [pngquant](#pngquant)
   * [Purge history](#purge-history)
   * [Notes](#notes)
-  * [Icon](#icon)
 <!-- endtoc -->
 
 
@@ -332,6 +333,11 @@ Media feed ftp://mediafeed.aec.gov.au/24310/Standard/Verbose/
 > Verbose Feed: Contains up-to-date election results and information. The feed contains static data, such as candidate names, and dynamic data such as votes. The verbose feed also contains calculated results like swings and aggregated results to the state and national level. This feed is suitable for users who have their own IT system and who may or may not have pre-loaded data and is also suitable for those users who do not have an IT system and simply wish to transform the XMLfile into another format.
 
 From: https://www.aec.gov.au/media/mediafeed/files/media-feed-user-guide-v4.pdf
+
+
+## Release Notes
+
+See [closed milestones](/milestones?state=closed).
 
 
 ## Icon
