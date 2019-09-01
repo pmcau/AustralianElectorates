@@ -242,8 +242,7 @@ From: https://www.aec.gov.au/media/mediafeed/files/media-feed-user-guide-v4.pdf
 
 ## Release Notes
 
-See [closed milestones](/milestones?state=closed).
-
+See [closed milestones](../../milestones?state=closed).
 
 ## Icon
 
