@@ -1,6 +1,8 @@
 # <img src="/src/icon.png" height="30px"> Australian Electorate information
 
-[![Build status](https://ci.appveyor.com/api/projects/status/mds12hp4duduyie8/branch/master?svg=true)](https://ci.appveyor.com/project/SimonCropp/australianelectorates/branch/master) [![NuGet Status](http://img.shields.io/nuget/v/AustralianelEctorates.svg?cacheSeconds=86400)](https://www.nuget.org/packages/AustralianelEctorates/)
+[![Build status](https://ci.appveyor.com/api/projects/status/mds12hp4duduyie8/branch/master?svg=true)](https://ci.appveyor.com/project/SimonCropp/australianelectorates)
+[![NuGet Status](https://img.shields.io/nuget/v/AustralianelEctorates.svg?label=AustralianelEctorates&cacheSeconds=86400)](https://www.nuget.org/packages/AustralianelEctorates/)
+[![NuGet Status](https://img.shields.io/nuget/v/AustralianelEctorates.Bogus.svg?label=AustralianelEctorates.Bogus&cacheSeconds=86400)](https://www.nuget.org/packages/AustralianelEctorates.Bogus/)
 
 All information about electorates is available at [/Data/electorates.json](/Data/electorates.json).
 
@@ -112,11 +114,11 @@ The NuGets contain a static copy of all the electorate data. This data is embedd
  * [Using NuGet wildcards](https://docs.microsoft.com/en-us/nuget/reference/package-versioning#version-ranges-and-wildcards).
  * [Libraries.io](https://libraries.io/): Supports subscribing to NuGet package updates.
 
-https://nuget.org/packages/AustralianElectorates/ [![NuGet Status](http://img.shields.io/nuget/v/AustralianElectorates.svg?longCache=true&style=flat)](https://www.nuget.org/packages/AustralianElectorates/)
+https://nuget.org/packages/AustralianElectorates/ [![NuGet Status](https://img.shields.io/nuget/v/AustralianElectorates.svg?cacheSeconds=86400)](https://www.nuget.org/packages/AustralianElectorates/)
 
-https://nuget.org/packages/AustralianElectorates.Bogus/ [![NuGet Status](http://img.shields.io/nuget/v/AustralianElectorates.Bogus.svg?longCache=true&style=flat)](https://www.nuget.org/packages/AustralianElectorates.Bogus/)
+https://nuget.org/packages/AustralianElectorates.Bogus/ [![NuGet Status](https://img.shields.io/nuget/v/AustralianElectorates.Bogus.svg?cacheSeconds=86400)](https://www.nuget.org/packages/AustralianElectorates.Bogus/)
 
-https://nuget.org/packages/AustralianElectorates.DetailMaps/ [![NuGet Status](http://img.shields.io/nuget/v/AustralianElectorates.DetailMaps.svg?longCache=true&style=flat)](https://www.nuget.org/packages/AustralianElectorates.DetailMaps/)
+https://nuget.org/packages/AustralianElectorates.DetailMaps/ [![NuGet Status](https://img.shields.io/nuget/v/AustralianElectorates.DetailMaps.svg?cacheSeconds=86400)](https://www.nuget.org/packages/AustralianElectorates.DetailMaps/)
 
 
 ## Usage
