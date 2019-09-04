@@ -4,5 +4,6 @@
     <NoWarn>CS1591</NoWarn>
     <Version>4.2.0</Version>
     <Copyright>Code under MIT. Data under AEC Copyright https://www.aec.gov.au/footer/Copyright.htm</Copyright>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
 </Project>

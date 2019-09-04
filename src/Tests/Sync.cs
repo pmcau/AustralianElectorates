@@ -260,7 +260,7 @@ namespace AustralianElectorates
             {
                 var name = GetCSharpName(electorate);
                 writer.WriteLine($@"
-        public static Electorate {name} {{ get; private set;}}");
+        public static Electorate {name} {{ get; private set; }}  = null!;");
             }
 
             writer.WriteLine("    }");

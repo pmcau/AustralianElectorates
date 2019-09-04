@@ -12,7 +12,7 @@ namespace AustralianElectorates
         public string AmendmentDate { get; set; }
         public string Address { get; set; }
         public Officer Officer { get; set; }
-        public List<Officer> DeputyOfficers { get; set; }  =new List<Officer>();
+        public List<Officer> DeputyOfficers { get; set; } = new List<Officer>();
         public List<Branch> Branches { get; set; } = new List<Branch>();
     }
 }
