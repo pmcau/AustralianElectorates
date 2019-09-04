@@ -10,7 +10,7 @@
     <EmbeddedResource Condition="Exists('..\..\Data\parties.json')" Include="..\..\Data\parties.json" LogicalName="parties.json" Link="parties.json" />
 
     <PackageReference Include="System.IO.Compression.ZipFile" Version="4.3.0" />
-    <PackageReference Include="ProjectDefaults" Version="1.0.22" PrivateAssets="All" />
+    <PackageReference Include="ProjectDefaults" Version="1.0.23" PrivateAssets="All" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-19367-01" PrivateAssets="All" />
   </ItemGroup>
 </Project>
