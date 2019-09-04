@@ -11,15 +11,15 @@ namespace AustralianElectorates
         }
 
         [DataMember]
-        public string FamilyName { get; internal set; }
+        public string FamilyName { get; internal set; } = null!;
         [DataMember]
-        public string GivenNames { get; internal set; }
+        public string GivenNames { get; internal set; } = null!;
         [DataMember]
         public ushort Begin { get; internal set; }
         [DataMember]
         public ushort? End { get; internal set; }
         [DataMember]
-        public Electorate Electorate { get; internal set; }
+        public Electorate Electorate { get; internal set; } = null!;
 
         [DataMember(Name = nameof(PartyCodes))]
         internal List<string> partyCodes = new List<string>();

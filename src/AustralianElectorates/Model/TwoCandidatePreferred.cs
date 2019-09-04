@@ -10,9 +10,9 @@ namespace AustralianElectorates
         }
 
         [DataMember]
-        public Candidate Elected { get; internal set; }
+        public Candidate Elected { get; internal set; } = null!;
 
         [DataMember]
-        public Candidate Other { get; internal set; }
+        public Candidate Other { get; internal set; } = null!;
     }
 }

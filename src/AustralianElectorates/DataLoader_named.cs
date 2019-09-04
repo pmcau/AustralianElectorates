@@ -327,320 +327,320 @@ namespace AustralianElectorates
             Tangney = Electorates.Single(x => x.Name == "Tangney");
         }
 
-        public static Electorate Canberra { get; private set;} = null!;
+        public static Electorate Canberra { get; private set; } = null!;
 
-        public static Electorate Fenner { get; private set;} = null!;
+        public static Electorate Fenner { get; private set; } = null!;
 
-        public static Electorate Bean { get; private set;} = null!;
+        public static Electorate Bean { get; private set; } = null!;
 
-        public static Electorate Bass { get; private set;} = null!;
+        public static Electorate Bass { get; private set; } = null!;
 
-        public static Electorate Braddon { get; private set;} = null!;
+        public static Electorate Braddon { get; private set; } = null!;
 
-        public static Electorate Denison { get; private set;} = null!;
+        public static Electorate Denison { get; private set; } = null!;
 
-        public static Electorate Franklin { get; private set;} = null!;
+        public static Electorate Franklin { get; private set; } = null!;
 
-        public static Electorate Lyons { get; private set;} = null!;
+        public static Electorate Lyons { get; private set; } = null!;
 
-        public static Electorate Clark { get; private set;} = null!;
+        public static Electorate Clark { get; private set; } = null!;
 
-        public static Electorate Adelaide { get; private set;} = null!;
+        public static Electorate Adelaide { get; private set; } = null!;
 
-        public static Electorate Barker { get; private set;} = null!;
+        public static Electorate Barker { get; private set; } = null!;
 
-        public static Electorate Boothby { get; private set;} = null!;
+        public static Electorate Boothby { get; private set; } = null!;
 
-        public static Electorate Grey { get; private set;} = null!;
+        public static Electorate Grey { get; private set; } = null!;
 
-        public static Electorate Hindmarsh { get; private set;} = null!;
+        public static Electorate Hindmarsh { get; private set; } = null!;
 
-        public static Electorate Kingston { get; private set;} = null!;
+        public static Electorate Kingston { get; private set; } = null!;
 
-        public static Electorate Makin { get; private set;} = null!;
+        public static Electorate Makin { get; private set; } = null!;
 
-        public static Electorate Mayo { get; private set;} = null!;
+        public static Electorate Mayo { get; private set; } = null!;
 
-        public static Electorate PortAdelaide { get; private set;} = null!;
+        public static Electorate PortAdelaide { get; private set; } = null!;
 
-        public static Electorate Sturt { get; private set;} = null!;
+        public static Electorate Sturt { get; private set; } = null!;
 
-        public static Electorate Wakefield { get; private set;} = null!;
+        public static Electorate Wakefield { get; private set; } = null!;
 
-        public static Electorate Spence { get; private set;} = null!;
+        public static Electorate Spence { get; private set; } = null!;
 
-        public static Electorate Aston { get; private set;} = null!;
+        public static Electorate Aston { get; private set; } = null!;
 
-        public static Electorate Ballarat { get; private set;} = null!;
+        public static Electorate Ballarat { get; private set; } = null!;
 
-        public static Electorate Batman { get; private set;}
+        public static Electorate Batman { get; private set; } = null!;
 
-        public static Electorate Bendigo { get; private set;}
+        public static Electorate Bendigo { get; private set; } = null!;
 
-        public static Electorate Bruce { get; private set;}
+        public static Electorate Bruce { get; private set; } = null!;
 
-        public static Electorate Calwell { get; private set;}
+        public static Electorate Calwell { get; private set; } = null!;
 
-        public static Electorate Casey { get; private set;} = null!;
+        public static Electorate Casey { get; private set; } = null!;
 
-        public static Electorate Chisholm { get; private set;} = null!;
+        public static Electorate Chisholm { get; private set; } = null!;
 
-        public static Electorate Corangamite { get; private set;} = null!;
+        public static Electorate Corangamite { get; private set; } = null!;
 
-        public static Electorate Corio { get; private set;} = null!;
+        public static Electorate Corio { get; private set; } = null!;
 
-        public static Electorate Deakin { get; private set;} = null!;
+        public static Electorate Deakin { get; private set; } = null!;
 
-        public static Electorate Dunkley { get; private set;} = null!;
+        public static Electorate Dunkley { get; private set; } = null!;
 
-        public static Electorate Flinders { get; private set;} = null!;
+        public static Electorate Flinders { get; private set; } = null!;
 
-        public static Electorate Gellibrand { get; private set;} = null!;
+        public static Electorate Gellibrand { get; private set; } = null!;
 
-        public static Electorate Gippsland { get; private set;} = null!;
+        public static Electorate Gippsland { get; private set; } = null!;
 
-        public static Electorate Goldstein { get; private set;} = null!;
+        public static Electorate Goldstein { get; private set; } = null!;
 
-        public static Electorate Gorton { get; private set;} = null!;
+        public static Electorate Gorton { get; private set; } = null!;
 
-        public static Electorate Higgins { get; private set;} = null!;
+        public static Electorate Higgins { get; private set; } = null!;
 
-        public static Electorate Holt { get; private set;} = null!;
+        public static Electorate Holt { get; private set; } = null!;
 
-        public static Electorate Hotham { get; private set;} = null!;
+        public static Electorate Hotham { get; private set; } = null!;
 
-        public static Electorate Indi { get; private set;} = null!;
+        public static Electorate Indi { get; private set; } = null!;
 
-        public static Electorate Isaacs { get; private set;} = null!;
+        public static Electorate Isaacs { get; private set; } = null!;
 
-        public static Electorate Jagajaga { get; private set;} = null!;
+        public static Electorate Jagajaga { get; private set; } = null!;
 
-        public static Electorate Kooyong { get; private set;} = null!;
+        public static Electorate Kooyong { get; private set; } = null!;
 
-        public static Electorate LaTrobe { get; private set;} = null!;
+        public static Electorate LaTrobe { get; private set; } = null!;
 
-        public static Electorate Lalor { get; private set;} = null!;
+        public static Electorate Lalor { get; private set; } = null!;
 
-        public static Electorate Mallee { get; private set;} = null!;
+        public static Electorate Mallee { get; private set; } = null!;
 
-        public static Electorate Maribyrnong { get; private set;} = null!;
+        public static Electorate Maribyrnong { get; private set; } = null!;
 
-        public static Electorate McEwen { get; private set;} = null!;
+        public static Electorate McEwen { get; private set; } = null!;
 
-        public static Electorate McMillan { get; private set;} = null!;
+        public static Electorate McMillan { get; private set; } = null!;
 
-        public static Electorate Melbourne { get; private set;} = null!;
+        public static Electorate Melbourne { get; private set; } = null!;
 
-        public static Electorate MelbournePorts { get; private set;} = null!;
+        public static Electorate MelbournePorts { get; private set; } = null!;
 
-        public static Electorate Menzies { get; private set;} = null!;
+        public static Electorate Menzies { get; private set; } = null!;
 
-        public static Electorate Murray { get; private set;} = null!;
+        public static Electorate Murray { get; private set; } = null!;
 
-        public static Electorate Scullin { get; private set;} = null!;
+        public static Electorate Scullin { get; private set; } = null!;
 
-        public static Electorate Wannon { get; private set;} = null!;
+        public static Electorate Wannon { get; private set; } = null!;
 
-        public static Electorate Wills { get; private set;} = null!;
+        public static Electorate Wills { get; private set; } = null!;
 
-        public static Electorate Cooper { get; private set;} = null!;
+        public static Electorate Cooper { get; private set; } = null!;
 
-        public static Electorate Fraser { get; private set;} = null!;
+        public static Electorate Fraser { get; private set; } = null!;
 
-        public static Electorate Macnamara { get; private set;} = null!;
+        public static Electorate Macnamara { get; private set; } = null!;
 
-        public static Electorate Monash { get; private set;} = null!;
+        public static Electorate Monash { get; private set; } = null!;
 
-        public static Electorate Nicholls { get; private set;} = null!;
+        public static Electorate Nicholls { get; private set; } = null!;
 
-        public static Electorate Blair { get; private set;} = null!;
+        public static Electorate Blair { get; private set; } = null!;
 
-        public static Electorate Bonner { get; private set;} = null!;
+        public static Electorate Bonner { get; private set; } = null!;
 
-        public static Electorate Bowman { get; private set;} = null!;
+        public static Electorate Bowman { get; private set; } = null!;
 
-        public static Electorate Brisbane { get; private set;} = null!;
+        public static Electorate Brisbane { get; private set; } = null!;
 
-        public static Electorate Capricornia { get; private set;} = null!;
+        public static Electorate Capricornia { get; private set; } = null!;
 
-        public static Electorate Dawson { get; private set;} = null!;
+        public static Electorate Dawson { get; private set; } = null!;
 
-        public static Electorate Dickson { get; private set;} = null!;
+        public static Electorate Dickson { get; private set; } = null!;
 
-        public static Electorate Fadden { get; private set;} = null!;
+        public static Electorate Fadden { get; private set; } = null!;
 
-        public static Electorate Fairfax { get; private set;} = null!;
+        public static Electorate Fairfax { get; private set; } = null!;
 
-        public static Electorate Fisher { get; private set;} = null!;
+        public static Electorate Fisher { get; private set; } = null!;
 
-        public static Electorate Flynn { get; private set;} = null!;
+        public static Electorate Flynn { get; private set; } = null!;
 
-        public static Electorate Forde { get; private set;} = null!;
+        public static Electorate Forde { get; private set; } = null!;
 
-        public static Electorate Griffith { get; private set;} = null!;
+        public static Electorate Griffith { get; private set; } = null!;
 
-        public static Electorate Groom { get; private set;} = null!;
+        public static Electorate Groom { get; private set; } = null!;
 
-        public static Electorate Herbert { get; private set;} = null!;
+        public static Electorate Herbert { get; private set; } = null!;
 
-        public static Electorate Hinkler { get; private set;} = null!;
+        public static Electorate Hinkler { get; private set; } = null!;
 
-        public static Electorate Kennedy { get; private set;} = null!;
+        public static Electorate Kennedy { get; private set; } = null!;
 
-        public static Electorate Leichhardt { get; private set;} = null!;
+        public static Electorate Leichhardt { get; private set; } = null!;
 
-        public static Electorate Lilley { get; private set;} = null!;
+        public static Electorate Lilley { get; private set; } = null!;
 
-        public static Electorate Longman { get; private set;} = null!;
+        public static Electorate Longman { get; private set; } = null!;
 
-        public static Electorate Maranoa { get; private set;} = null!;
+        public static Electorate Maranoa { get; private set; } = null!;
 
-        public static Electorate McPherson { get; private set;} = null!;
+        public static Electorate McPherson { get; private set; } = null!;
 
-        public static Electorate Moncrieff { get; private set;} = null!;
+        public static Electorate Moncrieff { get; private set; } = null!;
 
-        public static Electorate Moreton { get; private set;} = null!;
+        public static Electorate Moreton { get; private set; } = null!;
 
-        public static Electorate Oxley { get; private set;} = null!;
+        public static Electorate Oxley { get; private set; } = null!;
 
-        public static Electorate Petrie { get; private set;} = null!;
+        public static Electorate Petrie { get; private set; } = null!;
 
-        public static Electorate Rankin { get; private set;} = null!;
+        public static Electorate Rankin { get; private set; } = null!;
 
-        public static Electorate Ryan { get; private set;} = null!;
+        public static Electorate Ryan { get; private set; } = null!;
 
-        public static Electorate WideBay { get; private set;} = null!;
+        public static Electorate WideBay { get; private set; } = null!;
 
-        public static Electorate Wright { get; private set;} = null!;
+        public static Electorate Wright { get; private set; } = null!;
 
-        public static Electorate Lingiari { get; private set;} = null!;
+        public static Electorate Lingiari { get; private set; } = null!;
 
-        public static Electorate Solomon { get; private set;} = null!;
+        public static Electorate Solomon { get; private set; } = null!;
 
-        public static Electorate Banks { get; private set;} = null!;
+        public static Electorate Banks { get; private set; } = null!;
 
-        public static Electorate Barton { get; private set;} = null!;
+        public static Electorate Barton { get; private set; } = null!;
 
-        public static Electorate Bennelong { get; private set;} = null!;
+        public static Electorate Bennelong { get; private set; } = null!;
 
-        public static Electorate Berowra { get; private set;} = null!;
+        public static Electorate Berowra { get; private set; } = null!;
 
-        public static Electorate Blaxland { get; private set;} = null!;
+        public static Electorate Blaxland { get; private set; } = null!;
 
-        public static Electorate Bradfield { get; private set;} = null!;
+        public static Electorate Bradfield { get; private set; } = null!;
 
-        public static Electorate Calare { get; private set;} = null!;
+        public static Electorate Calare { get; private set; } = null!;
 
-        public static Electorate Chifley { get; private set;} = null!;
+        public static Electorate Chifley { get; private set; } = null!;
 
-        public static Electorate Cook { get; private set;} = null!;
+        public static Electorate Cook { get; private set; } = null!;
 
-        public static Electorate Cowper { get; private set;} = null!;
+        public static Electorate Cowper { get; private set; } = null!;
 
-        public static Electorate Cunningham { get; private set;} = null!;
+        public static Electorate Cunningham { get; private set; } = null!;
 
-        public static Electorate Dobell { get; private set;} = null!;
+        public static Electorate Dobell { get; private set; } = null!;
 
-        public static Electorate EdenMonaro { get; private set;} = null!;
+        public static Electorate EdenMonaro { get; private set; } = null!;
 
-        public static Electorate Farrer { get; private set;} = null!;
+        public static Electorate Farrer { get; private set; } = null!;
 
-        public static Electorate Fowler { get; private set;} = null!;
+        public static Electorate Fowler { get; private set; } = null!;
 
-        public static Electorate Gilmore { get; private set;} = null!;
+        public static Electorate Gilmore { get; private set; } = null!;
 
-        public static Electorate Grayndler { get; private set;} = null!;
+        public static Electorate Grayndler { get; private set; } = null!;
 
-        public static Electorate Greenway { get; private set;} = null!;
+        public static Electorate Greenway { get; private set; } = null!;
 
-        public static Electorate Hughes { get; private set;} = null!;
+        public static Electorate Hughes { get; private set; } = null!;
 
-        public static Electorate Hume { get; private set;} = null!;
+        public static Electorate Hume { get; private set; } = null!;
 
-        public static Electorate Hunter { get; private set;} = null!;
+        public static Electorate Hunter { get; private set; } = null!;
 
-        public static Electorate KingsfordSmith { get; private set;} = null!;
+        public static Electorate KingsfordSmith { get; private set; } = null!;
 
-        public static Electorate Lindsay { get; private set;} = null!;
+        public static Electorate Lindsay { get; private set; } = null!;
 
-        public static Electorate Lyne { get; private set;} = null!;
+        public static Electorate Lyne { get; private set; } = null!;
 
-        public static Electorate Macarthur { get; private set;} = null!;
+        public static Electorate Macarthur { get; private set; } = null!;
 
-        public static Electorate Mackellar { get; private set;} = null!;
+        public static Electorate Mackellar { get; private set; } = null!;
 
-        public static Electorate Macquarie { get; private set;} = null!;
+        public static Electorate Macquarie { get; private set; } = null!;
 
-        public static Electorate McMahon { get; private set;} = null!;
+        public static Electorate McMahon { get; private set; } = null!;
 
-        public static Electorate Mitchell { get; private set;} = null!;
+        public static Electorate Mitchell { get; private set; } = null!;
 
-        public static Electorate NewEngland { get; private set;} = null!;
+        public static Electorate NewEngland { get; private set; } = null!;
 
-        public static Electorate Newcastle { get; private set;} = null!;
+        public static Electorate Newcastle { get; private set; } = null!;
 
-        public static Electorate NorthSydney { get; private set;} = null!;
+        public static Electorate NorthSydney { get; private set; } = null!;
 
-        public static Electorate Page { get; private set;} = null!;
+        public static Electorate Page { get; private set; } = null!;
 
-        public static Electorate Parkes { get; private set;} = null!;
+        public static Electorate Parkes { get; private set; } = null!;
 
-        public static Electorate Parramatta { get; private set;} = null!;
+        public static Electorate Parramatta { get; private set; } = null!;
 
-        public static Electorate Paterson { get; private set;} = null!;
+        public static Electorate Paterson { get; private set; } = null!;
 
-        public static Electorate Reid { get; private set;} = null!;
+        public static Electorate Reid { get; private set; } = null!;
 
-        public static Electorate Richmond { get; private set;} = null!;
+        public static Electorate Richmond { get; private set; } = null!;
 
-        public static Electorate Riverina { get; private set;} = null!;
+        public static Electorate Riverina { get; private set; } = null!;
 
-        public static Electorate Robertson { get; private set;} = null!;
+        public static Electorate Robertson { get; private set; } = null!;
 
-        public static Electorate Shortland { get; private set;} = null!;
+        public static Electorate Shortland { get; private set; } = null!;
 
-        public static Electorate Sydney { get; private set;} = null!;
+        public static Electorate Sydney { get; private set; } = null!;
 
-        public static Electorate Warringah { get; private set;} = null!;
+        public static Electorate Warringah { get; private set; } = null!;
 
-        public static Electorate Watson { get; private set;} = null!;
+        public static Electorate Watson { get; private set; } = null!;
 
-        public static Electorate Wentworth { get; private set;} = null!;
+        public static Electorate Wentworth { get; private set; } = null!;
 
-        public static Electorate Werriwa { get; private set;} = null!;
+        public static Electorate Werriwa { get; private set; } = null!;
 
-        public static Electorate Whitlam { get; private set;} = null!;
+        public static Electorate Whitlam { get; private set; } = null!;
 
-        public static Electorate Brand { get; private set;} = null!;
+        public static Electorate Brand { get; private set; } = null!;
 
-        public static Electorate Canning { get; private set;} = null!;
+        public static Electorate Canning { get; private set; } = null!;
 
-        public static Electorate Cowan { get; private set;} = null!;
+        public static Electorate Cowan { get; private set; } = null!;
 
-        public static Electorate Curtin { get; private set;} = null!;
+        public static Electorate Curtin { get; private set; } = null!;
 
-        public static Electorate Durack { get; private set;} = null!;
+        public static Electorate Durack { get; private set; } = null!;
 
-        public static Electorate Forrest { get; private set;} = null!;
+        public static Electorate Forrest { get; private set; } = null!;
 
-        public static Electorate Fremantle { get; private set;} = null!;
+        public static Electorate Fremantle { get; private set; } = null!;
 
-        public static Electorate Hasluck { get; private set;} = null!;
+        public static Electorate Hasluck { get; private set; } = null!;
 
-        public static Electorate Moore { get; private set;} = null!;
+        public static Electorate Moore { get; private set; } = null!;
 
-        public static Electorate Burt { get; private set;} = null!;
+        public static Electorate Burt { get; private set; } = null!;
 
-        public static Electorate OConnor { get; private set;} = null!;
+        public static Electorate OConnor { get; private set; } = null!;
 
-        public static Electorate Pearce { get; private set;} = null!;
+        public static Electorate Pearce { get; private set; } = null!;
 
-        public static Electorate Perth { get; private set;} = null!;
+        public static Electorate Perth { get; private set; } = null!;
 
-        public static Electorate Stirling { get; private set;} = null!;
+        public static Electorate Stirling { get; private set; } = null!;
 
-        public static Electorate Swan { get; private set;} = null!;
+        public static Electorate Swan { get; private set; } = null!;
 
-        public static Electorate Tangney { get; private set;} = null!;
+        public static Electorate Tangney { get; private set; } = null!;
     }
 }

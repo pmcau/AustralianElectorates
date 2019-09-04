@@ -12,10 +12,10 @@ namespace AustralianElectorates
         }
 
         [DataMember]
-        public string Name { get; internal set; }
+        public string Name { get; internal set; } = null!;
 
         [DataMember]
-        public string ShortName { get; internal set; }
+        public string ShortName { get; internal set; } = null!;
 
         [DataMember]
         public State State { get; internal set; }
@@ -36,28 +36,28 @@ namespace AustralianElectorates
         public DateTime? DateGazetted { get; internal set; }
 
         [DataMember]
-        public string Description { get; internal set; }
+        public string Description { get; internal set; } = null!;
 
         [DataMember]
-        public string DemographicRating { get; internal set; }
+        public string DemographicRating { get; internal set; } = null!;
 
         [DataMember]
-        public string ProductsAndIndustry { get; internal set; }
+        public string ProductsAndIndustry { get; internal set; } = null!;
 
         [DataMember]
-        public string NameDerivation { get; internal set; }
+        public string NameDerivation { get; internal set; } = null!;
 
         [DataMember]
-        public List<Member> Members { get; internal set; }
+        public List<Member> Members { get; internal set; } = null!;
 
         [DataMember]
-        public List<Location> Locations { get; internal set; }
+        public List<Location> Locations { get; internal set; } = null!;
 
         [DataMember]
         public uint? Enrollment { get; internal set; }
 
         [DataMember]
-        public TwoCandidatePreferred TwoCandidatePreferred { get; internal set; }
+        public TwoCandidatePreferred? TwoCandidatePreferred { get; internal set; }
 
         public static string GetShortName(string name)
         {

@@ -10,8 +10,8 @@ namespace AustralianElectorates
         }
 
         [DataMember]
-        public Electorate Electorate { get; internal set; }
+        public Electorate Electorate { get; internal set; } = null!;
         [DataMember]
-        public string GeoJson { get; internal set; }
+        public string GeoJson { get; internal set; } = null!;
     }
 }
