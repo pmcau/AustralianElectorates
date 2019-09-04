@@ -11,7 +11,7 @@ using Branch = AustralianElectorates.Branch;
 
 public static class PartyScraper
 {
-    public static async Task Run()
+    public static async Task<List<Party>> Run()
     {
         var codes = await PartyCodeScraper.Run();
         var htmlPath = Path.Combine(DataLocations.TempPath, "partycodes.html");
@@ -28,16 +28,17 @@ public static class PartyScraper
                 .Split('"')[1];
             await Downloader.DownloadFile(partyRegisterPath, $"https://www.aec.gov.au{jsonUrl}");
             var aecParties = JsonSerializerService.Deserialize<PartyData>(partyRegisterPath);
-            Parties = new List<Party>();
+            var parties = new List<Party>();
             foreach (var detail in aecParties.Details)
             {
                 var party = DetailToParty(detail, codes);
-                Parties.Add(party);
+                parties.Add(party);
             }
 
             var combine = Path.Combine(DataLocations.DataPath, "parties.json");
             File.Delete(combine);
-            JsonSerializerService.Serialize(Parties, combine);
+            JsonSerializerService.Serialize(parties, combine);
+            return parties;
         }
         catch (Exception exception)
         {
@@ -45,9 +46,9 @@ public static class PartyScraper
         }
     }
 
-    public static ushort? FindPartyId(string code)
+    public static ushort? FindPartyId(string code, List<Party> parties)
     {
-        foreach (var party in Parties)
+        foreach (var party in parties)
         {
             if (party.Code == code)
             {
@@ -60,7 +61,7 @@ public static class PartyScraper
             }
         }
 
-        foreach (var party in Parties)
+        foreach (var party in parties)
         {
             foreach (var branch in party.Branches)
             {
@@ -78,8 +79,6 @@ public static class PartyScraper
 
         return null;
     }
-
-    public static List<Party> Parties;
 
     static Party DetailToParty(Detail detail, Dictionary<string, string> codes)
     {
