@@ -52,7 +52,18 @@ namespace AustralianElectorates
                 foreach (var member in electorate.Members)
                 {
                     member.Electorate = electorate;
-                    member.Parties = member.PartyIds.Select(x => PartiesAndBranches.SingleOrDefault(y => y.Id == x)).Where(x=>x!=null).ToList();
+                    if (member.PartyIds == null)
+                    {
+                        member.partyIds = new List<ushort>();
+                        member.parties = new List<IParty>();
+                    }
+                    else
+                    {
+                        member.parties = member.PartyIds
+                            .Select(x => PartiesAndBranches.SingleOrDefault(y => y.Id == x))
+                            .Where(x => x != null)
+                            .ToList();
+                    }
                 }
             }
 
