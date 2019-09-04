@@ -86,50 +86,54 @@ namespace AustralianElectorates
 
         static string GetMap(string path)
         {
-            using var stream = assembly.GetManifestResourceStream("Maps.zip");
-            using var archive = new ZipArchive(stream);
-            var entry = archive.GetEntry($"{path}.geojson");
-            if (entry == null)
+            using (var stream = assembly.GetManifestResourceStream("Maps.zip"))
+            using (var archive = new ZipArchive(stream))
             {
-                throw new Exception($"Could not find data for '{path}'.");
-            }
+                var entry = archive.GetEntry($"{path}.geojson");
+                if (entry == null)
+                {
+                    throw new Exception($"Could not find data for '{path}'.");
+                }
 
-            return entry.ReadString();
+                return entry.ReadString();
+            }
         }
 
         public void LoadAll()
         {
-            using var stream = assembly.GetManifestResourceStream("Maps.zip");
-            using var archive = new ZipArchive(stream);
-            foreach (var entry in archive.Entries.Where(x => x.FullName.StartsWith(prefix)))
+            using (var stream = assembly.GetManifestResourceStream("Maps.zip"))
+            using (var archive = new ZipArchive(stream))
             {
-                var key = entry.FullName.Split('.').First();
-                var mapString = entry.ReadString();
-
-                if (key.Contains("Electorates"))
+                foreach (var entry in archive.Entries.Where(x => x.FullName.StartsWith(prefix)))
                 {
-                    var shortName = Path.GetFileName(key);
-                    var electorate = DataLoader.Electorates.SingleOrDefault(x => x.ShortName == shortName);
-                    electoratesCache[key] = new ElectorateMap
+                    var key = entry.FullName.Split('.').First();
+                    var mapString = entry.ReadString();
+
+                    if (key.Contains("Electorates"))
                     {
-                        Electorate = electorate,
-                        GeoJson = mapString
+                        var shortName = Path.GetFileName(key);
+                        var electorate = DataLoader.Electorates.SingleOrDefault(x => x.ShortName == shortName);
+                        electoratesCache[key] = new ElectorateMap
+                        {
+                            Electorate = electorate,
+                            GeoJson = mapString
+                        };
+                        continue;
+                    }
+
+                    if (key.Contains("australia"))
+                    {
+                        australia = mapString;
+                        continue;
+                    }
+
+                    var state = ParseState(key);
+                    statesCache[state] = new StateMap
+                    {
+                        GeoJson = mapString,
+                        State = state
                     };
-                    continue;
                 }
-
-                if (key.Contains("australia"))
-                {
-                    australia = mapString;
-                    continue;
-                }
-
-                var state = ParseState(key);
-                statesCache[state] = new StateMap
-                {
-                    GeoJson = mapString,
-                    State = state
-                };
             }
         }
 
