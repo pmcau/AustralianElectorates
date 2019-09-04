@@ -13,7 +13,7 @@ public static class PartyScraper
 {
     public static async Task Run()
     {
-        await PartyCodeScraper.Run();
+        var codes = await PartyCodeScraper.Run();
         var htmlPath = Path.Combine(DataLocations.TempPath, "partycodes.html");
         var partyRegisterPath = Path.Combine(DataLocations.TempPath, "partyRegister.json");
         File.Delete(htmlPath);
@@ -31,7 +31,7 @@ public static class PartyScraper
             Parties = new List<Party>();
             foreach (var detail in aecParties.Details)
             {
-                var party = DetailToParty(detail);
+                var party = DetailToParty(detail, codes);
                 Parties.Add(party);
             }
 
@@ -81,10 +81,10 @@ public static class PartyScraper
 
     public static List<Party> Parties;
 
-    static Party DetailToParty(Detail detail)
+    static Party DetailToParty(Detail detail, Dictionary<string, string> codes)
     {
         var abbreviation = detail.Abbreviation?.Replace(".", "");
-        var code = GetCode(detail.NameOfParty, abbreviation, null);
+        var code = GetCode(detail.NameOfParty, abbreviation, null,codes);
         var party = new Party
         {
             Id = detail.Id,
@@ -96,15 +96,15 @@ public static class PartyScraper
             Address = detail.PostalAddress,
             Officer = ToOfficer(detail.Officer),
             deputyOfficers = ToOfficers(detail.DeputyOfficers),
-            branches = ToBranches(detail.Branches, code),
+            branches = ToBranches(detail.Branches, code,codes),
         };
 
         return party;
     }
 
-    static string GetCode(string name, string? abbreviation, string? parentCode)
+    static string GetCode(string name, string? abbreviation, string? parentCode, Dictionary<string, string> codes)
     {
-        if (PartyCodeScraper.Codes.TryGetKey(name, out var key))
+        if (codes.TryGetKey(name, out var key))
         {
             return key;
         }
@@ -122,7 +122,7 @@ public static class PartyScraper
         return name;
     }
 
-    static List<Branch> ToBranches(AecModels.Branch[] branches, string partyCode)
+    static List<Branch> ToBranches(AecModels.Branch[] branches, string partyCode, Dictionary<string, string> codes)
     {
         var list = new List<Branch>();
         if (branches == null)
@@ -132,14 +132,14 @@ public static class PartyScraper
 
         foreach (var branch in branches)
         {
-            var item = ToBranch(branch, partyCode);
+            var item = ToBranch(branch, partyCode,codes);
             list.Add(item);
         }
 
         return list;
     }
 
-    static Branch ToBranch(AecModels.Branch branch, string partyCode)
+    static Branch ToBranch(AecModels.Branch branch, string partyCode, Dictionary<string, string> codes)
     {
         var abbreviation = branch.Abbreviation?.Replace(".", "");
         return new Branch
@@ -147,7 +147,7 @@ public static class PartyScraper
             Id = branch.Id,
             Name = branch.NameOfParty,
             Abbreviation = abbreviation ?? branch.NameOfParty,
-            Code = GetCode(branch.NameOfParty, abbreviation, partyCode),
+            Code = GetCode(branch.NameOfParty, abbreviation, partyCode,codes),
             RegisterDate = branch.PartyRegisterDate,
             AmendmentDate = branch.PartyRegisterDate,
             Address = branch.PostalAddress,
