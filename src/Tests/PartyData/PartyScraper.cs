@@ -85,7 +85,7 @@ public static class PartyScraper
     {
         var abbreviation = detail.Abbreviation?.Replace(".", "");
         var code = GetCode(detail.NameOfParty, abbreviation, null,codes);
-        var party = new Party
+        return new Party
         {
             Id = detail.Id,
             Name = detail.NameOfParty,
@@ -98,8 +98,6 @@ public static class PartyScraper
             deputyOfficers = ToOfficers(detail.DeputyOfficers),
             branches = ToBranches(detail.Branches, code,codes),
         };
-
-        return party;
     }
 
     static string GetCode(string name, string? abbreviation, string? parentCode, Dictionary<string, string> codes)
