@@ -9,16 +9,16 @@ using Xunit;
 
 public static class ElectoratesScraper
 {
-    public static async Task<ElectorateEx> ScrapeCurrentElectorate(string shortName, State state)
+    public static Task<ElectorateEx> ScrapeCurrentElectorate(string shortName, State state)
     {
         var requestUri = $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm";
-        return await ScrapeElectorate(shortName, state, requestUri, "Profile of the electoral division of ");
+        return ScrapeElectorate(shortName, state, requestUri, "Profile of the electoral division of ");
     }
 
-    public static async Task<ElectorateEx> Scrape2016Electorate(string shortName, State state)
+    public static Task<ElectorateEx> Scrape2016Electorate(string shortName, State state)
     {
         var requestUri = $"https://www.aec.gov.au/Elections/federal_elections/2016/profiles/{state}/{shortName}.htm";
-        return await ScrapeElectorate(shortName, state, requestUri, "2016 federal election: profile of the electoral division of ");
+        return ScrapeElectorate(shortName, state, requestUri, "2016 federal election: profile of the electoral division of ");
     }
 
     static async Task<ElectorateEx> ScrapeElectorate(string shortName, State state, string requestUri, string prefix)
