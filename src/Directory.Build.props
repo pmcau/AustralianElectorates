@@ -5,7 +5,6 @@
     <Version>4.2.0</Version>
     <Copyright>Code under MIT. Data under AEC Copyright https://www.aec.gov.au/footer/Copyright.htm</Copyright>
     <Nullable>enable</Nullable>
-    <NullableReferenceTypes>true</NullableReferenceTypes>
     <NoWarn>$(NoWarn);CS8632</NoWarn>
   </PropertyGroup>
 </Project>
