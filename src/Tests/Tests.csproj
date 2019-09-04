@@ -3,7 +3,7 @@
     <TargetFramework>net472</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="ApprovalTests" Version="4.2.0" />
+    <PackageReference Include="ApprovalTests" Version="4.2.1-beta.1" />
     <PackageReference Include="Bogus" Version="28.0.3" />
     <PackageReference Include="CountryData" Version="3.7.0" />
     <PackageReference Include="MarkdownSnippets.MsBuild" Version="16.4.2" PrivateAssets="All" />
