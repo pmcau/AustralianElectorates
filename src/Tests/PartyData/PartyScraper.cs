@@ -95,8 +95,8 @@ public static class PartyScraper
             AmendmentDate = detail.PartyRegisterDate,
             Address = detail.PostalAddress,
             Officer = ToOfficer(detail.Officer),
-            DeputyOfficers = ToOfficers(detail.DeputyOfficers),
-            Branches = ToBranches(detail.Branches, code),
+            deputyOfficers = ToOfficers(detail.DeputyOfficers),
+            branches = ToBranches(detail.Branches, code),
         };
 
         return party;
@@ -152,7 +152,7 @@ public static class PartyScraper
             AmendmentDate = branch.PartyRegisterDate,
             Address = branch.PostalAddress,
             Officer = ToOfficer(branch.Officer),
-            DeputyOfficers = ToOfficers(branch.DeputyOfficers)
+            deputyOfficers = ToOfficers(branch.DeputyOfficers)
         };
     }
 

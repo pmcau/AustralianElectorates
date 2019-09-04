@@ -224,7 +224,7 @@ public class Sync :
                 new Location
                 {
                     Postcode = group.Key,
-                    Localities = group.Select(x => x.Place).ToList()
+                    localities = group.Select(x => x.Place).ToList()
                 })
             .ToList();
     }

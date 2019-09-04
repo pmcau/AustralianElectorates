@@ -120,8 +120,8 @@ public static class ElectoratesScraper
                     };
                     if (affiliationIdentifier != null)
                     {
-                        member.PartyIds = new List<ushort> { affiliationIdentifier.Id};
-                        member.PartyCodes =new List<string> { affiliationIdentifier.ShortCode};
+                        member.partyIds = new List<ushort> { affiliationIdentifier.Id};
+                        member.partyCodes =new List<string> { affiliationIdentifier.ShortCode};
                     }
 
                     electorateMembers.Insert(0,
@@ -256,8 +256,8 @@ public static class ElectoratesScraper
             {
                 FamilyName = familyName,
                 GivenNames = givenNames,
-                PartyCodes = parties.ToList(),
-                PartyIds = parties.Select(PartyScraper.FindPartyId)
+                partyCodes = parties.ToList(),
+                partyIds = parties.Select(PartyScraper.FindPartyId)
                     .Where(x=>x != null)
                     .Select(x=>x.Value)
                     .ToList(),

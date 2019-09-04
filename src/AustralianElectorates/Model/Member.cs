@@ -1,17 +1,46 @@
 ﻿using System.Collections.Generic;
+using System.Runtime.Serialization;
 
 namespace AustralianElectorates
 {
+    [DataContract]
     public class Member
     {
-        public string FamilyName { get; set; }
-        public string GivenNames { get; set; }
-        public ushort Begin { get; set; }
-        public ushort? End { get; set; }
-        public List<string> PartyCodes { get; set; } = new List<string>();
-        public Electorate Electorate { get; set; }
-        public List<ushort> PartyIds { get; set; } = new List<ushort>();
-        public List<IParty> Parties { get; set; } = new List<IParty>();
+        internal Member()
+        {
+        }
+
+        [DataMember]
+        public string FamilyName { get; internal set; }
+        [DataMember]
+        public string GivenNames { get; internal set; }
+        [DataMember]
+        public ushort Begin { get; internal set; }
+        [DataMember]
+        public ushort? End { get; internal set; }
+        [DataMember]
+        public Electorate Electorate { get; internal set; }
+
+        [DataMember(Name = nameof(PartyCodes))]
+        internal List<string> partyCodes = new List<string>();
+        public IReadOnlyList<string> PartyCodes
+        {
+            get => partyCodes;
+        }
+
+        [DataMember(Name = nameof(PartyIds),EmitDefaultValue = false)]
+        internal List<ushort> partyIds = new List<ushort>();
+        public IReadOnlyList<ushort> PartyIds
+        {
+            get => partyIds;
+        }
+
+        [DataMember(Name = nameof(Parties))]
+        internal List<IParty> parties = new List<IParty>();
+        public IReadOnlyList<IParty> Parties
+        {
+            get => parties;
+        }
 
         public string FullName()
         {

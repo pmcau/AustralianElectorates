@@ -1,8 +1,18 @@
-﻿namespace AustralianElectorates
+﻿using System.Runtime.Serialization;
+
+namespace AustralianElectorates
 {
+    [DataContract]
     public class TwoCandidatePreferred
     {
-        public Candidate Elected { get; set; }
-        public Candidate Other { get; set; }
+        internal TwoCandidatePreferred()
+        {
+        }
+
+        [DataMember]
+        public Candidate Elected { get; internal set; }
+
+        [DataMember]
+        public Candidate Other { get; internal set; }
     }
 }
