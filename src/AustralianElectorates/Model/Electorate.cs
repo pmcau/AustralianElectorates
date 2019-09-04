@@ -17,6 +17,8 @@ namespace AustralianElectorates
         public string DemographicRating { get; set; }
         public string ProductsAndIndustry { get; set; }
         public string NameDerivation { get; set; }
+        public Member CurrentMember { get; set; }
+        public IParty CurrentParty { get; set; }
         public List<Member> Members { get; set; }
         public List<Location> Locations { get; set; }
         public uint? Enrollment { get; set; }

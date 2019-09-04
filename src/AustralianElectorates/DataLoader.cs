@@ -45,6 +45,7 @@ namespace AustralianElectorates
                 var preferred = electorate.TwoCandidatePreferred;
                 if (preferred != null)
                 {
+                    electorate.CurrentParty = preferred.Elected.Party;
                     preferred.Elected.Party = PartiesAndBranches.SingleOrDefault(x => x.Id == preferred.Elected.PartyId);
                     preferred.Other.Party = PartiesAndBranches.SingleOrDefault(x => x.Id == preferred.Other.PartyId);
                 }
@@ -54,6 +55,8 @@ namespace AustralianElectorates
                     member.Electorate = electorate;
                     member.Parties = member.PartyIds.Select(x => PartiesAndBranches.SingleOrDefault(y => y.Id == x)).Where(x=>x!=null).ToList();
                 }
+
+                electorate.CurrentMember = electorate.Members.FirstOrDefault();
             }
 
             AllMembers = Electorates
