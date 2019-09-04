@@ -1,6 +1,13 @@
 ﻿public class AecLocalityData
 {
-    public string Place { get; set; }
-    public int Postcode { get; set; }
-    public string Electorate { get; set; }
+    public AecLocalityData(string place, int postcode, string electorate)
+    {
+        Place = place;
+        Postcode = postcode;
+        Electorate = electorate;
+    }
+
+    public string Place { get; }
+    public int Postcode { get; }
+    public string Electorate { get; }
 }

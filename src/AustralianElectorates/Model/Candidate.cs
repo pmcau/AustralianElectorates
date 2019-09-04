@@ -14,7 +14,7 @@ namespace AustralianElectorates
         [DataMember]
         public string GivenNames { get; internal set; } = null!;
         [DataMember]
-        public string PartyCode { get; internal set; } = null!;
+        public string? PartyCode { get; internal set; }
         [DataMember]
         public uint Votes { get; internal set; }
         [DataMember]

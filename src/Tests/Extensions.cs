@@ -12,7 +12,7 @@ static class Extensions
             .Select(x => x.InnerText).ToList();
     }
 
-    public static bool TryGetKey(this Dictionary<string, string> document, string value,out string key)
+    public static bool TryGetKey(this Dictionary<string, string> document, string value, out string key)
     {
         foreach (var pair in document.Where(pair => pair.Value == value))
         {
@@ -20,7 +20,7 @@ static class Extensions
             return true;
         }
 
-        key = null;
+        key = "";
         return false;
     }
 
