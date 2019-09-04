@@ -6,5 +6,6 @@
     <Copyright>Code under MIT. Data under AEC Copyright https://www.aec.gov.au/footer/Copyright.htm</Copyright>
     <LangVersion>8.0</LangVersion>
     <Nullable>enable</Nullable>
+    <NoWarn>$(NoWarn);CS8632</NoWarn>
   </PropertyGroup>
 </Project>
