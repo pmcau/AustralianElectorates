@@ -102,7 +102,7 @@ public static class PartyScraper
         return party;
     }
 
-    static string GetCode(string name, string abbreviation, string parentCode)
+    static string GetCode(string name, string? abbreviation, string? parentCode)
     {
         if (PartyCodeScraper.Codes.TryGetKey(name, out var key))
         {
@@ -190,19 +190,24 @@ public static class PartyScraper
         var line1 = deputyOfficerAddress.Line1;
         if (string.IsNullOrWhiteSpace(line1))
         {
-            line1 = null;
+
+            throw new Exception();
+            // line1 = null;
         }
 
         var line2 = deputyOfficerAddress.Line2;
         if (string.IsNullOrWhiteSpace(line2))
         {
-            line2 = null;
+
+            throw new Exception();
+            //    line2 = null;
         }
 
         var line3 = deputyOfficerAddress.Line3;
         if (string.IsNullOrWhiteSpace(line3))
         {
-            line3 = null;
+            throw new Exception();
+            //line3 = null;
         }
 
         return new Address

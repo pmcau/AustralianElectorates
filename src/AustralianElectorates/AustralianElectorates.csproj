@@ -3,7 +3,6 @@
     <PackageTags>Australia, Electorates</PackageTags>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Description>Provides geojson maps and a .net wrapper around the Australian Electoral Commission (AEC) data (https://www.aec.gov.au/).</Description>
-    <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Condition="Exists('..\..\Data\MapsCurated.zip')" Include="..\..\Data\MapsCurated.zip" LogicalName="Maps.zip" Link="Maps.zip" />

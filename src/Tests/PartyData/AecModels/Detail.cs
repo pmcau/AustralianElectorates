@@ -20,7 +20,7 @@ namespace AecModels
         public string LogoDataUri { get; set; }
 
         [JsonProperty("abbreviation")]
-        public string Abbreviation { get; set; }
+        public string? Abbreviation { get; set; }
 
         [JsonProperty("isParliamentaryParty")]
         public bool IsParliamentaryParty { get; set; }

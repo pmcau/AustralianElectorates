@@ -9,9 +9,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="..\AustralianElectorates\Guard.cs" Link="Guard.cs" />
-  </ItemGroup>
 
-  <ItemGroup>
     <PackageReference Include="Bogus" Version="28.0.3" />
     <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-19367-01" PrivateAssets="All" />
