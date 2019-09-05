@@ -32,7 +32,7 @@ static class ZipExtensions
 
     public static string ReadString(this ZipArchiveEntry entry)
     {
-        using (var entryStream = entry.Open())
+        using var entryStream = entry.Open();
         using (var reader = new StreamReader(entryStream))
         {
             return reader.ReadToEnd();
