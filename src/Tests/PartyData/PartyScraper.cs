@@ -187,24 +187,19 @@ public static class PartyScraper
         var line1 = deputyOfficerAddress.Line1;
         if (string.IsNullOrWhiteSpace(line1))
         {
-
             throw new Exception();
-            // line1 = null;
         }
 
-        var line2 = deputyOfficerAddress.Line2;
+        string? line2 = deputyOfficerAddress.Line2;
         if (string.IsNullOrWhiteSpace(line2))
         {
-
-            throw new Exception();
-            //    line2 = null;
+            line2 = null;
         }
 
-        var line3 = deputyOfficerAddress.Line3;
+        string? line3 = deputyOfficerAddress.Line3;
         if (string.IsNullOrWhiteSpace(line3))
         {
-            throw new Exception();
-            //line3 = null;
+            line3 = null;
         }
 
         return new Address

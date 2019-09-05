@@ -13,10 +13,10 @@ namespace AustralianElectorates
         public string Line1 { get; internal set; } = null!;
 
         [DataMember]
-        public string Line2 { get; internal set; } = null!;
+        public string? Line2 { get; internal set; }
 
         [DataMember]
-        public string Line3 { get; internal set; } = null!;
+        public string? Line3 { get; internal set; }
 
         [DataMember]
         public string Suburb { get; internal set; } = null!;
