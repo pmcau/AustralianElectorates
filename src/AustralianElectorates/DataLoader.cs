@@ -163,14 +163,17 @@ namespace AustralianElectorates
             Guard.AgainstNullWhiteSpace(nameof(directory), directory);
             lock (exportLocker)
             {
-                WriteElectoratesJson(directory);
-
-                using (var stream = assembly.GetManifestResourceStream("Maps.zip"))
-                using (var archive = new ZipArchive(stream))
-                {
-                    archive.ExtractToDirectory(directory);
-                }
+                ExportInLock(directory);
             }
+        }
+
+        static void ExportInLock(string directory)
+        {
+            WriteElectoratesJson(directory);
+
+            using var stream = assembly.GetManifestResourceStream("Maps.zip");
+            using var archive = new ZipArchive(stream);
+            archive.ExtractToDirectory(directory);
         }
 
         static void WriteElectoratesJson(string directory)
@@ -185,13 +188,16 @@ namespace AustralianElectorates
                 }
             }
 
-            using (var stream = assembly.GetManifestResourceStream("electorates.json"))
-            using (var target = File.Create(electoratesJsonPath))
-            {
-                stream.CopyTo(target);
-            }
+            WriteElectoratesJsonInner(electoratesJsonPath);
 
             File.SetCreationTimeUtc(electoratesJsonPath, AssemblyTimestamp.Value);
+        }
+
+        static void WriteElectoratesJsonInner(string electoratesJsonPath)
+        {
+            using var stream = assembly.GetManifestResourceStream("electorates.json");
+            using var target = File.Create(electoratesJsonPath);
+            stream.CopyTo(target);
         }
 
         public static ElectorateMap Get2016Map(this Electorate electorate)

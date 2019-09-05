@@ -24,18 +24,16 @@ public static class PdfToPng
             RedirectStandardError = true,
             CreateNoWindow = true
         };
-        using (var process = Process.Start(pngquant))
+        using var process = Process.Start(pngquant);
+        process.WaitForExit();
+        //skip-if-larger can result in 98 "not saved"
+        if (process.ExitCode == 98)
         {
-            process.WaitForExit();
-            //skip-if-larger can result in 98 "not saved"
-            if (process.ExitCode == 98)
-            {
-                File.Move(tempPng, png);
-            }
-            else
-            {
-                File.Delete(tempPng);
-            }
+            File.Move(tempPng, png);
+        }
+        else
+        {
+            File.Delete(tempPng);
         }
     }
 
@@ -50,9 +48,7 @@ public static class PdfToPng
             RedirectStandardError = true,
             CreateNoWindow = true
         };
-        using (var process = Process.Start(gswin64))
-        {
-            process.WaitForExit();
-        }
+        using var process = Process.Start(gswin64);
+        process.WaitForExit();
     }
 }

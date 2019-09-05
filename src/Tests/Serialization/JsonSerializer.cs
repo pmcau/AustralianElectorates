@@ -38,13 +38,10 @@ static class JsonSerializerService
 
     public static void Serialize(object value, string path)
     {
-        using (var fileStream = File.OpenWrite(path))
-        using (var textWriter = new StreamWriter(fileStream))
-        using (var jsonTextWriter = new JsonTextWriter(textWriter))
-        {
-            jsonTextWriter.Indentation = 2;
-            jsonSerializer.Serialize(jsonTextWriter, value);
-        }
+        using var fileStream = File.OpenWrite(path);
+        using var textWriter = new StreamWriter(fileStream);
+        using var jsonTextWriter = new JsonTextWriter(textWriter) {Indentation = 2};
+        jsonSerializer.Serialize(jsonTextWriter, value);
     }
 
     public static FeatureCollection DeserializeGeo(string path)
@@ -54,11 +51,9 @@ static class JsonSerializerService
 
     public static T Deserialize<T>(string path)
     {
-        using (var fileStream = File.OpenRead(path))
-        using (var textReader = new StreamReader(fileStream))
-        using (var jsonTextReader = new JsonTextReader(textReader))
-        {
-            return jsonSerializer.Deserialize<T>(jsonTextReader);
-        }
+        using var fileStream = File.OpenRead(path);
+        using var textReader = new StreamReader(fileStream);
+        using var jsonTextReader = new JsonTextReader(textReader);
+        return jsonSerializer.Deserialize<T>(jsonTextReader);
     }
 }

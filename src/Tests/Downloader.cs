@@ -46,9 +46,9 @@ static class Downloader
         }
 
         using (var response = await httpClient.GetAsync(requestUri))
-        using (var httpStream = await response.Content.ReadAsStreamAsync())
-        using (var fileStream = new FileStream(targetPath, FileMode.Create, FileAccess.Write, FileShare.None))
         {
+            using var httpStream = await response.Content.ReadAsStreamAsync();
+            using var fileStream = new FileStream(targetPath, FileMode.Create, FileAccess.Write, FileShare.None);
             await httpStream.CopyToAsync(fileStream);
             await fileStream.FlushAsync();
         }

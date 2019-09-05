@@ -23,18 +23,13 @@ static class Serializer
                 .Replace("\"State\": \"VIC\",", "\"State\": 6,")
                 .Replace("\"State\": \"WA\",", "\"State\": 7,")
             ;
-        using (var memoryStream = new MemoryStream(Encoding.UTF8.GetBytes(readToEnd)))
-        {
-            memoryStream.Position = 0;
-            return (T) jsonSerializer.ReadObject(memoryStream);
-        }
+        using var memoryStream = new MemoryStream(Encoding.UTF8.GetBytes(readToEnd)) {Position = 0};
+        return (T) jsonSerializer.ReadObject(memoryStream);
     }
 
     static string ReadToEnd(Stream stream)
     {
-        using (var reader = new StreamReader(stream))
-        {
-            return reader.ReadToEnd();
-        }
+        using var reader = new StreamReader(stream);
+        return reader.ReadToEnd();
     }
 }

@@ -30,16 +30,14 @@ public class MapToGeoJson
             RedirectStandardError = true,
             UseShellExecute = false
         };
-        using (var process = Process.Start(startInfo))
+        using var process = Process.Start(startInfo);
+        process.WaitForExit();
+        if (process.ExitCode != 0)
         {
-            process.WaitForExit();
-            if (process.ExitCode != 0)
+            var readToEnd = process.StandardError.ReadToEnd();
+            if (readToEnd.Contains("Error"))
             {
-                var readToEnd = process.StandardError.ReadToEnd();
-                if (readToEnd.Contains("Error"))
-                {
-                    throw new Exception($"Failed to run: {arguments}. Output: {readToEnd}");
-                }
+                throw new Exception($"Failed to run: {arguments}. Output: {readToEnd}");
             }
         }
     }
