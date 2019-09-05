@@ -9,19 +9,19 @@ using Xunit;
 
 public static class ElectoratesScraper
 {
-    public static Task<ElectorateEx> ScrapeCurrentElectorate(string shortName, State state)
+    public static Task<ElectorateEx> ScrapeCurrentElectorate(string shortName, State state, List<Party> parties)
     {
         var requestUri = $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm";
-        return ScrapeElectorate(shortName, state, requestUri, "Profile of the electoral division of ");
+        return ScrapeElectorate(shortName, state, requestUri, "Profile of the electoral division of ", parties);
     }
 
-    public static Task<ElectorateEx> Scrape2016Electorate(string shortName, State state)
+    public static Task<ElectorateEx> Scrape2016Electorate(string shortName, State state, List<Party> parties)
     {
         var requestUri = $"https://www.aec.gov.au/Elections/federal_elections/2016/profiles/{state}/{shortName}.htm";
-        return ScrapeElectorate(shortName, state, requestUri, "2016 federal election: profile of the electoral division of ");
+        return ScrapeElectorate(shortName, state, requestUri, "2016 federal election: profile of the electoral division of ", parties);
     }
 
-    static async Task<ElectorateEx> ScrapeElectorate(string shortName, State state, string requestUri, string prefix)
+    static async Task<ElectorateEx> ScrapeElectorate(string shortName, State state, string requestUri, string prefix, List<Party> parties)
     {
         requestUri = requestUri.ToLowerInvariant();
         var tempElectorateHtmlPath = Path.Combine(DataLocations.TempPath, $"{shortName}.html");
@@ -59,7 +59,7 @@ public static class ElectoratesScraper
                 electorate.DateGazetted = DateTime.ParseExact(gazettedHtml.InnerText, "d MMMM yyyy", null);
             }
 
-            var electorateMembers = ElectorateMembers(values).ToList();
+            var electorateMembers = ElectorateMembers(values, parties).ToList();
             var first = electorateMembers.FirstOrDefault();
             if (first != null && first.End == null)
             {
@@ -210,7 +210,7 @@ public static class ElectoratesScraper
         return fullName;
     }
 
-    static IEnumerable<Member> ElectorateMembers(Dictionary<string, HtmlNode> values)
+    static IEnumerable<Member> ElectorateMembers(Dictionary<string, HtmlNode> values, List<Party> parties)
     {
         var members = values["Members"];
         if (members.InnerText.Contains("will be elected at the next federal general election."))
@@ -241,7 +241,7 @@ public static class ElectoratesScraper
             var split = cleaned.Split(new[] {" ("}, 2, StringSplitOptions.None);
             var member = split[0];
             split = split[1].Split(new[] {") "}, 2, StringSplitOptions.None);
-            var parties = split[0].Split('/');
+            var partyIds = split[0].Split('/');
 
             split = split[1].Split(new[] {"-"}, 2, StringSplitOptions.RemoveEmptyEntries);
             var begin = ushort.Parse(split[0].Trim());
@@ -256,14 +256,23 @@ public static class ElectoratesScraper
             {
                 FamilyName = familyName,
                 GivenNames = givenNames,
-                partyCodes = parties.ToList(),
-                partyIds = parties.Select(PartyScraper.FindPartyId)
-                    .Where(x=>x != null)
-                    .Select(x=>x.Value)
-                    .ToList(),
+                partyCodes = partyIds.ToList(),
+                partyIds = FindPartyIds(partyIds, parties).ToList(),
                 Begin = begin,
                 End = end,
             };
+        }
+    }
+
+    static IEnumerable<ushort> FindPartyIds(string[] partyIds, List<Party> parties)
+    {
+        foreach (var id in partyIds)
+        {
+            var findPartyId = PartyScraper.FindPartyId(id, parties);
+            if (findPartyId.HasValue)
+            {
+                yield return findPartyId.Value;
+            }
         }
     }
 

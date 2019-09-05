@@ -3,5 +3,5 @@ using AustralianElectorates;
 
 public class ElectorateEx : Electorate
 {
-    [NonSerialized] public string MapUrl;
+    [NonSerialized] public string MapUrl = null!;
 }

@@ -12,6 +12,6 @@ namespace AustralianElectorates
         [DataMember]
         public State State { get; internal set; }
         [DataMember]
-        public string GeoJson { get; internal set; }
+        public string GeoJson { get; internal set; } = null!;
     }
 }

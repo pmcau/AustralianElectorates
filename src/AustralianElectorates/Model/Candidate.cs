@@ -10,11 +10,11 @@ namespace AustralianElectorates
         }
 
         [DataMember]
-        public string FamilyName { get; internal set; }
+        public string FamilyName { get; internal set; } = null!;
         [DataMember]
-        public string GivenNames { get; internal set; }
+        public string GivenNames { get; internal set; } = null!;
         [DataMember]
-        public string PartyCode { get; internal set; }
+        public string? PartyCode { get; internal set; }
         [DataMember]
         public uint Votes { get; internal set; }
         [DataMember]
@@ -22,7 +22,7 @@ namespace AustralianElectorates
         [DataMember]
         public ushort? PartyId { get; internal set; }
         [DataMember]
-        public IParty Party { get; internal set; }
+        public IParty Party { get; internal set; } = null!;
 
         public string FullName()
         {

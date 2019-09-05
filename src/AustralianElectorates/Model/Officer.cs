@@ -10,19 +10,19 @@ namespace AustralianElectorates
         }
 
         [DataMember]
-        public string Title { get; internal set; }
+        public string Title { get; internal set; } = null!;
 
         [DataMember]
-        public string FamilyName { get; internal set; }
+        public string FamilyName { get; internal set; } = null!;
 
         [DataMember]
-        public string GivenNames { get; internal set; }
+        public string GivenNames { get; internal set; } = null!;
 
         [DataMember]
-        public string Capacity { get; internal set; }
+        public string Capacity { get; internal set; } = null!;
 
         [DataMember]
-        public Address Address { get; internal set; }
+        public Address Address { get; internal set; } = null!;
 
         public string FullName()
         {

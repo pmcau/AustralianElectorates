@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿#nullable disable
+
+using Newtonsoft.Json;
 
 namespace AecModels
 {

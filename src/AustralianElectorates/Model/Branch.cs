@@ -13,28 +13,28 @@ namespace AustralianElectorates
         [DataMember]
         public ushort Id { get; internal set; }
         [DataMember]
-        public string Name { get; internal set; }
+        public string Name { get; internal set; } = null!;
         [DataMember]
-        public string Code { get; internal set; }
+        public string Code { get; internal set; } = null!;
         [DataMember]
-        public string Abbreviation { get; set; }
+        public string Abbreviation { get; internal set; } = null!;
         [DataMember]
-        public string RegisterDate { get; internal set; }
+        public string RegisterDate { get; internal set; } = null!;
         [DataMember]
-        public string AmendmentDate { get; internal set; }
+        public string AmendmentDate { get; internal set; } = null!;
         [DataMember]
-        public string Address { get; internal set; }
+        public string Address { get; internal set; } = null!;
         [DataMember]
-        public Officer Officer { get; internal set; }
+        public Officer Officer { get; internal set; } = null!;
 
         [DataMember(Name = nameof(DeputyOfficers))]
-        internal List<Officer> deputyOfficers;
+        internal List<Officer> deputyOfficers  = null!;
         public IReadOnlyList<Officer> DeputyOfficers
         {
             get => deputyOfficers;
         }
 
         [DataMember]
-        public Party Party { get; internal set; }
+        public Party Party { get; internal set; } = null!;
     }
 }

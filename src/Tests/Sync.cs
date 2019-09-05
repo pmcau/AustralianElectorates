@@ -19,7 +19,7 @@ public class Sync :
         IoHelpers.PurgeDirectory(DataLocations.MapsPath);
         IoHelpers.PurgeDirectory(DataLocations.TempPath);
 
-        await PartyScraper.Run();
+        var parties = await PartyScraper.Run();
 
 
         await Get2016();
@@ -33,7 +33,7 @@ public class Sync :
         ProcessYear(DataLocations.Maps2019Path, electorates2019);
         ProcessYear(DataLocations.MapsFuturePath, electoratesFuture);
 
-        var electorates = await WriteElectoratesMetaData();
+        var electorates = await WriteElectoratesMetaData(parties);
 
         IoHelpers.PurgeDirectoryRecursive(DataLocations.MapsDetail);
         foreach (var electorate in electorates)
@@ -180,7 +180,7 @@ public class Sync :
         }
     }
 
-    static async Task<List<ElectorateEx>> WriteElectoratesMetaData()
+    static async Task<List<ElectorateEx>> WriteElectoratesMetaData(List<Party> parties)
     {
         var localityData = JsonSerializerService.Deserialize<List<AecLocalityData>>(DataLocations.LocalitiesPath);
         var electorates = new List<ElectorateEx>();
@@ -195,11 +195,11 @@ public class Sync :
                 ElectorateEx electorate;
                 if (existIn2019)
                 {
-                    electorate = await ElectoratesScraper.ScrapeCurrentElectorate(electorateName, electoratePair.Key);
+                    electorate = await ElectoratesScraper.ScrapeCurrentElectorate(electorateName, electoratePair.Key, parties);
                 }
                 else
                 {
-                    electorate = await ElectoratesScraper.Scrape2016Electorate(electorateName, electoratePair.Key);
+                    electorate = await ElectoratesScraper.Scrape2016Electorate(electorateName, electoratePair.Key, parties);
                 }
                 electorate.Exist2016 = existIn2016;
                 electorate.Exist2019 = existIn2019;
@@ -260,7 +260,7 @@ namespace AustralianElectorates
             {
                 var name = GetCSharpName(electorate);
                 writer.WriteLine($@"
-        public static Electorate {name} {{ get; private set;}}");
+        public static Electorate {name} {{ get; private set; }}  = null!;");
             }
 
             writer.WriteLine("    }");
