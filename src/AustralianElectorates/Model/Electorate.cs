@@ -59,6 +59,12 @@ namespace AustralianElectorates
         [DataMember]
         public TwoCandidatePreferred? TwoCandidatePreferred { get; internal set; }
 
+        [DataMember]
+        public Member CurrentMember { get; set; } = null!;
+
+        [DataMember]
+        public IParty CurrentParty { get; set; } = null!;
+
         public static string GetShortName(string name)
         {
             Guard.AgainstNullWhiteSpace(name, nameof(name));
