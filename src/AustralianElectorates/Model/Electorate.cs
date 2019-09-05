@@ -1,28 +1,67 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 
 namespace AustralianElectorates
 {
+    [DataContract]
     public class Electorate
     {
-        public string Name { get; set; }
-        public string ShortName { get; set; }
-        public State State { get; set; }
-        public double Area { get; set; }
-        public bool Exist2016 { get; set; }
-        public bool Exist2019 { get; set; }
-        public bool ExistInFuture { get; set; }
-        public DateTime? DateGazetted { get; set; }
-        public string Description { get; set; }
-        public string DemographicRating { get; set; }
-        public string ProductsAndIndustry { get; set; }
-        public string NameDerivation { get; set; }
+        internal Electorate()
+        {
+        }
+
+        [DataMember]
+        public string Name { get; internal set; } = null!;
+
+        [DataMember]
+        public string ShortName { get; internal set; } = null!;
+
+        [DataMember]
+        public State State { get; internal set; }
+
+        [DataMember]
+        public double Area { get; internal set; }
+
+        [DataMember]
+        public bool Exist2016 { get; internal set; }
+
+        [DataMember]
+        public bool Exist2019 { get; internal set; }
+
+        [DataMember]
+        public bool ExistInFuture { get; internal set; }
+
+        [DataMember]
+        public DateTime? DateGazetted { get; internal set; }
+
+        [DataMember]
+        public string Description { get; internal set; } = null!;
+
+        [DataMember]
+        public string DemographicRating { get; internal set; } = null!;
+
+        [DataMember]
+        public string ProductsAndIndustry { get; internal set; } = null!;
+
+        [DataMember]
+        public string NameDerivation { get; internal set; } = null!;
+
+        [DataMember]
+        public List<Member> Members { get; internal set; } = null!;
+
+        [DataMember]
+        public List<Location> Locations { get; internal set; } = null!;
+
+        [DataMember]
+        public uint? Enrollment { get; internal set; }
+
+        [DataMember]
+        public TwoCandidatePreferred? TwoCandidatePreferred { get; internal set; }
+        [DataMember]
         public Member CurrentMember { get; set; }
+        [DataMember]
         public IParty CurrentParty { get; set; }
-        public List<Member> Members { get; set; }
-        public List<Location> Locations { get; set; }
-        public uint? Enrollment { get; set; }
-        public TwoCandidatePreferred TwoCandidatePreferred { get; set; }
 
         public static string GetShortName(string name)
         {

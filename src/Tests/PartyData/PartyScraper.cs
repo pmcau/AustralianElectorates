@@ -11,9 +11,9 @@ using Branch = AustralianElectorates.Branch;
 
 public static class PartyScraper
 {
-    public static async Task Run()
+    public static async Task<List<Party>> Run()
     {
-        await PartyCodeScraper.Run();
+        var codes = await PartyCodeScraper.Run();
         var htmlPath = Path.Combine(DataLocations.TempPath, "partycodes.html");
         var partyRegisterPath = Path.Combine(DataLocations.TempPath, "partyRegister.json");
         File.Delete(htmlPath);
@@ -28,16 +28,17 @@ public static class PartyScraper
                 .Split('"')[1];
             await Downloader.DownloadFile(partyRegisterPath, $"https://www.aec.gov.au{jsonUrl}");
             var aecParties = JsonSerializerService.Deserialize<PartyData>(partyRegisterPath);
-            Parties = new List<Party>();
+            var parties = new List<Party>();
             foreach (var detail in aecParties.Details)
             {
-                var party = DetailToParty(detail);
-                Parties.Add(party);
+                var party = DetailToParty(detail, codes);
+                parties.Add(party);
             }
 
             var combine = Path.Combine(DataLocations.DataPath, "parties.json");
             File.Delete(combine);
-            JsonSerializerService.Serialize(Parties, combine);
+            JsonSerializerService.Serialize(parties, combine);
+            return parties;
         }
         catch (Exception exception)
         {
@@ -45,9 +46,9 @@ public static class PartyScraper
         }
     }
 
-    public static ushort? FindPartyId(string code)
+    public static ushort? FindPartyId(string code, List<Party> parties)
     {
-        foreach (var party in Parties)
+        foreach (var party in parties)
         {
             if (party.Code == code)
             {
@@ -60,7 +61,7 @@ public static class PartyScraper
             }
         }
 
-        foreach (var party in Parties)
+        foreach (var party in parties)
         {
             foreach (var branch in party.Branches)
             {
@@ -79,13 +80,11 @@ public static class PartyScraper
         return null;
     }
 
-    public static List<Party> Parties;
-
-    static Party DetailToParty(Detail detail)
+    static Party DetailToParty(Detail detail, Dictionary<string, string> codes)
     {
         var abbreviation = detail.Abbreviation?.Replace(".", "");
-        var code = GetCode(detail.NameOfParty, abbreviation, null);
-        var party = new Party
+        var code = GetCode(detail.NameOfParty, abbreviation, null,codes);
+        return new Party
         {
             Id = detail.Id,
             Name = detail.NameOfParty,
@@ -95,16 +94,14 @@ public static class PartyScraper
             AmendmentDate = detail.PartyRegisterDate,
             Address = detail.PostalAddress,
             Officer = ToOfficer(detail.Officer),
-            DeputyOfficers = ToOfficers(detail.DeputyOfficers),
-            Branches = ToBranches(detail.Branches, code),
+            deputyOfficers = ToOfficers(detail.DeputyOfficers),
+            branches = ToBranches(detail.Branches, code,codes),
         };
-
-        return party;
     }
 
-    static string GetCode(string name, string abbreviation, string parentCode)
+    static string GetCode(string name, string? abbreviation, string? parentCode, Dictionary<string, string> codes)
     {
-        if (PartyCodeScraper.Codes.TryGetKey(name, out var key))
+        if (codes.TryGetKey(name, out var key))
         {
             return key;
         }
@@ -122,7 +119,7 @@ public static class PartyScraper
         return name;
     }
 
-    static List<Branch> ToBranches(AecModels.Branch[] branches, string partyCode)
+    static List<Branch> ToBranches(AecModels.Branch[] branches, string partyCode, Dictionary<string, string> codes)
     {
         var list = new List<Branch>();
         if (branches == null)
@@ -132,14 +129,14 @@ public static class PartyScraper
 
         foreach (var branch in branches)
         {
-            var item = ToBranch(branch, partyCode);
+            var item = ToBranch(branch, partyCode,codes);
             list.Add(item);
         }
 
         return list;
     }
 
-    static Branch ToBranch(AecModels.Branch branch, string partyCode)
+    static Branch ToBranch(AecModels.Branch branch, string partyCode, Dictionary<string, string> codes)
     {
         var abbreviation = branch.Abbreviation?.Replace(".", "");
         return new Branch
@@ -147,12 +144,12 @@ public static class PartyScraper
             Id = branch.Id,
             Name = branch.NameOfParty,
             Abbreviation = abbreviation ?? branch.NameOfParty,
-            Code = GetCode(branch.NameOfParty, abbreviation, partyCode),
+            Code = GetCode(branch.NameOfParty, abbreviation, partyCode,codes),
             RegisterDate = branch.PartyRegisterDate,
             AmendmentDate = branch.PartyRegisterDate,
             Address = branch.PostalAddress,
             Officer = ToOfficer(branch.Officer),
-            DeputyOfficers = ToOfficers(branch.DeputyOfficers)
+            deputyOfficers = ToOfficers(branch.DeputyOfficers)
         };
     }
 
@@ -190,16 +187,16 @@ public static class PartyScraper
         var line1 = deputyOfficerAddress.Line1;
         if (string.IsNullOrWhiteSpace(line1))
         {
-            line1 = null;
+            throw new Exception();
         }
 
-        var line2 = deputyOfficerAddress.Line2;
+        string? line2 = deputyOfficerAddress.Line2;
         if (string.IsNullOrWhiteSpace(line2))
         {
             line2 = null;
         }
 
-        var line3 = deputyOfficerAddress.Line3;
+        string? line3 = deputyOfficerAddress.Line3;
         if (string.IsNullOrWhiteSpace(line3))
         {
             line3 = null;

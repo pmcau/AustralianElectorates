@@ -1,10 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
-    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="ApprovalTests" Version="4.2.0" />
+    <PackageReference Include="ApprovalTests" Version="4.2.1-beta.1" />
     <PackageReference Include="Bogus" Version="28.0.3" />
     <PackageReference Include="CountryData" Version="3.7.0" />
     <PackageReference Include="MarkdownSnippets.MsBuild" Version="16.4.2" PrivateAssets="All" />
@@ -21,7 +20,7 @@
     <ProjectReference Include="..\AustralianElectorates.DetailMaps\AustralianElectorates.DetailMaps.csproj" />
     <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
     <Reference Include="System.IO.Compression" />
-    <PackageReference Include="ProjectDefaults" Version="1.0.20" PrivateAssets="All" />
+    <PackageReference Include="ProjectDefaults" Version="1.0.24" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup>
     <None Update="MediaFeed\aec-mediafeed-results-standard-verbose-24310.xml">

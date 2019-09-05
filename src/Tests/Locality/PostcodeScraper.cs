@@ -38,13 +38,13 @@ static class PostcodeScraper
             if (tds != null && tds.Count > 3)
             {
                 yield return new AecLocalityData
-                {
+                (
                     //State = tds[0].InnerText.ToUpper().Trim(),
-                    Place = tds[1].InnerText.ToUpper().Trim().ToTitleCase(),
-                    Postcode = postcode,
+                    place: tds[1].InnerText.ToUpper().Trim().ToTitleCase(),
+                    postcode: postcode,
                     //Postcode = tds[2].InnerText.ToUpper().Trim(),
-                    Electorate = tds[3].InnerText.ToUpper().Trim()
-                };
+                    electorate: tds[3].InnerText.ToUpper().Trim()
+                );
             }
         }
     }

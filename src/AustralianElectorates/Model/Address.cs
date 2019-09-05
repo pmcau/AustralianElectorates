@@ -1,17 +1,30 @@
-﻿namespace AustralianElectorates
+﻿using System.Runtime.Serialization;
+
+namespace AustralianElectorates
 {
+    [DataContract]
     public class Address
     {
-        public string Line1 { get; set; }
+        internal Address()
+        {
+        }
 
-        public string Line2 { get; set; }
+        [DataMember]
+        public string Line1 { get; internal set; } = null!;
 
-        public string Line3 { get; set; }
+        [DataMember]
+        public string? Line2 { get; internal set; }
 
-        public string Suburb { get; set; }
+        [DataMember]
+        public string? Line3 { get; internal set; }
 
-        public State State { get; set; }
+        [DataMember]
+        public string Suburb { get; internal set; } = null!;
 
-        public int Postcode { get; set; }
+        [DataMember]
+        public State State { get; internal set; }
+
+        [DataMember]
+        public int Postcode { get; internal set; }
     }
 }

@@ -13,7 +13,7 @@ namespace AustralianElectorates
         string prefix;
         ConcurrentDictionary<string, ElectorateMap> electoratesCache = new ConcurrentDictionary<string, ElectorateMap>(StringComparer.OrdinalIgnoreCase);
         ConcurrentDictionary<State, StateMap> statesCache = new ConcurrentDictionary<State, StateMap>();
-        string australia;
+        string? australia;
         static Assembly assembly;
 
         public IReadOnlyDictionary<string, ElectorateMap> LoadedElectorates => electoratesCache;

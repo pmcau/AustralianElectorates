@@ -1,18 +1,53 @@
 ﻿using System.Collections.Generic;
+using System.Runtime.Serialization;
 
 namespace AustralianElectorates
 {
-    public class Party:IParty
+    [DataContract]
+    public class Party : IParty
     {
-        public ushort Id { get; set; }
-        public string Name { get; set; }
-        public string Code { get; set; }
-        public string Abbreviation { get; set; }
-        public string RegisterDate { get; set; }
-        public string AmendmentDate { get; set; }
-        public string Address { get; set; }
-        public Officer Officer { get; set; }
-        public List<Officer> DeputyOfficers { get; set; }  =new List<Officer>();
-        public List<Branch> Branches { get; set; } = new List<Branch>();
+        internal Party()
+        {
+        }
+
+        [DataMember]
+        public ushort Id { get; internal set; }
+
+        [DataMember]
+        public string Name { get; internal set; } = null!;
+
+        [DataMember]
+        public string Code { get; internal set; } = null!;
+
+        [DataMember]
+        public string Abbreviation { get; internal set; } = null!;
+
+        [DataMember]
+        public string RegisterDate { get; internal set; } = null!;
+
+        [DataMember]
+        public string AmendmentDate { get; internal set; } = null!;
+
+        [DataMember]
+        public string Address { get; internal set; } = null!;
+
+        [DataMember]
+        public Officer Officer { get; internal set; } = null!;
+
+        [DataMember(Name = nameof(DeputyOfficers))]
+        internal List<Officer> deputyOfficers = new List<Officer>();
+
+        public IReadOnlyList<Officer> DeputyOfficers
+        {
+            get => deputyOfficers;
+        }
+
+        [DataMember(Name = nameof(Branches))]
+        internal List<Branch> branches = new List<Branch>();
+
+        public IReadOnlyList<Branch> Branches
+        {
+            get => branches;
+        }
     }
 }

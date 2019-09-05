@@ -86,12 +86,12 @@ public class Snippets :
 
     public class Target
     {
-        public string RandomElectorateName;
-        public Member RandomMember;
-        public string RandomMemberName;
-        public Electorate RandomElectorate;
-        public Member RandomCurrentMember;
-        public string RandomCurrentMemberName;
+        public string RandomElectorateName = null!;
+        public Member RandomMember = null!;
+        public string RandomMemberName = null!;
+        public Electorate RandomElectorate = null!;
+        public Member RandomCurrentMember = null!;
+        public string RandomCurrentMemberName = null!;
     }
 
     public Snippets(ITestOutputHelper output) :

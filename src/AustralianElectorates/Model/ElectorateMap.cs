@@ -1,8 +1,17 @@
-﻿namespace AustralianElectorates
+﻿using System.Runtime.Serialization;
+
+namespace AustralianElectorates
 {
+    [DataContract]
     public class ElectorateMap
     {
-        public Electorate Electorate { get; set; }
-        public string GeoJson { get; set; }
+        internal ElectorateMap()
+        {
+        }
+
+        [DataMember]
+        public Electorate Electorate { get; internal set; } = null!;
+        [DataMember]
+        public string GeoJson { get; internal set; } = null!;
     }
 }
