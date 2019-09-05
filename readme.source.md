@@ -3,6 +3,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/mds12hp4duduyie8/branch/master?svg=true)](https://ci.appveyor.com/project/SimonCropp/australianelectorates)
 [![NuGet Status](https://img.shields.io/nuget/v/AustralianelEctorates.svg?label=AustralianelEctorates&cacheSeconds=86400)](https://www.nuget.org/packages/AustralianelEctorates/)
 [![NuGet Status](https://img.shields.io/nuget/v/AustralianelEctorates.Bogus.svg?label=AustralianelEctorates.Bogus&cacheSeconds=86400)](https://www.nuget.org/packages/AustralianelEctorates.Bogus/)
+[![NuGet Status](https://img.shields.io/nuget/v/AustralianelEctorates.DetailMaps.svg?label=AustralianelEctorates.DetailMaps&cacheSeconds=86400)](https://www.nuget.org/packages/AustralianelEctorates.DetailMaps/)
 
 All information about electorates is available at [/Data/electorates.json](/Data/electorates.json).
 
