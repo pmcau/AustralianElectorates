@@ -3,6 +3,10 @@ using System.IO;
 
 public static class PdfToPng
 {
+    // Change as needed if not in local path
+    const string pngquantPath = @"C:\pngquant";
+    const string ghostScriptPath = @"C:\Program Files\gs\gs9.27\bin";
+
     public static void Convert(string pdf)
     {
         var tempPng = pdf.Replace(".pdf", "_temp.png");
@@ -24,6 +28,8 @@ public static class PdfToPng
             RedirectStandardError = true,
             CreateNoWindow = true
         };
+
+        EnvironmentHelpers.AppendToPath(pngquantPath);
         using var process = Process.Start(pngquant);
         process.WaitForExit();
         //skip-if-larger can result in 98 "not saved"
@@ -48,6 +54,8 @@ public static class PdfToPng
             RedirectStandardError = true,
             CreateNoWindow = true
         };
+
+        EnvironmentHelpers.AppendToPath(ghostScriptPath);
         using var process = Process.Start(gswin64);
         process.WaitForExit();
     }

@@ -178,6 +178,12 @@ public class DataLoaderTests :
         });
     }
 
+    [Fact]
+    public void ElectorateData_CurrentParty()
+    {
+        Assert.NotNull(DataLoader.Adelaide.CurrentParty);
+    }
+
     public DataLoaderTests(ITestOutputHelper output) :
         base(output)
     {

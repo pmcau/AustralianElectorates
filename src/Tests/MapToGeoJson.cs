@@ -3,6 +3,9 @@ using System.Diagnostics;
 
 public class MapToGeoJson
 {
+    // Change as needed if not in local path
+    const string ogr2ogrPath = @"C:\OSGeo4W64\bin";
+
     public static void ConvertShape(string targetFile, string shpFile, int? percent = null)
     {
         //mapshaper C:\Code\AustralianElectorates\Data\ElectoratesByState\act.geojson -simplify dp 20% -o format=geojson C:\Code\AustralianElectorates\Data\ElectoratesByState\temp.json
@@ -30,6 +33,8 @@ public class MapToGeoJson
             RedirectStandardError = true,
             UseShellExecute = false
         };
+
+        EnvironmentHelpers.AppendToPath(ogr2ogrPath);
         using var process = Process.Start(startInfo);
         process.WaitForExit();
         if (process.ExitCode != 0)
