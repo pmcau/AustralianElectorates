@@ -30,6 +30,7 @@ All information about electorates is available at [/Data/electorates.json](/Data
     * [Code](#code)
     * [Content/Data](#contentdata)
   * [Re-Generating the data](#re-generating-the-data)
+    * [Adding new elections](#adding-new-elections)
     * [ogr2ogr](#ogr2ogr)
     * [MapShaper](#mapshaper)
     * [GhostScript](#ghostscript)
@@ -37,7 +38,6 @@ All information about electorates is available at [/Data/electorates.json](/Data
   * [Purge history](#purge-history)
   * [Notes](#notes)
 <!-- endtoc -->
-
 
 
 ## Example content
@@ -83,14 +83,13 @@ All information about electorates is available at [/Data/electorates.json](/Data
 
 AEC publishes pdf electorate maps with some extra detail. eg:
 
- * Rivers
- * Main Roads
- * Neighboring electorates
+- Rivers
+- Main Roads
+- Neighboring electorates
 
 The size of these pdfs is significant. The smaller file variants are approx 600MB in total.
 
 To change these to a more manageable size and format, they have been converted to png and are now approx 30MB in total. Located in [/Data/DetailMaps](/Data/DetailMaps).
-
 
 ## GeoJson Maps
 
@@ -98,18 +97,16 @@ Maps in [geojson format](http://geojson.org/).
 
 The following grouping of maps exist:
 
- * Future (Next election) [/Data/Maps/Future](/Data/Maps/Future)
- * 2019 election [/Data/Maps/2019](/Data/Maps/2019)
- * 2016 election [/Data/Maps/2016](/Data/Maps/2016)
-
+- Future (Next election) [/Data/Maps/Future](/Data/Maps/Future)
+- 2019 election [/Data/Maps/2019](/Data/Maps/2019)
+- 2016 election [/Data/Maps/2016](/Data/Maps/2016)
 
 ### Structure
 
 Each of the above groupings have the following structure.
 
- * Australia and state "combined electorate" maps are at the root.
- * Specific electorate maps are located inside a subdirectory based on the state they exist in.
-
+- Australia and state "combined electorate" maps are at the root.
+- Specific electorate maps are located inside a subdirectory based on the state they exist in.
 
 ### Map variants
 
@@ -119,14 +116,13 @@ With the two options combined, there are 5 different options for each map.
 
 Below is the combinations for [Bass](https://www.aec.gov.au/profiles/tas/bass.htm)
 
-| Size  | File name                                                        | Simplification |
-| -----:| ---------------------------------------------------------------- | --------------:|
-| 2.8MB | [bass.geojson](/Data/Maps/Future/Electorates/bass.geojson)       | none           |
-| 231KB | [bass_20.geojson](/Data/Maps/Future/Electorates/bass_20.geojson) | 20%            |
-| 94KB  | [bass_10.geojson](/Data/Maps/Future/Electorates/bass_10.geojson) | 10%            |
-| 46KB  | [bass_05.geojson](/Data/Maps/Future/Electorates/bass_05.geojson) | 5%             |
-| 8KB   | [bass_01.geojson](/Data/Maps/Future/Electorates/bass_01.geojson) | 1%             |
-
+|  Size | File name                                                        | Simplification |
+| ----: | ---------------------------------------------------------------- | -------------: |
+| 2.8MB | [bass.geojson](/Data/Maps/Future/Electorates/bass.geojson)       |           none |
+| 231KB | [bass_20.geojson](/Data/Maps/Future/Electorates/bass_20.geojson) |            20% |
+|  94KB | [bass_10.geojson](/Data/Maps/Future/Electorates/bass_10.geojson) |            10% |
+|  46KB | [bass_05.geojson](/Data/Maps/Future/Electorates/bass_05.geojson) |             5% |
+|   8KB | [bass_01.geojson](/Data/Maps/Future/Electorates/bass_01.geojson) |             1% |
 
 #### Simplification
 
@@ -136,21 +132,19 @@ Simplification uses [MapShaper simplify option](https://github.com/mbloch/mapsha
 
 The level of simplification is represented as a percent number. 20, 10, 5, and 1. representing 20%, 10%, 5%, and 1%. The smaller the number the smaller the file, but with the loss of some accuracy.
 
-
 ## NuGets
 
 The NuGets contain a static copy of all the electorate data. This data is embedded as resources inside the assembly. No network calls are done by the assembly. To get the latests version of the data do a NuGet update. There are several options to help keep a NuGet update:
 
- * [Dependabot](https://dependabot.com/): Creates pull requests to keep your dependencies secure and up-to-date.
- * [Using NuGet wildcards](https://docs.microsoft.com/en-us/nuget/reference/package-versioning#version-ranges-and-wildcards).
- * [Libraries.io](https://libraries.io/): Supports subscribing to NuGet package updates.
+- [Dependabot](https://dependabot.com/): Creates pull requests to keep your dependencies secure and up-to-date.
+- [Using NuGet wildcards](https://docs.microsoft.com/en-us/nuget/reference/package-versioning#version-ranges-and-wildcards).
+- [Libraries.io](https://libraries.io/): Supports subscribing to NuGet package updates.
 
 https://nuget.org/packages/AustralianElectorates/ [![NuGet Status](https://img.shields.io/nuget/v/AustralianElectorates.svg?cacheSeconds=86400)](https://www.nuget.org/packages/AustralianElectorates/)
 
 https://nuget.org/packages/AustralianElectorates.Bogus/ [![NuGet Status](https://img.shields.io/nuget/v/AustralianElectorates.Bogus.svg?cacheSeconds=86400)](https://www.nuget.org/packages/AustralianElectorates.Bogus/)
 
 https://nuget.org/packages/AustralianElectorates.DetailMaps/ [![NuGet Status](https://img.shields.io/nuget/v/AustralianElectorates.DetailMaps.svg?cacheSeconds=86400)](https://www.nuget.org/packages/AustralianElectorates.DetailMaps/)
-
 
 ## Usage
 
@@ -202,7 +196,6 @@ DataLoader.Export(directory);
 <sup>[snippet source](/src/Tests/Snippets.cs#L19-L61) / [anchor](#snippet-usage)</sup>
 <!-- endsnippet -->
 
-
 ## Bogus Usage
 
 <!-- snippet: usagebogus -->
@@ -220,7 +213,6 @@ var targetInstance = faker.Generate();
 <sup>[snippet source](/src/Tests/Snippets.cs#L75-L84) / [anchor](#snippet-usagebogus)</sup>
 <!-- endsnippet -->
 
-
 ## DetailMaps Usage
 
 <!-- snippet: usageDetailMaps -->
@@ -231,9 +223,7 @@ var pathToPng = DetailMaps.MapForElectorate("Bass");
 <sup>[snippet source](/src/Tests/Snippets.cs#L67-L69) / [anchor](#snippet-usagedetailmaps)</sup>
 <!-- endsnippet -->
 
-
 ## Copyright
-
 
 ### Code
 
@@ -259,7 +249,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-
 ### Content/Data
 
 The content/data that is rendered (all files under [/Data/](/Data/)) is sourced from the [Australian Electoral Commission (AEC)](https://www.aec.gov.au/) and remains under the [AEC Copyright](https://www.aec.gov.au/footer/Copyright.htm).
@@ -273,20 +262,51 @@ The Data (Commonwealth Electoral Boundaries (various years)) has been used in Au
 
 Limited End-user licence provided by the Australian Electoral Commission: You may use AustralianElectorates to load, display, print and reproduce views obtained from the Data, retaining this notice, for your personal use, or use within your organisation only.
 
-
 ## Re-Generating the data
 
 Note: The below are only required by the maintainers and contributors of this project. They are not required when consuming the NuGet package.
 
 Some tools are required.
 
+### Adding new elections
+
+Elections are currently added manually as they are declared.
+
+<!-- snippet: elections -->
+<a id='snippet-elections'/></a>
+```cs
+public static IReadOnlyList<Election> Elections
+{
+    get
+    {
+        return new List<Election>
+        {
+            new Election
+            {
+                Parliament = 45,
+                Year = 2016,
+                Date = new DateTime(2016, 07, 02, 0, 0, 0),
+                Electorates = Electorates.Where(electorate => electorate.Exist2016).ToList()
+            },
+            new Election
+            {
+                Parliament = 46,
+                Year = 2019,
+                Date = new DateTime(2019, 05, 18, 0, 0, 0),
+                Electorates = Electorates.Where(electorate => electorate.Exist2019).ToList()
+            }
+        };
+    }
+}
+```
+<sup>[snippet source](/src/AustralianElectorates/DataLoader.cs#L90-L114) / [anchor](#snippet-elections)</sup>
+<!-- endsnippet -->
 
 ### ogr2ogr
 
 Part of [Geospatial Data Abstraction Library (GDAL)](https://www.gdal.org/)
 
- * Download https://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries
-
+- Download https://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries
 
 ### MapShaper
 
@@ -294,22 +314,19 @@ Part of [Geospatial Data Abstraction Library (GDAL)](https://www.gdal.org/)
 
 Installation:
 
-* Install [Node](https://nodejs.org/)
-* [Install MapShaper globally](https://github.com/mbloch/mapshaper#installation) `npm install -g mapshaper`
-* Ensure `C:\Users\USER\AppData\Roaming\npm` is in path
+- Install [Node](https://nodejs.org/)
+- [Install MapShaper globally](https://github.com/mbloch/mapshaper#installation) `npm install -g mapshaper`
+- Ensure `C:\Users\USER\AppData\Roaming\npm` is in path
 
 https://github.com/mbloch/mapshaper/wiki/Command-Reference
-
 
 ### GhostScript
 
 C:\Program Files\gs\gs9.27\bin\
 
-
 ### pngquant
 
 https://pngquant.org/
-
 
 ## Purge history
 
@@ -328,7 +345,6 @@ git push -f origin master
 git gc --aggressive --prune=all
 ```
 
-
 ## Notes
 
 Media feed ftp://mediafeed.aec.gov.au/24310/Standard/Verbose/
@@ -337,11 +353,9 @@ Media feed ftp://mediafeed.aec.gov.au/24310/Standard/Verbose/
 
 From: https://www.aec.gov.au/media/mediafeed/files/media-feed-user-guide-v4.pdf
 
-
 ## Release Notes
 
 See [closed milestones](../../milestones?state=closed).
-
 
 ## Icon
 
