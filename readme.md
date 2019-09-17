@@ -30,6 +30,7 @@ All information about electorates is available at [/Data/electorates.json](/Data
     * [Code](#code)
     * [Content/Data](#contentdata)
   * [Re-Generating the data](#re-generating-the-data)
+    * [Adding new elections](#adding-new-elections)
     * [ogr2ogr](#ogr2ogr)
     * [MapShaper](#mapshaper)
     * [GhostScript](#ghostscript)
@@ -280,6 +281,41 @@ Note: The below are only required by the maintainers and contributors of this pr
 
 Some tools are required.
 
+### Adding new elections
+
+Elections are currently added manually as they are declared.
+
+
+
+<!-- snippet: elections -->
+<a id='snippet-elections'/></a>
+```cs
+public static IReadOnlyList<Election> Elections
+{
+    get
+    {
+        return new List<Election>
+        {
+            new Election
+            {
+                Parliament = 45,
+                Year = 2016,
+                Date = new DateTime(2016, 07, 02, 0, 0, 0),
+                Electorates = Electorates.Where(electorate => electorate.Exist2016).ToList()
+            },
+            new Election
+            {
+                Parliament = 46,
+                Year = 2019,
+                Date = new DateTime(2019, 05, 18, 0, 0, 0),
+                Electorates = Electorates.Where(electorate => electorate.Exist2019).ToList()
+            }
+        };
+    }
+}
+```
+<sup>[snippet source](/src/AustralianElectorates/DataLoader.cs#L90-L114) / [anchor](#snippet-elections)</sup>
+<!-- endsnippet -->
 
 ### ogr2ogr
 

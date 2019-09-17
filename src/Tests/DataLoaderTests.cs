@@ -184,6 +184,34 @@ public class DataLoaderTests :
         Assert.NotNull(DataLoader.Adelaide.CurrentParty);
     }
 
+    [Fact]
+    public void Elections()
+    {
+        ObjectApprover.Verify(DataLoader.Elections.Select(election => new
+        {
+            election.Parliament,
+            election.Year,
+            election.Date,
+            electorates = election.Electorates.Select(electorate => electorate.Name)
+        }));
+    }
+
+    [Fact]
+    public void FindElection()
+    {
+        var election = DataLoader.FindElection(45);
+        Assert.NotNull(election);
+    }
+
+    [Fact]
+    public void TryFindElection_not_found()
+    {
+        var parliament = 0;
+        Assert.False(DataLoader.TryFindElection(parliament, out _));
+        var exception = Assert.Throws<ElectionNotFoundException>(() => DataLoader.FindElection(parliament));
+        ObjectApprover.Verify(new { exception.Parliament, exception.Message });
+    }
+
     public DataLoaderTests(ITestOutputHelper output) :
         base(output)
     {

@@ -85,11 +85,60 @@ namespace AustralianElectorates
         public static IReadOnlyList<Member> AllCurrentMembers { get; }
 
         public static IReadOnlyList<Electorate> Electorates { get; }
+
+        //TODO: scrape from here instead, will need to change from the electorate.ExistNNNN pattern: https://www.aec.gov.au/Elections/Federal_Elections/
+        #region elections
+        public static IReadOnlyList<Election> Elections
+        {
+            get
+            {
+                return new List<Election>
+                {
+                    new Election
+                    {
+                        Parliament = 45,
+                        Year = 2016,
+                        Date = new DateTime(2016, 07, 02, 0, 0, 0),
+                        Electorates = Electorates.Where(electorate => electorate.Exist2016).ToList()
+                    },
+                    new Election
+                    {
+                        Parliament = 46,
+                        Year = 2019,
+                        Date = new DateTime(2019, 05, 18, 0, 0, 0),
+                        Electorates = Electorates.Where(electorate => electorate.Exist2019).ToList()
+                    }
+                };
+            }
+        }
+        #endregion
+
         public static IReadOnlyList<Party> Parties { get; }
         public static IReadOnlyList<IParty> PartiesAndBranches { get; }
         public static MapCollection Maps2016 { get; } = new MapCollection("2016");
         public static MapCollection Maps2019 { get; } = new MapCollection("2019");
         public static MapCollection MapsFuture { get; } = new MapCollection("Future");
+
+        public static Election FindElection(int parliament)
+        {
+            if (TryFindElection(parliament, out var election))
+            {
+                return election;
+            }
+
+            throw new ElectionNotFoundException(parliament);
+        }
+
+        public static bool TryFindElection(int parliament, out Election election)
+        {
+            election = Elections.SingleOrDefault(x => x.Parliament == parliament);
+            if (election != null)
+            {
+                return true;
+            }
+
+            return false;
+        }
 
         public static Electorate FindElectorate(string name)
         {

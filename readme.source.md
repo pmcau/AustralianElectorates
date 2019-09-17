@@ -185,6 +185,13 @@ Note: The below are only required by the maintainers and contributors of this pr
 
 Some tools are required.
 
+### Adding new elections
+
+Elections are currently added manually as they are declared.
+
+
+
+snippet: elections
 
 ### ogr2ogr
 
