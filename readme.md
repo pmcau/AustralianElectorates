@@ -43,7 +43,9 @@ All information about electorates is available at [/Data/electorates.json](/Data
 
 ## Example content
 
-```json
+<!-- snippet: Snippets.ElectoratesSampleJson.approved.txt -->
+<a id='snippet-Snippets.ElectoratesSampleJson.approved.txt'/></a>
+```txt
 [
   {
     "Name": "Canberra",
@@ -58,27 +60,46 @@ All information about electorates is available at [/Data/electorates.json](/Data
     "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs",
     "ProductsAndIndustry": "Mainly residential with tourism, retail and some light industry at Fyshwick and Beard",
     "NameDerivation": "A locality name derived from an Aboriginal word which is held to mean 'meeting place'.",
-    "Members": [
-      {
+    "Enrollment": 95348,
+    "TwoCandidatePreferred": {
+      "Elected": {
         "FamilyName": "Payne",
         "GivenNames": "Alicia",
-        "Begin": 2019,
+        "PartyCode": "ALP",
+        "Votes": 57961,
+        "Swing": 4.14,
+        "PartyId": 200
+      },
+      "Other": {
+        "FamilyName": "Zaki",
+        "GivenNames": "Mina",
+        "PartyCode": "LP",
+        "Votes": 28442,
+        "Swing": -4.14,
+        "PartyId": 177
+      }
+    },
+    "Members": [
+      {
         "PartyCodes": [
           "ALP"
         ],
         "PartyIds": [
           200
-        ]
+        ],
+        "FamilyName": "Payne",
+        "GivenNames": "Alicia",
+        "Begin": 2019
       },
       {
-        "FamilyName": "Brodtmann",
-        "GivenNames": "G",
-        "Begin": 2010,
-        "End": 2019,
         "PartyCodes": [
           "ALP"
         ],
+        "PartyIds": [
 ```
+<sup>[snippet source](/src/Tests/Snippets.ElectoratesSampleJson.approved.txt#L1-L50) / [anchor](#snippet-Snippets.ElectoratesSampleJson.approved.txt)</sup>
+<!-- endsnippet -->
+
 
 ## Detail Maps
 
@@ -200,7 +221,7 @@ var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
 Directory.CreateDirectory(directory);
 DataLoader.Export(directory);
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L19-L61) / [anchor](#snippet-usage)</sup>
+<sup>[snippet source](/src/Tests/Snippets.cs#L20-L62) / [anchor](#snippet-usage)</sup>
 <!-- endsnippet -->
 
 
@@ -218,7 +239,7 @@ var faker = new Faker<Target>()
     .RuleFor(u => u.RandomMemberName, (f, u) => f.AustralianElectorates().MemberName());
 var targetInstance = faker.Generate();
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L75-L84) / [anchor](#snippet-usagebogus)</sup>
+<sup>[snippet source](/src/Tests/Snippets.cs#L82-L91) / [anchor](#snippet-usagebogus)</sup>
 <!-- endsnippet -->
 
 
@@ -229,7 +250,7 @@ var targetInstance = faker.Generate();
 ```cs
 var pathToPng = DetailMaps.MapForElectorate("Bass");
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L67-L69) / [anchor](#snippet-usagedetailmaps)</sup>
+<sup>[snippet source](/src/Tests/Snippets.cs#L68-L70) / [anchor](#snippet-usagedetailmaps)</sup>
 <!-- endsnippet -->
 
 

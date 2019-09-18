@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using ApprovalTests;
 using AustralianElectorates;
 using AustralianElectorates.Bogus;
 using Bogus;
@@ -67,6 +68,12 @@ public class Snippets :
         #region usageDetailMaps
         var pathToPng = DetailMaps.MapForElectorate("Bass");
         #endregion
+    }
+
+    [Fact]
+    public void ElectoratesSampleJson()
+    {
+         Approvals.Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.ElectoratesJsonPath).Take(50)));
     }
 
     [Fact]

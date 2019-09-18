@@ -209,9 +209,8 @@ public class Sync :
             }
         }
 
-        var combine = Path.Combine(DataLocations.DataPath, "electorates.json");
-        File.Delete(combine);
-        JsonSerializerService.Serialize(electorates, combine);
+        File.Delete(DataLocations.ElectoratesJsonPath);
+        JsonSerializerService.Serialize(electorates, DataLocations.ElectoratesJsonPath);
         return electorates;
     }
 
