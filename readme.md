@@ -17,7 +17,9 @@ All information about electorates is available at [/Data/electorates.json](/Data
 <!-- toc -->
 ## Contents
 
-  * [Example content](#example-content)
+  * [Electorates](#electorates)
+  * [Localities](#localities)
+  * [Parties](#parties)
   * [Detail Maps](#detail-maps)
   * [GeoJson Maps](#geojson-maps)
     * [Structure](#structure)
@@ -41,7 +43,11 @@ All information about electorates is available at [/Data/electorates.json](/Data
 
 
 
-## Example content
+## Electorates
+
+Location: [/Data/electorates.json](/Data/electorates.json)
+
+Sample:
 
 <!-- snippet: Snippets.ElectoratesSampleJson.approved.txt -->
 <a id='snippet-Snippets.ElectoratesSampleJson.approved.txt'/></a>
@@ -81,23 +87,106 @@ All information about electorates is available at [/Data/electorates.json](/Data
     },
     "Members": [
       {
+        "FamilyName": "Payne",
+        "GivenNames": "Alicia",
+        "Begin": 2019,
         "PartyCodes": [
           "ALP"
         ],
         "PartyIds": [
           200
-        ],
-        "FamilyName": "Payne",
-        "GivenNames": "Alicia",
-        "Begin": 2019
+        ]
       },
       {
-        "PartyCodes": [
-          "ALP"
-        ],
-        "PartyIds": [
+        "FamilyName": "Brodtmann",
+        "GivenNames": "G",
+        "Begin": 2010,
+        "End": 2019,
 ```
 <sup>[snippet source](/src/Tests/Snippets.ElectoratesSampleJson.approved.txt#L1-L50) / [anchor](#snippet-Snippets.ElectoratesSampleJson.approved.txt)</sup>
+<!-- endsnippet -->
+
+
+## Localities
+
+Location: [/Data/Localities.json](/Data/Localities.json)
+
+Sample:
+
+<!-- snippet: Snippets.LocalitiesSampleJson.approved.txt -->
+<a id='snippet-Snippets.LocalitiesSampleJson.approved.txt'/></a>
+```txt
+[
+  {
+    "Place": "Acton",
+    "Postcode": 2601,
+    "Electorate": "CANBERRA"
+  },
+  {
+    "Place": "Canberra Central",
+    "Postcode": 2601,
+    "Electorate": "CANBERRA"
+  },
+  {
+    "Place": "Canberra City",
+    "Postcode": 2601,
+    "Electorate": "CANBERRA"
+  },
+  {
+    "Place": "Ainslie",
+    "Postcode": 2602,
+    "Electorate": "CANBERRA"
+  },
+```
+<sup>[snippet source](/src/Tests/Snippets.LocalitiesSampleJson.approved.txt#L1-L21) / [anchor](#snippet-Snippets.LocalitiesSampleJson.approved.txt)</sup>
+<!-- endsnippet -->
+
+
+## Parties
+
+Location: [/Data/parties.json](/Data/parties.json)
+
+Sample:
+
+<!-- snippet: Snippets.PartiesSampleJson.approved.txt -->
+<a id='snippet-Snippets.PartiesSampleJson.approved.txt'/></a>
+```txt
+[
+  {
+    "Id": 1336,
+    "Name": "#Sustainable Australia",
+    "Code": "Sustainable Australia",
+    "Abbreviation": "Sustainable Australia",
+    "RegisterDate": "23 September 2010",
+    "AmendmentDate": "23 September 2010",
+    "Address": "PO Box 575\nCROWS NEST NSW 1585",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Bourke",
+      "GivenNames": "William",
+      "Address": {
+        "Line1": "Suite 15, 20 Burlington Street",
+        "Suburb": "CROWS NEST",
+        "State": "NSW",
+        "Postcode": 2065
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Haydon",
+        "GivenNames": "John",
+        "Address": {
+          "Line1": "3/6 Hall Street",
+          "Suburb": "Lyneham",
+          "State": "ACT",
+          "Postcode": 2602
+        }
+      }
+    ]
+  },
+```
+<sup>[snippet source](/src/Tests/Snippets.PartiesSampleJson.approved.txt#L1-L34) / [anchor](#snippet-Snippets.PartiesSampleJson.approved.txt)</sup>
 <!-- endsnippet -->
 
 
@@ -239,7 +328,7 @@ var faker = new Faker<Target>()
     .RuleFor(u => u.RandomMemberName, (f, u) => f.AustralianElectorates().MemberName());
 var targetInstance = faker.Generate();
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L82-L91) / [anchor](#snippet-usagebogus)</sup>
+<sup>[snippet source](/src/Tests/Snippets.cs#L94-L103) / [anchor](#snippet-usagebogus)</sup>
 <!-- endsnippet -->
 
 

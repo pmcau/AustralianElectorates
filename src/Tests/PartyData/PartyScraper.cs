@@ -35,9 +35,8 @@ public static class PartyScraper
                 parties.Add(party);
             }
 
-            var combine = Path.Combine(DataLocations.DataPath, "parties.json");
-            File.Delete(combine);
-            JsonSerializerService.Serialize(parties, combine);
+            File.Delete(DataLocations.PartiesJsonPath);
+            JsonSerializerService.Serialize(parties, DataLocations.PartiesJsonPath);
             return parties;
         }
         catch (Exception exception)

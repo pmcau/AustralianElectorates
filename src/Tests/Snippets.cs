@@ -77,6 +77,18 @@ public class Snippets :
     }
 
     [Fact]
+    public void LocalitiesSampleJson()
+    {
+         Approvals.Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.LocalitiesPath).Take(21)));
+    }
+
+    [Fact]
+    public void PartiesSampleJson()
+    {
+         Approvals.Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.PartiesJsonPath).Take(34)));
+    }
+
+    [Fact]
     public void Bogus()
     {
         #region usagebogus

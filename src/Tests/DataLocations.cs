@@ -9,6 +9,8 @@ public static class DataLocations
         Directory.CreateDirectory(TempPath);
         DataPath = Path.GetFullPath(Path.Combine(RootDir, "Data"));
         ElectoratesJsonPath = Path.Combine(DataPath, "electorates.json");
+
+        PartiesJsonPath = Path.Combine(DataPath, "parties.json");
         LocalitiesPath = Path.GetFullPath(Path.Combine(DataPath, "Localities.json"));
         Directory.CreateDirectory(DataPath);
         MapsPath = Path.GetFullPath(Path.Combine(DataPath, "Maps"));
@@ -30,6 +32,8 @@ public static class DataLocations
         MapsCuratedZipPath = Path.GetFullPath(Path.Combine(DataPath, "MapsCurated.zip"));
         FutureAustraliaJsonPath = Path.GetFullPath(Path.Combine(MapsFuturePath, "australia.geojson"));
     }
+
+    public static string PartiesJsonPath;
 
     public static string ElectoratesJsonPath;
     public static string LocalitiesPath;

@@ -10,9 +10,31 @@ All information about electorates is available at [/Data/electorates.json](/Data
 toc
 
 
-## Example content
+## Electorates
+
+Location: [/Data/electorates.json](/Data/electorates.json)
+
+Sample:
 
 snippet: Snippets.ElectoratesSampleJson.approved.txt
+
+
+## Localities
+
+Location: [/Data/Localities.json](/Data/Localities.json)
+
+Sample:
+
+snippet: Snippets.LocalitiesSampleJson.approved.txt
+
+
+## Parties
+
+Location: [/Data/parties.json](/Data/parties.json)
+
+Sample:
+
+snippet: Snippets.PartiesSampleJson.approved.txt
 
 
 ## Detail Maps

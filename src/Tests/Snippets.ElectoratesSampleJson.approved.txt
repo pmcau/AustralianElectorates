@@ -33,18 +33,18 @@
     },
     "Members": [
       {
+        "FamilyName": "Payne",
+        "GivenNames": "Alicia",
+        "Begin": 2019,
         "PartyCodes": [
           "ALP"
         ],
         "PartyIds": [
           200
-        ],
-        "FamilyName": "Payne",
-        "GivenNames": "Alicia",
-        "Begin": 2019
+        ]
       },
       {
-        "PartyCodes": [
-          "ALP"
-        ],
-        "PartyIds": [
+        "FamilyName": "Brodtmann",
+        "GivenNames": "G",
+        "Begin": 2010,
+        "End": 2019,

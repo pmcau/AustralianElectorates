@@ -21,21 +21,21 @@ namespace AustralianElectorates
         [DataMember]
         public Electorate Electorate { get; internal set; } = null!;
 
-        [DataMember(Name = nameof(PartyCodes))]
+        [DataMember(Name = nameof(PartyCodes), Order = 100)]
         internal List<string> partyCodes = new List<string>();
         public IReadOnlyList<string> PartyCodes
         {
             get => partyCodes;
         }
 
-        [DataMember(Name = nameof(PartyIds),EmitDefaultValue = false)]
+        [DataMember(Name = nameof(PartyIds),EmitDefaultValue = false, Order = 100)]
         internal List<ushort> partyIds = new List<ushort>();
         public IReadOnlyList<ushort> PartyIds
         {
             get => partyIds;
         }
 
-        [DataMember(Name = nameof(Parties))]
+        [DataMember(Name = nameof(Parties), Order = 100)]
         internal List<IParty> parties = new List<IParty>();
         public IReadOnlyList<IParty> Parties
         {

@@ -21,10 +21,8 @@ public class Sync :
 
         var parties = await PartyScraper.Run();
 
-
         await Get2016();
         await Get2019();
-
 
         File.Copy(DataLocations.Australia2019JsonPath, DataLocations.FutureAustraliaJsonPath);
         await StatesToCountryDownloader.RunFuture();

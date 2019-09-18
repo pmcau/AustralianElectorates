@@ -34,7 +34,7 @@ namespace AustralianElectorates
         [DataMember]
         public Officer Officer { get; internal set; } = null!;
 
-        [DataMember(Name = nameof(DeputyOfficers))]
+        [DataMember(Name = nameof(DeputyOfficers), Order = 100)]
         internal List<Officer> deputyOfficers = new List<Officer>();
 
         public IReadOnlyList<Officer> DeputyOfficers
@@ -42,7 +42,7 @@ namespace AustralianElectorates
             get => deputyOfficers;
         }
 
-        [DataMember(Name = nameof(Branches))]
+        [DataMember(Name = nameof(Branches), Order = 100)]
         internal List<Branch> branches = new List<Branch>();
 
         public IReadOnlyList<Branch> Branches

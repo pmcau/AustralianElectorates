@@ -1,0 +1,21 @@
+﻿[
+  {
+    "Place": "Acton",
+    "Postcode": 2601,
+    "Electorate": "CANBERRA"
+  },
+  {
+    "Place": "Canberra Central",
+    "Postcode": 2601,
+    "Electorate": "CANBERRA"
+  },
+  {
+    "Place": "Canberra City",
+    "Postcode": 2601,
+    "Electorate": "CANBERRA"
+  },
+  {
+    "Place": "Ainslie",
+    "Postcode": 2602,
+    "Electorate": "CANBERRA"
+  },
