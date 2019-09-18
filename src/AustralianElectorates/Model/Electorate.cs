@@ -48,12 +48,6 @@ namespace AustralianElectorates
         public string NameDerivation { get; internal set; } = null!;
 
         [DataMember]
-        public List<Member> Members { get; internal set; } = null!;
-
-        [DataMember]
-        public List<Location> Locations { get; internal set; } = null!;
-
-        [DataMember]
         public uint? Enrollment { get; internal set; }
 
         [DataMember]
@@ -64,6 +58,20 @@ namespace AustralianElectorates
 
         [DataMember]
         public IParty CurrentParty { get; set; } = null!;
+
+        [DataMember(Name = nameof(Members), Order = 100)]
+        internal List<Member> members  = null!;
+        public IReadOnlyList<Member> Members
+        {
+            get => members;
+        }
+
+        [DataMember(Name = nameof(Locations), Order = 100)]
+        internal List<Location> locations  = null!;
+        public IReadOnlyList<Location> Locations
+        {
+            get => locations;
+        }
 
         public static string GetShortName(string name)
         {

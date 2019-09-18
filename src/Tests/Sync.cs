@@ -204,7 +204,7 @@ public class Sync :
                 electorate.Exist2016 = existIn2016;
                 electorate.Exist2019 = existIn2019;
                 electorate.ExistInFuture = existInFuture;
-                electorate.Locations = SelectLocations(electorateName,localityData).ToList();
+                electorate.locations = SelectLocations(electorateName,localityData).ToList();
                 electorates.Add(electorate);
             }
         }

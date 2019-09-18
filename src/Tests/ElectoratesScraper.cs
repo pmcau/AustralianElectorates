@@ -129,7 +129,7 @@ public static class ElectoratesScraper
                 }
             }
 
-            electorate.Members = electorateMembers;
+            electorate.members = electorateMembers;
             electorate.DemographicRating = values["Demographic Rating"].TrimmedInnerHtml();
             electorate.ProductsAndIndustry = values["Products/Industries of the Area"].TrimmedInnerHtml();
 

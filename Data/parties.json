@@ -896,50 +896,6 @@
     }
   },
   {
-    "DeputyOfficers": [
-      {
-        "Title": "Mr",
-        "FamilyName": "Crespel",
-        "GivenNames": "Francois",
-        "Address": {
-          "Line1": "16 Gardere Avenue",
-          "Suburb": "CURL CURL",
-          "State": "NSW",
-          "Postcode": 2096
-        }
-      },
-      {
-        "Title": "Ms",
-        "FamilyName": "Der Sarkissian",
-        "GivenNames": "Nea",
-        "Address": {
-          "Line1": "70 Carrington Parade",
-          "Suburb": "CURL CURL",
-          "State": "NSW",
-          "Postcode": 2096
-        }
-      }
-    ],
-    "Id": 1179,
-    "Name": "Climate Action! Immigration Action! Accountable Politicians!",
-    "Code": "Climate Action! Immigration Action! Accountable Politicians!",
-    "Abbreviation": "Climate Action! Immigration Action! Accountable Politicians!",
-    "RegisterDate": "31 August 2007",
-    "AmendmentDate": "31 August 2007",
-    "Address": "70 Carrington Pde\nCURL CURL NSW 2096",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Der Sarkissian",
-      "GivenNames": "Berge",
-      "Address": {
-        "Line1": "70 Carrington Parade",
-        "Suburb": "CURL CURL",
-        "State": "NSW",
-        "Postcode": 2096
-      }
-    }
-  },
-  {
     "Id": 26,
     "Name": "Country Liberals (Northern Territory)",
     "Code": "Country Liberals (NT)",
@@ -1598,6 +1554,50 @@
         "Suburb": "ALBION",
         "State": "QLD",
         "Postcode": 4010
+      }
+    }
+  },
+  {
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Crespel",
+        "GivenNames": "Francois",
+        "Address": {
+          "Line1": "16 Gardere Avenue",
+          "Suburb": "CURL CURL",
+          "State": "NSW",
+          "Postcode": 2096
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Der Sarkissian",
+        "GivenNames": "Nea",
+        "Address": {
+          "Line1": "70 Carrington Parade",
+          "Suburb": "CURL CURL",
+          "State": "NSW",
+          "Postcode": 2096
+        }
+      }
+    ],
+    "Id": 1179,
+    "Name": "Online Direct Democracy — (Empowering the People!)",
+    "Code": "Online Direct Democracy — (Empowering the People!)",
+    "Abbreviation": "Online Direct Democracy — (Empowering the People!)",
+    "RegisterDate": "31 August 2007",
+    "AmendmentDate": "31 August 2007",
+    "Address": "70 Carrington Pde\nCURL CURL NSW 2096",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Der Sarkissian",
+      "GivenNames": "Berge",
+      "Address": {
+        "Line1": "70 Carrington Parade",
+        "Suburb": "CURL CURL",
+        "State": "NSW",
+        "Postcode": 2096
       }
     }
   },
