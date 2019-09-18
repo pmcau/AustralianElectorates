@@ -16,13 +16,13 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
     <PackageReference Include="XunitLogger" Version="3.0.6" />
+    <PackageReference Include="Xunit.ApprovalTests" Version="3.0.6" />
     <ProjectReference Include="..\AustralianElectorates.Bogus\AustralianElectorates.Bogus.csproj" />
     <ProjectReference Include="..\AustralianElectorates.DetailMaps\AustralianElectorates.DetailMaps.csproj" />
     <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
     <Reference Include="System.IO.Compression" />
     <PackageReference Include="ProjectDefaults" Version="1.0.24" PrivateAssets="All" />
-  </ItemGroup>
-  <ItemGroup>
+
     <None Update="MediaFeed\aec-mediafeed-results-standard-verbose-24310.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

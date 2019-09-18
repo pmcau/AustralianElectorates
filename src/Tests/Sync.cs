@@ -10,7 +10,7 @@ using Xunit;
 using Xunit.Abstractions;
 
 public class Sync :
-    XunitLoggingBase
+    XunitApprovalBase
 {
     [Fact]
     [Trait("Category", "Integration")]

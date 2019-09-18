@@ -7,7 +7,7 @@ using Xunit;
 using Xunit.Abstractions;
 
 public class DataLoaderTests :
-    XunitLoggingBase
+    XunitApprovalBase
 {
     [Fact]
     public void Electorates()

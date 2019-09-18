@@ -3,7 +3,7 @@ using Xunit;
 using Xunit.Abstractions;
 
 public class MediaFeedTests :
-    XunitLoggingBase
+    XunitApprovalBase
 {
     [Fact]
     public void Run()

@@ -11,7 +11,7 @@ using Xunit.Abstractions;
 // ReSharper disable UnusedVariable
 
 public class Snippets :
-    XunitLoggingBase
+    XunitApprovalBase
 {
     [Fact]
     public void Foo()

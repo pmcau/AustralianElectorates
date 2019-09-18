@@ -2,7 +2,7 @@
 using Xunit.Abstractions;
 
 public class PdfToPngTests :
-    XunitLoggingBase
+    XunitApprovalBase
 {
     [Fact]
     [Trait("Category", "Integration")]

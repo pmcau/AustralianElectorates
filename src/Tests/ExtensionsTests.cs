@@ -2,7 +2,7 @@
 using Xunit.Abstractions;
 
 public class ExtensionsTests :
-    XunitLoggingBase
+    XunitApprovalBase
 {
     [Theory]
     [InlineData("McLACHLAN, Craig Steven", "McLachlan, Craig Steven")]

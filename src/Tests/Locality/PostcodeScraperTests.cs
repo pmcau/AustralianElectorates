@@ -6,7 +6,7 @@ using Xunit;
 using Xunit.Abstractions;
 
 public class PostcodeScraperTests :
-    XunitLoggingBase
+    XunitApprovalBase
 {
     [Fact]
     [Trait("Category", "Integration")]

@@ -4,7 +4,7 @@ using Xunit;
 using Xunit.Abstractions;
 
 public class ElectoratesScraperTests :
-    XunitLoggingBase
+    XunitApprovalBase
 {
     [Fact]
     [Trait("Category", "Integration")]

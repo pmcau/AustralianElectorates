@@ -5,7 +5,7 @@ using Xunit;
 using Xunit.Abstractions;
 
 public class GeoJsonExtensionsTests :
-    XunitLoggingBase
+    XunitApprovalBase
 {
     [Fact]
     public void BoundingBox()
