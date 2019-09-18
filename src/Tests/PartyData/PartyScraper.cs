@@ -190,12 +190,14 @@ public static class PartyScraper
             throw new Exception();
         }
 
+        // ReSharper disable once SuggestVarOrType_BuiltInTypes
         string? line2 = deputyOfficerAddress.Line2;
         if (string.IsNullOrWhiteSpace(line2))
         {
             line2 = null;
         }
 
+        // ReSharper disable once SuggestVarOrType_BuiltInTypes
         string? line3 = deputyOfficerAddress.Line3;
         if (string.IsNullOrWhiteSpace(line3))
         {
