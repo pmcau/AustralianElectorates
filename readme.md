@@ -400,31 +400,25 @@ Elections are currently added manually as they are declared.
 <!-- snippet: elections -->
 <a id='snippet-elections'/></a>
 ```cs
-public static IReadOnlyList<Election> Elections
+return new List<Election>
 {
-    get
+    new Election
     {
-        return new List<Election>
-        {
-            new Election
-            {
-                Parliament = 45,
-                Year = 2016,
-                Date = new DateTime(2016, 07, 02, 0, 0, 0),
-                Electorates = Electorates.Where(electorate => electorate.Exist2016).ToList()
-            },
-            new Election
-            {
-                Parliament = 46,
-                Year = 2019,
-                Date = new DateTime(2019, 05, 18, 0, 0, 0),
-                Electorates = Electorates.Where(electorate => electorate.Exist2019).ToList()
-            }
-        };
+        Parliament = 45,
+        Year = 2016,
+        Date = new DateTime(2016, 07, 02, 0, 0, 0),
+        Electorates = Electorates.Where(electorate => electorate.Exist2016).ToList()
+    },
+    new Election
+    {
+        Parliament = 46,
+        Year = 2019,
+        Date = new DateTime(2019, 05, 18, 0, 0, 0),
+        Electorates = Electorates.Where(electorate => electorate.Exist2019).ToList()
     }
-}
+};
 ```
-<sup>[snippet source](/src/AustralianElectorates/DataLoader.cs#L90-L114) / [anchor](#snippet-elections)</sup>
+<sup>[snippet source](/src/AustralianElectorates/DataLoader.cs#L96-L116) / [anchor](#snippet-elections)</sup>
 <!-- endsnippet -->
 
 ### ogr2ogr

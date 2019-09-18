@@ -79,6 +79,7 @@ namespace AustralianElectorates
                 .Select(x => x.Members.First())
                 .ToList();
             InitNamed();
+            Elections = BuildElections();
         }
 
         public static IReadOnlyList<Member> AllMembers { get; }
@@ -86,32 +87,34 @@ namespace AustralianElectorates
 
         public static IReadOnlyList<Electorate> Electorates { get; }
 
-        //TODO: scrape from here instead, will need to change from the electorate.ExistNNNN pattern: https://www.aec.gov.au/Elections/Federal_Elections/
-        #region elections
-        public static IReadOnlyList<Election> Elections
+
+        public static IReadOnlyList<Election> Elections { get; }
+
+        static List<Election> BuildElections()
         {
-            get
+            //TODO: scrape from here instead, will need to change from the electorate.ExistNNNN pattern: https://www.aec.gov.au/Elections/Federal_Elections/
+            #region elections
+
+            return new List<Election>
             {
-                return new List<Election>
+                new Election
                 {
-                    new Election
-                    {
-                        Parliament = 45,
-                        Year = 2016,
-                        Date = new DateTime(2016, 07, 02, 0, 0, 0),
-                        Electorates = Electorates.Where(electorate => electorate.Exist2016).ToList()
-                    },
-                    new Election
-                    {
-                        Parliament = 46,
-                        Year = 2019,
-                        Date = new DateTime(2019, 05, 18, 0, 0, 0),
-                        Electorates = Electorates.Where(electorate => electorate.Exist2019).ToList()
-                    }
-                };
-            }
+                    Parliament = 45,
+                    Year = 2016,
+                    Date = new DateTime(2016, 07, 02, 0, 0, 0),
+                    Electorates = Electorates.Where(electorate => electorate.Exist2016).ToList()
+                },
+                new Election
+                {
+                    Parliament = 46,
+                    Year = 2019,
+                    Date = new DateTime(2019, 05, 18, 0, 0, 0),
+                    Electorates = Electorates.Where(electorate => electorate.Exist2019).ToList()
+                }
+            };
+
+            #endregion
         }
-        #endregion
 
         public static IReadOnlyList<Party> Parties { get; }
         public static IReadOnlyList<IParty> PartiesAndBranches { get; }
