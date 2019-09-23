@@ -7,7 +7,7 @@ using AustralianElectorates;
 using HtmlAgilityPack;
 using Xunit;
 
-public static class ElectoratesScraper
+static class ElectoratesScraper
 {
     public static Task<ElectorateEx> ScrapeCurrentElectorate(string shortName, State state, List<Party> parties)
     {
@@ -120,8 +120,8 @@ public static class ElectoratesScraper
                     };
                     if (affiliationIdentifier != null)
                     {
-                        member.partyIds = new List<ushort> { affiliationIdentifier.Id};
-                        member.partyCodes =new List<string> { affiliationIdentifier.ShortCode};
+                        member.PartyIds = new List<ushort> { affiliationIdentifier.Id};
+                        member.PartyCodes =new List<string> { affiliationIdentifier.ShortCode};
                     }
 
                     electorateMembers.Insert(0,
@@ -129,7 +129,7 @@ public static class ElectoratesScraper
                 }
             }
 
-            electorate.members = electorateMembers;
+            electorate.Members = electorateMembers;
             electorate.DemographicRating = values["Demographic Rating"].TrimmedInnerHtml();
             electorate.ProductsAndIndustry = values["Products/Industries of the Area"].TrimmedInnerHtml();
 
@@ -256,8 +256,8 @@ public static class ElectoratesScraper
             {
                 FamilyName = familyName,
                 GivenNames = givenNames,
-                partyCodes = partyIds.ToList(),
-                partyIds = FindPartyIds(partyIds, parties).ToList(),
+                PartyCodes = partyIds.ToList(),
+                PartyIds = FindPartyIds(partyIds, parties).ToList(),
                 Begin = begin,
                 End = end,
             };

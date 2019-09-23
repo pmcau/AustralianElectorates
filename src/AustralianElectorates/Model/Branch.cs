@@ -1,40 +1,25 @@
 ﻿using System.Collections.Generic;
-using System.Runtime.Serialization;
 
 namespace AustralianElectorates
 {
-    [DataContract]
-    public class Branch : IPartyOrBranch
+    public interface IBranch:
+        IPartyOrBranch
     {
-        internal Branch()
-        {
-        }
+        IParty Party { get; }
+    }
 
-        [DataMember]
-        public ushort Id { get; internal set; }
-        [DataMember]
-        public string Name { get; internal set; } = null!;
-        [DataMember]
-        public string Code { get; internal set; } = null!;
-        [DataMember]
-        public string Abbreviation { get; internal set; } = null!;
-        [DataMember]
-        public string RegisterDate { get; internal set; } = null!;
-        [DataMember]
-        public string AmendmentDate { get; internal set; } = null!;
-        [DataMember]
-        public string Address { get; internal set; } = null!;
-        [DataMember]
-        public Officer Officer { get; internal set; } = null!;
-
-        [DataMember(Name = nameof(DeputyOfficers), Order = 100)]
-        internal List<Officer> deputyOfficers  = null!;
-        public IReadOnlyList<Officer> DeputyOfficers
-        {
-            get => deputyOfficers;
-        }
-
-        [DataMember]
-        public Party Party { get; internal set; } = null!;
+    class Branch :
+        IBranch
+    {
+        public ushort Id { get; set; }
+        public string Name { get; set; } = null!;
+        public string Code { get; set; } = null!;
+        public string Abbreviation { get; set; } = null!;
+        public string RegisterDate { get; set; } = null!;
+        public string AmendmentDate { get; set; } = null!;
+        public string Address { get; set; } = null!;
+        public IOfficer Officer { get; set; } = null!;
+        public IReadOnlyList<IOfficer> DeputyOfficers { get; set; } = null!;
+        public IParty Party { get; set; } = null!;
     }
 }

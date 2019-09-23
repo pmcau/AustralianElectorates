@@ -3,15 +3,20 @@ using System.Collections.Generic;
 
 namespace AustralianElectorates
 {
-    public class Election
+    public interface IElection
     {
-        internal Election()
-        {
-        }
+        int Parliament { get; }
+        int Year { get; }
+        DateTime Date { get; }
+        IReadOnlyList<IElectorate> Electorates { get; }
+    }
 
-        public int Parliament { get; internal set; }
-        public int Year { get; internal set; }
-        public DateTime Date { get; internal set; }
-        public IReadOnlyList<Electorate> Electorates { get; internal set; } = null!;
+    class Election :
+        IElection
+    {
+        public int Parliament { get; set; }
+        public int Year { get; set; }
+        public DateTime Date { get; set; }
+        public IReadOnlyList<IElectorate> Electorates { get; set; } = null!;
     }
 }

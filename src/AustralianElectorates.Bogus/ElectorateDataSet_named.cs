@@ -7,792 +7,792 @@ namespace AustralianElectorates.Bogus
     public partial class ElectorateDataSet : DataSet
     {
 
-        public Electorate Canberra()
+        public IElectorate Canberra()
         {
             return DataLoader.Canberra;
         }
 
-        public Electorate Fenner()
+        public IElectorate Fenner()
         {
             return DataLoader.Fenner;
         }
 
-        public Electorate Bean()
+        public IElectorate Bean()
         {
             return DataLoader.Bean;
         }
 
-        public Electorate Bass()
+        public IElectorate Bass()
         {
             return DataLoader.Bass;
         }
 
-        public Electorate Braddon()
+        public IElectorate Braddon()
         {
             return DataLoader.Braddon;
         }
 
-        public Electorate Denison()
+        public IElectorate Denison()
         {
             return DataLoader.Denison;
         }
 
-        public Electorate Franklin()
+        public IElectorate Franklin()
         {
             return DataLoader.Franklin;
         }
 
-        public Electorate Lyons()
+        public IElectorate Lyons()
         {
             return DataLoader.Lyons;
         }
 
-        public Electorate Clark()
+        public IElectorate Clark()
         {
             return DataLoader.Clark;
         }
 
-        public Electorate Adelaide()
+        public IElectorate Adelaide()
         {
             return DataLoader.Adelaide;
         }
 
-        public Electorate Barker()
+        public IElectorate Barker()
         {
             return DataLoader.Barker;
         }
 
-        public Electorate Boothby()
+        public IElectorate Boothby()
         {
             return DataLoader.Boothby;
         }
 
-        public Electorate Grey()
+        public IElectorate Grey()
         {
             return DataLoader.Grey;
         }
 
-        public Electorate Hindmarsh()
+        public IElectorate Hindmarsh()
         {
             return DataLoader.Hindmarsh;
         }
 
-        public Electorate Kingston()
+        public IElectorate Kingston()
         {
             return DataLoader.Kingston;
         }
 
-        public Electorate Makin()
+        public IElectorate Makin()
         {
             return DataLoader.Makin;
         }
 
-        public Electorate Mayo()
+        public IElectorate Mayo()
         {
             return DataLoader.Mayo;
         }
 
-        public Electorate PortAdelaide()
+        public IElectorate PortAdelaide()
         {
             return DataLoader.PortAdelaide;
         }
 
-        public Electorate Sturt()
+        public IElectorate Sturt()
         {
             return DataLoader.Sturt;
         }
 
-        public Electorate Wakefield()
+        public IElectorate Wakefield()
         {
             return DataLoader.Wakefield;
         }
 
-        public Electorate Spence()
+        public IElectorate Spence()
         {
             return DataLoader.Spence;
         }
 
-        public Electorate Aston()
+        public IElectorate Aston()
         {
             return DataLoader.Aston;
         }
 
-        public Electorate Ballarat()
+        public IElectorate Ballarat()
         {
             return DataLoader.Ballarat;
         }
 
-        public Electorate Batman()
+        public IElectorate Batman()
         {
             return DataLoader.Batman;
         }
 
-        public Electorate Bendigo()
+        public IElectorate Bendigo()
         {
             return DataLoader.Bendigo;
         }
 
-        public Electorate Bruce()
+        public IElectorate Bruce()
         {
             return DataLoader.Bruce;
         }
 
-        public Electorate Calwell()
+        public IElectorate Calwell()
         {
             return DataLoader.Calwell;
         }
 
-        public Electorate Casey()
+        public IElectorate Casey()
         {
             return DataLoader.Casey;
         }
 
-        public Electorate Chisholm()
+        public IElectorate Chisholm()
         {
             return DataLoader.Chisholm;
         }
 
-        public Electorate Corangamite()
+        public IElectorate Corangamite()
         {
             return DataLoader.Corangamite;
         }
 
-        public Electorate Corio()
+        public IElectorate Corio()
         {
             return DataLoader.Corio;
         }
 
-        public Electorate Deakin()
+        public IElectorate Deakin()
         {
             return DataLoader.Deakin;
         }
 
-        public Electorate Dunkley()
+        public IElectorate Dunkley()
         {
             return DataLoader.Dunkley;
         }
 
-        public Electorate Flinders()
+        public IElectorate Flinders()
         {
             return DataLoader.Flinders;
         }
 
-        public Electorate Gellibrand()
+        public IElectorate Gellibrand()
         {
             return DataLoader.Gellibrand;
         }
 
-        public Electorate Gippsland()
+        public IElectorate Gippsland()
         {
             return DataLoader.Gippsland;
         }
 
-        public Electorate Goldstein()
+        public IElectorate Goldstein()
         {
             return DataLoader.Goldstein;
         }
 
-        public Electorate Gorton()
+        public IElectorate Gorton()
         {
             return DataLoader.Gorton;
         }
 
-        public Electorate Higgins()
+        public IElectorate Higgins()
         {
             return DataLoader.Higgins;
         }
 
-        public Electorate Holt()
+        public IElectorate Holt()
         {
             return DataLoader.Holt;
         }
 
-        public Electorate Hotham()
+        public IElectorate Hotham()
         {
             return DataLoader.Hotham;
         }
 
-        public Electorate Indi()
+        public IElectorate Indi()
         {
             return DataLoader.Indi;
         }
 
-        public Electorate Isaacs()
+        public IElectorate Isaacs()
         {
             return DataLoader.Isaacs;
         }
 
-        public Electorate Jagajaga()
+        public IElectorate Jagajaga()
         {
             return DataLoader.Jagajaga;
         }
 
-        public Electorate Kooyong()
+        public IElectorate Kooyong()
         {
             return DataLoader.Kooyong;
         }
 
-        public Electorate LaTrobe()
+        public IElectorate LaTrobe()
         {
             return DataLoader.LaTrobe;
         }
 
-        public Electorate Lalor()
+        public IElectorate Lalor()
         {
             return DataLoader.Lalor;
         }
 
-        public Electorate Mallee()
+        public IElectorate Mallee()
         {
             return DataLoader.Mallee;
         }
 
-        public Electorate Maribyrnong()
+        public IElectorate Maribyrnong()
         {
             return DataLoader.Maribyrnong;
         }
 
-        public Electorate McEwen()
+        public IElectorate McEwen()
         {
             return DataLoader.McEwen;
         }
 
-        public Electorate McMillan()
+        public IElectorate McMillan()
         {
             return DataLoader.McMillan;
         }
 
-        public Electorate Melbourne()
+        public IElectorate Melbourne()
         {
             return DataLoader.Melbourne;
         }
 
-        public Electorate MelbournePorts()
+        public IElectorate MelbournePorts()
         {
             return DataLoader.MelbournePorts;
         }
 
-        public Electorate Menzies()
+        public IElectorate Menzies()
         {
             return DataLoader.Menzies;
         }
 
-        public Electorate Murray()
+        public IElectorate Murray()
         {
             return DataLoader.Murray;
         }
 
-        public Electorate Scullin()
+        public IElectorate Scullin()
         {
             return DataLoader.Scullin;
         }
 
-        public Electorate Wannon()
+        public IElectorate Wannon()
         {
             return DataLoader.Wannon;
         }
 
-        public Electorate Wills()
+        public IElectorate Wills()
         {
             return DataLoader.Wills;
         }
 
-        public Electorate Cooper()
+        public IElectorate Cooper()
         {
             return DataLoader.Cooper;
         }
 
-        public Electorate Fraser()
+        public IElectorate Fraser()
         {
             return DataLoader.Fraser;
         }
 
-        public Electorate Macnamara()
+        public IElectorate Macnamara()
         {
             return DataLoader.Macnamara;
         }
 
-        public Electorate Monash()
+        public IElectorate Monash()
         {
             return DataLoader.Monash;
         }
 
-        public Electorate Nicholls()
+        public IElectorate Nicholls()
         {
             return DataLoader.Nicholls;
         }
 
-        public Electorate Blair()
+        public IElectorate Blair()
         {
             return DataLoader.Blair;
         }
 
-        public Electorate Bonner()
+        public IElectorate Bonner()
         {
             return DataLoader.Bonner;
         }
 
-        public Electorate Bowman()
+        public IElectorate Bowman()
         {
             return DataLoader.Bowman;
         }
 
-        public Electorate Brisbane()
+        public IElectorate Brisbane()
         {
             return DataLoader.Brisbane;
         }
 
-        public Electorate Capricornia()
+        public IElectorate Capricornia()
         {
             return DataLoader.Capricornia;
         }
 
-        public Electorate Dawson()
+        public IElectorate Dawson()
         {
             return DataLoader.Dawson;
         }
 
-        public Electorate Dickson()
+        public IElectorate Dickson()
         {
             return DataLoader.Dickson;
         }
 
-        public Electorate Fadden()
+        public IElectorate Fadden()
         {
             return DataLoader.Fadden;
         }
 
-        public Electorate Fairfax()
+        public IElectorate Fairfax()
         {
             return DataLoader.Fairfax;
         }
 
-        public Electorate Fisher()
+        public IElectorate Fisher()
         {
             return DataLoader.Fisher;
         }
 
-        public Electorate Flynn()
+        public IElectorate Flynn()
         {
             return DataLoader.Flynn;
         }
 
-        public Electorate Forde()
+        public IElectorate Forde()
         {
             return DataLoader.Forde;
         }
 
-        public Electorate Griffith()
+        public IElectorate Griffith()
         {
             return DataLoader.Griffith;
         }
 
-        public Electorate Groom()
+        public IElectorate Groom()
         {
             return DataLoader.Groom;
         }
 
-        public Electorate Herbert()
+        public IElectorate Herbert()
         {
             return DataLoader.Herbert;
         }
 
-        public Electorate Hinkler()
+        public IElectorate Hinkler()
         {
             return DataLoader.Hinkler;
         }
 
-        public Electorate Kennedy()
+        public IElectorate Kennedy()
         {
             return DataLoader.Kennedy;
         }
 
-        public Electorate Leichhardt()
+        public IElectorate Leichhardt()
         {
             return DataLoader.Leichhardt;
         }
 
-        public Electorate Lilley()
+        public IElectorate Lilley()
         {
             return DataLoader.Lilley;
         }
 
-        public Electorate Longman()
+        public IElectorate Longman()
         {
             return DataLoader.Longman;
         }
 
-        public Electorate Maranoa()
+        public IElectorate Maranoa()
         {
             return DataLoader.Maranoa;
         }
 
-        public Electorate McPherson()
+        public IElectorate McPherson()
         {
             return DataLoader.McPherson;
         }
 
-        public Electorate Moncrieff()
+        public IElectorate Moncrieff()
         {
             return DataLoader.Moncrieff;
         }
 
-        public Electorate Moreton()
+        public IElectorate Moreton()
         {
             return DataLoader.Moreton;
         }
 
-        public Electorate Oxley()
+        public IElectorate Oxley()
         {
             return DataLoader.Oxley;
         }
 
-        public Electorate Petrie()
+        public IElectorate Petrie()
         {
             return DataLoader.Petrie;
         }
 
-        public Electorate Rankin()
+        public IElectorate Rankin()
         {
             return DataLoader.Rankin;
         }
 
-        public Electorate Ryan()
+        public IElectorate Ryan()
         {
             return DataLoader.Ryan;
         }
 
-        public Electorate WideBay()
+        public IElectorate WideBay()
         {
             return DataLoader.WideBay;
         }
 
-        public Electorate Wright()
+        public IElectorate Wright()
         {
             return DataLoader.Wright;
         }
 
-        public Electorate Lingiari()
+        public IElectorate Lingiari()
         {
             return DataLoader.Lingiari;
         }
 
-        public Electorate Solomon()
+        public IElectorate Solomon()
         {
             return DataLoader.Solomon;
         }
 
-        public Electorate Banks()
+        public IElectorate Banks()
         {
             return DataLoader.Banks;
         }
 
-        public Electorate Barton()
+        public IElectorate Barton()
         {
             return DataLoader.Barton;
         }
 
-        public Electorate Bennelong()
+        public IElectorate Bennelong()
         {
             return DataLoader.Bennelong;
         }
 
-        public Electorate Berowra()
+        public IElectorate Berowra()
         {
             return DataLoader.Berowra;
         }
 
-        public Electorate Blaxland()
+        public IElectorate Blaxland()
         {
             return DataLoader.Blaxland;
         }
 
-        public Electorate Bradfield()
+        public IElectorate Bradfield()
         {
             return DataLoader.Bradfield;
         }
 
-        public Electorate Calare()
+        public IElectorate Calare()
         {
             return DataLoader.Calare;
         }
 
-        public Electorate Chifley()
+        public IElectorate Chifley()
         {
             return DataLoader.Chifley;
         }
 
-        public Electorate Cook()
+        public IElectorate Cook()
         {
             return DataLoader.Cook;
         }
 
-        public Electorate Cowper()
+        public IElectorate Cowper()
         {
             return DataLoader.Cowper;
         }
 
-        public Electorate Cunningham()
+        public IElectorate Cunningham()
         {
             return DataLoader.Cunningham;
         }
 
-        public Electorate Dobell()
+        public IElectorate Dobell()
         {
             return DataLoader.Dobell;
         }
 
-        public Electorate EdenMonaro()
+        public IElectorate EdenMonaro()
         {
             return DataLoader.EdenMonaro;
         }
 
-        public Electorate Farrer()
+        public IElectorate Farrer()
         {
             return DataLoader.Farrer;
         }
 
-        public Electorate Fowler()
+        public IElectorate Fowler()
         {
             return DataLoader.Fowler;
         }
 
-        public Electorate Gilmore()
+        public IElectorate Gilmore()
         {
             return DataLoader.Gilmore;
         }
 
-        public Electorate Grayndler()
+        public IElectorate Grayndler()
         {
             return DataLoader.Grayndler;
         }
 
-        public Electorate Greenway()
+        public IElectorate Greenway()
         {
             return DataLoader.Greenway;
         }
 
-        public Electorate Hughes()
+        public IElectorate Hughes()
         {
             return DataLoader.Hughes;
         }
 
-        public Electorate Hume()
+        public IElectorate Hume()
         {
             return DataLoader.Hume;
         }
 
-        public Electorate Hunter()
+        public IElectorate Hunter()
         {
             return DataLoader.Hunter;
         }
 
-        public Electorate KingsfordSmith()
+        public IElectorate KingsfordSmith()
         {
             return DataLoader.KingsfordSmith;
         }
 
-        public Electorate Lindsay()
+        public IElectorate Lindsay()
         {
             return DataLoader.Lindsay;
         }
 
-        public Electorate Lyne()
+        public IElectorate Lyne()
         {
             return DataLoader.Lyne;
         }
 
-        public Electorate Macarthur()
+        public IElectorate Macarthur()
         {
             return DataLoader.Macarthur;
         }
 
-        public Electorate Mackellar()
+        public IElectorate Mackellar()
         {
             return DataLoader.Mackellar;
         }
 
-        public Electorate Macquarie()
+        public IElectorate Macquarie()
         {
             return DataLoader.Macquarie;
         }
 
-        public Electorate McMahon()
+        public IElectorate McMahon()
         {
             return DataLoader.McMahon;
         }
 
-        public Electorate Mitchell()
+        public IElectorate Mitchell()
         {
             return DataLoader.Mitchell;
         }
 
-        public Electorate NewEngland()
+        public IElectorate NewEngland()
         {
             return DataLoader.NewEngland;
         }
 
-        public Electorate Newcastle()
+        public IElectorate Newcastle()
         {
             return DataLoader.Newcastle;
         }
 
-        public Electorate NorthSydney()
+        public IElectorate NorthSydney()
         {
             return DataLoader.NorthSydney;
         }
 
-        public Electorate Page()
+        public IElectorate Page()
         {
             return DataLoader.Page;
         }
 
-        public Electorate Parkes()
+        public IElectorate Parkes()
         {
             return DataLoader.Parkes;
         }
 
-        public Electorate Parramatta()
+        public IElectorate Parramatta()
         {
             return DataLoader.Parramatta;
         }
 
-        public Electorate Paterson()
+        public IElectorate Paterson()
         {
             return DataLoader.Paterson;
         }
 
-        public Electorate Reid()
+        public IElectorate Reid()
         {
             return DataLoader.Reid;
         }
 
-        public Electorate Richmond()
+        public IElectorate Richmond()
         {
             return DataLoader.Richmond;
         }
 
-        public Electorate Riverina()
+        public IElectorate Riverina()
         {
             return DataLoader.Riverina;
         }
 
-        public Electorate Robertson()
+        public IElectorate Robertson()
         {
             return DataLoader.Robertson;
         }
 
-        public Electorate Shortland()
+        public IElectorate Shortland()
         {
             return DataLoader.Shortland;
         }
 
-        public Electorate Sydney()
+        public IElectorate Sydney()
         {
             return DataLoader.Sydney;
         }
 
-        public Electorate Warringah()
+        public IElectorate Warringah()
         {
             return DataLoader.Warringah;
         }
 
-        public Electorate Watson()
+        public IElectorate Watson()
         {
             return DataLoader.Watson;
         }
 
-        public Electorate Wentworth()
+        public IElectorate Wentworth()
         {
             return DataLoader.Wentworth;
         }
 
-        public Electorate Werriwa()
+        public IElectorate Werriwa()
         {
             return DataLoader.Werriwa;
         }
 
-        public Electorate Whitlam()
+        public IElectorate Whitlam()
         {
             return DataLoader.Whitlam;
         }
 
-        public Electorate Brand()
+        public IElectorate Brand()
         {
             return DataLoader.Brand;
         }
 
-        public Electorate Canning()
+        public IElectorate Canning()
         {
             return DataLoader.Canning;
         }
 
-        public Electorate Cowan()
+        public IElectorate Cowan()
         {
             return DataLoader.Cowan;
         }
 
-        public Electorate Curtin()
+        public IElectorate Curtin()
         {
             return DataLoader.Curtin;
         }
 
-        public Electorate Durack()
+        public IElectorate Durack()
         {
             return DataLoader.Durack;
         }
 
-        public Electorate Forrest()
+        public IElectorate Forrest()
         {
             return DataLoader.Forrest;
         }
 
-        public Electorate Fremantle()
+        public IElectorate Fremantle()
         {
             return DataLoader.Fremantle;
         }
 
-        public Electorate Hasluck()
+        public IElectorate Hasluck()
         {
             return DataLoader.Hasluck;
         }
 
-        public Electorate Moore()
+        public IElectorate Moore()
         {
             return DataLoader.Moore;
         }
 
-        public Electorate Burt()
+        public IElectorate Burt()
         {
             return DataLoader.Burt;
         }
 
-        public Electorate OConnor()
+        public IElectorate OConnor()
         {
             return DataLoader.OConnor;
         }
 
-        public Electorate Pearce()
+        public IElectorate Pearce()
         {
             return DataLoader.Pearce;
         }
 
-        public Electorate Perth()
+        public IElectorate Perth()
         {
             return DataLoader.Perth;
         }
 
-        public Electorate Stirling()
+        public IElectorate Stirling()
         {
             return DataLoader.Stirling;
         }
 
-        public Electorate Swan()
+        public IElectorate Swan()
         {
             return DataLoader.Swan;
         }
 
-        public Electorate Tangney()
+        public IElectorate Tangney()
         {
             return DataLoader.Tangney;
         }

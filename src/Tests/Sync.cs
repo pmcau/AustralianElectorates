@@ -202,7 +202,7 @@ public class Sync :
                 electorate.Exist2016 = existIn2016;
                 electorate.Exist2019 = existIn2019;
                 electorate.ExistInFuture = existInFuture;
-                electorate.locations = SelectLocations(electorateName,localityData).ToList();
+                electorate.Locations = SelectLocations(electorateName,localityData).ToList();
                 electorates.Add(electorate);
             }
         }
@@ -221,7 +221,7 @@ public class Sync :
                 new Location
                 {
                     Postcode = group.Key,
-                    localities = group.Select(x => x.Place).ToList()
+                    Localities = group.Select(x => x.Place).ToList()
                 })
             .ToList();
     }
@@ -257,7 +257,7 @@ namespace AustralianElectorates
             {
                 var name = GetCSharpName(electorate);
                 writer.WriteLine($@"
-        public static Electorate {name} {{ get; private set; }}  = null!;");
+        public static IElectorate {name} {{ get; private set; }}  = null!;");
             }
 
             writer.WriteLine("    }");
@@ -281,7 +281,7 @@ namespace AustralianElectorates.Bogus
             {
                 var name = GetCSharpName(electorate);
                 writer.WriteLine($@"
-        public Electorate {name}()
+        public IElectorate {name}()
         {{
             return DataLoader.{name};
         }}");

@@ -24,13 +24,13 @@ namespace AustralianElectorates
             return MapForElectorate(DataLoader.FindElectorate(name));
         }
 
-        public static string MapForElectorate(Electorate electorate)
+        public static string MapForElectorate(IElectorate electorate)
         {
             Guard.AgainstNull(electorate, nameof(electorate));
             return Path.Combine(Directory, $"{electorate.ShortName}.png");
         }
 
-        public static IEnumerable<string> Files(Electorate electorate)
+        public static IEnumerable<string> Files(IElectorate electorate)
         {
             Guard.AgainstNull(electorate, nameof(electorate));
             return System.IO.Directory.EnumerateFiles(Directory);

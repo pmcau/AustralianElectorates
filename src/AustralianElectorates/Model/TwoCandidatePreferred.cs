@@ -1,18 +1,15 @@
-﻿using System.Runtime.Serialization;
-
-namespace AustralianElectorates
+﻿namespace AustralianElectorates
 {
-    [DataContract]
-    public class TwoCandidatePreferred
+    public interface ITwoCandidatePreferred
     {
-        internal TwoCandidatePreferred()
-        {
-        }
+        ICandidate Elected { get; }
+        ICandidate Other { get; }
+    }
 
-        [DataMember]
-        public Candidate Elected { get; internal set; } = null!;
-
-        [DataMember]
-        public Candidate Other { get; internal set; } = null!;
+    class TwoCandidatePreferred :
+        ITwoCandidatePreferred
+    {
+        public ICandidate Elected { get; set; } = null!;
+        public ICandidate Other { get; set; } = null!;
     }
 }

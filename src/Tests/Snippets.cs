@@ -106,10 +106,10 @@ public class Snippets :
     public class Target
     {
         public string RandomElectorateName = null!;
-        public Member RandomMember = null!;
+        public IMember RandomMember = null!;
         public string RandomMemberName = null!;
-        public Electorate RandomElectorate = null!;
-        public Member RandomCurrentMember = null!;
+        public IElectorate RandomElectorate = null!;
+        public IMember RandomCurrentMember = null!;
         public string RandomCurrentMemberName = null!;
     }
 

@@ -1,25 +1,19 @@
 ﻿using System.Collections.Generic;
-using System.Runtime.Serialization;
 
 namespace AustralianElectorates
 {
-    [DataContract]
-    public class Location
+    public interface ILocation
     {
-        internal Location()
-        {
-        }
+        int Postcode { get; }
+        IElectorate Electorate { get; }
+        IReadOnlyList<string> Localities { get; }
+    }
 
-        [DataMember]
-        public int Postcode { get; internal set; }
-        [DataMember]
-        public Electorate Electorate { get; internal set; } = null!;
-
-        [DataMember(Name = nameof(Localities), Order = 100)]
-        internal List<string> localities = null!;
-        public IReadOnlyList<string> Localities
-        {
-            get => localities;
-        }
+    class Location :
+        ILocation
+    {
+        public int Postcode { get; set; }
+        public IElectorate Electorate { get; set; } = null!;
+        public IReadOnlyList<string> Localities { get; set; } = null!;
     }
 }

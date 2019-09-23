@@ -9,7 +9,7 @@ using Officer = AustralianElectorates.Officer;
 using Address = AustralianElectorates.Address;
 using Branch = AustralianElectorates.Branch;
 
-public static class PartyScraper
+static class PartyScraper
 {
     public static async Task<List<Party>> Run()
     {
@@ -93,8 +93,8 @@ public static class PartyScraper
             AmendmentDate = detail.PartyRegisterDate,
             Address = detail.PostalAddress,
             Officer = ToOfficer(detail.Officer),
-            deputyOfficers = ToOfficers(detail.DeputyOfficers),
-            branches = ToBranches(detail.Branches, code,codes),
+            DeputyOfficers = ToOfficers(detail.DeputyOfficers),
+            Branches = ToBranches(detail.Branches, code,codes),
         };
     }
 
@@ -148,7 +148,7 @@ public static class PartyScraper
             AmendmentDate = branch.PartyRegisterDate,
             Address = branch.PostalAddress,
             Officer = ToOfficer(branch.Officer),
-            deputyOfficers = ToOfficers(branch.DeputyOfficers)
+            DeputyOfficers = ToOfficers(branch.DeputyOfficers)
         };
     }
 

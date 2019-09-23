@@ -11,13 +11,13 @@ namespace AustralianElectorates
     public class MapCollection
     {
         string prefix;
-        ConcurrentDictionary<string, ElectorateMap> electoratesCache = new ConcurrentDictionary<string, ElectorateMap>(StringComparer.OrdinalIgnoreCase);
-        ConcurrentDictionary<State, StateMap> statesCache = new ConcurrentDictionary<State, StateMap>();
+        ConcurrentDictionary<string, IElectorateMap> electoratesCache = new ConcurrentDictionary<string, IElectorateMap>(StringComparer.OrdinalIgnoreCase);
+        ConcurrentDictionary<State, IStateMap> statesCache = new ConcurrentDictionary<State, IStateMap>();
         string? australia;
         static Assembly assembly;
 
-        public IReadOnlyDictionary<string, ElectorateMap> LoadedElectorates => electoratesCache;
-        public IReadOnlyDictionary<State, StateMap> LoadedStates => statesCache;
+        public IReadOnlyDictionary<string, IElectorateMap> LoadedElectorates => electoratesCache;
+        public IReadOnlyDictionary<State, IStateMap> LoadedStates => statesCache;
 
         internal MapCollection(string prefix)
         {
@@ -29,19 +29,19 @@ namespace AustralianElectorates
             assembly = typeof(DataLoader).Assembly;
         }
 
-        public ElectorateMap GetElectorate(string electorateName)
+        public IElectorateMap GetElectorate(string electorateName)
         {
             Guard.AgainstNullWhiteSpace(electorateName, nameof(electorateName));
             return GetElectorateInner(Electorate.GetShortName(electorateName),electorateName);
         }
 
-        public ElectorateMap GetElectorate(Electorate electorate)
+        public IElectorateMap GetElectorate(IElectorate electorate)
         {
             Guard.AgainstNull(electorate, nameof(electorate));
             return GetElectorateInner(electorate.ShortName,electorate.Name);
         }
 
-        private ElectorateMap GetElectorateInner(string electorateShortName, string electorateName)
+        private IElectorateMap GetElectorateInner(string electorateShortName, string electorateName)
         {
             return electoratesCache.GetOrAdd($@"{prefix}\Electorates\{electorateShortName}",
                 s =>
@@ -60,7 +60,7 @@ namespace AustralianElectorates
                 });
         }
 
-        public StateMap GetState(State state)
+        public IStateMap GetState(State state)
         {
             var key = $@"{prefix}\{state.ToString().ToLowerInvariant()}";
             return statesCache.GetOrAdd(state, s =>

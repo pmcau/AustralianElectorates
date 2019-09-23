@@ -1,28 +1,23 @@
-﻿using System.Runtime.Serialization;
-
-namespace AustralianElectorates
+﻿namespace AustralianElectorates
 {
-    [DataContract]
-    public class Officer
+    public interface IOfficer
     {
-        internal Officer()
-        {
-        }
+        string Title { get; }
+        string FamilyName { get; }
+        string GivenNames { get; }
+        string Capacity { get; }
+        IAddress Address { get; }
+        string FullName();
+    }
 
-        [DataMember]
-        public string Title { get; internal set; } = null!;
-
-        [DataMember]
-        public string FamilyName { get; internal set; } = null!;
-
-        [DataMember]
-        public string GivenNames { get; internal set; } = null!;
-
-        [DataMember]
-        public string Capacity { get; internal set; } = null!;
-
-        [DataMember]
-        public Address Address { get; internal set; } = null!;
+    class Officer :
+        IOfficer
+    {
+        public string Title { get; set; } = null!;
+        public string FamilyName { get; set; } = null!;
+        public string GivenNames { get; set; } = null!;
+        public string Capacity { get; set; } = null!;
+        public IAddress Address { get; set; } = null!;
 
         public string FullName()
         {
