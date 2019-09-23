@@ -24,7 +24,7 @@ namespace AustralianElectorates
                 Parties = Serializer.Deserialize<List<Party>>(stream);
             }
 
-            var partiesAndBranches = new List<IParty>();
+            var partiesAndBranches = new List<IPartyOrBranch>();
             foreach (var party in Parties)
             {
                 partiesAndBranches.Add(party);
@@ -57,7 +57,7 @@ namespace AustralianElectorates
                     if (member.PartyIds == null)
                     {
                         member.partyIds = new List<ushort>();
-                        member.parties = new List<IParty>();
+                        member.parties = new List<IPartyOrBranch>();
                     }
                     else
                     {
@@ -117,7 +117,7 @@ namespace AustralianElectorates
         }
 
         public static IReadOnlyList<Party> Parties { get; }
-        public static IReadOnlyList<IParty> PartiesAndBranches { get; }
+        public static IReadOnlyList<IPartyOrBranch> PartiesAndBranches { get; }
         public static MapCollection Maps2016 { get; } = new MapCollection("2016");
         public static MapCollection Maps2019 { get; } = new MapCollection("2019");
         public static MapCollection MapsFuture { get; } = new MapCollection("Future");

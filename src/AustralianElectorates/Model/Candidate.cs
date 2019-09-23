@@ -22,7 +22,7 @@ namespace AustralianElectorates
         [DataMember]
         public ushort? PartyId { get; internal set; }
         [DataMember]
-        public IParty Party { get; internal set; } = null!;
+        public IPartyOrBranch Party { get; internal set; } = null!;
 
         public string FullName()
         {

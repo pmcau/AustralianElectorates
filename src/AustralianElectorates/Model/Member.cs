@@ -36,8 +36,8 @@ namespace AustralianElectorates
         }
 
         [DataMember(Name = nameof(Parties), Order = 100)]
-        internal List<IParty> parties = new List<IParty>();
-        public IReadOnlyList<IParty> Parties
+        internal List<IPartyOrBranch> parties = new List<IPartyOrBranch>();
+        public IReadOnlyList<IPartyOrBranch> Parties
         {
             get => parties;
         }

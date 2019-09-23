@@ -2,7 +2,7 @@
 
 namespace AustralianElectorates
 {
-    public interface IParty
+    public interface IPartyOrBranch
     {
         ushort Id { get; }
         string Name { get; }

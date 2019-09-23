@@ -57,7 +57,7 @@ namespace AustralianElectorates
         public Member CurrentMember { get; set; } = null!;
 
         [DataMember]
-        public IParty CurrentParty { get; set; } = null!;
+        public IPartyOrBranch CurrentParty { get; set; } = null!;
 
         [DataMember(Name = nameof(Members), Order = 100)]
         internal List<Member> members  = null!;

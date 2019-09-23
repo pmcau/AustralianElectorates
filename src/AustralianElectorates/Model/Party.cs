@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace AustralianElectorates
 {
     [DataContract]
-    public class Party : IParty
+    public class Party : IPartyOrBranch
     {
         internal Party()
         {
