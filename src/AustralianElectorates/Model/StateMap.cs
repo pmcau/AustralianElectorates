@@ -1,17 +1,15 @@
-﻿using System.Runtime.Serialization;
-
-namespace AustralianElectorates
+﻿namespace AustralianElectorates
 {
-    [DataContract]
-    public class StateMap
+    public interface IStateMap
     {
-        internal StateMap()
-        {
-        }
+        State State { get; }
+        string GeoJson { get; }
+    }
 
-        [DataMember]
-        public State State { get; internal set; }
-        [DataMember]
-        public string GeoJson { get; internal set; } = null!;
+    class StateMap :
+        IStateMap
+    {
+        public State State { get; set; }
+        public string GeoJson { get; set; } = null!;
     }
 }

@@ -20,7 +20,7 @@ namespace AustralianElectorates.Bogus
             return Electorate().Name;
         }
 
-        public IEnumerable<Electorate> Electorate(int num = 1)
+        public IEnumerable<IElectorate> Electorate(int num = 1)
         {
             Guard.AgainstNegative(num, nameof(num));
             for (var i = 0; i < num; i++)
@@ -29,13 +29,13 @@ namespace AustralianElectorates.Bogus
             }
         }
 
-        public Member CurrentMember()
+        public IMember CurrentMember()
         {
             var index = Random.Number(DataLoader.AllCurrentMembers.Count - 1);
             return DataLoader.AllCurrentMembers[index];
         }
 
-        public IEnumerable<Member> CurrentMember(int num = 1)
+        public IEnumerable<IMember> CurrentMember(int num = 1)
         {
             Guard.AgainstNegative(num, nameof(num));
             for (var i = 0; i < num; i++)
@@ -55,13 +55,13 @@ namespace AustralianElectorates.Bogus
             return CurrentMember(num).Select(x => x.FullName());
         }
 
-        public Member Member()
+        public IMember Member()
         {
             var index = Random.Number(DataLoader.AllMembers.Count - 1);
             return DataLoader.AllMembers[index];
         }
 
-        public IEnumerable<Member> Member(int num = 1)
+        public IEnumerable<IMember> Member(int num = 1)
         {
             Guard.AgainstNegative(num, nameof(num));
             for (var i = 0; i < num; i++)
@@ -81,7 +81,7 @@ namespace AustralianElectorates.Bogus
             return Member(num).Select(x => x.FullName());
         }
 
-        public Electorate Electorate()
+        public IElectorate Electorate()
         {
             var index = Random.Number(DataLoader.Electorates.Count - 1);
             return DataLoader.Electorates[index];

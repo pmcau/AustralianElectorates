@@ -1,28 +1,27 @@
-﻿using System.Runtime.Serialization;
-
-namespace AustralianElectorates
+﻿namespace AustralianElectorates
 {
-    [DataContract]
-    public class Candidate
+    public interface ICandidate
     {
-        internal Candidate()
-        {
-        }
+        string FamilyName { get; }
+        string GivenNames { get; }
+        string? PartyCode { get; }
+        uint Votes { get; }
+        decimal Swing { get; }
+        ushort? PartyId { get; }
+        IPartyOrBranch Party { get; }
+        string FullName();
+    }
 
-        [DataMember]
-        public string FamilyName { get; internal set; } = null!;
-        [DataMember]
-        public string GivenNames { get; internal set; } = null!;
-        [DataMember]
-        public string? PartyCode { get; internal set; }
-        [DataMember]
-        public uint Votes { get; internal set; }
-        [DataMember]
-        public decimal Swing { get; internal set; }
-        [DataMember]
-        public ushort? PartyId { get; internal set; }
-        [DataMember]
-        public IPartyOrBranch Party { get; internal set; } = null!;
+    class Candidate :
+        ICandidate
+    {
+        public string FamilyName { get; set; } = null!;
+        public string GivenNames { get; set; } = null!;
+        public string? PartyCode { get; set; }
+        public uint Votes { get; set; }
+        public decimal Swing { get; set; }
+        public ushort? PartyId { get; set; }
+        public IPartyOrBranch Party { get; set; } = null!;
 
         public string FullName()
         {

@@ -30,7 +30,7 @@ namespace AustralianElectorates
                 partiesAndBranches.Add(party);
                 if (party.Branches != null)
                 {
-                    foreach (var branch in party.Branches)
+                    foreach (Branch branch in party.Branches)
                     {
                         partiesAndBranches.Add(branch);
                         branch.Party = party;
@@ -45,23 +45,25 @@ namespace AustralianElectorates
                 var preferred = electorate.TwoCandidatePreferred;
                 if (preferred != null)
                 {
-                    preferred.Elected.Party = PartiesAndBranches.SingleOrDefault(x => x.Id == preferred.Elected.PartyId);
-                    electorate.CurrentParty = preferred.Elected.Party;
+                    var elected = (Candidate) preferred.Elected;
+                    elected.Party = PartiesAndBranches.SingleOrDefault(x => x.Id == elected.PartyId);
+                    electorate.CurrentParty = elected.Party;
 
-                    preferred.Other.Party = PartiesAndBranches.SingleOrDefault(x => x.Id == preferred.Other.PartyId);
+                    var other =(Candidate)  preferred.Other;
+                    other.Party = PartiesAndBranches.SingleOrDefault(x => x.Id == other.PartyId);
                 }
 
-                foreach (var member in electorate.Members)
+                foreach (Member member in electorate.Members)
                 {
                     member.Electorate = electorate;
                     if (member.PartyIds == null)
                     {
-                        member.partyIds = new List<ushort>();
-                        member.parties = new List<IPartyOrBranch>();
+                        member.PartyIds = new List<ushort>();
+                        member.Parties = new List<IPartyOrBranch>();
                     }
                     else
                     {
-                        member.parties = member.PartyIds
+                        member.Parties = member.PartyIds
                             .Select(x => PartiesAndBranches.SingleOrDefault(y => y.Id == x))
                             .Where(x => x != null)
                             .ToList();
@@ -82,13 +84,13 @@ namespace AustralianElectorates
             Elections = BuildElections();
         }
 
-        public static IReadOnlyList<Member> AllMembers { get; }
-        public static IReadOnlyList<Member> AllCurrentMembers { get; }
+        public static IReadOnlyList<IMember> AllMembers { get; }
+        public static IReadOnlyList<IMember> AllCurrentMembers { get; }
 
-        public static IReadOnlyList<Electorate> Electorates { get; }
+        public static IReadOnlyList<IElectorate> Electorates { get; }
 
 
-        public static IReadOnlyList<Election> Elections { get; }
+        public static IReadOnlyList<IElection> Elections { get; }
 
         static List<Election> BuildElections()
         {
@@ -116,13 +118,13 @@ namespace AustralianElectorates
             #endregion
         }
 
-        public static IReadOnlyList<Party> Parties { get; }
+        public static IReadOnlyList<IParty> Parties { get; }
         public static IReadOnlyList<IPartyOrBranch> PartiesAndBranches { get; }
         public static MapCollection Maps2016 { get; } = new MapCollection("2016");
         public static MapCollection Maps2019 { get; } = new MapCollection("2019");
         public static MapCollection MapsFuture { get; } = new MapCollection("Future");
 
-        public static Election FindElection(int parliament)
+        public static IElection FindElection(int parliament)
         {
             if (TryFindElection(parliament, out var election))
             {
@@ -132,7 +134,7 @@ namespace AustralianElectorates
             throw new ElectionNotFoundException(parliament);
         }
 
-        public static bool TryFindElection(int parliament, out Election election)
+        public static bool TryFindElection(int parliament, out IElection election)
         {
             election = Elections.SingleOrDefault(x => x.Parliament == parliament);
             if (election != null)
@@ -143,7 +145,7 @@ namespace AustralianElectorates
             return false;
         }
 
-        public static Electorate FindElectorate(string name)
+        public static IElectorate FindElectorate(string name)
         {
             Guard.AgainstNullWhiteSpace(nameof(name), name);
             if (TryFindElectorate(name, out var electorate))
@@ -154,7 +156,7 @@ namespace AustralianElectorates
             throw new ElectorateNotFoundException(name);
         }
 
-        public static bool TryFindElectorate(string name, out Electorate electorate)
+        public static bool TryFindElectorate(string name, out IElectorate electorate)
         {
             Guard.AgainstNullWhiteSpace(nameof(name), name);
             electorate = Electorates.SingleOrDefault(x => MatchName(name, x));
@@ -166,7 +168,7 @@ namespace AustralianElectorates
             return false;
         }
 
-        static bool MatchName(string name, Electorate x)
+        static bool MatchName(string name, IElectorate x)
         {
             return string.Equals(x.Name, name, StringComparison.OrdinalIgnoreCase) ||
                    string.Equals(x.ShortName, name, StringComparison.OrdinalIgnoreCase);
@@ -253,7 +255,7 @@ namespace AustralianElectorates
             stream.CopyTo(target);
         }
 
-        public static ElectorateMap Get2016Map(this Electorate electorate)
+        public static IElectorateMap Get2016Map(this IElectorate electorate)
         {
             Guard.AgainstNull(electorate, nameof(electorate));
             if (!electorate.Exist2016)
@@ -264,7 +266,7 @@ namespace AustralianElectorates
             return Maps2016.GetElectorate(electorate.ShortName);
         }
 
-        public static ElectorateMap Get2019Map(this Electorate electorate)
+        public static IElectorateMap Get2019Map(this IElectorate electorate)
         {
             Guard.AgainstNull(electorate, nameof(electorate));
             if (!electorate.Exist2019)
@@ -275,7 +277,7 @@ namespace AustralianElectorates
             return Maps2019.GetElectorate(electorate.ShortName);
         }
 
-        public static ElectorateMap GetFutureMap(this Electorate electorate)
+        public static IElectorateMap GetFutureMap(this IElectorate electorate)
         {
             Guard.AgainstNull(electorate, nameof(electorate));
             if (!electorate.ExistInFuture)

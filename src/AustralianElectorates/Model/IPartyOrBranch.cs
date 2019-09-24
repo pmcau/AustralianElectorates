@@ -10,8 +10,8 @@ namespace AustralianElectorates
         string RegisterDate { get; }
         string AmendmentDate { get; }
         string Address { get; }
-        Officer Officer { get; }
-        IReadOnlyList<Officer> DeputyOfficers { get; }
+        IOfficer Officer { get; }
+        IReadOnlyList<IOfficer> DeputyOfficers { get; }
         string Code { get; }
     }
 }

@@ -1,53 +1,25 @@
 ﻿using System.Collections.Generic;
-using System.Runtime.Serialization;
 
 namespace AustralianElectorates
 {
-    [DataContract]
-    public class Party : IPartyOrBranch
+    public interface IParty:
+        IPartyOrBranch
     {
-        internal Party()
-        {
-        }
+        IReadOnlyList<IBranch> Branches { get; }
+    }
 
-        [DataMember]
-        public ushort Id { get; internal set; }
-
-        [DataMember]
-        public string Name { get; internal set; } = null!;
-
-        [DataMember]
-        public string Code { get; internal set; } = null!;
-
-        [DataMember]
-        public string Abbreviation { get; internal set; } = null!;
-
-        [DataMember]
-        public string RegisterDate { get; internal set; } = null!;
-
-        [DataMember]
-        public string AmendmentDate { get; internal set; } = null!;
-
-        [DataMember]
-        public string Address { get; internal set; } = null!;
-
-        [DataMember]
-        public Officer Officer { get; internal set; } = null!;
-
-        [DataMember(Name = nameof(DeputyOfficers), Order = 100)]
-        internal List<Officer> deputyOfficers = new List<Officer>();
-
-        public IReadOnlyList<Officer> DeputyOfficers
-        {
-            get => deputyOfficers;
-        }
-
-        [DataMember(Name = nameof(Branches), Order = 100)]
-        internal List<Branch> branches = new List<Branch>();
-
-        public IReadOnlyList<Branch> Branches
-        {
-            get => branches;
-        }
+    class Party :
+        IParty
+    {
+        public ushort Id { get; set; }
+        public string Name { get; set; } = null!;
+        public string Code { get; set; } = null!;
+        public string Abbreviation { get; set; } = null!;
+        public string RegisterDate { get; set; } = null!;
+        public string AmendmentDate { get; set; } = null!;
+        public string Address { get; set; } = null!;
+        public IOfficer Officer { get; set; } = null!;
+        public IReadOnlyList<IOfficer> DeputyOfficers { get; set; } = null!;
+        public IReadOnlyList<IBranch> Branches { get; set; } = null!;
     }
 }
