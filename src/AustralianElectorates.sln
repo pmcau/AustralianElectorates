@@ -1,4 +1,5 @@
-﻿Microsoft Visual Studio Solution File, Format Version 12.00
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29201.188
 MinimumVisualStudioVersion = 16.0.29201.188
@@ -11,6 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 		appveyor.yml = appveyor.yml
 		Directory.Build.props = Directory.Build.props
+		nuget.config = nuget.config
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AustralianElectorates.Bogus", "AustralianElectorates.Bogus\AustralianElectorates.Bogus.csproj", "{09F7913A-2B29-49D9-98CF-7B2505F62691}"
