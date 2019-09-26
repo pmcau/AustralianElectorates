@@ -22,7 +22,7 @@ public class ElectoratesScraperTests :
         var bean = await ElectoratesScraper.ScrapeCurrentElectorate("bean", State.ACT, parties);
         var batman = await ElectoratesScraper.ScrapeCurrentElectorate("batman", State.VIC, parties);
         var melbourne = await ElectoratesScraper.ScrapeCurrentElectorate("melbourne", State.VIC, parties);
-        ObjectApprover.Verify(new {denison, melbourne,banks, hunter, batman, spence, cook, bean, fenner, canberra, bass});
+        ObjectApprover.Verify(new {denison, melbourne, banks, hunter, batman, spence, cook, bean, fenner, canberra, bass});
     }
 
     public ElectoratesScraperTests(ITestOutputHelper output) :

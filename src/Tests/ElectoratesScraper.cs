@@ -243,8 +243,9 @@ static class ElectoratesScraper
             split = split[1].Split(new[] {") "}, 2, StringSplitOptions.None);
             var partyIds = split[0].Split('/');
 
-            split = split[1].Split(new[] {"-"}, 2, StringSplitOptions.RemoveEmptyEntries);
-            var begin = ushort.Parse(split[0].Trim());
+            split = split[1].Split(new[] {"-","–"}, 2, StringSplitOptions.RemoveEmptyEntries);
+            var trim = split[0].Trim();
+            var begin = ushort.Parse(trim);
             ushort? end = null;
             if (split.Length > 1)
             {
