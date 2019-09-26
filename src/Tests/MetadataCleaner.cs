@@ -27,13 +27,13 @@ static class MetadataCleaner
         }
     }
 
-    static string GetState(Feature feature, State? state)
+    static string? GetState(Feature feature, State? state)
     {
         if (feature.Properties.TryGetValue("State", out var stateFromProperties))
         {
             return (string) stateFromProperties;
         }
 
-        return state.ToString();
+        return state?.ToString();
     }
 }
