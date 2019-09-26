@@ -2579,7 +2579,20 @@
         "State": "VIC",
         "Postcode": 3053
       }
-    }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Dance",
+        "GivenNames": "Felix",
+        "Address": {
+          "Line1": "25 Ormond Street",
+          "Suburb": "KENSINGTON",
+          "State": "VIC",
+          "Postcode": 3031
+        }
+      }
+    ]
   },
   {
     "Id": 1380,
