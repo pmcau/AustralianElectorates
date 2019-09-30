@@ -27,5 +27,9 @@
         {
             return $"{FamilyName}, {GivenNames}";
         }
+        public override string ToString()
+        {
+            return FullName();
+        }
     }
 }

@@ -57,6 +57,10 @@ namespace AustralianElectorates
                 .Replace("'", "")
                 .ToLowerInvariant();
         }
+        public override string ToString()
+        {
+            return Name;
+        }
 
         public IElectorateMap Get2016Map()
         {

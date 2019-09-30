@@ -2,7 +2,7 @@
 <Project>
   <PropertyGroup>
     <NoWarn>CS1591;IDE0007</NoWarn>
-    <Version>6.1.0</Version>
+    <Version>6.1.1</Version>
     <Copyright>Code under MIT. Data under AEC Copyright https://www.aec.gov.au/footer/Copyright.htm</Copyright>
   </PropertyGroup>
 </Project>
