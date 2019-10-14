@@ -1667,6 +1667,26 @@
     ]
   },
   {
+    "Id": 1481,
+    "Name": "Save Our One Planet Alliance",
+    "Code": "One Planet",
+    "Abbreviation": "One Planet",
+    "RegisterDate": "11 October 2019",
+    "AmendmentDate": "11 October 2019",
+    "Address": "254 McLeod Lane\nMANSFIELD VIC 3722",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Wark",
+      "GivenNames": "Chuck",
+      "Address": {
+        "Line1": "254 McLeod Lane",
+        "Suburb": "MANSFIELD",
+        "State": "VIC",
+        "Postcode": 3722
+      }
+    }
+  },
+  {
     "Id": 1385,
     "Name": "Science Party",
     "Code": "Science Party",
@@ -1761,7 +1781,7 @@
     "Abbreviation": "SUPA",
     "RegisterDate": "4 March 2015",
     "AmendmentDate": "4 March 2015",
-    "Address": "PO Box 6059\nMARRICKVILLE SOUTH NSW 2204",
+    "Address": "D5 Broadlands Estate\n9 Milpera Road\nGREEN POINT NSW 2251",
     "Officer": {
       "Title": "Mr",
       "FamilyName": "Koliadis",
