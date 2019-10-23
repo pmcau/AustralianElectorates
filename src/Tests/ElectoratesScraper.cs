@@ -105,7 +105,7 @@ static class ElectoratesScraper
                 if (first != null &&
                     first.FamilyName == familyName &&
                     first.GivenNames[0] == electedCandidateName.givenNames[0]
-                    )
+                )
                 {
                     first.End = null;
                     first.GivenNames = electedCandidateName.givenNames;
@@ -120,12 +120,12 @@ static class ElectoratesScraper
                     };
                     if (affiliationIdentifier != null)
                     {
-                        member.PartyIds = new List<ushort> { affiliationIdentifier.Id};
-                        member.PartyCodes =new List<string> { affiliationIdentifier.ShortCode};
+                        member.PartyIds = new List<ushort> {affiliationIdentifier.Id};
+                        member.PartyCodes = new List<string> {affiliationIdentifier.ShortCode};
                     }
 
                     electorateMembers.Insert(0,
-                    member);
+                        member);
                 }
             }
 
@@ -134,7 +134,7 @@ static class ElectoratesScraper
             electorate.ProductsAndIndustry = values["Products/Industries of the Area"].TrimmedInnerHtml();
 
 
-            var uri = new Uri(new Uri(requestUri),FindMapUrl(values));
+            var uri = new Uri(new Uri(requestUri), FindMapUrl(values));
             electorate.MapUrl = uri.AbsoluteUri;
 
             electorate.NameDerivation = values["Name derivation"].TrimmedInnerHtml();
@@ -173,18 +173,22 @@ static class ElectoratesScraper
         {
             return node;
         }
+
         if (values.TryGetValue("Maps of Division", out node))
         {
             return node;
         }
+
         if (values.TryGetValue("Map and data", out node))
         {
             return node;
         }
+
         if (values.TryGetValue("Maps and data", out node))
         {
             return node;
         }
+
         if (values.TryGetValue("Maps &amp; GIS data", out node))
         {
             return node;
@@ -238,12 +242,17 @@ static class ElectoratesScraper
                 continue;
             }
 
+            if (cleaned.StartsWith("The first member"))
+            {
+                continue;
+            }
+
             var split = cleaned.Split(new[] {" ("}, 2, StringSplitOptions.None);
             var member = split[0];
             split = split[1].Split(new[] {") "}, 2, StringSplitOptions.None);
             var partyIds = split[0].Split('/');
 
-            split = split[1].Split(new[] {"-","–"}, 2, StringSplitOptions.RemoveEmptyEntries);
+            split = split[1].Split(new[] {"-", "–"}, 2, StringSplitOptions.RemoveEmptyEntries);
             var trim = split[0].Trim();
             var begin = ushort.Parse(trim);
             ushort? end = null;

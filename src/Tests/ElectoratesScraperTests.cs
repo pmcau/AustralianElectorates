@@ -11,9 +11,9 @@ public class ElectoratesScraperTests :
     public async Task Run()
     {
         var parties = await PartyScraper.Run();
+        var bass = await ElectoratesScraper.ScrapeCurrentElectorate("clark", State.TAS, parties);
         var banks = await ElectoratesScraper.ScrapeCurrentElectorate("banks", State.NSW, parties);
         var denison = await ElectoratesScraper.Scrape2016Electorate("denison", State.TAS, parties);
-        var bass = await ElectoratesScraper.ScrapeCurrentElectorate("clark", State.TAS, parties);
         var fenner = await ElectoratesScraper.ScrapeCurrentElectorate("fenner", State.ACT, parties);
         var hunter = await ElectoratesScraper.ScrapeCurrentElectorate("hunter", State.NSW, parties);
         var spence = await ElectoratesScraper.ScrapeCurrentElectorate("spence", State.SA, parties);
