@@ -6,7 +6,7 @@
     <PackageReference Include="ApprovalTests" Version="4.2.2" />
     <PackageReference Include="Bogus" Version="28.4.1" />
     <PackageReference Include="CountryData" Version="3.12.0" />
-    <PackageReference Include="MarkdownSnippets.MsBuild" Version="17.0.0-beta.1" PrivateAssets="All" />
+    <PackageReference Include="MarkdownSnippets.MsBuild" Version="17.0.0-beta.2" PrivateAssets="all" />
     <PackageReference Include="ObjectApproval" Version="11.1.0" />
     <PackageReference Include="GeoJSON.Net" Version="1.1.73" />
     <PackageReference Include="HtmlAgilityPack" Version="1.11.16" />
