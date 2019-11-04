@@ -1435,14 +1435,15 @@
     "AmendmentDate": "7 September 2007",
     "Address": "PO Box 636\nDRUMMOYNE NSW 1470",
     "Officer": {
-      "Title": "Senator",
-      "FamilyName": "Leyonhjelm",
-      "GivenNames": "David",
+      "Title": "Mr ",
+      "FamilyName": "McDonald Cooper",
+      "GivenNames": "Andrew ",
       "Address": {
-        "Line1": "405/19 Roseby Street",
-        "Suburb": "DRUMMOYNE",
-        "State": "NSW",
-        "Postcode": 2047
+        "Line1": "Level 6",
+        "Line2": "40 City Road",
+        "Suburb": "Southbank",
+        "State": "VIC",
+        "Postcode": 3006
       }
     }
   },
