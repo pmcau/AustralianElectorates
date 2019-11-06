@@ -105,19 +105,20 @@ The level of simplification is represented as a percent number. 20, 10, 5, and 1
 
 ## NuGets
 
-The NuGets contain a static copy of all the electorate data. This data is embedded as resources inside the assembly. No network calls are done by the assembly.
+The NuGets contain a static copy of all the electorate data. This data is embedded as resources inside the assembly. No network calls are done.
 
- * https://nuget.org/packages/AustralianElectorates/ [![NuGet Status](https://img.shields.io/nuget/v/AustralianElectorates.svg?cacheSeconds=86400)](https://www.nuget.org/packages/AustralianElectorates/)
- * https://nuget.org/packages/AustralianElectorates.Bogus/ [![NuGet Status](https://img.shields.io/nuget/v/AustralianElectorates.Bogus.svg?cacheSeconds=86400)](https://www.nuget.org/packages/AustralianElectorates.Bogus/)
- * https://nuget.org/packages/AustralianElectorates.DetailMaps/ [![NuGet Status](https://img.shields.io/nuget/v/AustralianElectorates.DetailMaps.svg?cacheSeconds=86400)](https://www.nuget.org/packages/AustralianElectorates.DetailMaps/)
- * https://nuget.org/packages/AustralianElectorates.DetailMaps.Landscape/ [![NuGet Status](https://img.shields.io/nuget/v/AustralianElectorates.DetailMaps.Landscape.svg?cacheSeconds=86400)](https://www.nuget.org/packages/AustralianElectorates.DetailMaps.Landscape/)
- * https://nuget.org/packages/AustralianElectorates.DetailMaps.Portrait/ [![NuGet Status](https://img.shields.io/nuget/v/AustralianElectorates.DetailMaps.Portrait.svg?cacheSeconds=86400)](https://www.nuget.org/packages/AustralianElectorates.DetailMaps.Portrait/)
+ * [AustralianElectorates](https://nuget.org/packages/AustralianElectorates/)
+ * [AustralianElectorates.Bogus](https://nuget.org/packages/AustralianElectorates.Bogus/)
+ * [AustralianElectorates.DetailMaps](https://nuget.org/packages/AustralianElectorates.DetailMaps/)
+ * [AustralianElectorates.DetailMaps.Landscape](https://nuget.org/packages/AustralianElectorates.DetailMaps.Landscape/)
+ * [AustralianElectorates.DetailMaps.Portrait](https://nuget.org/packages/AustralianElectorates.DetailMaps.Portrait/)
 
 To get the latests version of the data do a NuGet update. There are several options to help keep a NuGet update:
 
  * [Dependabot](https://dependabot.com/): Creates pull requests to keep your dependencies secure and up-to-date.
  * [Using NuGet wildcards](https://docs.microsoft.com/en-us/nuget/reference/package-versioning#version-ranges-and-wildcards).
  * [Libraries.io](https://libraries.io/): Supports subscribing to NuGet package updates.
+
 
 ## Usage
 
