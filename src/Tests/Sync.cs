@@ -58,18 +58,18 @@ public class Sync :
     [Trait("Category", "Integration")]
     public void CreatePortraitAndLandscapeTest()
     {
-        var pngPath = Directory.GetFiles(DataLocations.MapsDetail).First();
+        var pngPath = Path.Combine(DataLocations.MapsDetail, "banks.png");
         CreatePortraitAndLandscape(pngPath);
     }
 
     static void CreatePortraitAndLandscape(string pngPath)
     {
-        var landscapePath = pngPath.Replace(".png","_landscape.png");
-        var portraitPath = pngPath.Replace(".png","_portrait.png");
+        var landscapePath = pngPath.Replace(".png", "_landscape.png");
+        var portraitPath = pngPath.Replace(".png", "_portrait.png");
         using var image = Image.FromStream(File.OpenRead(pngPath));
         if (image.Height < image.Width)
         {
-            image.RotateFlip(RotateFlipType.Rotate180FlipXY);
+            image.RotateFlip(RotateFlipType.Rotate270FlipXY);
             image.Save(portraitPath);
             File.Copy(pngPath, landscapePath, true);
             return;
@@ -119,7 +119,7 @@ public class Sync :
 
     static Sync()
     {
-        percents = new List<int> { 20, 10, 5, 1 };
+        percents = new List<int> {20, 10, 5, 1};
     }
 
     static void ProcessYear(string yearPath, List<string> electorates)
@@ -235,10 +235,11 @@ public class Sync :
                 {
                     electorate = await ElectoratesScraper.Scrape2016Electorate(electorateName, electoratePair.Key, parties);
                 }
+
                 electorate.Exist2016 = existIn2016;
                 electorate.Exist2019 = existIn2019;
                 electorate.ExistInFuture = existInFuture;
-                electorate.Locations = SelectLocations(electorateName,localityData).ToList();
+                electorate.Locations = SelectLocations(electorateName, localityData).ToList();
                 electorates.Add(electorate);
             }
         }
@@ -287,6 +288,7 @@ namespace AustralianElectorates
                 writer.WriteLine($@"
             {name} = Electorates.Single(x => x.Name == ""{electorate.Name}"");");
             }
+
             writer.WriteLine("        }");
 
             foreach (var electorate in electorates)
@@ -322,6 +324,7 @@ namespace AustralianElectorates.Bogus
             return DataLoader.{name};
         }}");
             }
+
             writer.WriteLine("    }");
             writer.WriteLine("}");
         }
