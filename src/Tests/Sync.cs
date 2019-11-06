@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
@@ -42,13 +43,50 @@ public class Sync :
 
         foreach (var file in Directory.EnumerateFiles(DataLocations.MapsDetail))
         {
-            PdfToPng.Convert(file);
+            var pngPath = PdfToPng.Convert(file);
             File.Delete(file);
+
+
+            CreatePortraitAndLandscape(pngPath);
         }
 
         WriteNamedCs(electorates);
         Export.ExportElectorates();
         Zipper.ZipDir(DataLocations.MapsCuratedZipPath, DataLocations.MapsCuratedPath);
+    }
+
+    [Fact]
+    [Trait("Category", "Integration")]
+    public void CreatePortraitAndLandscapeTest()
+    {
+        var pngPath = Directory.GetFiles(DataLocations.MapsDetail).First();
+        CreatePortraitAndLandscape(pngPath);
+    }
+
+    public static void CreatePortraitAndLandscape(string pngPath)
+    {
+        var fileName = Path.GetFileName(pngPath);
+        var landscapePath = Path.Combine(DataLocations.MapsDetailLandscape, fileName);
+        var portraitPath = Path.Combine(DataLocations.MapsDetailPortrait, fileName);
+        using var image = Image.FromStream(File.OpenRead(pngPath));
+        if (image.Height < image.Width)
+        {
+            image.RotateFlip(RotateFlipType.Rotate180FlipXY);
+            image.Save(portraitPath);
+            File.Copy(pngPath, landscapePath, true);
+            return;
+        }
+
+        if (image.Height > image.Width)
+        {
+            image.RotateFlip(RotateFlipType.Rotate90FlipXY);
+            image.Save(landscapePath);
+            File.Copy(pngPath, portraitPath, true);
+            return;
+        }
+
+        File.Copy(pngPath, landscapePath, true);
+        File.Copy(pngPath, portraitPath, true);
     }
 
     static List<int> percents;

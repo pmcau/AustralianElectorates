@@ -19,6 +19,10 @@ public static class DataLocations
         Directory.CreateDirectory(MapsFuturePath);
         MapsDetail = Path.GetFullPath(Path.Combine(DataPath, "DetailMaps"));
         Directory.CreateDirectory(MapsDetail);
+        MapsDetailLandscape = Path.GetFullPath(Path.Combine(DataPath, "DetailMaps.Landscape"));
+        Directory.CreateDirectory(MapsDetailLandscape);
+        MapsDetailPortrait = Path.GetFullPath(Path.Combine(DataPath, "DetailMaps.Portrait"));
+        Directory.CreateDirectory(MapsDetailPortrait);
         Maps2016Path = Path.GetFullPath(Path.Combine(MapsPath, "2016"));
         Directory.CreateDirectory(Maps2016Path);
         Australia2016JsonPath = Path.GetFullPath(Path.Combine(Maps2016Path, "australia.geojson"));
@@ -41,6 +45,8 @@ public static class DataLocations
     public static string BogusProjectPath;
     public static string MapsPath;
     public static string MapsDetail;
+    public static string MapsDetailPortrait;
+    public static string MapsDetailLandscape;
     public static string Maps2016Path;
     public static string Maps2019Path;
     public static string MapsFuturePath;
