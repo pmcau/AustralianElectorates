@@ -1,19 +1,20 @@
 ﻿using System;
 using System.IO;
 
-static class AssemblyTimestamp
+static class AssemblyLocation
 {
-    static AssemblyTimestamp()
+    public static string PathFor(Type type)
     {
-        var assembly = typeof(AssemblyTimestamp).Assembly;
+        var assembly = type.Assembly;
 
-        var assemblyPath = assembly.CodeBase
+        return assembly.CodeBase
             .Replace("file:///", "")
             .Replace("file://", "")
             .Replace(@"file:\\\", "")
             .Replace(@"file:\\", "");
-        Value = File.GetCreationTimeUtc(assemblyPath);
     }
-
-    public static DateTime Value;
+    public static string DirectoryFor(Type type)
+    {
+        return Path.GetDirectoryName(PathFor(type));
+    }
 }

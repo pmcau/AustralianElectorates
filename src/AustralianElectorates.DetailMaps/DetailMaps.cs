@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace AustralianElectorates
 {
@@ -7,20 +8,13 @@ namespace AustralianElectorates
     {
         static DetailMaps()
         {
-            var assembly = typeof(DetailMaps).Assembly;
-
-            var path = assembly.CodeBase
-                .Replace("file:///", "")
-                .Replace("file://", "")
-                .Replace(@"file:\\\", "")
-                .Replace(@"file:\\", "");
-            var assemblyDirectory = Path.GetDirectoryName(path);
+            var assemblyDirectory = AssemblyLocation.DirectoryFor(typeof(DetailMaps));
             Directory = Path.Combine(assemblyDirectory, "ElectorateMaps");
         }
 
         public static string MapForElectorate(string name)
         {
-            Guard.AgainstNullWhiteSpace(nameof(name),name);
+            Guard.AgainstNullWhiteSpace(nameof(name), name);
             return MapForElectorate(DataLoader.FindElectorate(name));
         }
 
@@ -33,7 +27,13 @@ namespace AustralianElectorates
         public static IEnumerable<string> Files(IElectorate electorate)
         {
             Guard.AgainstNull(electorate, nameof(electorate));
-            return System.IO.Directory.EnumerateFiles(Directory);
+
+            static bool Predicate(string x) =>
+                !x.Contains(".landscape.") &&
+                !x.Contains(".portrait.");
+
+            return System.IO.Directory.EnumerateFiles(Directory)
+                .Where(Predicate);
         }
 
         public static readonly string Directory;

@@ -18,6 +18,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AustralianElectorates.Bogus
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AustralianElectorates.DetailMaps", "AustralianElectorates.DetailMaps\AustralianElectorates.DetailMaps.csproj", "{64024F93-78A8-4D52-833C-948330C953B3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AustralianElectorates.DetailMaps.Landscape", "AustralianElectorates.DetailMaps.Landscape\AustralianElectorates.DetailMaps.Landscape.csproj", "{71041437-655E-4C96-840E-1D193579FB23}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AustralianElectorates.DetailMaps.Portrait", "AustralianElectorates.DetailMaps.Portrait\AustralianElectorates.DetailMaps.Portrait.csproj", "{49928944-9BD0-4C44-8C21-C30A7EC5F071}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +44,14 @@ Global
 		{64024F93-78A8-4D52-833C-948330C953B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64024F93-78A8-4D52-833C-948330C953B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64024F93-78A8-4D52-833C-948330C953B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71041437-655E-4C96-840E-1D193579FB23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71041437-655E-4C96-840E-1D193579FB23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71041437-655E-4C96-840E-1D193579FB23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71041437-655E-4C96-840E-1D193579FB23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49928944-9BD0-4C44-8C21-C30A7EC5F071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49928944-9BD0-4C44-8C21-C30A7EC5F071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49928944-9BD0-4C44-8C21-C30A7EC5F071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49928944-9BD0-4C44-8C21-C30A7EC5F071}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

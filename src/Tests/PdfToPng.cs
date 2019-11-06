@@ -7,7 +7,7 @@ public static class PdfToPng
     const string pngquantPath = @"C:\pngquant";
     const string ghostScriptPath = @"C:\Program Files\gs\gs9.27\bin";
 
-    public static void Convert(string pdf)
+    public static string Convert(string pdf)
     {
         var tempPng = pdf.Replace(".pdf", "_temp.png");
         var png = Path.ChangeExtension(pdf, "png");
@@ -15,6 +15,7 @@ public static class PdfToPng
         File.Delete(tempPng);
         CallGhostScript(pdf, tempPng);
         CallPngquant(tempPng, png);
+        return png;
     }
 
     static void CallPngquant(string tempPng, string png)

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageTags>Australia, Electorates</PackageTags>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Provides landscape png detail maps of electorates from the Australian Electoral Commission (AEC) data (https://www.aec.gov.au/).</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="..\..\Data\DetailMaps\*.landscape.*">
+      <Pack>true</Pack>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+      <PackagePath>contentFiles/any/any/ElectorateMaps</PackagePath>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ProjectDefaults" Version="1.0.27" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-19554-01" PrivateAssets="All" />
+    <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
+  </ItemGroup>
+</Project>
