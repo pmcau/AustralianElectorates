@@ -46,7 +46,6 @@ public class Sync :
             var pngPath = PdfToPng.Convert(file);
             File.Delete(file);
 
-
             CreatePortraitAndLandscape(pngPath);
         }
 
@@ -63,7 +62,7 @@ public class Sync :
         CreatePortraitAndLandscape(pngPath);
     }
 
-    public static void CreatePortraitAndLandscape(string pngPath)
+    static void CreatePortraitAndLandscape(string pngPath)
     {
         var landscapePath = pngPath.Replace(".png",".landscape.png");
         var portraitPath = pngPath.Replace(".png",".portrait.png");
