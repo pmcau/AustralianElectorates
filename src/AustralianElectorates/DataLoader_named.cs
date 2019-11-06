@@ -327,320 +327,320 @@ namespace AustralianElectorates
             Tangney = Electorates.Single(x => x.Name == "Tangney");
         }
 
-        public static IElectorate Canberra { get; private set; }  = null!;
+        public static IElectorate Canberra { get; private set; } = null!;
 
-        public static IElectorate Fenner { get; private set; }  = null!;
+        public static IElectorate Fenner { get; private set; } = null!;
 
-        public static IElectorate Bean { get; private set; }  = null!;
+        public static IElectorate Bean { get; private set; } = null!;
 
-        public static IElectorate Bass { get; private set; }  = null!;
+        public static IElectorate Bass { get; private set; } = null!;
 
-        public static IElectorate Braddon { get; private set; }  = null!;
+        public static IElectorate Braddon { get; private set; } = null!;
 
-        public static IElectorate Denison { get; private set; }  = null!;
+        public static IElectorate Denison { get; private set; } = null!;
 
-        public static IElectorate Franklin { get; private set; }  = null!;
+        public static IElectorate Franklin { get; private set; } = null!;
 
-        public static IElectorate Lyons { get; private set; }  = null!;
+        public static IElectorate Lyons { get; private set; } = null!;
 
-        public static IElectorate Clark { get; private set; }  = null!;
+        public static IElectorate Clark { get; private set; } = null!;
 
-        public static IElectorate Adelaide { get; private set; }  = null!;
+        public static IElectorate Adelaide { get; private set; } = null!;
 
-        public static IElectorate Barker { get; private set; }  = null!;
+        public static IElectorate Barker { get; private set; } = null!;
 
-        public static IElectorate Boothby { get; private set; }  = null!;
+        public static IElectorate Boothby { get; private set; } = null!;
 
-        public static IElectorate Grey { get; private set; }  = null!;
+        public static IElectorate Grey { get; private set; } = null!;
 
-        public static IElectorate Hindmarsh { get; private set; }  = null!;
+        public static IElectorate Hindmarsh { get; private set; } = null!;
 
-        public static IElectorate Kingston { get; private set; }  = null!;
+        public static IElectorate Kingston { get; private set; } = null!;
 
-        public static IElectorate Makin { get; private set; }  = null!;
+        public static IElectorate Makin { get; private set; } = null!;
 
-        public static IElectorate Mayo { get; private set; }  = null!;
+        public static IElectorate Mayo { get; private set; } = null!;
 
-        public static IElectorate PortAdelaide { get; private set; }  = null!;
+        public static IElectorate PortAdelaide { get; private set; } = null!;
 
-        public static IElectorate Sturt { get; private set; }  = null!;
+        public static IElectorate Sturt { get; private set; } = null!;
 
-        public static IElectorate Wakefield { get; private set; }  = null!;
+        public static IElectorate Wakefield { get; private set; } = null!;
 
-        public static IElectorate Spence { get; private set; }  = null!;
+        public static IElectorate Spence { get; private set; } = null!;
 
-        public static IElectorate Aston { get; private set; }  = null!;
+        public static IElectorate Aston { get; private set; } = null!;
 
-        public static IElectorate Ballarat { get; private set; }  = null!;
+        public static IElectorate Ballarat { get; private set; } = null!;
 
-        public static IElectorate Batman { get; private set; }  = null!;
+        public static IElectorate Batman { get; private set; } = null!;
 
-        public static IElectorate Bendigo { get; private set; }  = null!;
+        public static IElectorate Bendigo { get; private set; } = null!;
 
-        public static IElectorate Bruce { get; private set; }  = null!;
+        public static IElectorate Bruce { get; private set; } = null!;
 
-        public static IElectorate Calwell { get; private set; }  = null!;
+        public static IElectorate Calwell { get; private set; } = null!;
 
-        public static IElectorate Casey { get; private set; }  = null!;
+        public static IElectorate Casey { get; private set; } = null!;
 
-        public static IElectorate Chisholm { get; private set; }  = null!;
+        public static IElectorate Chisholm { get; private set; } = null!;
 
-        public static IElectorate Corangamite { get; private set; }  = null!;
+        public static IElectorate Corangamite { get; private set; } = null!;
 
-        public static IElectorate Corio { get; private set; }  = null!;
+        public static IElectorate Corio { get; private set; } = null!;
 
-        public static IElectorate Deakin { get; private set; }  = null!;
+        public static IElectorate Deakin { get; private set; } = null!;
 
-        public static IElectorate Dunkley { get; private set; }  = null!;
+        public static IElectorate Dunkley { get; private set; } = null!;
 
-        public static IElectorate Flinders { get; private set; }  = null!;
+        public static IElectorate Flinders { get; private set; } = null!;
 
-        public static IElectorate Gellibrand { get; private set; }  = null!;
+        public static IElectorate Gellibrand { get; private set; } = null!;
 
-        public static IElectorate Gippsland { get; private set; }  = null!;
+        public static IElectorate Gippsland { get; private set; } = null!;
 
-        public static IElectorate Goldstein { get; private set; }  = null!;
+        public static IElectorate Goldstein { get; private set; } = null!;
 
-        public static IElectorate Gorton { get; private set; }  = null!;
+        public static IElectorate Gorton { get; private set; } = null!;
 
-        public static IElectorate Higgins { get; private set; }  = null!;
+        public static IElectorate Higgins { get; private set; } = null!;
 
-        public static IElectorate Holt { get; private set; }  = null!;
+        public static IElectorate Holt { get; private set; } = null!;
 
-        public static IElectorate Hotham { get; private set; }  = null!;
+        public static IElectorate Hotham { get; private set; } = null!;
 
-        public static IElectorate Indi { get; private set; }  = null!;
+        public static IElectorate Indi { get; private set; } = null!;
 
-        public static IElectorate Isaacs { get; private set; }  = null!;
+        public static IElectorate Isaacs { get; private set; } = null!;
 
-        public static IElectorate Jagajaga { get; private set; }  = null!;
+        public static IElectorate Jagajaga { get; private set; } = null!;
 
-        public static IElectorate Kooyong { get; private set; }  = null!;
+        public static IElectorate Kooyong { get; private set; } = null!;
 
-        public static IElectorate LaTrobe { get; private set; }  = null!;
+        public static IElectorate LaTrobe { get; private set; } = null!;
 
-        public static IElectorate Lalor { get; private set; }  = null!;
+        public static IElectorate Lalor { get; private set; } = null!;
 
-        public static IElectorate Mallee { get; private set; }  = null!;
+        public static IElectorate Mallee { get; private set; } = null!;
 
-        public static IElectorate Maribyrnong { get; private set; }  = null!;
+        public static IElectorate Maribyrnong { get; private set; } = null!;
 
-        public static IElectorate McEwen { get; private set; }  = null!;
+        public static IElectorate McEwen { get; private set; } = null!;
 
-        public static IElectorate McMillan { get; private set; }  = null!;
+        public static IElectorate McMillan { get; private set; } = null!;
 
-        public static IElectorate Melbourne { get; private set; }  = null!;
+        public static IElectorate Melbourne { get; private set; } = null!;
 
-        public static IElectorate MelbournePorts { get; private set; }  = null!;
+        public static IElectorate MelbournePorts { get; private set; } = null!;
 
-        public static IElectorate Menzies { get; private set; }  = null!;
+        public static IElectorate Menzies { get; private set; } = null!;
 
-        public static IElectorate Murray { get; private set; }  = null!;
+        public static IElectorate Murray { get; private set; } = null!;
 
-        public static IElectorate Scullin { get; private set; }  = null!;
+        public static IElectorate Scullin { get; private set; } = null!;
 
-        public static IElectorate Wannon { get; private set; }  = null!;
+        public static IElectorate Wannon { get; private set; } = null!;
 
-        public static IElectorate Wills { get; private set; }  = null!;
+        public static IElectorate Wills { get; private set; } = null!;
 
-        public static IElectorate Cooper { get; private set; }  = null!;
+        public static IElectorate Cooper { get; private set; } = null!;
 
-        public static IElectorate Fraser { get; private set; }  = null!;
+        public static IElectorate Fraser { get; private set; } = null!;
 
-        public static IElectorate Macnamara { get; private set; }  = null!;
+        public static IElectorate Macnamara { get; private set; } = null!;
 
-        public static IElectorate Monash { get; private set; }  = null!;
+        public static IElectorate Monash { get; private set; } = null!;
 
-        public static IElectorate Nicholls { get; private set; }  = null!;
+        public static IElectorate Nicholls { get; private set; } = null!;
 
-        public static IElectorate Blair { get; private set; }  = null!;
+        public static IElectorate Blair { get; private set; } = null!;
 
-        public static IElectorate Bonner { get; private set; }  = null!;
+        public static IElectorate Bonner { get; private set; } = null!;
 
-        public static IElectorate Bowman { get; private set; }  = null!;
+        public static IElectorate Bowman { get; private set; } = null!;
 
-        public static IElectorate Brisbane { get; private set; }  = null!;
+        public static IElectorate Brisbane { get; private set; } = null!;
 
-        public static IElectorate Capricornia { get; private set; }  = null!;
+        public static IElectorate Capricornia { get; private set; } = null!;
 
-        public static IElectorate Dawson { get; private set; }  = null!;
+        public static IElectorate Dawson { get; private set; } = null!;
 
-        public static IElectorate Dickson { get; private set; }  = null!;
+        public static IElectorate Dickson { get; private set; } = null!;
 
-        public static IElectorate Fadden { get; private set; }  = null!;
+        public static IElectorate Fadden { get; private set; } = null!;
 
-        public static IElectorate Fairfax { get; private set; }  = null!;
+        public static IElectorate Fairfax { get; private set; } = null!;
 
-        public static IElectorate Fisher { get; private set; }  = null!;
+        public static IElectorate Fisher { get; private set; } = null!;
 
-        public static IElectorate Flynn { get; private set; }  = null!;
+        public static IElectorate Flynn { get; private set; } = null!;
 
-        public static IElectorate Forde { get; private set; }  = null!;
+        public static IElectorate Forde { get; private set; } = null!;
 
-        public static IElectorate Griffith { get; private set; }  = null!;
+        public static IElectorate Griffith { get; private set; } = null!;
 
-        public static IElectorate Groom { get; private set; }  = null!;
+        public static IElectorate Groom { get; private set; } = null!;
 
-        public static IElectorate Herbert { get; private set; }  = null!;
+        public static IElectorate Herbert { get; private set; } = null!;
 
-        public static IElectorate Hinkler { get; private set; }  = null!;
+        public static IElectorate Hinkler { get; private set; } = null!;
 
-        public static IElectorate Kennedy { get; private set; }  = null!;
+        public static IElectorate Kennedy { get; private set; } = null!;
 
-        public static IElectorate Leichhardt { get; private set; }  = null!;
+        public static IElectorate Leichhardt { get; private set; } = null!;
 
-        public static IElectorate Lilley { get; private set; }  = null!;
+        public static IElectorate Lilley { get; private set; } = null!;
 
-        public static IElectorate Longman { get; private set; }  = null!;
+        public static IElectorate Longman { get; private set; } = null!;
 
-        public static IElectorate Maranoa { get; private set; }  = null!;
+        public static IElectorate Maranoa { get; private set; } = null!;
 
-        public static IElectorate McPherson { get; private set; }  = null!;
+        public static IElectorate McPherson { get; private set; } = null!;
 
-        public static IElectorate Moncrieff { get; private set; }  = null!;
+        public static IElectorate Moncrieff { get; private set; } = null!;
 
-        public static IElectorate Moreton { get; private set; }  = null!;
+        public static IElectorate Moreton { get; private set; } = null!;
 
-        public static IElectorate Oxley { get; private set; }  = null!;
+        public static IElectorate Oxley { get; private set; } = null!;
 
-        public static IElectorate Petrie { get; private set; }  = null!;
+        public static IElectorate Petrie { get; private set; } = null!;
 
-        public static IElectorate Rankin { get; private set; }  = null!;
+        public static IElectorate Rankin { get; private set; } = null!;
 
-        public static IElectorate Ryan { get; private set; }  = null!;
+        public static IElectorate Ryan { get; private set; } = null!;
 
-        public static IElectorate WideBay { get; private set; }  = null!;
+        public static IElectorate WideBay { get; private set; } = null!;
 
-        public static IElectorate Wright { get; private set; }  = null!;
+        public static IElectorate Wright { get; private set; } = null!;
 
-        public static IElectorate Lingiari { get; private set; }  = null!;
+        public static IElectorate Lingiari { get; private set; } = null!;
 
-        public static IElectorate Solomon { get; private set; }  = null!;
+        public static IElectorate Solomon { get; private set; } = null!;
 
-        public static IElectorate Banks { get; private set; }  = null!;
+        public static IElectorate Banks { get; private set; } = null!;
 
-        public static IElectorate Barton { get; private set; }  = null!;
+        public static IElectorate Barton { get; private set; } = null!;
 
-        public static IElectorate Bennelong { get; private set; }  = null!;
+        public static IElectorate Bennelong { get; private set; } = null!;
 
-        public static IElectorate Berowra { get; private set; }  = null!;
+        public static IElectorate Berowra { get; private set; } = null!;
 
-        public static IElectorate Blaxland { get; private set; }  = null!;
+        public static IElectorate Blaxland { get; private set; } = null!;
 
-        public static IElectorate Bradfield { get; private set; }  = null!;
+        public static IElectorate Bradfield { get; private set; } = null!;
 
-        public static IElectorate Calare { get; private set; }  = null!;
+        public static IElectorate Calare { get; private set; } = null!;
 
-        public static IElectorate Chifley { get; private set; }  = null!;
+        public static IElectorate Chifley { get; private set; } = null!;
 
-        public static IElectorate Cook { get; private set; }  = null!;
+        public static IElectorate Cook { get; private set; } = null!;
 
-        public static IElectorate Cowper { get; private set; }  = null!;
+        public static IElectorate Cowper { get; private set; } = null!;
 
-        public static IElectorate Cunningham { get; private set; }  = null!;
+        public static IElectorate Cunningham { get; private set; } = null!;
 
-        public static IElectorate Dobell { get; private set; }  = null!;
+        public static IElectorate Dobell { get; private set; } = null!;
 
-        public static IElectorate EdenMonaro { get; private set; }  = null!;
+        public static IElectorate EdenMonaro { get; private set; } = null!;
 
-        public static IElectorate Farrer { get; private set; }  = null!;
+        public static IElectorate Farrer { get; private set; } = null!;
 
-        public static IElectorate Fowler { get; private set; }  = null!;
+        public static IElectorate Fowler { get; private set; } = null!;
 
-        public static IElectorate Gilmore { get; private set; }  = null!;
+        public static IElectorate Gilmore { get; private set; } = null!;
 
-        public static IElectorate Grayndler { get; private set; }  = null!;
+        public static IElectorate Grayndler { get; private set; } = null!;
 
-        public static IElectorate Greenway { get; private set; }  = null!;
+        public static IElectorate Greenway { get; private set; } = null!;
 
-        public static IElectorate Hughes { get; private set; }  = null!;
+        public static IElectorate Hughes { get; private set; } = null!;
 
-        public static IElectorate Hume { get; private set; }  = null!;
+        public static IElectorate Hume { get; private set; } = null!;
 
-        public static IElectorate Hunter { get; private set; }  = null!;
+        public static IElectorate Hunter { get; private set; } = null!;
 
-        public static IElectorate KingsfordSmith { get; private set; }  = null!;
+        public static IElectorate KingsfordSmith { get; private set; } = null!;
 
-        public static IElectorate Lindsay { get; private set; }  = null!;
+        public static IElectorate Lindsay { get; private set; } = null!;
 
-        public static IElectorate Lyne { get; private set; }  = null!;
+        public static IElectorate Lyne { get; private set; } = null!;
 
-        public static IElectorate Macarthur { get; private set; }  = null!;
+        public static IElectorate Macarthur { get; private set; } = null!;
 
-        public static IElectorate Mackellar { get; private set; }  = null!;
+        public static IElectorate Mackellar { get; private set; } = null!;
 
-        public static IElectorate Macquarie { get; private set; }  = null!;
+        public static IElectorate Macquarie { get; private set; } = null!;
 
-        public static IElectorate McMahon { get; private set; }  = null!;
+        public static IElectorate McMahon { get; private set; } = null!;
 
-        public static IElectorate Mitchell { get; private set; }  = null!;
+        public static IElectorate Mitchell { get; private set; } = null!;
 
-        public static IElectorate NewEngland { get; private set; }  = null!;
+        public static IElectorate NewEngland { get; private set; } = null!;
 
-        public static IElectorate Newcastle { get; private set; }  = null!;
+        public static IElectorate Newcastle { get; private set; } = null!;
 
-        public static IElectorate NorthSydney { get; private set; }  = null!;
+        public static IElectorate NorthSydney { get; private set; } = null!;
 
-        public static IElectorate Page { get; private set; }  = null!;
+        public static IElectorate Page { get; private set; } = null!;
 
-        public static IElectorate Parkes { get; private set; }  = null!;
+        public static IElectorate Parkes { get; private set; } = null!;
 
-        public static IElectorate Parramatta { get; private set; }  = null!;
+        public static IElectorate Parramatta { get; private set; } = null!;
 
-        public static IElectorate Paterson { get; private set; }  = null!;
+        public static IElectorate Paterson { get; private set; } = null!;
 
-        public static IElectorate Reid { get; private set; }  = null!;
+        public static IElectorate Reid { get; private set; } = null!;
 
-        public static IElectorate Richmond { get; private set; }  = null!;
+        public static IElectorate Richmond { get; private set; } = null!;
 
-        public static IElectorate Riverina { get; private set; }  = null!;
+        public static IElectorate Riverina { get; private set; } = null!;
 
-        public static IElectorate Robertson { get; private set; }  = null!;
+        public static IElectorate Robertson { get; private set; } = null!;
 
-        public static IElectorate Shortland { get; private set; }  = null!;
+        public static IElectorate Shortland { get; private set; } = null!;
 
-        public static IElectorate Sydney { get; private set; }  = null!;
+        public static IElectorate Sydney { get; private set; } = null!;
 
-        public static IElectorate Warringah { get; private set; }  = null!;
+        public static IElectorate Warringah { get; private set; } = null!;
 
-        public static IElectorate Watson { get; private set; }  = null!;
+        public static IElectorate Watson { get; private set; } = null!;
 
-        public static IElectorate Wentworth { get; private set; }  = null!;
+        public static IElectorate Wentworth { get; private set; } = null!;
 
-        public static IElectorate Werriwa { get; private set; }  = null!;
+        public static IElectorate Werriwa { get; private set; } = null!;
 
-        public static IElectorate Whitlam { get; private set; }  = null!;
+        public static IElectorate Whitlam { get; private set; } = null!;
 
-        public static IElectorate Brand { get; private set; }  = null!;
+        public static IElectorate Brand { get; private set; } = null!;
 
-        public static IElectorate Canning { get; private set; }  = null!;
+        public static IElectorate Canning { get; private set; } = null!;
 
-        public static IElectorate Cowan { get; private set; }  = null!;
+        public static IElectorate Cowan { get; private set; } = null!;
 
-        public static IElectorate Curtin { get; private set; }  = null!;
+        public static IElectorate Curtin { get; private set; } = null!;
 
-        public static IElectorate Durack { get; private set; }  = null!;
+        public static IElectorate Durack { get; private set; } = null!;
 
-        public static IElectorate Forrest { get; private set; }  = null!;
+        public static IElectorate Forrest { get; private set; } = null!;
 
-        public static IElectorate Fremantle { get; private set; }  = null!;
+        public static IElectorate Fremantle { get; private set; } = null!;
 
-        public static IElectorate Hasluck { get; private set; }  = null!;
+        public static IElectorate Hasluck { get; private set; } = null!;
 
-        public static IElectorate Moore { get; private set; }  = null!;
+        public static IElectorate Moore { get; private set; } = null!;
 
-        public static IElectorate Burt { get; private set; }  = null!;
+        public static IElectorate Burt { get; private set; } = null!;
 
-        public static IElectorate OConnor { get; private set; }  = null!;
+        public static IElectorate OConnor { get; private set; } = null!;
 
-        public static IElectorate Pearce { get; private set; }  = null!;
+        public static IElectorate Pearce { get; private set; } = null!;
 
-        public static IElectorate Perth { get; private set; }  = null!;
+        public static IElectorate Perth { get; private set; } = null!;
 
-        public static IElectorate Stirling { get; private set; }  = null!;
+        public static IElectorate Stirling { get; private set; } = null!;
 
-        public static IElectorate Swan { get; private set; }  = null!;
+        public static IElectorate Swan { get; private set; } = null!;
 
-        public static IElectorate Tangney { get; private set; }  = null!;
+        public static IElectorate Tangney { get; private set; } = null!;
     }
 }

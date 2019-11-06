@@ -7,15 +7,8 @@ namespace AustralianElectorates
     {
         static DetailMaps()
         {
-            var assembly = typeof(DetailMaps).Assembly;
-
-            var path = assembly.CodeBase
-                .Replace("file:///", "")
-                .Replace("file://", "")
-                .Replace(@"file:\\\", "")
-                .Replace(@"file:\\", "");
-            var assemblyDirectory = Path.GetDirectoryName(path);
-            Directory = Path.Combine(assemblyDirectory, "ElectorateMaps");
+            var assemblyDirectory = AssemblyLocation.DirectoryFor(typeof(DetailMaps));
+            Directory =  Path.Combine(assemblyDirectory, "ElectorateMaps");
         }
 
         public static string MapForElectorate(string name)
