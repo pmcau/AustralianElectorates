@@ -105,7 +105,7 @@ The level of simplification is represented as a percent number. 20, 10, 5, and 1
 
 ## NuGets
 
-The NuGets contain a static copy of all the electorate data. This data is embedded as resources inside the assembly. No network calls are done.
+The NuGets contain a static copy of the electorate data. This data is embedded as resources inside the assembly. No network calls are done.
 
  * [AustralianElectorates](https://nuget.org/packages/AustralianElectorates/)
  * [AustralianElectorates.Bogus](https://nuget.org/packages/AustralianElectorates.Bogus/)
