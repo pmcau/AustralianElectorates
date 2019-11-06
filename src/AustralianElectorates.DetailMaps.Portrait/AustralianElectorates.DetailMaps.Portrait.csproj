@@ -2,10 +2,10 @@
   <PropertyGroup>
     <PackageTags>Australia, Electorates</PackageTags>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Description>Provides png detail maps of electorates from the Australian Electoral Commission (AEC) data (https://www.aec.gov.au/).</Description>
+    <Description>Provides portrait png detail maps of electorates from the Australian Electoral Commission (AEC) data (https://www.aec.gov.au/).</Description>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="..\..\Data\DetailMaps\*.*" Exclude="..\..\Data\DetailMaps\*landscape*;..\..\Data\DetailMaps\*portrait*">
+    <Content Include="..\..\Data\DetailMaps\*.portrait.*">
       <Pack>true</Pack>
       <PackageCopyToOutput>true</PackageCopyToOutput>
       <PackagePath>contentFiles/any/any/ElectorateMaps</PackagePath>
