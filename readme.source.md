@@ -54,8 +54,8 @@ To change these to a more manageable size and format, they have been converted t
 There are 3 variants of these files:
 
  * Default: A direct conversion from the AEC pdf. Have no suffix ie `electorate.png`.
- * Landscape: Converted to landscape. Has the suffix `.landscape.` ie `electorate.landscape.png`.
- * Portrait: Converted to portrait. Has the suffix `.portrait.` ie `electorate.portrait.png`.
+ * Landscape: Converted to landscape. Has the suffix `_landscape.` ie `electorate_landscape.png`.
+ * Portrait: Converted to portrait. Has the suffix `_portrait.` ie `electorate_portrait.png`.
 
 
 ## GeoJson Maps

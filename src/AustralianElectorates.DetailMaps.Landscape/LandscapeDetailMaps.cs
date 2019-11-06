@@ -20,13 +20,13 @@ namespace AustralianElectorates
         public static string MapForElectorate(IElectorate electorate)
         {
             Guard.AgainstNull(electorate, nameof(electorate));
-            return Path.Combine(Directory, $"{electorate.ShortName}.landscape.png");
+            return Path.Combine(Directory, $"{electorate.ShortName}_landscape.png");
         }
 
         public static IEnumerable<string> Files(IElectorate electorate)
         {
             Guard.AgainstNull(electorate, nameof(electorate));
-            return System.IO.Directory.EnumerateFiles(Directory, "*.landscape.png");
+            return System.IO.Directory.EnumerateFiles(Directory, "*_landscape.png");
         }
 
         public static readonly string Directory;

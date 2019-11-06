@@ -64,8 +64,8 @@ public class Sync :
 
     static void CreatePortraitAndLandscape(string pngPath)
     {
-        var landscapePath = pngPath.Replace(".png",".landscape.png");
-        var portraitPath = pngPath.Replace(".png",".portrait.png");
+        var landscapePath = pngPath.Replace(".png","_landscape.png");
+        var portraitPath = pngPath.Replace(".png","_portrait.png");
         using var image = Image.FromStream(File.OpenRead(pngPath));
         if (image.Height < image.Width)
         {

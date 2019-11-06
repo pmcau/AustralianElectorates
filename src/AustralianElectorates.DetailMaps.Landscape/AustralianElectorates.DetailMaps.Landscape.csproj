@@ -5,7 +5,7 @@
     <Description>Provides landscape png detail maps of electorates from the Australian Electoral Commission (AEC) data (https://www.aec.gov.au/).</Description>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="..\..\Data\DetailMaps\*.landscape.*">
+    <Content Include="..\..\Data\DetailMaps\*_landscape.*">
       <Pack>true</Pack>
       <PackageCopyToOutput>true</PackageCopyToOutput>
       <PackagePath>contentFiles/any/any/ElectorateMaps</PackagePath>
