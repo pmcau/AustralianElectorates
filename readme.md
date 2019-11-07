@@ -428,7 +428,7 @@ return new List<Election>
     }
 };
 ```
-<sup>[snippet source](/src/AustralianElectorates/DataLoader.cs#L98-L118) / [anchor](#snippet-elections)</sup>
+<sup>[snippet source](/src/AustralianElectorates/DataLoader.cs#L99-L119) / [anchor](#snippet-elections)</sup>
 <!-- endsnippet -->
 
 ### ogr2ogr
