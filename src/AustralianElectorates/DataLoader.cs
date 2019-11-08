@@ -135,7 +135,7 @@ namespace AustralianElectorates
             throw new ElectionNotFoundException(parliament);
         }
 
-        public static bool TryFindElection(int parliament, [NotNullWhen(returnValue: true)] out IElection? election)
+        public static bool TryFindElection(int parliament, [NotNullWhen(true)] out IElection? election)
         {
             election = Elections.SingleOrDefault(x => x.Parliament == parliament);
             if (election != null)
@@ -157,7 +157,7 @@ namespace AustralianElectorates
             throw new ElectorateNotFoundException(name);
         }
 
-        public static bool TryFindElectorate(string name, [NotNullWhen(returnValue: true)] out IElectorate? electorate)
+        public static bool TryFindElectorate(string name, [NotNullWhen(true)] out IElectorate? electorate)
         {
             Guard.AgainstNullWhiteSpace(nameof(name), name);
             electorate = Electorates.SingleOrDefault(x => MatchName(name, x));
