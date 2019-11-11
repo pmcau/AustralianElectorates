@@ -54,6 +54,6 @@ static class JsonSerializerService
         using var fileStream = File.OpenRead(path);
         using var textReader = new StreamReader(fileStream);
         using var jsonTextReader = new JsonTextReader(textReader);
-        return jsonSerializer.Deserialize<T>(jsonTextReader);
+        return jsonSerializer.Deserialize<T>(jsonTextReader)!;
     }
 }
