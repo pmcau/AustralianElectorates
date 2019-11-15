@@ -272,6 +272,7 @@ public class Sync :
         {
             writer.WriteLine(@"
 // ReSharper disable IdentifierTypo
+// ReSharper disable RedundantDefaultMemberInitializer
 using System.Linq;
 
 namespace AustralianElectorates
@@ -309,6 +310,7 @@ namespace AustralianElectorates
         {
             writer.WriteLine(@"
 // ReSharper disable IdentifierTypo
+// ReSharper disable RedundantDefaultMemberInitializer
 using Bogus;
 
 namespace AustralianElectorates.Bogus
