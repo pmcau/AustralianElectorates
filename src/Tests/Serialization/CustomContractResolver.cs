@@ -4,9 +4,10 @@ using System.Linq;
 using System.Reflection;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
-using ObjectApproval;
+using VerifyXunit;
 
-public class CustomContractResolver : DefaultContractResolver
+public class CustomContractResolver :
+    DefaultContractResolver
 {
     protected override IList<JsonProperty> CreateProperties(Type type, MemberSerialization memberSerialization)
     {

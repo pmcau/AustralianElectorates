@@ -51,62 +51,7 @@ Location: [/Data/electorates.json](/Data/electorates.json)
 
 Sample:
 
-<!-- snippet: Snippets.ElectoratesSampleJson.approved.txt -->
-<a id='snippet-Snippets.ElectoratesSampleJson.approved.txt'/></a>
-```txt
-[
-  {
-    "Name": "Canberra",
-    "ShortName": "canberra",
-    "State": "ACT",
-    "Area": 312.0,
-    "Exist2016": true,
-    "Exist2019": true,
-    "ExistInFuture": true,
-    "DateGazetted": "2018-07-13",
-    "Description": "<p>The Division of Canberra covers an area in central ACT consisting of the Districts of:</p><ul><li>Canberra Central,</li><li>Kowen,</li><li>Majura,</li><li>part of Belconnen,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul>",
-    "DemographicRating": "<strong>Inner Metropolitan</strong> – situated in capital cities and consisting of well-established built-up suburbs",
-    "ProductsAndIndustry": "Mainly residential with tourism, retail and some light industry at Fyshwick and Beard",
-    "NameDerivation": "A locality name derived from an Aboriginal word which is held to mean 'meeting place'.",
-    "Enrollment": 95348,
-    "TwoCandidatePreferred": {
-      "Elected": {
-        "FamilyName": "Payne",
-        "GivenNames": "Alicia",
-        "PartyCode": "ALP",
-        "Votes": 57961,
-        "Swing": 4.14,
-        "PartyId": 200
-      },
-      "Other": {
-        "FamilyName": "Zaki",
-        "GivenNames": "Mina",
-        "PartyCode": "LP",
-        "Votes": 28442,
-        "Swing": -4.14,
-        "PartyId": 177
-      }
-    },
-    "Members": [
-      {
-        "FamilyName": "Payne",
-        "GivenNames": "Alicia",
-        "Begin": 2019,
-        "PartyCodes": [
-          "ALP"
-        ],
-        "PartyIds": [
-          200
-        ]
-      },
-      {
-        "FamilyName": "Brodtmann",
-        "GivenNames": "G",
-        "Begin": 2010,
-        "End": 2019,
-```
-<sup>[snippet source](/src/Tests/Snippets.ElectoratesSampleJson.approved.txt#L1-L50) / [anchor](#snippet-Snippets.ElectoratesSampleJson.approved.txt)</sup>
-<!-- endsnippet -->
+ssnippet: Snippets.ElectoratesSampleJson.approved.txt
 
 
 ## Localities
@@ -115,33 +60,7 @@ Location: [/Data/Localities.json](/Data/Localities.json)
 
 Sample:
 
-<!-- snippet: Snippets.LocalitiesSampleJson.approved.txt -->
-<a id='snippet-Snippets.LocalitiesSampleJson.approved.txt'/></a>
-```txt
-[
-  {
-    "Place": "Acton",
-    "Postcode": 2601,
-    "Electorate": "CANBERRA"
-  },
-  {
-    "Place": "Canberra Central",
-    "Postcode": 2601,
-    "Electorate": "CANBERRA"
-  },
-  {
-    "Place": "Canberra City",
-    "Postcode": 2601,
-    "Electorate": "CANBERRA"
-  },
-  {
-    "Place": "Ainslie",
-    "Postcode": 2602,
-    "Electorate": "CANBERRA"
-  },
-```
-<sup>[snippet source](/src/Tests/Snippets.LocalitiesSampleJson.approved.txt#L1-L21) / [anchor](#snippet-Snippets.LocalitiesSampleJson.approved.txt)</sup>
-<!-- endsnippet -->
+nippset: Snippets.LocalitiesSampleJson.verified.txt
 
 
 ## Parties
@@ -150,8 +69,8 @@ Location: [/Data/parties.json](/Data/parties.json)
 
 Sample:
 
-<!-- snippet: Snippets.PartiesSampleJson.approved.txt -->
-<a id='snippet-Snippets.PartiesSampleJson.approved.txt'/></a>
+<!-- snippet: Snippets.PartiesSampleJson.verified.txt -->
+<a id='snippet-Snippets.PartiesSampleJson.verified.txt'/></a>
 ```txt
 [
   {
@@ -188,7 +107,7 @@ Sample:
     ]
   },
 ```
-<sup>[snippet source](/src/Tests/Snippets.PartiesSampleJson.approved.txt#L1-L34) / [anchor](#snippet-Snippets.PartiesSampleJson.approved.txt)</sup>
+<sup>[snippet source](/src/Tests/Snippets.PartiesSampleJson.verified.txt#L1-L34) / [anchor](#snippet-Snippets.PartiesSampleJson.verified.txt)</sup>
 <!-- endsnippet -->
 
 
@@ -320,7 +239,7 @@ var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
 Directory.CreateDirectory(directory);
 DataLoader.Export(directory);
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L20-L62) / [anchor](#snippet-usage)</sup>
+<sup>[snippet source](/src/Tests/Snippets.cs#L21-L63) / [anchor](#snippet-usage)</sup>
 <!-- endsnippet -->
 
 
@@ -338,7 +257,7 @@ var faker = new Faker<Target>()
     .RuleFor(u => u.RandomMemberName, (f, u) => f.AustralianElectorates().MemberName());
 var targetInstance = faker.Generate();
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L94-L103) / [anchor](#snippet-usagebogus)</sup>
+<sup>[snippet source](/src/Tests/Snippets.cs#L95-L104) / [anchor](#snippet-usagebogus)</sup>
 <!-- endsnippet -->
 
 
@@ -349,7 +268,7 @@ var targetInstance = faker.Generate();
 ```cs
 var pathToPng = DetailMaps.MapForElectorate("Bass");
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L68-L70) / [anchor](#snippet-usagedetailmaps)</sup>
+<sup>[snippet source](/src/Tests/Snippets.cs#L69-L71) / [anchor](#snippet-usagedetailmaps)</sup>
 <!-- endsnippet -->
 
 

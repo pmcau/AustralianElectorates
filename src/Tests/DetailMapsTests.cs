@@ -1,10 +1,11 @@
 ﻿using System.Diagnostics;
 using AustralianElectorates;
+using VerifyXunit;
 using Xunit;
 using Xunit.Abstractions;
 
 public class DetailMapsTests :
-    XunitApprovalBase
+    VerifyBase
 {
     [Fact]
     public void Simple()

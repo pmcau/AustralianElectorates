@@ -1,9 +1,10 @@
 ﻿using System.Threading.Tasks;
+using VerifyXunit;
 using Xunit;
 using Xunit.Abstractions;
 
 public class PartyScraperTests :
-    XunitApprovalBase
+    VerifyBase
 {
     [Fact]
     [Trait("Category", "Integration")]

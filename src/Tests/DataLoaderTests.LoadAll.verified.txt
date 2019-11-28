@@ -1,4 +1,4 @@
-﻿{
+{
   FutureLoadedElectorateMaps: 151,
   FutureLoadedStateMaps: 8,
   LoadedElectorateMaps2016: 150,

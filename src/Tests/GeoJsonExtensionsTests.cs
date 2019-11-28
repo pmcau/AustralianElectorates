@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
 using GeoJSON.Net.Feature;
 using GeoJSON.Net.Geometry;
+using VerifyXunit;
 using Xunit;
 using Xunit.Abstractions;
 
 public class GeoJsonExtensionsTests :
-    XunitApprovalBase
+    VerifyBase
 {
     [Fact]
     public void BoundingBox()

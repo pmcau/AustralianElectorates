@@ -1,8 +1,9 @@
-﻿using Xunit;
+﻿using VerifyXunit;
+using Xunit;
 using Xunit.Abstractions;
 
 public class ExtensionsTests :
-    XunitApprovalBase
+    VerifyBase
 {
     [Theory]
     [InlineData("McLACHLAN, Craig Steven", "McLachlan, Craig Steven")]

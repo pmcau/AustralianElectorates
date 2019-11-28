@@ -7,11 +7,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using AustralianElectorates;
 using GeoJSON.Net.Feature;
+using VerifyXunit;
 using Xunit;
 using Xunit.Abstractions;
 
 public class Sync :
-    XunitApprovalBase
+    VerifyBase
 {
     [Fact]
     [Trait("Category", "Integration")]

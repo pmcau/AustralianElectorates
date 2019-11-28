@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "Place": "Acton",
     "Postcode": 2601,

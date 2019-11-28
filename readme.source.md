@@ -18,7 +18,7 @@ Location: [/Data/electorates.json](/Data/electorates.json)
 
 Sample:
 
-snippet: Snippets.ElectoratesSampleJson.approved.txt
+ssnippet: Snippets.ElectoratesSampleJson.approved.txt
 
 
 ## Localities
@@ -27,7 +27,7 @@ Location: [/Data/Localities.json](/Data/Localities.json)
 
 Sample:
 
-snippet: Snippets.LocalitiesSampleJson.approved.txt
+nippset: Snippets.LocalitiesSampleJson.verified.txt
 
 
 ## Parties
@@ -36,7 +36,7 @@ Location: [/Data/parties.json](/Data/parties.json)
 
 Sample:
 
-snippet: Snippets.PartiesSampleJson.approved.txt
+snippet: Snippets.PartiesSampleJson.verified.txt
 
 
 ## Detail Maps

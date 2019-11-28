@@ -1,4 +1,4 @@
-﻿[
+[
   {
     Parliament: 45,
     Year: 2016,

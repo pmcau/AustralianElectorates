@@ -1,8 +1,9 @@
-﻿using Xunit;
+﻿using VerifyXunit;
+using Xunit;
 using Xunit.Abstractions;
 
 public class PdfToPngTests :
-    XunitApprovalBase
+    VerifyBase
 {
     [Fact]
     [Trait("Category", "Integration")]

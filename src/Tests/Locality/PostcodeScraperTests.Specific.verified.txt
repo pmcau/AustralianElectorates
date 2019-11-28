@@ -1,4 +1,4 @@
-﻿[
+[
   {
     Place: 'Braddon',
     Postcode: 2612,

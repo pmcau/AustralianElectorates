@@ -1,0 +1,2 @@
+{"type":"FeatureCollection","features":[
+{"properties":{"electorateName":"Fenner","electorateShortName":"fenner","area":238.212122,"state":"ACT"},"type":"Feature","geometry":{"type":"MultiPolygon","c

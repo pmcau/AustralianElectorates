@@ -1,9 +1,10 @@
 ﻿using System.Diagnostics;
+using VerifyXunit;
 using Xunit;
 using Xunit.Abstractions;
 
 public class MediaFeedTests :
-    XunitApprovalBase
+    VerifyBase
 {
     [Fact]
     public void Run()

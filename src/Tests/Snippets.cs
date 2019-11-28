@@ -2,17 +2,18 @@
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using ApprovalTests;
+using System.Threading.Tasks;
 using AustralianElectorates;
 using AustralianElectorates.Bogus;
 using Bogus;
+using VerifyXunit;
 using Xunit;
 using Xunit.Abstractions;
 
 // ReSharper disable UnusedVariable
 
 public class Snippets :
-    XunitApprovalBase
+    VerifyBase
 {
     [Fact]
     public void Foo()
@@ -71,21 +72,21 @@ public class Snippets :
     }
 
     [Fact]
-    public void ElectoratesSampleJson()
+    public Task ElectoratesSampleJson()
     {
-         Approvals.Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.ElectoratesJsonPath).Take(50)));
+        return Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.ElectoratesJsonPath).Take(50)));
     }
 
     [Fact]
-    public void LocalitiesSampleJson()
+    public Task LocalitiesSampleJson()
     {
-         Approvals.Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.LocalitiesPath).Take(21)));
+        return Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.LocalitiesPath).Take(21)));
     }
 
     [Fact]
-    public void PartiesSampleJson()
+    public Task PartiesSampleJson()
     {
-         Approvals.Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.PartiesJsonPath).Take(34)));
+        return Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.PartiesJsonPath).Take(34)));
     }
 
     [Fact]

@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "Id": 1336,
     "Name": "#Sustainable Australia",

@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "Name": "Canberra",
     "ShortName": "canberra",

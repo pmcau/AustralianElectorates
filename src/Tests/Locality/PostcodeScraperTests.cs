@@ -2,11 +2,12 @@
 using System.Linq;
 using System.Threading.Tasks;
 using CountryData;
+using VerifyXunit;
 using Xunit;
 using Xunit.Abstractions;
 
 public class PostcodeScraperTests :
-    XunitApprovalBase
+    VerifyBase
 {
     [Fact]
     [Trait("Category", "Integration")]
@@ -15,14 +16,14 @@ public class PostcodeScraperTests :
         var data = await PostcodeScraper.Run();
         File.Delete(DataLocations.LocalitiesPath);
         JsonSerializerService.Serialize(data, DataLocations.LocalitiesPath);
-        ObjectApprover.Verify(data.Take(10));
+        await Verify(data.Take(10));
     }
 
     [Fact]
     public async Task Specific()
     {
         var place = CountryLoader.LoadAustraliaLocationData().PostCodes().Single(x=>x.Key == "2612");
-        ObjectApprover.Verify(await PostcodeScraper.GetAECDataForPostcode(place));
+        await Verify(await PostcodeScraper.GetAECDataForPostcode(place));
     }
 
     public PostcodeScraperTests(ITestOutputHelper output) :
