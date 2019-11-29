@@ -1,5 +1,6 @@
 
 // ReSharper disable IdentifierTypo
+// ReSharper disable RedundantDefaultMemberInitializer
 using Bogus;
 
 namespace AustralianElectorates.Bogus

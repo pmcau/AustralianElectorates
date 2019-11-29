@@ -1433,7 +1433,7 @@
     "Abbreviation": "Liberal Democrats",
     "RegisterDate": "7 September 2007",
     "AmendmentDate": "7 September 2007",
-    "Address": "PO Box 636\nDRUMMOYNE NSW 1470",
+    "Address": "Level 6\n40 City Road\nSOUTHBANK VIC 3006",
     "Officer": {
       "Title": "Mr ",
       "FamilyName": "McDonald Cooper",
@@ -1441,7 +1441,7 @@
       "Address": {
         "Line1": "Level 6",
         "Line2": "40 City Road",
-        "Suburb": "Southbank",
+        "Suburb": "SOUTHBANK",
         "State": "VIC",
         "Postcode": 3006
       }

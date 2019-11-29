@@ -27,11 +27,6 @@ public class Snippets :
         var canberra = DataLoader.Electorates.Single(x => x.Name == "Canberra");
         Debug.WriteLine(canberra.Description);
 
-        // access the current member
-        var currentMember = canberra.Members.First();
-        Debug.WriteLine($"{currentMember.FamilyName}, {currentMember.GivenNames}");
-        Debug.WriteLine(currentMember.Parties);
-
         // get an electorates maps (geojson) by string
         var fennerGeoJson2016 = DataLoader.Fenner.Get2016Map();
         Debug.WriteLine(fennerGeoJson2016);
@@ -93,13 +88,10 @@ public class Snippets :
     public void Bogus()
     {
         #region usagebogus
+
         var faker = new Faker<Target>()
             .RuleFor(u => u.RandomElectorate, (f, u) => f.AustralianElectorates().Electorate())
-            .RuleFor(u => u.RandomElectorateName, (f, u) => f.AustralianElectorates().Name())
-            .RuleFor(u => u.RandomCurrentMember, (f, u) => f.AustralianElectorates().CurrentMember())
-            .RuleFor(u => u.RandomCurrentMemberName, (f, u) => f.AustralianElectorates().CurrentMemberName())
-            .RuleFor(u => u.RandomMember, (f, u) => f.AustralianElectorates().Member())
-            .RuleFor(u => u.RandomMemberName, (f, u) => f.AustralianElectorates().MemberName());
+            .RuleFor(u => u.RandomElectorateName, (f, u) => f.AustralianElectorates().Name());
         var targetInstance = faker.Generate();
         #endregion
     }
@@ -107,11 +99,7 @@ public class Snippets :
     public class Target
     {
         public string RandomElectorateName = null!;
-        public IMember RandomMember = null!;
-        public string RandomMemberName = null!;
         public IElectorate RandomElectorate = null!;
-        public IMember RandomCurrentMember = null!;
-        public string RandomCurrentMemberName = null!;
     }
 
     public Snippets(ITestOutputHelper output) :

@@ -14,7 +14,6 @@ static class Serializer
         options.Converters.Add(new InterfaceConverter<Election, IElection>());
         options.Converters.Add(new InterfaceConverter<ElectorateMap, IElectorateMap>());
         options.Converters.Add(new InterfaceConverter<Location, ILocation>());
-        options.Converters.Add(new InterfaceConverter<Member, IMember>());
         options.Converters.Add(new InterfaceConverter<Officer, IOfficer>());
         options.Converters.Add(new InterfaceConverter<Party, IParty>());
         options.Converters.Add(new InterfaceConverter<Branch, IBranch>());

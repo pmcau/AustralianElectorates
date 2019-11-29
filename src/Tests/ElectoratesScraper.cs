@@ -12,16 +12,16 @@ static class ElectoratesScraper
     public static Task<ElectorateEx> ScrapeCurrentElectorate(string shortName, State state, List<Party> parties)
     {
         var requestUri = $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm";
-        return ScrapeElectorate(shortName, state, requestUri, "Profile of the electoral division of ", parties);
+        return ScrapeElectorate(shortName, state, requestUri, "Profile of the electoral division of ");
     }
 
     public static Task<ElectorateEx> Scrape2016Electorate(string shortName, State state, List<Party> parties)
     {
         var requestUri = $"https://www.aec.gov.au/Elections/federal_elections/2016/profiles/{state}/{shortName}.htm";
-        return ScrapeElectorate(shortName, state, requestUri, "2016 federal election: profile of the electoral division of ", parties);
+        return ScrapeElectorate(shortName, state, requestUri, "2016 federal election: profile of the electoral division of ");
     }
 
-    static async Task<ElectorateEx> ScrapeElectorate(string shortName, State state, string requestUri, string prefix, List<Party> parties)
+    static async Task<ElectorateEx> ScrapeElectorate(string shortName, State state, string requestUri, string prefix)
     {
         requestUri = requestUri.ToLowerInvariant();
         var tempElectorateHtmlPath = Path.Combine(DataLocations.TempPath, $"{shortName}.html");
@@ -59,13 +59,6 @@ static class ElectoratesScraper
                 electorate.DateGazetted = DateTime.ParseExact(gazettedHtml.InnerText, "d MMMM yyyy", null);
             }
 
-            var electorateMembers = ElectorateMembers(values, parties).ToList();
-            var first = electorateMembers.FirstOrDefault();
-            if (first != null && first.End == null)
-            {
-                first.End = 2019;
-            }
-
             var contest = MediaFeedService.HouseOfReps.Contests.SingleOrDefault(x => x.ContestIdentifier.ContestName == fullName);
             if (contest != null)
             {
@@ -99,40 +92,9 @@ static class ElectoratesScraper
                         Swing = other.Votes.Swing,
                     }
                 };
-
-                var familyName = electedCandidateName.familyName.ToTitleCase();
-
-                if (first != null &&
-                    first.FamilyName == familyName &&
-                    first.GivenNames[0] == electedCandidateName.givenNames[0]
-                )
-                {
-                    first.End = null;
-                    first.GivenNames = electedCandidateName.givenNames;
-                }
-                else
-                {
-                    var member = new Member
-                    {
-                        GivenNames = electedCandidateName.givenNames,
-                        FamilyName = familyName,
-                        Begin = 2019
-                    };
-                    if (affiliationIdentifier != null)
-                    {
-                        member.PartyIds = new List<ushort> {affiliationIdentifier.Id};
-                        member.PartyCodes = new List<string> {affiliationIdentifier.ShortCode};
-                    }
-
-                    electorateMembers.Insert(0,
-                        member);
-                }
             }
 
-            electorate.Members = electorateMembers;
             electorate.DemographicRating = values["Demographic Rating"].TrimmedInnerHtml();
-            electorate.ProductsAndIndustry = values["Products/Industries of the Area"].TrimmedInnerHtml();
-
 
             var uri = new Uri(new Uri(requestUri), FindMapUrl(values));
             electorate.MapUrl = uri.AbsoluteUri;
@@ -212,66 +174,6 @@ static class ElectoratesScraper
         var fullName = strings[0];
         Assert.NotEmpty(fullName);
         return fullName;
-    }
-
-    static IEnumerable<Member> ElectorateMembers(Dictionary<string, HtmlNode> values, List<Party> parties)
-    {
-        var members = values["Members"];
-        if (members.InnerText.Contains("will be elected at the next federal general election."))
-        {
-            yield break;
-        }
-
-        var texts = members
-            .Descendants("li")
-            .Select(x => x.ChildNodes.First().InnerText)
-            .ToList();
-        if (texts.Count == 0)
-        {
-            texts = members.ChildNodes
-                .Where(x => x.NodeType == HtmlNodeType.Text)
-                .Select(x => x.InnerText)
-                .ToList();
-        }
-
-        foreach (var text in texts)
-        {
-            var cleaned = text.TrimEnd('(').TrimmedInnerHtml();
-            if (cleaned.Length == 0)
-            {
-                continue;
-            }
-
-            if (cleaned.StartsWith("The first member"))
-            {
-                continue;
-            }
-
-            var split = cleaned.Split(new[] {" ("}, 2, StringSplitOptions.None);
-            var member = split[0];
-            split = split[1].Split(new[] {") "}, 2, StringSplitOptions.None);
-            var partyIds = split[0].Split('/');
-
-            split = split[1].Split(new[] {"-", "–"}, 2, StringSplitOptions.RemoveEmptyEntries);
-            var trim = split[0].Trim();
-            var begin = ushort.Parse(trim);
-            ushort? end = null;
-            if (split.Length > 1)
-            {
-                end = ushort.Parse(split[1].Trim());
-            }
-
-            var (familyName, givenNames) = SplitName(member);
-            yield return new Member
-            {
-                FamilyName = familyName,
-                GivenNames = givenNames,
-                PartyCodes = partyIds.ToList(),
-                PartyIds = FindPartyIds(partyIds, parties).ToList(),
-                Begin = begin,
-                End = end,
-            };
-        }
     }
 
     static IEnumerable<ushort> FindPartyIds(string[] partyIds, List<Party> parties)

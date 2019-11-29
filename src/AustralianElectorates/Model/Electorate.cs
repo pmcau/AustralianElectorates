@@ -15,13 +15,10 @@ namespace AustralianElectorates
         DateTime? DateGazetted { get; }
         string Description { get; }
         string DemographicRating { get; }
-        string ProductsAndIndustry { get; }
         string NameDerivation { get; }
         uint? Enrollment { get; }
         ITwoCandidatePreferred? TwoCandidatePreferred { get; }
-        IMember CurrentMember { get; set; }
         IPartyOrBranch CurrentParty { get; set; }
-        IReadOnlyList<IMember> Members { get; set; }
         IReadOnlyList<ILocation> Locations { get; set; }
         IElectorateMap Get2016Map();
         IElectorateMap Get2019Map();
@@ -41,13 +38,10 @@ namespace AustralianElectorates
         public DateTime? DateGazetted { get; set; }
         public string Description { get; set; } = null!;
         public string DemographicRating { get; set; } = null!;
-        public string ProductsAndIndustry { get; set; } = null!;
         public string NameDerivation { get; set; } = null!;
         public uint? Enrollment { get; set; }
         public ITwoCandidatePreferred? TwoCandidatePreferred { get;  set; }
-        public IMember CurrentMember { get; set; } = null!;
         public IPartyOrBranch CurrentParty { get; set; } = null!;
-        public IReadOnlyList<IMember> Members{ get; set; } = null!;
         public IReadOnlyList<ILocation> Locations{ get; set; } = null!;
 
         public static string GetShortName(string name)

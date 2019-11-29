@@ -53,43 +53,13 @@ namespace AustralianElectorates
                     var other =(Candidate)  preferred.Other;
                     other.Party = PartiesAndBranches.SingleOrDefault(x => x.Id == other.PartyId);
                 }
-
-                foreach (Member member in electorate.Members)
-                {
-                    member.Electorate = electorate;
-                    if (member.PartyIds == null)
-                    {
-                        member.PartyIds = new List<ushort>();
-                        member.Parties = new List<IPartyOrBranch>();
-                    }
-                    else
-                    {
-                        member.Parties = member.PartyIds
-                            .Select(x => PartiesAndBranches.SingleOrDefault(y => y.Id == x))
-                            .Where(x => x != null)
-                            .ToList();
-                    }
-                }
-
-                electorate.CurrentMember = electorate.Members.FirstOrDefault();
             }
 
-            AllMembers = Electorates
-                .SelectMany(x => x.Members)
-                .ToList();
-            AllCurrentMembers = Electorates
-                .Where(x => x.Members.Any())
-                .Select(x => x.Members.First())
-                .ToList();
             InitNamed();
             Elections = BuildElections();
         }
 
-        public static IReadOnlyList<IMember> AllMembers { get; }
-        public static IReadOnlyList<IMember> AllCurrentMembers { get; }
-
         public static IReadOnlyList<IElectorate> Electorates { get; }
-
 
         public static IReadOnlyList<IElection> Elections { get; }
 

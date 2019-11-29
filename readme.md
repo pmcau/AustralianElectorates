@@ -205,11 +205,6 @@ Debug.WriteLine(fenner.Description);
 var canberra = DataLoader.Electorates.Single(x => x.Name == "Canberra");
 Debug.WriteLine(canberra.Description);
 
-// access the current member
-var currentMember = canberra.Members.First();
-Debug.WriteLine($"{currentMember.FamilyName}, {currentMember.GivenNames}");
-Debug.WriteLine(currentMember.Parties);
-
 // get an electorates maps (geojson) by string
 var fennerGeoJson2016 = DataLoader.Fenner.Get2016Map();
 Debug.WriteLine(fennerGeoJson2016);
@@ -239,7 +234,7 @@ var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
 Directory.CreateDirectory(directory);
 DataLoader.Export(directory);
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L21-L63) / [anchor](#snippet-usage)</sup>
+<sup>[snippet source](/src/Tests/Snippets.cs#L21-L58) / [anchor](#snippet-usage)</sup>
 <!-- endsnippet -->
 
 
@@ -250,14 +245,10 @@ DataLoader.Export(directory);
 ```cs
 var faker = new Faker<Target>()
     .RuleFor(u => u.RandomElectorate, (f, u) => f.AustralianElectorates().Electorate())
-    .RuleFor(u => u.RandomElectorateName, (f, u) => f.AustralianElectorates().Name())
-    .RuleFor(u => u.RandomCurrentMember, (f, u) => f.AustralianElectorates().CurrentMember())
-    .RuleFor(u => u.RandomCurrentMemberName, (f, u) => f.AustralianElectorates().CurrentMemberName())
-    .RuleFor(u => u.RandomMember, (f, u) => f.AustralianElectorates().Member())
-    .RuleFor(u => u.RandomMemberName, (f, u) => f.AustralianElectorates().MemberName());
+    .RuleFor(u => u.RandomElectorateName, (f, u) => f.AustralianElectorates().Name());
 var targetInstance = faker.Generate();
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L95-L104) / [anchor](#snippet-usagebogus)</sup>
+<sup>[snippet source](/src/Tests/Snippets.cs#L90-L96) / [anchor](#snippet-usagebogus)</sup>
 <!-- endsnippet -->
 
 
@@ -268,7 +259,7 @@ var targetInstance = faker.Generate();
 ```cs
 var pathToPng = DetailMaps.MapForElectorate("Bass");
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L69-L71) / [anchor](#snippet-usagedetailmaps)</sup>
+<sup>[snippet source](/src/Tests/Snippets.cs#L64-L66) / [anchor](#snippet-usagedetailmaps)</sup>
 <!-- endsnippet -->
 
 
@@ -347,7 +338,7 @@ return new List<Election>
     }
 };
 ```
-<sup>[snippet source](/src/AustralianElectorates/DataLoader.cs#L99-L119) / [anchor](#snippet-elections)</sup>
+<sup>[snippet source](/src/AustralianElectorates/DataLoader.cs#L69-L89) / [anchor](#snippet-elections)</sup>
 <!-- endsnippet -->
 
 ### ogr2ogr
