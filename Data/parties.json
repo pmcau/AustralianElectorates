@@ -13,7 +13,7 @@
       "GivenNames": "William",
       "Address": {
         "Line1": "Suite 15, 20 Burlington Street",
-        "Suburb": "CROWS NEST",
+        "Suburb": "Crows Nest",
         "State": "NSW",
         "Postcode": 2065
       }
@@ -46,7 +46,7 @@
       "GivenNames": "Carol",
       "Address": {
         "Line1": "8/80 John Street",
-        "Suburb": "PYRMONT",
+        "Suburb": "Pyrmont",
         "State": "NSW",
         "Postcode": 2009
       }
@@ -58,7 +58,7 @@
         "GivenNames": "Bruce ",
         "Address": {
           "Line1": "4/15 Exploration Lane",
-          "Suburb": "MELBOURNE",
+          "Suburb": "Melbourne",
           "State": "VIC",
           "Postcode": 3000
         }
@@ -69,7 +69,7 @@
         "GivenNames": "Geoffrey",
         "Address": {
           "Line1": "6 Fifth Avenue",
-          "Suburb": "ST MORRIS",
+          "Suburb": "St Morris",
           "State": "SA",
           "Postcode": 5068
         }
@@ -81,7 +81,7 @@
         "Address": {
           "Line1": "Site 111",
           "Line2": "3 Powell Road",
-          "Suburb": "COOGEE",
+          "Suburb": "Coogee",
           "State": "WA",
           "Postcode": 6166
         }
@@ -92,7 +92,7 @@
         "GivenNames": "Lindon",
         "Address": {
           "Line1": "59 Thorpe Street",
-          "Suburb": "INDOOROOPILLY",
+          "Suburb": "Indooroopilly",
           "State": "QLD",
           "Postcode": 4068
         }
@@ -103,7 +103,7 @@
         "GivenNames": "Magdalena",
         "Address": {
           "Line1": "113 Milpera Crescent",
-          "Suburb": "WANTIRNA",
+          "Suburb": "Wantirna",
           "State": "VIC",
           "Postcode": 3152
         }
@@ -124,7 +124,7 @@
       "GivenNames": "James",
       "Address": {
         "Line1": "725 Princes Highway",
-        "Suburb": "TEMPE",
+        "Suburb": "Tempe",
         "State": "NSW",
         "Postcode": 2044
       }
@@ -137,7 +137,7 @@
         "Capacity": "Deputy Registered Officer",
         "Address": {
           "Line1": "26 Ticbourne Crescent",
-          "Suburb": "KOORINGAL",
+          "Suburb": "Kooringal",
           "State": "NSW",
           "Postcode": 2650
         }
@@ -159,7 +159,7 @@
       "Capacity": "Secretary",
       "Address": {
         "Line1": "9/26 Tindern Road",
-        "Suburb": "ASHFIELD",
+        "Suburb": "Ashfield",
         "State": "NSW",
         "Postcode": 2131
       }
@@ -179,7 +179,7 @@
       "GivenNames": "Leith",
       "Address": {
         "Line1": "6A Oaklyn Place",
-        "Suburb": "MERRIMAC",
+        "Suburb": "Merrimac",
         "State": "QLD",
         "Postcode": 4226
       }
@@ -199,7 +199,7 @@
       "GivenNames": "Maryka ",
       "Address": {
         "Line1": "64 Canning Highway",
-        "Suburb": "VICTORIA PARK",
+        "Suburb": "Victoria Park",
         "State": "WA",
         "Postcode": 6100
       }
@@ -211,7 +211,7 @@
         "GivenNames": "Kevin Michael",
         "Address": {
           "Line1": "2.29 Pomona Road",
-          "Suburb": "RIVERSIDE",
+          "Suburb": "Riverside",
           "State": "TAS",
           "Postcode": 7250
         }
@@ -244,7 +244,7 @@
       "Capacity": "Registered officer",
       "Address": {
         "Line1": "46 Lachlan Street ",
-        "Suburb": "BOGAN GATE",
+        "Suburb": "Bogan Gate",
         "State": "NSW",
         "Postcode": 2876
       }
@@ -265,7 +265,7 @@
       "Capacity": "National President",
       "Address": {
         "Line1": "15 Bassett Street",
-        "Suburb": "NAIRNE",
+        "Suburb": "Nairne",
         "State": "SA",
         "Postcode": 5252
       }
@@ -277,7 +277,7 @@
         "GivenNames": "Asbjorn Jan",
         "Address": {
           "Line1": "25 Meadowvale Road",
-          "Suburb": "ATHELSTONE",
+          "Suburb": "Athelstone",
           "State": "SA",
           "Postcode": 5076
         }
@@ -289,7 +289,7 @@
         "Capacity": "Party Agent",
         "Address": {
           "Line1": "8 Morey Road",
-          "Suburb": "BEAUMARIS",
+          "Suburb": "Beaumaris",
           "State": "VIC",
           "Postcode": 3193
         }
@@ -310,7 +310,7 @@
       "GivenNames": "Paul",
       "Address": {
         "Line1": "5/9 Sydney Avenue ",
-        "Suburb": "BARTON",
+        "Suburb": "Barton",
         "State": "ACT",
         "Postcode": 2600
       }
@@ -323,7 +323,7 @@
         "Capacity": "Assistant National Secretary",
         "Address": {
           "Line1": "290 Goyder Street",
-          "Suburb": "NARRABUNDAH ",
+          "Suburb": "Narrabundah",
           "State": "ACT",
           "Postcode": 2604
         }
@@ -346,7 +346,7 @@
           "Address": {
             "Line1": "1st Floor",
             "Line2": "222 City Walk",
-            "Suburb": "CANBERRA",
+            "Suburb": "Canberra",
             "State": "ACT",
             "Postcode": 2601
           }
@@ -358,7 +358,7 @@
             "GivenNames": "Elizabeth",
             "Address": {
               "Line1": "22 Alarmon Crescent",
-              "Suburb": "DUNLOP",
+              "Suburb": "Dunlop",
               "State": "ACT",
               "Postcode": 2615
             }
@@ -379,7 +379,7 @@
           "GivenNames": "Kaila",
           "Address": {
             "Line1": "Level 9, 377 Sussex St",
-            "Suburb": "SYDNEY",
+            "Suburb": "Sydney",
             "State": "NSW",
             "Postcode": 2000
           }
@@ -391,7 +391,7 @@
             "GivenNames": "David ",
             "Address": {
               "Line1": "PO BOX K408",
-              "Suburb": "HAYMARKET",
+              "Suburb": "Haymarket",
               "State": "NSW",
               "Postcode": 1240
             }
@@ -402,7 +402,7 @@
             "GivenNames": "Patrick",
             "Address": {
               "Line1": "PO Box K408",
-              "Suburb": "HAYMARKET",
+              "Suburb": "Haymarket",
               "State": "NSW",
               "Postcode": 1240
             }
@@ -413,7 +413,7 @@
             "GivenNames": "Rose ",
             "Address": {
               "Line1": "PO Box K408",
-              "Suburb": "HAYMARKET",
+              "Suburb": "Haymarket",
               "State": "NSW",
               "Postcode": 1240
             }
@@ -435,7 +435,7 @@
           "Capacity": "Secretary",
           "Address": {
             "Line1": "3/63 Winnellie Road",
-            "Suburb": "WINNELLIE",
+            "Suburb": "Winnellie",
             "State": "NT",
             "Postcode": 820
           }
@@ -456,7 +456,7 @@
           "Capacity": "State Secretary",
           "Address": {
             "Line1": "141 Gilles Street",
-            "Suburb": "ADELAIDE",
+            "Suburb": "Adelaide",
             "State": "SA",
             "Postcode": 5000
           }
@@ -478,7 +478,7 @@
           "Address": {
             "Line1": "Level 1 ",
             "Line2": "16 Peel Street",
-            "Suburb": "SOUTH BRISBANE",
+            "Suburb": "South Brisbane",
             "State": "QLD",
             "Postcode": 4101
           }
@@ -491,7 +491,7 @@
             "Capacity": "Deputy Registered Officer",
             "Address": {
               "Line1": "PO Box 5032",
-              "Suburb": "WEST END",
+              "Suburb": "West End",
               "State": "QLD",
               "Postcode": 4101
             }
@@ -512,7 +512,7 @@
           "GivenNames": "Stuart",
           "Address": {
             "Line1": "GPO Box 1115",
-            "Suburb": "HOBART",
+            "Suburb": "Hobart",
             "State": "TAS",
             "Postcode": 7001
           }
@@ -524,7 +524,7 @@
             "GivenNames": "Carol Louise",
             "Address": {
               "Line1": "1 Websters Road",
-              "Suburb": "LESLIE VALE",
+              "Suburb": "Leslie Vale",
               "State": "TAS",
               "Postcode": 7054
             }
@@ -546,7 +546,7 @@
           "Capacity": "Party Agent",
           "Address": {
             "Line1": "438 Docklands Drive",
-            "Suburb": "DOCKLANDS",
+            "Suburb": "Docklands",
             "State": "VIC",
             "Postcode": 3008
           }
@@ -568,7 +568,7 @@
           "Address": {
             "Line1": "Level 1",
             "Line2": "54 Cheriton Street",
-            "Suburb": "PERTH",
+            "Suburb": "Perth",
             "State": "WA",
             "Postcode": 6000
           }
@@ -581,7 +581,7 @@
             "Address": {
               "Line1": "Level 1",
               "Line2": "54 Cheriton Street",
-              "Suburb": "PERTH",
+              "Suburb": "Perth",
               "State": "WA",
               "Postcode": 6000
             }
@@ -603,7 +603,7 @@
           "Address": {
             "Line1": "Level 9 ",
             "Line2": "377 Sussex Street",
-            "Suburb": "SYDNEY",
+            "Suburb": "Sydney",
             "State": "NSW",
             "Postcode": 2000
           }
@@ -625,7 +625,7 @@
       "GivenNames": "Bruno",
       "Address": {
         "Line1": "221 Dromana Parade",
-        "Suburb": "SAFETY BEACH",
+        "Suburb": "Safety Beach",
         "State": "VIC",
         "Postcode": 3936
       }
@@ -637,7 +637,7 @@
         "GivenNames": "Gabriel",
         "Address": {
           "Line1": "221 Dromana Parade",
-          "Suburb": "SAFETY BEACH",
+          "Suburb": "Safety Beach",
           "State": "VIC",
           "Postcode": 3936
         }
@@ -659,7 +659,7 @@
       "Capacity": "Registered Officer",
       "Address": {
         "Line1": "24B Harpur Place",
-        "Suburb": "GARRAN",
+        "Suburb": "Garran",
         "State": "ACT",
         "Postcode": 2605
       }
@@ -680,7 +680,7 @@
       "Capacity": "Registered Officer",
       "Address": {
         "Line1": "470 Hawkesbury Road",
-        "Suburb": "WINMALEE",
+        "Suburb": "Winmalee",
         "State": "NSW",
         "Postcode": 2777
       }
@@ -700,7 +700,7 @@
       "GivenNames": "Rex",
       "Address": {
         "Line1": "Level 1, 169 Unley Road",
-        "Suburb": "UNLEY",
+        "Suburb": "Unley",
         "State": "SA",
         "Postcode": 5061
       }
@@ -721,7 +721,7 @@
       "Capacity": "Registered Officer",
       "Address": {
         "Line1": "8 Lido Court",
-        "Suburb": "PARA HILLS",
+        "Suburb": "Para Hills",
         "State": "SA",
         "Postcode": 5096
       }
@@ -742,7 +742,7 @@
       "Capacity": "National President",
       "Address": {
         "Line1": "10 Courtley Road",
-        "Suburb": "BEACON HILL",
+        "Suburb": "Beacon Hill",
         "State": "NSW",
         "Postcode": 2100
       }
@@ -777,7 +777,7 @@
       "Capacity": "National Secretary",
       "Address": {
         "Line1": "29 Hare Street",
-        "Suburb": "FAWKNER",
+        "Suburb": "Fawkner",
         "State": "VIC",
         "Postcode": 3060
       }
@@ -789,7 +789,7 @@
         "GivenNames": "Ann",
         "Address": {
           "Line1": "312 Wollombi Road",
-          "Suburb": "FARLEY",
+          "Suburb": "Farley",
           "State": "NSW",
           "Postcode": 2320
         }
@@ -800,7 +800,7 @@
         "GivenNames": "Barry",
         "Address": {
           "Line1": "39 Tuscan Street",
-          "Suburb": "ROSSMOYNE",
+          "Suburb": "Rossmoyne",
           "State": "WA",
           "Postcode": 6148
         }
@@ -811,7 +811,7 @@
         "GivenNames": "Dennis",
         "Address": {
           "Line1": "30 Plover Driver",
-          "Suburb": "EAGLEBY",
+          "Suburb": "Eagleby",
           "State": "QLD",
           "Postcode": 4207
         }
@@ -822,7 +822,7 @@
         "GivenNames": "Jan",
         "Address": {
           "Line1": "30 Plover Drive",
-          "Suburb": "EAGLEBY",
+          "Suburb": "Eagleby",
           "State": "QLD",
           "Postcode": 4207
         }
@@ -833,7 +833,7 @@
         "GivenNames": "Jean",
         "Address": {
           "Line1": "Lot 308 Potts Rd",
-          "Suburb": "KOJONUP",
+          "Suburb": "Kojonup",
           "State": "WA",
           "Postcode": 6395
         }
@@ -844,7 +844,7 @@
         "GivenNames": "Jeremy",
         "Address": {
           "Line1": "Unit 2, 27 Lockley Street",
-          "Suburb": "HADFIELD",
+          "Suburb": "Hadfield",
           "State": "VIC",
           "Postcode": 3046
         }
@@ -855,7 +855,7 @@
         "GivenNames": "Ray",
         "Address": {
           "Line1": "41 High Street",
-          "Suburb": "NEW NORFOLK",
+          "Suburb": "New Norfolk",
           "State": "TAS",
           "Postcode": 7140
         }
@@ -866,7 +866,7 @@
         "GivenNames": "Robert",
         "Address": {
           "Line1": "27 De Villiers Avenue",
-          "Suburb": "CHATSWOOD",
+          "Suburb": "Chatswood",
           "State": "NSW",
           "Postcode": 2067
         }
@@ -899,7 +899,7 @@
       "Capacity": "Treasurer",
       "Address": {
         "Line1": "2/229 McMillans Road",
-        "Suburb": "JINGILI",
+        "Suburb": "Jingili",
         "State": "NT",
         "Postcode": 810
       }
@@ -919,7 +919,7 @@
       "GivenNames": "Stephen",
       "Address": {
         "Line1": "11 Wheatsheaf Rd",
-        "Suburb": "CERES",
+        "Suburb": "Ceres",
         "State": "VIC",
         "Postcode": 3221
       }
@@ -931,7 +931,7 @@
         "GivenNames": "Jeffrey Keith Dominic",
         "Address": {
           "Line1": "19 Campbell Drive",
-          "Suburb": "WAHROONGA",
+          "Suburb": "Wahroonga",
           "State": "NSW",
           "Postcode": 2076
         }
@@ -944,7 +944,7 @@
         "Address": {
           "Line1": "90 Baaring Drive",
           "Line2": "Karana Downs",
-          "Suburb": "MOUNT CROSBY",
+          "Suburb": "Mount Crosby",
           "State": "QLD",
           "Postcode": 4306
         }
@@ -955,7 +955,7 @@
         "GivenNames": "Rosemary Anne",
         "Address": {
           "Line1": "PO Box 1119",
-          "Suburb": "WILLAGEE",
+          "Suburb": "Willagee",
           "State": "WA",
           "Postcode": 6156
         }
@@ -966,7 +966,7 @@
         "GivenNames": "Wayne",
         "Address": {
           "Line1": "2 Bareena Rd",
-          "Suburb": "TAROONA",
+          "Suburb": "Taroona",
           "State": "TAS",
           "Postcode": 7053
         }
@@ -987,7 +987,7 @@
       "GivenNames": "Annette",
       "Address": {
         "Line1": "1 Queens Road",
-        "Suburb": "MELBOURNE",
+        "Suburb": "Melbourne",
         "State": "VIC",
         "Postcode": 3004
       }
@@ -999,7 +999,7 @@
         "GivenNames": "Anthony",
         "Address": {
           "Line1": "PO Box 256",
-          "Suburb": "WILLIAMSTOWN",
+          "Suburb": "Williamstown",
           "State": "VIC",
           "Postcode": 3016
         }
@@ -1020,7 +1020,7 @@
       "GivenNames": "William Fraser",
       "Address": {
         "Line1": "20 Rigby Crescent",
-        "Suburb": "GLADSTONE",
+        "Suburb": "Gladstone",
         "State": "QLD",
         "Postcode": 4680
       }
@@ -1033,7 +1033,7 @@
         "Capacity": "Deputy Registered Officer",
         "Address": {
           "Line1": "P.O.Box 4229",
-          "Suburb": "LOGANHOLME",
+          "Suburb": "Loganholme",
           "State": "QLD",
           "Postcode": 4129
         }
@@ -1054,7 +1054,7 @@
       "GivenNames": "Andrew",
       "Address": {
         "Line1": "1 Erinne Court",
-        "Suburb": "ST HELENA",
+        "Suburb": "St Helena",
         "State": "VIC",
         "Postcode": 3088
       }
@@ -1074,7 +1074,7 @@
       "GivenNames": "David",
       "Address": {
         "Line1": "136 Davis Rd",
-        "Suburb": "JIGGI",
+        "Suburb": "Jiggi",
         "State": "NSW",
         "Postcode": 2480
       }
@@ -1086,7 +1086,7 @@
         "GivenNames": "Andrew",
         "Address": {
           "Line1": "51 Cullen Street",
-          "Suburb": "NIMBIN",
+          "Suburb": "Nimbin",
           "State": "NSW",
           "Postcode": 2480
         }
@@ -1108,7 +1108,7 @@
       "Capacity": "Registered Officer",
       "Address": {
         "Line1": "1/53 Stuart Street",
-        "Suburb": "MULLUMBIMBY",
+        "Suburb": "Mullumbimby",
         "State": "NSW",
         "Postcode": 2482
       }
@@ -1128,7 +1128,7 @@
       "GivenNames": "Megan Therese",
       "Address": {
         "Line1": "23 Goodhugh Street",
-        "Suburb": "EAST MAITLAND",
+        "Suburb": "East Maitland",
         "State": "NSW",
         "Postcode": 2323
       }
@@ -1149,7 +1149,7 @@
       "Capacity": "Registered Officer",
       "Address": {
         "Line1": "40 Blackwood Parade",
-        "Suburb": "ROMAINE",
+        "Suburb": "Romaine",
         "State": "TAS",
         "Postcode": 7320
       }
@@ -1171,7 +1171,7 @@
       "Address": {
         "Line1": "Erambie",
         "Line2": "2709 Mitchell Highway",
-        "Suburb": "MOLONG",
+        "Suburb": "Molong",
         "State": "NSW",
         "Postcode": 2866
       }
@@ -1193,7 +1193,7 @@
       "Address": {
         "Line1": "Menzies House",
         "Line2": "Cnr Blackall & Macquarie Streets",
-        "Suburb": "BARTON",
+        "Suburb": "Barton",
         "State": "ACT",
         "Postcode": 2600
       }
@@ -1206,7 +1206,7 @@
         "Capacity": "deputy registered officer",
         "Address": {
           "Line1": "PO Box 6004",
-          "Suburb": "KINGSTON",
+          "Suburb": "Kingston",
           "State": "ACT",
           "Postcode": 2604
         }
@@ -1227,7 +1227,7 @@
           "GivenNames": "Michael",
           "Address": {
             "Line1": "66-68 Bowen Street",
-            "Suburb": "SPRING HILL",
+            "Suburb": "Spring Hill",
             "State": "QLD",
             "Postcode": 4000
           }
@@ -1239,7 +1239,7 @@
             "GivenNames": "Angela",
             "Address": {
               "Line1": "PO Box 940",
-              "Suburb": "SPRING HILL",
+              "Suburb": "Spring Hill",
               "State": "QLD",
               "Postcode": 4004
             }
@@ -1261,7 +1261,7 @@
           "Capacity": "Party Agent",
           "Address": {
             "Line1": "2/12 Parliament Place",
-            "Suburb": "WEST PERTH",
+            "Suburb": "West Perth",
             "State": "WA",
             "Postcode": 6005
           }
@@ -1273,7 +1273,7 @@
             "GivenNames": "Cerena",
             "Address": {
               "Line1": "PO Box 49",
-              "Suburb": "WEST PERTH",
+              "Suburb": "West Perth",
               "State": "WA",
               "Postcode": 6872
             }
@@ -1294,7 +1294,7 @@
           "GivenNames": "Kay",
           "Address": {
             "Line1": "Suite 4, 50 Geils Court",
-            "Suburb": "DEAKIN",
+            "Suburb": "Deakin",
             "State": "ACT",
             "Postcode": 2600
           }
@@ -1316,7 +1316,7 @@
           "Address": {
             "Line1": "Suite 4c, Level 3",
             "Line2": "33 Salamanca Place",
-            "Suburb": "HOBART",
+            "Suburb": "Hobart",
             "State": "TAS",
             "Postcode": 7000
           }
@@ -1330,7 +1330,7 @@
             "Address": {
               "Line1": "Suite 4c, Level 3",
               "Line2": "33 Salamanca Place",
-              "Suburb": "HOBART",
+              "Suburb": "Hobart",
               "State": "TAS",
               "Postcode": 7000
             }
@@ -1352,7 +1352,7 @@
           "Capacity": "Registered Officer",
           "Address": {
             "Line1": "104 Greenhill Road",
-            "Suburb": "UNLEY",
+            "Suburb": "Unley",
             "State": "SA",
             "Postcode": 5061
           }
@@ -1372,7 +1372,7 @@
           "GivenNames": "Adam",
           "Address": {
             "Line1": "Level 2, 60 Collins Street",
-            "Suburb": "MELBOURNE",
+            "Suburb": "Melbourne",
             "State": "VIC",
             "Postcode": 3000
           }
@@ -1406,7 +1406,7 @@
             "Capacity": "Party Agent",
             "Address": {
               "Line1": "Locked Bag 2",
-              "Suburb": "KINGS CROSS",
+              "Suburb": "Kings Cross",
               "State": "NSW",
               "Postcode": 1340
             }
@@ -1417,7 +1417,7 @@
             "GivenNames": "Simon",
             "Address": {
               "Line1": "Locked Bag 2",
-              "Suburb": "KINGS CROSS",
+              "Suburb": "Kings Cross",
               "State": "NSW",
               "Postcode": 1340
             }
@@ -1441,7 +1441,7 @@
       "Address": {
         "Line1": "Level 6",
         "Line2": "40 City Road",
-        "Suburb": "SOUTHBANK",
+        "Suburb": "Southbank",
         "State": "VIC",
         "Postcode": 3006
       }
@@ -1461,7 +1461,7 @@
       "GivenNames": "Kim",
       "Address": {
         "Line1": "27 Lockheed Circuit",
-        "Suburb": "ST CLAIR",
+        "Suburb": "St Clair",
         "State": "NSW",
         "Postcode": 2759
       }
@@ -1482,7 +1482,7 @@
       "Capacity": "Party Secretary",
       "Address": {
         "Line1": "39 Dredge Avenue",
-        "Suburb": "DOUGLAS PARK",
+        "Suburb": "Douglas Park",
         "State": "NSW",
         "Postcode": 2569
       }
@@ -1494,7 +1494,7 @@
         "GivenNames": "John Edward",
         "Address": {
           "Line1": "PO Box 57",
-          "Suburb": "THIRROUL",
+          "Suburb": "Thirroul",
           "State": "NSW",
           "Postcode": 2515
         }
@@ -1515,7 +1515,7 @@
       "GivenNames": "Pauline",
       "Address": {
         "Line1": "17/109 Holt Street",
-        "Suburb": "EAGLE FARM",
+        "Suburb": "Eagle Farm",
         "State": "QLD",
         "Postcode": 4009
       }
@@ -1539,7 +1539,7 @@
         "GivenNames": "Rodney",
         "Address": {
           "Line1": "17/109 Holt Street",
-          "Suburb": "EAGLE FARM",
+          "Suburb": "Eagle Farm",
           "State": "QLD",
           "Postcode": 4009
         }
@@ -1560,7 +1560,7 @@
       "GivenNames": "Berge",
       "Address": {
         "Line1": "70 Carrington Parade",
-        "Suburb": "CURL CURL",
+        "Suburb": "Curl Curl",
         "State": "NSW",
         "Postcode": 2096
       }
@@ -1572,7 +1572,7 @@
         "GivenNames": "Francois",
         "Address": {
           "Line1": "16 Gardere Avenue",
-          "Suburb": "CURL CURL",
+          "Suburb": "Curl Curl",
           "State": "NSW",
           "Postcode": 2096
         }
@@ -1583,7 +1583,7 @@
         "GivenNames": "Nea",
         "Address": {
           "Line1": "70 Carrington Parade",
-          "Suburb": "CURL CURL",
+          "Suburb": "Curl Curl",
           "State": "NSW",
           "Postcode": 2096
         }
@@ -1604,7 +1604,7 @@
       "GivenNames": "Alexander",
       "Address": {
         "Line1": "39 Bel-Air Court",
-        "Suburb": "FERNY HILLS",
+        "Suburb": "Ferny Hills",
         "State": "QLD",
         "Postcode": 4055
       }
@@ -1625,7 +1625,7 @@
       "Capacity": "Registered Officer",
       "Address": {
         "Line1": "116/4 Young Street",
-        "Suburb": "NEUTRAL BAY",
+        "Suburb": "Neutral Bay",
         "State": "NSW",
         "Postcode": 2089
       }
@@ -1646,7 +1646,7 @@
       "Capacity": "Registered Officer, Party Agent",
       "Address": {
         "Line1": "412/33 Lexington Drive",
-        "Suburb": "BELLA VISTA",
+        "Suburb": "Bella Vista",
         "State": "NSW",
         "Postcode": 2153
       }
@@ -1659,7 +1659,7 @@
         "Capacity": "Deputy Registered Officer",
         "Address": {
           "Line1": "11 Acer Court",
-          "Suburb": "CHERRYBROOK",
+          "Suburb": "Cherrybrook",
           "State": "NSW",
           "Postcode": 2126
         }
@@ -1680,7 +1680,7 @@
       "GivenNames": "Chuck",
       "Address": {
         "Line1": "254 McLeod Lane",
-        "Suburb": "MANSFIELD",
+        "Suburb": "Mansfield",
         "State": "VIC",
         "Postcode": 3722
       }
@@ -1700,7 +1700,7 @@
       "GivenNames": "Andrea",
       "Address": {
         "Line1": "49 Harrington St",
-        "Suburb": "ENMORE",
+        "Suburb": "Enmore",
         "State": "NSW",
         "Postcode": 2042
       }
@@ -1711,7 +1711,7 @@
         "GivenNames": "Alexey",
         "Address": {
           "Line1": "39 Rodman Ave",
-          "Suburb": "MAROUBRA",
+          "Suburb": "Maroubra",
           "State": "NSW",
           "Postcode": 2035
         }
@@ -1722,7 +1722,7 @@
         "GivenNames": "Drew",
         "Address": {
           "Line1": "3/15 Kintore Avenue",
-          "Suburb": "PROSPECT",
+          "Suburb": "Prospect",
           "State": "SA",
           "Postcode": 5082
         }
@@ -1733,7 +1733,7 @@
         "GivenNames": "Lukanis",
         "Address": {
           "Line1": "49 Harrington Street",
-          "Suburb": "ENMORE",
+          "Suburb": "Enmore",
           "State": "NSW",
           "Postcode": 2042
         }
@@ -1754,7 +1754,7 @@
       "GivenNames": "Shaun",
       "Address": {
         "Line1": "30-40 The Esplanade",
-        "Suburb": "BURLEIGH HEADS",
+        "Suburb": "Burleigh Heads",
         "State": "QLD",
         "Postcode": 4220
       }
@@ -1767,7 +1767,7 @@
         "Capacity": "Deputy Registered Officer",
         "Address": {
           "Line1": "7 Cypress Court",
-          "Suburb": "MACLEOD",
+          "Suburb": "Macleod",
           "State": "VIC",
           "Postcode": 3085
         }
@@ -1790,7 +1790,7 @@
       "Address": {
         "Line1": "D5 Broadlands Estate",
         "Line2": "9 Milpera Road",
-        "Suburb": "GREEN POINT",
+        "Suburb": "Green Point",
         "State": "NSW",
         "Postcode": 2251
       }
@@ -1811,7 +1811,7 @@
       "Capacity": "Registered Officer",
       "Address": {
         "Line1": "PO Box 376",
-        "Suburb": "BAULKHAM HILLS",
+        "Suburb": "Baulkham Hills",
         "State": "NSW",
         "Postcode": 1755
       }
@@ -1846,7 +1846,7 @@
       "Address": {
         "Line1": "Suite C1.07, Level 1",
         "Line2": "22-36 Mountain Street",
-        "Suburb": "ULTIMO",
+        "Suburb": "Ultimo",
         "State": "NSW",
         "Postcode": 2007
       }
@@ -1859,7 +1859,7 @@
         "Capacity": "Secretary",
         "Address": {
           "Line1": "PO Box 204",
-          "Suburb": "NORTHBRIDGE",
+          "Suburb": "Northbridge",
           "State": "WA",
           "Postcode": 6865
         }
@@ -1870,7 +1870,7 @@
         "GivenNames": "David",
         "Address": {
           "Line1": "3/2a Loyola Ave",
-          "Suburb": "BRUNSWICK",
+          "Suburb": "Brunswick",
           "State": "VIC",
           "Postcode": 3056
         }
@@ -1882,7 +1882,7 @@
         "Address": {
           "Line1": "Level 2",
           "Line2": "95 Currie St",
-          "Suburb": "ADELAIDE",
+          "Suburb": "Adelaide",
           "State": "SA",
           "Postcode": 5000
         }
@@ -1893,7 +1893,7 @@
         "GivenNames": "Jim",
         "Address": {
           "Line1": "44 Shepherd St",
-          "Suburb": "CHIPPENDALE",
+          "Suburb": "Chippendale",
           "State": "NSW",
           "Postcode": 2008
         }
@@ -1904,7 +1904,7 @@
         "GivenNames": "Paul",
         "Address": {
           "Line1": "44 Shepherd St",
-          "Suburb": "CHIPPENDALE",
+          "Suburb": "Chippendale",
           "State": "NSW",
           "Postcode": 2008
         }
@@ -1915,7 +1915,7 @@
         "GivenNames": "Raul",
         "Address": {
           "Line1": "2/19 Earle Avenue",
-          "Suburb": "ASHFIELD",
+          "Suburb": "Ashfield",
           "State": "NSW",
           "Postcode": 2131
         }
@@ -1926,7 +1926,7 @@
         "GivenNames": "Ruth",
         "Address": {
           "Line1": "205/95 Currie St",
-          "Suburb": "ADELAIDE",
+          "Suburb": "Adelaide",
           "State": "SA",
           "Postcode": 5000
         }
@@ -1937,7 +1937,7 @@
         "GivenNames": "Samuel",
         "Address": {
           "Line1": "21a Jarvis St",
-          "Suburb": "O'CONNOR",
+          "Suburb": "O'Connor",
           "State": "WA",
           "Postcode": 6163
         }
@@ -1948,7 +1948,7 @@
         "GivenNames": "Susan",
         "Address": {
           "Line1": "225 Murray St",
-          "Suburb": "HOBART",
+          "Suburb": "Hobart",
           "State": "TAS",
           "Postcode": 7000
         }
@@ -1969,7 +1969,7 @@
       "GivenNames": "James",
       "Address": {
         "Line1": "Suite 906, 185 Elizabeth Street",
-        "Suburb": "SYDNEY",
+        "Suburb": "Sydney",
         "State": "NSW",
         "Postcode": 2000
       }
@@ -1981,7 +1981,7 @@
         "GivenNames": "Kaye Lynne",
         "Address": {
           "Line1": "13 / 11 Williams Pde",
-          "Suburb": "DULWICH HILL",
+          "Suburb": "Dulwich Hill",
           "State": "NSW",
           "Postcode": 2203
         }
@@ -2002,7 +2002,7 @@
       "GivenNames": "Terri Jean",
       "Address": {
         "Line1": "507 Marmion Street",
-        "Suburb": "BOORAGOON",
+        "Suburb": "Booragoon",
         "State": "WA",
         "Postcode": 6154
       }
@@ -2023,7 +2023,7 @@
       "Capacity": "Registered Officer",
       "Address": {
         "Line1": "65 Cardinal Circuit",
-        "Suburb": "CABOOLTURE",
+        "Suburb": "Caboolture",
         "State": "QLD",
         "Postcode": 4510
       }
@@ -2043,7 +2043,7 @@
       "GivenNames": "Giz",
       "Address": {
         "Line1": "2/97 Northbourne Avenue",
-        "Suburb": "TURNER",
+        "Suburb": "Turner",
         "State": "ACT",
         "Postcode": 2612
       }
@@ -2055,7 +2055,7 @@
         "GivenNames": "David Charles",
         "Address": {
           "Line1": "23 Pinaroo Cres",
-          "Suburb": "BATCHELOR",
+          "Suburb": "Batchelor",
           "State": "NT",
           "Postcode": 845
         }
@@ -2067,7 +2067,7 @@
         "Capacity": "Deputy Registered Officer",
         "Address": {
           "Line1": "PO Box 181",
-          "Suburb": "ORFORD",
+          "Suburb": "Orford",
           "State": "TAS",
           "Postcode": 7190
         }
@@ -2078,7 +2078,7 @@
         "GivenNames": "Grant William",
         "Address": {
           "Line1": "21 Hillborough Road",
-          "Suburb": "SOUTH HOBART",
+          "Suburb": "South Hobart",
           "State": "TAS",
           "Postcode": 7004
         }
@@ -2089,7 +2089,7 @@
         "GivenNames": "Ian",
         "Address": {
           "Line1": "239 Wright Street",
-          "Suburb": "ADELAIDE",
+          "Suburb": "Adelaide",
           "State": "SA",
           "Postcode": 5000
         }
@@ -2101,7 +2101,7 @@
         "Capacity": "Deputy Registered Officer",
         "Address": {
           "Line1": "171 Bolton Street",
-          "Suburb": "ELTHAM",
+          "Suburb": "Eltham",
           "State": "VIC",
           "Postcode": 3095
         }
@@ -2113,7 +2113,7 @@
         "Capacity": "Deputy Registered Officer",
         "Address": {
           "Line1": "GPO Box 4589",
-          "Suburb": "MELBOURNE",
+          "Suburb": "Melbourne",
           "State": "VIC",
           "Postcode": 3001
         }
@@ -2125,7 +2125,7 @@
         "Capacity": "Membership Officer",
         "Address": {
           "Line1": "25 Muttama Road",
-          "Suburb": "ARTARMON",
+          "Suburb": "Artarmon",
           "State": "NSW",
           "Postcode": 2064
         }
@@ -2136,7 +2136,7 @@
         "GivenNames": "Timothy",
         "Address": {
           "Line1": "28/97 Eastern Valley Way",
-          "Suburb": "BELCONNEN",
+          "Suburb": "Belconnen",
           "State": "ACT",
           "Postcode": 2617
         }
@@ -2159,7 +2159,7 @@
           "Address": {
             "Line1": "Albion Peace Centre",
             "Line2": "102 McDonald Road",
-            "Suburb": "WINDSOR",
+            "Suburb": "Windsor",
             "State": "QLD",
             "Postcode": 4030
           }
@@ -2171,7 +2171,7 @@
             "GivenNames": "Duncan",
             "Address": {
               "Line1": "102 McDonald Road",
-              "Suburb": "WINDSOR",
+              "Suburb": "Windsor",
               "State": "QLD",
               "Postcode": 4030
             }
@@ -2182,7 +2182,7 @@
             "GivenNames": "Jennifer",
             "Address": {
               "Line1": "49 Drummond Street",
-              "Suburb": "SINNAMON PARK",
+              "Suburb": "Sinnamon Park",
               "State": "QLD",
               "Postcode": 4073
             }
@@ -2203,7 +2203,7 @@
           "GivenNames": "Rohan ",
           "Address": {
             "Line1": "1/45 William Street",
-            "Suburb": "MELBOURNE",
+            "Suburb": "Melbourne",
             "State": "VIC",
             "Postcode": 3000
           }
@@ -2215,7 +2215,7 @@
             "GivenNames": "Lucy",
             "Address": {
               "Line1": "1/45 William Street",
-              "Suburb": "MELBOURNE",
+              "Suburb": "Melbourne",
               "State": "VIC",
               "Postcode": 3000
             }
@@ -2226,7 +2226,7 @@
             "GivenNames": "Tim",
             "Address": {
               "Line1": "1/45 William Street",
-              "Suburb": "MELBOURNE",
+              "Suburb": "Melbourne",
               "State": "VIC",
               "Postcode": 3000
             }
@@ -2248,7 +2248,7 @@
           "Capacity": "Registered Officer",
           "Address": {
             "Line1": "1/440 William Street",
-            "Suburb": "PERTH",
+            "Suburb": "Perth",
             "State": "WA",
             "Postcode": 6000
           }
@@ -2261,7 +2261,7 @@
             "Capacity": "Deputy Registered Officer",
             "Address": {
               "Line1": "37a Windsor Street",
-              "Suburb": "PERTH",
+              "Suburb": "Perth",
               "State": "WA",
               "Postcode": 6000
             }
@@ -2273,7 +2273,7 @@
             "Capacity": "Deputy Registered Officer",
             "Address": {
               "Line1": "1/440 William Street",
-              "Suburb": "PERTH",
+              "Suburb": "Perth",
               "State": "WA",
               "Postcode": 6000
             }
@@ -2295,7 +2295,7 @@
           "Address": {
             "Line1": "Suite D, Level 1",
             "Line2": "275 Broadway",
-            "Suburb": "GLEBE",
+            "Suburb": "Glebe",
             "State": "NSW",
             "Postcode": 2037
           }
@@ -2309,7 +2309,7 @@
               "Line1": "Suite D",
               "Line2": "Level 1",
               "Line3": "275 Broadway",
-              "Suburb": "GLEBE",
+              "Suburb": "Glebe",
               "State": "NSW",
               "Postcode": 2037
             }
@@ -2332,7 +2332,7 @@
       "GivenNames": "Benjamin",
       "Address": {
         "Line1": "7 National Circuit",
-        "Suburb": "BARTON",
+        "Suburb": "Barton",
         "State": "ACT",
         "Postcode": 2600
       }
@@ -2353,7 +2353,7 @@
           "Address": {
             "Line1": "Level 2",
             "Line2": "107 Pitt Street",
-            "Suburb": "SYDNEY",
+            "Suburb": "Sydney",
             "State": "NSW",
             "Postcode": 2000
           }
@@ -2365,7 +2365,7 @@
             "GivenNames": "Olivia",
             "Address": {
               "Line1": "2/15 Clarke Street",
-              "Suburb": "BOWRAL",
+              "Suburb": "Bowral",
               "State": "NSW",
               "Postcode": 2576
             }
@@ -2388,7 +2388,7 @@
           "Address": {
             "Line1": "Suite 908, Level 9",
             "Line2": "343 Little Collins St",
-            "Suburb": "MELBOURNE",
+            "Suburb": "Melbourne",
             "State": "VIC",
             "Postcode": 3000
           }
@@ -2401,7 +2401,7 @@
             "Address": {
               "Line1": "Suite 908, Level 9",
               "Line2": "343 Little Collins St",
-              "Suburb": "MELBOURNE",
+              "Suburb": "Melbourne",
               "State": "VIC",
               "Postcode": 3000
             }
@@ -2422,7 +2422,7 @@
           "GivenNames": "John",
           "Address": {
             "Line1": "5 Maple Court",
-            "Suburb": "OAKBANK",
+            "Suburb": "Oakbank",
             "State": "SA",
             "Postcode": 5243
           }
@@ -2442,7 +2442,7 @@
           "GivenNames": "James",
           "Address": {
             "Line1": "11 Haydock Street",
-            "Suburb": "BUNBURY",
+            "Suburb": "Bunbury",
             "State": "WA",
             "Postcode": 6230
           }
@@ -2454,7 +2454,7 @@
             "GivenNames": "Joseph",
             "Address": {
               "Line1": "PO Box 1418",
-              "Suburb": "WEST PERTH",
+              "Suburb": "West Perth",
               "State": "WA",
               "Postcode": 6872
             }
@@ -2479,7 +2479,7 @@
       "Address": {
         "Line1": "Unit 204",
         "Line2": "2 York Street",
-        "Suburb": "SYDNEY ",
+        "Suburb": "Sydney",
         "State": "NSW",
         "Postcode": 2000
       }
@@ -2500,7 +2500,7 @@
       "Capacity": "Registered Officer",
       "Address": {
         "Line1": "12/7 Grevillea Street",
-        "Suburb": "BYRON BAY",
+        "Suburb": "Byron Bay",
         "State": "NSW",
         "Postcode": 2481
       }
@@ -2513,7 +2513,7 @@
         "Capacity": "Deputy Registered Officer",
         "Address": {
           "Line1": "PO Box 1085",
-          "Suburb": "MULLUMBIMBY",
+          "Suburb": "Mullumbimby",
           "State": "NSW",
           "Postcode": 2482
         }
@@ -2534,7 +2534,7 @@
       "GivenNames": "Divvi",
       "Address": {
         "Line1": "4 Showview Street",
-        "Suburb": "GIRARDS HILL ",
+        "Suburb": "Girards Hill",
         "State": "NSW",
         "Postcode": 2480
       }
@@ -2554,7 +2554,7 @@
       "GivenNames": "Timothy",
       "Address": {
         "Line1": "118 Prospect Road",
-        "Suburb": "PROSPECT",
+        "Suburb": "Prospect",
         "State": "SA",
         "Postcode": 5082
       }
@@ -2575,7 +2575,7 @@
       "Address": {
         "Line1": "Level 17",
         "Line2": "240 Queen Street",
-        "Suburb": "BRISBANE",
+        "Suburb": "Brisbane",
         "State": "QLD",
         "Postcode": 4000
       }
@@ -2596,7 +2596,7 @@
       "Capacity": "Registered Officer",
       "Address": {
         "Line1": "54 Victoria Street",
-        "Suburb": "CARLTON SOUTH",
+        "Suburb": "Carlton South",
         "State": "VIC",
         "Postcode": 3053
       }
@@ -2608,7 +2608,7 @@
         "GivenNames": "Felix",
         "Address": {
           "Line1": "25 Ormond Street",
-          "Suburb": "KENSINGTON",
+          "Suburb": "Kensington",
           "State": "VIC",
           "Postcode": 3031
         }
@@ -2629,7 +2629,7 @@
       "GivenNames": "Sandi",
       "Address": {
         "Line1": "28/23-27 McMahon Street",
-        "Suburb": "HURSTVILLE",
+        "Suburb": "Hurstville",
         "State": "NSW",
         "Postcode": 2220
       }
@@ -2641,7 +2641,7 @@
         "GivenNames": "Shayne",
         "Address": {
           "Line1": "PO Box 73",
-          "Suburb": "STUARTS POINT",
+          "Suburb": "Stuarts Point",
           "State": "NSW",
           "Postcode": 2441
         }
@@ -2663,7 +2663,7 @@
       "Capacity": "Registered Officer",
       "Address": {
         "Line1": "1/63A Upper Pitt Street",
-        "Suburb": "KIRRIBILLI",
+        "Suburb": "Kirribilli",
         "State": "NSW",
         "Postcode": 2061
       }
@@ -2676,7 +2676,7 @@
         "Capacity": "Secretary",
         "Address": {
           "Line1": "406/58-60 King Street",
-          "Suburb": "NEWTOWN",
+          "Suburb": "Newtown",
           "State": "NSW",
           "Postcode": 2042
         }
@@ -2698,7 +2698,7 @@
       "Capacity": "Registered Offiicer",
       "Address": {
         "Line1": "139 Coghlan Road",
-        "Suburb": "SUBIACO",
+        "Suburb": "Subiaco",
         "State": "WA",
         "Postcode": 6008
       }
@@ -2718,7 +2718,7 @@
       "GivenNames": "Deborah",
       "Address": {
         "Line1": "23/60 Flinders Street",
-        "Suburb": "MELBOURNE",
+        "Suburb": "Melbourne",
         "State": "VIC",
         "Postcode": 3000
       }

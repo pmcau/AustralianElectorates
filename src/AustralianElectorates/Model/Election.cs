@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace AustralianElectorates
 {
@@ -11,6 +12,7 @@ namespace AustralianElectorates
         IReadOnlyList<IElectorate> Electorates { get; }
     }
 
+    [DebuggerDisplay("Parliament={Parliament}, Year={Year}")]
     class Election :
         IElection
     {

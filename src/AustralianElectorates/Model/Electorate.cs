@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace AustralianElectorates
 {
@@ -25,6 +26,7 @@ namespace AustralianElectorates
         IElectorateMap GetFutureMap();
     }
 
+    [DebuggerDisplay("Name={Name}, State={State}")]
     class Electorate :
         IElectorate
     {

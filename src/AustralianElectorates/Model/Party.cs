@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace AustralianElectorates
 {
@@ -8,6 +9,7 @@ namespace AustralianElectorates
         IReadOnlyList<IBranch> Branches { get; }
     }
 
+    [DebuggerDisplay("Name={Name}, Code={Code}")]
     class Party :
         IParty
     {

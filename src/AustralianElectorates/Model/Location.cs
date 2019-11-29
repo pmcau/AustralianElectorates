@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace AustralianElectorates
 {
@@ -9,6 +10,7 @@ namespace AustralianElectorates
         IReadOnlyList<string> Localities { get; }
     }
 
+    [DebuggerDisplay("Postcode={Postcode}")]
     class Location :
         ILocation
     {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ using AustralianElectorates;
 using Officer = AustralianElectorates.Officer;
 using Address = AustralianElectorates.Address;
 using Branch = AustralianElectorates.Branch;
+using State = AustralianElectorates.State;
 
 static class PartyScraper
 {
@@ -209,8 +211,20 @@ static class PartyScraper
             Line1 = line1,
             Line2 = line2,
             Line3 = line3,
-            Postcode = Convert.ToInt32(deputyOfficerAddress.Postcode),
-            Suburb = deputyOfficerAddress.Suburb,
+            Postcode =  Convert.ToInt32(deputyOfficerAddress.Postcode),
+            Suburb = FixSuburbCase(deputyOfficerAddress,deputyOfficerAddress.Postcode),
         };
+    }
+
+    static string FixSuburbCase(AecModels.Address deputyOfficerAddress, string postcode)
+    {
+        var suburbs = AustraliaData.PostCodes.Single(x => x.Key == postcode).Value;
+        var suburb = deputyOfficerAddress.Suburb.Trim();
+        var place = suburbs.SingleOrDefault(x => string.Equals(x.Name, suburb, StringComparison.OrdinalIgnoreCase));
+        if (place == null)
+        {
+            return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(suburb);
+        }
+        return place.Name!;
     }
 }

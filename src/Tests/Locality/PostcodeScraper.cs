@@ -11,15 +11,11 @@ static class PostcodeScraper
 {
     static HttpClient client = new HttpClient();
     static HtmlDocument doc = new HtmlDocument();
-    static ICountry australia = CountryLoader.LoadAustraliaLocationData();
 
     public static async Task<List<AecLocalityData>> Run()
     {
         var items = new List<AecLocalityData>();
-        var postcodes = australia
-            .PostCodes()
-            .ToList();
-        foreach (var postcode in postcodes)
+        foreach (var postcode in AustraliaData.PostCodes)
         {
             items.AddRange(await GetAECDataForPostcode(postcode));
         }

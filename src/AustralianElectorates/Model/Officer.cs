@@ -1,4 +1,6 @@
-﻿namespace AustralianElectorates
+﻿using System.Diagnostics;
+
+namespace AustralianElectorates
 {
     public interface IOfficer
     {
@@ -10,6 +12,7 @@
         string FullName();
     }
 
+    [DebuggerDisplay("FamilyName={FamilyName}, GivenNames={GivenNames}")]
     class Officer :
         IOfficer
     {
