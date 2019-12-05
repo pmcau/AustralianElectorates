@@ -40,9 +40,7 @@ All information about electorates is available at [/Data/electorates.json](/Data
     * [GhostScript](#ghostscript)
     * [pngquant](#pngquant)
   * [Purge history](#purge-history)
-  * [Notes](#notes)
-<!-- endtoc -->
-
+  * [Notes](#notes)<!-- endtoc -->
 
 
 ## Electorates
