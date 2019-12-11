@@ -105,7 +105,7 @@ Sample:
     ]
   },
 ```
-<sup>[snippet source](/src/Tests/Snippets.PartiesSampleJson.verified.txt#L1-L34) / [anchor](#snippet-Snippets.PartiesSampleJson.verified.txt)</sup>
+<sup><a href='/src/Tests/Snippets.PartiesSampleJson.verified.txt#L1-L34' title='File snippet `Snippets.PartiesSampleJson.verified.txt` was extracted from'>snippet source</a> | <a href='#snippet-Snippets.PartiesSampleJson.verified.txt' title='Navigate to start of snippet `Snippets.PartiesSampleJson.verified.txt`'>anchor</a></sup>
 <!-- endsnippet -->
 
 
@@ -232,7 +232,7 @@ var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
 Directory.CreateDirectory(directory);
 DataLoader.Export(directory);
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L21-L58) / [anchor](#snippet-usage)</sup>
+<sup><a href='/src/Tests/Snippets.cs#L21-L58' title='File snippet `usage` was extracted from'>snippet source</a> | <a href='#snippet-usage' title='Navigate to start of snippet `usage`'>anchor</a></sup>
 <!-- endsnippet -->
 
 
@@ -246,7 +246,7 @@ var faker = new Faker<Target>()
     .RuleFor(u => u.RandomElectorateName, (f, u) => f.AustralianElectorates().Name());
 var targetInstance = faker.Generate();
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L90-L96) / [anchor](#snippet-usagebogus)</sup>
+<sup><a href='/src/Tests/Snippets.cs#L90-L96' title='File snippet `usagebogus` was extracted from'>snippet source</a> | <a href='#snippet-usagebogus' title='Navigate to start of snippet `usagebogus`'>anchor</a></sup>
 <!-- endsnippet -->
 
 
@@ -257,7 +257,7 @@ var targetInstance = faker.Generate();
 ```cs
 var pathToPng = DetailMaps.MapForElectorate("Bass");
 ```
-<sup>[snippet source](/src/Tests/Snippets.cs#L64-L66) / [anchor](#snippet-usagedetailmaps)</sup>
+<sup><a href='/src/Tests/Snippets.cs#L64-L66' title='File snippet `usagedetailmaps` was extracted from'>snippet source</a> | <a href='#snippet-usagedetailmaps' title='Navigate to start of snippet `usagedetailmaps`'>anchor</a></sup>
 <!-- endsnippet -->
 
 
@@ -336,7 +336,7 @@ return new List<Election>
     }
 };
 ```
-<sup>[snippet source](/src/AustralianElectorates/DataLoader.cs#L69-L89) / [anchor](#snippet-elections)</sup>
+<sup><a href='/src/AustralianElectorates/DataLoader.cs#L69-L89' title='File snippet `elections` was extracted from'>snippet source</a> | <a href='#snippet-elections' title='Navigate to start of snippet `elections`'>anchor</a></sup>
 <!-- endsnippet -->
 
 ### ogr2ogr
