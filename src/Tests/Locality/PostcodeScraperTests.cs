@@ -19,10 +19,10 @@ public class PostcodeScraperTests :
     }
 
     [Fact]
-    public async Task Specific()
+    public Task Specific()
     {
         var place = AustraliaData.PostCodes.Single(x=>x.Key == "2612");
-        await Verify(await PostcodeScraper.GetAECDataForPostcode(place));
+        return Verify(PostcodeScraper.GetAECDataForPostcode(place));
     }
 
     public PostcodeScraperTests(ITestOutputHelper output) :
