@@ -886,9 +886,9 @@
   },
   {
     "Id": 26,
-    "Name": "Country Liberals (Northern Territory)",
-    "Code": "Country Liberals (NT)",
-    "Abbreviation": "Country Liberals (NT)",
+    "Name": "Country Liberal Party (NT)",
+    "Code": "NT CLP",
+    "Abbreviation": "NT CLP",
     "RegisterDate": "18 July 1984",
     "AmendmentDate": "18 July 1984",
     "Address": "PO Box 4194\nDARWIN NT 0801",
@@ -934,6 +934,18 @@
           "Suburb": "Wahroonga",
           "State": "NSW",
           "Postcode": 2076
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Bowden",
+        "GivenNames": "Jennifer Anne",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "23 Highfielde Avenue",
+          "Suburb": "Berwick",
+          "State": "VIC",
+          "Postcode": 3806
         }
       },
       {
