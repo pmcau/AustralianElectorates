@@ -49,7 +49,62 @@ Location: [/Data/electorates.json](/Data/electorates.json)
 
 Sample:
 
-ssnippet: Snippets.ElectoratesSampleJson.approved.txt
+<!-- snippet: Snippets.ElectoratesSampleJson.verified.txt -->
+<a id='snippet-Snippets.ElectoratesSampleJson.verified.txt'/></a>
+```txt
+[
+  {
+    "Name": "Canberra",
+    "ShortName": "canberra",
+    "State": "ACT",
+    "Area": 312.0,
+    "Exist2016": true,
+    "Exist2019": true,
+    "ExistInFuture": true,
+    "DateGazetted": "2018-07-13",
+    "Description": "<p>The Division of Canberra covers an area in central ACT consisting of the Districts of:</p><ul><li>Canberra Central,</li><li>Kowen,</li><li>Majura,</li><li>part of Belconnen,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul>",
+    "DemographicRating": "<strong>Inner Metropolitan</strong> – situated in capital cities and consisting of well-established built-up suburbs",
+    "ProductsAndIndustry": "Mainly residential with tourism, retail and some light industry at Fyshwick and Beard",
+    "NameDerivation": "A locality name derived from an Aboriginal word which is held to mean 'meeting place'.",
+    "Enrollment": 95348,
+    "TwoCandidatePreferred": {
+      "Elected": {
+        "FamilyName": "Payne",
+        "GivenNames": "Alicia",
+        "PartyCode": "ALP",
+        "Votes": 57961,
+        "Swing": 4.14,
+        "PartyId": 200
+      },
+      "Other": {
+        "FamilyName": "Zaki",
+        "GivenNames": "Mina",
+        "PartyCode": "LP",
+        "Votes": 28442,
+        "Swing": -4.14,
+        "PartyId": 177
+      }
+    },
+    "Members": [
+      {
+        "FamilyName": "Payne",
+        "GivenNames": "Alicia",
+        "Begin": 2019,
+        "PartyCodes": [
+          "ALP"
+        ],
+        "PartyIds": [
+          200
+        ]
+      },
+      {
+        "FamilyName": "Brodtmann",
+        "GivenNames": "G",
+        "Begin": 2010,
+        "End": 2019,
+```
+<sup><a href='/src/Tests/Snippets.ElectoratesSampleJson.verified.txt#L1-L50' title='File snippet `Snippets.ElectoratesSampleJson.verified.txt` was extracted from'>snippet source</a> | <a href='#snippet-Snippets.ElectoratesSampleJson.verified.txt' title='Navigate to start of snippet `Snippets.ElectoratesSampleJson.verified.txt`'>anchor</a></sup>
+<!-- endsnippet -->
 
 
 ## Localities
@@ -58,7 +113,7 @@ Location: [/Data/Localities.json](/Data/Localities.json)
 
 Sample:
 
-nippset: Snippets.LocalitiesSampleJson.verified.txt
+snippset: Snippets.LocalitiesSampleJson.verified.txt
 
 
 ## Parties

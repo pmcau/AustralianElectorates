@@ -18,7 +18,7 @@ Location: [/Data/electorates.json](/Data/electorates.json)
 
 Sample:
 
-ssnippet: Snippets.ElectoratesSampleJson.approved.txt
+snippet: Snippets.ElectoratesSampleJson.verified.txt
 
 
 ## Localities
@@ -27,7 +27,7 @@ Location: [/Data/Localities.json](/Data/Localities.json)
 
 Sample:
 
-nippset: Snippets.LocalitiesSampleJson.verified.txt
+snippset: Snippets.LocalitiesSampleJson.verified.txt
 
 
 ## Parties
