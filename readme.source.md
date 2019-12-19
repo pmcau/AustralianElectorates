@@ -27,7 +27,7 @@ Location: [/Data/Localities.json](/Data/Localities.json)
 
 Sample:
 
-snippset: Snippets.LocalitiesSampleJson.verified.txt
+snippet: Snippets.LocalitiesSampleJson.verified.txt
 
 
 ## Parties

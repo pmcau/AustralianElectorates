@@ -113,7 +113,33 @@ Location: [/Data/Localities.json](/Data/Localities.json)
 
 Sample:
 
-snippset: Snippets.LocalitiesSampleJson.verified.txt
+<!-- snippet: Snippets.LocalitiesSampleJson.verified.txt -->
+<a id='snippet-Snippets.LocalitiesSampleJson.verified.txt'/></a>
+```txt
+[
+  {
+    "Place": "Acton",
+    "Postcode": 2601,
+    "Electorate": "CANBERRA"
+  },
+  {
+    "Place": "Canberra Central",
+    "Postcode": 2601,
+    "Electorate": "CANBERRA"
+  },
+  {
+    "Place": "Canberra City",
+    "Postcode": 2601,
+    "Electorate": "CANBERRA"
+  },
+  {
+    "Place": "Ainslie",
+    "Postcode": 2602,
+    "Electorate": "CANBERRA"
+  },
+```
+<sup><a href='/src/Tests/Snippets.LocalitiesSampleJson.verified.txt#L1-L21' title='File snippet `Snippets.LocalitiesSampleJson.verified.txt` was extracted from'>snippet source</a> | <a href='#snippet-Snippets.LocalitiesSampleJson.verified.txt' title='Navigate to start of snippet `Snippets.LocalitiesSampleJson.verified.txt`'>anchor</a></sup>
+<!-- endsnippet -->
 
 
 ## Parties
