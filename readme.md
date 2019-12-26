@@ -323,11 +323,15 @@ DataLoader.Export(directory);
 <a id='snippet-usagebogus'/></a>
 ```cs
 var faker = new Faker<Target>()
-    .RuleFor(u => u.RandomElectorate, (f, u) => f.AustralianElectorates().Electorate())
-    .RuleFor(u => u.RandomElectorateName, (f, u) => f.AustralianElectorates().Name());
+    .RuleFor(
+        property: u => u.RandomElectorate,
+        setter: (f, u) => f.AustralianElectorates().Electorate())
+    .RuleFor(
+        property: u => u.RandomElectorateName,
+        setter: (f, u) => f.AustralianElectorates().Name());
 var targetInstance = faker.Generate();
 ```
-<sup><a href='/src/Tests/Snippets.cs#L90-L96' title='File snippet `usagebogus` was extracted from'>snippet source</a> | <a href='#snippet-usagebogus' title='Navigate to start of snippet `usagebogus`'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L90-L100' title='File snippet `usagebogus` was extracted from'>snippet source</a> | <a href='#snippet-usagebogus' title='Navigate to start of snippet `usagebogus`'>anchor</a></sup>
 <!-- endsnippet -->
 
 
@@ -406,14 +410,14 @@ return new List<Election>
         Parliament = 45,
         Year = 2016,
         Date = new DateTime(2016, 07, 02, 0, 0, 0),
-        Electorates = Electorates.Where(electorate => electorate.Exist2016).ToList()
+        Electorates = Electorates.Where(_ => _.Exist2016).ToList()
     },
     new Election
     {
         Parliament = 46,
         Year = 2019,
         Date = new DateTime(2019, 05, 18, 0, 0, 0),
-        Electorates = Electorates.Where(electorate => electorate.Exist2019).ToList()
+        Electorates = Electorates.Where(_ => _.Exist2019).ToList()
     }
 };
 ```

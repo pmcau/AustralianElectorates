@@ -90,8 +90,12 @@ public class Snippets :
         #region usagebogus
 
         var faker = new Faker<Target>()
-            .RuleFor(u => u.RandomElectorate, (f, u) => f.AustralianElectorates().Electorate())
-            .RuleFor(u => u.RandomElectorateName, (f, u) => f.AustralianElectorates().Name());
+            .RuleFor(
+                property: u => u.RandomElectorate,
+                setter: (f, u) => f.AustralianElectorates().Electorate())
+            .RuleFor(
+                property: u => u.RandomElectorateName,
+                setter: (f, u) => f.AustralianElectorates().Name());
         var targetInstance = faker.Generate();
         #endregion
     }

@@ -75,14 +75,14 @@ namespace AustralianElectorates
                     Parliament = 45,
                     Year = 2016,
                     Date = new DateTime(2016, 07, 02, 0, 0, 0),
-                    Electorates = Electorates.Where(electorate => electorate.Exist2016).ToList()
+                    Electorates = Electorates.Where(_ => _.Exist2016).ToList()
                 },
                 new Election
                 {
                     Parliament = 46,
                     Year = 2019,
                     Date = new DateTime(2019, 05, 18, 0, 0, 0),
-                    Electorates = Electorates.Where(electorate => electorate.Exist2019).ToList()
+                    Electorates = Electorates.Where(_ => _.Exist2019).ToList()
                 }
             };
 
