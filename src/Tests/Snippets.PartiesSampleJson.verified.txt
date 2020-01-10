@@ -13,7 +13,7 @@
       "GivenNames": "William",
       "Address": {
         "Line1": "Suite 15, 20 Burlington Street",
-        "Suburb": "CROWS NEST",
+        "Suburb": "Crows Nest",
         "State": "NSW",
         "Postcode": 2065
       }
