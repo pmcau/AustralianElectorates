@@ -40,7 +40,8 @@ All information about electorates is available at [/Data/electorates.json](/Data
     * [GhostScript](#ghostscript)
     * [pngquant](#pngquant)
   * [Purge history](#purge-history)
-  * [Notes](#notes)<!-- endtoc -->
+  * [Notes](#notes)
+  * [Security contact information](#security-contact-information)<!-- endtoc -->
 
 
 ## Electorates
@@ -64,7 +65,6 @@ Sample:
     "DateGazetted": "2018-07-13",
     "Description": "<p>The Division of Canberra covers an area in central ACT consisting of the Districts of:</p><ul><li>Canberra Central,</li><li>Kowen,</li><li>Majura,</li><li>part of Belconnen,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul>",
     "DemographicRating": "<strong>Inner Metropolitan</strong> – situated in capital cities and consisting of well-established built-up suburbs",
-    "ProductsAndIndustry": "Mainly residential with tourism, retail and some light industry at Fyshwick and Beard",
     "NameDerivation": "A locality name derived from an Aboriginal word which is held to mean 'meeting place'.",
     "Enrollment": 95348,
     "TwoCandidatePreferred": {
@@ -85,23 +85,24 @@ Sample:
         "PartyId": 177
       }
     },
-    "Members": [
+    "Locations": [
       {
-        "FamilyName": "Payne",
-        "GivenNames": "Alicia",
-        "Begin": 2019,
-        "PartyCodes": [
-          "ALP"
-        ],
-        "PartyIds": [
-          200
+        "Postcode": 2601,
+        "Localities": [
+          "Acton",
+          "Canberra Central",
+          "Canberra City"
         ]
       },
       {
-        "FamilyName": "Brodtmann",
-        "GivenNames": "G",
-        "Begin": 2010,
-        "End": 2019,
+        "Postcode": 2602,
+        "Localities": [
+          "Ainslie",
+          "Dickson",
+          "Downer",
+          "Hackett",
+          "Lyneham",
+          "O'Connor",
 ```
 <sup><a href='/src/Tests/Snippets.ElectoratesSampleJson.verified.txt#L1-L50' title='File snippet `Snippets.ElectoratesSampleJson.verified.txt` was extracted from'>snippet source</a> | <a href='#snippet-Snippets.ElectoratesSampleJson.verified.txt' title='Navigate to start of snippet `Snippets.ElectoratesSampleJson.verified.txt`'>anchor</a></sup>
 <!-- endsnippet -->
@@ -166,7 +167,7 @@ Sample:
       "GivenNames": "William",
       "Address": {
         "Line1": "Suite 15, 20 Burlington Street",
-        "Suburb": "CROWS NEST",
+        "Suburb": "Crows Nest",
         "State": "NSW",
         "Postcode": 2065
       }
@@ -479,6 +480,11 @@ Media feed ftp://mediafeed.aec.gov.au/24310/Standard/Verbose/
 > Verbose Feed: Contains up-to-date election results and information. The feed contains static data, such as candidate names, and dynamic data such as votes. The verbose feed also contains calculated results like swings and aggregated results to the state and national level. This feed is suitable for users who have their own IT system and who may or may not have pre-loaded data and is also suitable for those users who do not have an IT system and simply wish to transform the XMLfile into another format.
 
 From: https://www.aec.gov.au/media/mediafeed/files/media-feed-user-guide-v4.pdf
+
+
+## Security contact information
+
+To report a security vulnerability, please use the [Tidelift security contact](https://tidelift.com/security). Tidelift will coordinate the fix and disclosure.
 
 
 ## Release Notes
