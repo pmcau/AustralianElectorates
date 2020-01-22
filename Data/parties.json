@@ -230,6 +230,128 @@
     ]
   },
   {
+    "Id": 1181,
+    "Name": "Australian Citizens Party",
+    "Code": "Citizens Party",
+    "Abbreviation": "Citizens Party",
+    "RegisterDate": "4 September 2007",
+    "AmendmentDate": "4 September 2007",
+    "Address": "PO Box 376\nCOBURG VIC 3058",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Isherwood",
+      "GivenNames": "Craig William",
+      "Capacity": "National Secretary",
+      "Address": {
+        "Line1": "29 Hare Street",
+        "Suburb": "Fawkner",
+        "State": "VIC",
+        "Postcode": 3060
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Ms",
+        "FamilyName": "Lawler",
+        "GivenNames": "Ann",
+        "Address": {
+          "Line1": "312 Wollombi Road",
+          "Suburb": "Farley",
+          "State": "NSW",
+          "Postcode": 2320
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Mason",
+        "GivenNames": "Barry",
+        "Address": {
+          "Line1": "39 Tuscan Street",
+          "Suburb": "Rossmoyne",
+          "State": "WA",
+          "Postcode": 6148
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Pukallus",
+        "GivenNames": "Dennis",
+        "Address": {
+          "Line1": "30 Plover Driver",
+          "Suburb": "Eagleby",
+          "State": "QLD",
+          "Postcode": 4207
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Pukallus",
+        "GivenNames": "Jan",
+        "Address": {
+          "Line1": "30 Plover Drive",
+          "Suburb": "Eagleby",
+          "State": "QLD",
+          "Postcode": 4207
+        }
+      },
+      {
+        "Title": "Mrs",
+        "FamilyName": "Robinson",
+        "GivenNames": "Jean",
+        "Address": {
+          "Line1": "Lot 308 Potts Rd",
+          "Suburb": "Kojonup",
+          "State": "WA",
+          "Postcode": 6395
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Beck",
+        "GivenNames": "Jeremy",
+        "Address": {
+          "Line1": "Unit 2, 27 Lockley Street",
+          "Suburb": "Hadfield",
+          "State": "VIC",
+          "Postcode": 3046
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Williams",
+        "GivenNames": "Ray",
+        "Address": {
+          "Line1": "41 High Street",
+          "Suburb": "New Norfolk",
+          "State": "TAS",
+          "Postcode": 7140
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Butler",
+        "GivenNames": "Robert",
+        "Address": {
+          "Line1": "27 De Villiers Avenue",
+          "Suburb": "Chatswood",
+          "State": "NSW",
+          "Postcode": 2067
+        }
+      },
+      {
+        "Title": "Mrs",
+        "FamilyName": "Campbell",
+        "GivenNames": "Trudy",
+        "Address": {
+          "Line1": "695 Reedbeds Road",
+          "Suburb": "DARWIN RIVER",
+          "State": "NT",
+          "Postcode": 838
+        }
+      }
+    ]
+  },
+  {
     "Id": 1344,
     "Name": "Australian Country Party",
     "Code": "CP",
@@ -339,14 +461,14 @@
         "AmendmentDate": "13 June 1985",
         "Address": "GPO Box 3065\nCANBERRA ACT 2601",
         "Officer": {
-          "Title": "Mr",
-          "FamilyName": "Byrne",
-          "GivenNames": "Matthew",
-          "Capacity": "ACT Secretary",
+          "Title": "Ms",
+          "FamilyName": "James",
+          "GivenNames": "Melissa",
+          "Capacity": "Secretary",
           "Address": {
             "Line1": "1st Floor",
             "Line2": "222 City Walk",
-            "Suburb": "Canberra",
+            "Suburb": "CANBERRA CITY",
             "State": "ACT",
             "Postcode": 2601
           }
@@ -763,128 +885,6 @@
     ]
   },
   {
-    "Id": 1181,
-    "Name": "Citizens Electoral Council of Australia",
-    "Code": "Citizens Electoral Council",
-    "Abbreviation": "Citizens Electoral Council",
-    "RegisterDate": "4 September 2007",
-    "AmendmentDate": "4 September 2007",
-    "Address": "PO Box 376\nCOBURG VIC 3058",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Isherwood",
-      "GivenNames": "Craig William",
-      "Capacity": "National Secretary",
-      "Address": {
-        "Line1": "29 Hare Street",
-        "Suburb": "Fawkner",
-        "State": "VIC",
-        "Postcode": 3060
-      }
-    },
-    "DeputyOfficers": [
-      {
-        "Title": "Ms",
-        "FamilyName": "Lawler",
-        "GivenNames": "Ann",
-        "Address": {
-          "Line1": "312 Wollombi Road",
-          "Suburb": "Farley",
-          "State": "NSW",
-          "Postcode": 2320
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Mason",
-        "GivenNames": "Barry",
-        "Address": {
-          "Line1": "39 Tuscan Street",
-          "Suburb": "Rossmoyne",
-          "State": "WA",
-          "Postcode": 6148
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Pukallus",
-        "GivenNames": "Dennis",
-        "Address": {
-          "Line1": "30 Plover Driver",
-          "Suburb": "Eagleby",
-          "State": "QLD",
-          "Postcode": 4207
-        }
-      },
-      {
-        "Title": "Ms",
-        "FamilyName": "Pukallus",
-        "GivenNames": "Jan",
-        "Address": {
-          "Line1": "30 Plover Drive",
-          "Suburb": "Eagleby",
-          "State": "QLD",
-          "Postcode": 4207
-        }
-      },
-      {
-        "Title": "Mrs",
-        "FamilyName": "Robinson",
-        "GivenNames": "Jean",
-        "Address": {
-          "Line1": "Lot 308 Potts Rd",
-          "Suburb": "Kojonup",
-          "State": "WA",
-          "Postcode": 6395
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Beck",
-        "GivenNames": "Jeremy",
-        "Address": {
-          "Line1": "Unit 2, 27 Lockley Street",
-          "Suburb": "Hadfield",
-          "State": "VIC",
-          "Postcode": 3046
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Williams",
-        "GivenNames": "Ray",
-        "Address": {
-          "Line1": "41 High Street",
-          "Suburb": "New Norfolk",
-          "State": "TAS",
-          "Postcode": 7140
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Butler",
-        "GivenNames": "Robert",
-        "Address": {
-          "Line1": "27 De Villiers Avenue",
-          "Suburb": "Chatswood",
-          "State": "NSW",
-          "Postcode": 2067
-        }
-      },
-      {
-        "Title": "Mrs",
-        "FamilyName": "Campbell",
-        "GivenNames": "Trudy",
-        "Address": {
-          "Line1": "695 Reedbeds Road",
-          "Suburb": "DARWIN RIVER",
-          "State": "NT",
-          "Postcode": 838
-        }
-      }
-    ]
-  },
-  {
     "Id": 26,
     "Name": "Country Liberal Party (NT)",
     "Code": "NT CLP",
@@ -893,10 +893,10 @@
     "AmendmentDate": "18 July 1984",
     "Address": "PO Box 4194\nDARWIN NT 0801",
     "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Riley",
-      "GivenNames": "Jason",
-      "Capacity": "Treasurer",
+      "Title": "Ms",
+      "FamilyName": "Jones",
+      "GivenNames": "Nadine",
+      "Capacity": "Party Agent",
       "Address": {
         "Line1": "2/229 McMillans Road",
         "Suburb": "Jingili",
