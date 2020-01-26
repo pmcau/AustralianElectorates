@@ -1,158 +1,77 @@
-root=true
 # EditorConfig: http://EditorConfig.org
 
 # top-most EditorConfig file
+root = true
 
 [*]
-indent_style=space:error
-
-# Microsoft .NET properties
-csharp_new_line_before_members_in_object_initializers=false
-csharp_preferred_modifier_order=public, private, protected, internal, new, abstract, virtual, sealed, override, static, readonly, extern, unsafe, volatile, async:suggestion
-csharp_style_var_elsewhere=true:error
-csharp_style_var_for_built_in_types=true:error
-csharp_style_var_when_type_is_apparent=true:error
-dotnet_style_predefined_type_for_locals_parameters_members=true:error
-dotnet_style_predefined_type_for_member_access=true:hint
-dotnet_style_qualification_for_event=false:hint
-dotnet_style_qualification_for_field=false:hint
-dotnet_style_qualification_for_method=false:hint
-dotnet_style_qualification_for_property=false:hint
-dotnet_style_require_accessibility_modifiers=for_non_interface_members:hint
-
-# ReSharper properties
-resharper_csharp_use_indent_from_vs=false
-resharper_csharp_wrap_lines=false
-resharper_place_accessorholder_attribute_on_same_line=False
-
-# ReSharper inspection severities
-resharper_arrange_accessor_owner_body_highlighting=error
-resharper_arrange_method_or_operator_body_highlighting=hint
-resharper_arrange_redundant_parentheses_highlighting=error
-resharper_convert_nullable_to_short_form_highlighting=error
-resharper_c_sharp_warnings_cs0109_highlighting=error
-resharper_inline_out_variable_declaration_highlighting=error
-resharper_invoke_as_extension_method_highlighting=error
-resharper_merge_cast_with_type_check_highlighting=error
-resharper_partial_method_with_single_part_highlighting=error
-resharper_partial_type_with_single_part_highlighting=error
-resharper_redundant_argument_default_value_highlighting=error
-resharper_redundant_array_creation_expression_highlighting=error
-resharper_redundant_attribute_parentheses_highlighting=error
-resharper_redundant_base_constructor_call_highlighting=error
-resharper_redundant_base_qualifier_highlighting=error
-resharper_redundant_bool_compare_highlighting=error
-resharper_redundant_cast_0_highlighting=error
-resharper_redundant_cast_highlighting=error
-resharper_redundant_catch_clause_highlighting=error
-resharper_redundant_check_before_assignment_highlighting=error
-resharper_redundant_default_member_initializer_highlighting=error
-resharper_redundant_empty_finally_block_highlighting=error
-resharper_redundant_empty_object_or_collection_initializer_highlighting=error
-resharper_redundant_enumerable_cast_call_highlighting=error
-resharper_redundant_explicit_array_creation_highlighting=error
-resharper_redundant_explicit_array_size_highlighting=error
-resharper_redundant_explicit_nullable_creation_highlighting=error
-resharper_redundant_lambda_signature_parentheses_highlighting=error
-resharper_redundant_overflow_checking_context_highlighting=error
-resharper_redundant_overridden_member_highlighting=error
-resharper_redundant_string_format_call_highlighting=error
-resharper_redundant_string_interpolation_highlighting=error
-resharper_redundant_string_to_char_array_call_highlighting=error
-resharper_redundant_to_string_call_for_value_type_highlighting=error
-resharper_redundant_to_string_call_highlighting=error
-resharper_redundant_type_arguments_of_method_highlighting=error
-resharper_redundant_using_directive_highlighting=error
-resharper_suggest_var_or_type_deconstruction_declarations_highlighting=error
-resharper_unused_parameter_global_highlighting=error
-resharper_unused_parameter_local_highlighting=error
-resharper_unused_variable_highlighting=error
-resharper_use_negated_pattern_matching_highlighting=error
-resharper_use_object_or_collection_initializer_highlighting=error
-resharper_use_pattern_matching_highlighting=error
-resharper_use_string_interpolation_highlighting=error
+indent_style = space:error
 
 [*.cs]
-indent_size=4:error
-charset=utf-8-bom:error
+indent_size = 4:error
+charset = utf-8-bom:error
 
 # Sort using and Import directives with System.* appearing first
-dotnet_sort_system_directives_first=true:error
+dotnet_sort_system_directives_first = true:error
 
 # Avoid "this." and "Me." if not necessary
-dotnet_style_qualification_for_field=false:error
-dotnet_style_qualification_for_property=false:error
-dotnet_style_qualification_for_method=false:error
-dotnet_style_qualification_for_event=false:error
+dotnet_style_qualification_for_field = false:error
+dotnet_style_qualification_for_property = false:error
+dotnet_style_qualification_for_method = false:error
+dotnet_style_qualification_for_event = false:error
 
 # Use language keywords instead of framework type names for type references
-dotnet_style_predefined_type_for_locals_parameters_members=true:error
-dotnet_style_predefined_type_for_member_access=true:error
+dotnet_style_predefined_type_for_locals_parameters_members = true:error
+dotnet_style_predefined_type_for_member_access = true:error
 
 # Suggest more modern language features when available
-dotnet_style_object_initializer=true:suggestion
-dotnet_style_collection_initializer=true:suggestion
-dotnet_style_coalesce_expression=false:suggestion
-dotnet_style_null_propagation=true:suggestion
-dotnet_style_explicit_tuple_names=true:suggestion
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_coalesce_expression = false:suggestion
+dotnet_style_null_propagation = true:suggestion
+dotnet_style_explicit_tuple_names = true:suggestion
 
 # Prefer "var" everywhere
-csharp_style_var_for_built_in_types=true:error
-csharp_style_var_when_type_is_apparent=true:error
-csharp_style_var_elsewhere=true:error
+csharp_style_var_for_built_in_types = true:error
+csharp_style_var_when_type_is_apparent = true:error
+csharp_style_var_elsewhere = true:error
 
 # Prefer method-like constructs to have a block body
-csharp_style_expression_bodied_methods=false:none
-csharp_style_expression_bodied_constructors=false:none
-csharp_style_expression_bodied_operators=false:none
+csharp_style_expression_bodied_methods = false:none
+csharp_style_expression_bodied_constructors = false:none
+csharp_style_expression_bodied_operators = false:none
 
 # Prefer property-like constructs to have an expression-body
-csharp_style_expression_bodied_properties=true:suggestion
-csharp_style_expression_bodied_indexers=true:suggestion
-csharp_style_expression_bodied_accessors=true:none
+csharp_style_expression_bodied_properties = true:suggestion
+csharp_style_expression_bodied_indexers = true:suggestion
+csharp_style_expression_bodied_accessors = true:none
 
 # Suggest more modern language features when available
-csharp_style_pattern_matching_over_is_with_cast_check=true:error
-csharp_style_pattern_matching_over_as_with_null_check=true:error
-csharp_style_inlined_variable_declaration=true:suggestion
-csharp_style_throw_expression=true:suggestion
-csharp_style_conditional_delegate_call=true:suggestion
+csharp_style_pattern_matching_over_is_with_cast_check = true:error
+csharp_style_pattern_matching_over_as_with_null_check = true:error
+csharp_style_inlined_variable_declaration = true:suggestion
+csharp_style_throw_expression = true:suggestion
+csharp_style_conditional_delegate_call = true:suggestion
 
 # Newline settings
 #csharp_new_line_before_open_brace = all:error
-csharp_new_line_before_else=true:error
-csharp_new_line_before_catch=true:error
-csharp_new_line_before_finally=true:error
-csharp_new_line_before_members_in_object_initializers=true:error
-csharp_new_line_before_members_in_anonymous_types=true:error
+csharp_new_line_before_else = true:error
+csharp_new_line_before_catch = true:error
+csharp_new_line_before_finally = true:error
+csharp_new_line_before_members_in_object_initializers = true:error
+csharp_new_line_before_members_in_anonymous_types = true:error
 
 #braces
 #csharp_prefer_braces = true:error
 
 # msbuild
 [*.{csproj,targets,props}]
-indent_size=2
+indent_size = 2
 
 # Xml files
 [*.{xml,config,nuspec,resx,vsixmanifest}]
-indent_size=2
-resharper_xml_wrap_tags_and_pi=true:error
+indent_size = 2
+resharper_xml_wrap_tags_and_pi = true:error
 
 # JSON files
 [*.json]
-indent_size=2
-
-[*.proto]
-indent_style=tab
-indent_size=tab
-tab_width=4
-
-[*.{asax,ascx,aspx,cs,cshtml,css,htm,html,js,jsx,master,razor,skin,ts,tsx,vb,xaml,xamlx,xoml}]
-indent_style=space
-indent_size=4
-tab_width=4
-
-[*.{appxmanifest,build,config,csproj,dbml,discomap,dtd,json,jsproj,lsproj,njsproj,nuspec,proj,props,resjson,resw,resx,StyleCop,targets,tasks,vbproj,xml,xsd}]
-indent_style=space
-indent_size=2
-tab_width=2
+indent_size = 2
