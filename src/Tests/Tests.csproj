@@ -3,7 +3,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Bogus" Version="28.4.4" />
+    <PackageReference Include="Bogus" Version="29.0.1" />
     <PackageReference Include="CountryData" Version="3.24.0" />
     <PackageReference Include="MarkdownSnippets.MsBuild" Version="18.0.0" PrivateAssets="all" />
     <PackageReference Include="GeoJSON.Net" Version="1.2.14" />
