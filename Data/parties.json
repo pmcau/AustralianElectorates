@@ -352,27 +352,6 @@
     ]
   },
   {
-    "Id": 1344,
-    "Name": "Australian Country Party",
-    "Code": "CP",
-    "Abbreviation": "Australian Country Party",
-    "RegisterDate": "26 July 2011",
-    "AmendmentDate": "26 July 2011",
-    "Address": "PO Box 160\nMARYBOROUGH VIC 3465",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "O'Rourke",
-      "GivenNames": "Glenn",
-      "Capacity": "Registered officer",
-      "Address": {
-        "Line1": "46 Lachlan Street ",
-        "Suburb": "Bogan Gate",
-        "State": "NSW",
-        "Postcode": 2876
-      }
-    }
-  },
-  {
     "Id": 1472,
     "Name": "Australian Democrats",
     "Code": "DEM",
@@ -417,6 +396,27 @@
         }
       }
     ]
+  },
+  {
+    "Id": 1344,
+    "Name": "Australian Federation Party",
+    "Code": "Federation Party",
+    "Abbreviation": "Federation Party",
+    "RegisterDate": "26 July 2011",
+    "AmendmentDate": "26 July 2011",
+    "Address": "PO Box 160\nMARYBOROUGH VIC 3465",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "O'Rourke",
+      "GivenNames": "Glenn",
+      "Capacity": "Registered officer",
+      "Address": {
+        "Line1": "46 Lachlan Street ",
+        "Suburb": "Bogan Gate",
+        "State": "NSW",
+        "Postcode": 2876
+      }
+    }
   },
   {
     "Id": 2,
@@ -662,10 +662,10 @@
         "AmendmentDate": "13 June 1985",
         "Address": "Locked Bag 3240\nMELBOURNE VIC 3001",
         "Officer": {
-          "Title": "Mr",
-          "FamilyName": "Samaras",
-          "GivenNames": "Kosmos",
-          "Capacity": "Party Agent",
+          "Title": "Ms",
+          "FamilyName": "Castleman",
+          "GivenNames": "Nicola",
+          "Capacity": "Registered Officer",
           "Address": {
             "Line1": "438 Docklands Drive",
             "Suburb": "Docklands",
@@ -883,6 +883,27 @@
         }
       }
     ]
+  },
+  {
+    "Id": 1469,
+    "Name": "Clive Palmer's United Australia Party",
+    "Code": "Clive Palmer's UAP",
+    "Abbreviation": "Clive Palmer's UAP",
+    "RegisterDate": "12 December 2018",
+    "AmendmentDate": "12 December 2018",
+    "Address": "GPO Box 1538\nBRISBANE QLD 4001",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Palmer",
+      "GivenNames": "Clive Frederick",
+      "Address": {
+        "Line1": "Level 17",
+        "Line2": "240 Queen Street",
+        "Suburb": "Brisbane",
+        "State": "QLD",
+        "Postcode": 4000
+      }
+    }
   },
   {
     "Id": 26,
@@ -1301,11 +1322,11 @@
         "AmendmentDate": "5 July 1984",
         "Address": "PO Box 66\nDEAKIN WEST ACT 2600",
         "Officer": {
-          "Title": "Mrs",
-          "FamilyName": "Gilchrist",
-          "GivenNames": "Kay",
+          "Title": "Mr",
+          "FamilyName": "Manuatu",
+          "GivenNames": "Joshua",
           "Address": {
-            "Line1": "Suite 4, 50 Geils Court",
+            "Line1": "4/50 Geils Court",
             "Suburb": "Deakin",
             "State": "ACT",
             "Postcode": 2600
@@ -1322,9 +1343,9 @@
         "Address": "GPO Box 469\nHOBART TAS 7001",
         "Officer": {
           "Title": "Mr",
-          "FamilyName": "McQuestin",
-          "GivenNames": "Charles Sam",
-          "Capacity": "State Director",
+          "FamilyName": "Smith",
+          "GivenNames": "Stuart",
+          "Capacity": "Secretary",
           "Address": {
             "Line1": "Suite 4c, Level 3",
             "Line2": "33 Salamanca Place",
@@ -2107,6 +2128,18 @@
         }
       },
       {
+        "Title": "Mr ",
+        "FamilyName": "Chandler-Mather",
+        "GivenNames": "Max",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "2/64 Rosecliffe Street",
+          "Suburb": "Highgate Hill",
+          "State": "QLD",
+          "Postcode": 4101
+        }
+      },
+      {
         "Title": "Mr",
         "FamilyName": "Orfanidis",
         "GivenNames": "Photius",
@@ -2211,10 +2244,11 @@
         "Address": "GPO Box 4589\nMELBOURNE VIC 3001",
         "Officer": {
           "Title": "Mr",
-          "FamilyName": "Leppert",
-          "GivenNames": "Rohan ",
+          "FamilyName": "Shield",
+          "GivenNames": "Martin",
+          "Capacity": "Registered Officer",
           "Address": {
-            "Line1": "1/45 William Street",
+            "Line1": "Level 1, 45 William Street",
             "Suburb": "Melbourne",
             "State": "VIC",
             "Postcode": 3000
@@ -2340,8 +2374,9 @@
     "Address": "PO Box 6190\nKINGSTON ACT 2604",
     "Officer": {
       "Title": "Mr",
-      "FamilyName": "Hindmarsh",
-      "GivenNames": "Benjamin",
+      "FamilyName": "Hawkes",
+      "GivenNames": "Jonathan",
+      "Capacity": "Party Agent",
       "Address": {
         "Line1": "7 National Circuit",
         "Suburb": "Barton",
@@ -2569,27 +2604,6 @@
         "Suburb": "Prospect",
         "State": "SA",
         "Postcode": 5082
-      }
-    }
-  },
-  {
-    "Id": 1469,
-    "Name": "United Australia Party",
-    "Code": "UAP",
-    "Abbreviation": "UAP",
-    "RegisterDate": "12 December 2018",
-    "AmendmentDate": "12 December 2018",
-    "Address": "GPO Box 1538\nBRISBANE QLD 4001",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Palmer",
-      "GivenNames": "Clive Frederick",
-      "Address": {
-        "Line1": "Level 17",
-        "Line2": "240 Queen Street",
-        "Suburb": "Brisbane",
-        "State": "QLD",
-        "Postcode": 4000
       }
     }
   },
