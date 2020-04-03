@@ -683,16 +683,15 @@
         "AmendmentDate": "13 June 1985",
         "Address": "PO Box 8117\nPERTH BUSINESS CENTRE WA 6849",
         "Officer": {
-          "Title": "Mr ",
-          "FamilyName": "Dixon",
-          "GivenNames": "Mathew",
-          "Capacity": "Deputy Registered Officer",
+          "Title": "Mr",
+          "FamilyName": "Picton",
+          "GivenNames": "Timothy",
           "Address": {
             "Line1": "Level 1",
-            "Line2": "54 Cheriton Street",
-            "Suburb": "Perth",
+            "Line2": "22 Eastbrook Terrace",
+            "Suburb": "East Perth",
             "State": "WA",
-            "Postcode": 6000
+            "Postcode": 6004
           }
         },
         "DeputyOfficers": [
@@ -1157,13 +1156,14 @@
     "Address": "PO Box 3322\nWEST KEMPSEY NSW 2440",
     "Officer": {
       "Title": "Ms",
-      "FamilyName": "Bennetts",
-      "GivenNames": "Megan Therese",
+      "FamilyName": "McCredie",
+      "GivenNames": "Rebecca",
+      "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "23 Goodhugh Street",
-        "Suburb": "East Maitland",
-        "State": "NSW",
-        "Postcode": 2323
+        "Line1": "68 Taurus Circuit",
+        "Suburb": "Coomera",
+        "State": "QLD",
+        "Postcode": 4209
       }
     }
   },
@@ -2604,6 +2604,27 @@
         "Suburb": "Prospect",
         "State": "SA",
         "Postcode": 5082
+      }
+    }
+  },
+  {
+    "Id": 1483,
+    "Name": "Transport Matters Party",
+    "Code": "Transport Matters Party",
+    "Abbreviation": "Transport Matters Party",
+    "RegisterDate": "24 March 2020",
+    "AmendmentDate": "24 March 2020",
+    "Address": "PO Box 126\nCAULFIELD SOUTH VIC 3162",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Baruch",
+      "GivenNames": "Andre",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "861 Glenhuntly Road",
+        "Suburb": "Caulfield",
+        "State": "VIC",
+        "Postcode": 3162
       }
     }
   },
