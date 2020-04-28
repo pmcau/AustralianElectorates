@@ -198,36 +198,12 @@
       "FamilyName": "Groenewald",
       "GivenNames": "Maryka ",
       "Address": {
-        "Line1": "64 Canning Highway",
-        "Suburb": "Victoria Park",
+        "Line1": "3/16 Guthrie Street",
+        "Suburb": "Osborne Park",
         "State": "WA",
-        "Postcode": 6100
+        "Postcode": 6017
       }
-    },
-    "DeputyOfficers": [
-      {
-        "Title": "Mr",
-        "FamilyName": "Swarts",
-        "GivenNames": "Kevin Michael",
-        "Address": {
-          "Line1": "2.29 Pomona Road",
-          "Suburb": "Riverside",
-          "State": "TAS",
-          "Postcode": 7250
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Burdett",
-        "GivenNames": "Robert",
-        "Address": {
-          "Line1": "1 Liberton Place",
-          "Suburb": "Mandurah",
-          "State": "WA",
-          "Postcode": 6210
-        }
-      }
-    ]
+    }
   },
   {
     "Id": 1181,
@@ -259,17 +235,6 @@
           "Suburb": "Farley",
           "State": "NSW",
           "Postcode": 2320
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Mason",
-        "GivenNames": "Barry",
-        "Address": {
-          "Line1": "39 Tuscan Street",
-          "Suburb": "Rossmoyne",
-          "State": "WA",
-          "Postcode": 6148
         }
       },
       {
@@ -633,10 +598,10 @@
           "FamilyName": "Benson",
           "GivenNames": "Stuart",
           "Address": {
-            "Line1": "GPO Box 1115",
+            "Line1": "2/36 Salamanca Place",
             "Suburb": "Hobart",
             "State": "TAS",
-            "Postcode": 7001
+            "Postcode": 7000
           }
         },
         "DeputyOfficers": [
@@ -1148,9 +1113,9 @@
   },
   {
     "Id": 1427,
-    "Name": "Involuntary Medication Objectors (Vaccination/Fluoride) Party",
-    "Code": "Involuntary Vaccine/Fluoride Objectors",
-    "Abbreviation": "Involuntary Vaccine/Fluoride Objectors",
+    "Name": "Informed Medical Options Party",
+    "Code": "Informed Medical Options Party",
+    "Abbreviation": "Informed Medical Options Party",
     "RegisterDate": "26 October 2016",
     "AmendmentDate": "26 October 2016",
     "Address": "PO Box 3322\nWEST KEMPSEY NSW 2440",
@@ -1353,22 +1318,7 @@
             "State": "TAS",
             "Postcode": 7000
           }
-        },
-        "DeputyOfficers": [
-          {
-            "Title": "Mrs",
-            "FamilyName": "Skeggs",
-            "GivenNames": "Chantel",
-            "Capacity": "Office Manager",
-            "Address": {
-              "Line1": "Suite 4c, Level 3",
-              "Line2": "33 Salamanca Place",
-              "Suburb": "Hobart",
-              "State": "TAS",
-              "Postcode": 7000
-            }
-          }
-        ]
+        }
       },
       {
         "Id": 184,
@@ -2687,10 +2637,10 @@
         "FamilyName": "Higson",
         "GivenNames": "Shayne",
         "Address": {
-          "Line1": "PO Box 73",
-          "Suburb": "Stuarts Point",
+          "Line1": "139B Denison Street",
+          "Suburb": "Queens Park",
           "State": "NSW",
-          "Postcode": 2441
+          "Postcode": 2022
         }
       }
     ]
