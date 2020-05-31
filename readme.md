@@ -397,11 +397,10 @@ Note: The below are only required by the maintainers and contributors of this pr
 
 Some tools are required.
 
+
 ### Adding new elections
 
 Elections are currently added manually as they are declared.
-
-
 
 <!-- snippet: elections -->
 <a id='snippet-elections'/></a>
@@ -426,6 +425,7 @@ return new List<Election>
 ```
 <sup><a href='/src/AustralianElectorates/DataLoader.cs#L69-L89' title='File snippet `elections` was extracted from'>snippet source</a> | <a href='#snippet-elections' title='Navigate to start of snippet `elections`'>anchor</a></sup>
 <!-- endsnippet -->
+
 
 ### ogr2ogr
 
