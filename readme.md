@@ -267,7 +267,7 @@ The NuGets contain a static copy of the electorate data. This data is embedded a
 
 To get the latests version of the data do a NuGet update. There are several options to help keep a NuGet update:
 
- * [Dependabot](https://dependabot.com/): Creates pull requests to keep your dependencies secure and up-to-date.
+ * [Dependabot](https://dependabot.com/): Creates pull requests to keep dependencies secure and up-to-date.
  * [Using NuGet wildcards](https://docs.microsoft.com/en-us/nuget/reference/package-versioning#version-ranges-and-wildcards).
  * [Libraries.io](https://libraries.io/): Supports subscribing to NuGet package updates.
 
@@ -386,7 +386,9 @@ This product (AustralianElectorates) incorporates data that is:
 
 The Data (Commonwealth Electoral Boundaries (various years)) has been used in AustralianElectorates with the permission of the Australian Electoral Commission. The Australian Electoral Commission has not evaluated the Data as altered and incorporated within AustralianElectorates, and therefore gives no warranty regarding its accuracy, completeness, currency or suitability for any particular purpose.
 
-Limited End-user licence provided by the Australian Electoral Commission: You may use AustralianElectorates to load, display, print and reproduce views obtained from the Data, retaining this notice, for your personal use, or use within your organisation only.
+Limited End-user licence provided by the Australian Electoral Commission:
+
+> You may use AustralianElectorates to load, display, print and reproduce views obtained from the Data, retaining this notice, for your personal use, or use within your organisation only.
 
 
 ## Re-Generating the data
