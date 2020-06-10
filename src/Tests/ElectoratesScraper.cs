@@ -181,7 +181,7 @@ static class ElectoratesScraper
         foreach (var id in partyIds)
         {
             var findPartyId = PartyScraper.FindPartyId(id, parties);
-            if (findPartyId.HasValue)
+            if (findPartyId != null)
             {
                 yield return findPartyId.Value;
             }
