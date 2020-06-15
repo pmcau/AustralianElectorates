@@ -1,6 +1,4 @@
-﻿using VerifyXunit;
-using Xunit;
-using Xunit.Abstractions;
+﻿using Xunit;
 
 public class ExtensionsTests
 {
@@ -11,10 +9,5 @@ public class ExtensionsTests
     public void ToTitleCase(string input, string expected)
     {
         Assert.Equal(expected, input.ToTitleCase());
-    }
-
-    public ExtensionsTests(ITestOutputHelper output) :
-        base(output)
-    {
     }
 }

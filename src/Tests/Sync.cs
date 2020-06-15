@@ -7,9 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AustralianElectorates;
 using GeoJSON.Net.Feature;
-using VerifyXunit;
 using Xunit;
-using Xunit.Abstractions;
 
 public class Sync
 {
@@ -335,10 +333,5 @@ namespace AustralianElectorates.Bogus
     static string GetCSharpName(Electorate electorate)
     {
         return electorate.Name.Replace(" ", "").Replace("-", "").Replace("'", "");
-    }
-
-    public Sync(ITestOutputHelper output) :
-        base(output)
-    {
     }
 }

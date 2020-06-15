@@ -314,7 +314,7 @@ var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
 Directory.CreateDirectory(directory);
 DataLoader.Export(directory);
 ```
-<sup><a href='/src/Tests/Snippets.cs#L21-L58' title='File snippet `usage` was extracted from'>snippet source</a> | <a href='#snippet-usage' title='Navigate to start of snippet `usage`'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L19-L56' title='File snippet `usage` was extracted from'>snippet source</a> | <a href='#snippet-usage' title='Navigate to start of snippet `usage`'>anchor</a></sup>
 <!-- endsnippet -->
 
 
@@ -332,7 +332,7 @@ var faker = new Faker<Target>()
         setter: (f, u) => f.AustralianElectorates().Name());
 var targetInstance = faker.Generate();
 ```
-<sup><a href='/src/Tests/Snippets.cs#L90-L100' title='File snippet `usagebogus` was extracted from'>snippet source</a> | <a href='#snippet-usagebogus' title='Navigate to start of snippet `usagebogus`'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L88-L98' title='File snippet `usagebogus` was extracted from'>snippet source</a> | <a href='#snippet-usagebogus' title='Navigate to start of snippet `usagebogus`'>anchor</a></sup>
 <!-- endsnippet -->
 
 
@@ -343,7 +343,7 @@ var targetInstance = faker.Generate();
 ```cs
 var pathToPng = DetailMaps.MapForElectorate("Bass");
 ```
-<sup><a href='/src/Tests/Snippets.cs#L64-L66' title='File snippet `usagedetailmaps` was extracted from'>snippet source</a> | <a href='#snippet-usagedetailmaps' title='Navigate to start of snippet `usagedetailmaps`'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L62-L64' title='File snippet `usagedetailmaps` was extracted from'>snippet source</a> | <a href='#snippet-usagedetailmaps' title='Navigate to start of snippet `usagedetailmaps`'>anchor</a></sup>
 <!-- endsnippet -->
 
 

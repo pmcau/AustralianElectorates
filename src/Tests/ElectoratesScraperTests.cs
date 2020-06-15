@@ -2,8 +2,8 @@
 using AustralianElectorates;
 using VerifyXunit;
 using Xunit;
-using Xunit.Abstractions;
 
+[UsesVerify]
 public class ElectoratesScraperTests
 {
     [Fact]
@@ -23,10 +23,5 @@ public class ElectoratesScraperTests
         var batman = await ElectoratesScraper.ScrapeCurrentElectorate("batman", State.VIC, parties);
         var melbourne = await ElectoratesScraper.ScrapeCurrentElectorate("melbourne", State.VIC, parties);
         return Verifier.Verify(new {denison, melbourne, banks, hunter, batman, spence, cook, bean, fenner, canberra, bass});
-    }
-
-    public ElectoratesScraperTests(ITestOutputHelper output) :
-        base(output)
-    {
     }
 }

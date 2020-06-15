@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using AustralianElectorates;
 using VerifyXunit;
 using Xunit;
-using Xunit.Abstractions;
 
+[UsesVerify]
 public class DataLoaderTests
 {
     [Fact]
@@ -210,10 +210,5 @@ public class DataLoaderTests
         Assert.False(DataLoader.TryFindElection(parliament, out _));
         var exception = Assert.Throws<ElectionNotFoundException>(() => DataLoader.FindElection(parliament));
         return Verifier.Verify(new {exception.Parliament, exception.Message});
-    }
-
-    public DataLoaderTests(ITestOutputHelper output) :
-        base(output)
-    {
     }
 }

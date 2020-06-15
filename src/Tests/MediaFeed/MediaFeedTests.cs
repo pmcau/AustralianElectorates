@@ -1,7 +1,5 @@
 ﻿using System.Diagnostics;
-using VerifyXunit;
 using Xunit;
-using Xunit.Abstractions;
 
 public class MediaFeedTests
 {
@@ -25,10 +23,5 @@ public class MediaFeedTests
                 }
             }
         }
-    }
-
-    public MediaFeedTests(ITestOutputHelper output) :
-        base(output)
-    {
     }
 }

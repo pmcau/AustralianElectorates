@@ -3,8 +3,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using VerifyXunit;
 using Xunit;
-using Xunit.Abstractions;
 
+[UsesVerify]
 public class PostcodeScraperTests
 {
     [Fact]
@@ -22,10 +22,5 @@ public class PostcodeScraperTests
     {
         var place = AustraliaData.PostCodes.Single(x=>x.Key == "2612");
         return Verifier.Verify(PostcodeScraper.GetAECDataForPostcode(place));
-    }
-
-    public PostcodeScraperTests(ITestOutputHelper output) :
-        base(output)
-    {
     }
 }

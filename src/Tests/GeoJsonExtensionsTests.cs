@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
 using GeoJSON.Net.Feature;
 using GeoJSON.Net.Geometry;
-using VerifyXunit;
 using Xunit;
-using Xunit.Abstractions;
 
 public class GeoJsonExtensionsTests
 {
@@ -32,10 +30,5 @@ public class GeoJsonExtensionsTests
                         new LineString(positions)
                     }))
         };
-    }
-
-    public GeoJsonExtensionsTests(ITestOutputHelper output) : 
-        base(output)
-    {
     }
 }

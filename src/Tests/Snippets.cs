@@ -8,10 +8,9 @@ using AustralianElectorates.Bogus;
 using Bogus;
 using VerifyXunit;
 using Xunit;
-using Xunit.Abstractions;
 
 // ReSharper disable UnusedVariable
-
+[UsesVerify]
 public class Snippets
 {
     [Fact]
@@ -103,10 +102,5 @@ public class Snippets
     {
         public string RandomElectorateName = null!;
         public IElectorate RandomElectorate = null!;
-    }
-
-    public Snippets(ITestOutputHelper output) :
-        base(output)
-    {
     }
 }

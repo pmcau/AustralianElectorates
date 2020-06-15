@@ -1,6 +1,4 @@
-﻿using VerifyXunit;
-using Xunit;
-using Xunit.Abstractions;
+﻿using Xunit;
 
 public class PdfToPngTests
 {
@@ -9,10 +7,5 @@ public class PdfToPngTests
     public void ConvertSingle()
     {
         PdfToPng.Convert(@"sample_electorate_map.pdf");
-    }
-
-    public PdfToPngTests(ITestOutputHelper output) :
-        base(output)
-    {
     }
 }
