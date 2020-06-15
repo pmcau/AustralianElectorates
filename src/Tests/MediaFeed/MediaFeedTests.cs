@@ -3,8 +3,7 @@ using VerifyXunit;
 using Xunit;
 using Xunit.Abstractions;
 
-public class MediaFeedTests :
-    VerifyBase
+public class MediaFeedTests
 {
     [Fact]
     public void Run()

@@ -4,8 +4,7 @@ using VerifyXunit;
 using Xunit;
 using Xunit.Abstractions;
 
-public class ElectoratesScraperTests :
-    VerifyBase
+public class ElectoratesScraperTests
 {
     [Fact]
     [Trait("Category", "Integration")]
@@ -23,7 +22,7 @@ public class ElectoratesScraperTests :
         var bean = await ElectoratesScraper.ScrapeCurrentElectorate("bean", State.ACT, parties);
         var batman = await ElectoratesScraper.ScrapeCurrentElectorate("batman", State.VIC, parties);
         var melbourne = await ElectoratesScraper.ScrapeCurrentElectorate("melbourne", State.VIC, parties);
-        return Verify(new {denison, melbourne, banks, hunter, batman, spence, cook, bean, fenner, canberra, bass});
+        return Verifier.Verify(new {denison, melbourne, banks, hunter, batman, spence, cook, bean, fenner, canberra, bass});
     }
 
     public ElectoratesScraperTests(ITestOutputHelper output) :

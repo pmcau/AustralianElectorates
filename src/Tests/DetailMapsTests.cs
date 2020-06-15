@@ -4,8 +4,7 @@ using VerifyXunit;
 using Xunit;
 using Xunit.Abstractions;
 
-public class DetailMapsTests :
-    VerifyBase
+public class DetailMapsTests
 {
     [Fact]
     public void Simple()

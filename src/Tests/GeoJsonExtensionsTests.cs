@@ -5,8 +5,7 @@ using VerifyXunit;
 using Xunit;
 using Xunit.Abstractions;
 
-public class GeoJsonExtensionsTests :
-    VerifyBase
+public class GeoJsonExtensionsTests
 {
     [Fact]
     public void BoundingBox()

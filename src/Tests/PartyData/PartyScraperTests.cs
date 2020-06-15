@@ -3,8 +3,7 @@ using VerifyXunit;
 using Xunit;
 using Xunit.Abstractions;
 
-public class PartyScraperTests :
-    VerifyBase
+public class PartyScraperTests
 {
     [Fact]
     [Trait("Category", "Integration")]

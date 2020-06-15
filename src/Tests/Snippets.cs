@@ -12,8 +12,7 @@ using Xunit.Abstractions;
 
 // ReSharper disable UnusedVariable
 
-public class Snippets :
-    VerifyBase
+public class Snippets
 {
     [Fact]
     public void Foo()
@@ -69,19 +68,19 @@ public class Snippets :
     [Fact]
     public Task ElectoratesSampleJson()
     {
-        return Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.ElectoratesJsonPath).Take(50)));
+        return Verifier.Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.ElectoratesJsonPath).Take(50)));
     }
 
     [Fact]
     public Task LocalitiesSampleJson()
     {
-        return Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.LocalitiesPath).Take(21)));
+        return Verifier.Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.LocalitiesPath).Take(21)));
     }
 
     [Fact]
     public Task PartiesSampleJson()
     {
-        return Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.PartiesJsonPath).Take(34)));
+        return Verifier.Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.PartiesJsonPath).Take(34)));
     }
 
     [Fact]

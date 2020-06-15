@@ -5,8 +5,7 @@ using VerifyXunit;
 using Xunit;
 using Xunit.Abstractions;
 
-public class PostcodeScraperTests :
-    VerifyBase
+public class PostcodeScraperTests
 {
     [Fact]
     [Trait("Category", "Integration")]
@@ -15,14 +14,14 @@ public class PostcodeScraperTests :
         var data = await PostcodeScraper.Run();
         File.Delete(DataLocations.LocalitiesPath);
         JsonSerializerService.Serialize(data, DataLocations.LocalitiesPath);
-        await Verify(data.Take(10));
+        await Verifier.Verify(data.Take(10));
     }
 
     [Fact]
     public Task Specific()
     {
         var place = AustraliaData.PostCodes.Single(x=>x.Key == "2612");
-        return Verify(PostcodeScraper.GetAECDataForPostcode(place));
+        return Verifier.Verify(PostcodeScraper.GetAECDataForPostcode(place));
     }
 
     public PostcodeScraperTests(ITestOutputHelper output) :

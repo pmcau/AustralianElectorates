@@ -2,8 +2,7 @@
 using Xunit;
 using Xunit.Abstractions;
 
-public class PdfToPngTests :
-    VerifyBase
+public class PdfToPngTests
 {
     [Fact]
     [Trait("Category", "Integration")]

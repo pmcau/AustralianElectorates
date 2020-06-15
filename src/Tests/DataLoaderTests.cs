@@ -7,13 +7,12 @@ using VerifyXunit;
 using Xunit;
 using Xunit.Abstractions;
 
-public class DataLoaderTests :
-    VerifyBase
+public class DataLoaderTests
 {
     [Fact]
     public Task Electorates()
     {
-        return Verify(DataLoader.Electorates.Select(x => x.Name));
+        return Verifier.Verify(DataLoader.Electorates.Select(x => x.Name));
     }
 
     [Fact]
@@ -35,26 +34,26 @@ public class DataLoaderTests :
     {
         Assert.False(DataLoader.TryFindElectorate("not Found", out _));
         var exception = Assert.Throws<ElectorateNotFoundException>(() => DataLoader.FindElectorate("not Found"));
-        return Verify(new {exception.Name, exception.Message});
+        return Verifier.Verify(new {exception.Name, exception.Message});
     }
 
     [Fact]
     public Task ValidateElectorates()
     {
         var exception = Assert.Throws<ElectoratesNotFoundException>(() => DataLoader.ValidateElectorates("not Found", "Bass"));
-        return Verify(new {exception.Names, exception.Message});
+        return Verifier.Verify(new {exception.Names, exception.Message});
     }
 
     [Fact]
     public Task FindInvalidateElectorates()
     {
-        return Verify(DataLoader.FindInvalidateElectorates("not Found", "Bass"));
+        return Verifier.Verify(DataLoader.FindInvalidateElectorates("not Found", "Bass"));
     }
 
     [Fact]
     public Task FindInvalidateElectorates_by_short_name()
     {
-        return Verify(DataLoader.FindInvalidateElectorates("not Found", "port-adelaide"));
+        return Verifier.Verify(DataLoader.FindInvalidateElectorates("not Found", "port-adelaide"));
     }
 
     [Fact]
@@ -93,7 +92,7 @@ public class DataLoaderTests :
             }
 
             DataLoader.Export(directory);
-            await Verify(Directory.EnumerateFiles(directory, "*.*", SearchOption.AllDirectories).Count());
+            await Verifier.Verify(Directory.EnumerateFiles(directory, "*.*", SearchOption.AllDirectories).Count());
         }
         finally
         {
@@ -105,35 +104,35 @@ public class DataLoaderTests :
     public Task Get2016State()
     {
         var data = DataLoader.Maps2016.GetState(State.ACT);
-        return Verify(data.GeoJson.Substring(0, 200));
+        return Verifier.Verify(data.GeoJson.Substring(0, 200));
     }
 
     [Fact]
     public Task Get2019State()
     {
         var data = DataLoader.Maps2019.GetState(State.ACT);
-        return Verify(data.GeoJson.Substring(0, 200));
+        return Verifier.Verify(data.GeoJson.Substring(0, 200));
     }
 
     [Fact]
     public Task GetFutureState()
     {
         var data = DataLoader.MapsFuture.GetState(State.ACT);
-        return Verify(data.GeoJson.Substring(0, 200));
+        return Verifier.Verify(data.GeoJson.Substring(0, 200));
     }
 
     [Fact]
     public Task Get2016Electorate()
     {
         var data = DataLoader.Maps2016.GetElectorate("fenner");
-        return Verify(data.GeoJson.Substring(0, 200));
+        return Verifier.Verify(data.GeoJson.Substring(0, 200));
     }
 
     [Fact]
     public Task Get2019Electorate()
     {
         var data = DataLoader.Maps2019.GetElectorate("fenner");
-        return Verify(data.GeoJson.Substring(0, 200));
+        return Verifier.Verify(data.GeoJson.Substring(0, 200));
     }
 
     [Fact]
@@ -147,28 +146,28 @@ public class DataLoaderTests :
     public Task GetFutureElectorate()
     {
         var data = DataLoader.MapsFuture.GetElectorate("fenner");
-        return Verify(data.GeoJson.Substring(0, 200));
+        return Verifier.Verify(data.GeoJson.Substring(0, 200));
     }
 
     [Fact]
     public Task GetFutureElectorateExtension()
     {
         var data = DataLoader.Fenner.GetFutureMap();
-        return Verify(data.GeoJson.Substring(0, 200));
+        return Verifier.Verify(data.GeoJson.Substring(0, 200));
     }
 
     [Fact]
     public Task GetCurrentElectorateExtension()
     {
         var data = DataLoader.Fenner.GetFutureMap();
-        return Verify(data.GeoJson.Substring(0, 200));
+        return Verifier.Verify(data.GeoJson.Substring(0, 200));
     }
 
     [Fact]
     public Task LoadAll()
     {
         DataLoader.LoadAll();
-        return Verify(new
+        return Verifier.Verify(new
         {
             FutureLoadedElectorateMaps = DataLoader.MapsFuture.LoadedElectorates.Count,
             FutureLoadedStateMaps = DataLoader.MapsFuture.LoadedStates.Count,
@@ -188,7 +187,7 @@ public class DataLoaderTests :
     [Fact]
     public Task Elections()
     {
-        return Verify(DataLoader.Elections.Select(election => new
+        return Verifier.Verify(DataLoader.Elections.Select(election => new
         {
             election.Parliament,
             election.Year,
@@ -210,7 +209,7 @@ public class DataLoaderTests :
         var parliament = 0;
         Assert.False(DataLoader.TryFindElection(parliament, out _));
         var exception = Assert.Throws<ElectionNotFoundException>(() => DataLoader.FindElection(parliament));
-        return Verify(new {exception.Parliament, exception.Message});
+        return Verifier.Verify(new {exception.Parliament, exception.Message});
     }
 
     public DataLoaderTests(ITestOutputHelper output) :

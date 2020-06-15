@@ -2,8 +2,7 @@
 using Xunit;
 using Xunit.Abstractions;
 
-public class ExtensionsTests :
-    VerifyBase
+public class ExtensionsTests
 {
     [Theory]
     [InlineData("McLACHLAN, Craig Steven", "McLachlan, Craig Steven")]

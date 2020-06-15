@@ -11,8 +11,7 @@ using VerifyXunit;
 using Xunit;
 using Xunit.Abstractions;
 
-public class Sync :
-    VerifyBase
+public class Sync
 {
     [Fact]
     [Trait("Category", "Integration")]
