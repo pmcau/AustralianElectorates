@@ -372,12 +372,12 @@
     "DeputyOfficers": [
       {
         "Title": "Mr",
-        "FamilyName": "Zwalf",
-        "GivenNames": "Sebastian",
-        "Capacity": "Assistant National Secretary",
+        "FamilyName": "Persley",
+        "GivenNames": "Jonathan",
+        "Capacity": "Deputy Registered Officer",
         "Address": {
-          "Line1": "290 Goyder Street",
-          "Suburb": "Narrabundah",
+          "Line1": "PO Box 6222",
+          "Suburb": "Kingston",
           "State": "ACT",
           "Postcode": 2604
         }
@@ -876,10 +876,10 @@
       "FamilyName": "Campbell",
       "GivenNames": "Stephen",
       "Address": {
-        "Line1": "11 Wheatsheaf Rd",
-        "Suburb": "Ceres",
-        "State": "VIC",
-        "Postcode": 3221
+        "Line1": "180 Allen's Rivulet Road",
+        "Suburb": "ALLEN's RIVULET",
+        "State": "TAS",
+        "Postcode": 7150
       }
     },
     "DeputyOfficers": [
@@ -1197,10 +1197,11 @@
           "FamilyName": "O'Dwyer",
           "GivenNames": "Michael",
           "Address": {
-            "Line1": "66-68 Bowen Street",
-            "Suburb": "Spring Hill",
+            "Line1": "Floor 1",
+            "Line2": "281 Sandgate Road",
+            "Suburb": "Albion",
             "State": "QLD",
-            "Postcode": 4000
+            "Postcode": 4010
           }
         },
         "DeputyOfficers": [
@@ -1291,7 +1292,21 @@
             "State": "TAS",
             "Postcode": 7000
           }
-        }
+        },
+        "DeputyOfficers": [
+          {
+            "Title": "Ms",
+            "FamilyName": "Flaherty",
+            "GivenNames": "Neena",
+            "Capacity": "Deputy Registered Officer",
+            "Address": {
+              "Line1": "89 Allumba Street",
+              "Suburb": "Howrah",
+              "State": "TAS",
+              "Postcode": 7018
+            }
+          }
+        ]
       },
       {
         "Id": 184,
