@@ -57,6 +57,19 @@ namespace AustralianElectorates
 
             InitNamed();
             Elections = BuildElections();
+
+            foreach (var electorate in Electorates)
+            {
+                if (electorate.Locations == null)
+                {
+                    continue;
+                }
+
+                foreach (var location in electorate.Locations.Cast<Location>())
+                {
+                    location.Electorate = electorate;
+                }
+            }
         }
 
         public static IReadOnlyList<IElectorate> Electorates { get; }

@@ -423,7 +423,7 @@ return new List<Election>
     }
 };
 ```
-<sup><a href='/src/AustralianElectorates/DataLoader.cs#L69-L89' title='File snippet `elections` was extracted from'>snippet source</a> | <a href='#snippet-elections' title='Navigate to start of snippet `elections`'>anchor</a></sup>
+<sup><a href='/src/AustralianElectorates/DataLoader.cs#L82-L102' title='File snippet `elections` was extracted from'>snippet source</a> | <a href='#snippet-elections' title='Navigate to start of snippet `elections`'>anchor</a></sup>
 <!-- endsnippet -->
 
 
