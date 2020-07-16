@@ -50,7 +50,7 @@ namespace AustralianElectorates
                     elected.Party = PartiesAndBranches.SingleOrDefault(x => x.Id == elected.PartyId);
                     electorate.CurrentParty = elected.Party;
 
-                    var other =(Candidate)  preferred.Other;
+                    var other = (Candidate) preferred.Other;
                     other.Party = PartiesAndBranches.SingleOrDefault(x => x.Id == other.PartyId);
                 }
             }
