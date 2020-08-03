@@ -6,6 +6,6 @@ public class PdfToPngTests
     [Trait("Category", "Integration")]
     public void ConvertSingle()
     {
-        PdfToPng.Convert(@"sample_electorate_map.pdf");
+        PdfToPng.Convert("sample_electorate_map.pdf");
     }
 }
