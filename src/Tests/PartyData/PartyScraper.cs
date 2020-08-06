@@ -13,7 +13,7 @@ using State = AustralianElectorates.State;
 
 static class PartyScraper
 {
-    public static async Task<List<Party>> Run()
+    public static async Task Run()
     {
         var codes = await PartyCodeScraper.Run();
         var htmlPath = Path.Combine(DataLocations.TempPath, "partycodes.html");
@@ -25,7 +25,7 @@ static class PartyScraper
         {
             await Downloader.DownloadFile(htmlPath, url);
 
-            var jsonUrl = File.ReadAllLines(htmlPath)
+            var jsonUrl = (await File.ReadAllLinesAsync(htmlPath))
                 .Single(x => x.Contains("/Parties_and_Representatives/Party_Registration/Registered_parties/files/register"))
                 .Split('"')[1];
             await Downloader.DownloadFile(partyRegisterPath, $"https://www.aec.gov.au{jsonUrl}");
@@ -39,7 +39,6 @@ static class PartyScraper
 
             File.Delete(DataLocations.PartiesJsonPath);
             JsonSerializerService.Serialize(parties, DataLocations.PartiesJsonPath);
-            return parties;
         }
         catch (Exception exception)
         {
