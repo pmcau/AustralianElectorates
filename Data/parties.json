@@ -336,17 +336,17 @@
     "Abbreviation": "Federation Party",
     "RegisterDate": "26 July 2011",
     "AmendmentDate": "26 July 2011",
-    "Address": "PO Box 160\nMARYBOROUGH VIC 3465",
+    "Address": "3R Jandra Road\nDUBBO NSW 2830",
     "Officer": {
       "Title": "Mr",
       "FamilyName": "O'Rourke",
       "GivenNames": "Glenn",
       "Capacity": "Registered officer",
       "Address": {
-        "Line1": "46 Lachlan Street ",
-        "Suburb": "Bogan Gate",
+        "Line1": "3R Jandra Road",
+        "Suburb": "Dubbo",
         "State": "NSW",
-        "Postcode": 2876
+        "Postcode": 2830
       }
     }
   },
@@ -710,7 +710,7 @@
     "Abbreviation": "The Progressives",
     "RegisterDate": "17 February 2015",
     "AmendmentDate": "17 February 2015",
-    "Address": "8/22 Moore St\nCAMPBELLTOWN NSW 2560",
+    "Address": "24B Harpur Place\nGARRAN ACT 2605",
     "Officer": {
       "Title": "Mr",
       "FamilyName": "Knight",
@@ -2074,18 +2074,6 @@
           "Suburb": "Highgate Hill",
           "State": "QLD",
           "Postcode": 4101
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Orfanidis",
-        "GivenNames": "Photius",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "171 Bolton Street",
-          "Suburb": "Eltham",
-          "State": "VIC",
-          "Postcode": 3095
         }
       },
       {

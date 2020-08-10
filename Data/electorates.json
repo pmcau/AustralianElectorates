@@ -21921,14 +21921,13 @@
     "Name": "Lingiari",
     "ShortName": "lingiari",
     "State": "NT",
-    "Area": 1348157.94,
+    "Area": 0.0,
     "Exist2016": true,
     "Exist2019": true,
-    "ExistInFuture": true,
-    "DateGazetted": "2017-02-07",
-    "Description": "Lingiari covers the majority of the Northern Territory, with the exception of the Darwin Municipality and most of the Palmerston Municipality.<br> Lingiari includes the Territory of Cocos (Keeling) Islands and the Territory of Christmas Island.",
-    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "NameDerivation": "Named in honour of Vincent Lingiari AM 19??-88, who was a member of the Gurindji people from the Victoria River District. Mr Lingiari was a stockman and lands right leader who worked for many years to improve conditions for Aboriginal people. In 1966, he led the walk-off of his people from Wave Hill Station, which eventually resulted in the establishment of Wattie Creek and a land grant to the Gurindji people.",
+    "ExistInFuture": false,
+    "Description": "Lingiari covers an area of approximately 1&nbsp;352&nbsp;371 sq km of the Northern Territory including Christmas Island and Cocos (Keeling) Islands.",
+    "DemographicRating": "Rural",
+    "NameDerivation": "Named in honour of Vincent Lingiari OAM 1908-88, who was a member of the Gurindji people from the Victoria River District.",
     "Enrollment": 70023,
     "TwoCandidatePreferred": {
       "Elected": {
@@ -22936,14 +22935,13 @@
     "Name": "Solomon",
     "ShortName": "solomon",
     "State": "NT",
-    "Area": 190.61,
+    "Area": 0.0,
     "Exist2016": true,
     "Exist2019": true,
-    "ExistInFuture": true,
-    "DateGazetted": "2017-02-07",
-    "Description": "Solomon covers the Darwin Municipality, the Palmerston Municipality (with the exception of the suburbs of Farrar, Johnston, Mitchell, Yarrawonga and Zuccoli), and the unincorporated areas of the Darwin Rates Act Area and East Arm.",
-    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
-    "NameDerivation": "Named after Vaiben Louis Solomon, 1853-1908, who was an active member of the Constitutional Conventions that led to the Commonwealth of Australia. Between 1901 and 1903 Mr Solomon was elected as one of the first Members of the House of Representatives as the member for the South Australian seat that included the Northern Territory. Mr Solomon also represented the Northern Territory seat in the South Australian House of Assembly on several occasions.",
+    "ExistInFuture": false,
+    "Description": "Solomon covers an area of approximately 337 sq km and includes the cities of Darwin and Palmerston and urban fringes.",
+    "DemographicRating": "Inner Metropolitan",
+    "NameDerivation": "Named after Vaiben Louis Solomon 1853-1908, who has been described as the Northern Territory's founding father of federation.",
     "Enrollment": 69336,
     "TwoCandidatePreferred": {
       "Elected": {
@@ -23090,6 +23088,19 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "Northern Territory",
+    "ShortName": "northern-territory",
+    "State": "NT",
+    "Area": 1348240.0,
+    "Exist2016": false,
+    "Exist2019": false,
+    "ExistInFuture": true,
+    "DateGazetted": "2020-07-03",
+    "Description": "The Division of Northern Territory covers an area consisting of: <ul><li>the entirety of the Northern Territory;</li><li>the Territory of Christmas Island; and</li><li>the Territory of Cocos (Keeling) Islands.</li></ul>",
+    "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
+    "NameDerivation": "The Northern Territory was surrendered by the State of South Australia and accepted by the Commonwealth on 1 January 1911. It was defined in the Northern Territory Acceptance Act 1910 as that part of Australia which lies to the northward of the twenty-sixth parallel of South Latitude and between the one hundred and twenty-ninth and one hundred and thirty-eighth degrees of East Longitude, together with the bays and gulfs therein, and all and every the islands adjacent to any part of the mainland within such limits as aforesaid, with their rights, members, and appurtenances."
   },
   {
     "Name": "Banks",
@@ -25266,7 +25277,7 @@
     "DateGazetted": "2016-02-25",
     "Description": "Eden-Monaro covers an area from Yass, Murrumbateman and Bungendore in the north and south to the Victorian border, excluding the Australian Capital Territory. The main towns include Adaminaby, Adelong, Batlow, Bega, Berridale, Bodalla, Bombala, Braidwood, Bungendore, Cabramurra, Captains Flat, Cooma, Dalmeny, Delegate, Eden, Jindabyne, Merimbula, Murrumbateman, Narooma, Queanbeyan, Talbingo, Tathra, Tumbarumba, Tumut and Yass.<br>This description reflects local government areas in existence in 2015.",
     "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
-    "NameDerivation": "Named after the two areas in which the electoral division is located. The name 'Monaro' is variously believed to be: <ul><li>derived from the Aboriginal work 'Maneroo', meaning plain, or</li><li>an Aboriginal word meaning 'the navel' or 'a woman's breasts'.</li></ul>",
+    "NameDerivation": "Named after the two areas in which the electoral division is located. The name 'Monaro' is variously believed to be: <ul><li>derived from the Aboriginal word 'Maneroo', meaning plain, or</li><li>an Aboriginal word meaning 'the navel' or 'a woman's breasts'.</li></ul>",
     "Enrollment": 114147,
     "TwoCandidatePreferred": {
       "Elected": {

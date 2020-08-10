@@ -51,7 +51,7 @@ Location: [/Data/electorates.json](/Data/electorates.json)
 Sample:
 
 <!-- snippet: Snippets.ElectoratesSampleJson.verified.txt -->
-<a id='snippet-Snippets.ElectoratesSampleJson.verified.txt'></a>
+<a id='snippet-Snippets.ElectoratesSampleJson.verified.txt'/></a>
 ```txt
 [
   {
@@ -115,7 +115,7 @@ Location: [/Data/Localities.json](/Data/Localities.json)
 Sample:
 
 <!-- snippet: Snippets.LocalitiesSampleJson.verified.txt -->
-<a id='snippet-Snippets.LocalitiesSampleJson.verified.txt'></a>
+<a id='snippet-Snippets.LocalitiesSampleJson.verified.txt'/></a>
 ```txt
 [
   {
@@ -150,7 +150,7 @@ Location: [/Data/parties.json](/Data/parties.json)
 Sample:
 
 <!-- snippet: Snippets.PartiesSampleJson.verified.txt -->
-<a id='snippet-Snippets.PartiesSampleJson.verified.txt'></a>
+<a id='snippet-Snippets.PartiesSampleJson.verified.txt'/></a>
 ```txt
 [
   {
@@ -275,7 +275,7 @@ To get the latests version of the data do a NuGet update. There are several opti
 ## Usage
 
 <!-- snippet: usage -->
-<a id='snippet-usage'></a>
+<a id='snippet-usage'/></a>
 ```cs
 // get an electorate by name
 var fenner = DataLoader.Fenner;
@@ -321,7 +321,7 @@ DataLoader.Export(directory);
 ## Bogus Usage
 
 <!-- snippet: usagebogus -->
-<a id='snippet-usagebogus'></a>
+<a id='snippet-usagebogus'/></a>
 ```cs
 var faker = new Faker<Target>()
     .RuleFor(
@@ -339,7 +339,7 @@ var targetInstance = faker.Generate();
 ## DetailMaps Usage
 
 <!-- snippet: usageDetailMaps -->
-<a id='snippet-usagedetailmaps'></a>
+<a id='snippet-usagedetailmaps'/></a>
 ```cs
 var pathToPng = DetailMaps.MapForElectorate("Bass");
 ```
@@ -403,7 +403,7 @@ Some tools are required.
 Elections are currently added manually as they are declared.
 
 <!-- snippet: elections -->
-<a id='snippet-elections'></a>
+<a id='snippet-elections'/></a>
 ```cs
 return new List<Election>
 {

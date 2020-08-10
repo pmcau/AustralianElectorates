@@ -225,7 +225,7 @@ public class Sync
                 var existInFuture = electoratesFuture.Contains(electorateName);
 
                 ElectorateEx electorate;
-                if (existIn2019)
+                if (existIn2019 || existInFuture)
                 {
                     electorate = await ElectoratesScraper.ScrapeCurrentElectorate(electorateName, electoratePair.Key);
                 }
@@ -332,6 +332,9 @@ namespace AustralianElectorates.Bogus
 
     static string GetCSharpName(Electorate electorate)
     {
-        return electorate.Name.Replace(" ", "").Replace("-", "").Replace("'", "");
+        return electorate.Name
+            .Replace(" ", "")
+            .Replace("-", "")
+            .Replace("'", "");
     }
 }

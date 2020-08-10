@@ -11,7 +11,13 @@ static class ElectoratesScraper
 {
     public static Task<ElectorateEx> ScrapeCurrentElectorate(string shortName, State state)
     {
+        //TODO: split this out to a ScrapeCurrentElectorate and a Scrape2019Electorate when aec archives 2019
+        // and also remove the NT hacks
         var requestUri = $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm";
+        if (shortName == "lingiari" || shortName == "solomon")
+        {
+            return Scrape2016Electorate(shortName, state);
+        }
         return ScrapeElectorate(shortName, state, requestUri, "Profile of the electoral division of ");
     }
 
@@ -36,7 +42,6 @@ static class ElectoratesScraper
 
             var document = new HtmlDocument();
             document.Load(tempElectorateHtmlPath);
-
             var fullName = GetFullName(document, prefix);
             var values = new Dictionary<string, HtmlNode>(StringComparer.OrdinalIgnoreCase);
             var profileId = FindProfileTable(document);
@@ -96,8 +101,20 @@ static class ElectoratesScraper
 
             electorate.DemographicRating = values["Demographic Rating"].TrimmedInnerHtml();
 
-            var uri = new Uri(new Uri(requestUri), FindMapUrl(values));
-            electorate.MapUrl = uri.AbsoluteUri;
+            //TODO: remove lingiari + solomon hacks when aec archives 2019
+            if (shortName == "lingiari")
+            {
+                electorate.MapUrl = "https://www.aec.gov.au/profiles/nt/files/2017/2017-aec-a4-map-nt-lingiari.pdf";
+            }
+            else if (shortName == "solomon")
+            {
+                electorate.MapUrl = "https://aec.gov.au/profiles/nt/files/2017/2017-aec-a4-nt-map-solomon.pdf";
+            }
+            else
+            {
+                var uri = new Uri(new Uri(requestUri), FindMapUrl(values));
+                electorate.MapUrl = uri.AbsoluteUri;
+            }
 
             electorate.NameDerivation = values["Name derivation"].TrimmedInnerHtml();
             if (values.TryGetValue("Location Description", out var description))
