@@ -8,7 +8,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Bogus" Version="30.0.3" />
+    <PackageReference Include="Bogus" Version="30.0.4" />
     <PackageReference Include="CountryData" Version="3.35.0" />
     <PackageReference Include="MarkdownSnippets.MsBuild" Version="19.2.0" PrivateAssets="all" />
     <PackageReference Include="GeoJSON.Net" Version="1.2.19" />
