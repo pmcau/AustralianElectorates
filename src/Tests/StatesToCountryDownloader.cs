@@ -17,7 +17,7 @@ public static class StatesToCountryDownloader
         {State.SA, "https://www.aec.gov.au/Electorates/gis/files/sa-july-2018-esri.zip"},
         {State.VIC, "https://www.aec.gov.au/Electorates/gis/files/vic-july-2018-esri.zip"},
         {State.QLD, "https://www.aec.gov.au/Electorates/gis/files/qld-march-2018-esri.zip"},
-        {State.NT, "https://www.aec.gov.au/Electorates/gis/files/nt-esri-07022017.zip"},
+        {State.NT, "https://www.aec.gov.au/Electorates/gis/files/nt-july-2020-esri.zip"},
         {State.NSW, "https://www.aec.gov.au/Electorates/gis/files/nsw-esri-06042016.zip"},
         {State.WA, "https://www.aec.gov.au/Electorates/gis/files/wa-esri-19012016.zip"},
     };

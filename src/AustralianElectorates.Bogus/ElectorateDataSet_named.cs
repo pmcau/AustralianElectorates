@@ -483,6 +483,11 @@ namespace AustralianElectorates.Bogus
             return DataLoader.Solomon;
         }
 
+        public IElectorate NorthernTerritory()
+        {
+            return DataLoader.NorthernTerritory;
+        }
+
         public IElectorate Banks()
         {
             return DataLoader.Banks;

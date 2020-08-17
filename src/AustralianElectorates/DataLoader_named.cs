@@ -201,6 +201,8 @@ namespace AustralianElectorates
 
             Solomon = Electorates.Single(x => x.Name == "Solomon");
 
+            NorthernTerritory = Electorates.Single(x => x.Name == "Northern Territory");
+
             Banks = Electorates.Single(x => x.Name == "Banks");
 
             Barton = Electorates.Single(x => x.Name == "Barton");
@@ -517,6 +519,8 @@ namespace AustralianElectorates
         public static IElectorate Lingiari { get; private set; } = null!;
 
         public static IElectorate Solomon { get; private set; } = null!;
+
+        public static IElectorate NorthernTerritory { get; private set; } = null!;
 
         public static IElectorate Banks { get; private set; } = null!;
 

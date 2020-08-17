@@ -18,7 +18,7 @@ public class Sync
         IoHelpers.PurgeDirectory(DataLocations.MapsPath);
         IoHelpers.PurgeDirectory(DataLocations.TempPath);
 
-        var parties = await PartyScraper.Run();
+        await PartyScraper.Run();
 
         await Get2016();
         await Get2019();
@@ -30,7 +30,7 @@ public class Sync
         ProcessYear(DataLocations.Maps2019Path, electorates2019);
         ProcessYear(DataLocations.MapsFuturePath, electoratesFuture);
 
-        var electorates = await WriteElectoratesMetaData(parties);
+        var electorates = await WriteElectoratesMetaData();
 
         IoHelpers.PurgeDirectoryRecursive(DataLocations.MapsDetail);
         foreach (var electorate in electorates)
@@ -212,7 +212,7 @@ public class Sync
         }
     }
 
-    static async Task<List<ElectorateEx>> WriteElectoratesMetaData(List<Party> parties)
+    static async Task<List<ElectorateEx>> WriteElectoratesMetaData()
     {
         var localityData = JsonSerializerService.Deserialize<List<AecLocalityData>>(DataLocations.LocalitiesPath);
         var electorates = new List<ElectorateEx>();
@@ -225,13 +225,13 @@ public class Sync
                 var existInFuture = electoratesFuture.Contains(electorateName);
 
                 ElectorateEx electorate;
-                if (existIn2019)
+                if (existIn2019 || existInFuture)
                 {
-                    electorate = await ElectoratesScraper.ScrapeCurrentElectorate(electorateName, electoratePair.Key, parties);
+                    electorate = await ElectoratesScraper.ScrapeCurrentElectorate(electorateName, electoratePair.Key);
                 }
                 else
                 {
-                    electorate = await ElectoratesScraper.Scrape2016Electorate(electorateName, electoratePair.Key, parties);
+                    electorate = await ElectoratesScraper.Scrape2016Electorate(electorateName, electoratePair.Key);
                 }
 
                 electorate.Exist2016 = existIn2016;
@@ -332,6 +332,9 @@ namespace AustralianElectorates.Bogus
 
     static string GetCSharpName(Electorate electorate)
     {
-        return electorate.Name.Replace(" ", "").Replace("-", "").Replace("'", "");
+        return electorate.Name
+            .Replace(" ", "")
+            .Replace("-", "")
+            .Replace("'", "");
     }
 }
