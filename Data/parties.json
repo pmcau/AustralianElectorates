@@ -603,7 +603,7 @@
           "Title": "Ms",
           "FamilyName": "Castleman",
           "GivenNames": "Nicola",
-          "Capacity": "Registered Officer",
+          "Capacity": "Party Agent",
           "Address": {
             "Line1": "438 Docklands Drive",
             "Suburb": "Docklands",
@@ -754,9 +754,10 @@
     "AmendmentDate": "1 July 2013",
     "Address": "PO Box 3192\nUNLEY SA 5061",
     "Officer": {
-      "Title": "Senator",
-      "FamilyName": "Patrick",
-      "GivenNames": "Rex",
+      "Title": "Ms",
+      "FamilyName": "Sharkie",
+      "GivenNames": "Rebekha",
+      "Capacity": "Registered Officer",
       "Address": {
         "Line1": "Level 1, 169 Unley Road",
         "Suburb": "Unley",

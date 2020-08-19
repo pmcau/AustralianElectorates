@@ -101,20 +101,8 @@ static class ElectoratesScraper
 
             electorate.DemographicRating = values["Demographic Rating"].TrimmedInnerHtml();
 
-            //TODO: remove lingiari + solomon hacks when aec archives 2019
-            if (shortName == "lingiari")
-            {
-                electorate.MapUrl = "https://www.aec.gov.au/profiles/nt/files/2017/2017-aec-a4-map-nt-lingiari.pdf";
-            }
-            else if (shortName == "solomon")
-            {
-                electorate.MapUrl = "https://aec.gov.au/profiles/nt/files/2017/2017-aec-a4-nt-map-solomon.pdf";
-            }
-            else
-            {
-                var uri = new Uri(new Uri(requestUri), FindMapUrl(values));
-                electorate.MapUrl = uri.AbsoluteUri;
-            }
+            var uri = new Uri(new Uri(requestUri), FindMapUrl(values));
+            electorate.MapUrl = uri.AbsoluteUri;
 
             electorate.NameDerivation = values["Name derivation"].TrimmedInnerHtml();
             if (values.TryGetValue("Location Description", out var description))

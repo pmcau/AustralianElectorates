@@ -41,7 +41,7 @@ All information about electorates is available at [/Data/electorates.json](/Data
     * [pngquant](#pngquant)
   * [Purge history](#purge-history)
   * [Notes](#notes)
-  * [Security contact information](#security-contact-information)<!-- endToc -->
+  * [Security contact information](#security-contact-information)<!-- endtoc -->
 
 
 ## Electorates
@@ -105,7 +105,7 @@ Sample:
           "O'Connor",
 ```
 <sup><a href='/src/Tests/Snippets.ElectoratesSampleJson.verified.txt#L1-L50' title='File snippet `Snippets.ElectoratesSampleJson.verified.txt` was extracted from'>snippet source</a> | <a href='#snippet-Snippets.ElectoratesSampleJson.verified.txt' title='Navigate to start of snippet `Snippets.ElectoratesSampleJson.verified.txt`'>anchor</a></sup>
-<!-- endSnippet -->
+<!-- endsnippet -->
 
 
 ## Localities
@@ -140,7 +140,7 @@ Sample:
   },
 ```
 <sup><a href='/src/Tests/Snippets.LocalitiesSampleJson.verified.txt#L1-L21' title='File snippet `Snippets.LocalitiesSampleJson.verified.txt` was extracted from'>snippet source</a> | <a href='#snippet-Snippets.LocalitiesSampleJson.verified.txt' title='Navigate to start of snippet `Snippets.LocalitiesSampleJson.verified.txt`'>anchor</a></sup>
-<!-- endSnippet -->
+<!-- endsnippet -->
 
 
 ## Parties
@@ -188,7 +188,7 @@ Sample:
   },
 ```
 <sup><a href='/src/Tests/Snippets.PartiesSampleJson.verified.txt#L1-L34' title='File snippet `Snippets.PartiesSampleJson.verified.txt` was extracted from'>snippet source</a> | <a href='#snippet-Snippets.PartiesSampleJson.verified.txt' title='Navigate to start of snippet `Snippets.PartiesSampleJson.verified.txt`'>anchor</a></sup>
-<!-- endSnippet -->
+<!-- endsnippet -->
 
 
 ## Detail Maps
@@ -315,7 +315,7 @@ Directory.CreateDirectory(directory);
 DataLoader.Export(directory);
 ```
 <sup><a href='/src/Tests/Snippets.cs#L19-L56' title='File snippet `usage` was extracted from'>snippet source</a> | <a href='#snippet-usage' title='Navigate to start of snippet `usage`'>anchor</a></sup>
-<!-- endSnippet -->
+<!-- endsnippet -->
 
 
 ## Bogus Usage
@@ -333,7 +333,7 @@ var faker = new Faker<Target>()
 var targetInstance = faker.Generate();
 ```
 <sup><a href='/src/Tests/Snippets.cs#L88-L98' title='File snippet `usagebogus` was extracted from'>snippet source</a> | <a href='#snippet-usagebogus' title='Navigate to start of snippet `usagebogus`'>anchor</a></sup>
-<!-- endSnippet -->
+<!-- endsnippet -->
 
 
 ## DetailMaps Usage
@@ -344,7 +344,7 @@ var targetInstance = faker.Generate();
 var pathToPng = DetailMaps.MapForElectorate("Bass");
 ```
 <sup><a href='/src/Tests/Snippets.cs#L62-L64' title='File snippet `usagedetailmaps` was extracted from'>snippet source</a> | <a href='#snippet-usagedetailmaps' title='Navigate to start of snippet `usagedetailmaps`'>anchor</a></sup>
-<!-- endSnippet -->
+<!-- endsnippet -->
 
 
 ## Copyright
@@ -424,7 +424,7 @@ return new List<Election>
 };
 ```
 <sup><a href='/src/AustralianElectorates/DataLoader.cs#L82-L102' title='File snippet `elections` was extracted from'>snippet source</a> | <a href='#snippet-elections' title='Navigate to start of snippet `elections`'>anchor</a></sup>
-<!-- endSnippet -->
+<!-- endsnippet -->
 
 
 ### ogr2ogr
