@@ -2642,25 +2642,5 @@
         "Postcode": 6008
       }
     }
-  },
-  {
-    "Id": 1413,
-    "Name": "Yellow Vest Australia",
-    "Code": "YVA",
-    "Abbreviation": "YVA",
-    "RegisterDate": "28 July 2015",
-    "AmendmentDate": "28 July 2015",
-    "Address": "PO Box 290\nSouth Melbourne VIC 3205",
-    "Officer": {
-      "Title": "Ms",
-      "FamilyName": "Robinson",
-      "GivenNames": "Deborah",
-      "Address": {
-        "Line1": "23/60 Flinders Street",
-        "Suburb": "Melbourne",
-        "State": "VIC",
-        "Postcode": 3000
-      }
-    }
   }
 ]
