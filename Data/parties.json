@@ -1614,13 +1614,14 @@
     "Address": "254 McLeod Lane\nMANSFIELD VIC 3722",
     "Officer": {
       "Title": "Mr",
-      "FamilyName": "Wark",
-      "GivenNames": "Chuck",
+      "FamilyName": "Juntunen",
+      "GivenNames": "Timo Tapani",
+      "Capacity": "Party Agent",
       "Address": {
-        "Line1": "254 McLeod Lane",
-        "Suburb": "Mansfield",
+        "Line1": "5 Songbird Way",
+        "Suburb": "Goughs Bay",
         "State": "VIC",
-        "Postcode": 3722
+        "Postcode": 3723
       }
     }
   },
