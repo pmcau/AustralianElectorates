@@ -978,40 +978,6 @@
     ]
   },
   {
-    "Id": 1478,
-    "Name": "FRASER ANNING'S CONSERVATIVE NATIONAL PARTY",
-    "Code": "FRASER ANNING'S CONSERVATIVE NATIONAL PARTY",
-    "Abbreviation": "FRASER ANNING'S CONSERVATIVE NATIONAL PARTY",
-    "RegisterDate": "2 April 2019",
-    "AmendmentDate": "2 April 2019",
-    "Address": "GPO Box 1877\nBRISBANE QLD 4001",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Anning",
-      "GivenNames": "William Fraser",
-      "Address": {
-        "Line1": "20 Rigby Crescent",
-        "Suburb": "Gladstone",
-        "State": "QLD",
-        "Postcode": 4680
-      }
-    },
-    "DeputyOfficers": [
-      {
-        "Title": "Mr",
-        "FamilyName": "Taylor",
-        "GivenNames": "Paul",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "P.O.Box 4229",
-          "Suburb": "Loganholme",
-          "State": "QLD",
-          "Postcode": 4129
-        }
-      }
-    ]
-  },
-  {
     "Id": 1384,
     "Name": "Health Australia Party",
     "Code": "HAP",
