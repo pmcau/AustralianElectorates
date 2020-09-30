@@ -147,38 +147,38 @@ Sample:
 ```txt
 [
   {
-    "Id": 1336,
-    "Name": "#Sustainable Australia",
-    "Code": "Sustainable Australia",
-    "Abbreviation": "Sustainable Australia",
-    "RegisterDate": "23 September 2010",
-    "AmendmentDate": "23 September 2010",
-    "Address": "PO Box 575\nCROWS NEST NSW 1585",
+    "Id": 1339,
+    "Name": "Animal Justice Party",
+    "Code": "AJP",
+    "Abbreviation": "AJP",
+    "RegisterDate": "3 May 2011",
+    "AmendmentDate": "3 May 2011",
+    "Address": "PO Box Q1688\nQUEEN VICTORIA BUILDING NSW 1230",
     "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Bourke",
-      "GivenNames": "William",
+      "Title": "Ms",
+      "FamilyName": "Bellenger",
+      "GivenNames": "Carol",
       "Address": {
-        "Line1": "Suite 15, 20 Burlington Street",
-        "Suburb": "Crows Nest",
+        "Line1": "8/80 John Street",
+        "Suburb": "Pyrmont",
         "State": "NSW",
-        "Postcode": 2065
+        "Postcode": 2009
       }
     },
     "DeputyOfficers": [
       {
         "Title": "Mr",
-        "FamilyName": "Haydon",
-        "GivenNames": "John",
+        "FamilyName": "Poon",
+        "GivenNames": "Bruce ",
         "Address": {
-          "Line1": "3/6 Hall Street",
-          "Suburb": "Lyneham",
-          "State": "ACT",
-          "Postcode": 2602
+          "Line1": "4/15 Exploration Lane",
+          "Suburb": "Melbourne",
+          "State": "VIC",
+          "Postcode": 3000
         }
-      }
-    ]
-  },
+      },
+      {
+        "Title": "Mr",
 ```
 <sup><a href='/src/Tests/Snippets.PartiesSampleJson.verified.txt#L1-L34' title='File snippet `Snippets.PartiesSampleJson.verified.txt` was extracted from'>snippet source</a> | <a href='#snippet-Snippets.PartiesSampleJson.verified.txt' title='Navigate to start of snippet `Snippets.PartiesSampleJson.verified.txt`'>anchor</a></sup>
 <!-- endSnippet -->

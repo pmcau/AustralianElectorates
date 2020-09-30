@@ -1,5 +1,5 @@
 {
-  FutureLoadedElectorateMaps: 151,
+  FutureLoadedElectorateMaps: 150,
   FutureLoadedStateMaps: 8,
   LoadedElectorateMaps2016: 150,
   LoadedStateMaps2016: 8,

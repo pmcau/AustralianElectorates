@@ -1,3 +1,4 @@
 {
-  Message: 'Unable to find election for Parliament \'0\'.'
+  Type: 'ElectionNotFoundException',
+  Message: "Unable to find election for Parliament '0'."
 }

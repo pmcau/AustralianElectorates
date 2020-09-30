@@ -1,6 +1,7 @@
 {
+  Type: 'ElectoratesNotFoundException',
   Names: [
     'not Found'
   ],
-  Message: 'Unable to find electorates: \'not Found\'.'
+  Message: "Unable to find electorates: 'not Found'."
 }
