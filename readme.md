@@ -97,7 +97,7 @@ Sample:
           "Lyneham",
           "O'Connor",
 ```
-<sup><a href='/src/Tests/Snippets.ElectoratesSampleJson.verified.txt#L1-L50' title='File snippet `Snippets.ElectoratesSampleJson.verified.txt` was extracted from'>snippet source</a> | <a href='#snippet-Snippets.ElectoratesSampleJson.verified.txt' title='Navigate to start of snippet `Snippets.ElectoratesSampleJson.verified.txt`'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.ElectoratesSampleJson.verified.txt#L1-L50' title='Snippet source file'>snippet source</a> | <a href='#snippet-Snippets.ElectoratesSampleJson.verified.txt' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -132,7 +132,7 @@ Sample:
     "Electorate": "CANBERRA"
   },
 ```
-<sup><a href='/src/Tests/Snippets.LocalitiesSampleJson.verified.txt#L1-L21' title='File snippet `Snippets.LocalitiesSampleJson.verified.txt` was extracted from'>snippet source</a> | <a href='#snippet-Snippets.LocalitiesSampleJson.verified.txt' title='Navigate to start of snippet `Snippets.LocalitiesSampleJson.verified.txt`'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.LocalitiesSampleJson.verified.txt#L1-L21' title='Snippet source file'>snippet source</a> | <a href='#snippet-Snippets.LocalitiesSampleJson.verified.txt' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -180,7 +180,7 @@ Sample:
       {
         "Title": "Mr",
 ```
-<sup><a href='/src/Tests/Snippets.PartiesSampleJson.verified.txt#L1-L34' title='File snippet `Snippets.PartiesSampleJson.verified.txt` was extracted from'>snippet source</a> | <a href='#snippet-Snippets.PartiesSampleJson.verified.txt' title='Navigate to start of snippet `Snippets.PartiesSampleJson.verified.txt`'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.PartiesSampleJson.verified.txt#L1-L34' title='Snippet source file'>snippet source</a> | <a href='#snippet-Snippets.PartiesSampleJson.verified.txt' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -307,7 +307,7 @@ var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
 Directory.CreateDirectory(directory);
 DataLoader.Export(directory);
 ```
-<sup><a href='/src/Tests/Snippets.cs#L19-L56' title='File snippet `usage` was extracted from'>snippet source</a> | <a href='#snippet-usage' title='Navigate to start of snippet `usage`'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L19-L56' title='Snippet source file'>snippet source</a> | <a href='#snippet-usage' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -325,7 +325,7 @@ var faker = new Faker<Target>()
         setter: (f, u) => f.AustralianElectorates().Name());
 var targetInstance = faker.Generate();
 ```
-<sup><a href='/src/Tests/Snippets.cs#L88-L98' title='File snippet `usagebogus` was extracted from'>snippet source</a> | <a href='#snippet-usagebogus' title='Navigate to start of snippet `usagebogus`'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L88-L98' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagebogus' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -336,7 +336,7 @@ var targetInstance = faker.Generate();
 ```cs
 var pathToPng = DetailMaps.MapForElectorate("Bass");
 ```
-<sup><a href='/src/Tests/Snippets.cs#L62-L64' title='File snippet `usagedetailmaps` was extracted from'>snippet source</a> | <a href='#snippet-usagedetailmaps' title='Navigate to start of snippet `usagedetailmaps`'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L62-L64' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagedetailmaps' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -416,7 +416,7 @@ return new List<Election>
     }
 };
 ```
-<sup><a href='/src/AustralianElectorates/DataLoader.cs#L82-L102' title='File snippet `elections` was extracted from'>snippet source</a> | <a href='#snippet-elections' title='Navigate to start of snippet `elections`'>anchor</a></sup>
+<sup><a href='/src/AustralianElectorates/DataLoader.cs#L82-L102' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
