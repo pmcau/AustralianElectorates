@@ -44,7 +44,7 @@ Location: [/Data/electorates.json](/Data/electorates.json)
 Sample:
 
 <!-- snippet: Snippets.ElectoratesSampleJson.verified.txt -->
-<a id='snippet-Snippets.ElectoratesSampleJson.verified.txt'></a>
+<a id='3f3daff0'></a>
 ```txt
 [
   {
@@ -97,7 +97,7 @@ Sample:
           "Lyneham",
           "O'Connor",
 ```
-<sup><a href='/src/Tests/Snippets.ElectoratesSampleJson.verified.txt#L1-L50' title='File snippet `Snippets.ElectoratesSampleJson.verified.txt` was extracted from'>snippet source</a> | <a href='#snippet-Snippets.ElectoratesSampleJson.verified.txt' title='Navigate to start of snippet `Snippets.ElectoratesSampleJson.verified.txt`'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.ElectoratesSampleJson.verified.txt#L1-L50' title='Snippet source file'>snippet source</a> | <a href='#3f3daff0' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -108,7 +108,7 @@ Location: [/Data/Localities.json](/Data/Localities.json)
 Sample:
 
 <!-- snippet: Snippets.LocalitiesSampleJson.verified.txt -->
-<a id='snippet-Snippets.LocalitiesSampleJson.verified.txt'></a>
+<a id='440d4fc1'></a>
 ```txt
 [
   {
@@ -132,7 +132,7 @@ Sample:
     "Electorate": "CANBERRA"
   },
 ```
-<sup><a href='/src/Tests/Snippets.LocalitiesSampleJson.verified.txt#L1-L21' title='File snippet `Snippets.LocalitiesSampleJson.verified.txt` was extracted from'>snippet source</a> | <a href='#snippet-Snippets.LocalitiesSampleJson.verified.txt' title='Navigate to start of snippet `Snippets.LocalitiesSampleJson.verified.txt`'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.LocalitiesSampleJson.verified.txt#L1-L21' title='Snippet source file'>snippet source</a> | <a href='#440d4fc1' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -143,7 +143,7 @@ Location: [/Data/parties.json](/Data/parties.json)
 Sample:
 
 <!-- snippet: Snippets.PartiesSampleJson.verified.txt -->
-<a id='snippet-Snippets.PartiesSampleJson.verified.txt'></a>
+<a id='edc834eb'></a>
 ```txt
 [
   {
@@ -180,7 +180,7 @@ Sample:
       {
         "Title": "Mr",
 ```
-<sup><a href='/src/Tests/Snippets.PartiesSampleJson.verified.txt#L1-L34' title='File snippet `Snippets.PartiesSampleJson.verified.txt` was extracted from'>snippet source</a> | <a href='#snippet-Snippets.PartiesSampleJson.verified.txt' title='Navigate to start of snippet `Snippets.PartiesSampleJson.verified.txt`'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.PartiesSampleJson.verified.txt#L1-L34' title='Snippet source file'>snippet source</a> | <a href='#edc834eb' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -268,7 +268,7 @@ To get the latests version of the data do a NuGet update. There are several opti
 ## Usage
 
 <!-- snippet: usage -->
-<a id='snippet-usage'></a>
+<a id='c629ba0e'></a>
 ```cs
 // get an electorate by name
 var fenner = DataLoader.Fenner;
@@ -307,14 +307,14 @@ var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
 Directory.CreateDirectory(directory);
 DataLoader.Export(directory);
 ```
-<sup><a href='/src/Tests/Snippets.cs#L19-L56' title='File snippet `usage` was extracted from'>snippet source</a> | <a href='#snippet-usage' title='Navigate to start of snippet `usage`'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L19-L56' title='Snippet source file'>snippet source</a> | <a href='#c629ba0e' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
 ## Bogus Usage
 
 <!-- snippet: usagebogus -->
-<a id='snippet-usagebogus'></a>
+<a id='2d09f1c5'></a>
 ```cs
 var faker = new Faker<Target>()
     .RuleFor(
@@ -325,18 +325,18 @@ var faker = new Faker<Target>()
         setter: (f, u) => f.AustralianElectorates().Name());
 var targetInstance = faker.Generate();
 ```
-<sup><a href='/src/Tests/Snippets.cs#L88-L98' title='File snippet `usagebogus` was extracted from'>snippet source</a> | <a href='#snippet-usagebogus' title='Navigate to start of snippet `usagebogus`'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L88-L98' title='Snippet source file'>snippet source</a> | <a href='#2d09f1c5' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
 ## DetailMaps Usage
 
 <!-- snippet: usageDetailMaps -->
-<a id='snippet-usagedetailmaps'></a>
+<a id='f38511fc'></a>
 ```cs
 var pathToPng = DetailMaps.MapForElectorate("Bass");
 ```
-<sup><a href='/src/Tests/Snippets.cs#L62-L64' title='File snippet `usagedetailmaps` was extracted from'>snippet source</a> | <a href='#snippet-usagedetailmaps' title='Navigate to start of snippet `usagedetailmaps`'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L62-L64' title='Snippet source file'>snippet source</a> | <a href='#f38511fc' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -396,7 +396,7 @@ Some tools are required.
 Elections are currently added manually as they are declared.
 
 <!-- snippet: elections -->
-<a id='snippet-elections'></a>
+<a id='83755ce5'></a>
 ```cs
 return new List<Election>
 {
@@ -416,7 +416,7 @@ return new List<Election>
     }
 };
 ```
-<sup><a href='/src/AustralianElectorates/DataLoader.cs#L82-L102' title='File snippet `elections` was extracted from'>snippet source</a> | <a href='#snippet-elections' title='Navigate to start of snippet `elections`'>anchor</a></sup>
+<sup><a href='/src/AustralianElectorates/DataLoader.cs#L82-L102' title='Snippet source file'>snippet source</a> | <a href='#83755ce5' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
