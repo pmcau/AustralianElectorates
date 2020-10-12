@@ -63,15 +63,17 @@ namespace AustralianElectorates
         public IStateMap GetState(State state)
         {
             var key = $@"{prefix}\{state.ToString().ToLowerInvariant()}";
-            return statesCache.GetOrAdd(state, s =>
-            {
-                var geoJson = GetMap(key);
-                return new StateMap
+            return statesCache.GetOrAdd(
+                state,
+                s =>
                 {
-                    State = state,
-                    GeoJson = geoJson
-                };
-            });
+                    var geoJson = GetMap(key);
+                    return new StateMap
+                    {
+                        State = s,
+                        GeoJson = geoJson
+                    };
+                });
         }
 
         public string GetAustralia()

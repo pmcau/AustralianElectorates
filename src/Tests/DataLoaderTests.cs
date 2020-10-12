@@ -77,7 +77,7 @@ public class DataLoaderTests
         return InnerExport(true);
     }
 
-    async Task InnerExport(bool overwrite)
+    static async Task InnerExport(bool overwrite)
     {
         var directory = Path.Combine(Environment.CurrentDirectory, $"export_overwrite-{overwrite}");
         Directory.CreateDirectory(directory);
