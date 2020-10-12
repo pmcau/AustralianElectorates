@@ -90,10 +90,10 @@ public class Snippets
         var faker = new Faker<Target>()
             .RuleFor(
                 property: u => u.RandomElectorate,
-                setter: (f, u) => f.AustralianElectorates().Electorate())
+                setter: (f, _) => f.AustralianElectorates().Electorate())
             .RuleFor(
                 property: u => u.RandomElectorateName,
-                setter: (f, u) => f.AustralianElectorates().Name());
+                setter: (f, _) => f.AustralianElectorates().Name());
         var targetInstance = faker.Generate();
         #endregion
     }
