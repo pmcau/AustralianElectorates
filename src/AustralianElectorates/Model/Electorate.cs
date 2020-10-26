@@ -19,7 +19,7 @@ namespace AustralianElectorates
         string NameDerivation { get; }
         uint? Enrollment { get; }
         ITwoCandidatePreferred? TwoCandidatePreferred { get; }
-        IPartyOrBranch CurrentParty { get; set; }
+        IPartyOrBranch? CurrentParty { get; set; }
         IReadOnlyList<ILocation> Locations { get; set; }
         IElectorateMap Get2016Map();
         IElectorateMap Get2019Map();
@@ -43,7 +43,7 @@ namespace AustralianElectorates
         public string NameDerivation { get; set; } = null!;
         public uint? Enrollment { get; set; }
         public ITwoCandidatePreferred? TwoCandidatePreferred { get;  set; }
-        public IPartyOrBranch CurrentParty { get; set; } = null!;
+        public IPartyOrBranch? CurrentParty { get; set; } = null!;
         public IReadOnlyList<ILocation> Locations{ get; set; } = null!;
 
         public static string GetShortName(string name)
