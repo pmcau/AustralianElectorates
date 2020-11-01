@@ -416,7 +416,7 @@ return new List<Election>
     }
 };
 ```
-<sup><a href='/src/AustralianElectorates/DataLoader.cs#L82-L102' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/AustralianElectorates/DataLoader.cs#L84-L104' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
