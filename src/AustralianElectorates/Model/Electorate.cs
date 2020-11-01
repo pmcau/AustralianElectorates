@@ -34,17 +34,17 @@ namespace AustralianElectorates
         public string ShortName { get; set; } = null!;
         public State State { get; set; }
         public double Area { get; set; }
-        public bool Exist2016 { get;  set; }
-        public bool Exist2019 { get;  set; }
+        public bool Exist2016 { get; set; }
+        public bool Exist2019 { get; set; }
         public bool ExistInFuture { get; set; }
         public DateTime? DateGazetted { get; set; }
         public string Description { get; set; } = null!;
         public string DemographicRating { get; set; } = null!;
         public string NameDerivation { get; set; } = null!;
         public uint? Enrollment { get; set; }
-        public ITwoCandidatePreferred? TwoCandidatePreferred { get;  set; }
+        public ITwoCandidatePreferred? TwoCandidatePreferred { get; set; }
         public IPartyOrBranch? CurrentParty { get; set; } = null!;
-        public IReadOnlyList<ILocation> Locations{ get; set; } = null!;
+        public IReadOnlyList<ILocation> Locations { get; set; } = null!;
 
         public static string GetShortName(string name)
         {
@@ -53,6 +53,7 @@ namespace AustralianElectorates
                 .Replace("'", "")
                 .ToLowerInvariant();
         }
+
         public override string ToString()
         {
             return Name;
@@ -66,6 +67,11 @@ namespace AustralianElectorates
         public IElectorateMap Get2019Map()
         {
             return DataLoader.Get2019Map(this);
+        }
+
+        public IElectorateMap GetMap()
+        {
+            return DataLoader.GetMap(this);
         }
 
         public IElectorateMap GetFutureMap()

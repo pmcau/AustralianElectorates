@@ -20,6 +20,7 @@ namespace AustralianElectorates
             {
                 Electorates = Serializer.Deserialize<List<Electorate>>(stream);
             }
+
             using (var stream = assembly.GetManifestResourceStream("parties.json"))
             {
                 Parties = Serializer.Deserialize<List<Party>>(stream);
@@ -79,6 +80,7 @@ namespace AustralianElectorates
         static List<Election> BuildElections()
         {
             //TODO: scrape from here instead, will need to change from the electorate.ExistNNNN pattern: https://www.aec.gov.au/Elections/Federal_Elections/
+
             #region elections
 
             return new List<Election>
@@ -160,7 +162,7 @@ namespace AustralianElectorates
 
         public static void ValidateElectorates(params string[] names)
         {
-            ValidateElectorates((IEnumerable<string>)names);
+            ValidateElectorates((IEnumerable<string>) names);
         }
 
         public static void ValidateElectorates(IEnumerable<string> names)
@@ -181,7 +183,7 @@ namespace AustralianElectorates
 
         public static IEnumerable<string> FindInvalidateElectorates(params string[] names)
         {
-           return FindInvalidateElectorates((IEnumerable<string>)names);
+            return FindInvalidateElectorates((IEnumerable<string>) names);
         }
 
         public static IEnumerable<string> FindInvalidateElectorates(IEnumerable<string> names)
@@ -248,6 +250,22 @@ namespace AustralianElectorates
             }
 
             return Maps2016.GetElectorate(electorate.ShortName);
+        }
+
+        public static IElectorateMap GetMap(this IElectorate electorate)
+        {
+            Guard.AgainstNull(electorate, nameof(electorate));
+            if (electorate.Exist2019)
+            {
+                return Maps2019.GetElectorate(electorate.ShortName);
+            }
+
+            if (electorate.Exist2016)
+            {
+                return Maps2016.GetElectorate(electorate.ShortName);
+            }
+
+            return MapsFuture.GetElectorate(electorate.ShortName);
         }
 
         public static IElectorateMap Get2019Map(this IElectorate electorate)
