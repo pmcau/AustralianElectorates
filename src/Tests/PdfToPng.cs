@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Drawing;
 using System.IO;
 
 public static class PdfToPng
@@ -9,12 +10,28 @@ public static class PdfToPng
 
     public static string Convert(string pdf)
     {
-        var tempPng = pdf.Replace(".pdf", "_temp.png");
+        var tempPng1 = pdf.Replace(".pdf", "_temp1.png");
+        var tempPng2 = pdf.Replace(".pdf", "_temp2.png");
         var png = Path.ChangeExtension(pdf, "png");
         File.Delete(png);
-        File.Delete(tempPng);
-        CallGhostScript(pdf, tempPng);
-        CallPngquant(tempPng, png);
+        File.Delete(tempPng1);
+        File.Delete(tempPng2);
+        CallGhostScript(pdf, tempPng1);
+
+        var cropSize = 60;
+        using (var bmpImage = (Bitmap) Image.FromFile(tempPng1))
+        {
+            var size = bmpImage.Size;
+            var cropRect = new Rectangle(cropSize, cropSize, size.Width - 2 * cropSize, size.Height - 2 * cropSize);
+
+            using (var bitmap = bmpImage.Clone(cropRect, bmpImage.PixelFormat))
+            {
+                bitmap.Save(tempPng2);
+            }
+        }
+
+        File.Delete(tempPng1);
+        CallPngquant(tempPng2, png);
         return png;
     }
 

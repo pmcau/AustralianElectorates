@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using System.IO;
+using Xunit;
 
 public class PdfToPngTests
 {
@@ -6,6 +7,7 @@ public class PdfToPngTests
     [Trait("Category", "Integration")]
     public void ConvertSingle()
     {
-        PdfToPng.Convert("sample_electorate_map.pdf");
+        var fullPath = Path.GetFullPath("sample_electorate_map.pdf");
+        PdfToPng.Convert(fullPath);
     }
 }
