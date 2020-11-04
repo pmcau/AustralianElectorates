@@ -1263,14 +1263,14 @@
         "DeputyOfficers": [
           {
             "Title": "Ms",
-            "FamilyName": "Flaherty",
-            "GivenNames": "Neena",
+            "FamilyName": "van den Berg",
+            "GivenNames": "Carmen",
             "Capacity": "Deputy Registered Officer",
             "Address": {
-              "Line1": "89 Allumba Street",
-              "Suburb": "Howrah",
+              "Line1": "GPO Box 469",
+              "Suburb": "Hobart",
               "State": "TAS",
-              "Postcode": 7018
+              "Postcode": 7001
             }
           }
         ]

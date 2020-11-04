@@ -49,7 +49,7 @@ public static class PdfToPng
         var gswin64 = new ProcessStartInfo
         {
             FileName = "gswin64c.exe",
-            Arguments = $"-dNoCancel -sDEVICE=png16m -dBATCH -r300 -dNOPAUSE -q -sOutputFile={tempPng} {pdf}",
+            Arguments = $"-dNoCancel -sDEVICE=png16m -dBATCH -r300 -dNOPAUSE -dDownScaleFactor=2 -q -sOutputFile={tempPng} {pdf}",
             UseShellExecute = false,
             RedirectStandardOutput = true,
             RedirectStandardError = true,
