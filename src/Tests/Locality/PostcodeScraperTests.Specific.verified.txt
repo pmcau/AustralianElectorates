@@ -1,22 +1,22 @@
 [
   {
-    Place: 'Braddon',
+    Place: Braddon,
     Postcode: 2612,
-    Electorate: 'CANBERRA'
+    Electorate: CANBERRA
   },
   {
-    Place: 'Campbell',
+    Place: Campbell,
     Postcode: 2612,
-    Electorate: 'CANBERRA'
+    Electorate: CANBERRA
   },
   {
-    Place: 'Reid',
+    Place: Reid,
     Postcode: 2612,
-    Electorate: 'CANBERRA'
+    Electorate: CANBERRA
   },
   {
-    Place: 'Turner',
+    Place: Turner,
     Postcode: 2612,
-    Electorate: 'CANBERRA'
+    Electorate: CANBERRA
   }
 ]

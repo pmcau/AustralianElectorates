@@ -1,5 +1,5 @@
 {
-  Type: 'ElectorateNotFoundException',
-  Name: 'not Found',
-  Message: "Unable to find electorate: 'not Found'."
+  Type: ElectorateNotFoundException,
+  Name: not Found,
+  Message: Unable to find electorate: 'not Found'.
 }
