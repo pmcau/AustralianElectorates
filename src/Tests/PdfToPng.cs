@@ -39,7 +39,7 @@ public static class PdfToPng
     static void DrawBitmapWithBorder(Bitmap bitmap)
     {
         using var graphics = Graphics.FromImage(bitmap);
-        using var pen = new Pen(Brushes.Black, 2);
+        using var pen = new Pen(Brushes.Black, 3);
         graphics.DrawLine(pen, new Point(0, 0), new Point(0, bitmap.Height));
         graphics.DrawLine(pen, new Point(0, 0), new Point(bitmap.Width, 0));
         graphics.DrawLine(pen, new Point(0, bitmap.Height), new Point(bitmap.Width, bitmap.Height));
