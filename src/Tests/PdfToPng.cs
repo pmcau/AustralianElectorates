@@ -26,6 +26,7 @@ public static class PdfToPng
 
             using (var bitmap = bmpImage.Clone(cropRect, bmpImage.PixelFormat))
             {
+                DrawBitmapWithBorder(bitmap);
                 bitmap.Save(tempPng2);
             }
         }
@@ -33,6 +34,16 @@ public static class PdfToPng
         File.Delete(tempPng1);
         CallPngquant(tempPng2, png);
         return png;
+    }
+
+    static void DrawBitmapWithBorder(Bitmap bitmap)
+    {
+        using var graphics = Graphics.FromImage(bitmap);
+        using var pen = new Pen(Brushes.Black, 2);
+        graphics.DrawLine(pen, new Point(0, 0), new Point(0, bitmap.Height));
+        graphics.DrawLine(pen, new Point(0, 0), new Point(bitmap.Width, 0));
+        graphics.DrawLine(pen, new Point(0, bitmap.Height), new Point(bitmap.Width, bitmap.Height));
+        graphics.DrawLine(pen, new Point(bitmap.Width, 0), new Point(bitmap.Width, bitmap.Height));
     }
 
     static void CallPngquant(string tempPng, string png)
