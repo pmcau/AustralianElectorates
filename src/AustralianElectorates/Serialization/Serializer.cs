@@ -18,7 +18,7 @@ static class Serializer
         options.Converters.Add(new InterfaceConverter<Party, IParty>());
         options.Converters.Add(new InterfaceConverter<Branch, IBranch>());
         options.Converters.Add(new InterfaceConverter<StateMap, IStateMap>());
-        return JsonSerializer.Deserialize<T>(ReadToEnd(stream), options);
+        return JsonSerializer.Deserialize<T>(ReadToEnd(stream), options)!;
     }
 
     static string ReadToEnd(Stream stream)
