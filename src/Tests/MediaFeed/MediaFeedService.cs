@@ -8,7 +8,7 @@ static class MediaFeedService
     {
         using var reader = File.OpenText(@"MediaFeed\aec-mediafeed-results-standard-verbose-24310.xml");
         var serializer = new XmlSerializer(typeof(MediaFeed));
-        Feed = (MediaFeed)serializer.Deserialize(reader);
+        Feed = (MediaFeed)serializer.Deserialize(reader)!;
         HouseOfReps = GetHouseOfReps(Feed);
     }
 

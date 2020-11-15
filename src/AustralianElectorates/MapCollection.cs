@@ -11,8 +11,8 @@ namespace AustralianElectorates
     public class MapCollection
     {
         string prefix;
-        ConcurrentDictionary<string, IElectorateMap> electoratesCache = new ConcurrentDictionary<string, IElectorateMap>(StringComparer.OrdinalIgnoreCase);
-        ConcurrentDictionary<State, IStateMap> statesCache = new ConcurrentDictionary<State, IStateMap>();
+        ConcurrentDictionary<string, IElectorateMap> electoratesCache = new(StringComparer.OrdinalIgnoreCase);
+        ConcurrentDictionary<State, IStateMap> statesCache = new();
         string? australia;
         static Assembly assembly;
 

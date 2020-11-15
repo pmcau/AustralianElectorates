@@ -59,7 +59,7 @@ public static class PdfToPng
         };
 
         EnvironmentHelpers.AppendToPath(pngquantPath);
-        using var process = Process.Start(pngquant);
+        using var process = Process.Start(pngquant)!;
         process.WaitForExit();
         //skip-if-larger can result in 98 "not saved"
         if (process.ExitCode == 98)
@@ -85,7 +85,7 @@ public static class PdfToPng
         };
 
         EnvironmentHelpers.AppendToPath(ghostScriptPath);
-        using var process = Process.Start(gswin64);
+        using var process = Process.Start(gswin64)!;
         process.WaitForExit();
     }
 }

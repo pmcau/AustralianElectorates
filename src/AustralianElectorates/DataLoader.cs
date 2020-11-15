@@ -106,9 +106,9 @@ namespace AustralianElectorates
 
         public static IReadOnlyList<IParty> Parties { get; }
         public static IReadOnlyList<IPartyOrBranch> PartiesAndBranches { get; }
-        public static MapCollection Maps2016 { get; } = new MapCollection("2016");
-        public static MapCollection Maps2019 { get; } = new MapCollection("2019");
-        public static MapCollection MapsFuture { get; } = new MapCollection("Future");
+        public static MapCollection Maps2016 { get; } = new("2016");
+        public static MapCollection Maps2019 { get; } = new("2019");
+        public static MapCollection MapsFuture { get; } = new("Future");
 
         public static IElection FindElection(int parliament)
         {

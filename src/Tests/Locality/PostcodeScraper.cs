@@ -9,8 +9,8 @@ using HtmlAgilityPack;
 
 static class PostcodeScraper
 {
-    static HttpClient client = new HttpClient();
-    static HtmlDocument doc = new HtmlDocument();
+    static HttpClient client = new();
+    static HtmlDocument doc = new();
 
     public static async Task<List<AecLocalityData>> Run()
     {
@@ -110,7 +110,9 @@ static class PostcodeScraper
             parameters["__EVENTTARGET"] = "ctl00$ContentPlaceHolderBody$gridViewLocalities";
             parameters["__EVENTARGUMENT"] = $"Page${page}";
 
+#pragma warning disable 8620
             var encodedContent = new FormUrlEncodedContent(parameters);
+#pragma warning restore 8620
 
             response = await client.PostAsync(url, encodedContent);
             response.EnsureSuccessStatusCode();

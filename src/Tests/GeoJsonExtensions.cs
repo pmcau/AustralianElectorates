@@ -9,7 +9,7 @@ static class GeoJsonExtensions
 {
     public static FeatureCollection ToCollection(this Feature feature)
     {
-        return new FeatureCollection(
+        return new(
             new List<Feature>
             {
                 feature

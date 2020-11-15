@@ -35,7 +35,7 @@ public class MapToGeoJson
         };
 
         EnvironmentHelpers.AppendToPath(ogr2ogrPath);
-        using var process = Process.Start(startInfo);
+        using var process = Process.Start(startInfo)!;
         process.WaitForExit();
         if (process.ExitCode != 0)
         {
