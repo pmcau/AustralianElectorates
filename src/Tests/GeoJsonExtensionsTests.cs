@@ -21,13 +21,13 @@ public class GeoJsonExtensionsTests
 
     public List<Feature> BuildFeatures(params Position[] positions)
     {
-        return new List<Feature>
+        return new()
         {
             new Feature(
                 new Polygon(
                     new List<LineString>
                     {
-                        new LineString(positions)
+                        new(positions)
                     }))
         };
     }

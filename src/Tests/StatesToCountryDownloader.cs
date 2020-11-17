@@ -10,7 +10,7 @@ using GeoJSON.Net.Feature;
 public static class StatesToCountryDownloader
 {
     //https://www.aec.gov.au/Electorates/gis/gis_datadownload.htm
-    private static Dictionary<State, string> stateUrls = new Dictionary<State, string>
+    private static Dictionary<State, string> stateUrls = new()
     {
         {State.ACT, "https://www.aec.gov.au/Electorates/gis/files/act-july-2018-esri.zip"},
         {State.TAS, "https://www.aec.gov.au/Electorates/gis/files/tas-november-2017-esri.zip"},

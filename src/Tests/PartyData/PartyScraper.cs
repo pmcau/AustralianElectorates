@@ -172,7 +172,7 @@ static class PartyScraper
 
     static Officer ToOfficer(AecModels.Officer deputyOfficer)
     {
-        return new Officer
+        return new()
         {
             Capacity = deputyOfficer.Capacity,
             FamilyName = deputyOfficer.Surname,

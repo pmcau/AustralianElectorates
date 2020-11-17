@@ -19,7 +19,7 @@ static class JsonSerializerService
         jsonSerializer.Converters.Add(new StringEnumConverter());
     }
 
-    static JsonSerializerSettings geoSettings = new JsonSerializerSettings
+    static JsonSerializerSettings geoSettings = new()
     {
         ContractResolver = new CustomContractResolver()
     };
