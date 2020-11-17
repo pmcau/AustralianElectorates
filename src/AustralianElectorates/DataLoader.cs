@@ -10,13 +10,13 @@ namespace AustralianElectorates
 {
     public static partial class DataLoader
     {
-        static object exportLocker = new object();
+        static object exportLocker = new();
         static Assembly assembly;
 
         static DataLoader()
         {
             assembly = typeof(DataLoader).Assembly;
-            using (var stream = assembly.GetManifestResourceStream("electorates.json"))
+            using (var stream = assembly.GetManifestResourceStream("electorates.json")!)
             {
                 Electorates = Serializer.Deserialize<List<Electorate>>(stream);
             }
@@ -85,14 +85,14 @@ namespace AustralianElectorates
 
             return new List<Election>
             {
-                new Election
+                new()
                 {
                     Parliament = 45,
                     Year = 2016,
                     Date = new DateTime(2016, 07, 02, 0, 0, 0),
                     Electorates = Electorates.Where(_ => _.Exist2016).ToList()
                 },
-                new Election
+                new()
                 {
                     Parliament = 46,
                     Year = 2019,
@@ -212,7 +212,7 @@ namespace AustralianElectorates
         {
             WriteElectoratesJson(directory);
 
-            using var stream = assembly.GetManifestResourceStream("Maps.zip");
+            using var stream = assembly.GetManifestResourceStream("Maps.zip")!;
             using var archive = new ZipArchive(stream);
             archive.ExtractToDirectory(directory);
         }
