@@ -10,7 +10,7 @@ namespace AustralianElectorates
         uint Votes { get; }
         decimal Swing { get; }
         ushort? PartyId { get; }
-        IPartyOrBranch Party { get; }
+        IPartyOrBranch? Party { get; }
         string FullName();
     }
 
@@ -24,7 +24,7 @@ namespace AustralianElectorates
         public uint Votes { get; set; }
         public decimal Swing { get; set; }
         public ushort? PartyId { get; set; }
-        public IPartyOrBranch Party { get; set; } = null!;
+        public IPartyOrBranch? Party { get; set; }
 
         public string FullName()
         {
