@@ -21,7 +21,7 @@ namespace AustralianElectorates
                 Electorates = Serializer.Deserialize<List<Electorate>>(stream);
             }
 
-            using (var stream = assembly.GetManifestResourceStream("parties.json"))
+            using (var stream = assembly.GetManifestResourceStream("parties.json")!)
             {
                 Parties = Serializer.Deserialize<List<Party>>(stream);
             }
