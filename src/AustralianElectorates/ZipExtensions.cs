@@ -17,7 +17,7 @@ static class ZipExtensions
                 }
             }
 
-            var fileDirectory = Path.GetDirectoryName(completeFileName);
+            var fileDirectory = Path.GetDirectoryName(completeFileName)!;
             Directory.CreateDirectory(fileDirectory);
 
             if (file.Name == "")
