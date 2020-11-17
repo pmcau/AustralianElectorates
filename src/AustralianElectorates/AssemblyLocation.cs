@@ -15,6 +15,6 @@ static class AssemblyLocation
     }
     public static string DirectoryFor(Type type)
     {
-        return Path.GetDirectoryName(PathFor(type));
+        return Path.GetDirectoryName(PathFor(type))!;
     }
 }

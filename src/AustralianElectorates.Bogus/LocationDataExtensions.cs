@@ -12,7 +12,7 @@ namespace AustralianElectorates.Bogus
             return ContextHelper.GetOrSet(faker, () => new ElectorateDataSet());
         }
 
-        static Random random = new Random();
+        static Random random = new();
 
         static T Random<T>(this IReadOnlyList<T> source)
         {

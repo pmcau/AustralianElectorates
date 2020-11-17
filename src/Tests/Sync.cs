@@ -87,11 +87,11 @@ public class Sync
 
     static List<int> percents;
 
-    static List<string> electoratesFuture = new List<string>();
-    static List<string> electorates2016 = new List<string>();
-    static List<string> electorates2019 = new List<string>();
+    static List<string> electoratesFuture = new();
+    static List<string> electorates2016 = new();
+    static List<string> electorates2019 = new();
 
-    static Dictionary<State, HashSet<string>> electorateNames = new Dictionary<State, HashSet<string>>
+    static Dictionary<State, HashSet<string>> electorateNames = new()
     {
         {State.ACT, new HashSet<string>()},
         {State.TAS, new HashSet<string>()},
@@ -103,7 +103,7 @@ public class Sync
         {State.WA, new HashSet<string>()},
     };
 
-    static List<State> states = new List<State>
+    static List<State> states = new()
     {
         State.ACT,
         State.TAS,

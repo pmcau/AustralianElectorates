@@ -88,7 +88,7 @@ namespace AustralianElectorates
 
         static string GetMap(string path)
         {
-            using var stream = assembly.GetManifestResourceStream("Maps.zip");
+            using var stream = assembly.GetManifestResourceStream("Maps.zip")!;
             using var archive = new ZipArchive(stream);
             var entry = archive.GetEntry($"{path}.geojson");
             if (entry == null)
@@ -101,7 +101,7 @@ namespace AustralianElectorates
 
         public void LoadAll()
         {
-            using var stream = assembly.GetManifestResourceStream("Maps.zip");
+            using var stream = assembly.GetManifestResourceStream("Maps.zip")!;
             using var archive = new ZipArchive(stream);
             foreach (var entry in archive.Entries.Where(x => x.FullName.StartsWith(prefix)))
             {
