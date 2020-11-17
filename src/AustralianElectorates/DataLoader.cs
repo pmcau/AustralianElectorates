@@ -30,7 +30,7 @@ namespace AustralianElectorates
             foreach (var party in Parties)
             {
                 partiesAndBranches.Add(party);
-                if (party.Branches != null)
+                //if (party.Branches != null)
                 {
                     foreach (Branch branch in party.Branches)
                     {

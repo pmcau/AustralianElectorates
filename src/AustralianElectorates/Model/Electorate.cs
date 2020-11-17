@@ -44,7 +44,7 @@ namespace AustralianElectorates
         public uint? Enrollment { get; set; }
         public ITwoCandidatePreferred? TwoCandidatePreferred { get; set; }
         public IPartyOrBranch? CurrentParty { get; set; } = null!;
-        public IReadOnlyList<ILocation> Locations { get; set; } = null!;
+        public IReadOnlyList<ILocation> Locations { get; set; } = Array.Empty<ILocation>();
 
         public static string GetShortName(string name)
         {

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 
 namespace AustralianElectorates
@@ -21,8 +22,8 @@ namespace AustralianElectorates
         public string AmendmentDate { get; set; } = null!;
         public string Address { get; set; } = null!;
         public IOfficer Officer { get; set; } = null!;
-        public IReadOnlyList<IOfficer> DeputyOfficers { get; set; } = null!;
-        public IReadOnlyList<IBranch> Branches { get; set; } = null!;
+        public IReadOnlyList<IOfficer> DeputyOfficers { get; set; } = Array.Empty<IOfficer>();
+        public IReadOnlyList<IBranch> Branches { get; set; } = Array.Empty<IBranch>();
         public override string ToString()
         {
             return $"{Name} ({Code})";

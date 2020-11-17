@@ -83,7 +83,7 @@ static class PartyScraper
     static Party DetailToParty(Detail detail, Dictionary<string, string> codes)
     {
         var abbreviation = detail.Abbreviation?.Replace(".", "");
-        var code = GetCode(detail.NameOfParty, abbreviation, null,codes);
+        var code = GetCode(detail.NameOfParty, abbreviation, null, codes);
         return new Party
         {
             Id = detail.Id,
@@ -95,7 +95,7 @@ static class PartyScraper
             Address = detail.PostalAddress,
             Officer = ToOfficer(detail.Officer),
             DeputyOfficers = ToOfficers(detail.DeputyOfficers),
-            Branches = ToBranches(detail.Branches, code,codes),
+            Branches = ToBranches(detail.Branches, code, codes)
         };
     }
 
@@ -121,19 +121,9 @@ static class PartyScraper
 
     static List<Branch> ToBranches(AecModels.Branch[] branches, string partyCode, Dictionary<string, string> codes)
     {
-        var list = new List<Branch>();
-        if (branches == null)
-        {
-            return list;
-        }
-
-        foreach (var branch in branches)
-        {
-            var item = ToBranch(branch, partyCode,codes);
-            list.Add(item);
-        }
-
-        return list;
+        return branches
+            .Select(branch => ToBranch(branch, partyCode, codes))
+            .ToList();
     }
 
     static Branch ToBranch(AecModels.Branch branch, string partyCode, Dictionary<string, string> codes)
@@ -155,19 +145,7 @@ static class PartyScraper
 
     static List<Officer> ToOfficers(AecModels.Officer[] detail)
     {
-        var officers = new List<Officer>();
-        if (detail == null)
-        {
-            return officers;
-        }
-
-        foreach (var deputyOfficer in detail)
-        {
-            var item = ToOfficer(deputyOfficer);
-            officers.Add(item);
-        }
-
-        return officers;
+        return detail.Select(ToOfficer).ToList();
     }
 
     static Officer ToOfficer(AecModels.Officer deputyOfficer)

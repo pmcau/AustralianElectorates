@@ -400,14 +400,14 @@ Elections are currently added manually as they are declared.
 ```cs
 return new List<Election>
 {
-    new Election
+    new()
     {
         Parliament = 45,
         Year = 2016,
         Date = new DateTime(2016, 07, 02, 0, 0, 0),
         Electorates = Electorates.Where(_ => _.Exist2016).ToList()
     },
-    new Election
+    new()
     {
         Parliament = 46,
         Year = 2019,

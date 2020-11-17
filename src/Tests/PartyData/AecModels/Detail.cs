@@ -1,4 +1,5 @@
 ﻿#nullable disable
+using System;
 using Newtonsoft.Json;
 
 namespace AecModels
@@ -45,9 +46,9 @@ namespace AecModels
         public string DeputyOfficerNames { get; set; }
 
         [JsonProperty("deputyOfficers")]
-        public Officer[] DeputyOfficers { get; set; }
+        public Officer[] DeputyOfficers { get; set; } = Array.Empty<Officer>();
 
         [JsonProperty("branches", NullValueHandling = NullValueHandling.Ignore)]
-        public Branch[] Branches { get; set; }
+        public Branch[] Branches { get; set; } = Array.Empty<Branch>();
     }
 }
