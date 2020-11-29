@@ -9,7 +9,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Bogus" Version="32.0.1" />
-    <PackageReference Include="CountryData" Version="3.39.0" />
+    <PackageReference Include="CountryData" Version="3.40.0" />
     <PackageReference Include="MarkdownSnippets.MsBuild" Version="21.7.0" />
     <PackageReference Include="GeoJSON.Net" Version="1.2.19" />
     <PackageReference Include="HtmlAgilityPack" Version="1.11.28" />
