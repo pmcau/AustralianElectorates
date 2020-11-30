@@ -143,8 +143,12 @@ static class PartyScraper
         };
     }
 
-    static List<Officer> ToOfficers(AecModels.Officer[] detail)
+    static List<Officer> ToOfficers(AecModels.Officer[]? detail)
     {
+        if (detail == null)
+        {
+            return new List<Officer>();
+        }
         return detail.Select(ToOfficer).ToList();
     }
 

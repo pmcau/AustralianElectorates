@@ -118,14 +118,14 @@
     "Abbreviation": "Affordable Housing Party",
     "RegisterDate": "24 January 2017",
     "AmendmentDate": "24 January 2017",
-    "Address": "9/26 Tintern Road\nASHFIELD NSW 2131",
+    "Address": "1/212 Liverpool Road\nASHFIELD NSW 2131",
     "Officer": {
       "Title": "Mr",
       "FamilyName": "Potts",
       "GivenNames": "Andrew",
-      "Capacity": "Secretary",
+      "Capacity": "Party Agent",
       "Address": {
-        "Line1": "9/26 Tintern Road",
+        "Line1": "1/212 Liverpool Road",
         "Suburb": "Ashfield",
         "State": "NSW",
         "Postcode": 2131
@@ -1207,9 +1207,10 @@
         },
         "DeputyOfficers": [
           {
-            "Title": "Ms ",
-            "FamilyName": "Moir",
-            "GivenNames": "Cerena",
+            "Title": "Mr",
+            "FamilyName": "Newton",
+            "GivenNames": "Richard",
+            "Capacity": "Deputy Registered Officer",
             "Address": {
               "Line1": "PO Box 49",
               "Suburb": "West Perth",
@@ -2178,7 +2179,7 @@
         "Abbreviation": "The Greens (WA)",
         "RegisterDate": "19 July 1989",
         "AmendmentDate": "19 July 1989",
-        "Address": "1st Floor, 1/440 William Street\nPERTH WA 6000",
+        "Address": "91/215 Stirling Street\nPERTH WA 6000",
         "Officer": {
           "Title": "Dr",
           "FamilyName": "Roberts",
