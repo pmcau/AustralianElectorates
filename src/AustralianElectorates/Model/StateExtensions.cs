@@ -38,7 +38,7 @@ namespace AustralianElectorates
             {
                 return "Western Australia";
             }
-            throw new Exception($"Unknown state: {state}");
+            throw new($"Unknown state: {state}");
         }
     }
 }

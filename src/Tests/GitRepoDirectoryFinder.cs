@@ -9,7 +9,7 @@ static class GitRepoDirectoryFinder
         var directory = Path.GetDirectoryName(sourceFilePath);
         if (directory== null || !TryFind(directory, out var rootDirectory))
         {
-            throw new Exception("Could not find git repository directory");
+            throw new("Could not find git repository directory");
         }
 
         return rootDirectory;

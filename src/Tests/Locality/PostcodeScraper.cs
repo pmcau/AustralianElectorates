@@ -75,12 +75,12 @@ static class PostcodeScraper
     {
         if (!int.TryParse(postcode.Key, out var result))
         {
-            throw new Exception("Invalid Postcode");
+            throw new("Invalid Postcode");
         }
 
         if (result < 0 || result > 9999)
         {
-            throw new Exception("Invalid Postcode");
+            throw new("Invalid Postcode");
         }
 
         if (result % 50 == 0)

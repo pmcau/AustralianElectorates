@@ -42,7 +42,7 @@ static class PartyScraper
         }
         catch (Exception exception)
         {
-            throw new Exception($"Failed to parse {htmlPath} {htmlPath}", exception);
+            throw new($"Failed to parse {htmlPath} {htmlPath}", exception);
         }
     }
 
@@ -169,7 +169,7 @@ static class PartyScraper
         var line1 = deputyOfficerAddress.Line1;
         if (string.IsNullOrWhiteSpace(line1))
         {
-            throw new Exception();
+            throw new();
         }
 
         // ReSharper disable once SuggestVarOrType_BuiltInTypes

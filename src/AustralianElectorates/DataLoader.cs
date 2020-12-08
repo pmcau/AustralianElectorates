@@ -241,7 +241,7 @@ namespace AustralianElectorates
             Guard.AgainstNull(electorate, nameof(electorate));
             if (!electorate.Exist2016)
             {
-                throw new Exception($"Electorate '{electorate.Name}' does not have a 2016 map");
+                throw new($"Electorate '{electorate.Name}' does not have a 2016 map");
             }
 
             return Maps2016.GetElectorate(electorate.ShortName);
@@ -268,7 +268,7 @@ namespace AustralianElectorates
             Guard.AgainstNull(electorate, nameof(electorate));
             if (!electorate.Exist2019)
             {
-                throw new Exception($"Electorate '{electorate.Name}' does not have a 2019 map");
+                throw new($"Electorate '{electorate.Name}' does not have a 2019 map");
             }
 
             return Maps2019.GetElectorate(electorate.ShortName);
@@ -279,7 +279,7 @@ namespace AustralianElectorates
             Guard.AgainstNull(electorate, nameof(electorate));
             if (!electorate.ExistInFuture)
             {
-                throw new Exception($"Electorate '{electorate.Name}' does not have a future map");
+                throw new($"Electorate '{electorate.Name}' does not have a future map");
             }
 
             return MapsFuture.GetElectorate(electorate.ShortName);

@@ -37,7 +37,7 @@ static class ElectoratesScraper
 
             if (!File.Exists(tempElectorateHtmlPath))
             {
-                throw new Exception($"Could not download {shortName}");
+                throw new($"Could not download {shortName}");
             }
 
             var document = new HtmlDocument();
@@ -124,7 +124,7 @@ static class ElectoratesScraper
         }
         catch (Exception exception)
         {
-            throw new Exception($"Failed to parse {shortName} {tempElectorateHtmlPath}", exception);
+            throw new($"Failed to parse {shortName} {tempElectorateHtmlPath}", exception);
         }
     }
 
@@ -161,7 +161,7 @@ static class ElectoratesScraper
             return node;
         }
 
-        throw new Exception("FindMapsNode");
+        throw new("FindMapsNode");
     }
 
     static string GetFullName(HtmlDocument document, string prefix)

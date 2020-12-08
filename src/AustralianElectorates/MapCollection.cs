@@ -50,7 +50,7 @@ namespace AustralianElectorates
                     var electorate = DataLoader.Electorates.SingleOrDefault(x => x.ShortName == electorateShortName);
                     if (electorate == null)
                     {
-                        throw new Exception($"Unable to find electorate named '{electorateName}'.");
+                        throw new($"Unable to find electorate named '{electorateName}'.");
                     }
                     return new ElectorateMap
                     {
@@ -93,7 +93,7 @@ namespace AustralianElectorates
             var entry = archive.GetEntry($"{path}.geojson");
             if (entry == null)
             {
-                throw new Exception($"Could not find data for '{path}'.");
+                throw new($"Could not find data for '{path}'.");
             }
 
             return entry.ReadString();

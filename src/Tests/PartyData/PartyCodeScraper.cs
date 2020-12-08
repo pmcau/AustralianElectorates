@@ -18,14 +18,14 @@ public static class PartyCodeScraper
 
             if (!File.Exists(htmlPath))
             {
-                throw new Exception($"Could not download {url}");
+                throw new($"Could not download {url}");
             }
 
-            var document = new HtmlDocument();
+            HtmlDocument document = new();
             document.Load(htmlPath);
             var selectSingleNode = document.DocumentNode.SelectSingleNode("//caption");
             var table = selectSingleNode.ParentNode;
-            var codes = new Dictionary<string,string>();
+            Dictionary<string,string> codes = new();
             foreach (var node in table.SelectNodes("//tr").Skip(1))
             {
                 var nodes = node.ChildNodes.Where(x=>x.NodeType != HtmlNodeType.Text).ToList();
@@ -38,7 +38,7 @@ public static class PartyCodeScraper
         }
         catch (Exception exception)
         {
-            throw new Exception($"Failed to parse {htmlPath} {htmlPath}", exception);
+            throw new($"Failed to parse {htmlPath} {htmlPath}", exception);
         }
     }
 }

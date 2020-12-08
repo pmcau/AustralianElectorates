@@ -191,7 +191,7 @@ public class Sync
         {
             if (!File.ReadAllText(file).Contains("bbox"))
             {
-                throw new Exception(file);
+                throw new(file);
             }
         }
     }

@@ -26,7 +26,7 @@ public class MapToGeoJson
 
     static void Run(string fileName, string arguments)
     {
-        var startInfo = new ProcessStartInfo(fileName, arguments)
+        ProcessStartInfo startInfo = new(fileName, arguments)
         {
             CreateNoWindow = true,
             RedirectStandardOutput = true,
@@ -42,7 +42,7 @@ public class MapToGeoJson
             var readToEnd = process.StandardError.ReadToEnd();
             if (readToEnd.Contains("Error"))
             {
-                throw new Exception($"Failed to run: {arguments}. Output: {readToEnd}");
+                throw new($"Failed to run: {arguments}. Output: {readToEnd}");
             }
         }
     }
