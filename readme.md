@@ -404,14 +404,14 @@ return new List<Election>
     {
         Parliament = 45,
         Year = 2016,
-        Date = new DateTime(2016, 07, 02, 0, 0, 0),
+        Date = new(2016, 07, 02, 0, 0, 0),
         Electorates = Electorates.Where(_ => _.Exist2016).ToList()
     },
     new()
     {
         Parliament = 46,
         Year = 2019,
-        Date = new DateTime(2019, 05, 18, 0, 0, 0),
+        Date = new(2019, 05, 18, 0, 0, 0),
         Electorates = Electorates.Where(_ => _.Exist2019).ToList()
     }
 };
