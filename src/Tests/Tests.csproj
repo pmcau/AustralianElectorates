@@ -10,7 +10,7 @@
   <ItemGroup>
     <PackageReference Include="Bogus" Version="32.0.2" />
     <PackageReference Include="CountryData" Version="3.41.0" />
-    <PackageReference Include="MarkdownSnippets.MsBuild" Version="21.7.1" />
+    <PackageReference Include="MarkdownSnippets.MsBuild" Version="21.7.2" />
     <PackageReference Include="GeoJSON.Net" Version="1.2.19" />
     <PackageReference Include="HtmlAgilityPack" Version="1.11.29" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
