@@ -794,7 +794,7 @@
     "Abbreviation": "Christian Democratic Party",
     "RegisterDate": "17 September 2007",
     "AmendmentDate": "17 September 2007",
-    "Address": "PO Box 8456\nPARRAMATTA WESTFIELD NSW 2150",
+    "Address": "PO Box 8456\nPARRAMATTA NSW 2150",
     "Officer": {
       "Title": "Reverend",
       "FamilyName": "Nile",
@@ -1019,10 +1019,10 @@
     "DeputyOfficers": [
       {
         "Title": "Mr",
-        "FamilyName": "Kavasilas",
-        "GivenNames": "Andrew",
+        "FamilyName": "Kingsbury",
+        "GivenNames": "James ",
         "Address": {
-          "Line1": "51 Cullen Street",
+          "Line1": "PO Box 20503",
           "Suburb": "Nimbin",
           "State": "NSW",
           "Postcode": 2480
@@ -1452,50 +1452,6 @@
     ]
   },
   {
-    "Id": 1179,
-    "Name": "Online Direct Democracy - (Empowering the People!)",
-    "Code": "Online Direct Democracy - (Empowering the People!)",
-    "Abbreviation": "Online Direct Democracy - (Empowering the People!)",
-    "RegisterDate": "31 August 2007",
-    "AmendmentDate": "31 August 2007",
-    "Address": "70 Carrington Pde\nCURL CURL NSW 2096",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Der Sarkissian",
-      "GivenNames": "Berge",
-      "Address": {
-        "Line1": "70 Carrington Parade",
-        "Suburb": "Curl Curl",
-        "State": "NSW",
-        "Postcode": 2096
-      }
-    },
-    "DeputyOfficers": [
-      {
-        "Title": "Mr",
-        "FamilyName": "Crespel",
-        "GivenNames": "Francois",
-        "Address": {
-          "Line1": "16 Gardere Avenue",
-          "Suburb": "Curl Curl",
-          "State": "NSW",
-          "Postcode": 2096
-        }
-      },
-      {
-        "Title": "Ms",
-        "FamilyName": "Der Sarkissian",
-        "GivenNames": "Nea",
-        "Address": {
-          "Line1": "70 Carrington Parade",
-          "Suburb": "Curl Curl",
-          "State": "NSW",
-          "Postcode": 2096
-        }
-      }
-    ]
-  },
-  {
     "Id": 1369,
     "Name": "Pirate Party Australia",
     "Code": "Pirate Party",
@@ -1870,11 +1826,12 @@
     "AmendmentDate": "17 September 2007",
     "Address": "PO BOX 574\nSTRAWBERRY HILLS NSW 2012",
     "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Cogan",
-      "GivenNames": "James",
+      "Title": "Ms",
+      "FamilyName": "Crisp",
+      "GivenNames": "Cheryl",
       "Address": {
-        "Line1": "Suite 906, 185 Elizabeth Street",
+        "Line1": "Suite 906",
+        "Line2": "185 Elizabeth Street",
         "Suburb": "Sydney",
         "State": "NSW",
         "Postcode": 2000
@@ -1926,26 +1883,6 @@
         }
       }
     ]
-  },
-  {
-    "Id": 1417,
-    "Name": "The Australian Mental Health Party",
-    "Code": "AMHP",
-    "Abbreviation": "AMHP",
-    "RegisterDate": "11 March 2016",
-    "AmendmentDate": "11 March 2016",
-    "Address": "PO Box 1505\nAPPLECROSS WA 6953",
-    "Officer": {
-      "Title": "Ms",
-      "FamilyName": "Mullings",
-      "GivenNames": "Terri Jean",
-      "Address": {
-        "Line1": "507 Marmion Street",
-        "Suburb": "Booragoon",
-        "State": "WA",
-        "Postcode": 6154
-      }
-    }
   },
   {
     "Id": 1475,
