@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace AustralianElectorates
+﻿namespace AustralianElectorates
 {
     public static class StateExtensions
     {

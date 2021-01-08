@@ -8,7 +8,7 @@ namespace AustralianElectorates
         string FamilyName { get; }
         string GivenNames { get; }
         string Capacity { get; }
-        IAddress Address { get; }
+        IAddress? Address { get; }
         string FullName();
     }
 
@@ -20,7 +20,7 @@ namespace AustralianElectorates
         public string FamilyName { get; set; } = null!;
         public string GivenNames { get; set; } = null!;
         public string Capacity { get; set; } = null!;
-        public IAddress Address { get; set; } = null!;
+        public IAddress? Address { get; set; } = null!;
 
         public string FullName()
         {

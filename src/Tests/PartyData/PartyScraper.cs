@@ -160,27 +160,36 @@ static class PartyScraper
             FamilyName = deputyOfficer.Surname,
             GivenNames = deputyOfficer.FirstName,
             Title = deputyOfficer.Title,
-            Address = ToAddress(deputyOfficer.Address),
+            Address = ToAddress(deputyOfficer.Address)
         };
     }
 
-    static Address ToAddress(AecModels.Address deputyOfficerAddress)
+    static Address? ToAddress(AecModels.Address address)
     {
-        var line1 = deputyOfficerAddress.Line1;
+        if (address.Line1 == null &&
+            address.Line2 == null  &&
+            address.Line3 == null  &&
+            address.State == null  &&
+            address.Postcode == null  &&
+            address.Suburb == null)
+        {
+            return null;
+        }
+        var line1 = address.Line1;
         if (string.IsNullOrWhiteSpace(line1))
         {
             throw new();
         }
 
         // ReSharper disable once SuggestVarOrType_BuiltInTypes
-        string? line2 = deputyOfficerAddress.Line2;
+        string? line2 = address.Line2;
         if (string.IsNullOrWhiteSpace(line2))
         {
             line2 = null;
         }
 
         // ReSharper disable once SuggestVarOrType_BuiltInTypes
-        string? line3 = deputyOfficerAddress.Line3;
+        string? line3 = address.Line3;
         if (string.IsNullOrWhiteSpace(line3))
         {
             line3 = null;
@@ -188,12 +197,12 @@ static class PartyScraper
 
         return new Address
         {
-            State = (State) Enum.Parse(typeof(State), deputyOfficerAddress.State),
+            State = (State) Enum.Parse(typeof(State), address.State!),
             Line1 = line1,
             Line2 = line2,
             Line3 = line3,
-            Postcode =  Convert.ToInt32(deputyOfficerAddress.Postcode),
-            Suburb = FixSuburbCase(deputyOfficerAddress,deputyOfficerAddress.Postcode),
+            Postcode =  Convert.ToInt32(address.Postcode),
+            Suburb = FixSuburbCase(address,address.Postcode!),
         };
     }
 
