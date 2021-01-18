@@ -2,11 +2,6 @@
   <PropertyGroup>
     <TargetFramework>net5</TargetFramework>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DebugType>full</DebugType>
-    <DebugSymbols>true</DebugSymbols>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Bogus" Version="32.0.2" />
     <PackageReference Include="CountryData" Version="3.44.0" />
