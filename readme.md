@@ -316,7 +316,7 @@ DataLoader.Export(directory);
 <!-- snippet: usagebogus -->
 <a id='snippet-usagebogus'></a>
 ```cs
-Faker<Target> faker = new Faker<Target>()
+var faker = new Faker<Target>()
     .RuleFor(
         property: u => u.RandomElectorate,
         setter: (f, _) => f.AustralianElectorates().Electorate())
