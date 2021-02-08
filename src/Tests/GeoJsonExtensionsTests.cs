@@ -9,11 +9,11 @@ public class GeoJsonExtensionsTests
     public void BoundingBox()
     {
         var simple = BuildFeatures(
-            new Position(0, 0),
-            new Position(0, 1),
-            new Position(1, 1),
-            new Position(1, 0),
-            new Position(0, 0)
+            new(0, 0),
+            new(0, 1),
+            new(1, 1),
+            new(1, 0),
+            new(0, 0)
             );
         var simpleBoundingBox = simple.CalculateBoundingBox();
         Assert.Equal(new double[] {0, 0,1,1}, simpleBoundingBox);
@@ -23,7 +23,7 @@ public class GeoJsonExtensionsTests
     {
         return new()
         {
-            new Feature(
+            new(
                 new Polygon(
                     new List<LineString>
                     {

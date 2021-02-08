@@ -93,14 +93,14 @@ public class Sync
 
     static Dictionary<State, HashSet<string>> electorateNames = new()
     {
-        {State.ACT, new HashSet<string>()},
-        {State.TAS, new HashSet<string>()},
-        {State.SA, new HashSet<string>()},
-        {State.VIC, new HashSet<string>()},
-        {State.QLD, new HashSet<string>()},
-        {State.NT, new HashSet<string>()},
-        {State.NSW, new HashSet<string>()},
-        {State.WA, new HashSet<string>()},
+        {State.ACT, new()},
+        {State.TAS, new()},
+        {State.SA, new()},
+        {State.VIC, new()},
+        {State.QLD, new()},
+        {State.NT, new()},
+        {State.NSW, new()},
+        {State.WA, new()},
     };
 
     static List<State> states = new()
@@ -117,7 +117,7 @@ public class Sync
 
     static Sync()
     {
-        percents = new List<int> {20, 10, 5, 1};
+        percents = new() {20, 10, 5, 1};
     }
 
     static void ProcessYear(string yearPath, List<string> electorates)
@@ -215,7 +215,7 @@ public class Sync
     static async Task<List<ElectorateEx>> WriteElectoratesMetaData()
     {
         var localityData = JsonSerializerService.Deserialize<List<AecLocalityData>>(DataLocations.LocalitiesPath);
-        var electorates = new List<ElectorateEx>();
+        List<ElectorateEx> electorates = new();
         foreach (var electoratePair in electorateNames)
         {
             foreach (var electorateName in electoratePair.Value)

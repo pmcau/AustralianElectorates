@@ -5,5 +5,4 @@
   StackTrace: 
 at AustralianElectorates.DataLoader.FindElectorate(String name)
 at DataLoaderTests.<>c.<TryFindElectorate_not_found>b__2_0()
-at VerifyTests.InnerVerifier.Throws(Func`1 target)
 }

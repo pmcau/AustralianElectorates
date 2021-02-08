@@ -26,7 +26,7 @@ static class Extensions
 
     public static string ToTitleCase(this string value)
     {
-        var builder = new StringBuilder(value.Length);
+        StringBuilder builder = new(value.Length);
 
         var lowerNext = false;
         foreach (var ch in value)
@@ -58,7 +58,7 @@ static class Extensions
 
     public static string ReplaceCaseless(this string str, string oldValue, string newValue)
     {
-        var stringBuilder = new StringBuilder();
+        StringBuilder stringBuilder = new();
 
         var previousIndex = 0;
         var index = str.IndexOf(oldValue, StringComparison.OrdinalIgnoreCase);

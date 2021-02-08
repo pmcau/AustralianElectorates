@@ -26,7 +26,7 @@ namespace AustralianElectorates
                 Parties = Serializer.Deserialize<List<Party>>(stream);
             }
 
-            var partiesAndBranches = new List<IPartyOrBranch>();
+            List<IPartyOrBranch> partiesAndBranches = new();
             foreach (var party in Parties)
             {
                 partiesAndBranches.Add(party);
@@ -78,7 +78,7 @@ namespace AustralianElectorates
 
             #region elections
 
-            return new List<Election>
+            return new()
             {
                 new()
                 {

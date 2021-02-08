@@ -9,11 +9,7 @@ static class GeoJsonExtensions
 {
     public static FeatureCollection ToCollection(this Feature feature)
     {
-        return new(
-            new List<Feature>
-            {
-                feature
-            });
+        return new(new() {feature});
     }
 
     public static FeatureCollection FeaturesCollectionForState(this FeatureCollection featureCollection, State state)
@@ -21,7 +17,7 @@ static class GeoJsonExtensions
         var features = featureCollection.Features
             .Where(x => string.Equals((string) x.Properties["state"], state.ToString(), StringComparison.OrdinalIgnoreCase))
             .ToList();
-        var collection = new FeatureCollection(features);
+        FeatureCollection collection = new(features);
         collection.FixBoundingBox();
         return collection;
     }

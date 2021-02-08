@@ -87,7 +87,7 @@ public class Snippets
     {
         #region usagebogus
 
-        var faker = new Faker<Target>()
+        Faker<Target> faker = new Faker<Target>()
             .RuleFor(
                 property: u => u.RandomElectorate,
                 setter: (f, _) => f.AustralianElectorates().Electorate())

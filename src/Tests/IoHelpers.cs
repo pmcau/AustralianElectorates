@@ -11,7 +11,7 @@ static class IoHelpers
             return;
         }
 
-        var root = new DirectoryInfo(directory);
+        DirectoryInfo root = new(directory);
 
         foreach (var file in root.GetFiles("*.*", SearchOption.AllDirectories))
         {
@@ -27,7 +27,7 @@ static class IoHelpers
             return;
         }
 
-        var root = new DirectoryInfo(directory);
+        DirectoryInfo root = new(directory);
 
         foreach (var file in root.GetFiles())
         {

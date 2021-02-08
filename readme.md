@@ -316,7 +316,7 @@ DataLoader.Export(directory);
 <!-- snippet: usagebogus -->
 <a id='snippet-usagebogus'></a>
 ```cs
-var faker = new Faker<Target>()
+Faker<Target> faker = new Faker<Target>()
     .RuleFor(
         property: u => u.RandomElectorate,
         setter: (f, _) => f.AustralianElectorates().Electorate())
@@ -398,7 +398,7 @@ Elections are currently added manually as they are declared.
 <!-- snippet: elections -->
 <a id='snippet-elections'></a>
 ```cs
-return new List<Election>
+return new()
 {
     new()
     {

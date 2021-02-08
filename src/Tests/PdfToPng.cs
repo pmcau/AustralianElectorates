@@ -22,7 +22,7 @@ public static class PdfToPng
         using (var bmpImage = (Bitmap) Image.FromFile(tempPng1))
         {
             var size = bmpImage.Size;
-            var cropRect = new Rectangle(cropSize, cropSize, size.Width - 2 * cropSize, size.Height - 2 * cropSize);
+            Rectangle cropRect = new(cropSize, cropSize, size.Width - 2 * cropSize, size.Height - 2 * cropSize);
 
             using (var bitmap = bmpImage.Clone(cropRect, bmpImage.PixelFormat))
             {
@@ -39,16 +39,16 @@ public static class PdfToPng
     static void DrawBitmapWithBorder(Bitmap bitmap)
     {
         using var graphics = Graphics.FromImage(bitmap);
-        using var pen = new Pen(Brushes.Black, 3);
-        graphics.DrawLine(pen, new Point(0, 0), new Point(0, bitmap.Height));
-        graphics.DrawLine(pen, new Point(0, 0), new Point(bitmap.Width, 0));
-        graphics.DrawLine(pen, new Point(0, bitmap.Height), new Point(bitmap.Width, bitmap.Height));
-        graphics.DrawLine(pen, new Point(bitmap.Width, 0), new Point(bitmap.Width, bitmap.Height));
+        using Pen pen = new(Brushes.Black, 3);
+        graphics.DrawLine(pen, new(0, 0), new(0, bitmap.Height));
+        graphics.DrawLine(pen, new(0, 0), new(bitmap.Width, 0));
+        graphics.DrawLine(pen, new(0, bitmap.Height), new(bitmap.Width, bitmap.Height));
+        graphics.DrawLine(pen, new(bitmap.Width, 0), new(bitmap.Width, bitmap.Height));
     }
 
     static void CallPngquant(string tempPng, string png)
     {
-        var pngquant = new ProcessStartInfo
+        ProcessStartInfo pngquant = new()
         {
             FileName = "pngquant.exe",
             Arguments = $"--force --verbose --ordered --speed=1 --skip-if-larger --quality=50-70 {tempPng} --output {png}",
@@ -74,7 +74,7 @@ public static class PdfToPng
 
     static void CallGhostScript(string pdf, string tempPng)
     {
-        var gswin64 = new ProcessStartInfo
+        ProcessStartInfo gswin64 = new()
         {
             FileName = "gswin64c.exe",
             Arguments = $"-dNoCancel -sDEVICE=png16m -dBATCH -r300 -dNOPAUSE -dDownScaleFactor=2 -q -sOutputFile={tempPng} {pdf}",

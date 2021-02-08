@@ -13,7 +13,7 @@ static class PostcodeScraper
 
     public static async Task<List<AecLocalityData>> Run()
     {
-        var items = new List<AecLocalityData>();
+        List<AecLocalityData> items = new();
         foreach (var postcode in AustraliaData.PostCodes)
         {
             items.AddRange(await GetAECDataForPostcode(postcode));
@@ -24,7 +24,6 @@ static class PostcodeScraper
 
     static IEnumerable<AecLocalityData> GetLocalityData(HtmlDocument doc, int postcode)
     {
-
         var table = doc.DocumentNode.SelectSingleNode("//table[@id='ContentPlaceHolderBody_gridViewLocalities']");
 
         foreach (var tr in table.SelectNodes("tr").Where(p => !p.HasAttributes))
@@ -46,7 +45,7 @@ static class PostcodeScraper
 
     static Dictionary<string, string> ParseFormForParameters(HtmlDocument doc)
     {
-        var parameters = new Dictionary<string, string>();
+        Dictionary<string, string> parameters = new();
         var form = doc.DocumentNode.SelectSingleNode("//form[@id='formMaster']");
 
         var inputs = form.SelectNodes("input[@type='hidden']");
@@ -95,7 +94,7 @@ static class PostcodeScraper
         var content = await response.Content.ReadAsStringAsync();
         doc.LoadHtml(content);
 
-        var data = new List<AecLocalityData>();
+        List<AecLocalityData> data = new();
 
         data.AddRange(GetLocalityData(doc, result));
         var lastPage = GetPageCount(doc);
@@ -110,7 +109,7 @@ static class PostcodeScraper
             parameters["__EVENTARGUMENT"] = $"Page${page}";
 
 #pragma warning disable 8620
-            var encodedContent = new FormUrlEncodedContent(parameters);
+            FormUrlEncodedContent encodedContent = new(parameters);
 #pragma warning restore 8620
 
             response = await client.PostAsync(url, encodedContent);

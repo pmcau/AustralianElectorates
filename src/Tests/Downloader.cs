@@ -21,7 +21,7 @@ static class Downloader
 
     public static async Task DownloadFile(string targetPath, string requestUri)
     {
-        var requestMessage = new HttpRequestMessage(HttpMethod.Head, requestUri);
+        HttpRequestMessage requestMessage = new(HttpMethod.Head, requestUri);
 
         DateTime remoteLastModified;
         using (var headResponse = await httpClient.SendAsync(requestMessage))
@@ -48,7 +48,7 @@ static class Downloader
         using (var response = await httpClient.GetAsync(requestUri))
         {
             await using var httpStream = await response.Content.ReadAsStreamAsync();
-            await using var fileStream = new FileStream(targetPath, FileMode.Create, FileAccess.Write, FileShare.None);
+            await using FileStream fileStream = new(targetPath, FileMode.Create, FileAccess.Write, FileShare.None);
             await httpStream.CopyToAsync(fileStream);
             await fileStream.FlushAsync();
         }

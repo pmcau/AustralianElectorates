@@ -30,7 +30,7 @@ static class PartyScraper
                 .Split('"')[1];
             await Downloader.DownloadFile(partyRegisterPath, $"https://www.aec.gov.au{jsonUrl}");
             var aecParties = JsonSerializerService.Deserialize<PartyData>(partyRegisterPath);
-            var parties = new List<Party>();
+            List<Party> parties = new();
             foreach (var detail in aecParties.Details)
             {
                 var party = DetailToParty(detail, codes);
@@ -147,7 +147,7 @@ static class PartyScraper
     {
         if (detail == null)
         {
-            return new List<Officer>();
+            return new();
         }
         return detail.Select(ToOfficer).ToList();
     }

@@ -7,7 +7,7 @@ static class MediaFeedService
     static MediaFeedService()
     {
         using var reader = File.OpenText(@"MediaFeed\aec-mediafeed-results-standard-verbose-24310.xml");
-        var serializer = new XmlSerializer(typeof(MediaFeed));
+        XmlSerializer serializer = new(typeof(MediaFeed));
         Feed = (MediaFeed)serializer.Deserialize(reader)!;
         HouseOfReps = GetHouseOfReps(Feed);
     }
