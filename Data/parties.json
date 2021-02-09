@@ -1701,17 +1701,17 @@
     "Abbreviation": "Shooters, Fishers and Farmers",
     "RegisterDate": "21 August 2007",
     "AmendmentDate": "21 August 2007",
-    "Address": "PO Box 376\nBAULKHAM HILLS NSW 1755",
+    "Address": "PO Box 515\nASHFIELD NSW 1800",
     "Officer": {
       "Title": "Mr",
       "FamilyName": "Borsak",
       "GivenNames": "Robert",
       "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "PO Box 376",
-        "Suburb": "Baulkham Hills",
+        "Line1": "26/9 Salisbury Road",
+        "Suburb": "Castle Hill",
         "State": "NSW",
-        "Postcode": 1755
+        "Postcode": 2154
       }
     },
     "DeputyOfficers": [
