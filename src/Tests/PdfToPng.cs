@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Drawing;
 using System.IO;
+using System.Threading.Tasks;
 
 public static class PdfToPng
 {
@@ -8,7 +9,7 @@ public static class PdfToPng
     const string pngquantPath = @"C:\pngquant";
     const string ghostScriptPath = @"C:\Program Files\gs\gs9.27\bin";
 
-    public static string Convert(string pdf)
+    public static async Task<string> Convert(string pdf)
     {
         var tempPng1 = pdf.Replace(".pdf", "_temp1.png");
         var tempPng2 = pdf.Replace(".pdf", "_temp2.png");
@@ -16,7 +17,7 @@ public static class PdfToPng
         File.Delete(png);
         File.Delete(tempPng1);
         File.Delete(tempPng2);
-        CallGhostScript(pdf, tempPng1);
+        await CallGhostScript(pdf, tempPng1);
 
         var cropSize = 60;
         using (var bmpImage = (Bitmap) Image.FromFile(tempPng1))
@@ -32,7 +33,7 @@ public static class PdfToPng
         }
 
         File.Delete(tempPng1);
-        CallPngquant(tempPng2, png);
+        await CallPngquant(tempPng2, png);
         return png;
     }
 
@@ -46,7 +47,7 @@ public static class PdfToPng
         graphics.DrawLine(pen, new(bitmap.Width, 0), new(bitmap.Width, bitmap.Height));
     }
 
-    static void CallPngquant(string tempPng, string png)
+    static async Task CallPngquant(string tempPng, string png)
     {
         ProcessStartInfo pngquant = new()
         {
@@ -60,7 +61,7 @@ public static class PdfToPng
 
         EnvironmentHelpers.AppendToPath(pngquantPath);
         using var process = Process.Start(pngquant)!;
-        process.WaitForExit();
+        await process.WaitForExitAsync();
         //skip-if-larger can result in 98 "not saved"
         if (process.ExitCode == 98)
         {
@@ -72,7 +73,7 @@ public static class PdfToPng
         }
     }
 
-    static void CallGhostScript(string pdf, string tempPng)
+    static async Task CallGhostScript(string pdf, string tempPng)
     {
         ProcessStartInfo gswin64 = new()
         {
@@ -86,6 +87,6 @@ public static class PdfToPng
 
         EnvironmentHelpers.AppendToPath(ghostScriptPath);
         using var process = Process.Start(gswin64)!;
-        process.WaitForExit();
+        await process.WaitForExitAsync();
     }
 }

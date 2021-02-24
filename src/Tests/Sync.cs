@@ -26,9 +26,9 @@ public class Sync
         File.Copy(DataLocations.Australia2019JsonPath, DataLocations.FutureAustraliaJsonPath);
         await StatesToCountryDownloader.RunFuture();
 
-        ProcessYear(DataLocations.Maps2016Path, electorates2016);
-        ProcessYear(DataLocations.Maps2019Path, electorates2019);
-        ProcessYear(DataLocations.MapsFuturePath, electoratesFuture);
+        await ProcessYear(DataLocations.Maps2016Path, electorates2016);
+        await ProcessYear(DataLocations.Maps2019Path, electorates2019);
+        await ProcessYear(DataLocations.MapsFuturePath, electoratesFuture);
 
         var electorates = await WriteElectoratesMetaData();
 
@@ -41,7 +41,7 @@ public class Sync
 
         foreach (var file in Directory.EnumerateFiles(DataLocations.MapsDetail))
         {
-            var pngPath = PdfToPng.Convert(file);
+            var pngPath = await PdfToPng.Convert(file);
             File.Delete(file);
 
             CreatePortraitAndLandscape(pngPath);
@@ -120,9 +120,9 @@ public class Sync
         percents = new() {20, 10, 5, 1};
     }
 
-    static void ProcessYear(string yearPath, List<string> electorates)
+    static async Task ProcessYear(string yearPath, List<string> electorates)
     {
-        WriteOptimised(yearPath);
+        await WriteOptimised(yearPath);
 
         foreach (var australiaPath in Directory.EnumerateFiles(yearPath, "australia*"))
         {
@@ -175,7 +175,7 @@ public class Sync
         var extractDirectory = Path.Combine(DataLocations.TempPath, $"australia{year}_extract");
         ZipFile.ExtractToDirectory(zip, extractDirectory);
 
-        MapToGeoJson.ConvertTab(targetPath, Path.Combine(extractDirectory, "COM_ELB.tab"));
+        await MapToGeoJson.ConvertTab(targetPath, Path.Combine(extractDirectory, "COM_ELB.tab"));
 
         var featureCollection = JsonSerializerService.Deserialize<FeatureCollection>(targetPath);
         featureCollection.FixBoundingBox();
@@ -196,7 +196,7 @@ public class Sync
         }
     }
 
-    static void WriteOptimised(string directory)
+    static async Task WriteOptimised(string directory)
     {
         var jsonPath = Path.Combine(directory, "australia.geojson");
         var raw = JsonSerializerService.DeserializeGeo(jsonPath);
@@ -204,7 +204,7 @@ public class Sync
         foreach (var percent in percents)
         {
             var percentJsonPath = Path.Combine(directory, $"australia_{percent:D2}.geojson");
-            MapToGeoJson.ConvertShape(percentJsonPath, jsonPath, percent);
+            await MapToGeoJson.ConvertShape(percentJsonPath, jsonPath, percent);
             var featureCollection = JsonSerializerService.DeserializeGeo(percentJsonPath);
             featureCollection.FixBoundingBox();
 

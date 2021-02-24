@@ -41,7 +41,7 @@ public static class StatesToCountryDownloader
             var extractDirectory = Path.Combine(DataLocations.TempPath, $"{state}_extract");
             ZipFile.ExtractToDirectory(targetPath, extractDirectory);
             StatisticalAreaCleaner.DeleteStatisticalAreaFiles(extractDirectory);
-            var featureCollection = WriteState(state, IoHelpers.FindFile(extractDirectory, "shp"));
+            var featureCollection = await WriteState(state, IoHelpers.FindFile(extractDirectory, "shp"));
             features.Features.AddRange(featureCollection.Features);
             File.Delete(targetPath);
             Directory.Delete(extractDirectory, true);
@@ -64,10 +64,10 @@ public static class StatesToCountryDownloader
         }
     }
 
-    static FeatureCollection WriteState(State state, string shpFile)
+    static async Task<FeatureCollection> WriteState(State state, string shpFile)
     {
         var stateJsonPath = Path.Combine(DataLocations.TempPath, $"{state}.geojson");
-        MapToGeoJson.ConvertShape(stateJsonPath, shpFile);
+        await MapToGeoJson.ConvertShape(stateJsonPath, shpFile);
 
         var stateCollection = JsonSerializerService.Deserialize<FeatureCollection>(stateJsonPath);
 

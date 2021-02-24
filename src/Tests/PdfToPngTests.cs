@@ -1,13 +1,14 @@
 ﻿using System.IO;
+using System.Threading.Tasks;
 using Xunit;
 
 public class PdfToPngTests
 {
     [Fact]
     [Trait("Category", "Integration")]
-    public void ConvertSingle()
+    public Task ConvertSingle()
     {
         var fullPath = Path.GetFullPath("sample_electorate_map.pdf");
-        PdfToPng.Convert(fullPath);
+        return PdfToPng.Convert(fullPath);
     }
 }
