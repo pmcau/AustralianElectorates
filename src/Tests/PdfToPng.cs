@@ -52,12 +52,12 @@ public static class PdfToPng
         ProcessStartInfo pngquant = new()
         {
             FileName = "pngquant.exe",
-            Arguments = $"--force --verbose --ordered --speed=1 --skip-if-larger --quality=50-70 {tempPng} --output {png}",
             UseShellExecute = false,
             RedirectStandardOutput = true,
             RedirectStandardError = true,
             CreateNoWindow = true
         };
+        pngquant.AppendArguments("--force","--verbose", "--ordered", "--speed=1","--skip-if-larger","--quality=50-70", tempPng, "--output", png);
 
         EnvironmentHelpers.AppendToPath(pngquantPath);
         using var process = Process.Start(pngquant)!;
@@ -78,12 +78,12 @@ public static class PdfToPng
         ProcessStartInfo gswin64 = new()
         {
             FileName = "gswin64c.exe",
-            Arguments = $"-dNoCancel -sDEVICE=png16m -dBATCH -r300 -dNOPAUSE -dDownScaleFactor=2 -q -sOutputFile={tempPng} {pdf}",
             UseShellExecute = false,
             RedirectStandardOutput = true,
             RedirectStandardError = true,
             CreateNoWindow = true
         };
+        gswin64.AppendArguments("-dNoCancel", "-sDEVICE=png16m", "-dBATCH", "-r300", "-dNOPAUSE", "-dDownScaleFactor=2", "-q", $"-sOutputFile={tempPng}", pdf);
 
         EnvironmentHelpers.AppendToPath(ghostScriptPath);
         using var process = Process.Start(gswin64)!;

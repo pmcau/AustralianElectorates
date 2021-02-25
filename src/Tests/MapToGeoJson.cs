@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System.Collections.Generic;
+using System.Diagnostics;
 using System.Threading.Tasks;
 
 public class MapToGeoJson
@@ -9,24 +10,26 @@ public class MapToGeoJson
     public static Task ConvertShape(string targetFile, string shpFile, int? percent = null)
     {
         //mapshaper C:\Code\AustralianElectorates\Data\ElectoratesByState\act.geojson -simplify dp 20% -o format=geojson C:\Code\AustralianElectorates\Data\ElectoratesByState\temp.json
-        var arguments = $@"/C mapshaper ""{shpFile}"" ";
+        List<string> arguments = new(){"/C", "mapshaper", shpFile};
         if (percent != null)
         {
-            arguments += $" -simplify {percent}%";
+            arguments.Add("-simplify");
+            arguments.Add($"{percent}%");
         }
-        arguments += $@" -o format=geojson ""{targetFile}"" ";
-        return Run("cmd.exe", arguments);
+        arguments.Add("-o");
+        arguments.Add("format=geojson");
+        arguments.Add(targetFile);
+        return Run("cmd.exe", arguments.ToArray());
     }
 
     public static Task ConvertTab(string targetFile, string tabFile)
     {
-        var arguments = $"-f GeoJSON {targetFile} {tabFile}";
-        return Run("ogr2ogr", arguments);
+        return Run("ogr2ogr", "-f", "GeoJSON", targetFile, tabFile);
     }
 
-    static async Task Run(string fileName, string arguments)
+    static async Task Run(string fileName, params string[] arguments)
     {
-        ProcessStartInfo startInfo = new(fileName, arguments)
+        ProcessStartInfo startInfo = new(fileName)
         {
             CreateNoWindow = true,
             RedirectStandardOutput = true,
@@ -34,12 +37,14 @@ public class MapToGeoJson
             UseShellExecute = false
         };
 
+        startInfo.AppendArguments(arguments);
+
         EnvironmentHelpers.AppendToPath(ogr2ogrPath);
         using var process = Process.Start(startInfo)!;
         await process.WaitForExitAsync();
         if (process.ExitCode != 0)
         {
-            var readToEnd = process.StandardError.ReadToEnd();
+            var readToEnd = await process.StandardError.ReadToEndAsync();
             if (readToEnd.Contains("Error"))
             {
                 throw new($"Failed to run: {arguments}. Output: {readToEnd}");

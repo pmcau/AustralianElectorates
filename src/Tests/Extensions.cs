@@ -1,11 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using HtmlAgilityPack;
 
 static class Extensions
 {
+    public static void AppendArguments(this ProcessStartInfo info, IEnumerable<string> arguments)
+    {
+        foreach (var argument in arguments)
+        {
+            info.ArgumentList.Add(argument);
+        }
+    }
+    public static void AppendArguments(this ProcessStartInfo info, params string[] arguments)
+    {
+        foreach (var argument in arguments)
+        {
+            info.ArgumentList.Add(argument);
+        }
+    }
     public static List<string> Headings(this HtmlDocument document)
     {
         return document.DocumentNode.Descendants("h1")
