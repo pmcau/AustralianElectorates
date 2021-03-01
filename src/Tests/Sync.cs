@@ -15,6 +15,7 @@ public class Sync
     [Trait("Category", "Integration")]
     public async Task SyncData()
     {
+       // Hasher.Clear(DataLocations.DataPath);
         IoHelpers.PurgeDirectory(DataLocations.MapsPath);
         IoHelpers.PurgeDirectory(DataLocations.TempPath);
 
@@ -49,6 +50,7 @@ public class Sync
 
         WriteNamedCs(electorates);
         Export.ExportElectorates();
+       // await Hasher.Create(DataLocations.DataPath);
         Zipper.ZipDir(DataLocations.MapsCuratedZipPath, DataLocations.MapsCuratedPath);
     }
 
