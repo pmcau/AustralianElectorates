@@ -1674,28 +1674,6 @@
     ]
   },
   {
-    "Id": 1402,
-    "Name": "Seniors United Party of Australia",
-    "Code": "SUPA",
-    "Abbreviation": "SUPA",
-    "RegisterDate": "4 March 2015",
-    "AmendmentDate": "4 March 2015",
-    "Address": "D5 Broadlands Estate\n9 Milpera Road\nGREEN POINT NSW 2251",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Osborne",
-      "GivenNames": "Christopher",
-      "Capacity": "Party Agent",
-      "Address": {
-        "Line1": "D5 Broadlands Estate",
-        "Line2": "9 Milpera Road",
-        "Suburb": "Green Point",
-        "State": "NSW",
-        "Postcode": 2251
-      }
-    }
-  },
-  {
     "Id": 1171,
     "Name": "Shooters, Fishers and Farmers Party",
     "Code": "Shooters, Fishers and Farmers",
@@ -2493,39 +2471,6 @@
           "Suburb": "Kensington",
           "State": "VIC",
           "Postcode": 3031
-        }
-      }
-    ]
-  },
-  {
-    "Id": 1380,
-    "Name": "Voluntary Euthanasia Party",
-    "Code": "VEP",
-    "Abbreviation": "VEP",
-    "RegisterDate": "1 July 2013",
-    "AmendmentDate": "1 July 2013",
-    "Address": "PO Box 4401\nHAWKER ACT 2614",
-    "Officer": {
-      "Title": "Ms",
-      "FamilyName": "Steep",
-      "GivenNames": "Sandi",
-      "Address": {
-        "Line1": "28/23-27 McMahon Street",
-        "Suburb": "Hurstville",
-        "State": "NSW",
-        "Postcode": 2220
-      }
-    },
-    "DeputyOfficers": [
-      {
-        "Title": "Ms",
-        "FamilyName": "Higson",
-        "GivenNames": "Shayne",
-        "Address": {
-          "Line1": "139B Denison Street",
-          "Suburb": "Queens Park",
-          "State": "NSW",
-          "Postcode": 2022
         }
       }
     ]
