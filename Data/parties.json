@@ -809,15 +809,15 @@
     },
     "DeputyOfficers": [
       {
-        "Title": "Mr",
-        "FamilyName": "Hall",
-        "GivenNames": "Craig",
+        "Title": "Ms ",
+        "FamilyName": "Wright",
+        "GivenNames": "Anne Louise",
         "Capacity": "Deputy Registered Officer",
         "Address": {
-          "Line1": "PO Box 8456",
-          "Suburb": "WESTFIELD PARRAMATTA",
+          "Line1": "Suite 5, 181 High Street",
+          "Suburb": "North Willoughby",
           "State": "NSW",
-          "Postcode": 2150
+          "Postcode": 2068
         }
       }
     ]
