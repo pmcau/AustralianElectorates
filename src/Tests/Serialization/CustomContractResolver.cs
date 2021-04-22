@@ -18,7 +18,7 @@ public class CustomContractResolver :
             return jsonProperties;
         }
 
-        var properties = new List<JsonProperty> {first};
+        List<JsonProperty> properties = new() {first};
         properties.AddRange(jsonProperties.Where(x => x.PropertyName != "properties"));
         return properties;
     }
