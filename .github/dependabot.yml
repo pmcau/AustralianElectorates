@@ -1,0 +1,12 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "19:30"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: Verify.Xunit
+    versions:
+    - 11.1.0
