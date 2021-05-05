@@ -1489,26 +1489,6 @@
     ]
   },
   {
-    "Id": 1369,
-    "Name": "Pirate Party Australia",
-    "Code": "Pirate Party",
-    "Abbreviation": "Pirate Party",
-    "RegisterDate": "17 January 2013",
-    "AmendmentDate": "17 January 2013",
-    "Address": "PO Box 385\nFIGTREE NSW 2525",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Jago",
-      "GivenNames": "Alexander",
-      "Address": {
-        "Line1": "39 Bel-Air Court",
-        "Suburb": "Ferny Hills",
-        "State": "QLD",
-        "Postcode": 4055
-      }
-    }
-  },
-  {
     "Id": 1463,
     "Name": "Reason Australia",
     "Code": "Reason Australia",
@@ -2103,13 +2083,14 @@
         "DeputyOfficers": [
           {
             "Title": "Ms",
-            "FamilyName": "Allan",
-            "GivenNames": "Lucy",
+            "FamilyName": "Blackburn",
+            "GivenNames": "Naomi",
+            "Capacity": "Deputy Registered Officer",
             "Address": {
-              "Line1": "1/45 William Street",
+              "Line1": "GPO Box 4589",
               "Suburb": "Melbourne",
               "State": "VIC",
-              "Postcode": 3000
+              "Postcode": 3001
             }
           },
           {
