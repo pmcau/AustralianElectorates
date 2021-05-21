@@ -9,33 +9,6 @@
 
 All information about electorates is available at [/Data/electorates.json](/Data/electorates.json).
 
-<!-- toc -->
-## Contents
-
-  * [Electorates](#electorates)
-  * [Localities](#localities)
-  * [Parties](#parties)
-  * [Detail Maps](#detail-maps)
-  * [GeoJson Maps](#geojson-maps)
-    * [Structure](#structure)
-    * [Map variants](#map-variants)
-  * [NuGets](#nugets)
-  * [Usage](#usage)
-  * [Bogus Usage](#bogus-usage)
-  * [DetailMaps Usage](#detailmaps-usage)
-  * [Copyright](#copyright)
-    * [Code](#code)
-    * [Content/Data](#contentdata)
-  * [Re-Generating the data](#re-generating-the-data)
-    * [Adding new elections](#adding-new-elections)
-    * [ogr2ogr](#ogr2ogr)
-    * [MapShaper](#mapshaper)
-    * [GhostScript](#ghostscript)
-    * [pngquant](#pngquant)
-  * [Purge history](#purge-history)
-  * [Notes](#notes)
-  * [Security contact information](#security-contact-information)<!-- endToc -->
-
 
 ## Electorates
 
@@ -476,10 +449,6 @@ Media feed ftp://mediafeed.aec.gov.au/24310/Standard/Verbose/
 
 From: https://www.aec.gov.au/media/mediafeed/files/media-feed-user-guide-v4.pdf
 
-
-## Security contact information
-
-To report a security vulnerability, use the [Tidelift security contact](https://tidelift.com/security). Tidelift will coordinate the fix and disclosure.
 
 
 ## Icon
