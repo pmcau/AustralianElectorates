@@ -8,7 +8,7 @@ namespace AustralianElectorates
 
         public ElectorateNotFoundException(string name)
         {
-            Guard.AgainstNullWhiteSpace(nameof(name), name);
+            Guard.AgainstWhiteSpace(nameof(name), name);
             Name = name;
         }
 

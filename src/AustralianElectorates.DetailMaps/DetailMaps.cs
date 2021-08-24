@@ -14,20 +14,17 @@ namespace AustralianElectorates
 
         public static string MapForElectorate(string name)
         {
-            Guard.AgainstNullWhiteSpace(nameof(name), name);
+            Guard.AgainstWhiteSpace(nameof(name), name);
             return MapForElectorate(DataLoader.FindElectorate(name));
         }
 
         public static string MapForElectorate(IElectorate electorate)
         {
-            Guard.AgainstNull(electorate, nameof(electorate));
             return Path.Combine(Directory, $"{electorate.ShortName}.png");
         }
 
         public static IEnumerable<string> Files(IElectorate electorate)
         {
-            Guard.AgainstNull(electorate, nameof(electorate));
-
             static bool Predicate(string x) =>
                 !x.Contains(".landscape.") &&
                 !x.Contains(".portrait.");

@@ -48,7 +48,7 @@ namespace AustralianElectorates
 
         public static string GetShortName(string name)
         {
-            Guard.AgainstNullWhiteSpace(name, nameof(name));
+            Guard.AgainstWhiteSpace(name, nameof(name));
             return name.Replace(" ", "-")
                 .Replace("'", "")
                 .ToLowerInvariant();

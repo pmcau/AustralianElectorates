@@ -128,7 +128,7 @@ namespace AustralianElectorates
 
         public static IElectorate FindElectorate(string name)
         {
-            Guard.AgainstNullWhiteSpace(nameof(name), name);
+            Guard.AgainstWhiteSpace(nameof(name), name);
             if (TryFindElectorate(name, out var electorate))
             {
                 return electorate;
@@ -139,7 +139,7 @@ namespace AustralianElectorates
 
         public static bool TryFindElectorate(string name, [NotNullWhen(true)] out IElectorate? electorate)
         {
-            Guard.AgainstNullWhiteSpace(nameof(name), name);
+            Guard.AgainstWhiteSpace(nameof(name), name);
             electorate = Electorates.SingleOrDefault(x => MatchName(name, x));
             if (electorate != null)
             {
@@ -171,7 +171,6 @@ namespace AustralianElectorates
 
         public static bool TryFindInvalidateElectorates(IEnumerable<string> names, out List<string> invalid)
         {
-            Guard.AgainstNull(names, nameof(names));
             invalid = FindInvalidateElectorates(names).ToList();
             return invalid.Any();
         }
@@ -183,7 +182,6 @@ namespace AustralianElectorates
 
         public static IEnumerable<string> FindInvalidateElectorates(IEnumerable<string> names)
         {
-            Guard.AgainstNull(names, nameof(names));
             return names.Where(name => !Electorates.Any(x => MatchName(name, x)));
         }
 
@@ -196,7 +194,7 @@ namespace AustralianElectorates
 
         public static void Export(string directory)
         {
-            Guard.AgainstNullWhiteSpace(nameof(directory), directory);
+            Guard.AgainstWhiteSpace(nameof(directory), directory);
             lock (exportLocker)
             {
                 ExportInLock(directory);
@@ -238,7 +236,6 @@ namespace AustralianElectorates
 
         public static IElectorateMap Get2016Map(this IElectorate electorate)
         {
-            Guard.AgainstNull(electorate, nameof(electorate));
             if (!electorate.Exist2016)
             {
                 throw new($"Electorate '{electorate.Name}' does not have a 2016 map");
@@ -249,7 +246,6 @@ namespace AustralianElectorates
 
         public static IElectorateMap GetMap(this IElectorate electorate)
         {
-            Guard.AgainstNull(electorate, nameof(electorate));
             if (electorate.Exist2019)
             {
                 return Maps2019.GetElectorate(electorate.ShortName);
@@ -265,7 +261,6 @@ namespace AustralianElectorates
 
         public static IElectorateMap Get2019Map(this IElectorate electorate)
         {
-            Guard.AgainstNull(electorate, nameof(electorate));
             if (!electorate.Exist2019)
             {
                 throw new($"Electorate '{electorate.Name}' does not have a 2019 map");
@@ -276,7 +271,6 @@ namespace AustralianElectorates
 
         public static IElectorateMap GetFutureMap(this IElectorate electorate)
         {
-            Guard.AgainstNull(electorate, nameof(electorate));
             if (!electorate.ExistInFuture)
             {
                 throw new($"Electorate '{electorate.Name}' does not have a future map");

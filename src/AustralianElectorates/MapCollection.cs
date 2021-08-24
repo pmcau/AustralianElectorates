@@ -31,13 +31,12 @@ namespace AustralianElectorates
 
         public IElectorateMap GetElectorate(string electorateName)
         {
-            Guard.AgainstNullWhiteSpace(electorateName, nameof(electorateName));
+            Guard.AgainstWhiteSpace(electorateName, nameof(electorateName));
             return GetElectorateInner(Electorate.GetShortName(electorateName),electorateName);
         }
 
         public IElectorateMap GetElectorate(IElectorate electorate)
         {
-            Guard.AgainstNull(electorate, nameof(electorate));
             return GetElectorateInner(electorate.ShortName,electorate.Name);
         }
 

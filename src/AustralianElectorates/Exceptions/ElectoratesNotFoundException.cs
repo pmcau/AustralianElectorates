@@ -10,7 +10,6 @@ namespace AustralianElectorates
 
         public ElectoratesNotFoundException(IEnumerable<string> names)
         {
-            Guard.AgainstNull(names, nameof(names));
             Names = names.ToList();
         }
 
