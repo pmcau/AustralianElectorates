@@ -3,8 +3,8 @@
     <TargetFramework>net5</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Bogus" Version="33.0.2" />
-    <PackageReference Include="CountryData" Version="3.57.0" />
+    <PackageReference Include="Bogus" Version="33.1.1" />
+    <PackageReference Include="CountryData" Version="3.58.0" />
     <PackageReference Include="MarkdownSnippets.MsBuild" Version="24.0.0" PrivateAssets="all" />
     <PackageReference Include="GeoJSON.Net" Version="1.2.19" />
     <PackageReference Include="HtmlAgilityPack" Version="1.11.36" />
@@ -14,7 +14,7 @@
     <PackageReference Include="Xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
-    <PackageReference Include="Verify.Xunit" Version="11.24.0" />
+    <PackageReference Include="Verify.Xunit" Version="11.26.0" />
     <ProjectReference Include="..\AustralianElectorates.Bogus\AustralianElectorates.Bogus.csproj" />
     <ProjectReference Include="..\AustralianElectorates.DetailMaps\AustralianElectorates.DetailMaps.csproj" />
     <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
