@@ -1,14 +1,13 @@
-﻿namespace AustralianElectorates
+﻿namespace AustralianElectorates;
+
+public enum State
 {
-    public enum State
-    {
-        ACT,
-        NSW,
-        NT,
-        SA,
-        QLD,
-        TAS,
-        VIC,
-        WA
-    }
+    ACT,
+    NSW,
+    NT,
+    SA,
+    QLD,
+    TAS,
+    VIC,
+    WA
 }

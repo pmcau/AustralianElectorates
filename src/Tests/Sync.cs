@@ -270,33 +270,30 @@ public class Sync
 // ReSharper disable RedundantDefaultMemberInitializer
 
 namespace AustralianElectorates
-{
-    public static partial class DataLoader
-    {");
+public static partial class DataLoader
+{");
 
             writer.WriteLine(@"
-        static void InitNamed()
+    static void InitNamed()
         {");
             foreach (var electorate in electorates)
             {
                 var name = GetCSharpName(electorate);
                 writer.WriteLine($@"
-            {name} = Electorates.Single(x => x.Name == ""{electorate.Name}"");");
+        {name} = Electorates.Single(x => x.Name == ""{electorate.Name}"");");
             }
 
-            writer.WriteLine("        }");
+            writer.WriteLine("    }");
 
             foreach (var electorate in electorates)
             {
                 var name = GetCSharpName(electorate);
                 writer.WriteLine($@"
-        public static IElectorate {name} {{ get; private set; }} = null!;");
+    public static IElectorate {name} {{ get; private set; }} = null!;");
             }
 
-            writer.WriteLine("    }");
             writer.WriteLine("}");
         }
-
 
         var namedBogusData = Path.Combine(DataLocations.BogusProjectPath, "ElectorateDataSet_named.cs");
         File.Delete(namedBogusData);
@@ -308,20 +305,19 @@ namespace AustralianElectorates
 using Bogus;
 
 namespace AustralianElectorates.Bogus
-{
-    public partial class ElectorateDataSet : DataSet
-    {");
+
+public partial class ElectorateDataSet : DataSet
+{");
             foreach (var electorate in electorates)
             {
                 var name = GetCSharpName(electorate);
                 writer.WriteLine($@"
-        public IElectorate {name}()
-        {{
-            return DataLoader.{name};
-        }}");
+    public IElectorate {name}()
+    {{
+        return DataLoader.{name};
+    }}");
             }
 
-            writer.WriteLine("    }");
             writer.WriteLine("}");
         }
     }

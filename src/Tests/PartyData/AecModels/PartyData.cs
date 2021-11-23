@@ -1,11 +1,10 @@
 ﻿#nullable disable
 using Newtonsoft.Json;
 
-namespace AecModels
+namespace AecModels;
+
+public class PartyData
 {
-    public class PartyData
-    {
-        [JsonProperty("Details")]
-        public Detail[] Details { get; set; }
-    }
+    [JsonProperty("Details")]
+    public Detail[] Details { get; set; }
 }

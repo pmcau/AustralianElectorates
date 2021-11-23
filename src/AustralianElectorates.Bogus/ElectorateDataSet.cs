@@ -1,36 +1,35 @@
 ﻿using Bogus;
 
-namespace AustralianElectorates.Bogus
+namespace AustralianElectorates.Bogus;
+
+public partial class ElectorateDataSet : DataSet
 {
-    public partial class ElectorateDataSet : DataSet
+    public IEnumerable<string> Names(int num = 1)
     {
-        public IEnumerable<string> Names(int num = 1)
+        Guard.AgainstNegative(num, nameof(num));
+        for (var i = 0; i < num; i++)
         {
-            Guard.AgainstNegative(num, nameof(num));
-            for (var i = 0; i < num; i++)
-            {
-                yield return Name();
-            }
+            yield return Name();
         }
+    }
 
-        public string Name()
-        {
-            return Electorate().Name;
-        }
+    public string Name()
+    {
+        return Electorate().Name;
+    }
 
-        public IEnumerable<IElectorate> Electorate(int num = 1)
+    public IEnumerable<IElectorate> Electorate(int num = 1)
+    {
+        Guard.AgainstNegative(num, nameof(num));
+        for (var i = 0; i < num; i++)
         {
-            Guard.AgainstNegative(num, nameof(num));
-            for (var i = 0; i < num; i++)
-            {
-                yield return Electorate();
-            }
+            yield return Electorate();
         }
+    }
 
-        public IElectorate Electorate()
-        {
-            var index = Random.Number(DataLoader.Electorates.Count - 1);
-            return DataLoader.Electorates[index];
-        }
+    public IElectorate Electorate()
+    {
+        var index = Random.Number(DataLoader.Electorates.Count - 1);
+        return DataLoader.Electorates[index];
     }
 }

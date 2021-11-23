@@ -1,19 +1,18 @@
-﻿namespace AustralianElectorates
-{
-    public interface IElectorateMap
-    {
-        IElectorate Electorate { get; }
-        string GeoJson { get; }
-    }
+﻿namespace AustralianElectorates;
 
-    class ElectorateMap :
-        IElectorateMap
+public interface IElectorateMap
+{
+    IElectorate Electorate { get; }
+    string GeoJson { get; }
+}
+
+class ElectorateMap :
+    IElectorateMap
+{
+    public IElectorate Electorate { get; set; } = null!;
+    public string GeoJson { get; set; } = null!;
+    public override string ToString()
     {
-        public IElectorate Electorate { get; set; } = null!;
-        public string GeoJson { get; set; } = null!;
-        public override string ToString()
-        {
-            return $"{Electorate.Name} Map";
-        }
+        return $"{Electorate.Name} Map";
     }
 }

@@ -1,277 +1,276 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.IO.Compression;
 
-namespace AustralianElectorates
+namespace AustralianElectorates;
+
+public static partial class DataLoader
 {
-    public static partial class DataLoader
+    static object exportLocker = new();
+    static Assembly assembly;
+
+    static DataLoader()
     {
-        static object exportLocker = new();
-        static Assembly assembly;
-
-        static DataLoader()
+        assembly = typeof(DataLoader).Assembly;
+        using (var stream = assembly.GetManifestResourceStream("electorates.json")!)
         {
-            assembly = typeof(DataLoader).Assembly;
-            using (var stream = assembly.GetManifestResourceStream("electorates.json")!)
-            {
-                Electorates = Serializer.Deserialize<List<Electorate>>(stream);
-            }
+            Electorates = Serializer.Deserialize<List<Electorate>>(stream);
+        }
 
-            using (var stream = assembly.GetManifestResourceStream("parties.json")!)
-            {
-                Parties = Serializer.Deserialize<List<Party>>(stream);
-            }
+        using (var stream = assembly.GetManifestResourceStream("parties.json")!)
+        {
+            Parties = Serializer.Deserialize<List<Party>>(stream);
+        }
 
-            List<IPartyOrBranch> partiesAndBranches = new();
-            foreach (var party in Parties)
+        List<IPartyOrBranch> partiesAndBranches = new();
+        foreach (var party in Parties)
+        {
+            partiesAndBranches.Add(party);
+            //if (party.Branches != null)
             {
-                partiesAndBranches.Add(party);
-                //if (party.Branches != null)
+                foreach (Branch branch in party.Branches)
                 {
-                    foreach (Branch branch in party.Branches)
-                    {
-                        partiesAndBranches.Add(branch);
-                        branch.Party = party;
-                    }
-                }
-            }
-
-            PartiesAndBranches = partiesAndBranches;
-
-            foreach (var electorate in Electorates)
-            {
-                var preferred = electorate.TwoCandidatePreferred;
-                if (preferred != null)
-                {
-                    var elected = (Candidate) preferred.Elected;
-                    elected.Party = PartiesAndBranches.SingleOrDefault(x => x.Id == elected.PartyId);
-                    electorate.CurrentParty = elected.Party;
-
-                    var other = (Candidate) preferred.Other;
-                    other.Party = PartiesAndBranches.SingleOrDefault(x => x.Id == other.PartyId);
-                }
-            }
-
-            InitNamed();
-            Elections = BuildElections();
-
-            foreach (var electorate in Electorates)
-            {
-                foreach (var location in electorate.Locations.Cast<Location>())
-                {
-                    location.Electorate = electorate;
+                    partiesAndBranches.Add(branch);
+                    branch.Party = party;
                 }
             }
         }
 
-        public static IReadOnlyList<IElectorate> Electorates { get; }
+        PartiesAndBranches = partiesAndBranches;
 
-        public static IReadOnlyList<IElection> Elections { get; }
-
-        static List<Election> BuildElections()
+        foreach (var electorate in Electorates)
         {
-            //TODO: scrape from here instead, will need to change from the electorate.ExistNNNN pattern: https://www.aec.gov.au/Elections/Federal_Elections/
-
-            #region elections
-
-            return new()
+            var preferred = electorate.TwoCandidatePreferred;
+            if (preferred != null)
             {
-                new()
-                {
-                    Parliament = 45,
-                    Year = 2016,
-                    Date = new(2016, 07, 02, 0, 0, 0),
-                    Electorates = Electorates.Where(_ => _.Exist2016).ToList()
-                },
-                new()
-                {
-                    Parliament = 46,
-                    Year = 2019,
-                    Date = new(2019, 05, 18, 0, 0, 0),
-                    Electorates = Electorates.Where(_ => _.Exist2019).ToList()
-                }
-            };
+                var elected = (Candidate) preferred.Elected;
+                elected.Party = PartiesAndBranches.SingleOrDefault(x => x.Id == elected.PartyId);
+                electorate.CurrentParty = elected.Party;
 
-            #endregion
-        }
-
-        public static IReadOnlyList<IParty> Parties { get; }
-        public static IReadOnlyList<IPartyOrBranch> PartiesAndBranches { get; }
-        public static MapCollection Maps2016 { get; } = new("2016");
-        public static MapCollection Maps2019 { get; } = new("2019");
-        public static MapCollection MapsFuture { get; } = new("Future");
-
-        public static IElection FindElection(int parliament)
-        {
-            if (TryFindElection(parliament, out var election))
-            {
-                return election;
-            }
-
-            throw new ElectionNotFoundException(parliament);
-        }
-
-        public static bool TryFindElection(int parliament, [NotNullWhen(true)] out IElection? election)
-        {
-            election = Elections.SingleOrDefault(x => x.Parliament == parliament);
-            if (election != null)
-            {
-                return true;
-            }
-
-            return false;
-        }
-
-        public static IElectorate FindElectorate(string name)
-        {
-            Guard.AgainstWhiteSpace(nameof(name), name);
-            if (TryFindElectorate(name, out var electorate))
-            {
-                return electorate;
-            }
-
-            throw new ElectorateNotFoundException(name);
-        }
-
-        public static bool TryFindElectorate(string name, [NotNullWhen(true)] out IElectorate? electorate)
-        {
-            Guard.AgainstWhiteSpace(nameof(name), name);
-            electorate = Electorates.SingleOrDefault(x => MatchName(name, x));
-            if (electorate != null)
-            {
-                return true;
-            }
-
-            return false;
-        }
-
-        static bool MatchName(string name, IElectorate x)
-        {
-            return string.Equals(x.Name, name, StringComparison.OrdinalIgnoreCase) ||
-                   string.Equals(x.ShortName, name, StringComparison.OrdinalIgnoreCase);
-        }
-
-        public static void ValidateElectorates(params string[] names)
-        {
-            ValidateElectorates((IEnumerable<string>) names);
-        }
-
-        public static void ValidateElectorates(IEnumerable<string> names)
-        {
-            var missing = FindInvalidateElectorates(names).ToList();
-            if (missing.Any())
-            {
-                throw new ElectoratesNotFoundException(missing);
+                var other = (Candidate) preferred.Other;
+                other.Party = PartiesAndBranches.SingleOrDefault(x => x.Id == other.PartyId);
             }
         }
 
-        public static bool TryFindInvalidateElectorates(IEnumerable<string> names, out List<string> invalid)
-        {
-            invalid = FindInvalidateElectorates(names).ToList();
-            return invalid.Any();
-        }
+        InitNamed();
+        Elections = BuildElections();
 
-        public static IEnumerable<string> FindInvalidateElectorates(params string[] names)
+        foreach (var electorate in Electorates)
         {
-            return FindInvalidateElectorates((IEnumerable<string>) names);
-        }
-
-        public static IEnumerable<string> FindInvalidateElectorates(IEnumerable<string> names)
-        {
-            return names.Where(name => !Electorates.Any(x => MatchName(name, x)));
-        }
-
-        public static void LoadAll()
-        {
-            MapsFuture.LoadAll();
-            Maps2016.LoadAll();
-            Maps2019.LoadAll();
-        }
-
-        public static void Export(string directory)
-        {
-            Guard.AgainstWhiteSpace(nameof(directory), directory);
-            lock (exportLocker)
+            foreach (var location in electorate.Locations.Cast<Location>())
             {
-                ExportInLock(directory);
+                location.Electorate = electorate;
+            }
+        }
+    }
+
+    public static IReadOnlyList<IElectorate> Electorates { get; }
+
+    public static IReadOnlyList<IElection> Elections { get; }
+
+    static List<Election> BuildElections()
+    {
+        //TODO: scrape from here instead, will need to change from the electorate.ExistNNNN pattern: https://www.aec.gov.au/Elections/Federal_Elections/
+
+        #region elections
+
+        return new()
+        {
+            new()
+            {
+                Parliament = 45,
+                Year = 2016,
+                Date = new(2016, 07, 02, 0, 0, 0),
+                Electorates = Electorates.Where(_ => _.Exist2016).ToList()
+            },
+            new()
+            {
+                Parliament = 46,
+                Year = 2019,
+                Date = new(2019, 05, 18, 0, 0, 0),
+                Electorates = Electorates.Where(_ => _.Exist2019).ToList()
+            }
+        };
+
+        #endregion
+    }
+
+    public static IReadOnlyList<IParty> Parties { get; }
+    public static IReadOnlyList<IPartyOrBranch> PartiesAndBranches { get; }
+    public static MapCollection Maps2016 { get; } = new("2016");
+    public static MapCollection Maps2019 { get; } = new("2019");
+    public static MapCollection MapsFuture { get; } = new("Future");
+
+    public static IElection FindElection(int parliament)
+    {
+        if (TryFindElection(parliament, out var election))
+        {
+            return election;
+        }
+
+        throw new ElectionNotFoundException(parliament);
+    }
+
+    public static bool TryFindElection(int parliament, [NotNullWhen(true)] out IElection? election)
+    {
+        election = Elections.SingleOrDefault(x => x.Parliament == parliament);
+        if (election != null)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    public static IElectorate FindElectorate(string name)
+    {
+        Guard.AgainstWhiteSpace(nameof(name), name);
+        if (TryFindElectorate(name, out var electorate))
+        {
+            return electorate;
+        }
+
+        throw new ElectorateNotFoundException(name);
+    }
+
+    public static bool TryFindElectorate(string name, [NotNullWhen(true)] out IElectorate? electorate)
+    {
+        Guard.AgainstWhiteSpace(nameof(name), name);
+        electorate = Electorates.SingleOrDefault(x => MatchName(name, x));
+        if (electorate != null)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    static bool MatchName(string name, IElectorate x)
+    {
+        return string.Equals(x.Name, name, StringComparison.OrdinalIgnoreCase) ||
+               string.Equals(x.ShortName, name, StringComparison.OrdinalIgnoreCase);
+    }
+
+    public static void ValidateElectorates(params string[] names)
+    {
+        ValidateElectorates((IEnumerable<string>) names);
+    }
+
+    public static void ValidateElectorates(IEnumerable<string> names)
+    {
+        var missing = FindInvalidateElectorates(names).ToList();
+        if (missing.Any())
+        {
+            throw new ElectoratesNotFoundException(missing);
+        }
+    }
+
+    public static bool TryFindInvalidateElectorates(IEnumerable<string> names, out List<string> invalid)
+    {
+        invalid = FindInvalidateElectorates(names).ToList();
+        return invalid.Any();
+    }
+
+    public static IEnumerable<string> FindInvalidateElectorates(params string[] names)
+    {
+        return FindInvalidateElectorates((IEnumerable<string>) names);
+    }
+
+    public static IEnumerable<string> FindInvalidateElectorates(IEnumerable<string> names)
+    {
+        return names.Where(name => !Electorates.Any(x => MatchName(name, x)));
+    }
+
+    public static void LoadAll()
+    {
+        MapsFuture.LoadAll();
+        Maps2016.LoadAll();
+        Maps2019.LoadAll();
+    }
+
+    public static void Export(string directory)
+    {
+        Guard.AgainstWhiteSpace(nameof(directory), directory);
+        lock (exportLocker)
+        {
+            ExportInLock(directory);
+        }
+    }
+
+    static void ExportInLock(string directory)
+    {
+        WriteElectoratesJson(directory);
+
+        using var stream = assembly.GetManifestResourceStream("Maps.zip")!;
+        using ZipArchive archive = new(stream);
+        archive.ExtractToDirectory(directory);
+    }
+
+    static void WriteElectoratesJson(string directory)
+    {
+        var electoratesJsonPath = Path.Combine(directory, "electorates.json");
+        if (File.Exists(electoratesJsonPath))
+        {
+            var existingCreationTime = File.GetCreationTimeUtc(electoratesJsonPath);
+            if (AssemblyTimestamp.Value == existingCreationTime)
+            {
+                return;
             }
         }
 
-        static void ExportInLock(string directory)
-        {
-            WriteElectoratesJson(directory);
+        WriteElectoratesJsonInner(electoratesJsonPath);
 
-            using var stream = assembly.GetManifestResourceStream("Maps.zip")!;
-            using ZipArchive archive = new(stream);
-            archive.ExtractToDirectory(directory);
+        File.SetCreationTimeUtc(electoratesJsonPath, AssemblyTimestamp.Value);
+    }
+
+    static void WriteElectoratesJsonInner(string electoratesJsonPath)
+    {
+        using var stream = assembly.GetManifestResourceStream("electorates.json");
+        using var target = File.Create(electoratesJsonPath);
+        stream.CopyTo(target);
+    }
+
+    public static IElectorateMap Get2016Map(this IElectorate electorate)
+    {
+        if (!electorate.Exist2016)
+        {
+            throw new($"Electorate '{electorate.Name}' does not have a 2016 map");
         }
 
-        static void WriteElectoratesJson(string directory)
+        return Maps2016.GetElectorate(electorate.ShortName);
+    }
+
+    public static IElectorateMap GetMap(this IElectorate electorate)
+    {
+        if (electorate.Exist2019)
         {
-            var electoratesJsonPath = Path.Combine(directory, "electorates.json");
-            if (File.Exists(electoratesJsonPath))
-            {
-                var existingCreationTime = File.GetCreationTimeUtc(electoratesJsonPath);
-                if (AssemblyTimestamp.Value == existingCreationTime)
-                {
-                    return;
-                }
-            }
-
-            WriteElectoratesJsonInner(electoratesJsonPath);
-
-            File.SetCreationTimeUtc(electoratesJsonPath, AssemblyTimestamp.Value);
-        }
-
-        static void WriteElectoratesJsonInner(string electoratesJsonPath)
-        {
-            using var stream = assembly.GetManifestResourceStream("electorates.json");
-            using var target = File.Create(electoratesJsonPath);
-            stream.CopyTo(target);
-        }
-
-        public static IElectorateMap Get2016Map(this IElectorate electorate)
-        {
-            if (!electorate.Exist2016)
-            {
-                throw new($"Electorate '{electorate.Name}' does not have a 2016 map");
-            }
-
-            return Maps2016.GetElectorate(electorate.ShortName);
-        }
-
-        public static IElectorateMap GetMap(this IElectorate electorate)
-        {
-            if (electorate.Exist2019)
-            {
-                return Maps2019.GetElectorate(electorate.ShortName);
-            }
-
-            if (electorate.Exist2016)
-            {
-                return Maps2016.GetElectorate(electorate.ShortName);
-            }
-
-            return MapsFuture.GetElectorate(electorate.ShortName);
-        }
-
-        public static IElectorateMap Get2019Map(this IElectorate electorate)
-        {
-            if (!electorate.Exist2019)
-            {
-                throw new($"Electorate '{electorate.Name}' does not have a 2019 map");
-            }
-
             return Maps2019.GetElectorate(electorate.ShortName);
         }
 
-        public static IElectorateMap GetFutureMap(this IElectorate electorate)
+        if (electorate.Exist2016)
         {
-            if (!electorate.ExistInFuture)
-            {
-                throw new($"Electorate '{electorate.Name}' does not have a future map");
-            }
-
-            return MapsFuture.GetElectorate(electorate.ShortName);
+            return Maps2016.GetElectorate(electorate.ShortName);
         }
+
+        return MapsFuture.GetElectorate(electorate.ShortName);
+    }
+
+    public static IElectorateMap Get2019Map(this IElectorate electorate)
+    {
+        if (!electorate.Exist2019)
+        {
+            throw new($"Electorate '{electorate.Name}' does not have a 2019 map");
+        }
+
+        return Maps2019.GetElectorate(electorate.ShortName);
+    }
+
+    public static IElectorateMap GetFutureMap(this IElectorate electorate)
+    {
+        if (!electorate.ExistInFuture)
+        {
+            throw new($"Electorate '{electorate.Name}' does not have a future map");
+        }
+
+        return MapsFuture.GetElectorate(electorate.ShortName);
     }
 }
