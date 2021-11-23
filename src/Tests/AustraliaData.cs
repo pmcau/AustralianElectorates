@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using CountryData;
+﻿using CountryData;
 
 static class AustraliaData
 {

@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.IO;
-
-namespace AustralianElectorates
+﻿namespace AustralianElectorates
 {
     public static class LandscapeDetailMaps
     {

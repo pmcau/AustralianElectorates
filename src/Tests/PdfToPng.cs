@@ -1,13 +1,10 @@
-﻿using System.Diagnostics;
-using System.Drawing;
-using System.IO;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 
 public static class PdfToPng
 {
     // Change as needed if not in local path
-    const string pngquantPath = @"C:\pngquant";
-    const string ghostScriptPath = @"C:\Program Files\gs\gs9.27\bin";
+    const string pngquantPath = @"C:\Tools\pngquant";
+    const string ghostScriptPath = @"C:\Program Files\gs\gs9.55.0\bin";
 
     public static async Task<string> Convert(string pdf)
     {

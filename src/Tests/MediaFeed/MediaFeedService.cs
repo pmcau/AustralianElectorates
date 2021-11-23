@@ -1,6 +1,4 @@
-﻿using System.IO;
-using System.Linq;
-using System.Xml.Serialization;
+﻿using System.Xml.Serialization;
 
 static class MediaFeedService
 {

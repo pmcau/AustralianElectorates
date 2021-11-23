@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Diagnostics;
-
-namespace AustralianElectorates
+﻿namespace AustralianElectorates
 {
     public interface ILocation
     {

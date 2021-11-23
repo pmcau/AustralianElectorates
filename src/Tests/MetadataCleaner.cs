@@ -1,5 +1,3 @@
-using System;
-using System.Linq;
 using AustralianElectorates;
 using GeoJSON.Net.Feature;
 

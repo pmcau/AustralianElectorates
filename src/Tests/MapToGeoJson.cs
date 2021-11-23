@@ -1,8 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Diagnostics;
-using System.Threading.Tasks;
-
-public class MapToGeoJson
+﻿public class MapToGeoJson
 {
     // Change as needed if not in local path
     const string ogr2ogrPath = @"C:\OSGeo4W64\bin";

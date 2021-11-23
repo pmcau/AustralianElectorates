@@ -1,5 +1,4 @@
-﻿using System.Diagnostics;
-using AustralianElectorates;
+﻿using AustralianElectorates;
 using Xunit;
 
 public class DetailMapsTests

@@ -1,10 +1,10 @@
-{
+﻿{
   Type: ElectoratesNotFoundException,
   Names: [
     not Found
   ],
   Message: Unable to find electorates: 'not Found'.,
-  StackTrace: 
+  StackTrace:
 at AustralianElectorates.DataLoader.ValidateElectorates(IEnumerable`1 names)
 at AustralianElectorates.DataLoader.ValidateElectorates(String[] names)
 at DataLoaderTests.<>c.<ValidateElectorates>b__3_0()

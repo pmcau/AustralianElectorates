@@ -1,7 +1,4 @@
-﻿using System.IO;
-using System.Runtime.CompilerServices;
-
-static class GitRepoDirectoryFinder
+﻿static class GitRepoDirectoryFinder
 {
     public static string FindForFilePath([CallerFilePath] string sourceFilePath = "")
     {

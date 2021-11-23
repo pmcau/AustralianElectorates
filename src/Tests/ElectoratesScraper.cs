@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using AustralianElectorates;
+﻿using AustralianElectorates;
 using HtmlAgilityPack;
 using Xunit;
 
@@ -101,7 +96,7 @@ static class ElectoratesScraper
 
             electorate.DemographicRating = values["Demographic Rating"].TrimmedInnerHtml();
 
-            Uri uri = new(new Uri(requestUri), FindMapUrl(values));
+            Uri uri = new(new(requestUri), FindMapUrl(values));
             electorate.MapUrl = uri.AbsoluteUri;
 
             electorate.NameDerivation = values["Name derivation"].TrimmedInnerHtml();

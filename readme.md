@@ -140,18 +140,18 @@ Sample:
     },
     "DeputyOfficers": [
       {
-        "Title": "Mr",
-        "FamilyName": "Poon",
-        "GivenNames": "Bruce ",
+        "Title": "Ms",
+        "FamilyName": "Sutton",
+        "GivenNames": "Alicia",
+        "Capacity": "Deputy Registered Officer",
         "Address": {
-          "Line1": "4/15 Exploration Lane",
-          "Suburb": "Melbourne",
-          "State": "VIC",
-          "Postcode": 3000
+          "Line1": "24 Malvolio Road",
+          "Suburb": "Coolbellup",
+          "State": "WA",
+          "Postcode": 6163
         }
       },
       {
-        "Title": "Mr",
 ```
 <sup><a href='/src/Tests/Snippets.PartiesSampleJson.verified.txt#L1-L34' title='Snippet source file'>snippet source</a> | <a href='#snippet-Snippets.PartiesSampleJson.verified.txt' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
@@ -280,7 +280,7 @@ var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
 Directory.CreateDirectory(directory);
 DataLoader.Export(directory);
 ```
-<sup><a href='/src/Tests/Snippets.cs#L19-L56' title='Snippet source file'>snippet source</a> | <a href='#snippet-usage' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L14-L51' title='Snippet source file'>snippet source</a> | <a href='#snippet-usage' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -298,7 +298,7 @@ var faker = new Faker<Target>()
         setter: (f, _) => f.AustralianElectorates().Name());
 var targetInstance = faker.Generate();
 ```
-<sup><a href='/src/Tests/Snippets.cs#L88-L98' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagebogus' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L83-L93' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagebogus' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -309,7 +309,7 @@ var targetInstance = faker.Generate();
 ```cs
 var pathToPng = DetailMaps.MapForElectorate("Bass");
 ```
-<sup><a href='/src/Tests/Snippets.cs#L62-L64' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagedetailmaps' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L57-L59' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagedetailmaps' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -389,7 +389,7 @@ return new()
     }
 };
 ```
-<sup><a href='/src/AustralianElectorates/DataLoader.cs#L79-L99' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/AustralianElectorates/DataLoader.cs#L74-L94' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -398,6 +398,12 @@ return new()
 Part of [Geospatial Data Abstraction Library (GDAL)](https://www.gdal.org/)
 
  * Download https://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries
+
+
+#### Ensure in path
+
+ * C:\Tools\gdal\bin
+ * C:\Tools\gdal\bin\gdal\apps\
 
 
 ### MapShaper

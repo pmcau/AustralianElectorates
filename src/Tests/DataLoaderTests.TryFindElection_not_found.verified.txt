@@ -1,7 +1,7 @@
-{
+﻿{
   Type: ElectionNotFoundException,
   Message: Unable to find election for Parliament '0'.,
-  StackTrace: 
+  StackTrace:
 at AustralianElectorates.DataLoader.FindElection(Int32 parliament)
 at DataLoaderTests.<>c__DisplayClass23_0.<TryFindElection_not_found>b__0()
 }

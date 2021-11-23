@@ -1,5 +1,4 @@
-﻿using System.Threading.Tasks;
-using AustralianElectorates;
+﻿using AustralianElectorates;
 using VerifyXunit;
 using Xunit;
 

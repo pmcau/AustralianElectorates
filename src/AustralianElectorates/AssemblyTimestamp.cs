@@ -1,7 +1,4 @@
-﻿using System;
-using System.IO;
-
-static class AssemblyTimestamp
+﻿static class AssemblyTimestamp
 {
     static AssemblyTimestamp()
     {

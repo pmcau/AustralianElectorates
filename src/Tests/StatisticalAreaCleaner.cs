@@ -1,6 +1,4 @@
-﻿using System.IO;
-
-public static class StatisticalAreaCleaner
+﻿public static class StatisticalAreaCleaner
 {
     public static void DeleteStatisticalAreaFiles(string extract)
     {

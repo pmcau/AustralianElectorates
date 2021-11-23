@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.IO;
+﻿using System.Drawing;
 using System.IO.Compression;
-using System.Linq;
-using System.Threading.Tasks;
 using AustralianElectorates;
 using GeoJSON.Net.Feature;
 using Xunit;
@@ -273,7 +268,6 @@ public class Sync
             writer.WriteLine(@"
 // ReSharper disable IdentifierTypo
 // ReSharper disable RedundantDefaultMemberInitializer
-using System.Linq;
 
 namespace AustralianElectorates
 {

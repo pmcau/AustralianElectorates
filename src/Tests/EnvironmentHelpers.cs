@@ -1,6 +1,4 @@
-﻿using System;
-
-static class EnvironmentHelpers
+﻿static class EnvironmentHelpers
 {
     public static void AppendToPath(string path)
     {

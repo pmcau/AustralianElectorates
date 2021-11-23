@@ -1,6 +1,4 @@
-﻿using System.IO;
-
-public static class DataLocations
+﻿public static class DataLocations
 {
     static DataLocations()
     {

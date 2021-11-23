@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Bogus;
+﻿using Bogus;
 
 namespace AustralianElectorates.Bogus
 {

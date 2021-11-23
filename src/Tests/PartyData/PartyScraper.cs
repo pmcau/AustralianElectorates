@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Globalization;
 using AecModels;
 using AustralianElectorates;
 using Officer = AustralianElectorates.Officer;
@@ -84,7 +79,7 @@ static class PartyScraper
     {
         var abbreviation = detail.Abbreviation?.Replace(".", "");
         var code = GetCode(detail.NameOfParty, abbreviation, null, codes);
-        return new Party
+        return new()
         {
             Id = detail.Id,
             Name = detail.NameOfParty,
@@ -129,7 +124,7 @@ static class PartyScraper
     static Branch ToBranch(AecModels.Branch branch, string partyCode, Dictionary<string, string> codes)
     {
         var abbreviation = branch.Abbreviation?.Replace(".", "");
-        return new Branch
+        return new()
         {
             Id = branch.Id,
             Name = branch.NameOfParty,
@@ -195,7 +190,7 @@ static class PartyScraper
             line3 = null;
         }
 
-        return new Address
+        return new()
         {
             State = (State) Enum.Parse(typeof(State), address.State!),
             Line1 = line1,

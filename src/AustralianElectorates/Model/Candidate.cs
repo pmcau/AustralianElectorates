@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace AustralianElectorates
+﻿namespace AustralianElectorates
 {
     public interface ICandidate
     {

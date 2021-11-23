@@ -1,8 +1,4 @@
-﻿using System.Diagnostics;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Threading.Tasks;
+﻿using System.Net.Http;
 using CountryData;
 using HtmlAgilityPack;
 
@@ -31,8 +27,7 @@ static class PostcodeScraper
             var tds = tr.SelectNodes("td");
             if (tds != null && tds.Count > 3)
             {
-                yield return new AecLocalityData
-                (
+                yield return new(
                     //State = tds[0].InnerText.ToUpper().Trim(),
                     place: tds[1].InnerText.ToUpper().Trim().ToTitleCase(),
                     postcode: postcode,

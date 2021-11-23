@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using AustralianElectorates;
+﻿using AustralianElectorates;
 using GeoJSON.Net.Feature;
 using GeoJSON.Net.Geometry;
 

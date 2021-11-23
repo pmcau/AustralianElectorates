@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "Id": 1339,
     "Name": "Animal Justice Party",
@@ -20,15 +20,15 @@
     },
     "DeputyOfficers": [
       {
-        "Title": "Mr",
-        "FamilyName": "Poon",
-        "GivenNames": "Bruce ",
+        "Title": "Ms",
+        "FamilyName": "Sutton",
+        "GivenNames": "Alicia",
+        "Capacity": "Deputy Registered Officer",
         "Address": {
-          "Line1": "4/15 Exploration Lane",
-          "Suburb": "Melbourne",
-          "State": "VIC",
-          "Postcode": 3000
+          "Line1": "24 Malvolio Road",
+          "Suburb": "Coolbellup",
+          "State": "WA",
+          "Postcode": 6163
         }
       },
       {
-        "Title": "Mr",

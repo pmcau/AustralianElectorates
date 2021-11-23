@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace AustralianElectorates
+﻿namespace AustralianElectorates
 {
     public interface IPartyOrBranch
     {

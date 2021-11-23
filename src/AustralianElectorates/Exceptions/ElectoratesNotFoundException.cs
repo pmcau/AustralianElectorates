@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace AustralianElectorates
+﻿namespace AustralianElectorates
 {
     public class ElectoratesNotFoundException : Exception
     {

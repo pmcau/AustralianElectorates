@@ -1,5 +1,4 @@
-﻿using System;
-using AustralianElectorates;
+﻿using AustralianElectorates;
 
 class ElectorateEx :
     Electorate
