@@ -1,5 +1,4 @@
-﻿#if(DEBUG)
-using System.Drawing;
+﻿using System.Drawing;
 using System.IO.Compression;
 using AustralianElectorates;
 using GeoJSON.Net.Feature;
@@ -331,4 +330,3 @@ public partial class ElectorateDataSet : DataSet
             .Replace("'", "");
     }
 }
-#endif
