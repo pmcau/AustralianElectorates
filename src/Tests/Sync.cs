@@ -275,7 +275,7 @@ public static partial class DataLoader
 
             writer.WriteLine(@"
     static void InitNamed()
-        {");
+    {");
             foreach (var electorate in electorates)
             {
                 var name = GetCSharpName(electorate);
@@ -304,7 +304,7 @@ public static partial class DataLoader
 // ReSharper disable RedundantDefaultMemberInitializer
 using Bogus;
 
-namespace AustralianElectorates.Bogus
+namespace AustralianElectorates.Bogus;
 
 public partial class ElectorateDataSet : DataSet
 {");
