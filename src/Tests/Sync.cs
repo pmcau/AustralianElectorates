@@ -268,7 +268,8 @@ public class Sync
 // ReSharper disable IdentifierTypo
 // ReSharper disable RedundantDefaultMemberInitializer
 
-namespace AustralianElectorates
+namespace AustralianElectorates;
+
 public static partial class DataLoader
 {");
 
