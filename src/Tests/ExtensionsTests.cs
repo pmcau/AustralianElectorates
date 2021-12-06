@@ -1,6 +1,4 @@
-﻿using Xunit;
-
-public class ExtensionsTests
+﻿public class ExtensionsTests
 {
     [Theory]
     [InlineData("McLACHLAN, Craig Steven", "McLachlan, Craig Steven")]

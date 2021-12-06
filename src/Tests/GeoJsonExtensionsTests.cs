@@ -1,6 +1,5 @@
 ﻿using GeoJSON.Net.Feature;
 using GeoJSON.Net.Geometry;
-using Xunit;
 
 public class GeoJsonExtensionsTests
 {

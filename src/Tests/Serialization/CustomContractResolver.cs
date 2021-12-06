@@ -1,6 +1,5 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
-using VerifyTests;
 
 public class CustomContractResolver :
     DefaultContractResolver

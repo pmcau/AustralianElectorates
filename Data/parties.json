@@ -426,13 +426,13 @@
         "DeputyOfficers": [
           {
             "Title": "Ms",
-            "FamilyName": "Hay",
-            "GivenNames": "Elizabeth",
+            "FamilyName": "Johnston",
+            "GivenNames": "Sophie",
             "Address": {
-              "Line1": "22 Alarmon Crescent",
-              "Suburb": "Dunlop",
+              "Line1": "GPO Box 3065",
+              "Suburb": "Canberra",
               "State": "ACT",
-              "Postcode": 2615
+              "Postcode": 2601
             }
           }
         ]
@@ -982,6 +982,28 @@
         "Suburb": "Mullumbimby",
         "State": "NSW",
         "Postcode": 2482
+      }
+    }
+  },
+  {
+    "Id": 1496,
+    "Name": "Indigenous - Aboriginal Party of Australia",
+    "Code": "Indigenous Party of Australia",
+    "Abbreviation": "Indigenous Party of Australia",
+    "RegisterDate": "29 November 2021",
+    "AmendmentDate": "29 November 2021",
+    "Address": "46 Woy Woy Road\nWOY WOY NSW 2256",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Whyman",
+      "GivenNames": "Owen",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "13 Hood Street",
+        "Line2": "The Mallee",
+        "Suburb": "Wilcannia",
+        "State": "NSW",
+        "Postcode": 2836
       }
     }
   },
@@ -2024,8 +2046,8 @@
         "Address": "PO Box 48\nBROADWAY NSW 2007",
         "Officer": {
           "Title": "Mr",
-          "FamilyName": "Maltby",
-          "GivenNames": "Christopher",
+          "FamilyName": "Lee",
+          "GivenNames": "Seamus Myles",
           "Address": {
             "Line1": "Suite D, Level 1",
             "Line2": "275 Broadway",

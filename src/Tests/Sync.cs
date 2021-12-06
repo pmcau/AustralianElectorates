@@ -2,7 +2,6 @@
 using System.IO.Compression;
 using AustralianElectorates;
 using GeoJSON.Net.Feature;
-using Xunit;
 
 public class Sync
 {

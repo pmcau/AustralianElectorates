@@ -1,6 +1,4 @@
-﻿using Xunit;
-
-public class PdfToPngTests
+﻿public class PdfToPngTests
 {
     [Fact]
     [Trait("Category", "Integration")]

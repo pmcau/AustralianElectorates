@@ -1,10 +1,8 @@
 
 // ReSharper disable IdentifierTypo
 // ReSharper disable RedundantDefaultMemberInitializer
-using System.Linq;
 
-namespace AustralianElectorates;
-
+namespace AustralianElectorates
 public static partial class DataLoader
 {
 

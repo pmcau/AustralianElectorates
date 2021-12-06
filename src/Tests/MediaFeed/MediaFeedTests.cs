@@ -1,6 +1,4 @@
-﻿using Xunit;
-
-public class MediaFeedTests
+﻿public class MediaFeedTests
 {
     [Fact]
     public void Run()

@@ -1,6 +1,4 @@
-﻿using Xunit;
-
-public class PartyScraperTests
+﻿public class PartyScraperTests
 {
     [Fact]
     [Trait("Category", "Integration")]

@@ -1,6 +1,5 @@
 ﻿using AustralianElectorates;
 using HtmlAgilityPack;
-using Xunit;
 
 static class ElectoratesScraper
 {

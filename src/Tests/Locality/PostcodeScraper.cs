@@ -1,5 +1,4 @@
-﻿using System.Net.Http;
-using CountryData;
+﻿using CountryData;
 using HtmlAgilityPack;
 
 static class PostcodeScraper

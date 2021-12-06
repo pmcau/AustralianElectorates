@@ -1,5 +1,4 @@
 ﻿using AustralianElectorates;
-using Xunit;
 
 public class DetailMapsTests
 {

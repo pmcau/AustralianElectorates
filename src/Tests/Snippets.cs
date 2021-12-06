@@ -1,8 +1,6 @@
 ﻿using AustralianElectorates;
 using AustralianElectorates.Bogus;
 using Bogus;
-using VerifyXunit;
-using Xunit;
 
 // ReSharper disable UnusedVariable
 [UsesVerify]

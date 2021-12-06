@@ -1,6 +1,4 @@
 using AustralianElectorates;
-using VerifyXunit;
-using Xunit;
 
 [UsesVerify]
 public class DataLoaderTests
