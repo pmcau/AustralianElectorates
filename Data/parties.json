@@ -1116,11 +1116,10 @@
         "Address": "PO Box 940\nSPRING HILL QLD 4004",
         "Officer": {
           "Title": "Mr",
-          "FamilyName": "O'Dwyer",
-          "GivenNames": "Michael",
+          "FamilyName": "Folo",
+          "GivenNames": "Lincoln",
           "Address": {
-            "Line1": "Floor 1",
-            "Line2": "281 Sandgate Road",
+            "Line1": "Floor 1, 281 Sandgate Road",
             "Suburb": "Albion",
             "State": "QLD",
             "Postcode": 4010
@@ -2058,16 +2057,15 @@
         },
         "DeputyOfficers": [
           {
-            "Title": "Ms",
-            "FamilyName": "Wallace",
-            "GivenNames": "Amalina",
+            "Title": "Mr",
+            "FamilyName": "Maltby",
+            "GivenNames": "Christopher",
+            "Capacity": "Deputy Registered Officer",
             "Address": {
-              "Line1": "Suite D",
-              "Line2": "Level 1",
-              "Line3": "275 Broadway",
-              "Suburb": "Glebe",
+              "Line1": "PO Box 48",
+              "Suburb": "Broadway",
               "State": "NSW",
-              "Postcode": 2037
+              "Postcode": 2007
             }
           }
         ]
@@ -2194,27 +2192,6 @@
         }
       }
     ]
-  },
-  {
-    "Id": 1484,
-    "Name": "The New Liberals",
-    "Code": "TNL",
-    "Abbreviation": "TNL",
-    "RegisterDate": "3 June 2021",
-    "AmendmentDate": "3 June 2021",
-    "Address": "PO Box 190\nNORTHBRIDGE NSW 1560",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Kline",
-      "GivenNames": "Victor Alan",
-      "Capacity": "Registered Officer",
-      "Address": {
-        "Line1": "53 Martin Place",
-        "Suburb": "Sydney",
-        "State": "NSW",
-        "Postcode": 2000
-      }
-    }
   },
   {
     "Id": 1483,

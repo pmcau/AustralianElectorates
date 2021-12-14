@@ -3,6 +3,7 @@
 // ReSharper disable RedundantDefaultMemberInitializer
 
 namespace AustralianElectorates;
+
 public static partial class DataLoader
 {
 

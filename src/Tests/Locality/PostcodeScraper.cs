@@ -24,7 +24,7 @@ static class PostcodeScraper
         foreach (var tr in table.SelectNodes("tr").Where(p => !p.HasAttributes))
         {
             var tds = tr.SelectNodes("td");
-            if (tds != null && tds.Count > 3)
+            if (tds is { Count: > 3 })
             {
                 yield return new(
                     //State = tds[0].InnerText.ToUpper().Trim(),
