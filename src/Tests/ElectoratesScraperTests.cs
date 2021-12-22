@@ -20,6 +20,6 @@ public class ElectoratesScraperTests
         var bean = await ElectoratesScraper.ScrapeCurrentElectorate("bean", State.ACT);
         var batman = await ElectoratesScraper.ScrapeCurrentElectorate("batman", State.VIC);
         var melbourne = await ElectoratesScraper.ScrapeCurrentElectorate("melbourne", State.VIC);
-        return Verifier.Verify(new {northernTerritory, lingiari, denison, melbourne, banks, hunter, batman, spence, cook, bean, fenner, canberra, bass});
+        return Verify(new {northernTerritory, lingiari, denison, melbourne, banks, hunter, batman, spence, cook, bean, fenner, canberra, bass});
     }
 }

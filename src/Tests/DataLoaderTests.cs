@@ -6,7 +6,7 @@ public class DataLoaderTests
     [Fact]
     public Task Electorates()
     {
-        return Verifier.Verify(DataLoader.Electorates.Select(x => x.Name));
+        return Verify(DataLoader.Electorates.Select(x => x.Name));
     }
 
     [Fact]
@@ -39,13 +39,13 @@ public class DataLoaderTests
     [Fact]
     public Task FindInvalidateElectorates()
     {
-        return Verifier.Verify(DataLoader.FindInvalidateElectorates("not Found", "Bass"));
+        return Verify(DataLoader.FindInvalidateElectorates("not Found", "Bass"));
     }
 
     [Fact]
     public Task FindInvalidateElectorates_by_short_name()
     {
-        return Verifier.Verify(DataLoader.FindInvalidateElectorates("not Found", "port-adelaide"));
+        return Verify(DataLoader.FindInvalidateElectorates("not Found", "port-adelaide"));
     }
 
     [Fact]
@@ -84,7 +84,7 @@ public class DataLoaderTests
             }
 
             DataLoader.Export(directory);
-            await Verifier.Verify(Directory.EnumerateFiles(directory, "*.*", SearchOption.AllDirectories).Count());
+            await Verify(Directory.EnumerateFiles(directory, "*.*", SearchOption.AllDirectories).Count());
         }
         finally
         {
@@ -96,35 +96,35 @@ public class DataLoaderTests
     public Task Get2016State()
     {
         var data = DataLoader.Maps2016.GetState(State.ACT);
-        return Verifier.Verify(data.GeoJson.Substring(0, 200));
+        return Verify(data.GeoJson.Substring(0, 200));
     }
 
     [Fact]
     public Task Get2019State()
     {
         var data = DataLoader.Maps2019.GetState(State.ACT);
-        return Verifier.Verify(data.GeoJson.Substring(0, 200));
+        return Verify(data.GeoJson.Substring(0, 200));
     }
 
     [Fact]
     public Task GetFutureState()
     {
         var data = DataLoader.MapsFuture.GetState(State.ACT);
-        return Verifier.Verify(data.GeoJson.Substring(0, 200));
+        return Verify(data.GeoJson.Substring(0, 200));
     }
 
     [Fact]
     public Task Get2016Electorate()
     {
         var data = DataLoader.Maps2016.GetElectorate("fenner");
-        return Verifier.Verify(data.GeoJson.Substring(0, 200));
+        return Verify(data.GeoJson.Substring(0, 200));
     }
 
     [Fact]
     public Task Get2019Electorate()
     {
         var data = DataLoader.Maps2019.GetElectorate("fenner");
-        return Verifier.Verify(data.GeoJson.Substring(0, 200));
+        return Verify(data.GeoJson.Substring(0, 200));
     }
 
     [Fact]
@@ -138,28 +138,28 @@ public class DataLoaderTests
     public Task GetFutureElectorate()
     {
         var data = DataLoader.MapsFuture.GetElectorate("fenner");
-        return Verifier.Verify(data.GeoJson.Substring(0, 200));
+        return Verify(data.GeoJson.Substring(0, 200));
     }
 
     [Fact]
     public Task GetFutureElectorateExtension()
     {
         var data = DataLoader.Fenner.GetFutureMap();
-        return Verifier.Verify(data.GeoJson.Substring(0, 200));
+        return Verify(data.GeoJson.Substring(0, 200));
     }
 
     [Fact]
     public Task GetCurrentElectorateExtension()
     {
         var data = DataLoader.Fenner.GetFutureMap();
-        return Verifier.Verify(data.GeoJson.Substring(0, 200));
+        return Verify(data.GeoJson.Substring(0, 200));
     }
 
     [Fact]
     public Task LoadAll()
     {
         DataLoader.LoadAll();
-        return Verifier.Verify(new
+        return Verify(new
         {
             FutureLoadedElectorateMaps = DataLoader.MapsFuture.LoadedElectorates.Count,
             FutureLoadedStateMaps = DataLoader.MapsFuture.LoadedStates.Count,
@@ -179,7 +179,7 @@ public class DataLoaderTests
     [Fact]
     public Task Elections()
     {
-        return Verifier.Verify(DataLoader.Elections.Select(election => new
+        return Verify(DataLoader.Elections.Select(election => new
         {
             election.Parliament,
             election.Year,

@@ -60,19 +60,19 @@ public class Snippets
     [Fact]
     public Task ElectoratesSampleJson()
     {
-        return Verifier.Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.ElectoratesJsonPath).Take(50)));
+        return Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.ElectoratesJsonPath).Take(50)));
     }
 
     [Fact]
     public Task LocalitiesSampleJson()
     {
-        return Verifier.Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.LocalitiesPath).Take(21)));
+        return Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.LocalitiesPath).Take(21)));
     }
 
     [Fact]
     public Task PartiesSampleJson()
     {
-        return Verifier.Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.PartiesJsonPath).Take(34)));
+        return Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.PartiesJsonPath).Take(34)));
     }
 
     [Fact]
