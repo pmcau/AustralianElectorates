@@ -128,14 +128,16 @@ Sample:
     "AmendmentDate": "3 May 2011",
     "Address": "PO Box Q1688\nQUEEN VICTORIA BUILDING NSW 1230",
     "Officer": {
-      "Title": "Ms",
-      "FamilyName": "Bellenger",
-      "GivenNames": "Carol",
+      "Title": "Mr ",
+      "FamilyName": "Schultz",
+      "GivenNames": "Ben ",
+      "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "8/80 John Street",
-        "Suburb": "Pyrmont",
+        "Line1": "Suite 13, Level 5",
+        "Line2": "35 Buckingham Street",
+        "Suburb": "Surry Hills",
         "State": "NSW",
-        "Postcode": 2009
+        "Postcode": 2010
       }
     },
     "DeputyOfficers": [
@@ -150,8 +152,6 @@ Sample:
           "State": "WA",
           "Postcode": 6163
         }
-      },
-      {
 ```
 <sup><a href='/src/Tests/Snippets.PartiesSampleJson.verified.txt#L1-L34' title='Snippet source file'>snippet source</a> | <a href='#snippet-Snippets.PartiesSampleJson.verified.txt' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->

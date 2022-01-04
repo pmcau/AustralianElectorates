@@ -8,14 +8,16 @@
     "AmendmentDate": "3 May 2011",
     "Address": "PO Box Q1688\nQUEEN VICTORIA BUILDING NSW 1230",
     "Officer": {
-      "Title": "Ms",
-      "FamilyName": "Bellenger",
-      "GivenNames": "Carol",
+      "Title": "Mr ",
+      "FamilyName": "Schultz",
+      "GivenNames": "Ben ",
+      "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "8/80 John Street",
-        "Suburb": "Pyrmont",
+        "Line1": "Suite 13, Level 5",
+        "Line2": "35 Buckingham Street",
+        "Suburb": "Surry Hills",
         "State": "NSW",
-        "Postcode": 2009
+        "Postcode": 2010
       }
     },
     "DeputyOfficers": [
@@ -30,5 +32,3 @@
           "State": "WA",
           "Postcode": 6163
         }
-      },
-      {
