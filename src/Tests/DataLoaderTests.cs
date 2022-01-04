@@ -27,13 +27,13 @@ public class DataLoaderTests
     public Task TryFindElectorate_not_found()
     {
         Assert.False(DataLoader.TryFindElectorate("not Found", out _));
-        return Verifier.Throws(() => DataLoader.FindElectorate("not Found"));
+        return Throws(() => DataLoader.FindElectorate("not Found"));
     }
 
     [Fact]
     public Task ValidateElectorates()
     {
-        return Verifier.Throws(() => DataLoader.ValidateElectorates("not Found", "Bass"));
+        return Throws(() => DataLoader.ValidateElectorates("not Found", "Bass"));
     }
 
     [Fact]
@@ -200,6 +200,6 @@ public class DataLoaderTests
     {
         var parliament = 0;
         Assert.False(DataLoader.TryFindElection(parliament, out _));
-        return Verifier.Throws(() => DataLoader.FindElection(parliament));
+        return Throws(() => DataLoader.FindElection(parliament));
     }
 }
