@@ -118,40 +118,6 @@
     ]
   },
   {
-    "Id": 1330,
-    "Name": "Australia First Party (NSW) Incorporated",
-    "Code": "Australia First Party",
-    "Abbreviation": "Australia First Party",
-    "RegisterDate": "16 June 2010",
-    "AmendmentDate": "16 June 2010",
-    "Address": "PO Box 593\nROCKDALE NSW 2216",
-    "Officer": {
-      "Title": "Dr",
-      "FamilyName": "Saleam",
-      "GivenNames": "James",
-      "Address": {
-        "Line1": "725 Princes Highway",
-        "Suburb": "Tempe",
-        "State": "NSW",
-        "Postcode": 2044
-      }
-    },
-    "DeputyOfficers": [
-      {
-        "Title": "Ms",
-        "FamilyName": "Sharp",
-        "GivenNames": "Kim",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "26 Ticbourne Crescent",
-          "Suburb": "Kooringal",
-          "State": "NSW",
-          "Postcode": 2650
-        }
-      }
-    ]
-  },
-  {
     "Id": 1443,
     "Name": "Australian Affordable Housing Party",
     "Code": "Affordable Housing Party",
@@ -936,27 +902,6 @@
     ]
   },
   {
-    "Id": 1474,
-    "Name": "Independents CAN",
-    "Code": "Independents CAN",
-    "Abbreviation": "Independents CAN",
-    "RegisterDate": "10 April 2019",
-    "AmendmentDate": "10 April 2019",
-    "Address": "1/53 Stuart Street\nMULLUMBIMBY NSW 2482",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Tait",
-      "GivenNames": "James ",
-      "Capacity": "Registered Officer",
-      "Address": {
-        "Line1": "1/53 Stuart Street",
-        "Suburb": "Mullumbimby",
-        "State": "NSW",
-        "Postcode": 2482
-      }
-    }
-  },
-  {
     "Id": 1496,
     "Name": "Indigenous - Aboriginal Party of Australia",
     "Code": "Indigenous Party of Australia",
@@ -1348,26 +1293,6 @@
     }
   },
   {
-    "Id": 1428,
-    "Name": "Love Australia or Leave",
-    "Code": "LAOL",
-    "Abbreviation": "LAOL",
-    "RegisterDate": "12 October 2016",
-    "AmendmentDate": "12 October 2016",
-    "Address": "PO Box 10113\nRASMUSSEN QLD 4815",
-    "Officer": {
-      "Title": "Ms",
-      "FamilyName": "Vuga",
-      "GivenNames": "Kim",
-      "Address": {
-        "Line1": "27 Lockheed Circuit",
-        "Suburb": "St Clair",
-        "State": "NSW",
-        "Postcode": 2759
-      }
-    }
-  },
-  {
     "Id": 1485,
     "Name": "No5G Party",
     "Code": "No5G ",
@@ -1462,94 +1387,6 @@
         "Postcode": 5081
       }
     }
-  },
-  {
-    "Id": 1385,
-    "Name": "Science Party",
-    "Code": "Science",
-    "Abbreviation": "Science",
-    "RegisterDate": "2 July 2013",
-    "AmendmentDate": "2 July 2013",
-    "Address": "49 Harrington St\nENMORE NSW 2042",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Finno",
-      "GivenNames": "Andrea",
-      "Address": {
-        "Line1": "49 Harrington St",
-        "Suburb": "Enmore",
-        "State": "NSW",
-        "Postcode": 2042
-      }
-    },
-    "DeputyOfficers": [
-      {
-        "FamilyName": "Feigin",
-        "GivenNames": "Alexey",
-        "Address": {
-          "Line1": "39 Rodman Ave",
-          "Suburb": "Maroubra",
-          "State": "NSW",
-          "Postcode": 2035
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Wolfendale ",
-        "GivenNames": "Drew",
-        "Address": {
-          "Line1": "3/15 Kintore Avenue",
-          "Suburb": "Prospect",
-          "State": "SA",
-          "Postcode": 5082
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "James",
-        "GivenNames": "Lukanis",
-        "Address": {
-          "Line1": "49 Harrington Street",
-          "Suburb": "Enmore",
-          "State": "NSW",
-          "Postcode": 2042
-        }
-      }
-    ]
-  },
-  {
-    "Id": 1327,
-    "Name": "Secular Party of Australia",
-    "Code": "Secular Party of Australia",
-    "Abbreviation": "Secular Party of Australia",
-    "RegisterDate": "16 June 2010",
-    "AmendmentDate": "16 June 2010",
-    "Address": "PO Box 6004\nMELBOURNE VIC 8008",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Haddrill",
-      "GivenNames": "Shaun",
-      "Address": {
-        "Line1": "30-40 The Esplanade",
-        "Suburb": "Burleigh Heads",
-        "State": "QLD",
-        "Postcode": 4220
-      }
-    },
-    "DeputyOfficers": [
-      {
-        "Title": "Ms",
-        "FamilyName": "Sceats",
-        "GivenNames": "Rosemary",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "7 Cypress Court",
-          "Suburb": "Macleod",
-          "State": "VIC",
-          "Postcode": 3085
-        }
-      }
-    ]
   },
   {
     "Id": 1402,
@@ -1841,6 +1678,17 @@
     },
     "DeputyOfficers": [
       {
+        "Title": "Ms",
+        "FamilyName": "Scrine",
+        "GivenNames": "Clare",
+        "Address": {
+          "Line1": "42 Wingarra Street",
+          "Suburb": "Yeerongpilly",
+          "State": "QLD",
+          "Postcode": 4105
+        }
+      },
+      {
         "Title": "Mr",
         "FamilyName": "Irving",
         "GivenNames": "Damien",
@@ -1895,18 +1743,6 @@
           "Suburb": "Fullarton",
           "State": "SA",
           "Postcode": 5063
-        }
-      },
-      {
-        "Title": "Ms",
-        "FamilyName": "Allom",
-        "GivenNames": "Katinka",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "29/28 Carwoola Street",
-          "Suburb": "Bardon",
-          "State": "QLD",
-          "Postcode": 4065
         }
       },
       {
