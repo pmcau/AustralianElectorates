@@ -13,7 +13,7 @@ public class CustomContractResolver :
             return jsonProperties;
         }
 
-        List<JsonProperty> properties = new() {first};
+        List<JsonProperty> properties = new() { first };
         properties.AddRange(jsonProperties.Where(x => x.PropertyName != "properties"));
         return properties;
     }
@@ -21,7 +21,15 @@ public class CustomContractResolver :
     protected override JsonProperty CreateProperty(MemberInfo member, MemberSerialization memberSerialization)
     {
         var property = base.CreateProperty(member, memberSerialization);
-        property.SkipEmptyCollections(member);
+        property.ShouldSerialize = o =>
+        {
+            if (o is ICollection collection)
+            {
+                return collection.Count > 0;
+            }
+
+            return true;
+        };
         return property;
     }
 }

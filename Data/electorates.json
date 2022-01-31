@@ -1062,7 +1062,8 @@
     "ExistInFuture": false,
     "Description": "Denison covers an area of approximately 289 sq km from Austins Ferry in the north to Kingston in the south, from Hobart in the east to Collinsvale in the west. The City of Hobart and environs, the City of Glenorchy and parts of the Kingborough municipality are in this division.",
     "DemographicRating": "Inner Metropolitan",
-    "NameDerivation": "Named after Sir William Denison 1804-71, Lieutenant-Governor of Tasmania 1847-55 and Governor of New South Wales 1855-61."
+    "NameDerivation": "Named after Sir William Denison 1804-71, Lieutenant-Governor of Tasmania 1847-55 and Governor of New South Wales 1855-61.",
+    "Locations": []
   },
   {
     "Name": "Franklin",
@@ -5732,7 +5733,8 @@
     "ExistInFuture": false,
     "Description": "Port Adelaide covers an area of approximately 181 sq km from Buckland Park in the north down to Grange Road in the south whilst its eastern boundary takes in parts of Salisbury. The area also includes Torrens Island and Garden Island. Other suburbs in this division are Alberton, Beverley, Birkenhead, Cheltenham, Findon, Kilkenny, Largs Bay, Mansfield Park, North Haven, Ottoway, Parafield Gardens, Paralowie, Pennington, Port Adelaide, Queenstown, Rosewater, Salisbury Downs, Seaton (part), Semaphore, Woodville and West Croydon.",
     "DemographicRating": "Inner Metropolitan",
-    "NameDerivation": "Named after the locality which was discovered by Collet Barker in 1831."
+    "NameDerivation": "Named after the locality which was discovered by Collet Barker in 1831.",
+    "Locations": []
   },
   {
     "Name": "Sturt",
@@ -5947,7 +5949,8 @@
     "ExistInFuture": false,
     "Description": "Wakefield covers an area of approximately 6&nbsp;407 sq km from Salisbury in the northern suburbs of Adelaide to Clare in the Clare Valley, 135 km north of Adelaide. The main suburbs include Elizabeth, Salisbury (part), Craigmore and Munno Para. The towns of Virginia, Gawler, Port Wakefield (part), Balaklava, Clare, Kapunda, Riverton, Mallala, Freeling, Tarlee and Williamstown are also included in this division.",
     "DemographicRating": "Rural",
-    "NameDerivation": "Named after Edward Gibbon Wakefield 1796-1862, whose theories of colonisation had a great impact on the formation of settlements in Western Australia and South Australia."
+    "NameDerivation": "Named after Edward Gibbon Wakefield 1796-1862, whose theories of colonisation had a great impact on the formation of settlements in Western Australia and South Australia.",
+    "Locations": []
   },
   {
     "Name": "Spence",
@@ -6566,7 +6569,8 @@
     "ExistInFuture": false,
     "Description": "The Division of Batman is located in Melbourne's northern suburbs. It covers an area of approximately 66 sq km from Thomastown/Bundoora in the north to Clifton Hill in the south, with Merri Creek providing the vast majority of the western boundary and Darebin Creek, parts of Macleod and Plenty Road Bundoora providing the eastern boundary. The suburbs of Alphington, Bundoora (part), Clifton Hill, Coburg North (part), Fairfield, Kingsbury, Macleod (part), Northcote, Preston, Reservoir, Thomastown (part) and Thornbury are in this division.",
     "DemographicRating": "Inner Metropolitan",
-    "NameDerivation": "Named after John Batman 1801-39, the early settler and explorer, known as the 'Founder of Melbourne'."
+    "NameDerivation": "Named after John Batman 1801-39, the early settler and explorer, known as the 'Founder of Melbourne'.",
+    "Locations": []
   },
   {
     "Name": "Bendigo",
@@ -10662,7 +10666,8 @@
         "Swing": -1.27,
         "PartyId": 195
       }
-    }
+    },
+    "Locations": []
   },
   {
     "Name": "Lalor",
@@ -12268,7 +12273,8 @@
     "ExistInFuture": false,
     "Description": "The Division of McMillan is located in south-eastern Victoria. It covers an area of approximately 8&nbsp;358 sq km from Pakenham in the west to Newborough in the east and Noojee in the north to Wilsons Promontory in the south. The main towns include Drouin, Erica, Foster, Inverloch, Korumburra, Leongatha, Mirboo North, Moe, Neerim South, Newborough, Nyora, Pakenham Trafalgar, Walhalla, Warragul, Wonthaggi, Yallourn North and Yarragon.",
     "DemographicRating": "Rural",
-    "NameDerivation": "Named after Angus McMillan 1810-65, pioneer and explorer who made several trips into Gippsland."
+    "NameDerivation": "Named after Angus McMillan 1810-65, pioneer and explorer who made several trips into Gippsland.",
+    "Locations": []
   },
   {
     "Name": "Melbourne",
@@ -12406,7 +12412,8 @@
     "ExistInFuture": false,
     "Description": "The Division of Melbourne Ports is located to the south of Melbourne's central business district. It covers an area of approximately 40 sq km around the north and north-eastern shores of Port Phillip Bay. The suburbs include Albert Park, Balaclava, Caulfield, Caulfield East, Caulfield North, part of Elsternwick, Elwood, Middle Park, Port Melbourne, Ripponlea, St Kilda, St Kilda East, St Kilda West, Southbank, South Melbourne and parts of South Yarra and Docklands.",
     "DemographicRating": "Inner Metropolitan",
-    "NameDerivation": "Named after the area in which it is located."
+    "NameDerivation": "Named after the area in which it is located.",
+    "Locations": []
   },
   {
     "Name": "Menzies",
@@ -12540,7 +12547,8 @@
     "ExistInFuture": false,
     "Description": "The Division of Murray is located in northern Victoria. It covers an area of approximately 19&nbsp;500 sq km with boundaries extending from Boort in the north-west corner of the Loddon Shire bordering the Division of Mallee, south to Wedderburn and Inglewood bordering the divisions of Wannon and Bendigo and extending east taking in the local government areas of Campaspe, City of Greater Shepparton and Strathbogie, bordering the divisions of Indi and McEwen. It extends north-east to Yarrawonga joining the State border. The main towns include Avenel, Boort, Bridgewater on Loddon, Cobram, Echuca, Euroa, Kyabram, Mooroopna, Murchison, Nagambie, Nathalia, Numurkah, Rochester, Rushworth, Shepparton, Tatura, Violet Town, Wedderburn and Yarrawonga.",
     "DemographicRating": "Rural",
-    "NameDerivation": "Named after the Murray River which was named by Charles Sturt in 1830 after Sir George Murray, Colonial Secretary."
+    "NameDerivation": "Named after the Murray River which was named by Charles Sturt in 1830 after Sir George Murray, Colonial Secretary.",
+    "Locations": []
   },
   {
     "Name": "Scullin",
@@ -21505,7 +21513,8 @@
         "Swing": -4.96,
         "PartyId": 196
       }
-    }
+    },
+    "Locations": []
   },
   {
     "Name": "Wright",
@@ -23100,7 +23109,8 @@
     "DateGazetted": "2020-07-03",
     "Description": "The Division of Northern Territory covers an area consisting of: <ul><li>the entirety of the Northern Territory;</li><li>the Territory of Christmas Island; and</li><li>the Territory of Cocos (Keeling) Islands.</li></ul>",
     "DemographicRating": "<strong>Provincial</strong> - outside capital cities, but with a majority of enrolment in major provincial cities.",
-    "NameDerivation": "The Northern Territory was surrendered by the State of South Australia and accepted by the Commonwealth on 1 January 1911. It was defined in the Northern Territory Acceptance Act 1910 as that part of Australia which lies to the northward of the twenty-sixth parallel of South Latitude and between the one hundred and twenty-ninth and one hundred and thirty-eighth degrees of East Longitude, together with the bays and gulfs therein, and all and every the islands adjacent to any part of the mainland within such limits as aforesaid, with their rights, members, and appurtenances."
+    "NameDerivation": "The Northern Territory was surrendered by the State of South Australia and accepted by the Commonwealth on 1 January 1911. It was defined in the Northern Territory Acceptance Act 1910 as that part of Australia which lies to the northward of the twenty-sixth parallel of South Latitude and between the one hundred and twenty-ninth and one hundred and thirty-eighth degrees of East Longitude, together with the bays and gulfs therein, and all and every the islands adjacent to any part of the mainland within such limits as aforesaid, with their rights, members, and appurtenances.",
+    "Locations": []
   },
   {
     "Name": "Banks",
@@ -27885,7 +27895,8 @@
         "Swing": -0.24,
         "PartyId": 188
       }
-    }
+    },
+    "Locations": []
   },
   {
     "Name": "Lindsay",
@@ -29270,7 +29281,8 @@
         "Votes": 34683,
         "Swing": 35.64
       }
-    }
+    },
+    "Locations": []
   },
   {
     "Name": "Newcastle",
@@ -29488,7 +29500,8 @@
         "Swing": 4.34,
         "PartyId": 194
       }
-    }
+    },
+    "Locations": []
   },
   {
     "Name": "Page",
@@ -35830,7 +35843,8 @@
         "Swing": 0.56,
         "PartyId": 197
       }
-    }
+    },
+    "Locations": []
   },
   {
     "Name": "Pearce",

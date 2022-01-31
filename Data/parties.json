@@ -115,7 +115,8 @@
           "Postcode": 5008
         }
       }
-    ]
+    ],
+    "Branches": []
   },
   {
     "Id": 1443,
@@ -136,7 +137,9 @@
         "State": "NSW",
         "Postcode": 2131
       }
-    }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
   },
   {
     "Id": 1347,
@@ -156,7 +159,9 @@
         "State": "WA",
         "Postcode": 6017
       }
-    }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
   },
   {
     "Id": 1181,
@@ -225,17 +230,6 @@
       },
       {
         "Title": "Mr",
-        "FamilyName": "Williams",
-        "GivenNames": "Ray",
-        "Address": {
-          "Line1": "41 High Street",
-          "Suburb": "New Norfolk",
-          "State": "TAS",
-          "Postcode": 7140
-        }
-      },
-      {
-        "Title": "Mr",
         "FamilyName": "Butler",
         "GivenNames": "Robert",
         "Address": {
@@ -256,7 +250,8 @@
           "Postcode": 838
         }
       }
-    ]
+    ],
+    "Branches": []
   },
   {
     "Id": 1472,
@@ -302,7 +297,8 @@
           "Postcode": 3193
         }
       }
-    ]
+    ],
+    "Branches": []
   },
   {
     "Id": 1344,
@@ -323,7 +319,9 @@
         "State": "SA",
         "Postcode": 5043
       }
-    }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
   },
   {
     "Id": 2,
@@ -463,7 +461,8 @@
             "State": "NT",
             "Postcode": 820
           }
-        }
+        },
+        "DeputyOfficers": []
       },
       {
         "Id": 198,
@@ -484,7 +483,8 @@
             "State": "SA",
             "Postcode": 5000
           }
-        }
+        },
+        "DeputyOfficers": []
       },
       {
         "Id": 196,
@@ -574,7 +574,8 @@
             "State": "VIC",
             "Postcode": 3008
           }
-        }
+        },
+        "DeputyOfficers": []
       },
       {
         "Id": 197,
@@ -631,7 +632,33 @@
         "State": "QLD",
         "Postcode": 4077
       }
-    }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
+  },
+  {
+    "Id": 1500,
+    "Name": "Australian Values Party",
+    "Code": "AVP",
+    "Abbreviation": "AVP",
+    "RegisterDate": "18 January 2022",
+    "AmendmentDate": "18 January 2022",
+    "Address": "PO Box 3217\nNEWSTEAD QLD 4006",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Russell",
+      "GivenNames": "Heston Graymn",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "Level 5",
+        "Line2": "307 Queen Street",
+        "Suburb": "Brisbane",
+        "State": "QLD",
+        "Postcode": 4000
+      }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
   },
   {
     "Id": 1388,
@@ -652,7 +679,9 @@
         "State": "SA",
         "Postcode": 5061
       }
-    }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
   },
   {
     "Id": 1184,
@@ -687,7 +716,8 @@
           "Postcode": 2068
         }
       }
-    ]
+    ],
+    "Branches": []
   },
   {
     "Id": 1481,
@@ -708,7 +738,9 @@
         "State": "VIC",
         "Postcode": 3723
       }
-    }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
   },
   {
     "Id": 26,
@@ -729,7 +761,9 @@
         "State": "NT",
         "Postcode": 832
       }
-    }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
   },
   {
     "Id": 32,
@@ -812,7 +846,8 @@
           "Postcode": 7053
         }
       }
-    ]
+    ],
+    "Branches": []
   },
   {
     "Id": 1423,
@@ -845,7 +880,8 @@
           "Postcode": 3016
         }
       }
-    ]
+    ],
+    "Branches": []
   },
   {
     "Id": 1495,
@@ -866,7 +902,9 @@
         "State": "QLD",
         "Postcode": 4217
       }
-    }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
   },
   {
     "Id": 1384,
@@ -899,7 +937,8 @@
           "Postcode": 3088
         }
       }
-    ]
+    ],
+    "Branches": []
   },
   {
     "Id": 1496,
@@ -921,7 +960,9 @@
         "State": "NSW",
         "Postcode": 2836
       }
-    }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
   },
   {
     "Id": 1427,
@@ -942,7 +983,9 @@
         "State": "NSW",
         "Postcode": 2440
       }
-    }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
   },
   {
     "Id": 1408,
@@ -951,7 +994,7 @@
     "Abbreviation": "JLN",
     "RegisterDate": "14 May 2015",
     "AmendmentDate": "14 May 2015",
-    "Address": "PO Box 264\nBurnie TAS 7320",
+    "Address": "PO Box 264\nBURNIE TAS 7320",
     "Officer": {
       "Title": "Senator",
       "FamilyName": "Lambie",
@@ -963,7 +1006,9 @@
         "State": "TAS",
         "Postcode": 7320
       }
-    }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
   },
   {
     "Id": 1346,
@@ -984,7 +1029,33 @@
         "State": "QLD",
         "Postcode": 4810
       }
-    }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
+  },
+  {
+    "Id": 1504,
+    "Name": "Kim for Canberra",
+    "Code": "Kim for Canberra",
+    "Abbreviation": "Kim for Canberra",
+    "RegisterDate": "18 January 2022",
+    "AmendmentDate": "18 January 2022",
+    "Address": "Level 6, 9 Barrack Street\nSYDNEY NSW 2000",
+    "Officer": {
+      "Title": "Ms",
+      "FamilyName": "Rubenstein",
+      "GivenNames": "Kim",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "Suite 259 M Centre",
+        "Line2": "11 Palmerston Lane",
+        "Suburb": "Manuka",
+        "State": "ACT",
+        "Postcode": 2603
+      }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
   },
   {
     "Id": 1332,
@@ -1017,7 +1088,8 @@
           "Postcode": 2480
         }
       }
-    ]
+    ],
+    "Branches": []
   },
   {
     "Id": 4,
@@ -1142,7 +1214,8 @@
             "State": "ACT",
             "Postcode": 2600
           }
-        }
+        },
+        "DeputyOfficers": []
       },
       {
         "Id": 171,
@@ -1199,7 +1272,8 @@
             "State": "SA",
             "Postcode": 5061
           }
-        }
+        },
+        "DeputyOfficers": []
       },
       {
         "Id": 180,
@@ -1220,7 +1294,8 @@
             "State": "VIC",
             "Postcode": 3000
           }
-        }
+        },
+        "DeputyOfficers": []
       },
       {
         "Id": 188,
@@ -1290,7 +1365,9 @@
         "State": "VIC",
         "Postcode": 3149
       }
-    }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
   },
   {
     "Id": 1485,
@@ -1311,7 +1388,9 @@
         "State": "TAS",
         "Postcode": 7025
       }
-    }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
   },
   {
     "Id": 1133,
@@ -1344,7 +1423,8 @@
           "Postcode": 4009
         }
       }
-    ]
+    ],
+    "Branches": []
   },
   {
     "Id": 1463,
@@ -1360,12 +1440,14 @@
       "GivenNames": "Emma",
       "Capacity": "Secretary",
       "Address": {
-        "Line1": "91 Johnston St",
+        "Line1": "91 Johnston Street",
         "Suburb": "Collingwood",
         "State": "VIC",
         "Postcode": 3066
       }
-    }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
   },
   {
     "Id": 1486,
@@ -1386,7 +1468,9 @@
         "State": "SA",
         "Postcode": 5081
       }
-    }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
   },
   {
     "Id": 1402,
@@ -1398,17 +1482,31 @@
     "Address": "D5 Broadlands Estate\n9 Milpera Road\nGREEN POINT NSW 2251",
     "Officer": {
       "Title": "Mr",
-      "FamilyName": "Osborne",
-      "GivenNames": "Christopher",
-      "Capacity": "Party Agent",
+      "FamilyName": "Hosking",
+      "GivenNames": "Roderick William",
+      "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "D5 Broadlands Estate",
-        "Line2": "9 Milpera Road",
-        "Suburb": "Green Point",
-        "State": "NSW",
-        "Postcode": 2251
+        "Line1": "4/252 Stony Point Road",
+        "Suburb": "Crib Point",
+        "State": "VIC",
+        "Postcode": 3919
       }
-    }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Patrech",
+        "GivenNames": "Robert John",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "41 Bellevue Road",
+          "Suburb": "Figtree",
+          "State": "NSW",
+          "Postcode": 2525
+        }
+      }
+    ],
+    "Branches": []
   },
   {
     "Id": 1171,
@@ -1443,7 +1541,8 @@
           "Postcode": 2217
         }
       }
-    ]
+    ],
+    "Branches": []
   },
   {
     "Id": 1183,
@@ -1567,7 +1666,8 @@
           "Postcode": 7000
         }
       }
-    ]
+    ],
+    "Branches": []
   },
   {
     "Id": 1195,
@@ -1601,7 +1701,8 @@
           "Postcode": 2203
         }
       }
-    ]
+    ],
+    "Branches": []
   },
   {
     "Id": 1336,
@@ -1634,7 +1735,8 @@
           "Postcode": 2602
         }
       }
-    ]
+    ],
+    "Branches": []
   },
   {
     "Id": 1475,
@@ -1655,7 +1757,9 @@
         "State": "QLD",
         "Postcode": 4510
       }
-    }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
   },
   {
     "Id": 37,
@@ -1954,6 +2058,7 @@
         "Postcode": 2600
       }
     },
+    "DeputyOfficers": [],
     "Branches": [
       {
         "Id": 172,
@@ -1974,7 +2079,8 @@
             "State": "NSW",
             "Postcode": 2000
           }
-        }
+        },
+        "DeputyOfficers": []
       },
       {
         "Id": 174,
@@ -2030,7 +2136,8 @@
             "State": "SA",
             "Postcode": 5243
           }
-        }
+        },
+        "DeputyOfficers": []
       },
       {
         "Id": 193,
@@ -2051,7 +2158,8 @@
             "State": "WA",
             "Postcode": 6010
           }
-        }
+        },
+        "DeputyOfficers": []
       }
     ]
   },
@@ -2074,7 +2182,9 @@
         "State": "QLD",
         "Postcode": 4000
       }
-    }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
   },
   {
     "Id": 1477,
@@ -2109,7 +2219,8 @@
           "Postcode": 3073
         }
       }
-    ]
+    ],
+    "Branches": []
   },
   {
     "Id": 1419,
@@ -2144,7 +2255,8 @@
           "Postcode": 2042
         }
       }
-    ]
+    ],
+    "Branches": []
   },
   {
     "Id": 1462,
@@ -2165,6 +2277,8 @@
         "State": "WA",
         "Postcode": 6008
       }
-    }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
   }
 ]
