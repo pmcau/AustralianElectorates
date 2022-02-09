@@ -812,18 +812,6 @@
         }
       },
       {
-        "Title": "Mr",
-        "FamilyName": "Palma",
-        "GivenNames": "Michael",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "52 Bateman Grove",
-          "Suburb": "Hampton Park",
-          "State": "VIC",
-          "Postcode": 3976
-        }
-      },
-      {
         "Title": "Ms",
         "FamilyName": "Helmore",
         "GivenNames": "Olivia",
@@ -1310,11 +1298,11 @@
           "FamilyName": "Stone",
           "GivenNames": "Christopher",
           "Address": {
-            "Line1": "Level 12",
-            "Line2": "100 William Street",
-            "Suburb": "EAST SYDNEY",
+            "Line1": "Level 2",
+            "Line2": "131 Macquarie Street",
+            "Suburb": "Sydney",
             "State": "NSW",
-            "Postcode": 2011
+            "Postcode": 2000
           }
         },
         "DeputyOfficers": [
