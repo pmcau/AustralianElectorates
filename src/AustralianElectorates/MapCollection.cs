@@ -34,7 +34,7 @@ public class MapCollection
         return GetElectorateInner(electorate.ShortName,electorate.Name);
     }
 
-    private IElectorateMap GetElectorateInner(string electorateShortName, string electorateName)
+    IElectorateMap GetElectorateInner(string electorateShortName, string electorateName)
     {
         return electoratesCache.GetOrAdd($@"{prefix}\Electorates\{electorateShortName}",
             s =>

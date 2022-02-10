@@ -1,7 +1,7 @@
 ﻿public class Export
 {
-    private static int electoratesSize = 200 * 1024;
-    private static int stateSize = 500 * 1024;
+    static int electoratesSize = 200 * 1024;
+    static int stateSize = 500 * 1024;
 
     public static void ExportElectorates()
     {
