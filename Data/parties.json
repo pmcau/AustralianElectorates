@@ -119,29 +119,6 @@
     "Branches": []
   },
   {
-    "Id": 1443,
-    "Name": "Australian Affordable Housing Party",
-    "Code": "Affordable Housing Party",
-    "Abbreviation": "Affordable Housing Party",
-    "RegisterDate": "24 January 2017",
-    "AmendmentDate": "24 January 2017",
-    "Address": "1/212 Liverpool Road\nASHFIELD NSW 2131",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Potts",
-      "GivenNames": "Andrew",
-      "Capacity": "Party Agent",
-      "Address": {
-        "Line1": "1/212 Liverpool Road",
-        "Suburb": "Ashfield",
-        "State": "NSW",
-        "Postcode": 2131
-      }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
-  },
-  {
     "Id": 1347,
     "Name": "Australian Christians",
     "Code": "Australian Christians",
@@ -872,6 +849,29 @@
     "Branches": []
   },
   {
+    "Id": 1506,
+    "Name": "Drew Pavlou Democratic Alliance",
+    "Code": "Democratic Alliance",
+    "Abbreviation": "Democratic Alliance",
+    "RegisterDate": "28 February 2022",
+    "AmendmentDate": "28 February 2022",
+    "Address": "15/2 Mary Pleasant Drive\nBIRDALE QLD 4159",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Pavlou",
+      "GivenNames": "Drew",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "15/2 Mary Pleasant Drive",
+        "Suburb": "Birkdale",
+        "State": "QLD",
+        "Postcode": 4159
+      }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
+  },
+  {
     "Id": 1495,
     "Name": "Federal ICAC Now",
     "Code": "FIN",
@@ -1358,29 +1358,6 @@
     "Branches": []
   },
   {
-    "Id": 1485,
-    "Name": "No5G Party",
-    "Code": "No5G ",
-    "Abbreviation": "No5G ",
-    "RegisterDate": "5 January 2021",
-    "AmendmentDate": "5 January 2021",
-    "Address": "PO Box 5443\nWOLLONGONG NSW 2502",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Broomhall",
-      "GivenNames": "Raymond",
-      "Capacity": "Registered Officer",
-      "Address": {
-        "Line1": "37 Bridge Street",
-        "Suburb": "Richmond",
-        "State": "TAS",
-        "Postcode": 7025
-      }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
-  },
-  {
     "Id": 1133,
     "Name": "Pauline Hanson's One Nation",
     "Code": "Pauline Hanson's One Nation",
@@ -1652,41 +1629,6 @@
           "Suburb": "Hobart",
           "State": "TAS",
           "Postcode": 7000
-        }
-      }
-    ],
-    "Branches": []
-  },
-  {
-    "Id": 1195,
-    "Name": "Socialist Equality Party",
-    "Code": "Socialist Equality Party",
-    "Abbreviation": "Socialist Equality Party",
-    "RegisterDate": "17 September 2007",
-    "AmendmentDate": "17 September 2007",
-    "Address": "PO BOX 574\nSTRAWBERRY HILLS NSW 2012",
-    "Officer": {
-      "Title": "Ms",
-      "FamilyName": "Crisp",
-      "GivenNames": "Cheryl",
-      "Address": {
-        "Line1": "Suite 906",
-        "Line2": "185 Elizabeth Street",
-        "Suburb": "Sydney",
-        "State": "NSW",
-        "Postcode": 2000
-      }
-    },
-    "DeputyOfficers": [
-      {
-        "Title": "Ms",
-        "FamilyName": "Lopez",
-        "GivenNames": "Kaye Lynne",
-        "Address": {
-          "Line1": "13 / 11 Williams Pde",
-          "Suburb": "Dulwich Hill",
-          "State": "NSW",
-          "Postcode": 2203
         }
       }
     ],
