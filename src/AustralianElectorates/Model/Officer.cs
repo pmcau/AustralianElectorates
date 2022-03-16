@@ -20,12 +20,9 @@ class Officer :
     public string Capacity { get; set; } = null!;
     public IAddress? Address { get; set; } = null!;
 
-    public string FullName()
-    {
-        return $"{FamilyName}, {GivenNames}";
-    }
-    public override string ToString()
-    {
-        return FullName();
-    }
+    public string FullName() =>
+        $"{FamilyName}, {GivenNames}";
+
+    public override string ToString() =>
+        FullName();
 }

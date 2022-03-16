@@ -2,8 +2,6 @@
 
 class CustomDateTimeConverter : IsoDateTimeConverter
 {
-    public CustomDateTimeConverter()
-    {
+    public CustomDateTimeConverter() =>
         DateTimeFormat = "yyyy-MM-dd";
-    }
 }

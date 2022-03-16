@@ -2,8 +2,6 @@
 {
     [Fact]
     [Trait("Category", "Integration")]
-    public Task Run()
-    {
-        return PartyScraper.Run();
-    }
+    public Task Run() =>
+        PartyScraper.Run();
 }

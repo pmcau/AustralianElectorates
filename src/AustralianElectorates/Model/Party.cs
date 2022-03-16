@@ -20,8 +20,6 @@ class Party :
     public IOfficer Officer { get; set; } = null!;
     public IReadOnlyList<IOfficer> DeputyOfficers { get; set; } = Array.Empty<IOfficer>();
     public IReadOnlyList<IBranch> Branches { get; set; } = Array.Empty<IBranch>();
-    public override string ToString()
-    {
-        return $"{Name} ({Code})";
-    }
+    public override string ToString() =>
+        $"{Name} ({Code})";
 }

@@ -18,10 +18,8 @@
         return Run("cmd.exe", arguments.ToArray());
     }
 
-    public static Task ConvertTab(string targetFile, string tabFile)
-    {
-        return Run("ogr2ogr", "-f", "GeoJSON", targetFile, tabFile);
-    }
+    public static Task ConvertTab(string targetFile, string tabFile) =>
+        Run("ogr2ogr", "-f", "GeoJSON", targetFile, tabFile);
 
     static async Task Run(string fileName, params string[] arguments)
     {

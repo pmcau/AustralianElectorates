@@ -34,17 +34,6 @@
         }
       },
       {
-        "Title": "Mr",
-        "FamilyName": "Poon",
-        "GivenNames": "Bruce ",
-        "Address": {
-          "Line1": "4/15 Exploration Lane",
-          "Suburb": "Melbourne",
-          "State": "VIC",
-          "Postcode": 3000
-        }
-      },
-      {
         "Title": "Ms",
         "FamilyName": "Ward",
         "GivenNames": "Catherine",
@@ -73,11 +62,10 @@
         "FamilyName": "Love",
         "GivenNames": "Katrina",
         "Address": {
-          "Line1": "Site 111",
-          "Line2": "3 Powell Road",
-          "Suburb": "Coogee",
-          "State": "WA",
-          "Postcode": 6166
+          "Line1": "93B Old Road",
+          "Suburb": "Franklin",
+          "State": "TAS",
+          "Postcode": 7113
         }
       },
       {
@@ -89,18 +77,6 @@
           "Suburb": "Indooroopilly",
           "State": "QLD",
           "Postcode": 4068
-        }
-      },
-      {
-        "Title": "Ms",
-        "FamilyName": "Lee",
-        "GivenNames": "Lisa-Monique",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "28 Whitewater Court",
-          "Suburb": "Sandhurst",
-          "State": "VIC",
-          "Postcode": 3977
         }
       },
       {
@@ -313,7 +289,7 @@
       "FamilyName": "Erickson",
       "GivenNames": "Paul",
       "Address": {
-        "Line1": "5/9 Sydney Avenue ",
+        "Line1": "Unit 5, 9 Sydney Avenue",
         "Suburb": "Barton",
         "State": "ACT",
         "Postcode": 2600
@@ -592,28 +568,6 @@
     ]
   },
   {
-    "Id": 1403,
-    "Name": "Australian Progressives",
-    "Code": "The Progressives",
-    "Abbreviation": "The Progressives",
-    "RegisterDate": "17 February 2015",
-    "AmendmentDate": "17 February 2015",
-    "Address": "24B Harpur Place\nGARRAN ACT 2605",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Carroll",
-      "GivenNames": "Edward",
-      "Address": {
-        "Line1": "42 Messara Circuit",
-        "Suburb": "Durack",
-        "State": "QLD",
-        "Postcode": 4077
-      }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
-  },
-  {
     "Id": 1500,
     "Name": "Australian Values Party",
     "Code": "AVP",
@@ -697,29 +651,6 @@
     "Branches": []
   },
   {
-    "Id": 1481,
-    "Name": "Climate Emergency Action Alliance: Vote Planet",
-    "Code": "VOTE PLANET",
-    "Abbreviation": "VOTE PLANET",
-    "RegisterDate": "11 October 2019",
-    "AmendmentDate": "11 October 2019",
-    "Address": "254 McLeod Lane\nMANSFIELD VIC 3722",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Juntunen",
-      "GivenNames": "Timo Tapani",
-      "Capacity": "Party Agent",
-      "Address": {
-        "Line1": "5 Songbird Way",
-        "Suburb": "Goughs Bay",
-        "State": "VIC",
-        "Postcode": 3723
-      }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
-  },
-  {
     "Id": 26,
     "Name": "Country Liberal Party (NT)",
     "Code": "NT CLP",
@@ -740,78 +671,6 @@
       }
     },
     "DeputyOfficers": [],
-    "Branches": []
-  },
-  {
-    "Id": 32,
-    "Name": "Democratic Labour Party",
-    "Code": "Labour DLP",
-    "Abbreviation": "Labour DLP",
-    "RegisterDate": "20 July 1984",
-    "AmendmentDate": "20 July 1984",
-    "Address": "PO Box 678\nCIVIC SQUARE ACT 2608",
-    "Officer": {
-      "Title": "Mr ",
-      "FamilyName": "Campbell",
-      "GivenNames": "Stephen ",
-      "Capacity": "Party Agent",
-      "Address": {
-        "Line1": "1D Aughton Street",
-        "Suburb": "Bayswater",
-        "State": "WA",
-        "Postcode": 6053
-      }
-    },
-    "DeputyOfficers": [
-      {
-        "Title": "Mr",
-        "FamilyName": "Copley",
-        "GivenNames": "Jacob",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "3 Balmoral Street",
-          "Suburb": "East Victoria Park",
-          "State": "WA",
-          "Postcode": 6101
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Quinn",
-        "GivenNames": "John Lawrence",
-        "Capacity": "Branch Secretary",
-        "Address": {
-          "Line1": "90 Baaring Drive",
-          "Line2": "Karana Downs",
-          "Suburb": "Mount Crosby",
-          "State": "QLD",
-          "Postcode": 4306
-        }
-      },
-      {
-        "Title": "Ms",
-        "FamilyName": "Helmore",
-        "GivenNames": "Olivia",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "19/127 Madigan Street",
-          "Suburb": "Hackett",
-          "State": "ACT",
-          "Postcode": 2602
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Williams",
-        "GivenNames": "Wayne",
-        "Address": {
-          "Line1": "2 Bareena Rd",
-          "Suburb": "Taroona",
-          "State": "TAS",
-          "Postcode": 7053
-        }
-      }
-    ],
     "Branches": []
   },
   {
@@ -892,6 +751,66 @@
       }
     },
     "DeputyOfficers": [],
+    "Branches": []
+  },
+  {
+    "Id": 1481,
+    "Name": "FUSION: Science, Pirate, Secular, Climate Emergency",
+    "Code": "FUSION",
+    "Abbreviation": "FUSION",
+    "RegisterDate": "11 October 2019",
+    "AmendmentDate": "11 October 2019",
+    "Address": "254 McLeod Lane\nMANSFIELD VIC 3722",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Juntunen",
+      "GivenNames": "Timo Tapani",
+      "Capacity": "Party Agent",
+      "Address": {
+        "Line1": "5 Songbird Way",
+        "Suburb": "Goughs Bay",
+        "State": "VIC",
+        "Postcode": 3723
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Jago",
+        "GivenNames": "Alexander Benjamin",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "39 Bel-Air Court",
+          "Suburb": "Ferny Hills",
+          "State": "QLD",
+          "Postcode": 4055
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Finno",
+        "GivenNames": "Andrea",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "14/2-6 Schwebel Street",
+          "Suburb": "Marrickville",
+          "State": "NSW",
+          "Postcode": 2204
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Wolfendale ",
+        "GivenNames": "Drew Rhys",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "57 Sixth Avenue",
+          "Suburb": "St Peters",
+          "State": "SA",
+          "Postcode": 5069
+        }
+      }
+    ],
     "Branches": []
   },
   {
@@ -1750,8 +1669,8 @@
         "GivenNames": "Fleur",
         "Capacity": "Deputy Registered Officer",
         "Address": {
-          "Line1": "2/97 Northbourne Avenue",
-          "Suburb": "Turner",
+          "Line1": "2 / 18 Lonsdale Street",
+          "Suburb": "Braddon",
           "State": "ACT",
           "Postcode": 2612
         }
@@ -1785,7 +1704,7 @@
         "GivenNames": "Rohan",
         "Capacity": "Deputy Registered Officer",
         "Address": {
-          "Line1": "102/100 Somerville Road",
+          "Line1": "127A Stephen Street",
           "Suburb": "Yarraville",
           "State": "VIC",
           "Postcode": 3013
@@ -1818,17 +1737,6 @@
             "Title": "Mr",
             "FamilyName": "Munro",
             "GivenNames": "Duncan",
-            "Address": {
-              "Line1": "52 Douglas Street",
-              "Suburb": "Milton",
-              "State": "QLD",
-              "Postcode": 4064
-            }
-          },
-          {
-            "Title": "Ms",
-            "FamilyName": "Mulkearns",
-            "GivenNames": "Jennifer",
             "Address": {
               "Line1": "52 Douglas Street",
               "Suburb": "Milton",
@@ -1967,6 +1875,29 @@
         ]
       }
     ]
+  },
+  {
+    "Id": 1505,
+    "Name": "The Local Party of Australia",
+    "Code": "The Local Party",
+    "Abbreviation": "The Local Party",
+    "RegisterDate": "9 March 2022",
+    "AmendmentDate": "9 March 2022",
+    "Address": "680 Huon Road\nFERN TREE TAS 7054",
+    "Officer": {
+      "Title": "Ms",
+      "FamilyName": "Bateman",
+      "GivenNames": "Anna Jane",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "680 Huon Road",
+        "Suburb": "Fern Tree",
+        "State": "TAS",
+        "Postcode": 7054
+      }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
   },
   {
     "Id": 20,

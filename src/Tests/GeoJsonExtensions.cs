@@ -4,10 +4,8 @@ using GeoJSON.Net.Geometry;
 
 static class GeoJsonExtensions
 {
-    public static FeatureCollection ToCollection(this Feature feature)
-    {
-        return new(new() {feature});
-    }
+    public static FeatureCollection ToCollection(this Feature feature) =>
+        new(new() {feature});
 
     public static FeatureCollection FeaturesCollectionForState(this FeatureCollection featureCollection, State state)
     {
@@ -19,15 +17,11 @@ static class GeoJsonExtensions
         return collection;
     }
 
-    public static double[] CalculateBoundingBox(this IEnumerable<Feature> features)
-    {
-        return BoundingBox(features.SelectMany(x => x.AllPositions()));
-    }
+    public static double[] CalculateBoundingBox(this IEnumerable<Feature> features) =>
+        BoundingBox(features.SelectMany(x => x.AllPositions()));
 
-    public static double[] CalculateBoundingBox(this Feature feature)
-    {
-        return BoundingBox(feature.AllPositions());
-    }
+    public static double[] CalculateBoundingBox(this Feature feature) =>
+        BoundingBox(feature.AllPositions());
 
     public static void FixBoundingBox(this FeatureCollection featureCollection)
     {

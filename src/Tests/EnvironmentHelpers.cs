@@ -4,7 +4,10 @@
     {
         var key = "path";
         var envPath = Environment.GetEnvironmentVariable(key);
-        if (envPath != null && envPath.Contains(path)) return;
+        if (envPath != null && envPath.Contains(path))
+        {
+            return;
+        }
 
         Environment.SetEnvironmentVariable(key, $"{envPath};{path}");
     }

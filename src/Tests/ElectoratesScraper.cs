@@ -195,8 +195,7 @@ static class ElectoratesScraper
         return (familyName, givenNames);
     }
 
-    static HtmlNode FindProfileTable(HtmlDocument document)
-    {
-        return document.DocumentNode.SelectSingleNode("//comment()[contains(., ' InstanceBeginEditable name=\"Content\" ')]/following-sibling::dl");
-    }
+    static HtmlNode FindProfileTable(HtmlDocument document) =>
+        document.DocumentNode
+            .SelectSingleNode("//comment()[contains(., ' InstanceBeginEditable name=\"Content\" ')]/following-sibling::dl");
 }

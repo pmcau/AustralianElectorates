@@ -14,7 +14,7 @@ static class JsonSerializerService
             Formatting = Formatting.Indented,
             ContractResolver = new CustomContractResolver()
         };
-        jsonSerializer.Converters.Insert(0,new CustomDateTimeConverter());
+        jsonSerializer.Converters.Insert(0, new CustomDateTimeConverter());
         jsonSerializer.Converters.Add(new StringEnumConverter());
     }
 
@@ -39,14 +39,15 @@ static class JsonSerializerService
     {
         using var fileStream = File.OpenWrite(path);
         using StreamWriter textWriter = new(fileStream);
-        using JsonTextWriter jsonTextWriter = new(textWriter) {Indentation = 2};
+        using JsonTextWriter jsonTextWriter = new(textWriter)
+        {
+            Indentation = 2
+        };
         jsonSerializer.Serialize(jsonTextWriter, value);
     }
 
-    public static FeatureCollection DeserializeGeo(string path)
-    {
-        return Deserialize<FeatureCollection>(path);
-    }
+    public static FeatureCollection DeserializeGeo(string path) =>
+        Deserialize<FeatureCollection>(path);
 
     public static T Deserialize<T>(string path)
     {

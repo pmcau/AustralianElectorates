@@ -144,16 +144,12 @@ public static partial class DataLoader
         return false;
     }
 
-    static bool MatchName(string name, IElectorate x)
-    {
-        return string.Equals(x.Name, name, StringComparison.OrdinalIgnoreCase) ||
-               string.Equals(x.ShortName, name, StringComparison.OrdinalIgnoreCase);
-    }
+    static bool MatchName(string name, IElectorate x) =>
+        string.Equals(x.Name, name, StringComparison.OrdinalIgnoreCase) ||
+        string.Equals(x.ShortName, name, StringComparison.OrdinalIgnoreCase);
 
-    public static void ValidateElectorates(params string[] names)
-    {
+    public static void ValidateElectorates(params string[] names) =>
         ValidateElectorates((IEnumerable<string>) names);
-    }
 
     public static void ValidateElectorates(IEnumerable<string> names)
     {
@@ -170,15 +166,11 @@ public static partial class DataLoader
         return invalid.Any();
     }
 
-    public static IEnumerable<string> FindInvalidateElectorates(params string[] names)
-    {
-        return FindInvalidateElectorates((IEnumerable<string>) names);
-    }
+    public static IEnumerable<string> FindInvalidateElectorates(params string[] names) =>
+        FindInvalidateElectorates((IEnumerable<string>) names);
 
-    public static IEnumerable<string> FindInvalidateElectorates(IEnumerable<string> names)
-    {
-        return names.Where(name => !Electorates.Any(x => MatchName(name, x)));
-    }
+    public static IEnumerable<string> FindInvalidateElectorates(IEnumerable<string> names) =>
+        names.Where(name => !Electorates.Any(x => MatchName(name, x)));
 
     public static void LoadAll()
     {

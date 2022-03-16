@@ -44,8 +44,6 @@
         }
     }
 
-    static string Prefix(string x)
-    {
-        return Path.GetFileNameWithoutExtension(x).Split('_')[0];
-    }
+    static string Prefix(string x) =>
+        Path.GetFileNameWithoutExtension(x).Split('_')[0];
 }

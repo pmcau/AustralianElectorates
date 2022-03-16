@@ -111,10 +111,8 @@ public class Sync
         State.WA,
     };
 
-    static Sync()
-    {
+    static Sync() =>
         percents = new() {20, 10, 5, 1};
-    }
 
     static async Task ProcessYear(string yearPath, List<string> electorates)
     {
@@ -148,19 +146,15 @@ public class Sync
         }
     }
 
-    static Task Get2016()
-    {
+    static Task Get2016() =>
         // elected https://results.aec.gov.au/20499/Website/Downloads/HouseMembersElectedDownload-20499.csv
         // 2 party pref https://results.aec.gov.au/20499/Website/Downloads/HouseTppByDivisionDownload-20499.csv
-        return GetCountry(2016, "https://www.aec.gov.au/Electorates/gis/files/national-midmif-09052016.zip", DataLocations.Maps2016Path);
-    }
+        GetCountry(2016, "https://www.aec.gov.au/Electorates/gis/files/national-midmif-09052016.zip", DataLocations.Maps2016Path);
 
-    static Task Get2019()
-    {
+    static Task Get2019() =>
         // elected https://tallyroom.aec.gov.au/Downloads/HouseMembersElectedDownload-24310.csv
         // 2 party pref https://tallyroom.aec.gov.au/Downloads/HouseTppByDivisionDownload-24310.csv
-        return GetCountry(2019, "https://www.aec.gov.au/Electorates/gis/files/national-mapinfo-fe2019.zip", DataLocations.Maps2019Path);
-    }
+        GetCountry(2019, "https://www.aec.gov.au/Electorates/gis/files/national-mapinfo-fe2019.zip", DataLocations.Maps2019Path);
 
     static async Task GetCountry(int year, string url, string mapsPath)
     {
@@ -243,9 +237,8 @@ public class Sync
         return electorates;
     }
 
-    static List<Location> SelectLocations(string electorateName, List<AecLocalityData> localityData)
-    {
-        return localityData
+    static List<Location> SelectLocations(string electorateName, List<AecLocalityData> localityData) =>
+        localityData
             .Where(x => string.Equals(x.Electorate, electorateName, StringComparison.OrdinalIgnoreCase))
             .GroupBy(x => x.Postcode)
             .Select(group =>
@@ -255,7 +248,6 @@ public class Sync
                     Localities = group.Select(x => x.Place).ToList()
                 })
             .ToList();
-    }
 
     static void WriteNamedCs(List<ElectorateEx> electorates)
     {
@@ -312,21 +304,17 @@ public partial class ElectorateDataSet : DataSet
             {
                 var name = GetCSharpName(electorate);
                 writer.WriteLine($@"
-    public IElectorate {name}()
-    {{
-        return DataLoader.{name};
-    }}");
+    public IElectorate {name}() =>
+        DataLoader.{name};");
             }
 
             writer.WriteLine("}");
         }
     }
 
-    static string GetCSharpName(Electorate electorate)
-    {
-        return electorate.Name
+    static string GetCSharpName(Electorate electorate) =>
+        electorate.Name
             .Replace(" ", "")
             .Replace("-", "")
             .Replace("'", "");
-    }
 }

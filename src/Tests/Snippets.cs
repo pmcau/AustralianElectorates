@@ -58,22 +58,16 @@ public class Snippets
     }
 
     [Fact]
-    public Task ElectoratesSampleJson()
-    {
-        return Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.ElectoratesJsonPath).Take(50)));
-    }
+    public Task ElectoratesSampleJson() =>
+        Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.ElectoratesJsonPath).Take(50)));
 
     [Fact]
-    public Task LocalitiesSampleJson()
-    {
-        return Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.LocalitiesPath).Take(21)));
-    }
+    public Task LocalitiesSampleJson() =>
+        Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.LocalitiesPath).Take(21)));
 
     [Fact]
-    public Task PartiesSampleJson()
-    {
-        return Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.PartiesJsonPath).Take(34)));
-    }
+    public Task PartiesSampleJson() =>
+        Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.PartiesJsonPath).Take(34)));
 
     [Fact]
     public void Bogus()

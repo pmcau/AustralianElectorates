@@ -10,8 +10,6 @@
             .Replace(@"file:\\\", "")
             .Replace(@"file:\\", "");
     }
-    public static string DirectoryFor(Type type)
-    {
-        return Path.GetDirectoryName(PathFor(type))!;
-    }
+    public static string DirectoryFor(Type type) =>
+        Path.GetDirectoryName(PathFor(type))!;
 }

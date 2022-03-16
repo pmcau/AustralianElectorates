@@ -114,12 +114,10 @@ static class PartyScraper
         return name;
     }
 
-    static List<Branch> ToBranches(AecModels.Branch[] branches, string partyCode, Dictionary<string, string> codes)
-    {
-        return branches
+    static List<Branch> ToBranches(AecModels.Branch[] branches, string partyCode, Dictionary<string, string> codes) =>
+        branches
             .Select(branch => ToBranch(branch, partyCode, codes))
             .ToList();
-    }
 
     static Branch ToBranch(AecModels.Branch branch, string partyCode, Dictionary<string, string> codes)
     {
@@ -147,9 +145,8 @@ static class PartyScraper
         return detail.Select(ToOfficer).ToList();
     }
 
-    static Officer ToOfficer(AecModels.Officer deputyOfficer)
-    {
-        return new()
+    static Officer ToOfficer(AecModels.Officer deputyOfficer) =>
+        new()
         {
             Capacity = deputyOfficer.Capacity,
             FamilyName = deputyOfficer.Surname,
@@ -157,7 +154,6 @@ static class PartyScraper
             Title = deputyOfficer.Title,
             Address = ToAddress(deputyOfficer.Address)
         };
-    }
 
     static Address? ToAddress(AecModels.Address address)
     {

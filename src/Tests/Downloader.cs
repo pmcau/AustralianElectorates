@@ -2,10 +2,10 @@
 
 static class Downloader
 {
-    static Downloader()
-    {
-        ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
-    }
+    static Downloader() =>
+        ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls |
+                                               SecurityProtocolType.Tls11 |
+                                               SecurityProtocolType.Tls12;
 
     static HttpClient httpClient = new(new HttpClientHandler
     {

@@ -13,15 +13,11 @@ public class MapCollection
     public IReadOnlyDictionary<string, IElectorateMap> LoadedElectorates => electoratesCache;
     public IReadOnlyDictionary<State, IStateMap> LoadedStates => statesCache;
 
-    internal MapCollection(string prefix)
-    {
+    internal MapCollection(string prefix) =>
         this.prefix = prefix;
-    }
 
-    static MapCollection()
-    {
+    static MapCollection() =>
         assembly = typeof(DataLoader).Assembly;
-    }
 
     public IElectorateMap GetElectorate(string electorateName)
     {
@@ -29,14 +25,11 @@ public class MapCollection
         return GetElectorateInner(Electorate.GetShortName(electorateName),electorateName);
     }
 
-    public IElectorateMap GetElectorate(IElectorate electorate)
-    {
-        return GetElectorateInner(electorate.ShortName,electorate.Name);
-    }
+    public IElectorateMap GetElectorate(IElectorate electorate) =>
+        GetElectorateInner(electorate.ShortName,electorate.Name);
 
-    IElectorateMap GetElectorateInner(string electorateShortName, string electorateName)
-    {
-        return electoratesCache.GetOrAdd($@"{prefix}\Electorates\{electorateShortName}",
+    IElectorateMap GetElectorateInner(string electorateShortName, string electorateName) =>
+        electoratesCache.GetOrAdd($@"{prefix}\Electorates\{electorateShortName}",
             s =>
             {
                 var geoJson = GetMap(s);
@@ -51,7 +44,6 @@ public class MapCollection
                     GeoJson = geoJson
                 };
             });
-    }
 
     public IStateMap GetState(State state)
     {
@@ -128,8 +120,6 @@ public class MapCollection
         }
     }
 
-    static State ParseState(string key)
-    {
-        return (State) Enum.Parse(typeof(State), key.Split('\\')[1], true);
-    }
+    static State ParseState(string key) =>
+        (State) Enum.Parse(typeof(State), key.Split('\\')[1], true);
 }

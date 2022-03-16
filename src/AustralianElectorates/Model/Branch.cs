@@ -20,8 +20,6 @@ class Branch :
     public IOfficer Officer { get; set; } = null!;
     public IReadOnlyList<IOfficer> DeputyOfficers { get; set; } = null!;
     public IParty Party { get; set; } = null!;
-    public override string ToString()
-    {
-        return $"{Name} ({Code})";
-    }
+    public override string ToString() =>
+        $"{Name} ({Code})";
 }

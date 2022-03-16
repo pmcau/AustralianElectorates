@@ -4,10 +4,8 @@ using AustralianElectorates;
 public class DataLoaderTests
 {
     [Fact]
-    public Task Electorates()
-    {
-        return Verify(DataLoader.Electorates.Select(x => x.Name));
-    }
+    public Task Electorates() =>
+        Verify(DataLoader.Electorates.Select(x => x.Name));
 
     [Fact]
     public void GetAustralia()
@@ -31,22 +29,16 @@ public class DataLoaderTests
     }
 
     [Fact]
-    public Task ValidateElectorates()
-    {
-        return Throws(() => DataLoader.ValidateElectorates("not Found", "Bass"));
-    }
+    public Task ValidateElectorates() =>
+        Throws(() => DataLoader.ValidateElectorates("not Found", "Bass"));
 
     [Fact]
-    public Task FindInvalidateElectorates()
-    {
-        return Verify(DataLoader.FindInvalidateElectorates("not Found", "Bass"));
-    }
+    public Task FindInvalidateElectorates() =>
+        Verify(DataLoader.FindInvalidateElectorates("not Found", "Bass"));
 
     [Fact]
-    public Task FindInvalidateElectorates_by_short_name()
-    {
-        return Verify(DataLoader.FindInvalidateElectorates("not Found", "port-adelaide"));
-    }
+    public Task FindInvalidateElectorates_by_short_name() =>
+        Verify(DataLoader.FindInvalidateElectorates("not Found", "port-adelaide"));
 
     [Fact]
     public void TryFindElectorate()
@@ -60,16 +52,12 @@ public class DataLoaderTests
     }
 
     [Fact]
-    public Task Export()
-    {
-        return InnerExport(false);
-    }
+    public Task Export() =>
+        InnerExport(false);
 
     [Fact]
-    public Task Export_overwrite()
-    {
-        return InnerExport(true);
-    }
+    public Task Export_overwrite() =>
+        InnerExport(true);
 
     static async Task InnerExport(bool overwrite)
     {
@@ -171,22 +159,18 @@ public class DataLoaderTests
     }
 
     [Fact]
-    public void ElectorateData_CurrentParty()
-    {
+    public void ElectorateData_CurrentParty() =>
         Assert.NotNull(DataLoader.Adelaide.CurrentParty);
-    }
 
     [Fact]
-    public Task Elections()
-    {
-        return Verify(DataLoader.Elections.Select(election => new
+    public Task Elections() =>
+        Verify(DataLoader.Elections.Select(election => new
         {
             election.Parliament,
             election.Year,
             election.Date,
             electorates = election.Electorates.Select(electorate => electorate.Name)
         }));
-    }
 
     [Fact]
     public void FindElection()

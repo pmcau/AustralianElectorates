@@ -14,12 +14,8 @@ static class MediaFeedService
 
     public static MediaFeed Feed;
 
-    static MediaFeedResultsElectionHouse GetHouseOfReps(MediaFeed feed)
-    {
-        return feed.Results.Election
-            .Where(x => x.ElectionIdentifier.Id == "H")
-            .Single()
+    static MediaFeedResultsElectionHouse GetHouseOfReps(MediaFeed feed) =>
+        feed.Results.Election
+            .Single(x => x.ElectionIdentifier.Id == "H")
             .House;
-    }
-
 }

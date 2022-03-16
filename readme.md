@@ -298,7 +298,7 @@ var faker = new Faker<Target>()
         setter: (f, _) => f.AustralianElectorates().Name());
 var targetInstance = faker.Generate();
 ```
-<sup><a href='/src/Tests/Snippets.cs#L81-L91' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagebogus' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L75-L85' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagebogus' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 

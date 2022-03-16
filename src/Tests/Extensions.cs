@@ -16,11 +16,9 @@ static class Extensions
             info.ArgumentList.Add(argument);
         }
     }
-    public static List<string> Headings(this HtmlDocument document)
-    {
-        return document.DocumentNode.Descendants("h1")
+    public static List<string> Headings(this HtmlDocument document) =>
+        document.DocumentNode.Descendants("h1")
             .Select(x => x.InnerText).ToList();
-    }
 
     public static bool TryGetKey(this Dictionary<string, string> document, string value, out string key)
     {

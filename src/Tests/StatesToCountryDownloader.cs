@@ -17,10 +17,8 @@ public static class StatesToCountryDownloader
         {State.WA, "https://www.aec.gov.au/Electorates/gis/files/wa-esri-19012016.zip"},
     };
 
-    public static Task RunFuture()
-    {
-        return Run(stateUrls, DataLocations.Australia2019JsonPath, DataLocations.FutureAustraliaJsonPath);
-    }
+    public static Task RunFuture() =>
+        Run(stateUrls, DataLocations.Australia2019JsonPath, DataLocations.FutureAustraliaJsonPath);
 
     static async Task Run(Dictionary<State, string> dictionary, string sourceJsonPath, string targetJsonPath)
     {

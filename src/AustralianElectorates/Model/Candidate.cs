@@ -24,12 +24,9 @@ class Candidate :
     public ushort? PartyId { get; set; }
     public IPartyOrBranch? Party { get; set; }
 
-    public string FullName()
-    {
-        return $"{FamilyName}, {GivenNames}";
-    }
-    public override string ToString()
-    {
-        return FullName();
-    }
+    public string FullName() =>
+        $"{FamilyName}, {GivenNames}";
+
+    public override string ToString() =>
+        FullName();
 }

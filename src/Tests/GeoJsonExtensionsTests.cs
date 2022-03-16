@@ -17,9 +17,8 @@ public class GeoJsonExtensionsTests
         Assert.Equal(new double[] {0, 0,1,1}, simpleBoundingBox);
     }
 
-    public List<Feature> BuildFeatures(params Position[] positions)
-    {
-        return new()
+    public List<Feature> BuildFeatures(params Position[] positions) =>
+        new()
         {
             new(
                 new Polygon(
@@ -28,5 +27,4 @@ public class GeoJsonExtensionsTests
                         new(positions)
                     }))
         };
-    }
 }

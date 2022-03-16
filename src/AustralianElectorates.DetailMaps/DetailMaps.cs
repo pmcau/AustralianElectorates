@@ -14,10 +14,8 @@ public static class DetailMaps
         return MapForElectorate(DataLoader.FindElectorate(name));
     }
 
-    public static string MapForElectorate(IElectorate electorate)
-    {
-        return Path.Combine(Directory, $"{electorate.ShortName}.png");
-    }
+    public static string MapForElectorate(IElectorate electorate) =>
+        Path.Combine(Directory, $"{electorate.ShortName}.png");
 
     public static IEnumerable<string> Files(IElectorate electorate)
     {

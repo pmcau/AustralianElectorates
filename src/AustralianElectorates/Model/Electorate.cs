@@ -50,28 +50,18 @@ class Electorate :
             .ToLowerInvariant();
     }
 
-    public override string ToString()
-    {
-        return Name;
-    }
+    public override string ToString() =>
+        Name;
 
-    public IElectorateMap Get2016Map()
-    {
-        return DataLoader.Get2016Map(this);
-    }
+    public IElectorateMap Get2016Map() =>
+        DataLoader.Get2016Map(this);
 
-    public IElectorateMap Get2019Map()
-    {
-        return DataLoader.Get2019Map(this);
-    }
+    public IElectorateMap Get2019Map() =>
+        DataLoader.Get2019Map(this);
 
-    public IElectorateMap GetMap()
-    {
-        return DataLoader.GetMap(this);
-    }
+    public IElectorateMap GetMap() =>
+        DataLoader.GetMap(this);
 
-    public IElectorateMap GetFutureMap()
-    {
-        return DataLoader.GetFutureMap(this);
-    }
+    public IElectorateMap GetFutureMap() =>
+        DataLoader.GetFutureMap(this);
 }
