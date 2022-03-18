@@ -1,50 +1,50 @@
-[
+﻿[
   {
-    "Name": "Canberra",
-    "ShortName": "canberra",
+    "Name": "Bean",
+    "ShortName": "bean",
     "State": "ACT",
-    "Area": 312.0,
-    "Exist2016": true,
+    "Area": 1913.0,
+    "Exist2016": false,
     "Exist2019": true,
-    "ExistInFuture": true,
+    "Exist2022": true,
     "DateGazetted": "2018-07-13",
-    "Description": "<p>The Division of Canberra covers an area in central ACT consisting of the Districts of:</p><ul><li>Canberra Central,</li><li>Kowen,</li><li>Majura,</li><li>part of Belconnen,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul>",
+    "Description": "<p>The Division of Bean covers an area in the south of the ACT consisting of the Districts of:</p><ul><li>Booth,</li><li>Coree,</li><li>Cotter River,</li><li>Mount Clear,</li><li>Paddys River,</li><li>Rendezvous Creek,</li><li>Stromlo,</li><li>Tennent,</li><li>Tuggeranong,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul><p>The Division of Bean also includes Norfolk Island.</p>",
     "DemographicRating": "<strong>Inner Metropolitan</strong> – situated in capital cities and consisting of well-established built-up suburbs",
-    "NameDerivation": "A locality name derived from an Aboriginal word which is held to mean 'meeting place'.",
-    "Enrollment": 95348,
+    "NameDerivation": "Named after Charles Edwin Woodrow Bean, 1879–1968, Australia's official correspondent to the Australian Imperial Force in World War One, editor of the <em>Official History of Australia in the War of 1914–1918</em> and primary advocate to establish the Australian War Memorial.",
+    "Enrollment": 104482,
     "TwoCandidatePreferred": {
       "Elected": {
-        "FamilyName": "Payne",
-        "GivenNames": "Alicia",
+        "FamilyName": "Smith",
+        "GivenNames": "David",
         "PartyCode": "ALP",
-        "Votes": 57961,
-        "Swing": 4.14,
+        "Votes": 53455,
+        "Swing": -1.33,
         "PartyId": 200
       },
       "Other": {
-        "FamilyName": "Zaki",
-        "GivenNames": "Mina",
+        "FamilyName": "Cocks",
+        "GivenNames": "Ed",
         "PartyCode": "LP",
-        "Votes": 28442,
-        "Swing": -4.14,
+        "Votes": 39484,
+        "Swing": 1.33,
         "PartyId": 177
       }
     },
     "Locations": [
       {
-        "Postcode": 2601,
+        "Postcode": 2906,
         "Localities": [
-          "Acton",
-          "Canberra Central",
-          "Canberra City"
+          "Banks",
+          "Conder",
+          "Gordon"
         ]
       },
       {
-        "Postcode": 2602,
+        "Postcode": 2600,
         "Localities": [
-          "Ainslie",
-          "Dickson",
-          "Downer",
-          "Hackett",
-          "Lyneham",
-          "O'Connor",
+          "Hmas Harman"
+        ]
+      },
+      {
+        "Postcode": 2617,
+        "Localities": [

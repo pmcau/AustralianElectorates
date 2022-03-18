@@ -1,0 +1,8 @@
+﻿{
+  added: [
+    Hawke
+  ],
+  removed: [
+    Stirling
+  ]
+}

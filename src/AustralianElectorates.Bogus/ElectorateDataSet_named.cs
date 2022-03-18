@@ -8,14 +8,14 @@ namespace AustralianElectorates.Bogus;
 public partial class ElectorateDataSet : DataSet
 {
 
+    public IElectorate Bean() =>
+        DataLoader.Bean;
+
     public IElectorate Canberra() =>
         DataLoader.Canberra;
 
     public IElectorate Fenner() =>
         DataLoader.Fenner;
-
-    public IElectorate Bean() =>
-        DataLoader.Bean;
 
     public IElectorate Bass() =>
         DataLoader.Bass;
@@ -23,8 +23,8 @@ public partial class ElectorateDataSet : DataSet
     public IElectorate Braddon() =>
         DataLoader.Braddon;
 
-    public IElectorate Denison() =>
-        DataLoader.Denison;
+    public IElectorate Clark() =>
+        DataLoader.Clark;
 
     public IElectorate Franklin() =>
         DataLoader.Franklin;
@@ -32,8 +32,8 @@ public partial class ElectorateDataSet : DataSet
     public IElectorate Lyons() =>
         DataLoader.Lyons;
 
-    public IElectorate Clark() =>
-        DataLoader.Clark;
+    public IElectorate Denison() =>
+        DataLoader.Denison;
 
     public IElectorate Adelaide() =>
         DataLoader.Adelaide;
@@ -59,26 +59,23 @@ public partial class ElectorateDataSet : DataSet
     public IElectorate Mayo() =>
         DataLoader.Mayo;
 
-    public IElectorate PortAdelaide() =>
-        DataLoader.PortAdelaide;
+    public IElectorate Spence() =>
+        DataLoader.Spence;
 
     public IElectorate Sturt() =>
         DataLoader.Sturt;
 
+    public IElectorate PortAdelaide() =>
+        DataLoader.PortAdelaide;
+
     public IElectorate Wakefield() =>
         DataLoader.Wakefield;
-
-    public IElectorate Spence() =>
-        DataLoader.Spence;
 
     public IElectorate Aston() =>
         DataLoader.Aston;
 
     public IElectorate Ballarat() =>
         DataLoader.Ballarat;
-
-    public IElectorate Batman() =>
-        DataLoader.Batman;
 
     public IElectorate Bendigo() =>
         DataLoader.Bendigo;
@@ -95,6 +92,9 @@ public partial class ElectorateDataSet : DataSet
     public IElectorate Chisholm() =>
         DataLoader.Chisholm;
 
+    public IElectorate Cooper() =>
+        DataLoader.Cooper;
+
     public IElectorate Corangamite() =>
         DataLoader.Corangamite;
 
@@ -110,6 +110,9 @@ public partial class ElectorateDataSet : DataSet
     public IElectorate Flinders() =>
         DataLoader.Flinders;
 
+    public IElectorate Fraser() =>
+        DataLoader.Fraser;
+
     public IElectorate Gellibrand() =>
         DataLoader.Gellibrand;
 
@@ -121,6 +124,9 @@ public partial class ElectorateDataSet : DataSet
 
     public IElectorate Gorton() =>
         DataLoader.Gorton;
+
+    public IElectorate Hawke() =>
+        DataLoader.Hawke;
 
     public IElectorate Higgins() =>
         DataLoader.Higgins;
@@ -149,6 +155,9 @@ public partial class ElectorateDataSet : DataSet
     public IElectorate Lalor() =>
         DataLoader.Lalor;
 
+    public IElectorate Macnamara() =>
+        DataLoader.Macnamara;
+
     public IElectorate Mallee() =>
         DataLoader.Mallee;
 
@@ -158,20 +167,17 @@ public partial class ElectorateDataSet : DataSet
     public IElectorate McEwen() =>
         DataLoader.McEwen;
 
-    public IElectorate McMillan() =>
-        DataLoader.McMillan;
-
     public IElectorate Melbourne() =>
         DataLoader.Melbourne;
-
-    public IElectorate MelbournePorts() =>
-        DataLoader.MelbournePorts;
 
     public IElectorate Menzies() =>
         DataLoader.Menzies;
 
-    public IElectorate Murray() =>
-        DataLoader.Murray;
+    public IElectorate Monash() =>
+        DataLoader.Monash;
+
+    public IElectorate Nicholls() =>
+        DataLoader.Nicholls;
 
     public IElectorate Scullin() =>
         DataLoader.Scullin;
@@ -182,20 +188,17 @@ public partial class ElectorateDataSet : DataSet
     public IElectorate Wills() =>
         DataLoader.Wills;
 
-    public IElectorate Cooper() =>
-        DataLoader.Cooper;
+    public IElectorate Batman() =>
+        DataLoader.Batman;
 
-    public IElectorate Fraser() =>
-        DataLoader.Fraser;
+    public IElectorate McMillan() =>
+        DataLoader.McMillan;
 
-    public IElectorate Macnamara() =>
-        DataLoader.Macnamara;
+    public IElectorate MelbournePorts() =>
+        DataLoader.MelbournePorts;
 
-    public IElectorate Monash() =>
-        DataLoader.Monash;
-
-    public IElectorate Nicholls() =>
-        DataLoader.Nicholls;
+    public IElectorate Murray() =>
+        DataLoader.Murray;
 
     public IElectorate Blair() =>
         DataLoader.Blair;
@@ -292,9 +295,6 @@ public partial class ElectorateDataSet : DataSet
 
     public IElectorate Solomon() =>
         DataLoader.Solomon;
-
-    public IElectorate NorthernTerritory() =>
-        DataLoader.NorthernTerritory;
 
     public IElectorate Banks() =>
         DataLoader.Banks;
@@ -440,6 +440,9 @@ public partial class ElectorateDataSet : DataSet
     public IElectorate Brand() =>
         DataLoader.Brand;
 
+    public IElectorate Burt() =>
+        DataLoader.Burt;
+
     public IElectorate Canning() =>
         DataLoader.Canning;
 
@@ -464,9 +467,6 @@ public partial class ElectorateDataSet : DataSet
     public IElectorate Moore() =>
         DataLoader.Moore;
 
-    public IElectorate Burt() =>
-        DataLoader.Burt;
-
     public IElectorate OConnor() =>
         DataLoader.OConnor;
 
@@ -476,12 +476,12 @@ public partial class ElectorateDataSet : DataSet
     public IElectorate Perth() =>
         DataLoader.Perth;
 
-    public IElectorate Stirling() =>
-        DataLoader.Stirling;
-
     public IElectorate Swan() =>
         DataLoader.Swan;
 
     public IElectorate Tangney() =>
         DataLoader.Tangney;
+
+    public IElectorate Stirling() =>
+        DataLoader.Stirling;
 }

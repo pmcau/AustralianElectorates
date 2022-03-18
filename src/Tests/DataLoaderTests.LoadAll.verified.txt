@@ -1,8 +1,8 @@
-{
-  FutureLoadedElectorateMaps: 150,
-  FutureLoadedStateMaps: 8,
+﻿{
   LoadedElectorateMaps2016: 150,
   LoadedStateMaps2016: 8,
   LoadedElectorateMaps2019: 151,
-  LoadedStateMaps2019: 8
+  LoadedStateMaps2019: 8,
+  LoadedElectorateMaps2022: 151,
+  LoadedStateMaps2022: 8
 }

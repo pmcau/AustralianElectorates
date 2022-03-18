@@ -615,42 +615,6 @@
     "Branches": []
   },
   {
-    "Id": 1184,
-    "Name": "Christian Democratic Party (Fred Nile Group)",
-    "Code": "Christian Democratic Party",
-    "Abbreviation": "Christian Democratic Party",
-    "RegisterDate": "17 September 2007",
-    "AmendmentDate": "17 September 2007",
-    "Address": "PO Box 8456\nPARRAMATTA NSW 2150",
-    "Officer": {
-      "Title": "Reverend",
-      "FamilyName": "Nile",
-      "GivenNames": "Frederick John",
-      "Capacity": "National President",
-      "Address": {
-        "Line1": "10 Courtley Road",
-        "Suburb": "Beacon Hill",
-        "State": "NSW",
-        "Postcode": 2100
-      }
-    },
-    "DeputyOfficers": [
-      {
-        "Title": "Ms ",
-        "FamilyName": "Wright",
-        "GivenNames": "Anne Louise",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "Suite 5, 181 High Street",
-          "Suburb": "North Willoughby",
-          "State": "NSW",
-          "Postcode": 2068
-        }
-      }
-    ],
-    "Branches": []
-  },
-  {
     "Id": 26,
     "Name": "Country Liberal Party (NT)",
     "Code": "NT CLP",
@@ -2025,6 +1989,29 @@
     ]
   },
   {
+    "Id": 1509,
+    "Name": "TNL",
+    "Code": "TNL",
+    "Abbreviation": "TNL",
+    "RegisterDate": "17 March 2022",
+    "AmendmentDate": "17 March 2022",
+    "Address": "PO Box 190\nNORTHBRIDGE NSW 1560",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Kline",
+      "GivenNames": "Victor Alan",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "53 Martin Place",
+        "Suburb": "Sydney",
+        "State": "NSW",
+        "Postcode": 2000
+      }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
+  },
+  {
     "Id": 1469,
     "Name": "United Australia Party",
     "Code": "UAP",
@@ -2110,7 +2097,7 @@
         "GivenNames": "Max",
         "Capacity": "Secretary",
         "Address": {
-          "Line1": "406/58-60 King Street",
+          "Line1": "702 / 58 King Street",
           "Suburb": "Newtown",
           "State": "NSW",
           "Postcode": 2042

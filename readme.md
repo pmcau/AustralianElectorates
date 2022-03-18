@@ -21,54 +21,54 @@ Sample:
 ```txt
 [
   {
-    "Name": "Canberra",
-    "ShortName": "canberra",
+    "Name": "Bean",
+    "ShortName": "bean",
     "State": "ACT",
-    "Area": 312.0,
-    "Exist2016": true,
+    "Area": 1913.0,
+    "Exist2016": false,
     "Exist2019": true,
-    "ExistInFuture": true,
+    "Exist2022": true,
     "DateGazetted": "2018-07-13",
-    "Description": "<p>The Division of Canberra covers an area in central ACT consisting of the Districts of:</p><ul><li>Canberra Central,</li><li>Kowen,</li><li>Majura,</li><li>part of Belconnen,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul>",
+    "Description": "<p>The Division of Bean covers an area in the south of the ACT consisting of the Districts of:</p><ul><li>Booth,</li><li>Coree,</li><li>Cotter River,</li><li>Mount Clear,</li><li>Paddys River,</li><li>Rendezvous Creek,</li><li>Stromlo,</li><li>Tennent,</li><li>Tuggeranong,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul><p>The Division of Bean also includes Norfolk Island.</p>",
     "DemographicRating": "<strong>Inner Metropolitan</strong> – situated in capital cities and consisting of well-established built-up suburbs",
-    "NameDerivation": "A locality name derived from an Aboriginal word which is held to mean 'meeting place'.",
-    "Enrollment": 95348,
+    "NameDerivation": "Named after Charles Edwin Woodrow Bean, 1879–1968, Australia's official correspondent to the Australian Imperial Force in World War One, editor of the <em>Official History of Australia in the War of 1914–1918</em> and primary advocate to establish the Australian War Memorial.",
+    "Enrollment": 104482,
     "TwoCandidatePreferred": {
       "Elected": {
-        "FamilyName": "Payne",
-        "GivenNames": "Alicia",
+        "FamilyName": "Smith",
+        "GivenNames": "David",
         "PartyCode": "ALP",
-        "Votes": 57961,
-        "Swing": 4.14,
+        "Votes": 53455,
+        "Swing": -1.33,
         "PartyId": 200
       },
       "Other": {
-        "FamilyName": "Zaki",
-        "GivenNames": "Mina",
+        "FamilyName": "Cocks",
+        "GivenNames": "Ed",
         "PartyCode": "LP",
-        "Votes": 28442,
-        "Swing": -4.14,
+        "Votes": 39484,
+        "Swing": 1.33,
         "PartyId": 177
       }
     },
     "Locations": [
       {
-        "Postcode": 2601,
+        "Postcode": 2906,
         "Localities": [
-          "Acton",
-          "Canberra Central",
-          "Canberra City"
+          "Banks",
+          "Conder",
+          "Gordon"
         ]
       },
       {
-        "Postcode": 2602,
+        "Postcode": 2600,
         "Localities": [
-          "Ainslie",
-          "Dickson",
-          "Downer",
-          "Hackett",
-          "Lyneham",
-          "O'Connor",
+          "Hmas Harman"
+        ]
+      },
+      {
+        "Postcode": 2617,
+        "Localities": [
 ```
 <sup><a href='/src/Tests/Snippets.ElectoratesSampleJson.verified.txt#L1-L50' title='Snippet source file'>snippet source</a> | <a href='#snippet-Snippets.ElectoratesSampleJson.verified.txt' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
@@ -182,7 +182,7 @@ Maps in [geojson format](http://geojson.org/).
 
 The following grouping of maps exist:
 
- * Future (Next election) [/Data/Maps/Future](/Data/Maps/Future)
+ * 2022 election [/Data/Maps/2022](/Data/Maps/2022)
  * 2019 election [/Data/Maps/2019](/Data/Maps/2019)
  * 2016 election [/Data/Maps/2016](/Data/Maps/2016)
 
@@ -205,11 +205,11 @@ Below is the combinations for [Bass](https://www.aec.gov.au/profiles/tas/bass.ht
 
 | Size  | File name                                                        | Simplification |
 | -----:| ---------------------------------------------------------------- | --------------:|
-| 2.8MB | [bass.geojson](/Data/Maps/Future/Electorates/bass.geojson)       | none           |
-| 231KB | [bass_20.geojson](/Data/Maps/Future/Electorates/bass_20.geojson) | 20%            |
-| 94KB  | [bass_10.geojson](/Data/Maps/Future/Electorates/bass_10.geojson) | 10%            |
-| 46KB  | [bass_05.geojson](/Data/Maps/Future/Electorates/bass_05.geojson) | 5%             |
-| 8KB   | [bass_01.geojson](/Data/Maps/Future/Electorates/bass_01.geojson) | 1%             |
+| 2.8MB | [bass.geojson](/Data/Maps/2022/Electorates/bass.geojson)       | none           |
+| 231KB | [bass_20.geojson](/Data/Maps/2022/Electorates/bass_20.geojson) | 20%            |
+| 94KB  | [bass_10.geojson](/Data/Maps/2022/Electorates/bass_10.geojson) | 10%            |
+| 46KB  | [bass_05.geojson](/Data/Maps/2022/Electorates/bass_05.geojson) | 5%             |
+| 8KB   | [bass_01.geojson](/Data/Maps/2022/Electorates/bass_01.geojson) | 1%             |
 
 
 #### Simplification
@@ -256,16 +256,16 @@ var fennerGeoJson2016 = DataLoader.Fenner.Get2016Map();
 Debug.WriteLine(fennerGeoJson2016);
 var fennerGeoJson2019 = DataLoader.Fenner.Get2019Map();
 Debug.WriteLine(fennerGeoJson2019);
-var futureFennerGeoJson = DataLoader.Fenner.GetFutureMap();
-Debug.WriteLine(futureFennerGeoJson);
+var fennerGeoJson2022 = DataLoader.Fenner.Get2022Map();
+Debug.WriteLine(fennerGeoJson2022);
 
 // get an electorates maps (geojson) by string
 var canberraGeoJson2016 = DataLoader.Maps2016.GetElectorate("Canberra");
 Debug.WriteLine(canberraGeoJson2016);
 var canberraGeoJson2019 = DataLoader.Maps2019.GetElectorate("Canberra");
 Debug.WriteLine(canberraGeoJson2019);
-var futureCanberraGeoJson = DataLoader.MapsFuture.GetElectorate("Canberra");
-Debug.WriteLine(futureCanberraGeoJson);
+var canberraGeoJson2022 = DataLoader.Maps2022.GetElectorate("Canberra");
+Debug.WriteLine(canberraGeoJson2022);
 
 // export all data to a directory
 // structure will be
@@ -274,8 +274,8 @@ Debug.WriteLine(futureCanberraGeoJson);
 // /2016/Electorates (2016 electorate geojson files)
 // /2019 (2019 states and australia geojson files)
 // /2019/Electorates (2019 electorate geojson files)
-// /Future (future states and australia geojson files)
-// /Future/Electorates (future electorate geojson files)
+// /2022 (202 states and australia geojson files)
+// /2022/Electorates (2022 electorate geojson files)
 var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
 Directory.CreateDirectory(directory);
 DataLoader.Export(directory);

@@ -10,23 +10,23 @@ public static partial class DataLoader
     static void InitNamed()
     {
 
+        Bean = Electorates.Single(x => x.Name == "Bean");
+
         Canberra = Electorates.Single(x => x.Name == "Canberra");
 
         Fenner = Electorates.Single(x => x.Name == "Fenner");
-
-        Bean = Electorates.Single(x => x.Name == "Bean");
 
         Bass = Electorates.Single(x => x.Name == "Bass");
 
         Braddon = Electorates.Single(x => x.Name == "Braddon");
 
-        Denison = Electorates.Single(x => x.Name == "Denison");
+        Clark = Electorates.Single(x => x.Name == "Clark");
 
         Franklin = Electorates.Single(x => x.Name == "Franklin");
 
         Lyons = Electorates.Single(x => x.Name == "Lyons");
 
-        Clark = Electorates.Single(x => x.Name == "Clark");
+        Denison = Electorates.Single(x => x.Name == "Denison");
 
         Adelaide = Electorates.Single(x => x.Name == "Adelaide");
 
@@ -44,19 +44,17 @@ public static partial class DataLoader
 
         Mayo = Electorates.Single(x => x.Name == "Mayo");
 
-        PortAdelaide = Electorates.Single(x => x.Name == "Port Adelaide");
+        Spence = Electorates.Single(x => x.Name == "Spence");
 
         Sturt = Electorates.Single(x => x.Name == "Sturt");
 
-        Wakefield = Electorates.Single(x => x.Name == "Wakefield");
+        PortAdelaide = Electorates.Single(x => x.Name == "Port Adelaide");
 
-        Spence = Electorates.Single(x => x.Name == "Spence");
+        Wakefield = Electorates.Single(x => x.Name == "Wakefield");
 
         Aston = Electorates.Single(x => x.Name == "Aston");
 
         Ballarat = Electorates.Single(x => x.Name == "Ballarat");
-
-        Batman = Electorates.Single(x => x.Name == "Batman");
 
         Bendigo = Electorates.Single(x => x.Name == "Bendigo");
 
@@ -68,6 +66,8 @@ public static partial class DataLoader
 
         Chisholm = Electorates.Single(x => x.Name == "Chisholm");
 
+        Cooper = Electorates.Single(x => x.Name == "Cooper");
+
         Corangamite = Electorates.Single(x => x.Name == "Corangamite");
 
         Corio = Electorates.Single(x => x.Name == "Corio");
@@ -78,6 +78,8 @@ public static partial class DataLoader
 
         Flinders = Electorates.Single(x => x.Name == "Flinders");
 
+        Fraser = Electorates.Single(x => x.Name == "Fraser");
+
         Gellibrand = Electorates.Single(x => x.Name == "Gellibrand");
 
         Gippsland = Electorates.Single(x => x.Name == "Gippsland");
@@ -85,6 +87,8 @@ public static partial class DataLoader
         Goldstein = Electorates.Single(x => x.Name == "Goldstein");
 
         Gorton = Electorates.Single(x => x.Name == "Gorton");
+
+        Hawke = Electorates.Single(x => x.Name == "Hawke");
 
         Higgins = Electorates.Single(x => x.Name == "Higgins");
 
@@ -104,21 +108,21 @@ public static partial class DataLoader
 
         Lalor = Electorates.Single(x => x.Name == "Lalor");
 
+        Macnamara = Electorates.Single(x => x.Name == "Macnamara");
+
         Mallee = Electorates.Single(x => x.Name == "Mallee");
 
         Maribyrnong = Electorates.Single(x => x.Name == "Maribyrnong");
 
         McEwen = Electorates.Single(x => x.Name == "McEwen");
 
-        McMillan = Electorates.Single(x => x.Name == "McMillan");
-
         Melbourne = Electorates.Single(x => x.Name == "Melbourne");
-
-        MelbournePorts = Electorates.Single(x => x.Name == "Melbourne Ports");
 
         Menzies = Electorates.Single(x => x.Name == "Menzies");
 
-        Murray = Electorates.Single(x => x.Name == "Murray");
+        Monash = Electorates.Single(x => x.Name == "Monash");
+
+        Nicholls = Electorates.Single(x => x.Name == "Nicholls");
 
         Scullin = Electorates.Single(x => x.Name == "Scullin");
 
@@ -126,15 +130,13 @@ public static partial class DataLoader
 
         Wills = Electorates.Single(x => x.Name == "Wills");
 
-        Cooper = Electorates.Single(x => x.Name == "Cooper");
+        Batman = Electorates.Single(x => x.Name == "Batman");
 
-        Fraser = Electorates.Single(x => x.Name == "Fraser");
+        McMillan = Electorates.Single(x => x.Name == "McMillan");
 
-        Macnamara = Electorates.Single(x => x.Name == "Macnamara");
+        MelbournePorts = Electorates.Single(x => x.Name == "Melbourne Ports");
 
-        Monash = Electorates.Single(x => x.Name == "Monash");
-
-        Nicholls = Electorates.Single(x => x.Name == "Nicholls");
+        Murray = Electorates.Single(x => x.Name == "Murray");
 
         Blair = Electorates.Single(x => x.Name == "Blair");
 
@@ -199,8 +201,6 @@ public static partial class DataLoader
         Lingiari = Electorates.Single(x => x.Name == "Lingiari");
 
         Solomon = Electorates.Single(x => x.Name == "Solomon");
-
-        NorthernTerritory = Electorates.Single(x => x.Name == "Northern Territory");
 
         Banks = Electorates.Single(x => x.Name == "Banks");
 
@@ -298,6 +298,8 @@ public static partial class DataLoader
 
         Brand = Electorates.Single(x => x.Name == "Brand");
 
+        Burt = Electorates.Single(x => x.Name == "Burt");
+
         Canning = Electorates.Single(x => x.Name == "Canning");
 
         Cowan = Electorates.Single(x => x.Name == "Cowan");
@@ -314,38 +316,36 @@ public static partial class DataLoader
 
         Moore = Electorates.Single(x => x.Name == "Moore");
 
-        Burt = Electorates.Single(x => x.Name == "Burt");
-
         OConnor = Electorates.Single(x => x.Name == "O'Connor");
 
         Pearce = Electorates.Single(x => x.Name == "Pearce");
 
         Perth = Electorates.Single(x => x.Name == "Perth");
 
-        Stirling = Electorates.Single(x => x.Name == "Stirling");
-
         Swan = Electorates.Single(x => x.Name == "Swan");
 
         Tangney = Electorates.Single(x => x.Name == "Tangney");
+
+        Stirling = Electorates.Single(x => x.Name == "Stirling");
     }
+
+    public static IElectorate Bean { get; private set; } = null!;
 
     public static IElectorate Canberra { get; private set; } = null!;
 
     public static IElectorate Fenner { get; private set; } = null!;
 
-    public static IElectorate Bean { get; private set; } = null!;
-
     public static IElectorate Bass { get; private set; } = null!;
 
     public static IElectorate Braddon { get; private set; } = null!;
 
-    public static IElectorate Denison { get; private set; } = null!;
+    public static IElectorate Clark { get; private set; } = null!;
 
     public static IElectorate Franklin { get; private set; } = null!;
 
     public static IElectorate Lyons { get; private set; } = null!;
 
-    public static IElectorate Clark { get; private set; } = null!;
+    public static IElectorate Denison { get; private set; } = null!;
 
     public static IElectorate Adelaide { get; private set; } = null!;
 
@@ -363,19 +363,17 @@ public static partial class DataLoader
 
     public static IElectorate Mayo { get; private set; } = null!;
 
-    public static IElectorate PortAdelaide { get; private set; } = null!;
+    public static IElectorate Spence { get; private set; } = null!;
 
     public static IElectorate Sturt { get; private set; } = null!;
 
-    public static IElectorate Wakefield { get; private set; } = null!;
+    public static IElectorate PortAdelaide { get; private set; } = null!;
 
-    public static IElectorate Spence { get; private set; } = null!;
+    public static IElectorate Wakefield { get; private set; } = null!;
 
     public static IElectorate Aston { get; private set; } = null!;
 
     public static IElectorate Ballarat { get; private set; } = null!;
-
-    public static IElectorate Batman { get; private set; } = null!;
 
     public static IElectorate Bendigo { get; private set; } = null!;
 
@@ -387,6 +385,8 @@ public static partial class DataLoader
 
     public static IElectorate Chisholm { get; private set; } = null!;
 
+    public static IElectorate Cooper { get; private set; } = null!;
+
     public static IElectorate Corangamite { get; private set; } = null!;
 
     public static IElectorate Corio { get; private set; } = null!;
@@ -397,6 +397,8 @@ public static partial class DataLoader
 
     public static IElectorate Flinders { get; private set; } = null!;
 
+    public static IElectorate Fraser { get; private set; } = null!;
+
     public static IElectorate Gellibrand { get; private set; } = null!;
 
     public static IElectorate Gippsland { get; private set; } = null!;
@@ -404,6 +406,8 @@ public static partial class DataLoader
     public static IElectorate Goldstein { get; private set; } = null!;
 
     public static IElectorate Gorton { get; private set; } = null!;
+
+    public static IElectorate Hawke { get; private set; } = null!;
 
     public static IElectorate Higgins { get; private set; } = null!;
 
@@ -423,21 +427,21 @@ public static partial class DataLoader
 
     public static IElectorate Lalor { get; private set; } = null!;
 
+    public static IElectorate Macnamara { get; private set; } = null!;
+
     public static IElectorate Mallee { get; private set; } = null!;
 
     public static IElectorate Maribyrnong { get; private set; } = null!;
 
     public static IElectorate McEwen { get; private set; } = null!;
 
-    public static IElectorate McMillan { get; private set; } = null!;
-
     public static IElectorate Melbourne { get; private set; } = null!;
-
-    public static IElectorate MelbournePorts { get; private set; } = null!;
 
     public static IElectorate Menzies { get; private set; } = null!;
 
-    public static IElectorate Murray { get; private set; } = null!;
+    public static IElectorate Monash { get; private set; } = null!;
+
+    public static IElectorate Nicholls { get; private set; } = null!;
 
     public static IElectorate Scullin { get; private set; } = null!;
 
@@ -445,15 +449,13 @@ public static partial class DataLoader
 
     public static IElectorate Wills { get; private set; } = null!;
 
-    public static IElectorate Cooper { get; private set; } = null!;
+    public static IElectorate Batman { get; private set; } = null!;
 
-    public static IElectorate Fraser { get; private set; } = null!;
+    public static IElectorate McMillan { get; private set; } = null!;
 
-    public static IElectorate Macnamara { get; private set; } = null!;
+    public static IElectorate MelbournePorts { get; private set; } = null!;
 
-    public static IElectorate Monash { get; private set; } = null!;
-
-    public static IElectorate Nicholls { get; private set; } = null!;
+    public static IElectorate Murray { get; private set; } = null!;
 
     public static IElectorate Blair { get; private set; } = null!;
 
@@ -518,8 +520,6 @@ public static partial class DataLoader
     public static IElectorate Lingiari { get; private set; } = null!;
 
     public static IElectorate Solomon { get; private set; } = null!;
-
-    public static IElectorate NorthernTerritory { get; private set; } = null!;
 
     public static IElectorate Banks { get; private set; } = null!;
 
@@ -617,6 +617,8 @@ public static partial class DataLoader
 
     public static IElectorate Brand { get; private set; } = null!;
 
+    public static IElectorate Burt { get; private set; } = null!;
+
     public static IElectorate Canning { get; private set; } = null!;
 
     public static IElectorate Cowan { get; private set; } = null!;
@@ -633,17 +635,15 @@ public static partial class DataLoader
 
     public static IElectorate Moore { get; private set; } = null!;
 
-    public static IElectorate Burt { get; private set; } = null!;
-
     public static IElectorate OConnor { get; private set; } = null!;
 
     public static IElectorate Pearce { get; private set; } = null!;
 
     public static IElectorate Perth { get; private set; } = null!;
 
-    public static IElectorate Stirling { get; private set; } = null!;
-
     public static IElectorate Swan { get; private set; } = null!;
 
     public static IElectorate Tangney { get; private set; } = null!;
+
+    public static IElectorate Stirling { get; private set; } = null!;
 }

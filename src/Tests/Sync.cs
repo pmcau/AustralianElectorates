@@ -5,25 +5,34 @@ using GeoJSON.Net.Feature;
 
 public class Sync
 {
+
+    static List<int> percents;
+
+    //static List<string> electoratesFuture = new();
+    static List<string> electorates2016 = new();
+    static List<string> electorates2019 = new();
+    static List<string> electorates2022 = new();
     [Fact]
     [Trait("Category", "Integration")]
     public async Task SyncData()
     {
+        var electorateToStateMap = GetElectorateToStateMap();
        // Hasher.Clear(DataLocations.DataPath);
         IoHelpers.PurgeDirectory(DataLocations.MapsPath);
         IoHelpers.PurgeDirectory(DataLocations.TempPath);
 
         await PartyScraper.Run();
 
-        await Get2016();
+        await Get2022();
         await Get2019();
+        await Get2016();
 
-        File.Copy(DataLocations.Australia2019JsonPath, DataLocations.FutureAustraliaJsonPath);
-        await StatesToCountryDownloader.RunFuture();
+        // File.Copy(DataLocations.Australia2019JsonPath, DataLocations.FutureAustraliaJsonPath);
+        // await StatesToCountryDownloader.RunFuture();
 
-        await ProcessYear(DataLocations.Maps2016Path, electorates2016);
-        await ProcessYear(DataLocations.Maps2019Path, electorates2019);
-        await ProcessYear(DataLocations.MapsFuturePath, electoratesFuture);
+        await ProcessYear(DataLocations.Maps2022Path, electorates2022, electorateToStateMap);
+        await ProcessYear(DataLocations.Maps2016Path, electorates2016, electorateToStateMap);
+        await ProcessYear(DataLocations.Maps2019Path, electorates2019, electorateToStateMap);
 
         var electorates = await WriteElectoratesMetaData();
 
@@ -46,6 +55,29 @@ public class Sync
         Export.ExportElectorates();
        // await Hasher.Create(DataLocations.DataPath);
         Zipper.ZipDir(DataLocations.MapsCuratedZipPath, DataLocations.MapsCuratedPath);
+    }
+
+    static Dictionary<State, List<string>> GetElectorateToStateMap()
+    {
+        var electorateToStateMap = new Dictionary<State, List<string>>();
+        foreach (var state in states)
+        {
+            electorateToStateMap[state] = new();
+        }
+        electorateToStateMap[State.VIC].Add("hawke");
+        var stateToElectorateFile = Path.Combine(DataLocations.DataPath, "state_to_electorate.txt");
+        foreach (var line in File.ReadAllLines(stateToElectorateFile))
+        {
+            var indexOf = line.IndexOf(":");
+
+            var statePart = line.Substring(0, indexOf);
+            var state = Enum.Parse<State>(statePart);
+            var electorate = line.Substring(indexOf+1, line.Length - indexOf - 1);
+            var list = electorateToStateMap[state];
+            list.Add(electorate);
+        }
+
+        return electorateToStateMap;
     }
 
     [Fact]
@@ -81,12 +113,6 @@ public class Sync
         File.Copy(pngPath, portraitPath, true);
     }
 
-    static List<int> percents;
-
-    static List<string> electoratesFuture = new();
-    static List<string> electorates2016 = new();
-    static List<string> electorates2019 = new();
-
     static Dictionary<State, HashSet<string>> electorateNames = new()
     {
         {State.ACT, new()},
@@ -114,7 +140,7 @@ public class Sync
     static Sync() =>
         percents = new() {20, 10, 5, 1};
 
-    static async Task ProcessYear(string yearPath, List<string> electorates)
+    static async Task ProcessYear(string yearPath, List<string> electorates, Dictionary<State,List<string>> electorateToStateMap)
     {
         await WriteOptimised(yearPath);
 
@@ -127,7 +153,7 @@ public class Sync
             foreach (var state in states)
             {
                 var lower = state.ToString().ToLower();
-                var featureCollectionForState = australiaFeatures.FeaturesCollectionForState(state);
+                var featureCollectionForState = australiaFeatures.FeaturesCollectionForState(electorateToStateMap[state]);
                 var suffix = Path.GetFileName(australiaPath).Replace("australia", "");
                 var stateJson = Path.Combine(yearPath, $"{lower}{suffix}");
                 JsonSerializerService.SerializeGeo(featureCollectionForState, stateJson);
@@ -156,6 +182,11 @@ public class Sync
         // 2 party pref https://tallyroom.aec.gov.au/Downloads/HouseTppByDivisionDownload-24310.csv
         GetCountry(2019, "https://www.aec.gov.au/Electorates/gis/files/national-mapinfo-fe2019.zip", DataLocations.Maps2019Path);
 
+    static Task Get2022() =>
+        // elected https://tallyroom.aec.gov.au/Downloads/HouseMembersElectedDownload-24310.csv
+        // 2 party pref https://tallyroom.aec.gov.au/Downloads/HouseTppByDivisionDownload-24310.csv
+        GetCountry(2022, "https://www.aec.gov.au/Electorates/gis/files/2021-Cwlth_electoral_boundaries_TAB.zip", DataLocations.Maps2022Path);
+
     static async Task GetCountry(int year, string url, string mapsPath)
     {
         var zip = Path.Combine(DataLocations.TempPath, year + ".zip");
@@ -165,7 +196,8 @@ public class Sync
         var extractDirectory = Path.Combine(DataLocations.TempPath, $"australia{year}_extract");
         ZipFile.ExtractToDirectory(zip, extractDirectory);
 
-        await MapToGeoJson.ConvertTab(targetPath, Path.Combine(extractDirectory, "COM_ELB.tab"));
+        var tabFile = Directory.EnumerateFiles(extractDirectory, "*.tab").Single();
+        await MapToGeoJson.ConvertTab(targetPath, tabFile);
 
         var featureCollection = JsonSerializerService.Deserialize<FeatureCollection>(targetPath);
         featureCollection.FixBoundingBox();
@@ -212,10 +244,12 @@ public class Sync
             {
                 var existIn2016 = electorates2016.Contains(electorateName);
                 var existIn2019 = electorates2019.Contains(electorateName);
-                var existInFuture = electoratesFuture.Contains(electorateName);
+                var existIn2022 = electorates2022.Contains(electorateName);
+                //var existInFuture = electoratesFuture.Contains(electorateName);
 
                 ElectorateEx electorate;
-                if (existIn2019 || existInFuture)
+                //if (existIn2019 || existInFuture)
+                if (existIn2019 || existIn2022)
                 {
                     electorate = await ElectoratesScraper.ScrapeCurrentElectorate(electorateName, electoratePair.Key);
                 }
@@ -226,7 +260,8 @@ public class Sync
 
                 electorate.Exist2016 = existIn2016;
                 electorate.Exist2019 = existIn2019;
-                electorate.ExistInFuture = existInFuture;
+                electorate.Exist2022 = existIn2022;
+                //electorate.ExistInFuture = existInFuture;
                 electorate.Locations = SelectLocations(electorateName, localityData).ToList();
                 electorates.Add(electorate);
             }

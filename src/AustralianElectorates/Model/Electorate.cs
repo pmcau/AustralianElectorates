@@ -8,7 +8,8 @@ public interface IElectorate
     double Area { get; }
     bool Exist2016 { get; }
     bool Exist2019 { get; }
-    bool ExistInFuture { get; }
+    bool Exist2022 { get; }
+    //bool ExistInFuture { get; }
     DateTime? DateGazetted { get; }
     string Description { get; }
     string DemographicRating { get; }
@@ -19,7 +20,8 @@ public interface IElectorate
     IReadOnlyList<ILocation> Locations { get; set; }
     IElectorateMap Get2016Map();
     IElectorateMap Get2019Map();
-    IElectorateMap GetFutureMap();
+    IElectorateMap Get2022Map();
+    //IElectorateMap GetFutureMap();
 }
 
 [DebuggerDisplay("Name={Name}, State={State}")]
@@ -32,7 +34,8 @@ class Electorate :
     public double Area { get; set; }
     public bool Exist2016 { get; set; }
     public bool Exist2019 { get; set; }
-    public bool ExistInFuture { get; set; }
+    public bool Exist2022 { get; set; }
+    //public bool ExistInFuture { get; set; }
     public DateTime? DateGazetted { get; set; }
     public string Description { get; set; } = null!;
     public string DemographicRating { get; set; } = null!;
@@ -59,9 +62,12 @@ class Electorate :
     public IElectorateMap Get2019Map() =>
         DataLoader.Get2019Map(this);
 
+    public IElectorateMap Get2022Map() =>
+        DataLoader.Get2022Map(this);
+
     public IElectorateMap GetMap() =>
         DataLoader.GetMap(this);
 
-    public IElectorateMap GetFutureMap() =>
-        DataLoader.GetFutureMap(this);
+    // public IElectorateMap GetFutureMap() =>
+    //     DataLoader.GetFutureMap(this);
 }

@@ -1,5 +1,4 @@
-﻿using AustralianElectorates;
-using GeoJSON.Net.Feature;
+﻿using GeoJSON.Net.Feature;
 using GeoJSON.Net.Geometry;
 
 static class GeoJsonExtensions
@@ -7,10 +6,14 @@ static class GeoJsonExtensions
     public static FeatureCollection ToCollection(this Feature feature) =>
         new(new() {feature});
 
-    public static FeatureCollection FeaturesCollectionForState(this FeatureCollection featureCollection, State state)
+    public static FeatureCollection FeaturesCollectionForState(this FeatureCollection featureCollection, List<string> electorates)
     {
         var features = featureCollection.Features
-            .Where(x => string.Equals((string) x.Properties["state"], state.ToString(), StringComparison.OrdinalIgnoreCase))
+            .Where(x =>
+            {
+                var electorate  = (string) x.Properties["electorateShortName"];
+                return electorates.Contains(electorate);
+            })
             .ToList();
         FeatureCollection collection = new(features);
         collection.FixBoundingBox();
