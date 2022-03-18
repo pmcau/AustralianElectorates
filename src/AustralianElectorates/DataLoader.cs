@@ -181,25 +181,17 @@ public static partial class DataLoader
         Maps2022.LoadAll();
     }
 
-    public static void Export(string directory)
+    public static async Task Export(string directory)
     {
         Guard.AgainstWhiteSpace(nameof(directory), directory);
-        lock (exportLocker)
-        {
-            ExportInLock(directory);
-        }
-    }
-
-    static void ExportInLock(string directory)
-    {
-        WriteElectoratesJson(directory);
+        await WriteElectoratesJson(directory);
 
         using var stream = assembly.GetManifestResourceStream("Maps.zip")!;
         using ZipArchive archive = new(stream);
         archive.ExtractToDirectory(directory);
     }
 
-    static void WriteElectoratesJson(string directory)
+    static async Task WriteElectoratesJson(string directory)
     {
         var electoratesJsonPath = Path.Combine(directory, "electorates.json");
         if (File.Exists(electoratesJsonPath))
@@ -211,16 +203,16 @@ public static partial class DataLoader
             }
         }
 
-        WriteElectoratesJsonInner(electoratesJsonPath);
+        await WriteElectoratesJsonInner(electoratesJsonPath);
 
         File.SetCreationTimeUtc(electoratesJsonPath, AssemblyTimestamp.Value);
     }
 
-    static void WriteElectoratesJsonInner(string electoratesJsonPath)
+    static async Task WriteElectoratesJsonInner(string electoratesJsonPath)
     {
-        using var stream = assembly.GetManifestResourceStream("electorates.json");
+        using var stream = assembly.GetManifestResourceStream("electorates.json")!;
         using var target = File.Create(electoratesJsonPath);
-        stream.CopyTo(target);
+        await stream.CopyToAsync(target);
     }
 
     public static IElectorateMap Get2016Map(this IElectorate electorate)

@@ -81,10 +81,10 @@ public class DataLoaderTests
         {
             if (overwrite)
             {
-                DataLoader.Export(directory);
+                await DataLoader.Export(directory);
             }
 
-            DataLoader.Export(directory);
+            await DataLoader.Export(directory);
             await Verify(Directory.EnumerateFiles(directory, "*.*", SearchOption.AllDirectories).Count());
         }
         finally

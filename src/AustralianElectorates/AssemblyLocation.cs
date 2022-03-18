@@ -3,7 +3,7 @@
     static AssemblyLocation()
     {
         File = typeof(AssemblyLocation).Assembly.Location;
-        Directory = Path.GetDirectoryName(File);
+        Directory = Path.GetDirectoryName(File)!;
     }
 
     public static string File { get; }
