@@ -182,7 +182,7 @@ Maps in [geojson format](http://geojson.org/).
 
 The following grouping of maps exist:
 
- * Future (Next election) [/Data/Maps/Future](/Data/Maps/Future)
+ * 2022 election [/Data/Maps/2022](/Data/Maps/2022)
  * 2019 election [/Data/Maps/2019](/Data/Maps/2019)
  * 2016 election [/Data/Maps/2016](/Data/Maps/2016)
 
@@ -205,11 +205,11 @@ Below is the combinations for [Bass](https://www.aec.gov.au/profiles/tas/bass.ht
 
 | Size  | File name                                                        | Simplification |
 | -----:| ---------------------------------------------------------------- | --------------:|
-| 2.8MB | [bass.geojson](/Data/Maps/Future/Electorates/bass.geojson)       | none           |
-| 231KB | [bass_20.geojson](/Data/Maps/Future/Electorates/bass_20.geojson) | 20%            |
-| 94KB  | [bass_10.geojson](/Data/Maps/Future/Electorates/bass_10.geojson) | 10%            |
-| 46KB  | [bass_05.geojson](/Data/Maps/Future/Electorates/bass_05.geojson) | 5%             |
-| 8KB   | [bass_01.geojson](/Data/Maps/Future/Electorates/bass_01.geojson) | 1%             |
+| 2.8MB | [bass.geojson](/Data/Maps/2022/Electorates/bass.geojson)       | none           |
+| 231KB | [bass_20.geojson](/Data/Maps/2022/Electorates/bass_20.geojson) | 20%            |
+| 94KB  | [bass_10.geojson](/Data/Maps/2022/Electorates/bass_10.geojson) | 10%            |
+| 46KB  | [bass_05.geojson](/Data/Maps/2022/Electorates/bass_05.geojson) | 5%             |
+| 8KB   | [bass_01.geojson](/Data/Maps/2022/Electorates/bass_01.geojson) | 1%             |
 
 
 #### Simplification

@@ -5,26 +5,48 @@ using GeoJSON.Net.Feature;
 
 public class Sync
 {
+
+    static List<int> percents;
+
+    //static List<string> electoratesFuture = new();
+    static List<string> electorates2016 = new();
+    static List<string> electorates2019 = new();
+    static List<string> electorates2022 = new();
     [Fact]
     [Trait("Category", "Integration")]
     public async Task SyncData()
     {
+        var electorateToStateMap = GetElectorateToStateMap();
        // Hasher.Clear(DataLocations.DataPath);
         IoHelpers.PurgeDirectory(DataLocations.MapsPath);
         IoHelpers.PurgeDirectory(DataLocations.TempPath);
 
         await PartyScraper.Run();
 
-        await Get2016();
-        await Get2019();
         await Get2022();
+        await Get2019();
+        await Get2016();
 
         // File.Copy(DataLocations.Australia2019JsonPath, DataLocations.FutureAustraliaJsonPath);
         // await StatesToCountryDownloader.RunFuture();
 
-        await ProcessYear(DataLocations.Maps2022Path, electorates2022);
-        await ProcessYear(DataLocations.Maps2016Path, electorates2016);
-        await ProcessYear(DataLocations.Maps2019Path, electorates2019);
+        await ProcessYear(DataLocations.Maps2022Path, electorates2022, electorateToStateMap);
+        await ProcessYear(DataLocations.Maps2016Path, electorates2016, electorateToStateMap);
+        await ProcessYear(DataLocations.Maps2019Path, electorates2019, electorateToStateMap);
+
+        var allElectorates = electorateToStateMap.SelectMany(x=>x.Value).ToList();
+        foreach (var electorate in electorates2016.Where(_ => !allElectorates.Contains(_)))
+        {
+            throw new(electorate);
+        }
+        foreach (var electorate in electorates2019.Where(_ => !allElectorates.Contains(_)))
+        {
+            throw new(electorate);
+        }
+        foreach (var electorate in electorates2022.Where(_ => !allElectorates.Contains(_)))
+        {
+            throw new(electorate);
+        }
 
         var electorates = await WriteElectoratesMetaData();
 
@@ -47,6 +69,28 @@ public class Sync
         Export.ExportElectorates();
        // await Hasher.Create(DataLocations.DataPath);
         Zipper.ZipDir(DataLocations.MapsCuratedZipPath, DataLocations.MapsCuratedPath);
+    }
+
+    static Dictionary<State, List<string>> GetElectorateToStateMap()
+    {
+        var electorateToStateMap = new Dictionary<State, List<string>>();
+        foreach (var state in states)
+        {
+            electorateToStateMap[state] = new();
+        }
+        var stateToElectorateFile = Path.Combine(DataLocations.DataPath, "state_to_electorate.txt");
+        foreach (var line in File.ReadAllLines(stateToElectorateFile))
+        {
+            var indexOf = line.IndexOf(":");
+
+            var statePart = line.Substring(0, indexOf);
+            var state = Enum.Parse<State>(statePart);
+            var electorate = line.Substring(indexOf+1, line.Length - indexOf - 1);
+            var list = electorateToStateMap[state];
+            list.Add(electorate);
+        }
+
+        return electorateToStateMap;
     }
 
     [Fact]
@@ -82,13 +126,6 @@ public class Sync
         File.Copy(pngPath, portraitPath, true);
     }
 
-    static List<int> percents;
-
-    //static List<string> electoratesFuture = new();
-    static List<string> electorates2016 = new();
-    static List<string> electorates2019 = new();
-    static List<string> electorates2022 = new();
-
     static Dictionary<State, HashSet<string>> electorateNames = new()
     {
         {State.ACT, new()},
@@ -116,7 +153,7 @@ public class Sync
     static Sync() =>
         percents = new() {20, 10, 5, 1};
 
-    static async Task ProcessYear(string yearPath, List<string> electorates)
+    static async Task ProcessYear(string yearPath, List<string> electorates, Dictionary<State,List<string>> electorateToStateMap)
     {
         await WriteOptimised(yearPath);
 
@@ -129,7 +166,7 @@ public class Sync
             foreach (var state in states)
             {
                 var lower = state.ToString().ToLower();
-                var featureCollectionForState = australiaFeatures.FeaturesCollectionForState(state);
+                var featureCollectionForState = australiaFeatures.FeaturesCollectionForState(electorateToStateMap[state]);
                 var suffix = Path.GetFileName(australiaPath).Replace("australia", "");
                 var stateJson = Path.Combine(yearPath, $"{lower}{suffix}");
                 JsonSerializerService.SerializeGeo(featureCollectionForState, stateJson);
