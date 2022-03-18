@@ -274,7 +274,7 @@ Debug.WriteLine(canberraGeoJson2022);
 // /2016/Electorates (2016 electorate geojson files)
 // /2019 (2019 states and australia geojson files)
 // /2019/Electorates (2019 electorate geojson files)
-// /2022 (2022 states and australia geojson files)
+// /2022 (202 states and australia geojson files)
 // /2022/Electorates (2022 electorate geojson files)
 var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
 Directory.CreateDirectory(directory);
