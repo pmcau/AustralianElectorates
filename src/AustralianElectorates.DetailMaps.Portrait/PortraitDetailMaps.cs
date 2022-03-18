@@ -2,11 +2,8 @@
 
 public static class PortraitDetailMaps
 {
-    static PortraitDetailMaps()
-    {
-        var assemblyDirectory = AssemblyLocation.DirectoryFor(typeof(PortraitDetailMaps));
-        Directory = Path.Combine(assemblyDirectory, "ElectorateMaps");
-    }
+    static PortraitDetailMaps() =>
+        Directory = Path.Combine(AssemblyLocation.Directory, "ElectorateMaps");
 
     public static string MapForElectorate(string name)
     {

@@ -1,15 +1,11 @@
 ﻿static class AssemblyLocation
 {
-    public static string PathFor(Type type)
+    static AssemblyLocation()
     {
-        var assembly = type.Assembly;
-
-        return assembly.CodeBase
-            .Replace("file:///", "")
-            .Replace("file://", "")
-            .Replace(@"file:\\\", "")
-            .Replace(@"file:\\", "");
+        File = typeof(AssemblyLocation).Assembly.Location;
+        Directory = Path.GetDirectoryName(File);
     }
-    public static string DirectoryFor(Type type) =>
-        Path.GetDirectoryName(PathFor(type))!;
+
+    public static string File { get; }
+    public static string Directory { get; }
 }

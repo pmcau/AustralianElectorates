@@ -1,10 +1,7 @@
 ﻿static class AssemblyTimestamp
 {
-    static AssemblyTimestamp()
-    {
-        var assemblyPath = AssemblyLocation.PathFor(typeof(AssemblyTimestamp));
-        Value = File.GetCreationTimeUtc(assemblyPath);
-    }
+    static AssemblyTimestamp() =>
+        Value = File.GetCreationTimeUtc(AssemblyLocation.File);
 
     public static DateTime Value;
 }

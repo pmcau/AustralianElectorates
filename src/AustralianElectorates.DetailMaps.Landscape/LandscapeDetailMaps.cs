@@ -2,11 +2,8 @@
 
 public static class LandscapeDetailMaps
 {
-    static LandscapeDetailMaps()
-    {
-        var assemblyDirectory = AssemblyLocation.DirectoryFor(typeof(LandscapeDetailMaps));
-        Directory = Path.Combine(assemblyDirectory, "ElectorateMaps");
-    }
+    static LandscapeDetailMaps() =>
+        Directory = Path.Combine(AssemblyLocation.Directory, "ElectorateMaps");
 
     public static string MapForElectorate(string name)
     {
