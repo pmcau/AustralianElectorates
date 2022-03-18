@@ -88,6 +88,8 @@ public static partial class DataLoader
 
         Gorton = Electorates.Single(x => x.Name == "Gorton");
 
+        Hawke = Electorates.Single(x => x.Name == "Hawke");
+
         Higgins = Electorates.Single(x => x.Name == "Higgins");
 
         Holt = Electorates.Single(x => x.Name == "Holt");
@@ -404,6 +406,8 @@ public static partial class DataLoader
     public static IElectorate Goldstein { get; private set; } = null!;
 
     public static IElectorate Gorton { get; private set; } = null!;
+
+    public static IElectorate Hawke { get; private set; } = null!;
 
     public static IElectorate Higgins { get; private set; } = null!;
 

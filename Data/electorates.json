@@ -9554,6 +9554,20 @@
     ]
   },
   {
+    "Name": "Hawke",
+    "ShortName": "hawke",
+    "State": "VIC",
+    "Area": 1842.0,
+    "Exist2016": false,
+    "Exist2019": false,
+    "Exist2022": true,
+    "DateGazetted": "2021-07-26",
+    "Description": "<p>The Division of Hawke consists of:</p><ul><li> part of the Hume City Council,</li><li> part of the Melton City Council, and</li><li> part of the Moorabool Shire Council.</li></ul>",
+    "DemographicRating": "<strong>Provincial</strong> – outside capital cities, but with a majority of enrolment in major provincial cities.",
+    "NameDerivation": "Named in honour of the Hon. Robert James Lee Hawke AC, 1929–2019. Hawke was Prime Minister of Australia (1983–91) and a Member of the House of Representatives (1980–92).",
+    "Locations": []
+  },
+  {
     "Name": "Higgins",
     "ShortName": "higgins",
     "State": "VIC",

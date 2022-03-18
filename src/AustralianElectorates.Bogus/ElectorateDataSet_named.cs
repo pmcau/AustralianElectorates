@@ -125,6 +125,9 @@ public partial class ElectorateDataSet : DataSet
     public IElectorate Gorton() =>
         DataLoader.Gorton;
 
+    public IElectorate Hawke() =>
+        DataLoader.Hawke;
+
     public IElectorate Higgins() =>
         DataLoader.Higgins;
 

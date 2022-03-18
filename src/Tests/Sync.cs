@@ -34,22 +34,6 @@ public class Sync
         await ProcessYear(DataLocations.Maps2016Path, electorates2016, electorateToStateMap);
         await ProcessYear(DataLocations.Maps2019Path, electorates2019, electorateToStateMap);
 
-        var allElectorates = electorateToStateMap.SelectMany(x=>x.Value).ToList();
-        foreach (var electorate in electorates2016.Where(_ => !allElectorates.Contains(_)))
-        {
-            throw new(electorate);
-        }
-
-        foreach (var electorate in electorates2019.Where(_ => !allElectorates.Contains(_)))
-        {
-            throw new(electorate);
-        }
-
-        foreach (var electorate in electorates2022.Where(_ => !allElectorates.Contains(_)))
-        {
-            throw new(electorate);
-        }
-
         var electorates = await WriteElectoratesMetaData();
 
         IoHelpers.PurgeDirectoryRecursive(DataLocations.MapsDetail);
@@ -80,6 +64,7 @@ public class Sync
         {
             electorateToStateMap[state] = new();
         }
+        electorateToStateMap[State.VIC].Add("hawke");
         var stateToElectorateFile = Path.Combine(DataLocations.DataPath, "state_to_electorate.txt");
         foreach (var line in File.ReadAllLines(stateToElectorateFile))
         {
