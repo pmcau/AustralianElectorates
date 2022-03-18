@@ -1,0 +1,6 @@
+﻿{
+  added: [],
+  removed: [
+    Stirling
+  ]
+}

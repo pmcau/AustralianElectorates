@@ -39,10 +39,12 @@ public class Sync
         {
             throw new(electorate);
         }
+
         foreach (var electorate in electorates2019.Where(_ => !allElectorates.Contains(_)))
         {
             throw new(electorate);
         }
+
         foreach (var electorate in electorates2022.Where(_ => !allElectorates.Contains(_)))
         {
             throw new(electorate);
