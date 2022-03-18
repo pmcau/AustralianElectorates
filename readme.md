@@ -256,16 +256,16 @@ var fennerGeoJson2016 = DataLoader.Fenner.Get2016Map();
 Debug.WriteLine(fennerGeoJson2016);
 var fennerGeoJson2019 = DataLoader.Fenner.Get2019Map();
 Debug.WriteLine(fennerGeoJson2019);
-var futureFennerGeoJson = DataLoader.Fenner.GetFutureMap();
-Debug.WriteLine(futureFennerGeoJson);
+var fennerGeoJson2022 = DataLoader.Fenner.Get2022Map();
+Debug.WriteLine(fennerGeoJson2022);
 
 // get an electorates maps (geojson) by string
 var canberraGeoJson2016 = DataLoader.Maps2016.GetElectorate("Canberra");
 Debug.WriteLine(canberraGeoJson2016);
 var canberraGeoJson2019 = DataLoader.Maps2019.GetElectorate("Canberra");
 Debug.WriteLine(canberraGeoJson2019);
-var futureCanberraGeoJson = DataLoader.MapsFuture.GetElectorate("Canberra");
-Debug.WriteLine(futureCanberraGeoJson);
+var canberraGeoJson2022 = DataLoader.Maps2022.GetElectorate("Canberra");
+Debug.WriteLine(canberraGeoJson2022);
 
 // export all data to a directory
 // structure will be
@@ -274,8 +274,8 @@ Debug.WriteLine(futureCanberraGeoJson);
 // /2016/Electorates (2016 electorate geojson files)
 // /2019 (2019 states and australia geojson files)
 // /2019/Electorates (2019 electorate geojson files)
-// /Future (future states and australia geojson files)
-// /Future/Electorates (future electorate geojson files)
+// /2022 (2022 states and australia geojson files)
+// /2022/Electorates (2022 electorate geojson files)
 var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
 Directory.CreateDirectory(directory);
 DataLoader.Export(directory);

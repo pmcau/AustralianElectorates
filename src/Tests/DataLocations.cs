@@ -13,22 +13,24 @@
         Directory.CreateDirectory(DataPath);
         MapsPath = Path.GetFullPath(Path.Combine(DataPath, "Maps"));
         Directory.CreateDirectory(MapsPath);
-        MapsFuturePath = Path.GetFullPath(Path.Combine(MapsPath, "Future"));
-        Directory.CreateDirectory(MapsFuturePath);
+        //MapsFuturePath = Path.GetFullPath(Path.Combine(MapsPath, "Future"));
+        //Directory.CreateDirectory(MapsFuturePath);
         MapsDetail = Path.GetFullPath(Path.Combine(DataPath, "DetailMaps"));
         Directory.CreateDirectory(MapsDetail);
         Maps2016Path = Path.GetFullPath(Path.Combine(MapsPath, "2016"));
         Directory.CreateDirectory(Maps2016Path);
-        Australia2016JsonPath = Path.GetFullPath(Path.Combine(Maps2016Path, "australia.geojson"));
+       // Australia2016JsonPath = Path.GetFullPath(Path.Combine(Maps2016Path, "australia.geojson"));
         Maps2019Path = Path.GetFullPath(Path.Combine(MapsPath, "2019"));
         Directory.CreateDirectory(Maps2019Path);
-        Australia2019JsonPath = Path.GetFullPath(Path.Combine(Maps2019Path, "australia.geojson"));
+        Maps2022Path = Path.GetFullPath(Path.Combine(MapsPath, "2022"));
+        Directory.CreateDirectory(Maps2022Path);
+        //Australia2019JsonPath = Path.GetFullPath(Path.Combine(Maps2019Path, "australia.geojson"));
         MapsCuratedPath = Path.GetFullPath(Path.Combine(DataPath, "MapsCurated"));
         Directory.CreateDirectory(MapsCuratedPath);
         AustralianElectoratesProjectPath = Path.GetFullPath(Path.Combine(RootDir, "src/AustralianElectorates"));
         BogusProjectPath = Path.GetFullPath(Path.Combine(RootDir, "src/AustralianElectorates.Bogus"));
         MapsCuratedZipPath = Path.GetFullPath(Path.Combine(DataPath, "MapsCurated.zip"));
-        FutureAustraliaJsonPath = Path.GetFullPath(Path.Combine(MapsFuturePath, "australia.geojson"));
+        //FutureAustraliaJsonPath = Path.GetFullPath(Path.Combine(MapsFuturePath, "australia.geojson"));
     }
 
     public static string PartiesJsonPath;
@@ -41,12 +43,11 @@
     public static string MapsDetail;
     public static string Maps2016Path;
     public static string Maps2019Path;
-    public static string MapsFuturePath;
+    public static string Maps2022Path;
+    //public static string MapsFuturePath;
     public static string MapsCuratedPath;
     public static string MapsCuratedZipPath;
-    public static string FutureAustraliaJsonPath;
-    public static string Australia2016JsonPath;
-    public static string Australia2019JsonPath;
+    //public static string FutureAustraliaJsonPath;
     public static string RootDir;
     public static string DataPath;
     public static string TempPath;

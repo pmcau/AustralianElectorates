@@ -98,7 +98,8 @@ public static partial class DataLoader
     public static IReadOnlyList<IPartyOrBranch> PartiesAndBranches { get; }
     public static MapCollection Maps2016 { get; } = new("2016");
     public static MapCollection Maps2019 { get; } = new("2019");
-    public static MapCollection MapsFuture { get; } = new("Future");
+    public static MapCollection Maps2022 { get; } = new("2022");
+    //public static MapCollection MapsFuture { get; } = new("Future");
 
     public static IElection FindElection(int parliament)
     {
@@ -174,9 +175,10 @@ public static partial class DataLoader
 
     public static void LoadAll()
     {
-        MapsFuture.LoadAll();
+        //MapsFuture.LoadAll();
         Maps2016.LoadAll();
         Maps2019.LoadAll();
+        Maps2022.LoadAll();
     }
 
     public static void Export(string directory)
@@ -233,17 +235,23 @@ public static partial class DataLoader
 
     public static IElectorateMap GetMap(this IElectorate electorate)
     {
+        var name = electorate.ShortName;
+        if (electorate.Exist2022)
+        {
+            return Maps2022.GetElectorate(name);
+        }
         if (electorate.Exist2019)
         {
-            return Maps2019.GetElectorate(electorate.ShortName);
+            return Maps2019.GetElectorate(name);
         }
 
         if (electorate.Exist2016)
         {
-            return Maps2016.GetElectorate(electorate.ShortName);
+            return Maps2016.GetElectorate(name);
         }
 
-        return MapsFuture.GetElectorate(electorate.ShortName);
+        throw new($"Map not found: {name}");
+        //return MapsFuture.GetElectorate(electorate.ShortName);
     }
 
     public static IElectorateMap Get2019Map(this IElectorate electorate)
@@ -256,13 +264,23 @@ public static partial class DataLoader
         return Maps2019.GetElectorate(electorate.ShortName);
     }
 
-    public static IElectorateMap GetFutureMap(this IElectorate electorate)
+    public static IElectorateMap Get2022Map(this IElectorate electorate)
     {
-        if (!electorate.ExistInFuture)
+        if (!electorate.Exist2022)
         {
-            throw new($"Electorate '{electorate.Name}' does not have a future map");
+            throw new($"Electorate '{electorate.Name}' does not have a 2022 map");
         }
 
-        return MapsFuture.GetElectorate(electorate.ShortName);
+        return Maps2022.GetElectorate(electorate.ShortName);
     }
+    //
+    // public static IElectorateMap GetFutureMap(this IElectorate electorate)
+    // {
+    //     if (!electorate.ExistInFuture)
+    //     {
+    //         throw new($"Electorate '{electorate.Name}' does not have a future map");
+    //     }
+    //
+    //     return MapsFuture.GetElectorate(electorate.ShortName);
+    // }
 }
