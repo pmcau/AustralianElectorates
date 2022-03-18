@@ -17,14 +17,12 @@ public static class StatesToCountryDownloader
         {State.WA, "https://www.aec.gov.au/Electorates/gis/files/wa-esri-19012016.zip"},
     };
 
-    public static Task RunFuture() =>
-        Run(stateUrls, DataLocations.Australia2019JsonPath, DataLocations.FutureAustraliaJsonPath);
-
-    static async Task Run(Dictionary<State, string> dictionary, string sourceJsonPath, string targetJsonPath)
+    // Merges the current national with the state amendments to get the future
+    public static async Task RunFuture()
     {
-        var features = JsonSerializerService.DeserializeGeo(sourceJsonPath);
+        var features = JsonSerializerService.DeserializeGeo(DataLocations.Australia2019JsonPath);
 
-        foreach (var stateUrl in dictionary)
+        foreach (var stateUrl in stateUrls)
         {
             var state = stateUrl.Key;
             RemoveStateFromFeatures(features, state);
@@ -41,7 +39,7 @@ public static class StatesToCountryDownloader
         }
 
         features.FixBoundingBox();
-        JsonSerializerService.SerializeGeo(features, targetJsonPath);
+        JsonSerializerService.SerializeGeo(features, DataLocations.FutureAustraliaJsonPath);
     }
 
     static void RemoveStateFromFeatures(FeatureCollection features, State state)
