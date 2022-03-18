@@ -7,5 +7,5 @@
   StackTrace:
 at AustralianElectorates.DataLoader.ValidateElectorates(IEnumerable`1 names)
 at AustralianElectorates.DataLoader.ValidateElectorates(String[] names)
-at DataLoaderTests.<>c.<ValidateElectorates>b__3_0()
+at DataLoaderTests.<>c.<ValidateElectorates>b__4_0()
 }
