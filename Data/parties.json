@@ -638,6 +638,23 @@
     "Branches": []
   },
   {
+    "Id": 1507,
+    "Name": "David Pocock",
+    "Code": "David Pocock",
+    "Abbreviation": "David Pocock",
+    "RegisterDate": "18 March 2022",
+    "AmendmentDate": "18 March 2022",
+    "Address": "PO Box 6252\nO'CONNOR ACT 2602",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Cummings",
+      "GivenNames": "Glenn",
+      "Capacity": "Registered Officer"
+    },
+    "DeputyOfficers": [],
+    "Branches": []
+  },
+  {
     "Id": 1423,
     "Name": "Derryn Hinch's Justice Party",
     "Code": "Hinch",
@@ -1877,8 +1894,8 @@
       "GivenNames": "Jonathan",
       "Capacity": "Party Agent",
       "Address": {
-        "Line1": "7 National Circuit",
-        "Suburb": "Barton",
+        "Line1": "Suite 1, 6 Geils Court",
+        "Suburb": "Deakin",
         "State": "ACT",
         "Postcode": 2600
       }
