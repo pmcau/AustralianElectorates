@@ -12,6 +12,7 @@ public class PostcodeScraperTests
     }
 
     [Fact]
+    [Trait("Category", "Integration")]
     public Task Specific()
     {
         var place = AustraliaData.PostCodes.Single(x=>x.Key == "2612");
