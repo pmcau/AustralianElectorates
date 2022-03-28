@@ -649,7 +649,13 @@
       "Title": "Mr",
       "FamilyName": "Cummings",
       "GivenNames": "Glenn",
-      "Capacity": "Registered Officer"
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "24 Tralee Street",
+        "Suburb": "Hume",
+        "State": "ACT",
+        "Postcode": 2620
+      }
     },
     "DeputyOfficers": [],
     "Branches": []
@@ -1604,8 +1610,8 @@
       "FamilyName": "Watson",
       "GivenNames": "Giz",
       "Address": {
-        "Line1": "2/97 Northbourne Avenue",
-        "Suburb": "Turner",
+        "Line1": "2 / 18 Lonsdale Street",
+        "Suburb": "Braddon",
         "State": "ACT",
         "Postcode": 2612
       }
@@ -2082,42 +2088,6 @@
           "Suburb": "Reservoir",
           "State": "VIC",
           "Postcode": 3073
-        }
-      }
-    ],
-    "Branches": []
-  },
-  {
-    "Id": 1419,
-    "Name": "VOTEFLUX.ORG | Upgrade Democracy!",
-    "Code": "Flux",
-    "Abbreviation": "Flux",
-    "RegisterDate": "29 March 2016",
-    "AmendmentDate": "29 March 2016",
-    "Address": "5/155 Clarence St\nSYDNEY NSW 2000",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Spataro",
-      "GivenNames": "Nathan",
-      "Capacity": "Registered Officer",
-      "Address": {
-        "Line1": "1/63A Upper Pitt Street",
-        "Suburb": "Kirribilli",
-        "State": "NSW",
-        "Postcode": 2061
-      }
-    },
-    "DeputyOfficers": [
-      {
-        "Title": "Mr",
-        "FamilyName": "Kaye",
-        "GivenNames": "Max",
-        "Capacity": "Secretary",
-        "Address": {
-          "Line1": "702 / 58 King Street",
-          "Suburb": "Newtown",
-          "State": "NSW",
-          "Postcode": 2042
         }
       }
     ],
