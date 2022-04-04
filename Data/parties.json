@@ -402,7 +402,7 @@
         "Abbreviation": "ALP",
         "RegisterDate": "18 July 1984",
         "AmendmentDate": "18 July 1984",
-        "Address": "GPO Box 2026\nDARWIN NT 0801",
+        "Address": "PO Box 2026\nDARWIN NT 0801",
         "Officer": {
           "Title": "Mrs",
           "FamilyName": "Dalton",
@@ -568,6 +568,28 @@
     ]
   },
   {
+    "Id": 1403,
+    "Name": "Australian Progressives",
+    "Code": "The Progressives",
+    "Abbreviation": "The Progressives",
+    "RegisterDate": "17 February 2015",
+    "AmendmentDate": "17 February 2015",
+    "Address": "24B Harpur Place\nGARRAN ACT 2605",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Carroll",
+      "GivenNames": "Edward",
+      "Address": {
+        "Line1": "42 Messara Circuit",
+        "Suburb": "Durack",
+        "State": "QLD",
+        "Postcode": 4077
+      }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
+  },
+  {
     "Id": 1500,
     "Name": "Australian Values Party",
     "Code": "AVP",
@@ -624,14 +646,14 @@
     "Address": "PO Box 4194\nDARWIN NT 0801",
     "Officer": {
       "Title": "Mr",
-      "FamilyName": "Still",
-      "GivenNames": "Peter ",
+      "FamilyName": "Hosking",
+      "GivenNames": "Ben",
       "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "2 Ibis Court",
-        "Suburb": "Bakewell",
+        "Line1": "2 / 229 McMillans Road",
+        "Suburb": "Jingili",
         "State": "NT",
-        "Postcode": 832
+        "Postcode": 810
       }
     },
     "DeputyOfficers": [],
@@ -701,7 +723,7 @@
     "Abbreviation": "Democratic Alliance",
     "RegisterDate": "28 February 2022",
     "AmendmentDate": "28 February 2022",
-    "Address": "15/2 Mary Pleasant Drive\nBIRDALE QLD 4159",
+    "Address": "15/2 Mary Pleasant Drive\nBIRKDALE QLD 4159",
     "Officer": {
       "Title": "Mr",
       "FamilyName": "Pavlou",
@@ -749,15 +771,15 @@
     "AmendmentDate": "11 October 2019",
     "Address": "254 McLeod Lane\nMANSFIELD VIC 3722",
     "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Juntunen",
-      "GivenNames": "Timo Tapani",
-      "Capacity": "Party Agent",
+      "Title": "Ms",
+      "FamilyName": "Cordner Hunt",
+      "GivenNames": "Kammy",
+      "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "5 Songbird Way",
-        "Suburb": "Goughs Bay",
+        "Line1": "254 McLeod Lane",
+        "Suburb": "Mansfield",
         "State": "VIC",
-        "Postcode": 3723
+        "Postcode": 3722
       }
     },
     "DeputyOfficers": [
@@ -1260,7 +1282,44 @@
         "Postcode": 3149
       }
     },
-    "DeputyOfficers": [],
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Rebase",
+        "GivenNames": "Anthony Laurence",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "11 Mountain Street",
+          "Suburb": "Epping",
+          "State": "NSW",
+          "Postcode": 2121
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Davies",
+        "GivenNames": "Richard",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "2 Kanuka Street",
+          "Suburb": "Algester",
+          "State": "QLD",
+          "Postcode": 4115
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Davies-Slate",
+        "GivenNames": "Sebastian",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "3 / 17 Ashburton Street",
+          "Suburb": "Bentley",
+          "State": "WA",
+          "Postcode": 6102
+        }
+      }
+    ],
     "Branches": []
   },
   {
@@ -1368,7 +1427,7 @@
         "Title": "Mr",
         "FamilyName": "Patrech",
         "GivenNames": "Robert John",
-        "Capacity": "Deputy Registered Officer",
+        "Capacity": "Secretary",
         "Address": {
           "Line1": "41 Bellevue Road",
           "Suburb": "Figtree",
@@ -2102,15 +2161,15 @@
     "AmendmentDate": "30 August 2018",
     "Address": "PO Box 8134\nSUBIACO WA 6008",
     "Officer": {
-      "Title": "Ms",
-      "FamilyName": "Matheson",
-      "GivenNames": "Julie",
+      "Title": "Mr",
+      "FamilyName": "O'Loghlen",
+      "GivenNames": "Michael Joseph",
       "Capacity": "Registered Officer",
       "Address": {
         "Line1": "19/4 Ventnor Avenue",
-        "Suburb": "WEST PERTH",
+        "Suburb": "West Perth",
         "State": "WA",
-        "Postcode": 6008
+        "Postcode": 6005
       }
     },
     "DeputyOfficers": [],

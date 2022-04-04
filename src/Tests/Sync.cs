@@ -5,7 +5,6 @@ using GeoJSON.Net.Feature;
 
 public class Sync
 {
-
     static List<int> percents;
 
     //static List<string> electoratesFuture = new();
