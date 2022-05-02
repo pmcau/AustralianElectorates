@@ -90,6 +90,18 @@
           "State": "SA",
           "Postcode": 5008
         }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "del Valle",
+        "GivenNames": "Yana",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "86 Morgan Crescent",
+          "Suburb": "Curtin",
+          "State": "ACT",
+          "Postcode": 2605
+        }
       }
     ],
     "Branches": []
@@ -229,6 +241,30 @@
     "DeputyOfficers": [
       {
         "Title": "Mr",
+        "FamilyName": "Shannon",
+        "GivenNames": "André Anthony",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "6 Fife Gardens",
+          "Suburb": "OCEANS REEF",
+          "State": "WA",
+          "Postcode": 6027
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Castrique",
+        "GivenNames": "Andrew John",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "15 Bassett Street",
+          "Suburb": "Nairne",
+          "State": "SA",
+          "Postcode": 5252
+        }
+      },
+      {
+        "Title": "Mr",
         "FamilyName": "Kanck",
         "GivenNames": "Asbjorn Jan",
         "Address": {
@@ -248,6 +284,54 @@
           "Suburb": "Beaumaris",
           "State": "VIC",
           "Postcode": 3193
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Hicks DeVylder",
+        "GivenNames": "Janna",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "67 Renwick Street",
+          "Suburb": "Drummoyne",
+          "State": "NSW",
+          "Postcode": 2047
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Clothier",
+        "GivenNames": "Lucy Grace",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "PO Box 547",
+          "Suburb": "Glenelg",
+          "State": "SA",
+          "Postcode": 5045
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "McKee",
+        "GivenNames": "Robert",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "62 Skyline Way",
+          "Suburb": "Berwick",
+          "State": "VIC",
+          "Postcode": 3806
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Roberts",
+        "GivenNames": "Scott Frazer",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "10 Carrington Place",
+          "Suburb": "Bridgeman Downs",
+          "State": "QLD",
+          "Postcode": 4035
         }
       }
     ],
@@ -273,7 +357,68 @@
         "Postcode": 5043
       }
     },
-    "DeputyOfficers": [],
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Burkett",
+        "GivenNames": "David",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "361 Seventeen Mile Road",
+          "Suburb": "Oxley",
+          "State": "QLD",
+          "Postcode": 4075
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Lane",
+        "GivenNames": "Katrina",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "3 / 12 Canning Avenue",
+          "Suburb": "Mount Pleasant",
+          "State": "WA",
+          "Postcode": 6153
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Aldridge",
+        "GivenNames": "Mark",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "201 Taylors Road",
+          "Suburb": "Penfield Gardens",
+          "State": "SA",
+          "Postcode": 5121
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Knight",
+        "GivenNames": "Molly",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "25 / 140 Hollinsworth Road",
+          "Suburb": "Marsden Park",
+          "State": "NSW",
+          "Postcode": 2765
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Hughes",
+        "GivenNames": "Vernon",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "30 Wilkins Street",
+          "Suburb": "Yarraville",
+          "State": "VIC",
+          "Postcode": 3013
+        }
+      }
+    ],
     "Branches": []
   },
   {
@@ -410,7 +555,7 @@
           "Capacity": "Party Agent",
           "Address": {
             "Line1": "3/63 Winnellie Rd",
-            "Suburb": "WINNELIE",
+            "Suburb": "Winnellie",
             "State": "NT",
             "Postcode": 820
           }
@@ -427,9 +572,9 @@
         "Address": "141 Gilles Street\nADELAIDE SA 5000",
         "Officer": {
           "Title": "Mr",
-          "FamilyName": "Martin",
-          "GivenNames": "Reggie Brian",
-          "Capacity": "State Secretary",
+          "FamilyName": "Bourke",
+          "GivenNames": "Aemon",
+          "Capacity": "Registered Officer",
           "Address": {
             "Line1": "141 Gilles Street",
             "Suburb": "Adelaide",
@@ -723,17 +868,17 @@
     "Abbreviation": "Democratic Alliance",
     "RegisterDate": "28 February 2022",
     "AmendmentDate": "28 February 2022",
-    "Address": "15/2 Mary Pleasant Drive\nBIRKDALE QLD 4159",
+    "Address": "Unit 901, 232 Wellington Road\nKANGAROO POINT QLD 4169",
     "Officer": {
       "Title": "Mr",
       "FamilyName": "Pavlou",
       "GivenNames": "Drew",
       "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "15/2 Mary Pleasant Drive",
-        "Suburb": "Birkdale",
+        "Line1": "Unit 901, 232 Wellington Road",
+        "Suburb": "Kangaroo Point",
         "State": "QLD",
-        "Postcode": 4159
+        "Postcode": 4169
       }
     },
     "DeputyOfficers": [],
@@ -785,6 +930,18 @@
     "DeputyOfficers": [
       {
         "Title": "Mr",
+        "FamilyName": "Woodings",
+        "GivenNames": "Adam",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "35 Olympus Loop",
+          "Suburb": "Merriwa",
+          "State": "WA",
+          "Postcode": 6030
+        }
+      },
+      {
+        "Title": "Mr",
         "FamilyName": "Jago",
         "GivenNames": "Alexander Benjamin",
         "Capacity": "Deputy Registered Officer",
@@ -823,40 +980,6 @@
     "Branches": []
   },
   {
-    "Id": 1384,
-    "Name": "Health Australia Party",
-    "Code": "HAP",
-    "Abbreviation": "HAP",
-    "RegisterDate": "7 November 2013",
-    "AmendmentDate": "7 November 2013",
-    "Address": "PO Box 695\nGISBORNE VIC 3437",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Askey",
-      "GivenNames": "Graham",
-      "Address": {
-        "Line1": "9 Frank Street",
-        "Suburb": "South Lismore",
-        "State": "NSW",
-        "Postcode": 2480
-      }
-    },
-    "DeputyOfficers": [
-      {
-        "Title": "Mr",
-        "FamilyName": "Hicks",
-        "GivenNames": "Andrew",
-        "Address": {
-          "Line1": "1 Erinne Court",
-          "Suburb": "St Helena",
-          "State": "VIC",
-          "Postcode": 3088
-        }
-      }
-    ],
-    "Branches": []
-  },
-  {
     "Id": 1496,
     "Name": "Indigenous - Aboriginal Party of Australia",
     "Code": "Indigenous Party of Australia",
@@ -877,7 +1000,20 @@
         "Postcode": 2836
       }
     },
-    "DeputyOfficers": [],
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Cookson",
+        "GivenNames": "Jonathan",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "69 Roseleigh Street",
+          "Suburb": "KALINGA",
+          "State": "QLD",
+          "Postcode": 4030
+        }
+      }
+    ],
     "Branches": []
   },
   {
@@ -1211,7 +1347,20 @@
             "Postcode": 3000
           }
         },
-        "DeputyOfficers": []
+        "DeputyOfficers": [
+          {
+            "Title": "Mrs",
+            "FamilyName": "Lloyd",
+            "GivenNames": "Chandra",
+            "Capacity": "Deputy Registered Officer",
+            "Address": {
+              "Line1": "Level 12, 257 Collins Street",
+              "Suburb": "Melbourne",
+              "State": "VIC",
+              "Postcode": 3000
+            }
+          }
+        ]
       },
       {
         "Id": 188,
@@ -1317,6 +1466,18 @@
           "Suburb": "Bentley",
           "State": "WA",
           "Postcode": 6102
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Humble",
+        "GivenNames": "Stephen",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "34 Magazine Drive",
+          "Suburb": "Walkley Heights",
+          "State": "SA",
+          "Postcode": 5098
         }
       }
     ],
@@ -1425,6 +1586,18 @@
     "DeputyOfficers": [
       {
         "Title": "Mr",
+        "FamilyName": "Burdett",
+        "GivenNames": "Robert",
+        "Capacity": "Party Agent",
+        "Address": {
+          "Line1": "1 Liberton Place",
+          "Suburb": "Mandurah",
+          "State": "WA",
+          "Postcode": 6210
+        }
+      },
+      {
+        "Title": "Mr",
         "FamilyName": "Patrech",
         "GivenNames": "Robert John",
         "Capacity": "Secretary",
@@ -1519,15 +1692,15 @@
         }
       },
       {
-        "Title": "Ms",
-        "FamilyName": "Weedall",
-        "GivenNames": "Gemma ",
+        "Title": "Mr",
+        "FamilyName": "Andrewartha",
+        "GivenNames": "Jacob",
+        "Capacity": "Deputy registered Officer",
         "Address": {
-          "Line1": "Level 2",
-          "Line2": "95 Currie St",
-          "Suburb": "Adelaide",
-          "State": "SA",
-          "Postcode": 5000
+          "Line1": "4/27 Stewart Street",
+          "Suburb": "Brunswick",
+          "State": "VIC",
+          "Postcode": 3056
         }
       },
       {
@@ -1543,39 +1716,6 @@
       },
       {
         "Title": "Mr",
-        "FamilyName": "Benedek",
-        "GivenNames": "Paul",
-        "Address": {
-          "Line1": "44 Shepherd St",
-          "Suburb": "Chippendale",
-          "State": "NSW",
-          "Postcode": 2008
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Bassi",
-        "GivenNames": "Raul",
-        "Address": {
-          "Line1": "2/19 Earle Avenue",
-          "Suburb": "Ashfield",
-          "State": "NSW",
-          "Postcode": 2131
-        }
-      },
-      {
-        "Title": "Ms",
-        "FamilyName": "Ratcliffe",
-        "GivenNames": "Ruth",
-        "Address": {
-          "Line1": "205/95 Currie St",
-          "Suburb": "Adelaide",
-          "State": "SA",
-          "Postcode": 5000
-        }
-      },
-      {
-        "Title": "Mr",
         "FamilyName": "Wainwright",
         "GivenNames": "Samuel",
         "Address": {
@@ -1583,6 +1723,18 @@
           "Suburb": "O'Connor",
           "State": "WA",
           "Postcode": 6163
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Hathway",
+        "GivenNames": "Sarah",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "11 Marnoo Court",
+          "Suburb": "Norlane",
+          "State": "VIC",
+          "Postcode": 3214
         }
       },
       {
@@ -1823,17 +1975,6 @@
               "Suburb": "Melbourne",
               "State": "VIC",
               "Postcode": 3001
-            }
-          },
-          {
-            "Title": "Mr",
-            "FamilyName": "Baxter",
-            "GivenNames": "Tim",
-            "Address": {
-              "Line1": "1/45 William Street",
-              "Suburb": "Melbourne",
-              "State": "VIC",
-              "Postcode": 3000
             }
           }
         ]
@@ -2172,7 +2313,20 @@
         "Postcode": 6005
       }
     },
-    "DeputyOfficers": [],
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Phelan",
+        "GivenNames": "Stephen",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "4 Prospect Crescent",
+          "Suburb": "Kalamunda",
+          "State": "WA",
+          "Postcode": 6076
+        }
+      }
+    ],
     "Branches": []
   }
 ]
