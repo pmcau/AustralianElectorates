@@ -2244,14 +2244,14 @@
     "Address": "GPO Box 1538\nBRISBANE QLD 4001",
     "Officer": {
       "Title": "Mr",
-      "FamilyName": "Palmer",
-      "GivenNames": "Clive Frederick",
+      "FamilyName": "Harris",
+      "GivenNames": "Nui",
+      "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "Level 17",
-        "Line2": "240 Queen Street",
-        "Suburb": "Brisbane",
+        "Line1": "Avica, 153 Gooding Drive",
+        "Suburb": "Merrimac",
         "State": "QLD",
-        "Postcode": 4000
+        "Postcode": 4226
       }
     },
     "DeputyOfficers": [],
