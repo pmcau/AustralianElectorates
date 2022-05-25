@@ -811,17 +811,17 @@
     "Abbreviation": "David Pocock",
     "RegisterDate": "18 March 2022",
     "AmendmentDate": "18 March 2022",
-    "Address": "PO Box 6252\nO'CONNOR ACT 2602",
+    "Address": "8 Macarthur Avenue\nO'CONNOR ACT 2602",
     "Officer": {
       "Title": "Mr",
       "FamilyName": "Cummings",
       "GivenNames": "Glenn",
       "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "24 Tralee Street",
-        "Suburb": "Hume",
+        "Line1": "17 Darling Street",
+        "Suburb": "Mitchell",
         "State": "ACT",
-        "Postcode": 2620
+        "Postcode": 2911
       }
     },
     "DeputyOfficers": [],
@@ -1388,17 +1388,6 @@
             "FamilyName": "Wheatley",
             "GivenNames": "Peter",
             "Capacity": "Party Agent",
-            "Address": {
-              "Line1": "Locked Bag 2",
-              "Suburb": "Kings Cross",
-              "State": "NSW",
-              "Postcode": 1340
-            }
-          },
-          {
-            "Title": "Mr",
-            "FamilyName": "McInnes",
-            "GivenNames": "Simon",
             "Address": {
               "Line1": "Locked Bag 2",
               "Suburb": "Kings Cross",
