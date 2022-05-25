@@ -328,11 +328,10 @@ public static partial class DataLoader
             writer.WriteLine(@"
 // ReSharper disable IdentifierTypo
 // ReSharper disable RedundantDefaultMemberInitializer
-using Bogus;
 
 namespace AustralianElectorates.Bogus;
 
-public partial class ElectorateDataSet : DataSet
+public partial class ElectorateDataSet
 {");
             foreach (var electorate in electorates)
             {

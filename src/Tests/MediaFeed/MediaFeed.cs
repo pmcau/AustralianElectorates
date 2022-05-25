@@ -1,5 +1,6 @@
 ﻿#nullable disable
 using System.Xml.Serialization;
+// ReSharper disable RedundantAttributeSuffix
 
 [Serializable]
 [XmlType(Namespace = "http://www.aec.gov.au/xml/schema/mediafeed")]

@@ -1,11 +1,10 @@
 
 // ReSharper disable IdentifierTypo
 // ReSharper disable RedundantDefaultMemberInitializer
-using Bogus;
 
 namespace AustralianElectorates.Bogus;
 
-public partial class ElectorateDataSet : DataSet
+public partial class ElectorateDataSet
 {
 
     public IElectorate Bean() =>
