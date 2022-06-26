@@ -54,6 +54,32 @@ public class Sync
         Export.ExportElectorates();
        // await Hasher.Create(DataLocations.DataPath);
         Zipper.ZipDir(DataLocations.MapsCuratedZipPath, DataLocations.MapsCuratedPath);
+        WritePostcodeToElectorateJsonPath(electorates);
+    }
+
+    [Fact]
+    public void WritePostcodeToElectorateJsonPath() =>
+        WritePostcodeToElectorateJsonPath(DataLoader.Electorates);
+
+    static void WritePostcodeToElectorateJsonPath(IReadOnlyList<IElectorate> electorates)
+    {
+        File.Delete(DataLocations.PostcodeToElectorateJsonPath);
+
+        var dictionary = new Dictionary<int, List<string>>();
+        foreach (var electorate in electorates)
+        {
+            foreach (var location in electorate.Locations)
+            {
+                if (!dictionary.TryGetValue(location.Postcode, out var list))
+                {
+                    dictionary[location.Postcode] = list = new();
+                }
+
+                list.Add(electorate.Name);
+            }
+        }
+
+        JsonSerializerService.Serialize(dictionary, DataLocations.PostcodeToElectorateJsonPath);
     }
 
     static Dictionary<State, List<string>> GetElectorateToStateMap()
