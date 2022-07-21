@@ -278,7 +278,6 @@
         "Title": "Mr ",
         "FamilyName": "Urquhart",
         "GivenNames": "Ian Alistair",
-        "Capacity": "Party Agent",
         "Address": {
           "Line1": "8 Morey Road",
           "Suburb": "Beaumaris",
@@ -594,12 +593,11 @@
         "Address": "PO Box 5032\nWEST END QLD 4101",
         "Officer": {
           "Title": "Ms",
-          "FamilyName": "Campbell",
-          "GivenNames": "Julie-Ann",
-          "Capacity": "Secretary",
+          "FamilyName": "Flanders",
+          "GivenNames": "Katherine",
+          "Capacity": "Party Agent",
           "Address": {
-            "Line1": "Level 1 ",
-            "Line2": "16 Peel Street",
+            "Line1": "1/16 Peel Street",
             "Suburb": "South Brisbane",
             "State": "QLD",
             "Postcode": 4101
@@ -633,7 +631,7 @@
           "FamilyName": "Benson",
           "GivenNames": "Stuart",
           "Address": {
-            "Line1": "2/36 Salamanca Place",
+            "Line1": "2/63 Salamanca Place",
             "Suburb": "Hobart",
             "State": "TAS",
             "Postcode": 7000
@@ -1400,79 +1398,6 @@
     ]
   },
   {
-    "Id": 1166,
-    "Name": "Liberal Democratic Party",
-    "Code": "Liberal Democrats",
-    "Abbreviation": "Liberal Democrats",
-    "RegisterDate": "7 September 2007",
-    "AmendmentDate": "7 September 2007",
-    "Address": "Level 1\n203-205 Blackburn Road\nMOUNT WAVERLEY VIC 3149",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "McCathie",
-      "GivenNames": "Robert Andrew",
-      "Capacity": "Registered Officer",
-      "Address": {
-        "Line1": "Level 1",
-        "Line2": "203-205 Blackburn Road",
-        "Suburb": "Mount Waverley",
-        "State": "VIC",
-        "Postcode": 3149
-      }
-    },
-    "DeputyOfficers": [
-      {
-        "Title": "Mr",
-        "FamilyName": "Rebase",
-        "GivenNames": "Anthony Laurence",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "11 Mountain Street",
-          "Suburb": "Epping",
-          "State": "NSW",
-          "Postcode": 2121
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Davies",
-        "GivenNames": "Richard",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "2 Kanuka Street",
-          "Suburb": "Algester",
-          "State": "QLD",
-          "Postcode": 4115
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Davies-Slate",
-        "GivenNames": "Sebastian",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "3 / 17 Ashburton Street",
-          "Suburb": "Bentley",
-          "State": "WA",
-          "Postcode": 6102
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Humble",
-        "GivenNames": "Stephen",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "34 Magazine Drive",
-          "Suburb": "Walkley Heights",
-          "State": "SA",
-          "Postcode": 5098
-        }
-      }
-    ],
-    "Branches": []
-  },
-  {
     "Id": 1133,
     "Name": "Pauline Hanson's One Nation",
     "Code": "Pauline Hanson's One Nation",
@@ -1538,7 +1463,7 @@
     "AmendmentDate": "7 January 2021",
     "Address": "33 Warwick St\nWalkerville SA 5081",
     "Officer": {
-      "Title": "Senator",
+      "Title": "Mr",
       "FamilyName": "Patrick",
       "GivenNames": "Rex Lyall",
       "Capacity": "Registered Officer",
@@ -1550,54 +1475,6 @@
       }
     },
     "DeputyOfficers": [],
-    "Branches": []
-  },
-  {
-    "Id": 1402,
-    "Name": "Seniors United Party of Australia",
-    "Code": "SUPA",
-    "Abbreviation": "SUPA",
-    "RegisterDate": "4 March 2015",
-    "AmendmentDate": "4 March 2015",
-    "Address": "4/252 Stony Point Road\nCRIB POINT  VIC 3919",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Hosking",
-      "GivenNames": "Roderick William",
-      "Capacity": "Registered Officer",
-      "Address": {
-        "Line1": "4/252 Stony Point Road",
-        "Suburb": "Crib Point",
-        "State": "VIC",
-        "Postcode": 3919
-      }
-    },
-    "DeputyOfficers": [
-      {
-        "Title": "Mr",
-        "FamilyName": "Burdett",
-        "GivenNames": "Robert",
-        "Capacity": "Party Agent",
-        "Address": {
-          "Line1": "1 Liberton Place",
-          "Suburb": "Mandurah",
-          "State": "WA",
-          "Postcode": 6210
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Patrech",
-        "GivenNames": "Robert John",
-        "Capacity": "Secretary",
-        "Address": {
-          "Line1": "41 Bellevue Road",
-          "Suburb": "Figtree",
-          "State": "NSW",
-          "Postcode": 2525
-        }
-      }
-    ],
     "Branches": []
   },
   {
@@ -2280,6 +2157,29 @@
         }
       }
     ],
+    "Branches": []
+  },
+  {
+    "Id": 1510,
+    "Name": "Voices for the Senate",
+    "Code": "VOICES4SENATE",
+    "Abbreviation": "VOICES4SENATE",
+    "RegisterDate": "1 July 2022",
+    "AmendmentDate": "1 July 2022",
+    "Address": "1009/25 Edinbugh Avenue\nCANBERRA CITY ACT 2601",
+    "Officer": {
+      "Title": "Ms",
+      "FamilyName": "Bowd",
+      "GivenNames": "Fionn Elizabeth Phemie",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "1009/25 Edinbugh Avenue",
+        "Suburb": "CANBERRA CITY",
+        "State": "ACT",
+        "Postcode": 2601
+      }
+    },
+    "DeputyOfficers": [],
     "Branches": []
   },
   {
