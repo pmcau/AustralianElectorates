@@ -42,4 +42,33 @@ public class ConvertToSqlGeometryTests
         output.WriteLine(startNew.ElapsedMilliseconds.ToString());
     }
 
+    [Fact]
+    public void Bar()
+    {
+        Dictionary<string, IPointOnGeometryLocator> locators = new Dictionary<string, IPointOnGeometryLocator>();
+        var geojsonFile = Path.Combine(DataLocations.MapsPath,"2022","australia.geojson");
+            var serializer = GeoJsonSerializer.Create(new GeometryFactoryEx());
+            using var jsonReader = new JsonTextReader(File.OpenText(geojsonFile));
+            var featureCollection = serializer.Deserialize<FeatureCollection>(jsonReader);
+        foreach (var feature in featureCollection)
+        {
+            var geometry = feature.Geometry;
+            var featureAttributes = feature.Attributes;
+            locators.Add(featureAttributes["electorateName"].ToString()!, new IndexedPointInAreaLocator(geometry));
+        }
+
+        var startNew = Stopwatch.StartNew();
+        foreach (var locator in locators)
+        {
+            var location = locator.Value.Locate(new(14.09, -35.349));
+
+            var isInside = !location.HasFlag(Location.Exterior);
+            if (isInside)
+            {
+                output.WriteLine(locator.Key);
+            }
+        }
+        output.WriteLine(startNew.ElapsedMilliseconds.ToString());
+    }
+
 }
