@@ -163,7 +163,8 @@ public class Sync
     };
 
     static Sync() =>
-        percents = new() {20, 10, 5, 1};
+        percents = new()
+            {20, 10, 5, 1};
 
     static async Task ProcessYear(string yearPath, List<string> electorates, Dictionary<State,List<string>> electorateToStateMap)
     {
@@ -262,7 +263,7 @@ public class Sync
     static async Task<List<ElectorateEx>> WriteElectoratesMetaData()
     {
         var localityData = JsonSerializerService.Deserialize<List<AecLocalityData>>(DataLocations.LocalitiesPath);
-        List<ElectorateEx> electorates = new();
+        var electorates = new List<ElectorateEx>();
         foreach (var electoratePair in electorateNames)
         {
             foreach (var electorateName in electoratePair.Value)

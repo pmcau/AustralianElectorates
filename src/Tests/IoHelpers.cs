@@ -8,7 +8,7 @@
             return;
         }
 
-        DirectoryInfo root = new(directory);
+        var root = new DirectoryInfo(directory);
 
         foreach (var file in root.GetFiles("*.*", SearchOption.AllDirectories))
         {
@@ -24,7 +24,7 @@
             return;
         }
 
-        DirectoryInfo root = new(directory);
+        var root = new DirectoryInfo(directory);
 
         foreach (var file in root.GetFiles())
         {

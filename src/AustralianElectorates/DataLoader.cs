@@ -21,7 +21,7 @@ public static partial class DataLoader
             Parties = Serializer.Deserialize<List<Party>>(stream);
         }
 
-        List<IPartyOrBranch> partiesAndBranches = new();
+        var partiesAndBranches = new List<IPartyOrBranch>();
         foreach (var party in Parties)
         {
             partiesAndBranches.Add(party);
@@ -187,7 +187,7 @@ public static partial class DataLoader
         await WriteElectoratesJson(directory);
 
         using var stream = assembly.GetManifestResourceStream("Maps.zip")!;
-        using ZipArchive archive = new(stream);
+        using var archive = new ZipArchive(stream);
         archive.ExtractToDirectory(directory);
     }
 

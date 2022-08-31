@@ -4,7 +4,10 @@ using GeoJSON.Net.Geometry;
 static class GeoJsonExtensions
 {
     public static FeatureCollection ToCollection(this Feature feature) =>
-        new(new() {feature});
+        new(new()
+        {
+            feature
+        });
 
     public static FeatureCollection FeaturesCollectionForState(this FeatureCollection featureCollection, List<string> electorates)
     {
@@ -15,7 +18,7 @@ static class GeoJsonExtensions
                 return electorates.Contains(electorate);
             })
             .ToList();
-        FeatureCollection collection = new(features);
+        var collection = new FeatureCollection(features);
         collection.FixBoundingBox();
         return collection;
     }

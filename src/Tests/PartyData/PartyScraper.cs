@@ -25,7 +25,7 @@ static class PartyScraper
                 .Split('"')[1];
             await Downloader.DownloadFile(partyRegisterPath, $"https://www.aec.gov.au{jsonUrl}");
             var aecParties = JsonSerializerService.Deserialize<PartyData>(partyRegisterPath);
-            List<Party> parties = new();
+            var parties = new List<Party>();
             foreach (var detail in aecParties.Details)
             {
                 var party = DetailToParty(detail, codes);

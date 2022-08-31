@@ -74,7 +74,7 @@ public class MapCollection
     static string GetMap(string path)
     {
         using var stream = assembly.GetManifestResourceStream("Maps.zip")!;
-        using ZipArchive archive = new(stream);
+        using var archive = new ZipArchive(stream);
         var entry = archive.GetEntry($"{path}.geojson");
         if (entry == null)
         {
@@ -87,7 +87,7 @@ public class MapCollection
     public void LoadAll()
     {
         using var stream = assembly.GetManifestResourceStream("Maps.zip")!;
-        using ZipArchive archive = new(stream);
+        using var archive = new ZipArchive(stream);
         foreach (var entry in archive.Entries.Where(x => x.FullName.StartsWith(prefix)))
         {
             var key = entry.FullName.Split('.').First();

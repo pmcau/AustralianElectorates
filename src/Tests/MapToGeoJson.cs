@@ -6,7 +6,7 @@
     public static Task ConvertShape(string targetFile, string shpFile, int? percent = null)
     {
         //mapshaper C:\Code\AustralianElectorates\Data\ElectoratesByState\act.geojson -simplify dp 20% -o format=geojson C:\Code\AustralianElectorates\Data\ElectoratesByState\temp.json
-        List<string> arguments = new(){"/C", "mapshaper", shpFile};
+        var arguments = new List<string> {"/C", "mapshaper", shpFile};
         if (percent != null)
         {
             arguments.Add("-simplify");
@@ -23,7 +23,7 @@
 
     static async Task Run(string fileName, params string[] arguments)
     {
-        ProcessStartInfo startInfo = new(fileName)
+        var startInfo = new ProcessStartInfo(fileName)
         {
             CreateNoWindow = true,
             RedirectStandardOutput = true,

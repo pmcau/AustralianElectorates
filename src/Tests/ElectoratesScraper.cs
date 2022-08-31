@@ -34,10 +34,10 @@ static class ElectoratesScraper
                 throw new($"Could not download {shortName}");
             }
 
-            HtmlDocument document = new();
+            var document = new HtmlDocument();
             document.Load(tempElectorateHtmlPath);
             var fullName = GetFullName(document, prefix);
-            Dictionary<string, HtmlNode> values = new(StringComparer.OrdinalIgnoreCase);
+            var values = new Dictionary<string, HtmlNode>(StringComparer.OrdinalIgnoreCase);
             var profileId = FindProfileTable(document);
             var htmlNodeCollection = profileId.SelectNodes("dt");
             foreach (var keyNode in htmlNodeCollection)
@@ -46,7 +46,7 @@ static class ElectoratesScraper
                 values[keyNode.InnerText.Trim().Trim(':').Replace("  ", " ")] = valueNode;
             }
 
-            ElectorateEx electorate = new()
+            var electorate = new ElectorateEx
             {
                 Name = fullName,
                 ShortName = shortName,
@@ -95,7 +95,7 @@ static class ElectoratesScraper
 
             electorate.DemographicRating = values["Demographic Rating"].TrimmedInnerHtml();
 
-            Uri uri = new(new(requestUri), FindMapUrl(values));
+            var uri = new Uri(new(requestUri), FindMapUrl(values));
             electorate.MapUrl = uri.AbsoluteUri;
 
             electorate.NameDerivation = values["Name derivation"].TrimmedInnerHtml();

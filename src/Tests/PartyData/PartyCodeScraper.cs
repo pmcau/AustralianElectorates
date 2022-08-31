@@ -16,11 +16,11 @@ public static class PartyCodeScraper
                 throw new($"Could not download {url}");
             }
 
-            HtmlDocument document = new();
+            var document = new HtmlDocument();
             document.Load(htmlPath);
             var selectSingleNode = document.DocumentNode.SelectSingleNode("//caption");
             var table = selectSingleNode.ParentNode;
-            Dictionary<string,string> codes = new();
+            var codes = new Dictionary<string, string>();
             foreach (var node in table.SelectNodes("//tr").Skip(1))
             {
                 var nodes = node.ChildNodes.Where(x=>x.NodeType != HtmlNodeType.Text).ToList();

@@ -38,8 +38,8 @@ static class JsonSerializerService
     public static void Serialize(object value, string path)
     {
         using var fileStream = File.OpenWrite(path);
-        using StreamWriter textWriter = new(fileStream);
-        using JsonTextWriter jsonTextWriter = new(textWriter)
+        using var textWriter = new StreamWriter(fileStream);
+        using var jsonTextWriter = new JsonTextWriter(textWriter)
         {
             Indentation = 2
         };
@@ -52,8 +52,8 @@ static class JsonSerializerService
     public static T Deserialize<T>(string path)
     {
         using var fileStream = File.OpenRead(path);
-        using StreamReader textReader = new(fileStream);
-        using JsonTextReader jsonTextReader = new(textReader);
+        using var textReader = new StreamReader(fileStream);
+        using var jsonTextReader = new JsonTextReader(textReader);
         return jsonSerializer.Deserialize<T>(jsonTextReader)!;
     }
 }

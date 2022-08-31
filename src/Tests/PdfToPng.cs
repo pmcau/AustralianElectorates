@@ -20,7 +20,7 @@ public static class PdfToPng
         using (var bmpImage = (Bitmap) Image.FromFile(tempPng1))
         {
             var size = bmpImage.Size;
-            Rectangle cropRect = new(cropSize, cropSize, size.Width - 2 * cropSize, size.Height - 2 * cropSize);
+            var cropRect = new Rectangle(cropSize, cropSize, size.Width - 2 * cropSize, size.Height - 2 * cropSize);
 
             using (var bitmap = bmpImage.Clone(cropRect, bmpImage.PixelFormat))
             {
@@ -37,7 +37,7 @@ public static class PdfToPng
     static void DrawBitmapWithBorder(Bitmap bitmap)
     {
         using var graphics = Graphics.FromImage(bitmap);
-        using Pen pen = new(Brushes.Black, 3);
+        using var pen = new Pen(Brushes.Black, 3);
         graphics.DrawLine(pen, new(0, 0), new(0, bitmap.Height));
         graphics.DrawLine(pen, new(0, 0), new(bitmap.Width, 0));
         graphics.DrawLine(pen, new(0, bitmap.Height), new(bitmap.Width, bitmap.Height));
@@ -46,7 +46,7 @@ public static class PdfToPng
 
     static async Task CallPngquant(string tempPng, string png)
     {
-        ProcessStartInfo pngquant = new()
+        var pngquant = new ProcessStartInfo
         {
             FileName = "pngquant.exe",
             UseShellExecute = false,
@@ -72,7 +72,7 @@ public static class PdfToPng
 
     static async Task CallGhostScript(string pdf, string tempPng)
     {
-        ProcessStartInfo gswin64 = new()
+        var gswin64 = new ProcessStartInfo
         {
             FileName = "gswin64c.exe",
             UseShellExecute = false,
