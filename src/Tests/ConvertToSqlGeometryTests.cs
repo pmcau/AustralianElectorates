@@ -58,16 +58,16 @@ public class ConvertToSqlGeometryTests
         }
 
         var startNew = Stopwatch.StartNew();
-        foreach (var locator in locators)
-        {
-            var location = locator.Value.Locate(new(14.09, -35.349));
-
-            var isInside = !location.HasFlag(Location.Exterior);
-            if (isInside)
+            foreach (var locator in locators)
             {
-                output.WriteLine(locator.Key);
+                var location = locator.Value.Locate(new(149.09, -35.349));
+
+                var isInside = !location.HasFlag(Location.Exterior);
+                if (isInside)
+                {
+                    output.WriteLine(locator.Key);
+                }
             }
-        }
         output.WriteLine(startNew.ElapsedMilliseconds.ToString());
     }
 
