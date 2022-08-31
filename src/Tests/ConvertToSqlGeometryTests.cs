@@ -18,7 +18,7 @@ public class ConvertToSqlGeometryTests
     {
         Dictionary<string, IPointOnGeometryLocator> locators = new Dictionary<string, IPointOnGeometryLocator>();
         var electorateDir = Path.Combine(DataLocations.Maps2022Path,"Electorates");
-        foreach (var path in Directory.EnumerateFiles(electorateDir,"*.geojson").Where(_=>!_.Contains('_')))
+        foreach (var path in Directory.EnumerateFiles(electorateDir,"*.geojson").Where(_=>_.Contains("_20")))
         {
             var serializer = GeoJsonSerializer.Create(new GeometryFactoryEx());
             using var jsonReader = new JsonTextReader(File.OpenText(path));
@@ -31,7 +31,7 @@ public class ConvertToSqlGeometryTests
         var startNew = Stopwatch.StartNew();
         foreach (var locator in locators)
         {
-            var location = locator.Value.Locate(new Coordinate(14.09, -35.349));
+            var location = locator.Value.Locate(new(14.09, -35.349));
 
             var isInside = !location.HasFlag(Location.Exterior);
             if (isInside)
