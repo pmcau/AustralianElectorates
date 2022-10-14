@@ -1,9 +1,14 @@
-﻿using NetTopologySuite.Algorithm.Locate;
+﻿using Aspose.Gis;
+using Aspose.Gis.Rendering;
+using Aspose.Gis.Rendering.Symbolizers;
+using Aspose.Gis.SpatialReferencing;
+using NetTopologySuite.Algorithm.Locate;
 using NetTopologySuite.Features;
 using NetTopologySuite.Geometries;
 using NetTopologySuite.IO;
 using Newtonsoft.Json;
 using Xunit.Abstractions;
+using Feature = NetTopologySuite.Features.Feature;
 
 public class ConvertToSqlGeometryTests
 {
@@ -70,5 +75,19 @@ public class ConvertToSqlGeometryTests
         }
 
         output.WriteLine(startNew.ElapsedMilliseconds.ToString());
+    }
+
+    [Fact]
+    public void AddLabel()
+    {
+         File.Delete("a.png");
+        var geojsonFile = Path.Combine(DataLocations.MapsCuratedPath,@"2022\Electorates\durack.geojson");
+        using var map = new Map(800,800);
+        
+        var symbolizer = new SimpleLine
+            {Width = Measurement.Pixels(2)};
+        map.SpatialReferenceSystem = SpatialReferenceSystem.Wgs84;
+        map.Add(VectorLayer.Open(geojsonFile, Drivers.GeoJson), symbolizer);
+        map.Render("a.png", Renderers.Png);
     }
 }
