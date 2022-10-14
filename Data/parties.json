@@ -8,12 +8,12 @@
     "AmendmentDate": "3 May 2011",
     "Address": "PO Box Q1688\nQUEEN VICTORIA BUILDING NSW 1230",
     "Officer": {
-      "Title": "Mr ",
-      "FamilyName": "Schultz",
-      "GivenNames": "Ben ",
+      "Title": "Ms",
+      "FamilyName": "Oickle",
+      "GivenNames": "Natasha",
       "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "Suite 13, Level 5",
+        "Line1": "Suite 3, Level 5",
         "Line2": "35 Buckingham Street",
         "Suburb": "Surry Hills",
         "State": "NSW",
@@ -1201,14 +1201,15 @@
         },
         "DeputyOfficers": [
           {
-            "Title": "Ms",
-            "FamilyName": "Awabdy",
-            "GivenNames": "Angela",
+            "Title": "Mr",
+            "FamilyName": "Negerevich",
+            "GivenNames": "Michael",
+            "Capacity": "Deputy Registered Officer",
             "Address": {
-              "Line1": "PO Box 940",
-              "Suburb": "Spring Hill",
+              "Line1": "206 McDonald Drive",
+              "Suburb": "Narangba",
               "State": "QLD",
-              "Postcode": 4004
+              "Postcode": 4504
             }
           }
         ]
@@ -2105,29 +2106,6 @@
     "Branches": []
   },
   {
-    "Id": 1469,
-    "Name": "United Australia Party",
-    "Code": "UAP",
-    "Abbreviation": "UAP",
-    "RegisterDate": "12 December 2018",
-    "AmendmentDate": "12 December 2018",
-    "Address": "GPO Box 1538\nBRISBANE QLD 4001",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Harris",
-      "GivenNames": "Nui",
-      "Capacity": "Registered Officer",
-      "Address": {
-        "Line1": "Avica, 153 Gooding Drive",
-        "Suburb": "Merrimac",
-        "State": "QLD",
-        "Postcode": 4226
-      }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
-  },
-  {
     "Id": 1477,
     "Name": "Victorian Socialists",
     "Code": "Victorian Socialists",
@@ -2196,14 +2174,14 @@
     "Address": "PO Box 8134\nSUBIACO WA 6008",
     "Officer": {
       "Title": "Mr",
-      "FamilyName": "O'Loghlen",
-      "GivenNames": "Michael Joseph",
+      "FamilyName": "Fels",
+      "GivenNames": "Anthony James",
       "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "19/4 Ventnor Avenue",
-        "Suburb": "West Perth",
+        "Line1": "82 Belmont Avenue",
+        "Suburb": "Rivervale",
         "State": "WA",
-        "Postcode": 6005
+        "Postcode": 6103
       }
     },
     "DeputyOfficers": [
