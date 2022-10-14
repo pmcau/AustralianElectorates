@@ -9,16 +9,15 @@ public class ConvertToSqlGeometryTests
 {
     private readonly ITestOutputHelper output;
 
-    public ConvertToSqlGeometryTests(ITestOutputHelper output)
-    {
+    public ConvertToSqlGeometryTests(ITestOutputHelper output) =>
         this.output = output;
-    }
+
     [Fact]
     public void Foo()
     {
         Dictionary<string, IPointOnGeometryLocator> locators = new Dictionary<string, IPointOnGeometryLocator>();
-        var electorateDir = Path.Combine(DataLocations.Maps2022Path,"Electorates");
-        foreach (var path in Directory.EnumerateFiles(electorateDir,"*.geojson").Where(_=>_.Contains("_20")))
+        var electorateDir = Path.Combine(DataLocations.Maps2022Path, "Electorates");
+        foreach (var path in Directory.EnumerateFiles(electorateDir, "*.geojson").Where(_ => _.Contains("_20")))
         {
             var serializer = GeoJsonSerializer.Create(new GeometryFactoryEx());
             using var jsonReader = new JsonTextReader(File.OpenText(path));
@@ -39,17 +38,18 @@ public class ConvertToSqlGeometryTests
                 output.WriteLine(locator.Key);
             }
         }
+
         output.WriteLine(startNew.ElapsedMilliseconds.ToString());
     }
 
     [Fact]
     public void Bar()
     {
-        Dictionary<string, IPointOnGeometryLocator> locators = new Dictionary<string, IPointOnGeometryLocator>();
-        var geojsonFile = Path.Combine(DataLocations.MapsPath,"2022","australia.geojson");
-            var serializer = GeoJsonSerializer.Create(new GeometryFactoryEx());
-            using var jsonReader = new JsonTextReader(File.OpenText(geojsonFile));
-            var featureCollection = serializer.Deserialize<FeatureCollection>(jsonReader);
+        var locators = new Dictionary<string, IPointOnGeometryLocator>();
+        var geojsonFile = Path.Combine(DataLocations.MapsPath, "2022", "australia.geojson");
+        var serializer = GeoJsonSerializer.Create(new GeometryFactoryEx());
+        using var jsonReader = new JsonTextReader(File.OpenText(geojsonFile));
+        var featureCollection = serializer.Deserialize<FeatureCollection>(jsonReader);
         foreach (var feature in featureCollection)
         {
             var geometry = feature.Geometry;
@@ -58,17 +58,17 @@ public class ConvertToSqlGeometryTests
         }
 
         var startNew = Stopwatch.StartNew();
-            foreach (var locator in locators)
-            {
-                var location = locator.Value.Locate(new(149.09, -35.349));
+        foreach (var locator in locators)
+        {
+            var location = locator.Value.Locate(new(149.09, -35.349));
 
-                var isInside = !location.HasFlag(Location.Exterior);
-                if (isInside)
-                {
-                    output.WriteLine(locator.Key);
-                }
+            var isInside = !location.HasFlag(Location.Exterior);
+            if (isInside)
+            {
+                output.WriteLine(locator.Key);
             }
+        }
+
         output.WriteLine(startNew.ElapsedMilliseconds.ToString());
     }
-
 }
