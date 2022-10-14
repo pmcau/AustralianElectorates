@@ -3,6 +3,7 @@
     <TargetFramework>net6</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Aspose.GIS" Version="22.9.0" />
     <PackageReference Include="Bogus" Version="34.0.2" />
     <PackageReference Include="CountryData" Version="3.78.0" />
     <PackageReference Include="MarkdownSnippets.MsBuild" Version="24.5.0" PrivateAssets="all" />
