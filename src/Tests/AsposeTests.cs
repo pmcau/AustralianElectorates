@@ -9,9 +9,19 @@ using AustralianElectorates;
 [UsesVerify]
 public class AsposeTests
 {
+    // significant urban areas https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/allocation-files
+    // Use: Significant Urban Areas - 2021
+    // population https://www.abs.gov.au/methodologies/data-region-methodology/2015-20#data-download
+    // https://www.abs.gov.au/statistics/people/population/regional-population/2021
+    // Population estimates by Significant Urban Area and Remoteness Area (ASGS2016), 2001 to 2021
+    // Significant Urban Areas, Urban Centres and Localities, Section of State and Section of State Range 
+    // https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files
     [Fact]
     public void AddLabel()
     {
+        var absDir = Path.Combine(AttributeReader.GetProjectDirectory(),"ABS");
+        
+        
         File.Delete("a.png");
         var geojsonFile = Path.Combine(DataLocations.MapsCuratedPath,@"2022\Electorates\durack.geojson");
         using var map = new Map(1024,1024);
