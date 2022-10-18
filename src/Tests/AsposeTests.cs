@@ -24,6 +24,11 @@ public class AsposeTests
         
         File.Delete("a.png");
         var geojsonFile = Path.Combine(DataLocations.MapsCuratedPath,@"2022\Electorates\durack.geojson");
+        
+        
+        var serializer = GeoJsonSerializer.Create();
+        
+        
         using var map = new Map(1024,1024);
         //17.9618° S, 122.2370° E
 
