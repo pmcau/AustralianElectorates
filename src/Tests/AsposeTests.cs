@@ -40,9 +40,6 @@ public class AsposeTests
         using var sequence = VectorLayer.Open(geojsonFile, Drivers.GeoJson);
 
 
-        MultiPoint multipoint = new MultiPoint();
-        multipoint.Add(new Point(1, 2));
-        multipoint.Add(new Point(3, 4));
         map.Add(sequence, symbolizer, labeling);
         map.Render("a.png", Renderers.Png);
     }
@@ -73,6 +70,38 @@ public class AsposeTests
         }
 
         RenderGeo("temp.geojson");
+    }
+
+    //https://wiki.openstreetmap.org/wiki/Downloading_data
+    //https://overpass-api.de/api/map?bbox=112.920,-32.140,129.001,-13.740
+    [Fact]
+    public void OpenStreetMap()
+    {
+        
+        var cellsLicense = new License();
+        cellsLicense.SetLicense(File.OpenRead(@"C:\Code\CommitmentsManager\src\CommitmentsManager\Aspose.Total.lic"));
+        var path = @"C:\Code\durack.osm";
+
+        File.Delete("OpenStreetMap.png");
+        var geojsonFile = Path.Combine(DataLocations.MapsCuratedPath, @"2022\Electorates\durack.geojson");
+
+        using var map = new Map(1024, 1024)
+        {
+            SpatialReferenceSystem = SpatialReferenceSystem.Wgs84
+        };
+        //17.9618° S, 122.2370° E
+
+        var symbolizer = new SimpleLine
+        {
+            Width = Measurement.Pixels(2)
+        };
+
+        //var labeling = new SimpleLabeling(labelAttribute: "electorateName");
+        //using var sequence = VectorLayer.Open(geojsonFile, Drivers.GeoJson);
+        //map.Add(sequence, symbolizer, labeling);
+        using var osmsequence = VectorLayer.Open(path, Drivers.OsmXml);
+        map.Add(osmsequence);
+        map.Render("OpenStreetMap.png", Renderers.Png);
     }
 
     public void RenderGeo(string file)
