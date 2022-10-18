@@ -67,7 +67,29 @@ public class AsposeTests
                         }
                     })));
         File.Delete("temp.geojson");
-        using var writeStream = File.OpenWrite("temp.geojson");
-        JsonSerializer.Serialize(writeStream, featureCollection, jsonOption);
+        using (var writeStream = File.OpenWrite("temp.geojson"))
+        {
+            JsonSerializer.Serialize(writeStream, featureCollection, jsonOption);
+        }
+
+        RenderGeo("temp.geojson");
+    }
+
+    public void RenderGeo(string file)
+    {
+        File.Delete("a.png");
+        using var map = new Map(1024, 1024);
+
+        var symbolizer = new SimpleLine
+        {
+            Width = Measurement.Pixels(2)
+        };
+
+        var labeling = new SimpleLabeling(labelAttribute: "sua");
+        map.SpatialReferenceSystem = SpatialReferenceSystem.Wgs84;
+        using var sequence = VectorLayer.Open(file, Drivers.GeoJson);
+
+        map.Add(sequence, symbolizer, labeling);
+        map.Render("a.png", Renderers.Png);
     }
 }
