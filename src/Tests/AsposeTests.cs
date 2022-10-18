@@ -1,10 +1,13 @@
-﻿using Aspose.Gis;
+﻿using System.Text.Json;
+using Aspose.Gis;
 using Aspose.Gis.Geometries;
 using Aspose.Gis.Rendering;
 using Aspose.Gis.Rendering.Labelings;
 using Aspose.Gis.Rendering.Symbolizers;
 using Aspose.Gis.SpatialReferencing;
 using AustralianElectorates;
+using NetTopologySuite.Features;
+using Feature = NetTopologySuite.Features.Feature;
 
 [UsesVerify]
 public class AsposeTests
@@ -19,31 +22,52 @@ public class AsposeTests
     [Fact]
     public void AddLabel()
     {
-        var absDir = Path.Combine(AttributeReader.GetProjectDirectory(),"ABS");
-        
-        
+        var absDir = Path.Combine(AttributeReader.GetProjectDirectory(), "ABS");
+
         File.Delete("a.png");
-        var geojsonFile = Path.Combine(DataLocations.MapsCuratedPath,@"2022\Electorates\durack.geojson");
-        
-        
-        var serializer = GeoJsonSerializer.Create();
-        
-        
-        using var map = new Map(1024,1024);
+        var geojsonFile = Path.Combine(DataLocations.MapsCuratedPath, @"2022\Electorates\durack.geojson");
+
+        using var map = new Map(1024, 1024);
         //17.9618° S, 122.2370° E
 
         var symbolizer = new SimpleLine
-            {Width = Measurement.Pixels(2)};
+        {
+            Width = Measurement.Pixels(2)
+        };
 
         var labeling = new SimpleLabeling(labelAttribute: "electorateName");
         map.SpatialReferenceSystem = SpatialReferenceSystem.Wgs84;
         using var sequence = VectorLayer.Open(geojsonFile, Drivers.GeoJson);
-        
-        
+
+
         MultiPoint multipoint = new MultiPoint();
         multipoint.Add(new Point(1, 2));
         multipoint.Add(new Point(3, 4));
         map.Add(sequence, symbolizer, labeling);
         map.Render("a.png", Renderers.Png);
+    }
+
+    [Fact]
+    public void AddPointUsingNetTopo()
+    {
+        var geojsonFile = Path.Combine(DataLocations.MapsCuratedPath, @"2022\Electorates\durack.geojson");
+
+        var jsonOption = new JsonSerializerOptions();
+        jsonOption.Converters.Add(new NetTopologySuite.IO.Converters.GeoJsonConverterFactory());
+        using var readFile = File.OpenRead(geojsonFile);
+        var featureCollection = JsonSerializer.Deserialize<FeatureCollection>(readFile, jsonOption)!;
+
+        featureCollection.Add(
+            new Feature(new NetTopologySuite.Geometries.Point(122.2370, -17.9618),
+                new AttributesTable(
+                    new Dictionary<string, object>
+                    {
+                        {
+                            "sua", "Broome"
+                        }
+                    })));
+        File.Delete("temp.geojson");
+        using var writeStream = File.OpenWrite("temp.geojson");
+        JsonSerializer.Serialize(writeStream, featureCollection, jsonOption);
     }
 }
