@@ -13,7 +13,7 @@
       "GivenNames": "Natasha",
       "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "Suite 3, Level 5",
+        "Line1": "Suite 13, Level 5",
         "Line2": "35 Buckingham Street",
         "Suburb": "Surry Hills",
         "State": "NSW",
@@ -714,28 +714,6 @@
     ]
   },
   {
-    "Id": 1403,
-    "Name": "Australian Progressives",
-    "Code": "The Progressives",
-    "Abbreviation": "The Progressives",
-    "RegisterDate": "17 February 2015",
-    "AmendmentDate": "17 February 2015",
-    "Address": "24B Harpur Place\nGARRAN ACT 2605",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Carroll",
-      "GivenNames": "Edward",
-      "Address": {
-        "Line1": "42 Messara Circuit",
-        "Suburb": "Durack",
-        "State": "QLD",
-        "Postcode": 4077
-      }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
-  },
-  {
     "Id": 1500,
     "Name": "Australian Values Party",
     "Code": "AVP",
@@ -812,7 +790,7 @@
     "Abbreviation": "David Pocock",
     "RegisterDate": "18 March 2022",
     "AmendmentDate": "18 March 2022",
-    "Address": "8 Macarthur Avenue\nO'CONNOR ACT 2602",
+    "Address": "17 Darling Street\nMITCHELL ACT 2911",
     "Officer": {
       "Title": "Mr",
       "FamilyName": "Cummings",
@@ -1424,8 +1402,9 @@
     "DeputyOfficers": [
       {
         "Title": "Mr",
-        "FamilyName": "Miles",
-        "GivenNames": "Rodney",
+        "FamilyName": "Huxham",
+        "GivenNames": "Damian",
+        "Capacity": "Secretary",
         "Address": {
           "Line1": "17/109 Holt Street",
           "Suburb": "Eagle Farm",
@@ -1692,13 +1671,25 @@
       "FamilyName": "Watson",
       "GivenNames": "Giz",
       "Address": {
-        "Line1": "2 / 18 Lonsdale Street",
+        "Line1": "2/18 Lonsdale Street",
         "Suburb": "Braddon",
         "State": "ACT",
         "Postcode": 2612
       }
     },
     "DeputyOfficers": [
+      {
+        "Title": "Ms",
+        "FamilyName": "O'Brien",
+        "GivenNames": "Alexandra",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "2/18 Lonsdale Street",
+          "Suburb": "Braddon",
+          "State": "ACT",
+          "Postcode": 2612
+        }
+      },
       {
         "Title": "Ms",
         "FamilyName": "Scrine",
@@ -1730,18 +1721,6 @@
           "Suburb": "Gray",
           "State": "NT",
           "Postcode": 830
-        }
-      },
-      {
-        "Title": "Ms",
-        "FamilyName": "Morales",
-        "GivenNames": "Fleur",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "2 / 18 Lonsdale Street",
-          "Suburb": "Braddon",
-          "State": "ACT",
-          "Postcode": 2612
         }
       },
       {
@@ -2070,7 +2049,7 @@
           "Title": "Mr",
           "FamilyName": "Mallick",
           "GivenNames": "Jack",
-          "Capacity": "Party Agent",
+          "Capacity": "Registered Officer",
           "Address": {
             "Line1": "1 Graylands Road",
             "Suburb": "Claremont",
