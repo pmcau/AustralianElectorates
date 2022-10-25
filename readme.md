@@ -133,7 +133,7 @@ Sample:
       "GivenNames": "Natasha",
       "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "Suite 3, Level 5",
+        "Line1": "Suite 13, Level 5",
         "Line2": "35 Buckingham Street",
         "Suburb": "Surry Hills",
         "State": "NSW",

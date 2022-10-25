@@ -3,5 +3,5 @@
   Message: Unable to find election for Parliament '0'.,
   StackTrace:
 at AustralianElectorates.DataLoader.FindElection(Int32 parliament)
-at DataLoaderTests.<>c__DisplayClass21_0.<TryFindElection_not_found>b__0()
+at DataLoaderTests.<>c__DisplayClass20_0.<TryFindElection_not_found>b__0()
 }

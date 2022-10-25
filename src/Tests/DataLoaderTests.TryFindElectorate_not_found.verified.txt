@@ -4,5 +4,5 @@
   Message: Unable to find electorate: 'not Found'.,
   StackTrace:
 at AustralianElectorates.DataLoader.FindElectorate(String name)
-at DataLoaderTests.<>c.<TryFindElectorate_not_found>b__2_0()
+at DataLoaderTests.<>c.<TryFindElectorate_not_found>b__1_0()
 }

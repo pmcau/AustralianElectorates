@@ -3,21 +3,21 @@ using AustralianElectorates;
 [UsesVerify]
 public class DataLoaderTests
 {
-    [Fact]
-    public async Task Electorates()
-    {
-        File.Delete(DataLocations.PostcodeToElectorateJsonPath);
-        await using var writer = File.CreateText(DataLocations.PostcodeToElectorateJsonPath);
-        await writer.WriteLineAsync("{");
-        foreach (var electorate in DataLoader.Electorates)
-        {
-            foreach (var location in electorate.Locations)
-            {
-                await writer.WriteLineAsync($"  {location.Postcode}:\"{electorate.ShortName}\",");
-            }
-        }
-        await writer.WriteLineAsync("}");
-    }
+    // [Fact]
+    // public async Task Electorates()
+    // {
+    //     File.Delete(DataLocations.PostcodeToElectorateJsonPath);
+    //     await using var writer = File.CreateText(DataLocations.PostcodeToElectorateJsonPath);
+    //     await writer.WriteLineAsync("{");
+    //     foreach (var electorate in DataLoader.Electorates)
+    //     {
+    //         foreach (var location in electorate.Locations)
+    //         {
+    //             await writer.WriteLineAsync($"  {location.Postcode}:\"{electorate.ShortName}\",");
+    //         }
+    //     }
+    //     await writer.WriteLineAsync("}");
+    // }
 
     [Fact]
     public void GetAustralia()
