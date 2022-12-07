@@ -4,7 +4,8 @@ static class MediaFeedService
 {
     static MediaFeedService()
     {
-        using var reader = File.OpenText(@"MediaFeed\aec-mediafeed-results-standard-verbose-24310.xml");
+        //from here ftp://mediafeedarchive.aec.gov.au/
+        using var reader = File.OpenText(@"MediaFeed\aec-mediafeed-results-standard-verbose-27966.xml");
         var serializer = new XmlSerializer(typeof(MediaFeed));
         Feed = (MediaFeed)serializer.Deserialize(reader)!;
         HouseOfReps = GetHouseOfReps(Feed);

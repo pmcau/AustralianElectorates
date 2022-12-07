@@ -959,6 +959,29 @@
     "Branches": []
   },
   {
+    "Id": 1510,
+    "Name": "Independent Voices for the Senate",
+    "Code": "Independent Voices",
+    "Abbreviation": "Independent Voices",
+    "RegisterDate": "1 July 2022",
+    "AmendmentDate": "1 July 2022",
+    "Address": "1009/25 Edinburgh Avenue\nCANBERRA CITY ACT 2601",
+    "Officer": {
+      "Title": "Ms",
+      "FamilyName": "Bowd",
+      "GivenNames": "Fionn Elizabeth Phemie",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "1009/25 Edinburgh Avenue",
+        "Suburb": "CANBERRA CITY",
+        "State": "ACT",
+        "Postcode": 2601
+      }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
+  },
+  {
     "Id": 1496,
     "Name": "Indigenous - Aboriginal Party of Australia",
     "Code": "Indigenous Party of Australia",
@@ -1439,29 +1462,6 @@
     "Branches": []
   },
   {
-    "Id": 1486,
-    "Name": "Rex Patrick Team",
-    "Code": "REX",
-    "Abbreviation": "REX",
-    "RegisterDate": "7 January 2021",
-    "AmendmentDate": "7 January 2021",
-    "Address": "33 Warwick St\nWalkerville SA 5081",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Patrick",
-      "GivenNames": "Rex Lyall",
-      "Capacity": "Registered Officer",
-      "Address": {
-        "Line1": "33 Warwick Steet",
-        "Suburb": "Walkerville",
-        "State": "SA",
-        "Postcode": 5081
-      }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
-  },
-  {
     "Id": 1171,
     "Name": "Shooters, Fishers and Farmers Party",
     "Code": "Shooters, Fishers and Farmers",
@@ -1644,15 +1644,15 @@
     "AmendmentDate": "7 April 2019",
     "Address": "PO Box 8242\nSOUTH PERTH WA 6151",
     "Officer": {
-      "Title": "Mr ",
-      "FamilyName": "Nelson",
-      "GivenNames": "Ian",
+      "Title": "Ms",
+      "FamilyName": "Menzel",
+      "GivenNames": "Margaret",
       "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "65 Cardinal Circuit",
-        "Suburb": "Caboolture",
-        "State": "QLD",
-        "Postcode": 4510
+        "Line1": "33/226 Beaufort Street",
+        "Suburb": "Perth",
+        "State": "WA",
+        "Postcode": 6000
       }
     },
     "DeputyOfficers": [],
@@ -1883,17 +1883,16 @@
         "Abbreviation": "The Greens",
         "RegisterDate": "20 May 1994",
         "AmendmentDate": "20 May 1994",
-        "Address": "PO Box 48\nBROADWAY NSW 2007",
+        "Address": "PO Box 366\nWESTGATE NSW 2048",
         "Officer": {
           "Title": "Mr",
           "FamilyName": "Lee",
           "GivenNames": "Seamus Myles",
           "Address": {
-            "Line1": "Suite D, Level 1",
-            "Line2": "275 Broadway",
-            "Suburb": "Glebe",
+            "Line1": "19A/1 Hordern Place",
+            "Suburb": "Camperdown",
             "State": "NSW",
-            "Postcode": 2037
+            "Postcode": 2050
           }
         },
         "DeputyOfficers": [
@@ -2121,36 +2120,13 @@
     "Branches": []
   },
   {
-    "Id": 1510,
-    "Name": "Voices for the Senate",
-    "Code": "VOICES4SENATE",
-    "Abbreviation": "VOICES4SENATE",
-    "RegisterDate": "1 July 2022",
-    "AmendmentDate": "1 July 2022",
-    "Address": "1009/25 Edinburgh Avenue\nCANBERRA CITY ACT 2601",
-    "Officer": {
-      "Title": "Ms",
-      "FamilyName": "Bowd",
-      "GivenNames": "Fionn Elizabeth Phemie",
-      "Capacity": "Registered Officer",
-      "Address": {
-        "Line1": "1009/25 Edinburgh Avenue",
-        "Suburb": "CANBERRA CITY",
-        "State": "ACT",
-        "Postcode": 2601
-      }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
-  },
-  {
     "Id": 1462,
     "Name": "WESTERN AUSTRALIA PARTY",
     "Code": "WESTERN AUSTRALIA PARTY",
     "Abbreviation": "WESTERN AUSTRALIA PARTY",
     "RegisterDate": "30 August 2018",
     "AmendmentDate": "30 August 2018",
-    "Address": "PO Box 8134\nSUBIACO WA 6008",
+    "Address": "PO Box 120\nFLOREAT WA 6014",
     "Officer": {
       "Title": "Mr",
       "FamilyName": "Fels",

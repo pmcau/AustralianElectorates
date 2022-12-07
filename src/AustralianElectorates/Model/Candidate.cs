@@ -7,7 +7,7 @@ public interface ICandidate
     string? PartyCode { get; }
     uint Votes { get; }
     decimal Swing { get; }
-    ushort? PartyId { get; }
+    uint? PartyId { get; }
     IPartyOrBranch? Party { get; }
     string FullName();
 }
@@ -21,7 +21,7 @@ class Candidate :
     public string? PartyCode { get; set; }
     public uint Votes { get; set; }
     public decimal Swing { get; set; }
-    public ushort? PartyId { get; set; }
+    public uint? PartyId { get; set; }
     public IPartyOrBranch? Party { get; set; }
 
     public string FullName() =>

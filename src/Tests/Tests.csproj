@@ -20,7 +20,7 @@
     <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
     <PackageReference Include="ProjectDefaults" Version="1.0.82" PrivateAssets="all" />
 
-    <None Update="MediaFeed\aec-mediafeed-results-standard-verbose-24310.xml">
+    <None Update="MediaFeed\*.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="sample_electorate_map.pdf">
