@@ -4,6 +4,14 @@ namespace AustralianElectorates.Bogus;
 
 public partial class ElectorateDataSet : DataSet
 {
+    public ElectorateDataSet(Randomizer? randomizer = null)
+    {
+        if (randomizer != null)
+        {
+            Random = randomizer;
+        }
+    }
+
     public IEnumerable<string> Names(int num = 1)
     {
         Guard.AgainstNegative(num, nameof(num));
