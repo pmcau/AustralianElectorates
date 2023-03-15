@@ -117,7 +117,7 @@
     "Officer": {
       "Title": "Ms",
       "FamilyName": "Groenewald",
-      "GivenNames": "Maryka ",
+      "GivenNames": "Maryka",
       "Address": {
         "Line1": "3/16 Guthrie Street",
         "Suburb": "Osborne Park",
@@ -125,7 +125,20 @@
         "Postcode": 6017
       }
     },
-    "DeputyOfficers": [],
+    "DeputyOfficers": [
+      {
+        "Title": "Ms",
+        "FamilyName": "Hinton",
+        "GivenNames": "Margret",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "PO Box 1077",
+          "Suburb": "Osborne Park",
+          "State": "WA",
+          "Postcode": 6916
+        }
+      }
+    ],
     "Branches": []
   },
   {
@@ -770,11 +783,11 @@
     "Address": "PO Box 4194\nDARWIN NT 0801",
     "Officer": {
       "Title": "Mr",
-      "FamilyName": "Hosking",
-      "GivenNames": "Ben",
+      "FamilyName": "Gaddes",
+      "GivenNames": "Brad",
       "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "2 / 229 McMillans Road",
+        "Line1": "2/229 McMillans Road",
         "Suburb": "Jingili",
         "State": "NT",
         "Postcode": 810
@@ -819,7 +832,7 @@
       "FamilyName": "Philpott",
       "GivenNames": "Annette",
       "Address": {
-        "Line1": "1 Queens Road",
+        "Line1": "197/418 St Kilda Road",
         "Suburb": "Melbourne",
         "State": "VIC",
         "Postcode": 3004
@@ -893,17 +906,17 @@
     "Abbreviation": "FUSION",
     "RegisterDate": "11 October 2019",
     "AmendmentDate": "11 October 2019",
-    "Address": "254 McLeod Lane\nMANSFIELD VIC 3722",
+    "Address": "PO Box 20409\nWORLD SQUARE NSW 2002",
     "Officer": {
-      "Title": "Ms",
-      "FamilyName": "Cordner Hunt",
-      "GivenNames": "Kammy",
+      "Title": "Mr",
+      "FamilyName": "Miller",
+      "GivenNames": "Owen",
       "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "254 McLeod Lane",
-        "Suburb": "Mansfield",
+        "Line1": "3/226 Glenlyon Road",
+        "Suburb": "Brunswick East",
         "State": "VIC",
-        "Postcode": 3722
+        "Postcode": 3057
       }
     },
     "DeputyOfficers": [
@@ -925,10 +938,10 @@
         "GivenNames": "Alexander Benjamin",
         "Capacity": "Deputy Registered Officer",
         "Address": {
-          "Line1": "39 Bel-Air Court",
-          "Suburb": "Ferny Hills",
+          "Line1": "2 Torcasio Court",
+          "Suburb": "Brendale",
           "State": "QLD",
-          "Postcode": 4055
+          "Postcode": 4500
         }
       },
       {
@@ -967,10 +980,10 @@
     "AmendmentDate": "1 July 2022",
     "Address": "1009/25 Edinburgh Avenue\nCANBERRA CITY ACT 2601",
     "Officer": {
-      "Title": "Ms",
-      "FamilyName": "Bowd",
-      "GivenNames": "Fionn Elizabeth Phemie",
-      "Capacity": "Registered Officer",
+      "Title": "Mr",
+      "FamilyName": "Dening",
+      "GivenNames": "Matthew",
+      "Capacity": "Secretary",
       "Address": {
         "Line1": "1009/25 Edinburgh Avenue",
         "Suburb": "CANBERRA CITY",
@@ -1074,8 +1087,8 @@
     "Address": "PO Box 1022\nTOWNSVILLE QLD 4810",
     "Officer": {
       "Title": "Ms",
-      "FamilyName": "Major",
-      "GivenNames": "Sarah",
+      "FamilyName": "Boschen",
+      "GivenNames": "Shannan Christine",
       "Capacity": "Registered Officer",
       "Address": {
         "Line1": "2/321 Sturt Street",
@@ -1132,14 +1145,15 @@
     },
     "DeputyOfficers": [
       {
-        "Title": "Mr",
-        "FamilyName": "Kingsbury",
-        "GivenNames": "James ",
+        "Title": "Ms",
+        "FamilyName": "Negri",
+        "GivenNames": "Anna",
+        "Capacity": "Deputy Registered Officer",
         "Address": {
-          "Line1": "PO Box 20503",
-          "Suburb": "Nimbin",
-          "State": "NSW",
-          "Postcode": 2480
+          "Line1": "717 Barkly Street",
+          "Suburb": "Mount Pleasant",
+          "State": "VIC",
+          "Postcode": 3350
         }
       }
     ],
@@ -1191,10 +1205,11 @@
         "Address": "PO Box 940\nSPRING HILL QLD 4004",
         "Officer": {
           "Title": "Mr",
-          "FamilyName": "Folo",
-          "GivenNames": "Lincoln",
+          "FamilyName": "Riley",
+          "GivenNames": "Benjamin",
+          "Capacity": "Registered Officer",
           "Address": {
-            "Line1": "Floor 1, 281 Sandgate Road",
+            "Line1": "281 Sandgate Road",
             "Suburb": "Albion",
             "State": "QLD",
             "Postcode": 4010
@@ -1340,9 +1355,9 @@
         "AmendmentDate": "18 July 1984",
         "Address": "Level 12, 257 Collins Street\nMELBOURNE VIC 3000",
         "Officer": {
-          "Title": "Mr ",
-          "FamilyName": "McQuestin",
-          "GivenNames": "Charles",
+          "Title": "Ms",
+          "FamilyName": "Redfern",
+          "GivenNames": "Felicity",
           "Capacity": "Secretary",
           "Address": {
             "Line1": "Level 12, 257 Collins Street",
@@ -1351,20 +1366,7 @@
             "Postcode": 3000
           }
         },
-        "DeputyOfficers": [
-          {
-            "Title": "Mrs",
-            "FamilyName": "Lloyd",
-            "GivenNames": "Chandra",
-            "Capacity": "Deputy Registered Officer",
-            "Address": {
-              "Line1": "Level 12, 257 Collins Street",
-              "Suburb": "Melbourne",
-              "State": "VIC",
-              "Postcode": 3000
-            }
-          }
-        ]
+        "DeputyOfficers": []
       },
       {
         "Id": 188,
@@ -1387,6 +1389,18 @@
           }
         },
         "DeputyOfficers": [
+          {
+            "Title": "Ms",
+            "FamilyName": "Ilievska",
+            "GivenNames": "Dorina",
+            "Capacity": "Deputy Registered Officer",
+            "Address": {
+              "Line1": "Level 2, 131 Macquarie Street",
+              "Suburb": "Sydney",
+              "State": "NSW",
+              "Postcode": 2000
+            }
+          },
           {
             "Title": "Mr",
             "FamilyName": "Wheatley",
@@ -1416,10 +1430,10 @@
       "FamilyName": "Hanson",
       "GivenNames": "Pauline",
       "Address": {
-        "Line1": "17/109 Holt Street",
-        "Suburb": "Eagle Farm",
+        "Line1": "2/6-12 Boronia Road",
+        "Suburb": "Brisbane Airport",
         "State": "QLD",
-        "Postcode": 4009
+        "Postcode": 4008
       }
     },
     "DeputyOfficers": [
@@ -1429,10 +1443,10 @@
         "GivenNames": "Damian",
         "Capacity": "Secretary",
         "Address": {
-          "Line1": "17/109 Holt Street",
-          "Suburb": "Eagle Farm",
+          "Line1": "2/6-12 Boronia Road",
+          "Suburb": "BRISNABE AIRPORT",
           "State": "QLD",
-          "Postcode": 4009
+          "Postcode": 4008
         }
       }
     ],
@@ -1695,10 +1709,10 @@
         "FamilyName": "Scrine",
         "GivenNames": "Clare",
         "Address": {
-          "Line1": "42 Wingarra Street",
-          "Suburb": "Yeerongpilly",
+          "Line1": "28 Rosary Crescent",
+          "Suburb": "Highgate Hill",
           "State": "QLD",
-          "Postcode": 4105
+          "Postcode": 4101
         }
       },
       {
@@ -1774,7 +1788,7 @@
           "GivenNames": "Kirsten",
           "Capacity": "Registered Officer",
           "Address": {
-            "Line1": "52 Douglas Street",
+            "Line1": "Suite 4, 47 Park Road",
             "Suburb": "Milton",
             "State": "QLD",
             "Postcode": 4064
@@ -1783,13 +1797,14 @@
         "DeputyOfficers": [
           {
             "Title": "Mr",
-            "FamilyName": "Munro",
-            "GivenNames": "Duncan",
+            "FamilyName": "Burness",
+            "GivenNames": "Lyle",
+            "Capacity": "Deputy Registered Officer",
             "Address": {
-              "Line1": "52 Douglas Street",
-              "Suburb": "Milton",
+              "Line1": "PO Box 1017",
+              "Suburb": "Malanda",
               "State": "QLD",
-              "Postcode": 4064
+              "Postcode": 4885
             }
           }
         ]
@@ -1922,12 +1937,12 @@
     "Address": "680 Huon Road\nFERN TREE TAS 7054",
     "Officer": {
       "Title": "Ms",
-      "FamilyName": "Bateman",
-      "GivenNames": "Anna Jane",
+      "FamilyName": "Middleton",
+      "GivenNames": "Helen Frances",
       "Capacity": "Registered Officer",
       "Address": {
         "Line1": "680 Huon Road",
-        "Suburb": "Fern Tree",
+        "Suburb": "FERNTREE",
         "State": "TAS",
         "Postcode": 7054
       }
@@ -1945,11 +1960,11 @@
     "Address": "PO Box 6190\nKINGSTON ACT 2604",
     "Officer": {
       "Title": "Mr",
-      "FamilyName": "Hawkes",
-      "GivenNames": "Jonathan",
-      "Capacity": "Party Agent",
+      "FamilyName": "Folo",
+      "GivenNames": "Lincoln",
+      "Capacity": "Secretary",
       "Address": {
-        "Line1": "Suite 1, 6 Geils Court",
+        "Line1": "1-6 Geils Court",
         "Suburb": "Deakin",
         "State": "ACT",
         "Postcode": 2600
@@ -2067,17 +2082,17 @@
     "Abbreviation": "TNL",
     "RegisterDate": "17 March 2022",
     "AmendmentDate": "17 March 2022",
-    "Address": "PO Box 190\nNORTHBRIDGE NSW 1560",
+    "Address": "PO Box 1013\nHAMILTON CENTRAL QLD 4007",
     "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Kline",
-      "GivenNames": "Victor Alan",
+      "Title": "Ms",
+      "FamilyName": "Brennan",
+      "GivenNames": "Bessie Natalia",
       "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "53 Martin Place",
-        "Suburb": "Sydney",
-        "State": "NSW",
-        "Postcode": 2000
+        "Line1": "10201/7 Wharf Street",
+        "Suburb": "Hamilton",
+        "State": "QLD",
+        "Postcode": 4007
       }
     },
     "DeputyOfficers": [],
