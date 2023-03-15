@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <Description>Extends Bogus (https://github.com/bchavez/Bogus) to use Australian Electoral Commission (AEC) data (https://www.aec.gov.au/).</Description>
     <DefineConstants>$(DefineConstants);Bogus</DefineConstants>
   </PropertyGroup>
