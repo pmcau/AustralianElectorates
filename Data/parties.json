@@ -803,17 +803,17 @@
     "Abbreviation": "David Pocock",
     "RegisterDate": "18 March 2022",
     "AmendmentDate": "18 March 2022",
-    "Address": "17 Darling Street\nMITCHELL ACT 2911",
+    "Address": "PO Box 6170\nO'CONNOR ACT 2602",
     "Officer": {
       "Title": "Mr",
       "FamilyName": "Cummings",
       "GivenNames": "Glenn",
       "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "17 Darling Street",
-        "Suburb": "Mitchell",
+        "Line1": "G08 / 15 Provan Street",
+        "Suburb": "Campbell",
         "State": "ACT",
-        "Postcode": 2911
+        "Postcode": 2612
       }
     },
     "DeputyOfficers": [],
@@ -983,7 +983,7 @@
       "Title": "Mr",
       "FamilyName": "Dening",
       "GivenNames": "Matthew",
-      "Capacity": "Secretary",
+      "Capacity": "Registered Officer",
       "Address": {
         "Line1": "1009/25 Edinburgh Avenue",
         "Suburb": "CANBERRA CITY",
