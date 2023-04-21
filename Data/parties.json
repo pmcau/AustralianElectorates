@@ -8,13 +8,13 @@
     "AmendmentDate": "3 May 2011",
     "Address": "PO Box Q1688\nQUEEN VICTORIA BUILDING NSW 1230",
     "Officer": {
-      "Title": "Ms",
-      "FamilyName": "Oickle",
-      "GivenNames": "Natasha",
-      "Capacity": "Registered Officer",
+      "Title": "Mr",
+      "FamilyName": "Cheung",
+      "GivenNames": "William",
+      "Capacity": "Party Agent, Secretary & Registered Officer",
       "Address": {
-        "Line1": "Suite 13, Level 5",
-        "Line2": "35 Buckingham Street",
+        "Line1": "L5",
+        "Line2": "13/35 Buckingham Street",
         "Suburb": "Surry Hills",
         "State": "NSW",
         "Postcode": 2010
@@ -1536,7 +1536,6 @@
         "Title": "Mr",
         "FamilyName": "Bainbridge",
         "GivenNames": "Alex",
-        "Capacity": "Secretary",
         "Address": {
           "Line1": "PO Box 204",
           "Suburb": "Northbridge",
