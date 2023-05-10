@@ -13,7 +13,7 @@
       "GivenNames": "William",
       "Capacity": "Party Agent, Secretary & Registered Officer",
       "Address": {
-        "Line1": "L5",
+        "Line1": "Level 5",
         "Line2": "13/35 Buckingham Street",
         "Suburb": "Surry Hills",
         "State": "NSW",
@@ -877,29 +877,6 @@
     "Branches": []
   },
   {
-    "Id": 1495,
-    "Name": "Federal ICAC Now",
-    "Code": "FIN",
-    "Abbreviation": "FIN",
-    "RegisterDate": "2 September 2021",
-    "AmendmentDate": "2 September 2021",
-    "Address": "PO Box 300\nEARLWOOD NSW 2206",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Jones",
-      "GivenNames": "Ross",
-      "Capacity": "Registered Officer",
-      "Address": {
-        "Line1": "8/66 Appel Street",
-        "Suburb": "Surfers Paradise",
-        "State": "QLD",
-        "Postcode": 4217
-      }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
-  },
-  {
     "Id": 1481,
     "Name": "FUSION: Science, Pirate, Secular, Climate Emergency",
     "Code": "FUSION",
@@ -1133,14 +1110,15 @@
     "AmendmentDate": "23 September 2010",
     "Address": "PO Box 20177\nNIMBIN NSW 2480",
     "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Carroll",
-      "GivenNames": "David",
+      "Title": "Ms",
+      "FamilyName": "Hester",
+      "GivenNames": "Gail",
+      "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "136 Davis Road",
-        "Suburb": "Jiggi",
+        "Line1": "30 Stringer Street",
+        "Suburb": "Nambucca Heads",
         "State": "NSW",
-        "Postcode": 2480
+        "Postcode": 2448
       }
     },
     "DeputyOfficers": [
