@@ -153,7 +153,7 @@
       "Title": "Mr",
       "FamilyName": "Isherwood",
       "GivenNames": "Craig William",
-      "Capacity": "National Secretary",
+      "Capacity": "Secretary",
       "Address": {
         "Line1": "29 Hare Street",
         "Suburb": "Fawkner",
@@ -363,10 +363,10 @@
       "GivenNames": "Glenn",
       "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "133 Railway Terrace",
-        "Suburb": "Ascot Park",
+        "Line1": "3 McCartney Street",
+        "Suburb": "Morphett Vale",
         "State": "SA",
-        "Postcode": 5043
+        "Postcode": 5162
       }
     },
     "DeputyOfficers": [
@@ -383,18 +383,6 @@
         }
       },
       {
-        "Title": "Ms",
-        "FamilyName": "Lane",
-        "GivenNames": "Katrina",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "3 / 12 Canning Avenue",
-          "Suburb": "Mount Pleasant",
-          "State": "WA",
-          "Postcode": 6153
-        }
-      },
-      {
         "Title": "Mr",
         "FamilyName": "Aldridge",
         "GivenNames": "Mark",
@@ -404,30 +392,6 @@
           "Suburb": "Penfield Gardens",
           "State": "SA",
           "Postcode": 5121
-        }
-      },
-      {
-        "Title": "Ms",
-        "FamilyName": "Knight",
-        "GivenNames": "Molly",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "25 / 140 Hollinsworth Road",
-          "Suburb": "Marsden Park",
-          "State": "NSW",
-          "Postcode": 2765
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Hughes",
-        "GivenNames": "Vernon",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "30 Wilkins Street",
-          "Suburb": "Yarraville",
-          "State": "VIC",
-          "Postcode": 3013
         }
       }
     ],
@@ -512,9 +476,9 @@
         "Address": "PO Box K408\nHAYMARKET NSW 1240",
         "Officer": {
           "Title": "Mr",
-          "FamilyName": "Nanva",
-          "GivenNames": "Bob",
-          "Capacity": "Secretary",
+          "FamilyName": "Ofner",
+          "GivenNames": "Dominic",
+          "Capacity": "Registered Officer",
           "Address": {
             "Line1": "Level 9",
             "Line2": "377 Sussex Street",
@@ -528,7 +492,7 @@
             "Title": "Mr",
             "FamilyName": "Ofner",
             "GivenNames": "Dominic",
-            "Capacity": "Deputy Registered Officer",
+            "Capacity": "Registered Officer",
             "Address": {
               "Line1": "Level 9",
               "Line2": "377 Sussex Street",
@@ -820,40 +784,6 @@
     "Branches": []
   },
   {
-    "Id": 1423,
-    "Name": "Derryn Hinch's Justice Party",
-    "Code": "Hinch",
-    "Abbreviation": "Hinch",
-    "RegisterDate": "12 April 2016",
-    "AmendmentDate": "12 April 2016",
-    "Address": "PO Box 33018 LPO Domain\nMELBOURNE VIC 3004",
-    "Officer": {
-      "Title": "Ms",
-      "FamilyName": "Philpott",
-      "GivenNames": "Annette",
-      "Address": {
-        "Line1": "197/418 St Kilda Road",
-        "Suburb": "Melbourne",
-        "State": "VIC",
-        "Postcode": 3004
-      }
-    },
-    "DeputyOfficers": [
-      {
-        "Title": "Mr",
-        "FamilyName": "Powell",
-        "GivenNames": "Anthony",
-        "Address": {
-          "Line1": "PO Box 256",
-          "Suburb": "Williamstown",
-          "State": "VIC",
-          "Postcode": 3016
-        }
-      }
-    ],
-    "Branches": []
-  },
-  {
     "Id": 1506,
     "Name": "Drew Pavlou Democratic Alliance",
     "Code": "Democratic Alliance",
@@ -883,7 +813,7 @@
     "Abbreviation": "FUSION",
     "RegisterDate": "11 October 2019",
     "AmendmentDate": "11 October 2019",
-    "Address": "PO Box 20409\nWORLD SQUARE NSW 2002",
+    "Address": "PO Box 6024\nMARRICKVILLE NSW 2204",
     "Officer": {
       "Title": "Mr",
       "FamilyName": "Miller",
@@ -1218,8 +1148,9 @@
         "Address": "PO Box 49\nWEST PERTH WA 6872",
         "Officer": {
           "Title": "Mr",
-          "FamilyName": "Smith",
-          "GivenNames": "Stuart",
+          "FamilyName": "Morgan",
+          "GivenNames": "Simon",
+          "Capacity": "Registered Officer",
           "Address": {
             "Line1": "2/12 Parliament Place",
             "Suburb": "West Perth",
@@ -1333,12 +1264,13 @@
         "AmendmentDate": "18 July 1984",
         "Address": "Level 12, 257 Collins Street\nMELBOURNE VIC 3000",
         "Officer": {
-          "Title": "Ms",
-          "FamilyName": "Redfern",
-          "GivenNames": "Felicity",
-          "Capacity": "Secretary",
+          "Title": "Mr",
+          "FamilyName": "Smith",
+          "GivenNames": "Stuart",
+          "Capacity": "Registered Officer",
           "Address": {
-            "Line1": "Level 12, 257 Collins Street",
+            "Line1": "Level 12",
+            "Line2": "257 Collins Street",
             "Suburb": "Melbourne",
             "State": "VIC",
             "Postcode": 3000
