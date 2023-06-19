@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
   </PropertyGroup>
@@ -18,7 +18,7 @@
     <ProjectReference Include="..\AustralianElectorates.Bogus\AustralianElectorates.Bogus.csproj" />
     <ProjectReference Include="..\AustralianElectorates.DetailMaps\AustralianElectorates.DetailMaps.csproj" />
     <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
-    <PackageReference Include="ProjectDefaults" Version="1.0.90" PrivateAssets="all" />
+    <PackageReference Include="ProjectDefaults" Version="1.0.91" PrivateAssets="all" />
 
     <None Update="MediaFeed\*.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
