@@ -13,7 +13,7 @@
       "GivenNames": "William",
       "Capacity": "Party Agent, Secretary & Registered Officer",
       "Address": {
-        "Line1": "L5",
+        "Line1": "Level 5",
         "Line2": "13/35 Buckingham Street",
         "Suburb": "Surry Hills",
         "State": "NSW",
