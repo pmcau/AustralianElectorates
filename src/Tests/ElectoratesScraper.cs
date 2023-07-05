@@ -8,7 +8,7 @@ static class ElectoratesScraper
         //TODO: split this out to a ScrapeCurrentElectorate and a Scrape2019Electorate when aec archives 2019
         // and also remove the NT hacks
         var requestUri = $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm";
-        if (shortName == "lingiari" || shortName == "solomon")
+        if (shortName is "lingiari" or "solomon")
         {
             return Scrape2016Electorate(shortName, state);
         }

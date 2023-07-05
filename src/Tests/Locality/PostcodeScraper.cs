@@ -70,7 +70,7 @@ static class PostcodeScraper
             throw new("Invalid Postcode");
         }
 
-        if (result < 0 || result > 9999)
+        if (result is < 0 or > 9999)
         {
             throw new("Invalid Postcode");
         }
