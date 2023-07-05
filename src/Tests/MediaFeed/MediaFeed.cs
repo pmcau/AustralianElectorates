@@ -109,7 +109,7 @@ public class EventIdentifier
     public string EventName { get; set; }
 
     [XmlAttribute]
-    public ushort Id { get; set; }
+    public uint Id { get; set; }
 }
 
 [Serializable]
@@ -257,7 +257,7 @@ public class MediaFeedResultsElectionSenateContestFirstPreferencesGroupGroupIden
     public string GroupName { get; set; }
 
     [XmlAttribute]
-    public ushort Id { get; set; }
+    public uint Id { get; set; }
 }
 
 [Serializable]
@@ -296,7 +296,7 @@ public class CandidateIdentifier
     public string CandidateName { get; set; }
 
     [XmlAttribute]
-    public ushort Id { get; set; }
+    public uint Id { get; set; }
 }
 
 [Serializable]
@@ -307,7 +307,7 @@ public class AffiliationIdentifier
     public string RegisteredName { get; set; }
 
     [XmlAttribute]
-    public ushort Id { get; set; }
+    public uint Id { get; set; }
 
     [XmlAttribute]
     public string ShortCode { get; set; }
@@ -540,7 +540,7 @@ public class MediaFeedResultsElectionSenateContestFirstPreferencesUngroupedCandi
     public decimal QuotaProportion { get; set; }
 
     [XmlText]
-    public ushort Value { get; set; }
+    public uint Value { get; set; }
 }
 
 [Serializable]
@@ -557,7 +557,7 @@ public class MediaFeedResultsElectionSenateContestFirstPreferencesUngroupedCandi
     public byte QuotaProportion { get; set; }
 
     [XmlText]
-    public ushort Value { get; set; }
+    public uint Value { get; set; }
 }
 
 [Serializable]
@@ -771,7 +771,7 @@ public class MediaFeedResultsElectionSenateAnalysisNationalFirstPreferencesAmalg
     public decimal Swing { get; set; }
 
     [XmlText]
-    public ushort Value { get; set; }
+    public uint Value { get; set; }
 }
 
 [Serializable]
@@ -899,7 +899,7 @@ public class MediaFeedResultsElectionHouseContestPollingDistrictIdentifier
     public MediaFeedResultsElectionHouseContestPollingDistrictIdentifierStateIdentifier StateIdentifier { get; set; }
 
     [XmlAttribute]
-    public ushort Id { get; set; }
+    public uint Id { get; set; }
 
     [XmlAttribute]
     public string ShortCode { get; set; }
@@ -1014,7 +1014,7 @@ public class MediaFeedResultsElectionHouseContestFirstPreferencesCandidateIncumb
 public class MediaFeedResultsElectionHouseContestFirstPreferencesCandidateVotes
 {
     [XmlAttribute]
-    public ushort Historic { get; set; }
+    public uint Historic { get; set; }
 
     [XmlAttribute]
     public decimal Percentage { get; set; }
@@ -1023,10 +1023,10 @@ public class MediaFeedResultsElectionHouseContestFirstPreferencesCandidateVotes
     public decimal Swing { get; set; }
 
     [XmlAttribute]
-    public ushort MatchedHistoric { get; set; }
+    public uint MatchedHistoric { get; set; }
 
     [XmlText]
-    public ushort Value { get; set; }
+    public uint Value { get; set; }
 }
 
 [Serializable]
@@ -1037,7 +1037,7 @@ public class MediaFeedResultsElectionHouseContestFirstPreferencesCandidateVotes1
     public string Type { get; set; }
 
     [XmlAttribute]
-    public ushort Historic { get; set; }
+    public uint Historic { get; set; }
 
     [XmlAttribute]
     public decimal Percentage { get; set; }
@@ -1046,7 +1046,7 @@ public class MediaFeedResultsElectionHouseContestFirstPreferencesCandidateVotes1
     public decimal Swing { get; set; }
 
     [XmlText]
-    public ushort Value { get; set; }
+    public uint Value { get; set; }
 }
 
 [Serializable]
@@ -1059,7 +1059,7 @@ public class MediaFeedResultsElectionHouseContestFirstPreferencesGhost
     [XmlElement(Namespace = "urn:oasis:names:tc:evs:schema:eml")]
     public AffiliationIdentifier AffiliationIdentifier { get; set; }
 
-    public ushort BallotPosition { get; set; }
+    public uint BallotPosition { get; set; }
 
     public MediaFeedResultsElectionHouseContestFirstPreferencesGhostElected Elected { get; set; }
 
@@ -1110,7 +1110,7 @@ public class MediaFeedResultsElectionHouseContestFirstPreferencesGhostIncumbent
 public class MediaFeedResultsElectionHouseContestFirstPreferencesGhostVotes
 {
     [XmlAttribute]
-    public ushort Historic { get; set; }
+    public uint Historic { get; set; }
 
     [XmlAttribute]
     public byte Percentage { get; set; }
@@ -1119,7 +1119,7 @@ public class MediaFeedResultsElectionHouseContestFirstPreferencesGhostVotes
     public decimal Swing { get; set; }
 
     [XmlAttribute]
-    public ushort MatchedHistoric { get; set; }
+    public uint MatchedHistoric { get; set; }
 
     [XmlText]
     public byte Value { get; set; }
@@ -1133,7 +1133,7 @@ public class MediaFeedResultsElectionHouseContestFirstPreferencesGhostVotes1
     public string Type { get; set; }
 
     [XmlAttribute]
-    public ushort Historic { get; set; }
+    public uint Historic { get; set; }
 
     [XmlAttribute]
     public byte Percentage { get; set; }
@@ -1210,7 +1210,7 @@ public class MediaFeedResultsElectionHouseContestFirstPreferencesInformal
 public class MediaFeedResultsElectionHouseContestFirstPreferencesInformalVotes
 {
     [XmlAttribute]
-    public ushort Historic { get; set; }
+    public uint Historic { get; set; }
 
     [XmlAttribute]
     public decimal Percentage { get; set; }
@@ -1219,10 +1219,10 @@ public class MediaFeedResultsElectionHouseContestFirstPreferencesInformalVotes
     public decimal Swing { get; set; }
 
     [XmlAttribute]
-    public ushort MatchedHistoric { get; set; }
+    public uint MatchedHistoric { get; set; }
 
     [XmlText]
-    public ushort Value { get; set; }
+    public uint Value { get; set; }
 }
 
 [Serializable]
@@ -1233,7 +1233,7 @@ public class MediaFeedResultsElectionHouseContestFirstPreferencesInformalVotes1
     public string Type { get; set; }
 
     [XmlAttribute]
-    public ushort Historic { get; set; }
+    public uint Historic { get; set; }
 
     [XmlAttribute]
     public decimal Percentage { get; set; }
@@ -1242,7 +1242,7 @@ public class MediaFeedResultsElectionHouseContestFirstPreferencesInformalVotes1
     public decimal Swing { get; set; }
 
     [XmlText]
-    public ushort Value { get; set; }
+    public uint Value { get; set; }
 }
 
 [Serializable]
@@ -1376,10 +1376,10 @@ public class MediaFeedResultsElectionHouseContestTwoCandidatePreferredCandidateV
     public decimal Swing { get; set; }
 
     [XmlAttribute]
-    public ushort MatchedHistoric { get; set; }
+    public uint MatchedHistoric { get; set; }
 
     [XmlAttribute]
-    public ushort MatchedHistoricFirstPrefsIn { get; set; }
+    public uint MatchedHistoricFirstPrefsIn { get; set; }
 
     [XmlText]
     public uint Value { get; set; }
@@ -1393,7 +1393,7 @@ public class MediaFeedResultsElectionHouseContestTwoCandidatePreferredCandidateV
     public string Type { get; set; }
 
     [XmlAttribute]
-    public ushort Historic { get; set; }
+    public uint Historic { get; set; }
 
     [XmlAttribute]
     public decimal Percentage { get; set; }
@@ -1402,7 +1402,7 @@ public class MediaFeedResultsElectionHouseContestTwoCandidatePreferredCandidateV
     public decimal Swing { get; set; }
 
     [XmlText]
-    public ushort Value { get; set; }
+    public uint Value { get; set; }
 }
 
 [Serializable]

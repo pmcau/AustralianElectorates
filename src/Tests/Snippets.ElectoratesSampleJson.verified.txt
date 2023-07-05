@@ -11,22 +11,22 @@
     "Description": "<p>The Division of Bean covers an area in the south of the ACT consisting of the Districts of:</p><ul><li>Booth,</li><li>Coree,</li><li>Cotter River,</li><li>Mount Clear,</li><li>Paddys River,</li><li>Rendezvous Creek,</li><li>Stromlo,</li><li>Tennent,</li><li>Tuggeranong,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul><p>The Division of Bean also includes Norfolk Island.</p>",
     "DemographicRating": "<strong>Inner Metropolitan</strong> – situated in capital cities and consisting of well-established built-up suburbs",
     "NameDerivation": "Named after Charles Edwin Woodrow Bean, 1879–1968, Australia's official correspondent to the Australian Imperial Force in World War One, editor of the <em>Official History of Australia in the War of 1914–1918</em> and primary advocate to establish the Australian War Memorial.",
-    "Enrollment": 104482,
+    "Enrollment": 109432,
     "TwoCandidatePreferred": {
       "Elected": {
         "FamilyName": "Smith",
         "GivenNames": "David",
         "PartyCode": "ALP",
-        "Votes": 53455,
-        "Swing": -1.33,
+        "Votes": 61935,
+        "Swing": 5.43,
         "PartyId": 200
       },
       "Other": {
-        "FamilyName": "Cocks",
-        "GivenNames": "Ed",
+        "FamilyName": "Hiatt",
+        "GivenNames": "Jane",
         "PartyCode": "LP",
-        "Votes": 39484,
-        "Swing": 1.33,
+        "Votes": 36459,
+        "Swing": -5.43,
         "PartyId": 177
       }
     },
