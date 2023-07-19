@@ -10,6 +10,8 @@
 
         PartiesJsonPath = Path.Combine(DataPath, "parties.json");
         PostcodeToElectorateJsonPath = Path.Combine(DataPath, "postcode_to_electorate.json");
+        LgaToElectorateJsonPath = Path.Combine(DataPath, "lga_to_electorate.json");
+        ElectorateToLgaJsonPath = Path.Combine(DataPath, "electorate_to_lga.json");
         LocalitiesPath = Path.GetFullPath(Path.Combine(DataPath, "Localities.json"));
         Directory.CreateDirectory(DataPath);
         MapsPath = Path.GetFullPath(Path.Combine(DataPath, "Maps"));
@@ -36,6 +38,8 @@
 
     public static string PartiesJsonPath;
     public static string PostcodeToElectorateJsonPath;
+    public static string LgaToElectorateJsonPath;
+    public static string ElectorateToLgaJsonPath;
 
     public static string ElectoratesJsonPath;
     public static string LocalitiesPath;

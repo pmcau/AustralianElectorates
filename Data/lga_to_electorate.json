@@ -1,0 +1,2291 @@
+{
+  "Albury": [
+    "Indi",
+    "Farrer"
+  ],
+  "Armidale": [
+    "Cowper",
+    "New England",
+    "Page"
+  ],
+  "Ballina": [
+    "Page",
+    "Richmond"
+  ],
+  "Balranald": [
+    "Mallee",
+    "Farrer",
+    "Parkes"
+  ],
+  "Bathurst": [
+    "Calare",
+    "Hume",
+    "Riverina"
+  ],
+  "Bayside (NSW)": [
+    "Barton",
+    "Cook",
+    "Grayndler",
+    "Kingsford Smith",
+    "Sydney"
+  ],
+  "Bega Valley": [
+    "Gippsland",
+    "Eden-Monaro"
+  ],
+  "Bellingen": [
+    "Cowper",
+    "New England",
+    "Page"
+  ],
+  "Berrigan": [
+    "Nicholls",
+    "Farrer"
+  ],
+  "Blacktown": [
+    "Chifley",
+    "Greenway",
+    "Lindsay",
+    "Macquarie",
+    "McMahon",
+    "Mitchell",
+    "Parramatta"
+  ],
+  "Bland": [
+    "Farrer",
+    "Parkes",
+    "Riverina"
+  ],
+  "Blayney": [
+    "Calare",
+    "Riverina"
+  ],
+  "Blue Mountains": [
+    "Calare",
+    "Hume",
+    "Lindsay",
+    "Macquarie"
+  ],
+  "Bogan": [],
+  "Bourke": [
+    "Maranoa",
+    "Parkes"
+  ],
+  "Brewarrina": [
+    "Maranoa",
+    "Parkes"
+  ],
+  "Broken Hill": [],
+  "Burwood": [
+    "Reid",
+    "Watson"
+  ],
+  "Byron": [
+    "Page",
+    "Richmond"
+  ],
+  "Cabonne": [
+    "Calare",
+    "Parkes",
+    "Riverina"
+  ],
+  "Camden": [
+    "Hume",
+    "Macarthur",
+    "Werriwa"
+  ],
+  "Campbelltown (NSW)": [
+    "Cunningham",
+    "Hughes",
+    "Hume",
+    "Macarthur",
+    "Werriwa"
+  ],
+  "Canada Bay": [
+    "Grayndler",
+    "Reid"
+  ],
+  "Canterbury-Bankstown": [
+    "Banks",
+    "Barton",
+    "Blaxland",
+    "Fowler",
+    "Grayndler",
+    "Hughes",
+    "McMahon",
+    "Watson"
+  ],
+  "Carrathool": [
+    "Farrer",
+    "Parkes",
+    "Riverina"
+  ],
+  "Central Coast (NSW)": [
+    "Berowra",
+    "Dobell",
+    "Hunter",
+    "Macquarie",
+    "Robertson",
+    "Shortland"
+  ],
+  "Central Darling": [
+    "Farrer",
+    "Parkes"
+  ],
+  "Cessnock": [
+    "Dobell",
+    "Hunter",
+    "Macquarie",
+    "Newcastle",
+    "Paterson",
+    "Robertson"
+  ],
+  "Clarence Valley": [
+    "Cowper",
+    "New England",
+    "Page"
+  ],
+  "Cobar": [
+    "Farrer",
+    "Parkes"
+  ],
+  "Coffs Harbour": [
+    "Cowper",
+    "Page"
+  ],
+  "Coolamon": [
+    "Farrer",
+    "Riverina"
+  ],
+  "Coonamble": [],
+  "Cootamundra-Gundagai": [
+    "Eden-Monaro",
+    "Riverina"
+  ],
+  "Cowra": [
+    "Calare",
+    "Hume",
+    "Riverina"
+  ],
+  "Cumberland": [
+    "Blaxland",
+    "Fowler",
+    "Greenway",
+    "McMahon",
+    "Parramatta",
+    "Reid",
+    "Watson"
+  ],
+  "Dubbo": [
+    "Calare",
+    "Parkes"
+  ],
+  "Dungog": [
+    "Hunter",
+    "Lyne",
+    "New England"
+  ],
+  "Edward River": [],
+  "Eurobodalla": [
+    "Eden-Monaro",
+    "Gilmore"
+  ],
+  "Fairfield": [
+    "Blaxland",
+    "Fowler",
+    "McMahon",
+    "Werriwa"
+  ],
+  "Federation": [
+    "Indi",
+    "Nicholls",
+    "Farrer",
+    "Riverina"
+  ],
+  "Forbes": [
+    "Calare",
+    "Parkes",
+    "Riverina"
+  ],
+  "Georges River": [
+    "Banks",
+    "Barton",
+    "Cook",
+    "Watson"
+  ],
+  "Gilgandra": [],
+  "Glen Innes Severn": [
+    "New England",
+    "Page"
+  ],
+  "Goulburn Mulwaree": [
+    "Eden-Monaro",
+    "Gilmore",
+    "Hume"
+  ],
+  "Greater Hume": [
+    "Indi",
+    "Eden-Monaro",
+    "Farrer",
+    "Riverina"
+  ],
+  "Griffith": [],
+  "Gunnedah": [
+    "New England",
+    "Parkes"
+  ],
+  "Gwydir": [
+    "New England",
+    "Parkes"
+  ],
+  "Hawkesbury": [
+    "Berowra",
+    "Calare",
+    "Chifley",
+    "Greenway",
+    "Hunter",
+    "Lindsay",
+    "Macquarie",
+    "Mitchell",
+    "Robertson"
+  ],
+  "Hay": [],
+  "Hilltops": [
+    "Eden-Monaro",
+    "Hume",
+    "Riverina"
+  ],
+  "Hornsby": [
+    "Bennelong",
+    "Berowra",
+    "Bradfield",
+    "Mitchell",
+    "Robertson"
+  ],
+  "Hunters Hill": [
+    "Bennelong",
+    "North Sydney"
+  ],
+  "Inner West": [
+    "Barton",
+    "Grayndler",
+    "Kingsford Smith",
+    "Reid",
+    "Sydney",
+    "Watson"
+  ],
+  "Inverell": [
+    "Maranoa",
+    "New England",
+    "Parkes"
+  ],
+  "Junee": [],
+  "Kempsey": [
+    "Cowper",
+    "Lyne",
+    "New England"
+  ],
+  "Kiama": [
+    "Gilmore",
+    "Whitlam"
+  ],
+  "Ku-ring-gai": [
+    "Bennelong",
+    "Berowra",
+    "Bradfield",
+    "Mackellar"
+  ],
+  "Kyogle": [
+    "Wright",
+    "New England",
+    "Page",
+    "Richmond"
+  ],
+  "Lachlan": [
+    "Farrer",
+    "Parkes",
+    "Riverina"
+  ],
+  "Lake Macquarie": [
+    "Dobell",
+    "Hunter",
+    "Newcastle",
+    "Paterson",
+    "Shortland"
+  ],
+  "Lane Cove": [],
+  "Leeton": [],
+  "Lismore": [
+    "Page",
+    "Richmond"
+  ],
+  "Lithgow": [
+    "Calare",
+    "Hunter",
+    "Macquarie"
+  ],
+  "Liverpool": [
+    "Banks",
+    "Blaxland",
+    "Fowler",
+    "Hughes",
+    "Hume",
+    "Lindsay",
+    "Macarthur",
+    "McMahon",
+    "Werriwa"
+  ],
+  "Liverpool Plains": [
+    "New England",
+    "Parkes"
+  ],
+  "Lockhart": [
+    "Farrer",
+    "Riverina"
+  ],
+  "Maitland": [
+    "Hunter",
+    "Lyne",
+    "Paterson"
+  ],
+  "Mid-Coast": [
+    "Lyne",
+    "New England"
+  ],
+  "Mid-Western": [
+    "Calare",
+    "Hunter",
+    "New England",
+    "Parkes"
+  ],
+  "Moree Plains": [
+    "Maranoa",
+    "New England",
+    "Parkes"
+  ],
+  "Mosman": [
+    "North Sydney",
+    "Warringah"
+  ],
+  "Murray River": [
+    "Mallee",
+    "Nicholls",
+    "Farrer"
+  ],
+  "Murrumbidgee": [],
+  "Muswellbrook": [
+    "Calare",
+    "Hunter",
+    "New England"
+  ],
+  "Nambucca Valley": [
+    "Cowper",
+    "New England"
+  ],
+  "Narrabri": [
+    "New England",
+    "Parkes"
+  ],
+  "Narrandera": [
+    "Farrer",
+    "Riverina"
+  ],
+  "Narromine": [
+    "Calare",
+    "Parkes",
+    "Riverina"
+  ],
+  "Newcastle": [
+    "Hunter",
+    "Newcastle",
+    "Paterson",
+    "Shortland"
+  ],
+  "North Sydney": [
+    "North Sydney",
+    "Warringah"
+  ],
+  "Northern Beaches": [
+    "Berowra",
+    "Bradfield",
+    "Mackellar",
+    "Robertson",
+    "Warringah"
+  ],
+  "Oberon": [
+    "Calare",
+    "Hume",
+    "Macquarie"
+  ],
+  "Orange": [],
+  "Parkes": [
+    "Calare",
+    "Parkes",
+    "Riverina"
+  ],
+  "Parramatta": [
+    "Bennelong",
+    "Berowra",
+    "Blaxland",
+    "Greenway",
+    "Mitchell",
+    "Parramatta",
+    "Reid"
+  ],
+  "Penrith": [
+    "Chifley",
+    "Hume",
+    "Lindsay",
+    "Macquarie",
+    "McMahon"
+  ],
+  "Port Macquarie-Hastings": [
+    "Cowper",
+    "Lyne",
+    "New England"
+  ],
+  "Port Stephens": [
+    "Lyne",
+    "Paterson"
+  ],
+  "Queanbeyan-Palerang": [
+    "Bean",
+    "Canberra",
+    "Eden-Monaro",
+    "Gilmore",
+    "Hume"
+  ],
+  "Randwick": [
+    "Kingsford Smith",
+    "Sydney",
+    "Wentworth"
+  ],
+  "Richmond Valley": [
+    "Page"
+  ],
+  "Ryde": [
+    "Bennelong",
+    "Bradfield",
+    "North Sydney",
+    "Parramatta"
+  ],
+  "Shellharbour": [
+    "Gilmore",
+    "Whitlam"
+  ],
+  "Shoalhaven": [
+    "Fenner",
+    "Eden-Monaro",
+    "Gilmore",
+    "Hume",
+    "Whitlam"
+  ],
+  "Singleton": [
+    "Calare",
+    "Hunter",
+    "Lyne",
+    "Macquarie",
+    "New England"
+  ],
+  "Snowy Monaro": [
+    "Bean",
+    "Gippsland",
+    "Eden-Monaro"
+  ],
+  "Snowy Valleys": [
+    "Bean",
+    "Gippsland",
+    "Indi",
+    "Eden-Monaro",
+    "Farrer",
+    "Riverina"
+  ],
+  "Strathfield": [
+    "Reid",
+    "Watson"
+  ],
+  "Sutherland": [
+    "Banks",
+    "Cook",
+    "Cunningham",
+    "Hughes",
+    "Kingsford Smith",
+    "Macarthur"
+  ],
+  "Sydney": [
+    "Grayndler",
+    "Kingsford Smith",
+    "Sydney",
+    "Wentworth"
+  ],
+  "Tamworth": [
+    "New England",
+    "Parkes"
+  ],
+  "Temora": [],
+  "Tenterfield": [
+    "Maranoa",
+    "Wright",
+    "New England",
+    "Page"
+  ],
+  "The Hills": [
+    "Berowra",
+    "Macquarie",
+    "Mitchell",
+    "Robertson"
+  ],
+  "Tweed": [
+    "McPherson",
+    "Wright",
+    "Page",
+    "Richmond"
+  ],
+  "Upper Hunter": [
+    "Calare",
+    "Hunter",
+    "Lyne",
+    "New England",
+    "Parkes"
+  ],
+  "Upper Lachlan": [
+    "Calare",
+    "Eden-Monaro",
+    "Hume",
+    "Riverina"
+  ],
+  "Uralla": [],
+  "Wagga Wagga": [
+    "Eden-Monaro",
+    "Farrer",
+    "Riverina"
+  ],
+  "Walcha": [
+    "Cowper",
+    "Lyne",
+    "New England"
+  ],
+  "Walgett": [
+    "Maranoa",
+    "Parkes"
+  ],
+  "Warren": [],
+  "Warrumbungle": [
+    "Calare",
+    "New England",
+    "Parkes"
+  ],
+  "Waverley": [
+    "Wentworth"
+  ],
+  "Weddin": [],
+  "Wentworth": [
+    "Mallee",
+    "Farrer",
+    "Parkes"
+  ],
+  "Willoughby": [
+    "Bennelong",
+    "Bradfield",
+    "North Sydney"
+  ],
+  "Wingecarribee": [
+    "Cunningham",
+    "Gilmore",
+    "Hume",
+    "Whitlam"
+  ],
+  "Wollondilly": [
+    "Calare",
+    "Cunningham",
+    "Hume",
+    "Lindsay",
+    "Macarthur",
+    "Macquarie"
+  ],
+  "Wollongong": [
+    "Cunningham",
+    "Hughes",
+    "Hume",
+    "Macarthur",
+    "Whitlam"
+  ],
+  "Woollahra": [
+    "Sydney",
+    "Wentworth"
+  ],
+  "Yass Valley": [
+    "Bean",
+    "Fenner",
+    "Eden-Monaro",
+    "Hume",
+    "Riverina"
+  ],
+  "Unincorporated NSW": [
+    "Grey",
+    "Maranoa",
+    "Farrer",
+    "Parkes",
+    "Sydney",
+    "Wentworth"
+  ],
+  "No usual address (NSW)": [],
+  "Migratory - Offshore - Shipping (NSW)": [],
+  "Alpine": [
+    "Gippsland",
+    "Indi"
+  ],
+  "Ararat": [
+    "Mallee",
+    "Wannon"
+  ],
+  "Ballarat": [
+    "Ballarat",
+    "Wannon"
+  ],
+  "Banyule": [
+    "Cooper",
+    "Jagajaga",
+    "Kooyong",
+    "McEwen",
+    "Menzies",
+    "Scullin"
+  ],
+  "Bass Coast": [
+    "La Trobe",
+    "Monash"
+  ],
+  "Baw Baw": [
+    "Casey",
+    "Gippsland",
+    "Indi",
+    "La Trobe",
+    "Monash"
+  ],
+  "Bayside (Vic.)": [
+    "Goldstein",
+    "Isaacs",
+    "Macnamara"
+  ],
+  "Benalla": [
+    "Indi",
+    "Nicholls"
+  ],
+  "Boroondara": [
+    "Chisholm",
+    "Cooper",
+    "Higgins",
+    "Jagajaga",
+    "Kooyong",
+    "Melbourne",
+    "Menzies"
+  ],
+  "Brimbank": [
+    "Fraser",
+    "Gellibrand",
+    "Gorton",
+    "Hawke",
+    "Maribyrnong"
+  ],
+  "Buloke": [],
+  "Campaspe": [
+    "Bendigo",
+    "Mallee",
+    "Nicholls",
+    "Farrer"
+  ],
+  "Cardinia": [
+    "Casey",
+    "Holt",
+    "La Trobe",
+    "Monash"
+  ],
+  "Casey": [
+    "Aston",
+    "Bruce",
+    "Casey",
+    "Flinders",
+    "Holt",
+    "La Trobe"
+  ],
+  "Central Goldfields": [
+    "Ballarat",
+    "Bendigo",
+    "Mallee",
+    "Wannon"
+  ],
+  "Colac Otway": [
+    "Ballarat",
+    "Corangamite",
+    "Wannon"
+  ],
+  "Corangamite": [
+    "Ballarat",
+    "Wannon"
+  ],
+  "Darebin": [
+    "Calwell",
+    "Cooper",
+    "Jagajaga",
+    "Melbourne",
+    "Scullin",
+    "Wills"
+  ],
+  "East Gippsland": [
+    "Gippsland",
+    "Indi",
+    "Eden-Monaro"
+  ],
+  "Frankston": [
+    "Dunkley",
+    "Flinders",
+    "Holt",
+    "Isaacs"
+  ],
+  "Gannawarra": [
+    "Mallee",
+    "Nicholls",
+    "Farrer"
+  ],
+  "Glen Eira": [
+    "Goldstein",
+    "Higgins",
+    "Hotham",
+    "Macnamara"
+  ],
+  "Glenelg": [
+    "Barker",
+    "Mallee",
+    "Wannon"
+  ],
+  "Golden Plains": [
+    "Ballarat",
+    "Corangamite",
+    "Corio",
+    "Hawke",
+    "Wannon"
+  ],
+  "Greater Bendigo": [
+    "Bendigo",
+    "Mallee",
+    "Nicholls"
+  ],
+  "Greater Dandenong": [
+    "Aston",
+    "Bruce",
+    "Holt",
+    "Hotham",
+    "Isaacs"
+  ],
+  "Greater Geelong": [
+    "Ballarat",
+    "Corangamite",
+    "Corio",
+    "Hawke",
+    "Lalor"
+  ],
+  "Greater Shepparton": [
+    "Indi",
+    "Nicholls"
+  ],
+  "Hepburn": [
+    "Ballarat",
+    "Bendigo",
+    "Hawke",
+    "Mallee",
+    "McEwen",
+    "Wannon"
+  ],
+  "Hindmarsh": [],
+  "Hobsons Bay": [
+    "Fraser",
+    "Gellibrand",
+    "Macnamara"
+  ],
+  "Horsham": [
+    "Mallee",
+    "Wannon"
+  ],
+  "Hume": [
+    "Calwell",
+    "Gorton",
+    "Hawke",
+    "Maribyrnong",
+    "McEwen",
+    "Scullin"
+  ],
+  "Indigo": [
+    "Indi",
+    "Nicholls",
+    "Farrer"
+  ],
+  "Kingston (Vic.)": [
+    "Dunkley",
+    "Goldstein",
+    "Hotham",
+    "Isaacs"
+  ],
+  "Knox": [
+    "Aston",
+    "Bruce",
+    "Casey",
+    "Chisholm",
+    "Deakin"
+  ],
+  "Latrobe (Vic.)": [
+    "Gippsland",
+    "Monash"
+  ],
+  "Loddon": [
+    "Bendigo",
+    "Mallee",
+    "Nicholls"
+  ],
+  "Macedon Ranges": [
+    "Ballarat",
+    "Bendigo",
+    "Calwell",
+    "Hawke",
+    "McEwen",
+    "Nicholls"
+  ],
+  "Manningham": [
+    "Casey",
+    "Deakin",
+    "Jagajaga",
+    "Kooyong",
+    "McEwen",
+    "Menzies"
+  ],
+  "Mansfield": [
+    "Casey",
+    "Gippsland",
+    "Indi",
+    "Monash"
+  ],
+  "Maribyrnong": [
+    "Fraser",
+    "Gellibrand",
+    "Maribyrnong",
+    "Melbourne"
+  ],
+  "Maroondah": [
+    "Aston",
+    "Casey",
+    "Deakin",
+    "Menzies"
+  ],
+  "Melbourne": [
+    "Fraser",
+    "Gellibrand",
+    "Higgins",
+    "Macnamara",
+    "Maribyrnong",
+    "Melbourne",
+    "Wills"
+  ],
+  "Melton": [
+    "Gorton",
+    "Hawke",
+    "Lalor",
+    "McEwen"
+  ],
+  "Mildura": [
+    "Barker",
+    "Mallee",
+    "Farrer"
+  ],
+  "Mitchell": [
+    "Bendigo",
+    "Calwell",
+    "Indi",
+    "McEwen",
+    "Nicholls"
+  ],
+  "Moira": [
+    "Indi",
+    "Nicholls",
+    "Farrer"
+  ],
+  "Monash": [
+    "Aston",
+    "Bruce",
+    "Chisholm",
+    "Deakin",
+    "Higgins",
+    "Hotham"
+  ],
+  "Moonee Valley": [
+    "Fraser",
+    "Maribyrnong",
+    "Melbourne",
+    "Wills"
+  ],
+  "Moorabool": [
+    "Ballarat",
+    "Corio",
+    "Hawke",
+    "Lalor",
+    "McEwen"
+  ],
+  "Moreland": [
+    "Calwell",
+    "Cooper",
+    "Maribyrnong",
+    "Melbourne",
+    "Wills"
+  ],
+  "Mornington Peninsula": [
+    "Dunkley",
+    "Flinders",
+    "Holt"
+  ],
+  "Mount Alexander": [
+    "Ballarat",
+    "Bendigo",
+    "Mallee"
+  ],
+  "Moyne": [
+    "Wannon"
+  ],
+  "Murrindindi": [
+    "Casey",
+    "Indi",
+    "McEwen",
+    "Nicholls"
+  ],
+  "Nillumbik": [
+    "Casey",
+    "Indi",
+    "Jagajaga",
+    "McEwen",
+    "Menzies",
+    "Scullin"
+  ],
+  "Northern Grampians": [
+    "Mallee",
+    "Wannon"
+  ],
+  "Port Phillip": [
+    "Goldstein",
+    "Higgins",
+    "Macnamara"
+  ],
+  "Pyrenees": [
+    "Ballarat",
+    "Mallee",
+    "Wannon"
+  ],
+  "Queenscliffe": [
+    "Corangamite"
+  ],
+  "South Gippsland": [
+    "Gippsland",
+    "La Trobe",
+    "Monash"
+  ],
+  "Southern Grampians": [
+    "Mallee",
+    "Wannon"
+  ],
+  "Stonnington": [
+    "Chisholm",
+    "Higgins",
+    "Kooyong",
+    "Melbourne"
+  ],
+  "Strathbogie": [
+    "Bendigo",
+    "Indi",
+    "Nicholls"
+  ],
+  "Surf Coast": [
+    "Corangamite",
+    "Wannon"
+  ],
+  "Swan Hill": [
+    "Mallee",
+    "Farrer"
+  ],
+  "Towong": [
+    "Gippsland",
+    "Indi",
+    "Eden-Monaro",
+    "Farrer"
+  ],
+  "Wangaratta": [
+    "Gippsland",
+    "Indi",
+    "Nicholls"
+  ],
+  "Warrnambool": [
+    "Wannon"
+  ],
+  "Wellington": [
+    "Gippsland",
+    "Indi",
+    "Monash"
+  ],
+  "West Wimmera": [
+    "Barker",
+    "Mallee",
+    "Wannon"
+  ],
+  "Whitehorse": [
+    "Aston",
+    "Chisholm",
+    "Deakin",
+    "Kooyong",
+    "Menzies"
+  ],
+  "Whittlesea": [
+    "Calwell",
+    "Cooper",
+    "Indi",
+    "Jagajaga",
+    "McEwen",
+    "Scullin"
+  ],
+  "Wodonga": [
+    "Indi",
+    "Farrer"
+  ],
+  "Wyndham": [
+    "Corio",
+    "Fraser",
+    "Gellibrand",
+    "Gorton",
+    "Hawke",
+    "Lalor"
+  ],
+  "Yarra": [
+    "Cooper",
+    "Higgins",
+    "Jagajaga",
+    "Kooyong",
+    "Melbourne",
+    "Wills"
+  ],
+  "Yarra Ranges": [
+    "Aston",
+    "Bruce",
+    "Casey",
+    "Deakin",
+    "Indi",
+    "La Trobe",
+    "McEwen",
+    "Menzies",
+    "Monash"
+  ],
+  "Yarriambiack": [],
+  "Unincorporated Vic": [
+    "Casey",
+    "Flinders",
+    "Gippsland",
+    "Indi",
+    "Monash",
+    "Wannon"
+  ],
+  "No usual address (Vic.)": [],
+  "Migratory - Offshore - Shipping (Vic.)": [],
+  "Aurukun": [],
+  "Balonne": [
+    "Maranoa",
+    "Parkes"
+  ],
+  "Banana": [
+    "Flynn",
+    "Maranoa"
+  ],
+  "Barcaldine": [
+    "Capricornia",
+    "Flynn",
+    "Kennedy",
+    "Maranoa"
+  ],
+  "Barcoo": [
+    "Grey",
+    "Maranoa"
+  ],
+  "Blackall Tambo": [
+    "Flynn",
+    "Maranoa"
+  ],
+  "Boulia": [
+    "Kennedy",
+    "Maranoa",
+    "Lingiari"
+  ],
+  "Brisbane": [
+    "Blair",
+    "Bonner",
+    "Bowman",
+    "Brisbane",
+    "Dickson",
+    "Griffith",
+    "Lilley",
+    "Moreton",
+    "Oxley",
+    "Petrie",
+    "Rankin",
+    "Ryan",
+    "Wright"
+  ],
+  "Bulloo": [
+    "Grey",
+    "Maranoa",
+    "Parkes"
+  ],
+  "Bundaberg": [
+    "Flynn",
+    "Hinkler",
+    "Wide Bay"
+  ],
+  "Burdekin": [
+    "Capricornia",
+    "Dawson",
+    "Kennedy"
+  ],
+  "Burke": [
+    "Kennedy"
+  ],
+  "Cairns": [
+    "Kennedy",
+    "Leichhardt"
+  ],
+  "Carpentaria": [
+    "Kennedy",
+    "Leichhardt"
+  ],
+  "Cassowary Coast": [],
+  "Central Highlands (Qld)": [
+    "Capricornia",
+    "Flynn",
+    "Maranoa"
+  ],
+  "Charters Towers": [
+    "Capricornia",
+    "Herbert",
+    "Kennedy",
+    "Maranoa"
+  ],
+  "Cherbourg": [
+    "Flynn",
+    "Wide Bay"
+  ],
+  "Cloncurry": [
+    "Kennedy",
+    "Maranoa"
+  ],
+  "Cook": [],
+  "Croydon": [],
+  "Diamantina": [
+    "Grey",
+    "Kennedy",
+    "Maranoa",
+    "Lingiari"
+  ],
+  "Doomadgee": [],
+  "Douglas": [
+    "Kennedy",
+    "Leichhardt"
+  ],
+  "Etheridge": [],
+  "Flinders (Qld)": [
+    "Kennedy",
+    "Maranoa"
+  ],
+  "Fraser Coast": [
+    "Flynn",
+    "Hinkler",
+    "Wide Bay"
+  ],
+  "Gladstone": [],
+  "Gold Coast": [
+    "Bowman",
+    "Fadden",
+    "Forde",
+    "McPherson",
+    "Moncrieff",
+    "Wright",
+    "Richmond"
+  ],
+  "Goondiwindi": [
+    "Maranoa",
+    "New England",
+    "Parkes"
+  ],
+  "Gympie": [
+    "Blair",
+    "Fairfax",
+    "Flynn",
+    "Maranoa",
+    "Wide Bay"
+  ],
+  "Hinchinbrook": [
+    "Herbert",
+    "Kennedy"
+  ],
+  "Hope Vale": [],
+  "Ipswich": [
+    "Blair",
+    "Oxley",
+    "Ryan",
+    "Wright"
+  ],
+  "Isaac": [
+    "Capricornia",
+    "Flynn",
+    "Kennedy",
+    "Maranoa"
+  ],
+  "Kowanyama": [],
+  "Livingstone": [
+    "Capricornia",
+    "Flynn"
+  ],
+  "Lockhart River": [],
+  "Lockyer Valley": [
+    "Blair",
+    "Groom",
+    "Maranoa",
+    "Wright"
+  ],
+  "Logan": [
+    "Blair",
+    "Bonner",
+    "Bowman",
+    "Fadden",
+    "Forde",
+    "Moreton",
+    "Oxley",
+    "Rankin",
+    "Wright"
+  ],
+  "Longreach": [],
+  "Mackay": [
+    "Capricornia",
+    "Dawson"
+  ],
+  "McKinlay": [
+    "Kennedy",
+    "Maranoa"
+  ],
+  "Mapoon": [],
+  "Maranoa": [
+    "Flynn",
+    "Maranoa"
+  ],
+  "Mareeba": [
+    "Kennedy",
+    "Leichhardt"
+  ],
+  "Moreton Bay": [
+    "Blair",
+    "Dickson",
+    "Fisher",
+    "Lilley",
+    "Longman",
+    "Petrie",
+    "Ryan"
+  ],
+  "Mornington": [],
+  "Mount Isa": [
+    "Kennedy",
+    "Lingiari"
+  ],
+  "Murweh": [
+    "Flynn",
+    "Maranoa"
+  ],
+  "Napranum": [],
+  "Noosa": [
+    "Fairfax",
+    "Wide Bay"
+  ],
+  "North Burnett": [
+    "Flynn",
+    "Hinkler",
+    "Maranoa",
+    "Wide Bay"
+  ],
+  "Northern Peninsula Area": [],
+  "Palm Island": [],
+  "Paroo": [
+    "Maranoa",
+    "Parkes"
+  ],
+  "Pormpuraaw": [],
+  "Quilpie": [],
+  "Redland": [
+    "Bonner",
+    "Bowman",
+    "Forde",
+    "Rankin"
+  ],
+  "Richmond": [
+    "Kennedy",
+    "Maranoa"
+  ],
+  "Rockhampton": [
+    "Capricornia",
+    "Flynn"
+  ],
+  "Scenic Rim": [
+    "Blair",
+    "Forde",
+    "Maranoa",
+    "Wright",
+    "New England",
+    "Page",
+    "Richmond"
+  ],
+  "Somerset": [
+    "Blair",
+    "Dickson",
+    "Fairfax",
+    "Fisher",
+    "Longman",
+    "Maranoa",
+    "Ryan",
+    "Wide Bay",
+    "Wright"
+  ],
+  "South Burnett": [
+    "Blair",
+    "Flynn",
+    "Maranoa",
+    "Wide Bay"
+  ],
+  "Southern Downs": [
+    "Maranoa",
+    "Wright",
+    "New England"
+  ],
+  "Sunshine Coast": [
+    "Blair",
+    "Fairfax",
+    "Fisher",
+    "Longman",
+    "Wide Bay"
+  ],
+  "Tablelands": [],
+  "Toowoomba": [
+    "Blair",
+    "Groom",
+    "Maranoa",
+    "Wright"
+  ],
+  "Torres": [],
+  "Torres Strait Island": [],
+  "Townsville": [
+    "Dawson",
+    "Herbert",
+    "Kennedy"
+  ],
+  "Weipa": [],
+  "Western Downs": [
+    "Flynn",
+    "Groom",
+    "Maranoa"
+  ],
+  "Whitsunday": [
+    "Capricornia",
+    "Dawson",
+    "Kennedy"
+  ],
+  "Winton": [
+    "Kennedy",
+    "Maranoa"
+  ],
+  "Woorabinda": [],
+  "Wujal Wujal": [],
+  "Yarrabah": [
+    "Kennedy",
+    "Leichhardt"
+  ],
+  "No usual address (Qld)": [],
+  "Migratory - Offshore - Shipping (Qld)": [],
+  "Adelaide": [
+    "Adelaide",
+    "Sturt"
+  ],
+  "Adelaide Hills": [
+    "Barker",
+    "Boothby",
+    "Makin",
+    "Mayo",
+    "Spence",
+    "Sturt"
+  ],
+  "Adelaide Plains": [
+    "Grey",
+    "Spence"
+  ],
+  "Alexandrina": [
+    "Barker",
+    "Mayo"
+  ],
+  "Anangu Pitjantjatjara Yunkunytjatjara": [
+    "Grey",
+    "Lingiari"
+  ],
+  "Barossa": [
+    "Barker",
+    "Mayo",
+    "Spence"
+  ],
+  "Barunga West": [
+    "Grey"
+  ],
+  "Berri Barmera": [],
+  "Burnside": [
+    "Adelaide",
+    "Boothby",
+    "Mayo",
+    "Sturt"
+  ],
+  "Campbelltown (SA)": [
+    "Mayo",
+    "Sturt"
+  ],
+  "Ceduna": [
+    "Grey"
+  ],
+  "Charles Sturt": [
+    "Adelaide",
+    "Hindmarsh"
+  ],
+  "Clare and Gilbert Valleys": [
+    "Barker",
+    "Grey"
+  ],
+  "Cleve": [
+    "Grey"
+  ],
+  "Coober Pedy": [],
+  "Copper Coast": [
+    "Grey"
+  ],
+  "Elliston": [
+    "Grey"
+  ],
+  "Flinders Ranges": [],
+  "Franklin Harbour": [
+    "Grey"
+  ],
+  "Gawler": [],
+  "Goyder": [
+    "Barker",
+    "Grey"
+  ],
+  "Grant": [
+    "Barker",
+    "Wannon"
+  ],
+  "Holdfast Bay": [
+    "Boothby",
+    "Hindmarsh"
+  ],
+  "Kangaroo Island": [
+    "Mayo"
+  ],
+  "Karoonda East Murray": [],
+  "Kimba": [],
+  "Kingston (SA)": [
+    "Barker"
+  ],
+  "Light": [
+    "Barker",
+    "Grey",
+    "Spence"
+  ],
+  "Lower Eyre Peninsula": [
+    "Grey"
+  ],
+  "Loxton Waikerie": [
+    "Barker",
+    "Grey",
+    "Mallee"
+  ],
+  "Maralinga Tjarutja": [],
+  "Marion": [
+    "Adelaide",
+    "Boothby",
+    "Hindmarsh",
+    "Kingston"
+  ],
+  "Mid Murray": [
+    "Barker",
+    "Grey",
+    "Mayo"
+  ],
+  "Mitcham": [
+    "Adelaide",
+    "Boothby",
+    "Kingston",
+    "Mayo",
+    "Sturt"
+  ],
+  "Mount Barker": [
+    "Barker",
+    "Mayo"
+  ],
+  "Mount Gambier": [],
+  "Mount Remarkable": [
+    "Grey"
+  ],
+  "Murray Bridge": [
+    "Barker",
+    "Mayo"
+  ],
+  "Naracoorte Lucindale": [
+    "Barker",
+    "Mallee"
+  ],
+  "Northern Areas": [],
+  "Norwood Payneham and St Peters": [
+    "Adelaide",
+    "Sturt"
+  ],
+  "Onkaparinga": [
+    "Boothby",
+    "Kingston",
+    "Mayo"
+  ],
+  "Orroroo Carrieton": [],
+  "Peterborough": [],
+  "Playford": [
+    "Barker",
+    "Grey",
+    "Makin",
+    "Mayo",
+    "Spence"
+  ],
+  "Port Adelaide Enfield": [
+    "Adelaide",
+    "Hindmarsh",
+    "Makin",
+    "Sturt"
+  ],
+  "Port Augusta": [
+    "Grey"
+  ],
+  "Port Lincoln": [
+    "Grey"
+  ],
+  "Port Pirie": [
+    "Grey"
+  ],
+  "Prospect": [],
+  "Renmark Paringa": [
+    "Barker",
+    "Mallee"
+  ],
+  "Robe": [
+    "Barker"
+  ],
+  "Roxby Downs": [],
+  "Salisbury": [
+    "Hindmarsh",
+    "Makin",
+    "Spence"
+  ],
+  "Southern Mallee": [
+    "Barker",
+    "Mallee"
+  ],
+  "Streaky Bay": [
+    "Grey"
+  ],
+  "Tatiara": [
+    "Barker",
+    "Mallee"
+  ],
+  "Tea Tree Gully": [
+    "Makin",
+    "Mayo",
+    "Spence",
+    "Sturt"
+  ],
+  "Coorong": [
+    "Barker",
+    "Mayo"
+  ],
+  "Tumby Bay": [
+    "Grey"
+  ],
+  "Unley": [
+    "Adelaide",
+    "Boothby",
+    "Sturt"
+  ],
+  "Victor Harbor": [
+    "Mayo"
+  ],
+  "Wakefield": [
+    "Grey"
+  ],
+  "Walkerville": [
+    "Adelaide",
+    "Sturt"
+  ],
+  "Wattle Range": [
+    "Barker",
+    "Mallee",
+    "Wannon"
+  ],
+  "West Torrens": [
+    "Adelaide",
+    "Boothby",
+    "Hindmarsh"
+  ],
+  "Whyalla": [
+    "Grey"
+  ],
+  "Wudinna": [],
+  "Yankalilla": [
+    "Mayo"
+  ],
+  "Yorke Peninsula": [
+    "Grey"
+  ],
+  "Unincorporated SA": [
+    "Barker",
+    "Grey",
+    "Hindmarsh",
+    "Mallee",
+    "Maranoa",
+    "Lingiari",
+    "Farrer",
+    "Parkes",
+    "O'Connor"
+  ],
+  "No usual address (SA)": [],
+  "Migratory - Offshore - Shipping (SA)": [],
+  "Albany": [
+    "O'Connor"
+  ],
+  "Armadale": [
+    "Burt",
+    "Canning",
+    "Durack",
+    "Fremantle",
+    "O'Connor",
+    "Tangney"
+  ],
+  "Ashburton": [
+    "Durack"
+  ],
+  "Augusta Margaret River": [
+    "Forrest",
+    "O'Connor"
+  ],
+  "Bassendean": [
+    "Cowan",
+    "Hasluck",
+    "Perth"
+  ],
+  "Bayswater": [
+    "Cowan",
+    "Perth"
+  ],
+  "Belmont": [
+    "Hasluck",
+    "Swan"
+  ],
+  "Beverley": [
+    "Canning",
+    "Durack",
+    "O'Connor"
+  ],
+  "Boddington": [
+    "Canning",
+    "Forrest",
+    "O'Connor"
+  ],
+  "Boyup Brook": [
+    "Forrest",
+    "O'Connor"
+  ],
+  "Bridgetown-Greenbushes": [
+    "Forrest",
+    "O'Connor"
+  ],
+  "Brookton": [],
+  "Broome": [
+    "Durack"
+  ],
+  "Broomehill-Tambellup": [],
+  "Bruce Rock": [],
+  "Bunbury": [
+    "Forrest"
+  ],
+  "Busselton": [
+    "Forrest",
+    "O'Connor"
+  ],
+  "Cambridge": [
+    "Curtin",
+    "Perth"
+  ],
+  "Canning": [
+    "Burt",
+    "Fremantle",
+    "Swan",
+    "Tangney"
+  ],
+  "Capel": [
+    "Forrest"
+  ],
+  "Carnamah": [
+    "Durack"
+  ],
+  "Carnarvon": [
+    "Durack"
+  ],
+  "Chapman Valley": [
+    "Durack"
+  ],
+  "Chittering": [
+    "Durack",
+    "Pearce"
+  ],
+  "Christmas Island": [
+    "Lingiari"
+  ],
+  "Claremont": [],
+  "Cockburn": [
+    "Brand",
+    "Burt",
+    "Fremantle",
+    "Tangney"
+  ],
+  "Cocos Islands": [],
+  "Collie": [
+    "Forrest",
+    "O'Connor"
+  ],
+  "Coolgardie": [],
+  "Coorow": [
+    "Durack"
+  ],
+  "Corrigin": [],
+  "Cottesloe": [
+    "Curtin"
+  ],
+  "Cranbrook": [],
+  "Cuballing": [],
+  "Cue": [],
+  "Cunderdin": [
+    "Durack",
+    "O'Connor"
+  ],
+  "Dalwallinu": [
+    "Durack",
+    "O'Connor"
+  ],
+  "Dandaragan": [
+    "Durack"
+  ],
+  "Dardanup": [
+    "Forrest",
+    "O'Connor"
+  ],
+  "Denmark": [
+    "O'Connor"
+  ],
+  "Derby-West Kimberley": [
+    "Durack"
+  ],
+  "Donnybrook-Balingup": [
+    "Forrest",
+    "O'Connor"
+  ],
+  "Dowerin": [
+    "Durack",
+    "O'Connor"
+  ],
+  "Dumbleyung": [],
+  "Dundas": [
+    "Grey",
+    "O'Connor"
+  ],
+  "East Fremantle": [
+    "Fremantle",
+    "Tangney"
+  ],
+  "East Pilbara": [
+    "Lingiari",
+    "Durack",
+    "O'Connor"
+  ],
+  "Esperance": [
+    "O'Connor"
+  ],
+  "Exmouth": [
+    "Durack"
+  ],
+  "Fremantle": [
+    "Curtin",
+    "Fremantle",
+    "Tangney"
+  ],
+  "Gingin": [
+    "Durack"
+  ],
+  "Gnowangerup": [],
+  "Goomalling": [
+    "Durack",
+    "O'Connor"
+  ],
+  "Gosnells": [
+    "Burt",
+    "Canning",
+    "Hasluck",
+    "Swan",
+    "Tangney"
+  ],
+  "Greater Geraldton": [
+    "Durack"
+  ],
+  "Halls Creek": [
+    "Lingiari",
+    "Durack"
+  ],
+  "Harvey": [
+    "Canning",
+    "Forrest",
+    "O'Connor"
+  ],
+  "Irwin": [
+    "Durack"
+  ],
+  "Jerramungup": [
+    "O'Connor"
+  ],
+  "Joondalup": [
+    "Cowan",
+    "Moore",
+    "Pearce"
+  ],
+  "Kalamunda": [
+    "Burt",
+    "Canning",
+    "Hasluck",
+    "Swan"
+  ],
+  "Kalgoorlie-Boulder": [
+    "Grey",
+    "O'Connor"
+  ],
+  "Karratha": [
+    "Durack"
+  ],
+  "Katanning": [],
+  "Kellerberrin": [],
+  "Kent": [],
+  "Kojonup": [],
+  "Kondinin": [],
+  "Koorda": [
+    "Durack",
+    "O'Connor"
+  ],
+  "Kulin": [],
+  "Kwinana": [
+    "Brand",
+    "Canning",
+    "Fremantle"
+  ],
+  "Lake Grace": [],
+  "Laverton": [
+    "Grey",
+    "O'Connor"
+  ],
+  "Leonora": [
+    "Durack",
+    "O'Connor"
+  ],
+  "Mandurah": [
+    "Brand",
+    "Canning"
+  ],
+  "Manjimup": [
+    "O'Connor"
+  ],
+  "Meekatharra": [
+    "Durack",
+    "O'Connor"
+  ],
+  "Melville": [
+    "Fremantle",
+    "Tangney"
+  ],
+  "Menzies": [
+    "Grey",
+    "Durack",
+    "O'Connor"
+  ],
+  "Merredin": [],
+  "Mingenew": [],
+  "Moora": [],
+  "Morawa": [],
+  "Mosman Park": [
+    "Curtin",
+    "Fremantle"
+  ],
+  "Mount Magnet": [],
+  "Mount Marshall": [
+    "Durack",
+    "O'Connor"
+  ],
+  "Mukinbudin": [],
+  "Mundaring": [
+    "Canning",
+    "Durack",
+    "Hasluck"
+  ],
+  "Murchison": [],
+  "Murray": [
+    "Brand",
+    "Canning",
+    "O'Connor"
+  ],
+  "Nannup": [
+    "Forrest",
+    "O'Connor"
+  ],
+  "Narembeen": [],
+  "Narrogin": [],
+  "Nedlands": [
+    "Curtin"
+  ],
+  "Ngaanyatjarraku": [
+    "Grey",
+    "Lingiari",
+    "Durack",
+    "O'Connor"
+  ],
+  "Northam": [
+    "Durack",
+    "Hasluck",
+    "O'Connor"
+  ],
+  "Northampton": [
+    "Durack"
+  ],
+  "Nungarin": [],
+  "Peppermint Grove": [],
+  "Perenjori": [],
+  "Perth": [
+    "Curtin",
+    "Perth"
+  ],
+  "Pingelly": [],
+  "Plantagenet": [],
+  "Port Hedland": [
+    "Durack"
+  ],
+  "Quairading": [
+    "Durack",
+    "O'Connor"
+  ],
+  "Ravensthorpe": [
+    "O'Connor"
+  ],
+  "Rockingham": [
+    "Brand",
+    "Canning"
+  ],
+  "Sandstone": [
+    "Durack",
+    "O'Connor"
+  ],
+  "Serpentine-Jarrahdale": [
+    "Brand",
+    "Burt",
+    "Canning",
+    "Fremantle",
+    "O'Connor"
+  ],
+  "Shark Bay": [
+    "Durack"
+  ],
+  "South Perth": [
+    "Swan",
+    "Tangney"
+  ],
+  "Stirling": [
+    "Cowan",
+    "Curtin",
+    "Moore",
+    "Perth"
+  ],
+  "Subiaco": [
+    "Curtin",
+    "Perth"
+  ],
+  "Swan": [
+    "Cowan",
+    "Durack",
+    "Hasluck",
+    "Pearce",
+    "Perth",
+    "Swan"
+  ],
+  "Tammin": [],
+  "Three Springs": [],
+  "Toodyay": [
+    "Durack"
+  ],
+  "Trayning": [],
+  "Upper Gascoyne": [],
+  "Victoria Park": [],
+  "Victoria Plains": [],
+  "Vincent": [],
+  "Wagin": [],
+  "Wandering": [
+    "Canning",
+    "O'Connor"
+  ],
+  "Wanneroo": [
+    "Cowan",
+    "Durack",
+    "Moore",
+    "Pearce"
+  ],
+  "Waroona": [
+    "Canning",
+    "Forrest",
+    "O'Connor"
+  ],
+  "West Arthur": [],
+  "Westonia": [],
+  "Wickepin": [],
+  "Williams": [],
+  "Wiluna": [
+    "Durack",
+    "O'Connor"
+  ],
+  "Wongan-Ballidu": [
+    "Durack",
+    "O'Connor"
+  ],
+  "Woodanilling": [],
+  "Wyalkatchem": [
+    "Durack",
+    "O'Connor"
+  ],
+  "Wyndham-East Kimberley": [
+    "Lingiari",
+    "Durack"
+  ],
+  "Yalgoo": [
+    "Durack",
+    "O'Connor"
+  ],
+  "Yilgarn": [],
+  "York": [
+    "Canning",
+    "Durack",
+    "Hasluck",
+    "O'Connor"
+  ],
+  "No usual address (WA)": [],
+  "Migratory - Offshore - Shipping (WA)": [],
+  "Break O'Day": [
+    "Bass",
+    "Lyons"
+  ],
+  "Brighton": [
+    "Franklin",
+    "Lyons"
+  ],
+  "Burnie": [
+    "Braddon"
+  ],
+  "Central Coast (Tas.)": [
+    "Braddon",
+    "Lyons"
+  ],
+  "Central Highlands (Tas.)": [
+    "Braddon",
+    "Lyons"
+  ],
+  "Circular Head": [
+    "Braddon"
+  ],
+  "Clarence": [
+    "Franklin",
+    "Lyons"
+  ],
+  "Derwent Valley": [
+    "Braddon",
+    "Clark",
+    "Franklin",
+    "Lyons"
+  ],
+  "Devonport": [
+    "Braddon",
+    "Lyons"
+  ],
+  "Dorset": [
+    "Bass",
+    "Lyons"
+  ],
+  "Flinders (Tas.)": [
+    "Bass"
+  ],
+  "George Town": [
+    "Bass"
+  ],
+  "Glamorgan-Spring Bay": [
+    "Lyons"
+  ],
+  "Glenorchy": [
+    "Clark",
+    "Lyons"
+  ],
+  "Hobart": [
+    "Clark"
+  ],
+  "Huon Valley": [
+    "Braddon",
+    "Clark",
+    "Franklin",
+    "Lyons"
+  ],
+  "Kentish": [
+    "Braddon",
+    "Lyons"
+  ],
+  "King Island": [
+    "Braddon"
+  ],
+  "Kingborough": [
+    "Clark",
+    "Franklin"
+  ],
+  "Latrobe (Tas.)": [
+    "Bass",
+    "Braddon",
+    "Lyons"
+  ],
+  "Launceston": [
+    "Bass",
+    "Lyons"
+  ],
+  "Meander Valley": [
+    "Bass",
+    "Braddon",
+    "Lyons"
+  ],
+  "Northern Midlands": [
+    "Bass",
+    "Lyons"
+  ],
+  "Sorell": [
+    "Lyons"
+  ],
+  "Southern Midlands": [],
+  "Tasman": [
+    "Lyons"
+  ],
+  "Waratah-Wynyard": [
+    "Braddon",
+    "Lyons"
+  ],
+  "West Coast": [
+    "Braddon",
+    "Franklin",
+    "Lyons"
+  ],
+  "West Tamar": [
+    "Bass",
+    "Braddon",
+    "Lyons"
+  ],
+  "No usual address (Tas.)": [],
+  "Migratory - Offshore - Shipping (Tas.)": [],
+  "Alice Springs": [],
+  "Barkly": [
+    "Kennedy",
+    "Lingiari"
+  ],
+  "Belyuen": [],
+  "Central Desert": [
+    "Kennedy",
+    "Maranoa",
+    "Lingiari",
+    "Durack"
+  ],
+  "Coomalie": [],
+  "Darwin": [
+    "Lingiari",
+    "Solomon"
+  ],
+  "Darwin Waterfront Precinct": [
+    "Solomon"
+  ],
+  "East Arnhem": [
+    "Lingiari"
+  ],
+  "Katherine": [],
+  "Litchfield": [
+    "Lingiari",
+    "Solomon"
+  ],
+  "MacDonnell": [
+    "Grey",
+    "Maranoa",
+    "Lingiari",
+    "Durack",
+    "O'Connor"
+  ],
+  "Palmerston": [
+    "Lingiari",
+    "Solomon"
+  ],
+  "Roper Gulf": [
+    "Kennedy",
+    "Lingiari"
+  ],
+  "Tiwi Islands": [
+    "Lingiari"
+  ],
+  "Victoria Daly": [
+    "Lingiari",
+    "Durack"
+  ],
+  "Wagait": [
+    "Lingiari"
+  ],
+  "West Arnhem": [
+    "Lingiari"
+  ],
+  "West Daly": [
+    "Lingiari"
+  ],
+  "Unincorporated NT": [
+    "Lingiari",
+    "Solomon"
+  ],
+  "No usual address (NT)": [],
+  "Migratory - Offshore - Shipping (NT)": [],
+  "Unincorporated ACT": [
+    "Bean",
+    "Canberra",
+    "Fenner",
+    "Eden-Monaro"
+  ],
+  "No usual address (ACT)": [],
+  "Migratory - Offshore - Shipping (ACT)": [],
+  "Unincorp. Other Territories": [
+    "Bean",
+    "Fenner",
+    "Gilmore"
+  ],
+  "No usual address (OT)": [],
+  "Migratory - Offshore - Shipping (OT)": [],
+  "Outside Australia": []
+}
