@@ -13,8 +13,6 @@ public class ElectorateToLgaMap
 
         using var shapeFileDataReader = new ShapefileDataReader(Path.Combine(AttributeReader.GetProjectDirectory(), @"Lga\LGA_2022_AUST_GDA2020.shp"), factory);
 
-        File.Delete(DataLocations.LgaToElectorateJsonPath);
-        File.Delete(DataLocations.ElectorateToLgaJsonPath);
 
         var electorateToLga = new Dictionary<string, List<string>>();
         var lgaToElectorate = new Dictionary<string, List<string>>();
@@ -45,7 +43,9 @@ public class ElectorateToLgaMap
         {
             var lgaGeometry = shapeFileDataReader.Geometry;
             var lga = shapeFileDataReader.GetString(2);
-            var list = lgaToElectorate[lga] = new();
+
+            var list = new List<string>();
+            lgaToElectorate.Add(lga, list);
             foreach (var electorate in electorates)
             {
                 if (lgaGeometry.Overlaps(electorate.Geometry))
@@ -56,6 +56,8 @@ public class ElectorateToLgaMap
             }
         }
 
+        File.Delete(DataLocations.LgaToElectorateJsonPath);
+        File.Delete(DataLocations.ElectorateToLgaJsonPath);
         File.WriteAllText(DataLocations.LgaToElectorateJsonPath, JsonConvert.SerializeObject(lgaToElectorate, Formatting.Indented));
         File.WriteAllText(DataLocations.ElectorateToLgaJsonPath, JsonConvert.SerializeObject(electorateToLga, Formatting.Indented));
     }
