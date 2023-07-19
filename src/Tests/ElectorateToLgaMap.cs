@@ -45,7 +45,6 @@ public class ElectorateToLgaMap
 
             var list = new List<string>();
             lgaToElectorate.Add(lga, list);
-
             foreach (var electorate in electorates)
             {
                 if (lgaGeometry.Intersects(electorate.Geometry))
@@ -55,6 +54,9 @@ public class ElectorateToLgaMap
                 }
             }
         }
+
+        electorateToLga["Lingiari"].Add("Cocos Islands");
+        lgaToElectorate["Cocos Islands"].Add("Lingiari");
 
         File.Delete(DataLocations.LgaToElectorateJsonPath);
         File.Delete(DataLocations.ElectorateToLgaJsonPath);
