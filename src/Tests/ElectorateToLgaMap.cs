@@ -48,7 +48,7 @@ public class ElectorateToLgaMap
 
             foreach (var electorate in electorates)
             {
-                if (lgaGeometry.Overlaps(electorate.Geometry) || lgaGeometry.Intersects(electorate.Geometry))
+                if (lgaGeometry.Intersects(electorate.Geometry))
                 {
                     list.Add(electorate.Name);
                     electorateToLga[electorate.Name].Add(lga);
