@@ -119,7 +119,6 @@ public class DataLoaderTests
         return Verify(data.GeoJson.Substring(0, 200));
     }
 
-
     [Fact]
     public Task Get2022State()
     {
