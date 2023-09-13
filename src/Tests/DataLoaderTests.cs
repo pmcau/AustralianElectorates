@@ -46,10 +46,10 @@ public class DataLoaderTests
     [Fact]
     public Task NewRemoved()
     {
-        var electorates2019 = DataLoader.Electorates.Where(x=>x.Exist2019);
-        var electorates2022 = DataLoader.Electorates.Where(x=>x.Exist2022);
-        var removed = electorates2019.Where(x => !electorates2022.Contains(x)).Select(x=>x.Name);
-        var added = electorates2022.Where(x => !electorates2019.Contains(x)).Select(x=>x.Name);
+        var electorates2019 = DataLoader.Electorates.Where(x=>x.Exist2019).ToArray();
+        var electorates2022 = DataLoader.Electorates.Where(x=>x.Exist2022).ToArray();
+        var removed = electorates2019.Where(_ => !electorates2022.Contains(_)).Select(x=>x.Name);
+        var added = electorates2022.Where(_ => !electorates2019.Contains(_)).Select(x=>x.Name);
         return Verify(new{added, removed});
     }
 

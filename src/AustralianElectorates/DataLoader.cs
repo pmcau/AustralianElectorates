@@ -43,11 +43,11 @@ public static partial class DataLoader
             if (preferred != null)
             {
                 var elected = (Candidate) preferred.Elected;
-                elected.Party = PartiesAndBranches.SingleOrDefault(x => x.Id == elected.PartyId);
+                elected.Party = PartiesAndBranches.SingleOrDefault(_ => _.Id == elected.PartyId);
                 electorate.CurrentParty = elected.Party;
 
                 var other = (Candidate) preferred.Other;
-                other.Party = PartiesAndBranches.SingleOrDefault(x => x.Id == other.PartyId);
+                other.Party = PartiesAndBranches.SingleOrDefault(_ => _.Id == other.PartyId);
             }
         }
 
@@ -113,7 +113,7 @@ public static partial class DataLoader
 
     public static bool TryFindElection(int parliament, [NotNullWhen(true)] out IElection? election)
     {
-        election = Elections.SingleOrDefault(x => x.Parliament == parliament);
+        election = Elections.SingleOrDefault(_ => _.Parliament == parliament);
         if (election != null)
         {
             return true;
@@ -136,7 +136,7 @@ public static partial class DataLoader
     public static bool TryFindElectorate(string name, [NotNullWhen(true)] out IElectorate? electorate)
     {
         Guard.AgainstWhiteSpace(nameof(name), name);
-        electorate = Electorates.SingleOrDefault(x => MatchName(name, x));
+        electorate = Electorates.SingleOrDefault(_ => MatchName(name, _));
         if (electorate != null)
         {
             return true;
@@ -171,7 +171,7 @@ public static partial class DataLoader
         FindInvalidateElectorates((IEnumerable<string>) names);
 
     public static IEnumerable<string> FindInvalidateElectorates(IEnumerable<string> names) =>
-        names.Where(name => !Electorates.Any(x => MatchName(name, x)));
+        names.Where(name => !Electorates.Any(_ => MatchName(name, _)));
 
     public static void LoadAll()
     {

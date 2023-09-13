@@ -58,15 +58,15 @@ static class ElectoratesScraper
                 electorate.DateGazetted = DateTime.ParseExact(gazettedHtml.InnerText, "d MMMM yyyy", null);
             }
 
-            var contest = MediaFeedService.HouseOfReps.Contests.SingleOrDefault(x => x.ContestIdentifier.ContestName == fullName);
+            var contest = MediaFeedService.HouseOfReps.Contests.SingleOrDefault(_ => _.ContestIdentifier.ContestName == fullName);
             if (contest != null)
             {
                 electorate.Enrollment = contest.Enrolment.Value;
                 var candidatePreferred = contest.TwoCandidatePreferred;
-                var electedCandidate = candidatePreferred.Candidate.Single(x => x.Elected.Value);
+                var electedCandidate = candidatePreferred.Candidate.Single(_ => _.Elected.Value);
                 var electedCandidateName = SplitName(electedCandidate.CandidateIdentifier.CandidateName);
 
-                var other = candidatePreferred.Candidate.Single(x => !x.Elected.Value);
+                var other = candidatePreferred.Candidate.Single(_ => !_.Elected.Value);
                 var otherName = SplitName(other.CandidateIdentifier.CandidateName);
 
                 var affiliationIdentifier = electedCandidate.AffiliationIdentifier;
@@ -161,7 +161,7 @@ static class ElectoratesScraper
     static string GetFullName(HtmlDocument document, string prefix)
     {
         var headings = document.Headings();
-        var caseless = headings.Single(x => x.StartsWith(prefix))
+        var caseless = headings.Single(_ => _.StartsWith(prefix))
             .ReplaceCaseless(prefix, "");
         return TrimState(caseless);
     }

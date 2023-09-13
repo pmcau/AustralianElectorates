@@ -18,7 +18,7 @@ static class Extensions
     }
     public static List<string> Headings(this HtmlDocument document) =>
         document.DocumentNode.Descendants("h1")
-            .Select(x => x.InnerText).ToList();
+            .Select(_ => _.InnerText).ToList();
 
     public static bool TryGetKey(this Dictionary<string, string> document, string value, out string key)
     {

@@ -24,7 +24,7 @@ static class GeoJsonExtensions
     }
 
     public static double[] CalculateBoundingBox(this IEnumerable<Feature> features) =>
-        BoundingBox(features.SelectMany(x => x.AllPositions()));
+        BoundingBox(features.SelectMany(_ => _.AllPositions()));
 
     public static double[] CalculateBoundingBox(this Feature feature) =>
         BoundingBox(feature.AllPositions());
@@ -42,12 +42,12 @@ static class GeoJsonExtensions
     {
         if (features.Geometry is MultiPolygon multiPolygon)
         {
-            return multiPolygon.Coordinates.SelectMany(x => x.Coordinates)
-                .SelectMany(x => x.Coordinates);
+            return multiPolygon.Coordinates.SelectMany(_ => _.Coordinates)
+                .SelectMany(_ => _.Coordinates);
         }
 
         var polygon = (Polygon) features.Geometry;
-        return polygon.Coordinates.SelectMany(x => x.Coordinates);
+        return polygon.Coordinates.SelectMany(_ => _.Coordinates);
     }
 
     static double[] BoundingBox(IEnumerable<IPosition> points)

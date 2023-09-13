@@ -300,13 +300,13 @@ public class Sync
 
     static List<Location> SelectLocations(string electorateName, List<AecLocalityData> localityData) =>
         localityData
-            .Where(x => string.Equals(x.Electorate, electorateName, StringComparison.OrdinalIgnoreCase))
-            .GroupBy(x => x.Postcode)
+            .Where(_ => string.Equals(_.Electorate, electorateName, StringComparison.OrdinalIgnoreCase))
+            .GroupBy(_ => _.Postcode)
             .Select(group =>
                 new Location
                 {
                     Postcode = group.Key,
-                    Localities = group.Select(x => x.Place).ToList()
+                    Localities = group.Select(_ => _.Place).ToList()
                 })
             .ToList();
 
@@ -317,23 +317,32 @@ public class Sync
 
         using (var writer = File.CreateText(namedData))
         {
-            writer.WriteLine(@"
-// ReSharper disable IdentifierTypo
-// ReSharper disable RedundantDefaultMemberInitializer
+            writer.WriteLine(
+                """
 
-namespace AustralianElectorates;
+                // ReSharper disable IdentifierTypo
+                // ReSharper disable RedundantDefaultMemberInitializer
 
-public static partial class DataLoader
-{");
+                namespace AustralianElectorates;
 
-            writer.WriteLine(@"
-    static void InitNamed()
-    {");
+                public static partial class DataLoader
+                {
+                """);
+
+            writer.WriteLine(
+                """
+
+                    static void InitNamed()
+                    {
+                """);
             foreach (var electorate in electorates)
             {
                 var name = GetCSharpName(electorate);
-                writer.WriteLine($@"
-        {name} = Electorates.Single(x => x.Name == ""{electorate.Name}"");");
+                writer.WriteLine(
+                    $"""
+
+                             {name} = Electorates.Single(_ => _.Name == "{electorate.Name}");
+                     """);
             }
 
             writer.WriteLine("    }");
@@ -341,8 +350,11 @@ public static partial class DataLoader
             foreach (var electorate in electorates)
             {
                 var name = GetCSharpName(electorate);
-                writer.WriteLine($@"
-    public static IElectorate {name} {{ get; private set; }} = null!;");
+                writer.WriteLine(
+                    $$"""
+
+                          public static IElectorate {{name}} { get; private set; } = null!;
+                      """);
             }
 
             writer.WriteLine("}");
@@ -352,20 +364,26 @@ public static partial class DataLoader
         File.Delete(namedBogusData);
         using (var writer = File.CreateText(namedBogusData))
         {
-            writer.WriteLine(@"
-// ReSharper disable IdentifierTypo
-// ReSharper disable RedundantDefaultMemberInitializer
+            writer.WriteLine(
+                """
 
-namespace AustralianElectorates.Bogus;
+                // ReSharper disable IdentifierTypo
+                // ReSharper disable RedundantDefaultMemberInitializer
 
-public partial class ElectorateDataSet
-{");
+                namespace AustralianElectorates.Bogus;
+
+                public partial class ElectorateDataSet
+                {
+                """);
             foreach (var electorate in electorates)
             {
                 var name = GetCSharpName(electorate);
-                writer.WriteLine($@"
-    public IElectorate {name}() =>
-        DataLoader.{name};");
+                writer.WriteLine(
+                    $"""
+
+                         public IElectorate {name}() =>
+                             DataLoader.{name};
+                     """);
             }
 
             writer.WriteLine("}");

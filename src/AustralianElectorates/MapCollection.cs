@@ -33,7 +33,7 @@ public class MapCollection
             s =>
             {
                 var geoJson = GetMap(s);
-                var electorate = DataLoader.Electorates.SingleOrDefault(x => x.ShortName == electorateShortName);
+                var electorate = DataLoader.Electorates.SingleOrDefault(_ => _.ShortName == electorateShortName);
                 if (electorate == null)
                 {
                     throw new($"Unable to find electorate named '{electorateName}'.");
@@ -88,7 +88,7 @@ public class MapCollection
     {
         using var stream = assembly.GetManifestResourceStream("Maps.zip")!;
         using var archive = new ZipArchive(stream);
-        foreach (var entry in archive.Entries.Where(x => x.FullName.StartsWith(prefix)))
+        foreach (var entry in archive.Entries.Where(_ => _.FullName.StartsWith(prefix)))
         {
             var key = entry.FullName.Split('.').First();
             var mapString = entry.ReadString();
@@ -96,7 +96,7 @@ public class MapCollection
             if (key.Contains("Electorates"))
             {
                 var shortName = Path.GetFileName(key);
-                var electorate = DataLoader.Electorates.Single(x => x.ShortName == shortName);
+                var electorate = DataLoader.Electorates.Single(_ => _.ShortName == shortName);
                 electoratesCache[key] = new ElectorateMap
                 {
                     Electorate = electorate,

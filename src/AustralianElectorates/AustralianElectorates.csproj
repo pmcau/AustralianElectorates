@@ -9,7 +9,7 @@
     <EmbeddedResource Condition="Exists('..\..\Data\electorates.json')" Include="..\..\Data\electorates.json" LogicalName="electorates.json" Link="electorates.json" />
     <EmbeddedResource Condition="Exists('..\..\Data\parties.json')" Include="..\..\Data\parties.json" LogicalName="parties.json" Link="parties.json" />
 
-    <PackageReference Include="ProjectDefaults" Version="1.0.93" PrivateAssets="all" />
+    <PackageReference Include="ProjectDefaults" Version="1.0.97" PrivateAssets="all" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" Condition="$(Configuration) == 'Release'" />
   </ItemGroup>
 </Project>

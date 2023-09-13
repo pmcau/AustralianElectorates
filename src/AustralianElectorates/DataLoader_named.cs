@@ -10,323 +10,323 @@ public static partial class DataLoader
     static void InitNamed()
     {
 
-        Bean = Electorates.Single(x => x.Name == "Bean");
+        Bean = Electorates.Single(_ => _.Name == "Bean");
 
-        Canberra = Electorates.Single(x => x.Name == "Canberra");
+        Canberra = Electorates.Single(_ => _.Name == "Canberra");
 
-        Fenner = Electorates.Single(x => x.Name == "Fenner");
+        Fenner = Electorates.Single(_ => _.Name == "Fenner");
 
-        Bass = Electorates.Single(x => x.Name == "Bass");
+        Bass = Electorates.Single(_ => _.Name == "Bass");
 
-        Braddon = Electorates.Single(x => x.Name == "Braddon");
+        Braddon = Electorates.Single(_ => _.Name == "Braddon");
 
-        Clark = Electorates.Single(x => x.Name == "Clark");
+        Clark = Electorates.Single(_ => _.Name == "Clark");
 
-        Franklin = Electorates.Single(x => x.Name == "Franklin");
+        Franklin = Electorates.Single(_ => _.Name == "Franklin");
 
-        Lyons = Electorates.Single(x => x.Name == "Lyons");
+        Lyons = Electorates.Single(_ => _.Name == "Lyons");
 
-        Denison = Electorates.Single(x => x.Name == "Denison");
+        Denison = Electorates.Single(_ => _.Name == "Denison");
 
-        Adelaide = Electorates.Single(x => x.Name == "Adelaide");
+        Adelaide = Electorates.Single(_ => _.Name == "Adelaide");
 
-        Barker = Electorates.Single(x => x.Name == "Barker");
+        Barker = Electorates.Single(_ => _.Name == "Barker");
 
-        Boothby = Electorates.Single(x => x.Name == "Boothby");
+        Boothby = Electorates.Single(_ => _.Name == "Boothby");
 
-        Grey = Electorates.Single(x => x.Name == "Grey");
+        Grey = Electorates.Single(_ => _.Name == "Grey");
 
-        Hindmarsh = Electorates.Single(x => x.Name == "Hindmarsh");
+        Hindmarsh = Electorates.Single(_ => _.Name == "Hindmarsh");
 
-        Kingston = Electorates.Single(x => x.Name == "Kingston");
+        Kingston = Electorates.Single(_ => _.Name == "Kingston");
 
-        Makin = Electorates.Single(x => x.Name == "Makin");
+        Makin = Electorates.Single(_ => _.Name == "Makin");
 
-        Mayo = Electorates.Single(x => x.Name == "Mayo");
+        Mayo = Electorates.Single(_ => _.Name == "Mayo");
 
-        Spence = Electorates.Single(x => x.Name == "Spence");
+        Spence = Electorates.Single(_ => _.Name == "Spence");
 
-        Sturt = Electorates.Single(x => x.Name == "Sturt");
+        Sturt = Electorates.Single(_ => _.Name == "Sturt");
 
-        PortAdelaide = Electorates.Single(x => x.Name == "Port Adelaide");
+        PortAdelaide = Electorates.Single(_ => _.Name == "Port Adelaide");
 
-        Wakefield = Electorates.Single(x => x.Name == "Wakefield");
+        Wakefield = Electorates.Single(_ => _.Name == "Wakefield");
 
-        Aston = Electorates.Single(x => x.Name == "Aston");
+        Aston = Electorates.Single(_ => _.Name == "Aston");
 
-        Ballarat = Electorates.Single(x => x.Name == "Ballarat");
+        Ballarat = Electorates.Single(_ => _.Name == "Ballarat");
 
-        Bendigo = Electorates.Single(x => x.Name == "Bendigo");
+        Bendigo = Electorates.Single(_ => _.Name == "Bendigo");
 
-        Bruce = Electorates.Single(x => x.Name == "Bruce");
+        Bruce = Electorates.Single(_ => _.Name == "Bruce");
 
-        Calwell = Electorates.Single(x => x.Name == "Calwell");
+        Calwell = Electorates.Single(_ => _.Name == "Calwell");
 
-        Casey = Electorates.Single(x => x.Name == "Casey");
+        Casey = Electorates.Single(_ => _.Name == "Casey");
 
-        Chisholm = Electorates.Single(x => x.Name == "Chisholm");
+        Chisholm = Electorates.Single(_ => _.Name == "Chisholm");
 
-        Cooper = Electorates.Single(x => x.Name == "Cooper");
+        Cooper = Electorates.Single(_ => _.Name == "Cooper");
 
-        Corangamite = Electorates.Single(x => x.Name == "Corangamite");
+        Corangamite = Electorates.Single(_ => _.Name == "Corangamite");
 
-        Corio = Electorates.Single(x => x.Name == "Corio");
+        Corio = Electorates.Single(_ => _.Name == "Corio");
 
-        Deakin = Electorates.Single(x => x.Name == "Deakin");
+        Deakin = Electorates.Single(_ => _.Name == "Deakin");
 
-        Dunkley = Electorates.Single(x => x.Name == "Dunkley");
+        Dunkley = Electorates.Single(_ => _.Name == "Dunkley");
 
-        Flinders = Electorates.Single(x => x.Name == "Flinders");
+        Flinders = Electorates.Single(_ => _.Name == "Flinders");
 
-        Fraser = Electorates.Single(x => x.Name == "Fraser");
+        Fraser = Electorates.Single(_ => _.Name == "Fraser");
 
-        Gellibrand = Electorates.Single(x => x.Name == "Gellibrand");
+        Gellibrand = Electorates.Single(_ => _.Name == "Gellibrand");
 
-        Gippsland = Electorates.Single(x => x.Name == "Gippsland");
+        Gippsland = Electorates.Single(_ => _.Name == "Gippsland");
 
-        Goldstein = Electorates.Single(x => x.Name == "Goldstein");
+        Goldstein = Electorates.Single(_ => _.Name == "Goldstein");
 
-        Gorton = Electorates.Single(x => x.Name == "Gorton");
+        Gorton = Electorates.Single(_ => _.Name == "Gorton");
 
-        Hawke = Electorates.Single(x => x.Name == "Hawke");
+        Hawke = Electorates.Single(_ => _.Name == "Hawke");
 
-        Higgins = Electorates.Single(x => x.Name == "Higgins");
+        Higgins = Electorates.Single(_ => _.Name == "Higgins");
 
-        Holt = Electorates.Single(x => x.Name == "Holt");
+        Holt = Electorates.Single(_ => _.Name == "Holt");
 
-        Hotham = Electorates.Single(x => x.Name == "Hotham");
+        Hotham = Electorates.Single(_ => _.Name == "Hotham");
 
-        Indi = Electorates.Single(x => x.Name == "Indi");
+        Indi = Electorates.Single(_ => _.Name == "Indi");
 
-        Isaacs = Electorates.Single(x => x.Name == "Isaacs");
+        Isaacs = Electorates.Single(_ => _.Name == "Isaacs");
 
-        Jagajaga = Electorates.Single(x => x.Name == "Jagajaga");
+        Jagajaga = Electorates.Single(_ => _.Name == "Jagajaga");
 
-        Kooyong = Electorates.Single(x => x.Name == "Kooyong");
+        Kooyong = Electorates.Single(_ => _.Name == "Kooyong");
 
-        LaTrobe = Electorates.Single(x => x.Name == "La Trobe");
+        LaTrobe = Electorates.Single(_ => _.Name == "La Trobe");
 
-        Lalor = Electorates.Single(x => x.Name == "Lalor");
+        Lalor = Electorates.Single(_ => _.Name == "Lalor");
 
-        Macnamara = Electorates.Single(x => x.Name == "Macnamara");
+        Macnamara = Electorates.Single(_ => _.Name == "Macnamara");
 
-        Mallee = Electorates.Single(x => x.Name == "Mallee");
+        Mallee = Electorates.Single(_ => _.Name == "Mallee");
 
-        Maribyrnong = Electorates.Single(x => x.Name == "Maribyrnong");
+        Maribyrnong = Electorates.Single(_ => _.Name == "Maribyrnong");
 
-        McEwen = Electorates.Single(x => x.Name == "McEwen");
+        McEwen = Electorates.Single(_ => _.Name == "McEwen");
 
-        Melbourne = Electorates.Single(x => x.Name == "Melbourne");
+        Melbourne = Electorates.Single(_ => _.Name == "Melbourne");
 
-        Menzies = Electorates.Single(x => x.Name == "Menzies");
+        Menzies = Electorates.Single(_ => _.Name == "Menzies");
 
-        Monash = Electorates.Single(x => x.Name == "Monash");
+        Monash = Electorates.Single(_ => _.Name == "Monash");
 
-        Nicholls = Electorates.Single(x => x.Name == "Nicholls");
+        Nicholls = Electorates.Single(_ => _.Name == "Nicholls");
 
-        Scullin = Electorates.Single(x => x.Name == "Scullin");
+        Scullin = Electorates.Single(_ => _.Name == "Scullin");
 
-        Wannon = Electorates.Single(x => x.Name == "Wannon");
+        Wannon = Electorates.Single(_ => _.Name == "Wannon");
 
-        Wills = Electorates.Single(x => x.Name == "Wills");
+        Wills = Electorates.Single(_ => _.Name == "Wills");
 
-        Batman = Electorates.Single(x => x.Name == "Batman");
+        Batman = Electorates.Single(_ => _.Name == "Batman");
 
-        McMillan = Electorates.Single(x => x.Name == "McMillan");
+        McMillan = Electorates.Single(_ => _.Name == "McMillan");
 
-        MelbournePorts = Electorates.Single(x => x.Name == "Melbourne Ports");
+        MelbournePorts = Electorates.Single(_ => _.Name == "Melbourne Ports");
 
-        Murray = Electorates.Single(x => x.Name == "Murray");
+        Murray = Electorates.Single(_ => _.Name == "Murray");
 
-        Blair = Electorates.Single(x => x.Name == "Blair");
+        Blair = Electorates.Single(_ => _.Name == "Blair");
 
-        Bonner = Electorates.Single(x => x.Name == "Bonner");
+        Bonner = Electorates.Single(_ => _.Name == "Bonner");
 
-        Bowman = Electorates.Single(x => x.Name == "Bowman");
+        Bowman = Electorates.Single(_ => _.Name == "Bowman");
 
-        Brisbane = Electorates.Single(x => x.Name == "Brisbane");
+        Brisbane = Electorates.Single(_ => _.Name == "Brisbane");
 
-        Capricornia = Electorates.Single(x => x.Name == "Capricornia");
+        Capricornia = Electorates.Single(_ => _.Name == "Capricornia");
 
-        Dawson = Electorates.Single(x => x.Name == "Dawson");
+        Dawson = Electorates.Single(_ => _.Name == "Dawson");
 
-        Dickson = Electorates.Single(x => x.Name == "Dickson");
+        Dickson = Electorates.Single(_ => _.Name == "Dickson");
 
-        Fadden = Electorates.Single(x => x.Name == "Fadden");
+        Fadden = Electorates.Single(_ => _.Name == "Fadden");
 
-        Fairfax = Electorates.Single(x => x.Name == "Fairfax");
+        Fairfax = Electorates.Single(_ => _.Name == "Fairfax");
 
-        Fisher = Electorates.Single(x => x.Name == "Fisher");
+        Fisher = Electorates.Single(_ => _.Name == "Fisher");
 
-        Flynn = Electorates.Single(x => x.Name == "Flynn");
+        Flynn = Electorates.Single(_ => _.Name == "Flynn");
 
-        Forde = Electorates.Single(x => x.Name == "Forde");
+        Forde = Electorates.Single(_ => _.Name == "Forde");
 
-        Griffith = Electorates.Single(x => x.Name == "Griffith");
+        Griffith = Electorates.Single(_ => _.Name == "Griffith");
 
-        Groom = Electorates.Single(x => x.Name == "Groom");
+        Groom = Electorates.Single(_ => _.Name == "Groom");
 
-        Herbert = Electorates.Single(x => x.Name == "Herbert");
+        Herbert = Electorates.Single(_ => _.Name == "Herbert");
 
-        Hinkler = Electorates.Single(x => x.Name == "Hinkler");
+        Hinkler = Electorates.Single(_ => _.Name == "Hinkler");
 
-        Kennedy = Electorates.Single(x => x.Name == "Kennedy");
+        Kennedy = Electorates.Single(_ => _.Name == "Kennedy");
 
-        Leichhardt = Electorates.Single(x => x.Name == "Leichhardt");
+        Leichhardt = Electorates.Single(_ => _.Name == "Leichhardt");
 
-        Lilley = Electorates.Single(x => x.Name == "Lilley");
+        Lilley = Electorates.Single(_ => _.Name == "Lilley");
 
-        Longman = Electorates.Single(x => x.Name == "Longman");
+        Longman = Electorates.Single(_ => _.Name == "Longman");
 
-        Maranoa = Electorates.Single(x => x.Name == "Maranoa");
+        Maranoa = Electorates.Single(_ => _.Name == "Maranoa");
 
-        McPherson = Electorates.Single(x => x.Name == "McPherson");
+        McPherson = Electorates.Single(_ => _.Name == "McPherson");
 
-        Moncrieff = Electorates.Single(x => x.Name == "Moncrieff");
+        Moncrieff = Electorates.Single(_ => _.Name == "Moncrieff");
 
-        Moreton = Electorates.Single(x => x.Name == "Moreton");
+        Moreton = Electorates.Single(_ => _.Name == "Moreton");
 
-        Oxley = Electorates.Single(x => x.Name == "Oxley");
+        Oxley = Electorates.Single(_ => _.Name == "Oxley");
 
-        Petrie = Electorates.Single(x => x.Name == "Petrie");
+        Petrie = Electorates.Single(_ => _.Name == "Petrie");
 
-        Rankin = Electorates.Single(x => x.Name == "Rankin");
+        Rankin = Electorates.Single(_ => _.Name == "Rankin");
 
-        Ryan = Electorates.Single(x => x.Name == "Ryan");
+        Ryan = Electorates.Single(_ => _.Name == "Ryan");
 
-        WideBay = Electorates.Single(x => x.Name == "Wide Bay");
+        WideBay = Electorates.Single(_ => _.Name == "Wide Bay");
 
-        Wright = Electorates.Single(x => x.Name == "Wright");
+        Wright = Electorates.Single(_ => _.Name == "Wright");
 
-        Lingiari = Electorates.Single(x => x.Name == "Lingiari");
+        Lingiari = Electorates.Single(_ => _.Name == "Lingiari");
 
-        Solomon = Electorates.Single(x => x.Name == "Solomon");
+        Solomon = Electorates.Single(_ => _.Name == "Solomon");
 
-        Banks = Electorates.Single(x => x.Name == "Banks");
+        Banks = Electorates.Single(_ => _.Name == "Banks");
 
-        Barton = Electorates.Single(x => x.Name == "Barton");
+        Barton = Electorates.Single(_ => _.Name == "Barton");
 
-        Bennelong = Electorates.Single(x => x.Name == "Bennelong");
+        Bennelong = Electorates.Single(_ => _.Name == "Bennelong");
 
-        Berowra = Electorates.Single(x => x.Name == "Berowra");
+        Berowra = Electorates.Single(_ => _.Name == "Berowra");
 
-        Blaxland = Electorates.Single(x => x.Name == "Blaxland");
+        Blaxland = Electorates.Single(_ => _.Name == "Blaxland");
 
-        Bradfield = Electorates.Single(x => x.Name == "Bradfield");
+        Bradfield = Electorates.Single(_ => _.Name == "Bradfield");
 
-        Calare = Electorates.Single(x => x.Name == "Calare");
+        Calare = Electorates.Single(_ => _.Name == "Calare");
 
-        Chifley = Electorates.Single(x => x.Name == "Chifley");
+        Chifley = Electorates.Single(_ => _.Name == "Chifley");
 
-        Cook = Electorates.Single(x => x.Name == "Cook");
+        Cook = Electorates.Single(_ => _.Name == "Cook");
 
-        Cowper = Electorates.Single(x => x.Name == "Cowper");
+        Cowper = Electorates.Single(_ => _.Name == "Cowper");
 
-        Cunningham = Electorates.Single(x => x.Name == "Cunningham");
+        Cunningham = Electorates.Single(_ => _.Name == "Cunningham");
 
-        Dobell = Electorates.Single(x => x.Name == "Dobell");
+        Dobell = Electorates.Single(_ => _.Name == "Dobell");
 
-        EdenMonaro = Electorates.Single(x => x.Name == "Eden-Monaro");
+        EdenMonaro = Electorates.Single(_ => _.Name == "Eden-Monaro");
 
-        Farrer = Electorates.Single(x => x.Name == "Farrer");
+        Farrer = Electorates.Single(_ => _.Name == "Farrer");
 
-        Fowler = Electorates.Single(x => x.Name == "Fowler");
+        Fowler = Electorates.Single(_ => _.Name == "Fowler");
 
-        Gilmore = Electorates.Single(x => x.Name == "Gilmore");
+        Gilmore = Electorates.Single(_ => _.Name == "Gilmore");
 
-        Grayndler = Electorates.Single(x => x.Name == "Grayndler");
+        Grayndler = Electorates.Single(_ => _.Name == "Grayndler");
 
-        Greenway = Electorates.Single(x => x.Name == "Greenway");
+        Greenway = Electorates.Single(_ => _.Name == "Greenway");
 
-        Hughes = Electorates.Single(x => x.Name == "Hughes");
+        Hughes = Electorates.Single(_ => _.Name == "Hughes");
 
-        Hume = Electorates.Single(x => x.Name == "Hume");
+        Hume = Electorates.Single(_ => _.Name == "Hume");
 
-        Hunter = Electorates.Single(x => x.Name == "Hunter");
+        Hunter = Electorates.Single(_ => _.Name == "Hunter");
 
-        KingsfordSmith = Electorates.Single(x => x.Name == "Kingsford Smith");
+        KingsfordSmith = Electorates.Single(_ => _.Name == "Kingsford Smith");
 
-        Lindsay = Electorates.Single(x => x.Name == "Lindsay");
+        Lindsay = Electorates.Single(_ => _.Name == "Lindsay");
 
-        Lyne = Electorates.Single(x => x.Name == "Lyne");
+        Lyne = Electorates.Single(_ => _.Name == "Lyne");
 
-        Macarthur = Electorates.Single(x => x.Name == "Macarthur");
+        Macarthur = Electorates.Single(_ => _.Name == "Macarthur");
 
-        Mackellar = Electorates.Single(x => x.Name == "Mackellar");
+        Mackellar = Electorates.Single(_ => _.Name == "Mackellar");
 
-        Macquarie = Electorates.Single(x => x.Name == "Macquarie");
+        Macquarie = Electorates.Single(_ => _.Name == "Macquarie");
 
-        McMahon = Electorates.Single(x => x.Name == "McMahon");
+        McMahon = Electorates.Single(_ => _.Name == "McMahon");
 
-        Mitchell = Electorates.Single(x => x.Name == "Mitchell");
+        Mitchell = Electorates.Single(_ => _.Name == "Mitchell");
 
-        NewEngland = Electorates.Single(x => x.Name == "New England");
+        NewEngland = Electorates.Single(_ => _.Name == "New England");
 
-        Newcastle = Electorates.Single(x => x.Name == "Newcastle");
+        Newcastle = Electorates.Single(_ => _.Name == "Newcastle");
 
-        NorthSydney = Electorates.Single(x => x.Name == "North Sydney");
+        NorthSydney = Electorates.Single(_ => _.Name == "North Sydney");
 
-        Page = Electorates.Single(x => x.Name == "Page");
+        Page = Electorates.Single(_ => _.Name == "Page");
 
-        Parkes = Electorates.Single(x => x.Name == "Parkes");
+        Parkes = Electorates.Single(_ => _.Name == "Parkes");
 
-        Parramatta = Electorates.Single(x => x.Name == "Parramatta");
+        Parramatta = Electorates.Single(_ => _.Name == "Parramatta");
 
-        Paterson = Electorates.Single(x => x.Name == "Paterson");
+        Paterson = Electorates.Single(_ => _.Name == "Paterson");
 
-        Reid = Electorates.Single(x => x.Name == "Reid");
+        Reid = Electorates.Single(_ => _.Name == "Reid");
 
-        Richmond = Electorates.Single(x => x.Name == "Richmond");
+        Richmond = Electorates.Single(_ => _.Name == "Richmond");
 
-        Riverina = Electorates.Single(x => x.Name == "Riverina");
+        Riverina = Electorates.Single(_ => _.Name == "Riverina");
 
-        Robertson = Electorates.Single(x => x.Name == "Robertson");
+        Robertson = Electorates.Single(_ => _.Name == "Robertson");
 
-        Shortland = Electorates.Single(x => x.Name == "Shortland");
+        Shortland = Electorates.Single(_ => _.Name == "Shortland");
 
-        Sydney = Electorates.Single(x => x.Name == "Sydney");
+        Sydney = Electorates.Single(_ => _.Name == "Sydney");
 
-        Warringah = Electorates.Single(x => x.Name == "Warringah");
+        Warringah = Electorates.Single(_ => _.Name == "Warringah");
 
-        Watson = Electorates.Single(x => x.Name == "Watson");
+        Watson = Electorates.Single(_ => _.Name == "Watson");
 
-        Wentworth = Electorates.Single(x => x.Name == "Wentworth");
+        Wentworth = Electorates.Single(_ => _.Name == "Wentworth");
 
-        Werriwa = Electorates.Single(x => x.Name == "Werriwa");
+        Werriwa = Electorates.Single(_ => _.Name == "Werriwa");
 
-        Whitlam = Electorates.Single(x => x.Name == "Whitlam");
+        Whitlam = Electorates.Single(_ => _.Name == "Whitlam");
 
-        Brand = Electorates.Single(x => x.Name == "Brand");
+        Brand = Electorates.Single(_ => _.Name == "Brand");
 
-        Burt = Electorates.Single(x => x.Name == "Burt");
+        Burt = Electorates.Single(_ => _.Name == "Burt");
 
-        Canning = Electorates.Single(x => x.Name == "Canning");
+        Canning = Electorates.Single(_ => _.Name == "Canning");
 
-        Cowan = Electorates.Single(x => x.Name == "Cowan");
+        Cowan = Electorates.Single(_ => _.Name == "Cowan");
 
-        Curtin = Electorates.Single(x => x.Name == "Curtin");
+        Curtin = Electorates.Single(_ => _.Name == "Curtin");
 
-        Durack = Electorates.Single(x => x.Name == "Durack");
+        Durack = Electorates.Single(_ => _.Name == "Durack");
 
-        Forrest = Electorates.Single(x => x.Name == "Forrest");
+        Forrest = Electorates.Single(_ => _.Name == "Forrest");
 
-        Fremantle = Electorates.Single(x => x.Name == "Fremantle");
+        Fremantle = Electorates.Single(_ => _.Name == "Fremantle");
 
-        Hasluck = Electorates.Single(x => x.Name == "Hasluck");
+        Hasluck = Electorates.Single(_ => _.Name == "Hasluck");
 
-        Moore = Electorates.Single(x => x.Name == "Moore");
+        Moore = Electorates.Single(_ => _.Name == "Moore");
 
-        OConnor = Electorates.Single(x => x.Name == "O'Connor");
+        OConnor = Electorates.Single(_ => _.Name == "O'Connor");
 
-        Pearce = Electorates.Single(x => x.Name == "Pearce");
+        Pearce = Electorates.Single(_ => _.Name == "Pearce");
 
-        Perth = Electorates.Single(x => x.Name == "Perth");
+        Perth = Electorates.Single(_ => _.Name == "Perth");
 
-        Swan = Electorates.Single(x => x.Name == "Swan");
+        Swan = Electorates.Single(_ => _.Name == "Swan");
 
-        Tangney = Electorates.Single(x => x.Name == "Tangney");
+        Tangney = Electorates.Single(_ => _.Name == "Tangney");
 
-        Stirling = Electorates.Single(x => x.Name == "Stirling");
+        Stirling = Electorates.Single(_ => _.Name == "Stirling");
     }
 
     public static IElectorate Bean { get; private set; } = null!;

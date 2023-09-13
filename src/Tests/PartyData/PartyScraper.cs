@@ -21,7 +21,7 @@ static class PartyScraper
             await Downloader.DownloadFile(htmlPath, url);
 
             var jsonUrl = (await File.ReadAllLinesAsync(htmlPath))
-                .Single(x => x.Contains("/Parties_and_Representatives/Party_Registration/Registered_parties/files/register"))
+                .Single(_ => _.Contains("/Parties_and_Representatives/Party_Registration/Registered_parties/files/register"))
                 .Split('"')[1];
             await Downloader.DownloadFile(partyRegisterPath, $"https://www.aec.gov.au{jsonUrl}");
             var aecParties = JsonSerializerService.Deserialize<PartyData>(partyRegisterPath);
@@ -199,9 +199,9 @@ static class PartyScraper
 
     static string FixSuburbCase(AecModels.Address deputyOfficerAddress, string postcode)
     {
-        var suburbs = AustraliaData.PostCodes.Single(x => x.Key == postcode).Value;
+        var suburbs = AustraliaData.PostCodes.Single(_ => _.Key == postcode).Value;
         var suburb = deputyOfficerAddress.Suburb.Trim();
-        var place = suburbs.SingleOrDefault(x => string.Equals(x.Name, suburb, StringComparison.OrdinalIgnoreCase));
+        var place = suburbs.SingleOrDefault(_ => string.Equals(_.Name, suburb, StringComparison.OrdinalIgnoreCase));
         if (place == null)
         {
             return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(suburb);

@@ -248,7 +248,7 @@ var fenner = DataLoader.Fenner;
 Debug.WriteLine(fenner.Description);
 
 // get an electorate by string
-var canberra = DataLoader.Electorates.Single(x => x.Name == "Canberra");
+var canberra = DataLoader.Electorates.Single(_ => _.Name == "Canberra");
 Debug.WriteLine(canberra.Description);
 
 // get an electorates maps (geojson) by string

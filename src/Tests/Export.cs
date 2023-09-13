@@ -31,8 +31,8 @@
     {
         foreach (var group in Directory.EnumerateFiles(directory).GroupBy(Prefix))
         {
-            var fileInfos = group.Select(x => new FileInfo(x)).OrderByDescending(x => x.Length).ToList();
-            var firstOrDefault = fileInfos.SkipWhile(x => x.Length > electoratesSize).FirstOrDefault();
+            var fileInfos = group.Select(_ => new FileInfo(_)).OrderByDescending(_ => _.Length).ToList();
+            var firstOrDefault = fileInfos.SkipWhile(_ => _.Length > electoratesSize).FirstOrDefault();
             if (firstOrDefault == null)
             {
                 yield return fileInfos.Last();

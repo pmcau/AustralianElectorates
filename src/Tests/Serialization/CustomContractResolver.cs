@@ -7,7 +7,7 @@ public class CustomContractResolver :
     protected override IList<JsonProperty> CreateProperties(Type type, MemberSerialization memberSerialization)
     {
         var jsonProperties = base.CreateProperties(type, memberSerialization);
-        var first = jsonProperties.FirstOrDefault(x => x.PropertyName == "properties");
+        var first = jsonProperties.FirstOrDefault(_ => _.PropertyName == "properties");
         if (first == null)
         {
             return jsonProperties;
@@ -15,7 +15,7 @@ public class CustomContractResolver :
 
         var properties = new List<JsonProperty>
             { first };
-        properties.AddRange(jsonProperties.Where(x => x.PropertyName != "properties"));
+        properties.AddRange(jsonProperties.Where(_ => _.PropertyName != "properties"));
         return properties;
     }
 

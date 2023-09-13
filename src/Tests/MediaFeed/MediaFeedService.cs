@@ -17,6 +17,6 @@ static class MediaFeedService
 
     static MediaFeedResultsElectionHouse GetHouseOfReps(MediaFeed feed) =>
         feed.Results.Election
-            .Single(x => x.ElectionIdentifier.Id == "H")
+            .Single(_ => _.ElectionIdentifier.Id == "H")
             .House;
 }
