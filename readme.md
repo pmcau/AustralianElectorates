@@ -389,7 +389,7 @@ return new()
     }
 };
 ```
-<sup><a href='/src/AustralianElectorates/DataLoader.cs#L74-L94' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/AustralianElectorates/DataLoader.cs#L73-L93' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
