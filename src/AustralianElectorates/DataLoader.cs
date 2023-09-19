@@ -5,7 +5,6 @@ namespace AustralianElectorates;
 
 public static partial class DataLoader
 {
-    static object exportLocker = new();
     static Assembly assembly;
 
     static DataLoader()
