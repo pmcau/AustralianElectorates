@@ -7,7 +7,7 @@ using Bogus;
 public class Snippets
 {
     [Fact]
-    public async Task Foo()
+    public Task Foo()
     {
         #region usage
         // get an electorate by name
@@ -45,7 +45,7 @@ public class Snippets
         // /2022/Electorates (2022 electorate geojson files)
         var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
         Directory.CreateDirectory(directory);
-        await DataLoader.Export(directory);
+        return DataLoader.Export(directory);
         #endregion
     }
 
