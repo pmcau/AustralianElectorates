@@ -278,7 +278,7 @@ Debug.WriteLine(canberraGeoJson2022);
 // /2022/Electorates (2022 electorate geojson files)
 var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
 Directory.CreateDirectory(directory);
-await DataLoader.Export(directory);
+return DataLoader.Export(directory);
 ```
 <sup><a href='/src/Tests/Snippets.cs#L12-L49' title='Snippet source file'>snippet source</a> | <a href='#snippet-usage' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
