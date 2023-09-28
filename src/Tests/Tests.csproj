@@ -17,11 +17,11 @@
     <PackageReference Include="Xunit" Version="2.5.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.5.1" PrivateAssets="all" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.2" />
-    <PackageReference Include="Verify.Xunit" Version="21.1.5" />
+    <PackageReference Include="Verify.Xunit" Version="21.2.0" />
     <ProjectReference Include="..\AustralianElectorates.Bogus\AustralianElectorates.Bogus.csproj" />
     <ProjectReference Include="..\AustralianElectorates.DetailMaps\AustralianElectorates.DetailMaps.csproj" />
     <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
-    <PackageReference Include="ProjectDefaults" Version="1.0.97" PrivateAssets="all" />
+    <PackageReference Include="ProjectDefaults" Version="1.0.99" PrivateAssets="all" />
 
     <None Update="MediaFeed\*.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
