@@ -9,6 +9,8 @@
 
 All information about electorates is available at [/Data/electorates.json](/Data/electorates.json).
 
+**See [Milestones](../../milestones?state=closed) for release notes.**
+
 
 ## Electorates
 
