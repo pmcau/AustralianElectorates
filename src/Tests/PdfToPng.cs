@@ -75,8 +75,17 @@ public static class PdfToPng
             RedirectStandardError = true,
             CreateNoWindow = true
         };
+
         gswin64.AppendArguments("-dNoCancel", "-sDEVICE=png16m", "-dBATCH", "-r300", "-dNOPAUSE", "-dDownScaleFactor=2", "-q", $"-sOutputFile={tempPng}", pdf);
         using var process = Process.Start(gswin64)!;
         await process.WaitForExitAsync();
+        if (process.ExitCode != 0)
+        {
+            throw new(
+                $"""
+                 Failed to execute ghostscript.
+                 gswin64c {string.Join(" ", gswin64.ArgumentList)}
+                 """);
+        }
     }
 }
