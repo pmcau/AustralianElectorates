@@ -23,7 +23,7 @@ public static class PartyCodeScraper
             var codes = new Dictionary<string, string>();
             foreach (var node in table.SelectNodes("//tr").Skip(1))
             {
-                var nodes = node.ChildNodes.Where(x=>x.NodeType != HtmlNodeType.Text).ToList();
+                var nodes = node.ChildNodes.Where(_ => _.NodeType != HtmlNodeType.Text).ToList();
                 var abbreviation = nodes[0].InnerHtml;
                 var name = nodes[1].InnerHtml.Split('(')[0].Trim();
                 codes.Add(abbreviation, name);

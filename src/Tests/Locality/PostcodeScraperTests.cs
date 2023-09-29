@@ -15,7 +15,7 @@ public class PostcodeScraperTests
     [Trait("Category", "Integration")]
     public Task Specific()
     {
-        var place = AustraliaData.PostCodes.Single(x=>x.Key == "2612");
+        var place = AustraliaData.PostCodes.Single(_ => _.Key == "3429");
         return Verify(PostcodeScraper.GetAECDataForPostcode(place));
     }
 }
