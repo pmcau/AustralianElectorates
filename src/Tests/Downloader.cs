@@ -17,6 +17,24 @@ static class Downloader
 
     public static async Task DownloadFile(string targetPath, string requestUri)
     {
+        try
+        {
+            await InnerDownload(targetPath, requestUri);
+        }
+        catch (Exception exception)
+        {
+            throw new(
+                $"""
+                 Download failed:
+                   Path: {targetPath}
+                   Uri: {requestUri}
+                 """,
+                exception);
+        }
+    }
+
+    static async Task InnerDownload(string targetPath, string requestUri)
+    {
         var requestMessage = new HttpRequestMessage(HttpMethod.Head, requestUri);
 
         DateTime remoteLastModified;
