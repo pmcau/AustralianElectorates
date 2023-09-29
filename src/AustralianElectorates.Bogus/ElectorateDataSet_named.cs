@@ -6,6 +6,7 @@ namespace AustralianElectorates.Bogus;
 
 public partial class ElectorateDataSet
 {
+
     public IElectorate Bean() =>
         DataLoader.Bean;
 

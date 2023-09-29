@@ -6,18 +6,18 @@
     "Abbreviation": "AJP",
     "RegisterDate": "3 May 2011",
     "AmendmentDate": "3 May 2011",
-    "Address": "PO Box Q1688\nQUEEN VICTORIA BUILDING NSW 1230",
+    "Address": "Ground Floor\n470 St Kilda Rd\nMELBOURNE VIC 3004",
     "Officer": {
       "Title": "Mr",
       "FamilyName": "Cheung",
       "GivenNames": "William",
       "Capacity": "Party Agent, Secretary & Registered Officer",
       "Address": {
-        "Line1": "Level 5",
-        "Line2": "13/35 Buckingham Street",
-        "Suburb": "Surry Hills",
-        "State": "NSW",
-        "Postcode": 2010
+        "Line1": "Ground Floor",
+        "Line2": "470 St Kilda Road",
+        "Suburb": "Melbourne",
+        "State": "VIC",
+        "Postcode": 3004
       }
     },
     "DeputyOfficers": [
@@ -31,18 +31,6 @@
           "Suburb": "Coolbellup",
           "State": "WA",
           "Postcode": 6163
-        }
-      },
-      {
-        "Title": "Ms",
-        "FamilyName": "Ward",
-        "GivenNames": "Catherine",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "33 Tennyson Street",
-          "Suburb": "Winston Hills",
-          "State": "NSW",
-          "Postcode": 2153
         }
       },
       {
@@ -66,41 +54,6 @@
           "Suburb": "Franklin",
           "State": "TAS",
           "Postcode": 7113
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Cox",
-        "GivenNames": "Lindon",
-        "Address": {
-          "Line1": "59 Thorpe Street",
-          "Suburb": "Indooroopilly",
-          "State": "QLD",
-          "Postcode": 4068
-        }
-      },
-      {
-        "Title": "Ms",
-        "FamilyName": "Hammerstein",
-        "GivenNames": "Millicent",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "61 Harriet Street",
-          "Suburb": "West Croydon",
-          "State": "SA",
-          "Postcode": 5008
-        }
-      },
-      {
-        "Title": "Ms",
-        "FamilyName": "del Valle",
-        "GivenNames": "Yana",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "86 Morgan Crescent",
-          "Suburb": "Curtin",
-          "State": "ACT",
-          "Postcode": 2605
         }
       }
     ],
@@ -691,30 +644,6 @@
     ]
   },
   {
-    "Id": 1500,
-    "Name": "Australian Values Party",
-    "Code": "AVP",
-    "Abbreviation": "AVP",
-    "RegisterDate": "18 January 2022",
-    "AmendmentDate": "18 January 2022",
-    "Address": "PO Box 3217\nNEWSTEAD QLD 4006",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Russell",
-      "GivenNames": "Heston Graymn",
-      "Capacity": "Registered Officer",
-      "Address": {
-        "Line1": "Level 5",
-        "Line2": "307 Queen Street",
-        "Suburb": "Brisbane",
-        "State": "QLD",
-        "Postcode": 4000
-      }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
-  },
-  {
     "Id": 1388,
     "Name": "Centre Alliance",
     "Code": "Centre Alliance",
@@ -747,14 +676,37 @@
     "Address": "PO Box 4194\nDARWIN NT 0801",
     "Officer": {
       "Title": "Mr",
-      "FamilyName": "Gaddes",
-      "GivenNames": "Brad",
-      "Capacity": "Registered Officer",
+      "FamilyName": "Hunter",
+      "GivenNames": "Geoff",
+      "Capacity": "Party Agent",
       "Address": {
         "Line1": "2/229 McMillans Road",
-        "Suburb": "Jingili",
+        "Suburb": "JINGLI",
         "State": "NT",
         "Postcode": 810
+      }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
+  },
+  {
+    "Id": 1514,
+    "Name": "Dai Le & Frank Carbone Network",
+    "Code": "Frank Carbone",
+    "Abbreviation": "Frank Carbone",
+    "RegisterDate": "8 August 2023",
+    "AmendmentDate": "8 August 2023",
+    "Address": "68A Canley Vale Road\nCANLEY VALE NSW 2166",
+    "Officer": {
+      "Title": "Ms",
+      "FamilyName": "Le MP",
+      "GivenNames": "Dai",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "68A Canley Vale Road",
+        "Suburb": "Canley Vale",
+        "State": "NSW",
+        "Postcode": 2166
       }
     },
     "DeputyOfficers": [],
@@ -1276,7 +1228,21 @@
             "Postcode": 3000
           }
         },
-        "DeputyOfficers": []
+        "DeputyOfficers": [
+          {
+            "Title": "Ms",
+            "FamilyName": "Redfern",
+            "GivenNames": "Felicity",
+            "Capacity": "Deputy Registered Officer",
+            "Address": {
+              "Line1": "Level 12",
+              "Line2": "257 Collins Street",
+              "Suburb": "Melbourne",
+              "State": "VIC",
+              "Postcode": 3000
+            }
+          }
+        ]
       },
       {
         "Id": 188,
@@ -1328,6 +1294,42 @@
     ]
   },
   {
+    "Id": 1505,
+    "Name": "Local Network",
+    "Code": "Local Network",
+    "Abbreviation": "Local Network",
+    "RegisterDate": "9 March 2022",
+    "AmendmentDate": "9 March 2022",
+    "Address": "680 Huon Road\nFERN TREE TAS 7054",
+    "Officer": {
+      "Title": "Ms",
+      "FamilyName": "Middleton",
+      "GivenNames": "Helen Frances",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "680 Huon Road",
+        "Suburb": "FERNTREE",
+        "State": "TAS",
+        "Postcode": 7054
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Schonfeldt",
+        "GivenNames": "Andrew",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "2/17 Lumeah Avenue",
+          "Suburb": "Lenah Valley",
+          "State": "TAS",
+          "Postcode": 7008
+        }
+      }
+    ],
+    "Branches": []
+  },
+  {
     "Id": 1133,
     "Name": "Pauline Hanson's One Nation",
     "Code": "One Nation",
@@ -1354,7 +1356,7 @@
         "Capacity": "Secretary",
         "Address": {
           "Line1": "2/6-12 Boronia Road",
-          "Suburb": "BRISNABE AIRPORT",
+          "Suburb": "Brisbane Airport",
           "State": "QLD",
           "Postcode": 4008
         }
@@ -1371,15 +1373,15 @@
     "AmendmentDate": "30 August 2018",
     "Address": "91 Johnston Street\nCOLLINGWOOD VIC 3066",
     "Officer": {
-      "Title": "Ms",
-      "FamilyName": "Sinclair",
-      "GivenNames": "Emma",
-      "Capacity": "Secretary",
+      "Title": "Mr",
+      "FamilyName": "Thikettle-Watts",
+      "GivenNames": "David Nigel",
+      "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "91 Johnston Street",
-        "Suburb": "Collingwood",
+        "Line1": "2/14 Barry Street",
+        "Suburb": "Reservoir",
         "State": "VIC",
-        "Postcode": 3066
+        "Postcode": 3073
       }
     },
     "DeputyOfficers": [],
@@ -1602,9 +1604,9 @@
     },
     "DeputyOfficers": [
       {
-        "Title": "Ms",
-        "FamilyName": "O'Brien",
-        "GivenNames": "Alexandra",
+        "Title": "Mr",
+        "FamilyName": "Poulter",
+        "GivenNames": "Adam",
         "Capacity": "Deputy Registered Officer",
         "Address": {
           "Line1": "2/18 Lonsdale Street",
@@ -1697,7 +1699,8 @@
           "GivenNames": "Kirsten",
           "Capacity": "Registered Officer",
           "Address": {
-            "Line1": "Suite 4, 47 Park Road",
+            "Line1": "Suite 1A ",
+            "Line2": "47 Park Road",
             "Suburb": "Milton",
             "State": "QLD",
             "Postcode": 4064
@@ -1706,14 +1709,14 @@
         "DeputyOfficers": [
           {
             "Title": "Mr",
-            "FamilyName": "Burness",
-            "GivenNames": "Lyle",
+            "FamilyName": "Clayton",
+            "GivenNames": "Mark",
             "Capacity": "Deputy Registered Officer",
             "Address": {
-              "Line1": "PO Box 1017",
-              "Suburb": "Malanda",
+              "Line1": "PO Box 2335",
+              "Suburb": "Milton",
               "State": "QLD",
-              "Postcode": 4885
+              "Postcode": 4064
             }
           }
         ]
@@ -1741,14 +1744,15 @@
         "DeputyOfficers": [
           {
             "Title": "Ms",
-            "FamilyName": "Blackburn",
-            "GivenNames": "Naomi",
+            "FamilyName": "Wheelock",
+            "GivenNames": "Jessica",
             "Capacity": "Deputy Registered Officer",
             "Address": {
-              "Line1": "GPO Box 4589",
+              "Line1": "Level 1, Suite 50",
+              "Line2": "50 Queen Street",
               "Suburb": "Melbourne",
               "State": "VIC",
-              "Postcode": 3001
+              "Postcode": 3000
             }
           }
         ]
@@ -1837,36 +1841,13 @@
     ]
   },
   {
-    "Id": 1505,
-    "Name": "The Local Party of Australia",
-    "Code": "The Local Party",
-    "Abbreviation": "The Local Party",
-    "RegisterDate": "9 March 2022",
-    "AmendmentDate": "9 March 2022",
-    "Address": "680 Huon Road\nFERN TREE TAS 7054",
-    "Officer": {
-      "Title": "Ms",
-      "FamilyName": "Middleton",
-      "GivenNames": "Helen Frances",
-      "Capacity": "Registered Officer",
-      "Address": {
-        "Line1": "680 Huon Road",
-        "Suburb": "FERNTREE",
-        "State": "TAS",
-        "Postcode": 7054
-      }
-    },
-    "DeputyOfficers": [],
-    "Branches": []
-  },
-  {
     "Id": 20,
     "Name": "National Party of Australia",
     "Code": "NP",
     "Abbreviation": "The Nationals",
     "RegisterDate": "31 May 1984",
     "AmendmentDate": "31 May 1984",
-    "Address": "PO Box 6190\nKINGSTON ACT 2604",
+    "Address": "PO Box 103\nDEAKIN WEST ACT 2600",
     "Officer": {
       "Title": "Mr",
       "FamilyName": "Folo",
@@ -2038,42 +2019,6 @@
           "Suburb": "Reservoir",
           "State": "VIC",
           "Postcode": 3073
-        }
-      }
-    ],
-    "Branches": []
-  },
-  {
-    "Id": 1462,
-    "Name": "WESTERN AUSTRALIA PARTY",
-    "Code": "WESTERN AUSTRALIA PARTY",
-    "Abbreviation": "WESTERN AUSTRALIA PARTY",
-    "RegisterDate": "30 August 2018",
-    "AmendmentDate": "30 August 2018",
-    "Address": "PO Box 120\nFLOREAT WA 6014",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "Fels",
-      "GivenNames": "Anthony James",
-      "Capacity": "Registered Officer",
-      "Address": {
-        "Line1": "82 Belmont Avenue",
-        "Suburb": "Rivervale",
-        "State": "WA",
-        "Postcode": 6103
-      }
-    },
-    "DeputyOfficers": [
-      {
-        "Title": "Mr",
-        "FamilyName": "Phelan",
-        "GivenNames": "Stephen",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "4 Prospect Crescent",
-          "Suburb": "Kalamunda",
-          "State": "WA",
-          "Postcode": 6076
         }
       }
     ],
