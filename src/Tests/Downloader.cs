@@ -19,7 +19,19 @@ static class Downloader
     {
         try
         {
-            await InnerDownload(targetPath, requestUri);
+            for (var i = 0; i < 10; i++)
+            {
+                try
+                {
+                    await InnerDownload(targetPath, requestUri);
+                    return;
+                }
+                catch
+                {
+                    await Task.Delay(1000);
+                    File.Delete(targetPath);
+                }
+            }
         }
         catch (Exception exception)
         {
