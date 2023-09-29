@@ -128,18 +128,18 @@ Sample:
     "Abbreviation": "AJP",
     "RegisterDate": "3 May 2011",
     "AmendmentDate": "3 May 2011",
-    "Address": "PO Box Q1688\nQUEEN VICTORIA BUILDING NSW 1230",
+    "Address": "Ground Floor\n470 St Kilda Rd\nMELBOURNE VIC 3004",
     "Officer": {
       "Title": "Mr",
       "FamilyName": "Cheung",
       "GivenNames": "William",
       "Capacity": "Party Agent, Secretary & Registered Officer",
       "Address": {
-        "Line1": "Level 5",
-        "Line2": "13/35 Buckingham Street",
-        "Suburb": "Surry Hills",
-        "State": "NSW",
-        "Postcode": 2010
+        "Line1": "Ground Floor",
+        "Line2": "470 St Kilda Road",
+        "Suburb": "Melbourne",
+        "State": "VIC",
+        "Postcode": 3004
       }
     },
     "DeputyOfficers": [
