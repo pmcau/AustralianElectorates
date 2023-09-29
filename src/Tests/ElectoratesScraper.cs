@@ -125,7 +125,10 @@ static class ElectoratesScraper
     static string FindMapUrl(Dictionary<string, HtmlNode> values)
     {
         var mapsNode = FindMapsNode(values);
-        return mapsNode.ChildNodes.FindFirst("a").Attributes["href"].Value;
+        return mapsNode.ChildNodes
+            .FindFirst("a")
+            .Attributes["href"].Value
+            .Replace("http://", "https://");
     }
 
     static HtmlNode FindMapsNode(Dictionary<string, HtmlNode> values)
