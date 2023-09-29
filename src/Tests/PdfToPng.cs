@@ -2,10 +2,6 @@
 
 public static class PdfToPng
 {
-    // Change as needed if not in local path
-    const string pngquantPath = @"C:\Tools\pngquant";
-    const string ghostScriptPath = @"C:\Program Files\gs\gs9.55.0\bin";
-
     public static async Task<string> Convert(string pdf)
     {
         var tempPng1 = pdf.Replace(".pdf", "_temp1.png");
@@ -56,7 +52,6 @@ public static class PdfToPng
         };
         pngquant.AppendArguments("--force","--verbose", "--ordered", "--speed=1","--skip-if-larger","--quality=50-70", tempPng, "--output", png);
 
-        EnvironmentHelpers.AppendToPath(pngquantPath);
         using var process = Process.Start(pngquant)!;
         await process.WaitForExitAsync();
         //skip-if-larger can result in 98 "not saved"
@@ -81,8 +76,6 @@ public static class PdfToPng
             CreateNoWindow = true
         };
         gswin64.AppendArguments("-dNoCancel", "-sDEVICE=png16m", "-dBATCH", "-r300", "-dNOPAUSE", "-dDownScaleFactor=2", "-q", $"-sOutputFile={tempPng}", pdf);
-
-        EnvironmentHelpers.AppendToPath(ghostScriptPath);
         using var process = Process.Start(gswin64)!;
         await process.WaitForExitAsync();
     }
