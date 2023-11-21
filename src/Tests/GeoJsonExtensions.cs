@@ -12,9 +12,9 @@ static class GeoJsonExtensions
     public static FeatureCollection FeaturesCollectionForState(this FeatureCollection featureCollection, List<string> electorates)
     {
         var features = featureCollection.Features
-            .Where(x =>
+            .Where(_ =>
             {
-                var electorate  = (string) x.Properties["electorateShortName"];
+                var electorate  = (string) _.Properties["electorateShortName"];
                 return electorates.Contains(electorate);
             })
             .ToList();
