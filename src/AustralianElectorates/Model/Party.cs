@@ -18,8 +18,8 @@ class Party :
     public string AmendmentDate { get; set; } = null!;
     public string Address { get; set; } = null!;
     public IOfficer Officer { get; set; } = null!;
-    public IReadOnlyList<IOfficer> DeputyOfficers { get; set; } = Array.Empty<IOfficer>();
-    public IReadOnlyList<IBranch> Branches { get; set; } = Array.Empty<IBranch>();
+    public IReadOnlyList<IOfficer> DeputyOfficers { get; set; } = [];
+    public IReadOnlyList<IBranch> Branches { get; set; } = [];
     public override string ToString() =>
         $"{Name} ({Code})";
 }

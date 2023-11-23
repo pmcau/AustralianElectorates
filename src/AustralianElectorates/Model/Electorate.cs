@@ -43,7 +43,7 @@ class Electorate :
     public uint? Enrollment { get; set; }
     public ITwoCandidatePreferred? TwoCandidatePreferred { get; set; }
     public IPartyOrBranch? CurrentParty { get; set; } = null!;
-    public IReadOnlyList<ILocation> Locations { get; set; } = Array.Empty<ILocation>();
+    public IReadOnlyList<ILocation> Locations { get; set; } = [];
 
     public static string GetShortName(string name)
     {
