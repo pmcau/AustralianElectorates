@@ -45,8 +45,8 @@ public class Detail
     public string DeputyOfficerNames { get; set; }
 
     [JsonProperty("deputyOfficers")]
-    public Officer[] DeputyOfficers { get; set; } = Array.Empty<Officer>();
+    public Officer[] DeputyOfficers { get; set; } = [];
 
     [JsonProperty("branches", NullValueHandling = NullValueHandling.Ignore)]
-    public Branch[] Branches { get; set; } = Array.Empty<Branch>();
+    public Branch[] Branches { get; set; } = [];
 }
