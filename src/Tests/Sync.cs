@@ -150,8 +150,8 @@ public class Sync
         {State.WA, new()},
     };
 
-    static List<State> states = new()
-    {
+    static List<State> states =
+    [
         State.ACT,
         State.TAS,
         State.SA,
@@ -159,12 +159,10 @@ public class Sync
         State.QLD,
         State.NT,
         State.NSW,
-        State.WA,
-    };
+        State.WA
+    ];
 
-    static Sync() =>
-        percents = new()
-            {20, 10, 5, 1};
+    static Sync() => percents = [20, 10, 5, 1];
 
     static async Task ProcessYear(string yearPath, List<string> electorates, Dictionary<State,List<string>> electorateToStateMap)
     {

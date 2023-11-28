@@ -72,8 +72,8 @@ public static partial class DataLoader
 
         #region elections
 
-        return new()
-        {
+        return
+        [
             new()
             {
                 Parliament = 45,
@@ -81,6 +81,7 @@ public static partial class DataLoader
                 Date = new(2016, 07, 02, 0, 0, 0),
                 Electorates = Electorates.Where(_ => _.Exist2016).ToList()
             },
+
             new()
             {
                 Parliament = 46,
@@ -88,7 +89,7 @@ public static partial class DataLoader
                 Date = new(2019, 05, 18, 0, 0, 0),
                 Electorates = Electorates.Where(_ => _.Exist2019).ToList()
             }
-        };
+        ];
 
         #endregion
     }

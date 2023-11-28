@@ -18,13 +18,12 @@ public class GeoJsonExtensionsTests
     }
 
     public List<Feature> BuildFeatures(params Position[] positions) =>
-        new()
-        {
-            new(
-                new Polygon(
-                    new List<LineString>
-                    {
-                        new(positions)
-                    }))
-        };
+    [
+        new(
+            new Polygon(
+                new List<LineString>
+                {
+                    new(positions)
+                }))
+    ];
 }
