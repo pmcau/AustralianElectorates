@@ -373,8 +373,8 @@ Elections are currently added manually as they are declared.
 <!-- snippet: elections -->
 <a id='snippet-elections'></a>
 ```cs
-return new()
-{
+return
+[
     new()
     {
         Parliament = 45,
@@ -382,6 +382,7 @@ return new()
         Date = new(2016, 07, 02, 0, 0, 0),
         Electorates = Electorates.Where(_ => _.Exist2016).ToList()
     },
+
     new()
     {
         Parliament = 46,
@@ -389,9 +390,9 @@ return new()
         Date = new(2019, 05, 18, 0, 0, 0),
         Electorates = Electorates.Where(_ => _.Exist2019).ToList()
     }
-};
+];
 ```
-<sup><a href='/src/AustralianElectorates/DataLoader.cs#L73-L93' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/AustralianElectorates/DataLoader.cs#L73-L94' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
