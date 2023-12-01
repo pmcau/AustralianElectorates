@@ -10,7 +10,7 @@ public interface IElectorate
     bool Exist2019 { get; }
     bool Exist2022 { get; }
     //bool ExistInFuture { get; }
-    DateTime? DateGazetted { get; }
+    Date? DateGazetted { get; }
     string Description { get; }
     string DemographicRating { get; }
     string NameDerivation { get; }
@@ -36,7 +36,7 @@ class Electorate :
     public bool Exist2019 { get; set; }
     public bool Exist2022 { get; set; }
     //public bool ExistInFuture { get; set; }
-    public DateTime? DateGazetted { get; set; }
+    public Date? DateGazetted { get; set; }
     public string Description { get; set; } = null!;
     public string DemographicRating { get; set; } = null!;
     public string NameDerivation { get; set; } = null!;

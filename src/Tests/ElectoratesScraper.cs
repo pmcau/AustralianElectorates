@@ -55,7 +55,7 @@ static class ElectoratesScraper
 
             if (values.TryGetValue("Date this name and boundary was gazetted", out var gazettedHtml))
             {
-                electorate.DateGazetted = DateTime.ParseExact(gazettedHtml.InnerText, "d MMMM yyyy", null);
+                electorate.DateGazetted = Date.ParseExact(gazettedHtml.InnerText, "d MMMM yyyy", null);
             }
 
             var contest = MediaFeedService.HouseOfReps.Contests.SingleOrDefault(_ => _.ContestIdentifier.ContestName == fullName);

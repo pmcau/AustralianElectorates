@@ -2,7 +2,7 @@
   {
     Parliament: 45,
     Year: 2016,
-    Date: DateTime_1,
+    Date: Date_1,
     electorates: [
       Canberra,
       Fenner,
@@ -159,7 +159,7 @@
   {
     Parliament: 46,
     Year: 2019,
-    Date: DateTime_2,
+    Date: Date_2,
     electorates: [
       Bean,
       Canberra,
