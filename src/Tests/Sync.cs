@@ -8,9 +8,9 @@ public class Sync
     static List<int> percents;
 
     //static List<string> electoratesFuture = new();
-    static List<string> electorates2016 = new();
-    static List<string> electorates2019 = new();
-    static List<string> electorates2022 = new();
+    static List<string> electorates2016 = [];
+    static List<string> electorates2019 = [];
+    static List<string> electorates2022 = [];
     [Fact]
     [Trait("Category", "Integration")]
     public async Task SyncData()
@@ -72,7 +72,7 @@ public class Sync
             {
                 if (!dictionary.TryGetValue(location.Postcode, out var list))
                 {
-                    dictionary[location.Postcode] = list = new();
+                    dictionary[location.Postcode] = list = [];
                 }
 
                 list.Add(electorate.Name);
@@ -87,7 +87,7 @@ public class Sync
         var electorateToStateMap = new Dictionary<State, List<string>>();
         foreach (var state in states)
         {
-            electorateToStateMap[state] = new();
+            electorateToStateMap[state] = [];
         }
         electorateToStateMap[State.VIC].Add("hawke");
         var stateToElectorateFile = Path.Combine(DataLocations.DataPath, "state_to_electorate.txt");
@@ -95,7 +95,7 @@ public class Sync
         {
             var indexOf = line.IndexOf(":");
 
-            var statePart = line.Substring(0, indexOf);
+            var statePart = line[..indexOf];
             var state = Enum.Parse<State>(statePart);
             var electorate = line.Substring(indexOf+1, line.Length - indexOf - 1);
             var list = electorateToStateMap[state];

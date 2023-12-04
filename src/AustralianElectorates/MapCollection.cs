@@ -6,7 +6,7 @@ public class MapCollection
 {
     string prefix;
     ConcurrentDictionary<string, IElectorateMap> electoratesCache = new(StringComparer.OrdinalIgnoreCase);
-    ConcurrentDictionary<State, IStateMap> statesCache = new();
+    ConcurrentDictionary<State, IStateMap> statesCache = [];
     string? australia;
     static Assembly assembly;
 

@@ -140,7 +140,7 @@ static class PartyScraper
     {
         if (detail == null)
         {
-            return new();
+            return [];
         }
         return detail.Select(ToOfficer).ToList();
     }

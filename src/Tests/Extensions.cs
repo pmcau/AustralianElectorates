@@ -79,7 +79,7 @@ static class Extensions
             previousIndex = index;
             index = str.IndexOf(oldValue, index, StringComparison.OrdinalIgnoreCase);
         }
-        stringBuilder.Append(str.Substring(previousIndex));
+        stringBuilder.Append(str[previousIndex..]);
 
         return stringBuilder.ToString();
     }

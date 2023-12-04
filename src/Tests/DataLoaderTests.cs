@@ -109,21 +109,21 @@ public class DataLoaderTests
     public Task Get2016State()
     {
         var data = DataLoader.Maps2016.GetState(State.ACT);
-        return Verify(data.GeoJson.Substring(0, 200));
+        return Verify(data.GeoJson[..200]);
     }
 
     [Fact]
     public Task Get2019State()
     {
         var data = DataLoader.Maps2019.GetState(State.ACT);
-        return Verify(data.GeoJson.Substring(0, 200));
+        return Verify(data.GeoJson[..200]);
     }
 
     [Fact]
     public Task Get2022State()
     {
         var data = DataLoader.Maps2022.GetState(State.ACT);
-        return Verify(data.GeoJson.Substring(0, 200));
+        return Verify(data.GeoJson[..200]);
     }
 
     // [Fact]
@@ -137,14 +137,14 @@ public class DataLoaderTests
     public Task Get2016Electorate()
     {
         var data = DataLoader.Maps2016.GetElectorate("fenner");
-        return Verify(data.GeoJson.Substring(0, 200));
+        return Verify(data.GeoJson[..200]);
     }
 
     [Fact]
     public Task Get2019Electorate()
     {
         var data = DataLoader.Maps2019.GetElectorate("fenner");
-        return Verify(data.GeoJson.Substring(0, 200));
+        return Verify(data.GeoJson[..200]);
     }
 
     [Fact]

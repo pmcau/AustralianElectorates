@@ -35,7 +35,7 @@ public class ElectorateToLgaMap
 
         foreach (var electorate in electorates)
         {
-            electorateToLga[electorate.Name] = new();
+            electorateToLga[electorate.Name] = [];
         }
 
         while (shapeFileDataReader.Read())
