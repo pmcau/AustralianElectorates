@@ -93,7 +93,7 @@ public class Sync
         var stateToElectorateFile = Path.Combine(DataLocations.DataPath, "state_to_electorate.txt");
         foreach (var line in File.ReadAllLines(stateToElectorateFile))
         {
-            var indexOf = line.IndexOf(":");
+            var indexOf = line.IndexOf(':');
 
             var statePart = line[..indexOf];
             var state = Enum.Parse<State>(statePart);

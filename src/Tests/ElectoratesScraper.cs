@@ -172,7 +172,7 @@ static class ElectoratesScraper
     static string TrimState(string caseless)
     {
         var strings = caseless
-            .Split(new[] {" ("}, StringSplitOptions.None);
+            .Split([" ("], StringSplitOptions.None);
         var fullName = strings[0];
         Assert.NotEmpty(fullName);
         return fullName;

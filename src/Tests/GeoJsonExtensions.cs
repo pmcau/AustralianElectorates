@@ -61,6 +61,6 @@ static class GeoJsonExtensions
             ymin = Math.Min(position.Latitude, ymin);
         }
 
-        return new[] {xmin, ymin, xmax, ymax};
+        return [xmin, ymin, xmax, ymax];
     }
 }
