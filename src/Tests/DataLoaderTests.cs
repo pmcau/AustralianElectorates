@@ -46,11 +46,23 @@ public class DataLoaderTests
     [Fact]
     public Task NewRemoved()
     {
-        var electorates2019 = DataLoader.Electorates.Where(_ => _.Exist2019).ToArray();
-        var electorates2022 = DataLoader.Electorates.Where(_ => _.Exist2022).ToArray();
-        var removed = electorates2019.Where(_ => !electorates2022.Contains(_)).Select(_ => _.Name);
-        var added = electorates2022.Where(_ => !electorates2019.Contains(_)).Select(_ => _.Name);
-        return Verify(new{added, removed});
+        var electorates2019 = DataLoader
+            .Electorates.Where(_ => _.Exist2019)
+            .ToArray();
+        var electorates2022 = DataLoader
+            .Electorates.Where(_ => _.Exist2022)
+            .ToArray();
+        var removed = electorates2019
+            .Where(_ => !electorates2022.Contains(_))
+            .Select(_ => _.Name);
+        var added = electorates2022
+            .Where(_ => !electorates2019.Contains(_))
+            .Select(_ => _.Name);
+        return Verify(new
+        {
+            added,
+            removed
+        });
     }
 
     [Fact]
@@ -97,7 +109,9 @@ public class DataLoaderTests
             }
 
             await DataLoader.Export(directory);
-            await Verify(Directory.EnumerateFiles(directory, "*.*", SearchOption.AllDirectories).Count());
+            await Verify(Directory
+                .EnumerateFiles(directory, "*.*", SearchOption.AllDirectories)
+                .Count());
         }
         finally
         {
@@ -188,7 +202,7 @@ public class DataLoaderTests
             LoadedElectorateMaps2019 = DataLoader.Maps2019.LoadedElectorates.Count,
             LoadedStateMaps2019 = DataLoader.Maps2019.LoadedStates.Count,
             LoadedElectorateMaps2022 = DataLoader.Maps2022.LoadedElectorates.Count,
-            LoadedStateMaps2022 = DataLoader.Maps2022.LoadedStates.Count,
+            LoadedStateMaps2022 = DataLoader.Maps2022.LoadedStates.Count
         });
     }
 

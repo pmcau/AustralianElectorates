@@ -22,7 +22,8 @@ public partial class ElectorateDataSet : DataSet
     }
 
     public string Name() =>
-        Electorate().Name;
+        Electorate()
+            .Name;
 
     public IEnumerable<IElectorate> Electorate(int num = 1)
     {

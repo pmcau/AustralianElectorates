@@ -6,12 +6,18 @@
     public static Task ConvertShape(string targetFile, string shpFile, int? percent = null)
     {
         //mapshaper C:\Code\AustralianElectorates\Data\ElectoratesByState\act.geojson -simplify dp 20% -o format=geojson C:\Code\AustralianElectorates\Data\ElectoratesByState\temp.json
-        var arguments = new List<string> {"/C", "mapshaper", shpFile};
+        var arguments = new List<string>
+        {
+            "/C",
+            "mapshaper",
+            shpFile
+        };
         if (percent != null)
         {
             arguments.Add("-simplify");
             arguments.Add($"{percent}%");
         }
+
         arguments.Add("-o");
         arguments.Add("format=geojson");
         arguments.Add(targetFile);

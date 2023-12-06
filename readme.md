@@ -282,7 +282,7 @@ var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
 Directory.CreateDirectory(directory);
 return DataLoader.Export(directory);
 ```
-<sup><a href='/src/Tests/Snippets.cs#L12-L49' title='Snippet source file'>snippet source</a> | <a href='#snippet-usage' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L12-L51' title='Snippet source file'>snippet source</a> | <a href='#snippet-usage' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -294,13 +294,17 @@ return DataLoader.Export(directory);
 var faker = new Faker<Target>()
     .RuleFor(
         property: u => u.RandomElectorate,
-        setter: (f, _) => f.AustralianElectorates().Electorate())
+        setter: (f, _) => f
+            .AustralianElectorates()
+            .Electorate())
     .RuleFor(
         property: u => u.RandomElectorateName,
-        setter: (f, _) => f.AustralianElectorates().Name());
+        setter: (f, _) => f
+            .AustralianElectorates()
+            .Name());
 var targetInstance = faker.Generate();
 ```
-<sup><a href='/src/Tests/Snippets.cs#L75-L85' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagebogus' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L85-L100' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagebogus' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -311,7 +315,7 @@ var targetInstance = faker.Generate();
 ```cs
 var pathToPng = DetailMaps.MapForElectorate("Bass");
 ```
-<sup><a href='/src/Tests/Snippets.cs#L55-L57' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagedetailmaps' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L57-L61' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagedetailmaps' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -380,7 +384,9 @@ return
         Parliament = 45,
         Year = 2016,
         Date = new(2016, 07, 02),
-        Electorates = Electorates.Where(_ => _.Exist2016).ToList()
+        Electorates = Electorates
+            .Where(_ => _.Exist2016)
+            .ToList()
     },
 
     new()
@@ -388,11 +394,13 @@ return
         Parliament = 46,
         Year = 2019,
         Date = new(2019, 05, 18),
-        Electorates = Electorates.Where(_ => _.Exist2019).ToList()
+        Electorates = Electorates
+            .Where(_ => _.Exist2019)
+            .ToList()
     }
 ];
 ```
-<sup><a href='/src/AustralianElectorates/DataLoader.cs#L73-L94' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/AustralianElectorates/DataLoader.cs#L73-L98' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 

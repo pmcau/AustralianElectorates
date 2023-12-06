@@ -16,6 +16,7 @@ class Election :
     public int Year { get; set; }
     public Date Date { get; set; }
     public IReadOnlyList<IElectorate> Electorates { get; set; } = null!;
+
     public override string ToString() =>
         $"{Parliament} ({Year})";
 }

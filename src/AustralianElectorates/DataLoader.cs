@@ -79,7 +79,9 @@ public static partial class DataLoader
                 Parliament = 45,
                 Year = 2016,
                 Date = new(2016, 07, 02),
-                Electorates = Electorates.Where(_ => _.Exist2016).ToList()
+                Electorates = Electorates
+                    .Where(_ => _.Exist2016)
+                    .ToList()
             },
 
             new()
@@ -87,7 +89,9 @@ public static partial class DataLoader
                 Parliament = 46,
                 Year = 2019,
                 Date = new(2019, 05, 18),
-                Electorates = Electorates.Where(_ => _.Exist2019).ToList()
+                Electorates = Electorates
+                    .Where(_ => _.Exist2019)
+                    .ToList()
             }
         ];
 
@@ -154,7 +158,8 @@ public static partial class DataLoader
 
     public static void ValidateElectorates(IEnumerable<string> names)
     {
-        var missing = FindInvalidateElectorates(names).ToList();
+        var missing = FindInvalidateElectorates(names)
+            .ToList();
         if (missing.Any())
         {
             throw new ElectoratesNotFoundException(missing);
@@ -163,7 +168,8 @@ public static partial class DataLoader
 
     public static bool TryFindInvalidateElectorates(IEnumerable<string> names, out List<string> invalid)
     {
-        invalid = FindInvalidateElectorates(names).ToList();
+        invalid = FindInvalidateElectorates(names)
+            .ToList();
         return invalid.Any();
     }
 
@@ -232,6 +238,7 @@ public static partial class DataLoader
         {
             return Maps2022.GetElectorate(name);
         }
+
         if (electorate.Exist2019)
         {
             return Maps2019.GetElectorate(name);

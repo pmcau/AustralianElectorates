@@ -9,6 +9,7 @@ static class Extensions
             info.ArgumentList.Add(argument);
         }
     }
+
     public static void AppendArguments(this ProcessStartInfo info, params string[] arguments)
     {
         foreach (var argument in arguments)
@@ -16,9 +17,12 @@ static class Extensions
             info.ArgumentList.Add(argument);
         }
     }
+
     public static List<string> Headings(this HtmlDocument document) =>
-        document.DocumentNode.Descendants("h1")
-            .Select(_ => _.InnerText).ToList();
+        document
+            .DocumentNode.Descendants("h1")
+            .Select(_ => _.InnerText)
+            .ToList();
 
     public static bool TryGetKey(this Dictionary<string, string> document, string value, out string key)
     {
@@ -53,11 +57,13 @@ static class Extensions
                 lowerNext = false;
                 continue;
             }
+
             if (char.IsLower(ch))
             {
                 lowerNext = false;
                 continue;
             }
+
             lowerNext = true;
         }
 
@@ -79,6 +85,7 @@ static class Extensions
             previousIndex = index;
             index = str.IndexOf(oldValue, index, StringComparison.OrdinalIgnoreCase);
         }
+
         stringBuilder.Append(str[previousIndex..]);
 
         return stringBuilder.ToString();

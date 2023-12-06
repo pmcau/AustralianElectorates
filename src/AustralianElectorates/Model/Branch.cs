@@ -1,6 +1,6 @@
 ﻿namespace AustralianElectorates;
 
-public interface IBranch:
+public interface IBranch :
     IPartyOrBranch
 {
     IParty Party { get; }
@@ -20,6 +20,7 @@ class Branch :
     public IOfficer Officer { get; set; } = null!;
     public IReadOnlyList<IOfficer> DeputyOfficers { get; set; } = null!;
     public IParty Party { get; set; } = null!;
+
     public override string ToString() =>
         $"{Name} ({Code})";
 }

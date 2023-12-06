@@ -14,6 +14,7 @@ class Location :
     public int Postcode { get; set; }
     public IElectorate Electorate { get; set; } = null!;
     public IReadOnlyList<string> Localities { get; set; } = null!;
+
     public override string ToString() =>
         Postcode.ToString();
 }

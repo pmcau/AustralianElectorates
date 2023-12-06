@@ -5,7 +5,9 @@ static class MetadataCleaner
 {
     public static void CleanMetadata(FeatureCollection featureCollection, State? state = null)
     {
-        if (!featureCollection.Features.First().Properties.ContainsKey("Elect_div"))
+        if (!featureCollection
+                .Features.First()
+                .Properties.ContainsKey("Elect_div"))
         {
             return;
         }

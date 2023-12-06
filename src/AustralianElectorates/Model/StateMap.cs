@@ -11,6 +11,7 @@ class StateMap :
 {
     public State State { get; set; }
     public string GeoJson { get; set; } = null!;
+
     public override string ToString() =>
         $"{State} Map";
 }

@@ -7,6 +7,7 @@
             throw new ArgumentNullException(argumentName);
         }
     }
+
     public static void AgainstWhiteSpace(string argumentName, string value)
     {
         if (string.IsNullOrWhiteSpace(value))

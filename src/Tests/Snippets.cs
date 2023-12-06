@@ -10,6 +10,7 @@ public class Snippets
     public Task Foo()
     {
         #region usage
+
         // get an electorate by name
         var fenner = DataLoader.Fenner;
         Debug.WriteLine(fenner.Description);
@@ -46,6 +47,7 @@ public class Snippets
         var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
         Directory.CreateDirectory(directory);
         return DataLoader.Export(directory);
+
         #endregion
     }
 
@@ -53,21 +55,29 @@ public class Snippets
     public void DetailMapsUsage()
     {
         #region usageDetailMaps
+
         var pathToPng = DetailMaps.MapForElectorate("Bass");
+
         #endregion
     }
 
     [Fact]
     public Task ElectoratesSampleJson() =>
-        Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.ElectoratesJsonPath).Take(50)));
+        Verify(string.Join(Environment.NewLine, File
+            .ReadAllLines(DataLocations.ElectoratesJsonPath)
+            .Take(50)));
 
     [Fact]
     public Task LocalitiesSampleJson() =>
-        Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.LocalitiesPath).Take(21)));
+        Verify(string.Join(Environment.NewLine, File
+            .ReadAllLines(DataLocations.LocalitiesPath)
+            .Take(21)));
 
     [Fact]
     public Task PartiesSampleJson() =>
-        Verify(string.Join(Environment.NewLine, File.ReadAllLines(DataLocations.PartiesJsonPath).Take(34)));
+        Verify(string.Join(Environment.NewLine, File
+            .ReadAllLines(DataLocations.PartiesJsonPath)
+            .Take(34)));
 
     [Fact]
     public void Bogus()
@@ -77,11 +87,16 @@ public class Snippets
         var faker = new Faker<Target>()
             .RuleFor(
                 property: u => u.RandomElectorate,
-                setter: (f, _) => f.AustralianElectorates().Electorate())
+                setter: (f, _) => f
+                    .AustralianElectorates()
+                    .Electorate())
             .RuleFor(
                 property: u => u.RandomElectorateName,
-                setter: (f, _) => f.AustralianElectorates().Name());
+                setter: (f, _) => f
+                    .AustralianElectorates()
+                    .Name());
         var targetInstance = faker.Generate();
+
         #endregion
     }
 

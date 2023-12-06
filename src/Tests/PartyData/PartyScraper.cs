@@ -127,7 +127,7 @@ static class PartyScraper
             Id = branch.Id,
             Name = branch.NameOfParty,
             Abbreviation = abbreviation ?? branch.NameOfParty,
-            Code = GetCode(branch.NameOfParty, abbreviation, partyCode,codes),
+            Code = GetCode(branch.NameOfParty, abbreviation, partyCode, codes),
             RegisterDate = branch.PartyRegisterDate,
             AmendmentDate = branch.PartyRegisterDate,
             Address = branch.PostalAddress,
@@ -142,7 +142,10 @@ static class PartyScraper
         {
             return [];
         }
-        return detail.Select(ToOfficer).ToList();
+
+        return detail
+            .Select(ToOfficer)
+            .ToList();
     }
 
     static Officer ToOfficer(AecModels.Officer deputyOfficer) =>
@@ -158,14 +161,15 @@ static class PartyScraper
     static Address? ToAddress(AecModels.Address address)
     {
         if (address.Line1 == null &&
-            address.Line2 == null  &&
-            address.Line3 == null  &&
-            address.State == null  &&
-            address.Postcode == null  &&
+            address.Line2 == null &&
+            address.Line3 == null &&
+            address.State == null &&
+            address.Postcode == null &&
             address.Suburb == null)
         {
             return null;
         }
+
         var line1 = address.Line1;
         if (string.IsNullOrWhiteSpace(line1))
         {
@@ -192,20 +196,22 @@ static class PartyScraper
             Line1 = line1,
             Line2 = line2,
             Line3 = line3,
-            Postcode =  Convert.ToInt32(address.Postcode),
-            Suburb = FixSuburbCase(address,address.Postcode!),
+            Postcode = Convert.ToInt32(address.Postcode),
+            Suburb = FixSuburbCase(address, address.Postcode!)
         };
     }
 
     static string FixSuburbCase(AecModels.Address deputyOfficerAddress, string postcode)
     {
-        var suburbs = AustraliaData.PostCodes.Single(_ => _.Key == postcode).Value;
+        var suburbs = AustraliaData.PostCodes.Single(_ => _.Key == postcode)
+            .Value;
         var suburb = deputyOfficerAddress.Suburb.Trim();
         var place = suburbs.SingleOrDefault(_ => string.Equals(_.Name, suburb, StringComparison.OrdinalIgnoreCase));
         if (place == null)
         {
             return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(suburb);
         }
+
         return place.Name!;
     }
 }

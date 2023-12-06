@@ -7,7 +7,7 @@ public static class PortraitDetailMaps
 
     public static string MapForElectorate(string name)
     {
-        Guard.AgainstWhiteSpace(nameof(name),name);
+        Guard.AgainstWhiteSpace(nameof(name), name);
         return MapForElectorate(DataLoader.FindElectorate(name));
     }
 

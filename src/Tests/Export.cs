@@ -29,10 +29,17 @@
 
     static IEnumerable<FileInfo> FileInfos(string directory, int electoratesSize)
     {
-        foreach (var group in Directory.EnumerateFiles(directory).GroupBy(Prefix))
+        foreach (var group in Directory
+                     .EnumerateFiles(directory)
+                     .GroupBy(Prefix))
         {
-            var fileInfos = group.Select(_ => new FileInfo(_)).OrderByDescending(_ => _.Length).ToList();
-            var firstOrDefault = fileInfos.SkipWhile(_ => _.Length > electoratesSize).FirstOrDefault();
+            var fileInfos = group
+                .Select(_ => new FileInfo(_))
+                .OrderByDescending(_ => _.Length)
+                .ToList();
+            var firstOrDefault = fileInfos
+                .SkipWhile(_ => _.Length > electoratesSize)
+                .FirstOrDefault();
             if (firstOrDefault == null)
             {
                 yield return fileInfos.Last();
@@ -45,5 +52,7 @@
     }
 
     static string Prefix(string x) =>
-        Path.GetFileNameWithoutExtension(x).Split('_')[0];
+        Path
+            .GetFileNameWithoutExtension(x)
+            .Split('_')[0];
 }

@@ -20,7 +20,8 @@ public static class DetailMaps
             !x.Contains(".landscape.") &&
             !x.Contains(".portrait.");
 
-        return System.IO.Directory.EnumerateFiles(Directory)
+        return System
+            .IO.Directory.EnumerateFiles(Directory)
             .Where(Predicate);
     }
 
