@@ -1,4 +1,3 @@
-
 // ReSharper disable IdentifierTypo
 // ReSharper disable RedundantDefaultMemberInitializer
 
@@ -6,10 +5,8 @@ namespace AustralianElectorates;
 
 public static partial class DataLoader
 {
-
     static void InitNamed()
     {
-
         Bean = Electorates.Single(_ => _.Name == "Bean");
 
         Canberra = Electorates.Single(_ => _.Name == "Canberra");

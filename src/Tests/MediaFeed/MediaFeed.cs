@@ -1,5 +1,6 @@
 ﻿#nullable disable
 using System.Xml.Serialization;
+
 // ReSharper disable RedundantAttributeSuffix
 
 [Serializable]

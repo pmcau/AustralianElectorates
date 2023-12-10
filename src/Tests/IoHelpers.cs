@@ -38,5 +38,7 @@
     }
 
     public static string FindFile(string directory, string extension) =>
-        Directory.EnumerateFiles(directory, $"*.{extension}", SearchOption.AllDirectories).Single();
+        Directory
+            .EnumerateFiles(directory, $"*.{extension}", SearchOption.AllDirectories)
+            .Single();
 }

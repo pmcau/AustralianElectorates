@@ -50,7 +50,7 @@ public static class PdfToPng
             RedirectStandardError = true,
             CreateNoWindow = true
         };
-        pngquant.AppendArguments("--force","--verbose", "--ordered", "--speed=1","--skip-if-larger","--quality=50-70", tempPng, "--output", png);
+        pngquant.AppendArguments("--force", "--verbose", "--ordered", "--speed=1", "--skip-if-larger", "--quality=50-70", tempPng, "--output", png);
 
         using var process = Process.Start(pngquant)!;
         await process.WaitForExitAsync();

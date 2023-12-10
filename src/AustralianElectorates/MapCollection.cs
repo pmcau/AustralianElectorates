@@ -6,7 +6,7 @@ public class MapCollection
 {
     string prefix;
     ConcurrentDictionary<string, IElectorateMap> electoratesCache = new(StringComparer.OrdinalIgnoreCase);
-    ConcurrentDictionary<State, IStateMap> statesCache = new();
+    ConcurrentDictionary<State, IStateMap> statesCache = [];
     string? australia;
     static Assembly assembly;
 
@@ -22,11 +22,11 @@ public class MapCollection
     public IElectorateMap GetElectorate(string electorateName)
     {
         Guard.AgainstWhiteSpace(electorateName, nameof(electorateName));
-        return GetElectorateInner(Electorate.GetShortName(electorateName),electorateName);
+        return GetElectorateInner(Electorate.GetShortName(electorateName), electorateName);
     }
 
     public IElectorateMap GetElectorate(IElectorate electorate) =>
-        GetElectorateInner(electorate.ShortName,electorate.Name);
+        GetElectorateInner(electorate.ShortName, electorate.Name);
 
     IElectorateMap GetElectorateInner(string electorateShortName, string electorateName) =>
         electoratesCache.GetOrAdd($@"{prefix}\Electorates\{electorateShortName}",
@@ -38,6 +38,7 @@ public class MapCollection
                 {
                     throw new($"Unable to find electorate named '{electorateName}'.");
                 }
+
                 return new ElectorateMap
                 {
                     Electorate = electorate,
@@ -90,7 +91,9 @@ public class MapCollection
         using var archive = new ZipArchive(stream);
         foreach (var entry in archive.Entries.Where(_ => _.FullName.StartsWith(prefix)))
         {
-            var key = entry.FullName.Split('.').First();
+            var key = entry
+                .FullName.Split('.')
+                .First();
             var mapString = entry.ReadString();
 
             if (key.Contains("Electorates"))
@@ -121,5 +124,6 @@ public class MapCollection
     }
 
     static State ParseState(string key) =>
-        (State) Enum.Parse(typeof(State), key.Split('\\')[1], true);
+        (State) Enum.Parse(typeof(State), key
+            .Split('\\')[1], true);
 }

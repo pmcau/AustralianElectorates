@@ -12,6 +12,7 @@ static class ElectoratesScraper
         {
             return Scrape2016Electorate(shortName, state);
         }
+
         return ScrapeElectorate(shortName, state, requestUri, "Profile of the electoral division of ");
     }
 
@@ -43,7 +44,10 @@ static class ElectoratesScraper
             foreach (var keyNode in htmlNodeCollection)
             {
                 var valueNode = keyNode.NextSibling.NextSibling;
-                values[keyNode.InnerText.Trim().Trim(':').Replace("  ", " ")] = valueNode;
+                values[keyNode
+                    .InnerText.Trim()
+                    .Trim(':')
+                    .Replace("  ", " ")] = valueNode;
             }
 
             var electorate = new ElectorateEx
@@ -55,7 +59,7 @@ static class ElectoratesScraper
 
             if (values.TryGetValue("Date this name and boundary was gazetted", out var gazettedHtml))
             {
-                electorate.DateGazetted = DateTime.ParseExact(gazettedHtml.InnerText, "d MMMM yyyy", null);
+                electorate.DateGazetted = Date.ParseExact(gazettedHtml.InnerText, "d MMMM yyyy", null);
             }
 
             var contest = MediaFeedService.HouseOfReps.Contests.SingleOrDefault(_ => _.ContestIdentifier.ContestName == fullName);
@@ -79,7 +83,7 @@ static class ElectoratesScraper
                         PartyCode = affiliationIdentifier?.ShortCode,
                         PartyId = affiliationIdentifier?.Id,
                         Votes = electedCandidate.Votes.Value,
-                        Swing = electedCandidate.Votes.Swing,
+                        Swing = electedCandidate.Votes.Swing
                     },
                     Other = new Candidate
                     {
@@ -88,17 +92,19 @@ static class ElectoratesScraper
                         PartyCode = other.AffiliationIdentifier?.ShortCode,
                         PartyId = other.AffiliationIdentifier?.Id,
                         Votes = other.Votes.Value,
-                        Swing = other.Votes.Swing,
+                        Swing = other.Votes.Swing
                     }
                 };
             }
 
-            electorate.DemographicRating = values["Demographic Rating"].TrimmedInnerHtml();
+            electorate.DemographicRating = values["Demographic Rating"]
+                .TrimmedInnerHtml();
 
             var uri = new Uri(new(requestUri), FindMapUrl(values));
             electorate.MapUrl = uri.AbsoluteUri;
 
-            electorate.NameDerivation = values["Name derivation"].TrimmedInnerHtml();
+            electorate.NameDerivation = values["Name derivation"]
+                .TrimmedInnerHtml();
             if (values.TryGetValue("Location Description", out var description))
             {
                 electorate.Description = description.TrimmedInnerHtml();
@@ -111,7 +117,12 @@ static class ElectoratesScraper
 
             if (values.TryGetValue("Area", out var area))
             {
-                electorate.Area = double.Parse(area.InnerHtml.Trim().Replace("&nbsp;", " ").Replace(" ", "").Replace("sqkm", "").Replace(",", ""));
+                electorate.Area = double.Parse(area
+                    .InnerHtml.Trim()
+                    .Replace("&nbsp;", " ")
+                    .Replace(" ", "")
+                    .Replace("sqkm", "")
+                    .Replace(",", ""));
             }
 
             return electorate;
@@ -125,9 +136,11 @@ static class ElectoratesScraper
     static string FindMapUrl(Dictionary<string, HtmlNode> values)
     {
         var mapsNode = FindMapsNode(values);
-        return mapsNode.ChildNodes
+        return mapsNode
+            .ChildNodes
             .FindFirst("a")
-            .Attributes["href"].Value
+            .Attributes["href"]
+            .Value
             .Replace("http://", "https://");
     }
 
@@ -164,7 +177,8 @@ static class ElectoratesScraper
     static string GetFullName(HtmlDocument document, string prefix)
     {
         var headings = document.Headings();
-        var caseless = headings.Single(_ => _.StartsWith(prefix))
+        var caseless = headings
+            .Single(_ => _.StartsWith(prefix))
             .ReplaceCaseless(prefix, "");
         return TrimState(caseless);
     }
@@ -172,7 +186,7 @@ static class ElectoratesScraper
     static string TrimState(string caseless)
     {
         var strings = caseless
-            .Split(new[] {" ("}, StringSplitOptions.None);
+            .Split([" ("], StringSplitOptions.None);
         var fullName = strings[0];
         Assert.NotEmpty(fullName);
         return fullName;
@@ -193,8 +207,10 @@ static class ElectoratesScraper
     static (string familyName, string givenNames) SplitName(string member)
     {
         var memberSplit = member.Split(',');
-        var familyName = memberSplit[0].ToTitleCase();
-        var givenNames = memberSplit[1].Trim();
+        var familyName = memberSplit[0]
+            .ToTitleCase();
+        var givenNames = memberSplit[1]
+            .Trim();
         return (familyName, givenNames);
     }
 

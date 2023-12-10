@@ -8,15 +8,16 @@ public class Sync
     static List<int> percents;
 
     //static List<string> electoratesFuture = new();
-    static List<string> electorates2016 = new();
-    static List<string> electorates2019 = new();
-    static List<string> electorates2022 = new();
+    static List<string> electorates2016 = [];
+    static List<string> electorates2019 = [];
+    static List<string> electorates2022 = [];
+
     [Fact]
     [Trait("Category", "Integration")]
     public async Task SyncData()
     {
         var electorateToStateMap = GetElectorateToStateMap();
-       // Hasher.Clear(DataLocations.DataPath);
+        // Hasher.Clear(DataLocations.DataPath);
         IoHelpers.PurgeDirectory(DataLocations.MapsPath);
         IoHelpers.PurgeDirectory(DataLocations.TempPath);
 
@@ -52,7 +53,7 @@ public class Sync
 
         WriteNamedCs(electorates);
         Export.ExportElectorates();
-       // await Hasher.Create(DataLocations.DataPath);
+        // await Hasher.Create(DataLocations.DataPath);
         Zipper.ZipDir(DataLocations.MapsCuratedZipPath, DataLocations.MapsCuratedPath);
         WritePostcodeToElectorateJsonPath(electorates);
     }
@@ -72,7 +73,7 @@ public class Sync
             {
                 if (!dictionary.TryGetValue(location.Postcode, out var list))
                 {
-                    dictionary[location.Postcode] = list = new();
+                    dictionary[location.Postcode] = list = [];
                 }
 
                 list.Add(electorate.Name);
@@ -87,17 +88,19 @@ public class Sync
         var electorateToStateMap = new Dictionary<State, List<string>>();
         foreach (var state in states)
         {
-            electorateToStateMap[state] = new();
+            electorateToStateMap[state] = [];
         }
-        electorateToStateMap[State.VIC].Add("hawke");
+
+        electorateToStateMap[State.VIC]
+            .Add("hawke");
         var stateToElectorateFile = Path.Combine(DataLocations.DataPath, "state_to_electorate.txt");
         foreach (var line in File.ReadAllLines(stateToElectorateFile))
         {
-            var indexOf = line.IndexOf(":");
+            var indexOf = line.IndexOf(':');
 
-            var statePart = line.Substring(0, indexOf);
+            var statePart = line[..indexOf];
             var state = Enum.Parse<State>(statePart);
-            var electorate = line.Substring(indexOf+1, line.Length - indexOf - 1);
+            var electorate = line.Substring(indexOf + 1, line.Length - indexOf - 1);
             var list = electorateToStateMap[state];
             list.Add(electorate);
         }
@@ -140,14 +143,30 @@ public class Sync
 
     static Dictionary<State, HashSet<string>> electorateNames = new()
     {
-        {State.ACT, new()},
-        {State.TAS, new()},
-        {State.SA, new()},
-        {State.VIC, new()},
-        {State.QLD, new()},
-        {State.NT, new()},
-        {State.NSW, new()},
-        {State.WA, new()},
+        {
+            State.ACT, new()
+        },
+        {
+            State.TAS, new()
+        },
+        {
+            State.SA, new()
+        },
+        {
+            State.VIC, new()
+        },
+        {
+            State.QLD, new()
+        },
+        {
+            State.NT, new()
+        },
+        {
+            State.NSW, new()
+        },
+        {
+            State.WA, new()
+        }
     };
 
     static List<State> states =
@@ -164,7 +183,7 @@ public class Sync
 
     static Sync() => percents = [20, 10, 5, 1];
 
-    static async Task ProcessYear(string yearPath, List<string> electorates, Dictionary<State,List<string>> electorateToStateMap)
+    static async Task ProcessYear(string yearPath, List<string> electorates, Dictionary<State, List<string>> electorateToStateMap)
     {
         await WriteOptimised(yearPath);
 
@@ -176,9 +195,13 @@ public class Sync
             Directory.CreateDirectory(electoratesDirectory);
             foreach (var state in states)
             {
-                var lower = state.ToString().ToLower();
+                var lower = state
+                    .ToString()
+                    .ToLower();
                 var featureCollectionForState = australiaFeatures.FeaturesCollectionForState(electorateToStateMap[state]);
-                var suffix = Path.GetFileName(australiaPath).Replace("australia", "");
+                var suffix = Path
+                    .GetFileName(australiaPath)
+                    .Replace("australia", "");
                 var stateJson = Path.Combine(yearPath, $"{lower}{suffix}");
                 JsonSerializerService.SerializeGeo(featureCollectionForState, stateJson);
 
@@ -220,7 +243,9 @@ public class Sync
         var extractDirectory = Path.Combine(DataLocations.TempPath, $"australia{year}_extract");
         ZipFile.ExtractToDirectory(zip, extractDirectory);
 
-        var tabFile = Directory.EnumerateFiles(extractDirectory, "*.tab").Single();
+        var tabFile = Directory
+            .EnumerateFiles(extractDirectory, "*.tab")
+            .Single();
         await MapToGeoJson.ConvertTab(targetPath, tabFile);
 
         var featureCollection = JsonSerializerService.Deserialize<FeatureCollection>(targetPath);
@@ -235,7 +260,9 @@ public class Sync
     {
         foreach (var file in Directory.EnumerateFiles(DataLocations.MapsPath, "*.geojson", SearchOption.AllDirectories))
         {
-            if (!File.ReadAllText(file).Contains("bbox"))
+            if (!File
+                    .ReadAllText(file)
+                    .Contains("bbox"))
             {
                 throw new(file);
             }
@@ -286,7 +313,8 @@ public class Sync
                 electorate.Exist2019 = existIn2019;
                 electorate.Exist2022 = existIn2022;
                 //electorate.ExistInFuture = existInFuture;
-                electorate.Locations = SelectLocations(electorateName, localityData).ToList();
+                electorate.Locations = SelectLocations(electorateName, localityData)
+                    .ToList();
                 electorates.Add(electorate);
             }
         }
@@ -304,7 +332,9 @@ public class Sync
                 new Location
                 {
                     Postcode = group.Key,
-                    Localities = group.Select(_ => _.Place).ToList()
+                    Localities = group
+                        .Select(_ => _.Place)
+                        .ToList()
                 })
             .ToList();
 
@@ -389,7 +419,8 @@ public class Sync
     }
 
     static string GetCSharpName(Electorate electorate) =>
-        electorate.Name
+        electorate
+            .Name
             .Replace(" ", "")
             .Replace("-", "")
             .Replace("'", "");

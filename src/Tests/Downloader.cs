@@ -9,10 +9,10 @@ static class Downloader
 
     static HttpClient httpClient = new(new HttpClientHandler
     {
-        AllowAutoRedirect = false,
+        AllowAutoRedirect = false
     })
     {
-        Timeout = TimeSpan.FromSeconds(30),
+        Timeout = TimeSpan.FromSeconds(30)
     };
 
     public static async Task DownloadFile(string targetPath, string requestUri)
@@ -58,7 +58,8 @@ static class Downloader
                 return;
             }
 
-            remoteLastModified = headResponse.Content.Headers.LastModified.GetValueOrDefault(DateTimeOffset.UtcNow).UtcDateTime;
+            remoteLastModified = headResponse.Content.Headers.LastModified.GetValueOrDefault(DateTimeOffset.UtcNow)
+                .UtcDateTime;
         }
 
         if (File.Exists(targetPath))

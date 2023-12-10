@@ -8,10 +8,11 @@ static class GeoJsonExtensions
 
     public static FeatureCollection FeaturesCollectionForState(this FeatureCollection featureCollection, List<string> electorates)
     {
-        var features = featureCollection.Features
+        var features = featureCollection
+            .Features
             .Where(_ =>
             {
-                var electorate  = (string) _.Properties["electorateShortName"];
+                var electorate = (string) _.Properties["electorateShortName"];
                 return electorates.Contains(electorate);
             })
             .ToList();
@@ -39,7 +40,8 @@ static class GeoJsonExtensions
     {
         if (features.Geometry is MultiPolygon multiPolygon)
         {
-            return multiPolygon.Coordinates.SelectMany(_ => _.Coordinates)
+            return multiPolygon
+                .Coordinates.SelectMany(_ => _.Coordinates)
                 .SelectMany(_ => _.Coordinates);
         }
 
@@ -61,6 +63,6 @@ static class GeoJsonExtensions
             ymin = Math.Min(position.Latitude, ymin);
         }
 
-        return new[] {xmin, ymin, xmax, ymax};
+        return [xmin, ymin, xmax, ymax];
     }
 }

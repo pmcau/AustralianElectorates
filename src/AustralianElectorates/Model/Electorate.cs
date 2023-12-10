@@ -8,9 +8,11 @@ public interface IElectorate
     double Area { get; }
     bool Exist2016 { get; }
     bool Exist2019 { get; }
+
     bool Exist2022 { get; }
+
     //bool ExistInFuture { get; }
-    DateTime? DateGazetted { get; }
+    Date? DateGazetted { get; }
     string Description { get; }
     string DemographicRating { get; }
     string NameDerivation { get; }
@@ -20,6 +22,7 @@ public interface IElectorate
     IReadOnlyList<ILocation> Locations { get; set; }
     IElectorateMap Get2016Map();
     IElectorateMap Get2019Map();
+
     IElectorateMap Get2022Map();
     //IElectorateMap GetFutureMap();
 }
@@ -34,9 +37,11 @@ class Electorate :
     public double Area { get; set; }
     public bool Exist2016 { get; set; }
     public bool Exist2019 { get; set; }
+
     public bool Exist2022 { get; set; }
+
     //public bool ExistInFuture { get; set; }
-    public DateTime? DateGazetted { get; set; }
+    public Date? DateGazetted { get; set; }
     public string Description { get; set; } = null!;
     public string DemographicRating { get; set; } = null!;
     public string NameDerivation { get; set; } = null!;
@@ -48,7 +53,8 @@ class Electorate :
     public static string GetShortName(string name)
     {
         Guard.AgainstWhiteSpace(name, nameof(name));
-        return name.Replace(" ", "-")
+        return name
+            .Replace(" ", "-")
             .Replace("'", "")
             .ToLowerInvariant();
     }

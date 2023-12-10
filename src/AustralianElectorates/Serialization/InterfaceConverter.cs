@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 class InterfaceConverter<TClass, TInterface> :
     JsonConverter<TInterface>
-    where TClass:TInterface
+    where TClass : TInterface
 {
     public override TInterface Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options) =>
         JsonSerializer.Deserialize<TClass>(ref reader, options)!;

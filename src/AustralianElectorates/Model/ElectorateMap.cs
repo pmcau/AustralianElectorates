@@ -11,6 +11,7 @@ class ElectorateMap :
 {
     public IElectorate Electorate { get; set; } = null!;
     public string GeoJson { get; set; } = null!;
+
     public override string ToString() =>
         $"{Electorate.Name} Map";
 }

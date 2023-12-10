@@ -21,17 +21,24 @@ static class PostcodeScraper
     {
         var table = doc.DocumentNode.SelectSingleNode("//table[@id='ContentPlaceHolderBody_gridViewLocalities']");
 
-        foreach (var tr in table.SelectNodes("tr").Where(p => !p.HasAttributes))
+        foreach (var tr in table
+                     .SelectNodes("tr")
+                     .Where(p => !p.HasAttributes))
         {
             var tds = tr.SelectNodes("td");
-            if (tds is { Count: > 3 })
+            if (tds is {Count: > 3})
             {
                 yield return new(
                     //State = tds[0].InnerText.ToUpper().Trim(),
-                    place: tds[1].InnerText.ToUpper().Trim().ToTitleCase(),
+                    place: tds[1]
+                        .InnerText.ToUpper()
+                        .Trim()
+                        .ToTitleCase(),
                     postcode: postcode,
                     //Postcode = tds[2].InnerText.ToUpper().Trim(),
-                    electorate: tds[3].InnerText.ToUpper().Trim()
+                    electorate: tds[3]
+                        .InnerText.ToUpper()
+                        .Trim()
                 );
             }
         }

@@ -3,5 +3,6 @@
 class ElectorateEx :
     Electorate
 {
-    [NonSerialized] public string MapUrl = null!;
+    [NonSerialized]
+    public string MapUrl = null!;
 }

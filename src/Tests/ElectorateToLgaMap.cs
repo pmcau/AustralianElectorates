@@ -16,13 +16,15 @@ public class ElectorateToLgaMap
         var electorateToLga = new Dictionary<string, List<string>>();
         var lgaToElectorate = new Dictionary<string, List<string>>();
 
-        var electorates = DataLoader.Electorates
+        var electorates = DataLoader
+            .Electorates
             .Where(_ => _.Exist2022)
             .Select(
                 _ =>
                 {
                     var serializer = GeoJsonSerializer.Create(new GeometryFactoryEx());
-                    using var jsonReader = new JsonTextReader(new StringReader(_.Get2022Map().GeoJson));
+                    using var jsonReader = new JsonTextReader(new StringReader(_.Get2022Map()
+                        .GeoJson));
                     var featureCollection = serializer.Deserialize<FeatureCollection>(jsonReader)!;
                     var feature = featureCollection.Single();
                     return new
@@ -35,7 +37,7 @@ public class ElectorateToLgaMap
 
         foreach (var electorate in electorates)
         {
-            electorateToLga[electorate.Name] = new();
+            electorateToLga[electorate.Name] = [];
         }
 
         while (shapeFileDataReader.Read())
@@ -50,13 +52,16 @@ public class ElectorateToLgaMap
                 if (lgaGeometry.Intersects(electorate.Geometry))
                 {
                     list.Add(electorate.Name);
-                    electorateToLga[electorate.Name].Add(lga);
+                    electorateToLga[electorate.Name]
+                        .Add(lga);
                 }
             }
         }
 
-        electorateToLga["Lingiari"].Add("Cocos Islands");
-        lgaToElectorate["Cocos Islands"].Add("Lingiari");
+        electorateToLga["Lingiari"]
+            .Add("Cocos Islands");
+        lgaToElectorate["Cocos Islands"]
+            .Add("Lingiari");
 
         File.Delete(DataLocations.LgaToElectorateJsonPath);
         File.Delete(DataLocations.ElectorateToLgaJsonPath);
