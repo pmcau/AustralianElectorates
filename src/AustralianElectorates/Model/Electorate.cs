@@ -54,7 +54,7 @@ class Electorate :
     {
         Guard.AgainstWhiteSpace(name, nameof(name));
         return name
-            .Replace(" ", "-")
+            .Replace(' ', '-')
             .Replace("'", "")
             .ToLowerInvariant();
     }
