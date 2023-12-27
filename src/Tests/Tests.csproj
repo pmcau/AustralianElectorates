@@ -3,7 +3,7 @@
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Bogus" Version="35.0.1" />
+    <PackageReference Include="Bogus" Version="35.2.0" />
     <PackageReference Include="CountryData" Version="4.3.0" />
     <PackageReference Include="MarkdownSnippets.MsBuild" Version="26.0.0" PrivateAssets="all" />
     <PackageReference Include="GeoJSON.Net" Version="1.2.19" />
