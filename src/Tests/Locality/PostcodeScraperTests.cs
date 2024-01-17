@@ -1,5 +1,4 @@
-﻿[UsesVerify]
-public class PostcodeScraperTests
+﻿public class PostcodeScraperTests
 {
     [Fact]
     [Trait("Category", "Integration")]

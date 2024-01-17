@@ -1,6 +1,5 @@
 using AustralianElectorates;
 
-[UsesVerify]
 public class DataLoaderTests
 {
     // [Fact]

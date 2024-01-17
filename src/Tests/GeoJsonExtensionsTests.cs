@@ -14,13 +14,14 @@ public class GeoJsonExtensionsTests
             new Position(0, 0)
         );
         var simpleBoundingBox = simple.CalculateBoundingBox();
-        Assert.Equal(new double[]
-        {
-            0,
-            0,
-            1,
-            1
-        }, simpleBoundingBox);
+        Assert.Equal(
+            [
+                0,
+                0,
+                1,
+                1
+            ],
+            simpleBoundingBox);
     }
 
     public List<Feature> BuildFeatures(params Position[] positions) =>
