@@ -6,6 +6,6 @@
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <LangVersion>preview</LangVersion>
     <Copyright>Code under MIT. Data under AEC Copyright https://www.aec.gov.au/footer/Copyright.htm</Copyright>
-    <NoWarn>CA1416</NoWarn>
+    <NoWarn>CA1416;CS1591</NoWarn>
   </PropertyGroup>
 </Project>
