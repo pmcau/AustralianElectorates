@@ -55,14 +55,14 @@ public class Sync
         Export.ExportElectorates();
         // await Hasher.Create(DataLocations.DataPath);
         Zipper.ZipDir(DataLocations.MapsCuratedZipPath, DataLocations.MapsCuratedPath);
-        WritePostcodeToElectorateJsonPath(electorates);
+        WritePostcodeToElectorateJsonPathInner(electorates);
     }
 
     [Fact]
     public void WritePostcodeToElectorateJsonPath() =>
-        WritePostcodeToElectorateJsonPath(DataLoader.Electorates);
+        WritePostcodeToElectorateJsonPathInner(DataLoader.Electorates);
 
-    static void WritePostcodeToElectorateJsonPath(IReadOnlyList<IElectorate> electorates)
+    static void WritePostcodeToElectorateJsonPathInner(IReadOnlyList<IElectorate> electorates)
     {
         File.Delete(DataLocations.PostcodeToElectorateJsonPath);
 

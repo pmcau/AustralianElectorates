@@ -4,7 +4,7 @@ public class ElectoratesScraperTests
 {
     [Fact]
     [Trait("Category", "Integration")]
-    public async Task<Task> Run()
+    public async Task Run()
     {
         var lingiari = await ElectoratesScraper.ScrapeCurrentElectorate("lingiari", State.NT);
         var bass = await ElectoratesScraper.ScrapeCurrentElectorate("clark", State.TAS);
@@ -19,7 +19,7 @@ public class ElectoratesScraperTests
         var bean = await ElectoratesScraper.ScrapeCurrentElectorate("bean", State.ACT);
         var batman = await ElectoratesScraper.ScrapeCurrentElectorate("batman", State.VIC);
         var melbourne = await ElectoratesScraper.ScrapeCurrentElectorate("melbourne", State.VIC);
-        return Verify(new
+        await Verify(new
         {
             northernTerritory,
             lingiari,
