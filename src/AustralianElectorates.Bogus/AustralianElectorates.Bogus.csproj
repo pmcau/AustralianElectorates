@@ -7,8 +7,8 @@
   <ItemGroup>
     <Compile Include="..\AustralianElectorates\Guard.cs" Link="Guard.cs" />
 
-    <PackageReference Include="Bogus" Version="35.4.0" />
+    <PackageReference Include="Bogus" Version="35.4.1" />
     <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
-    <PackageReference Include="ProjectDefaults" Version="1.0.118" PrivateAssets="all" />
+    <PackageReference Include="ProjectDefaults" Version="1.0.120" PrivateAssets="all" />
   </ItemGroup>
 </Project>

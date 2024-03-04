@@ -11,6 +11,14 @@ indent_style = space
 indent_size = 4
 charset = utf-8
 
+# Avoid constant arrays as arguments
+dotnet_diagnostic.CA1861.severity = error
+
+# Avoid using Enumerable.Any() extension method
+dotnet_diagnostic.CA1860.severity = error
+
+# Declare types in namespaces
+dotnet_diagnostic.CA1050.severity = None
 
 # Microsoft .NET properties
 trim_trailing_whitespace = true

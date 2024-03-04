@@ -3,7 +3,7 @@
     <TargetFramework>net8.0-windows</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Bogus" Version="35.4.0" />
+    <PackageReference Include="Bogus" Version="35.4.1" />
     <PackageReference Include="CountryData" Version="5.1.0" />
     <PackageReference Include="MarkdownSnippets.MsBuild" Version="26.0.1" PrivateAssets="all" />
     <PackageReference Include="GeoJSON.Net" Version="1.2.19" />
@@ -21,7 +21,7 @@
     <ProjectReference Include="..\AustralianElectorates.Bogus\AustralianElectorates.Bogus.csproj" />
     <ProjectReference Include="..\AustralianElectorates.DetailMaps\AustralianElectorates.DetailMaps.csproj" />
     <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
-    <PackageReference Include="ProjectDefaults" Version="1.0.118" PrivateAssets="all" />
+    <PackageReference Include="ProjectDefaults" Version="1.0.120" PrivateAssets="all" />
 
     <None Update="MediaFeed\*.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
