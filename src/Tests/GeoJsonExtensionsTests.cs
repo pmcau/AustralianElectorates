@@ -24,7 +24,7 @@ public class GeoJsonExtensionsTests
             simpleBoundingBox);
     }
 
-    static List<Feature> BuildFeatures(params Position[] positions) =>
+    public List<Feature> BuildFeatures(params Position[] positions) =>
     [
         new(
             new Polygon(

@@ -7,14 +7,14 @@ static class MetadataCleaner
     {
         if (!featureCollection
                 .Features.First()
-                .Properties.TryGetValue("Elect_div", out var value))
+                .Properties.ContainsKey("Elect_div"))
         {
             return;
         }
 
         foreach (var feature in featureCollection.Features)
         {
-            var electorate = (string)value;
+            var electorate = (string) feature.Properties["Elect_div"];
             var stateFromProperties = GetState(feature, state);
             var area = (double) feature.Properties["Area_SqKm"];
 

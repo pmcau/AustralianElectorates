@@ -160,7 +160,7 @@ public static partial class DataLoader
     {
         var missing = FindInvalidateElectorates(names)
             .ToList();
-        if (missing.Count != 0)
+        if (missing.Any())
         {
             throw new ElectoratesNotFoundException(missing);
         }
@@ -170,7 +170,7 @@ public static partial class DataLoader
     {
         invalid = FindInvalidateElectorates(names)
             .ToList();
-        return invalid.Count != 0;
+        return invalid.Any();
     }
 
     public static IEnumerable<string> FindInvalidateElectorates(params string[] names) =>

@@ -3,11 +3,9 @@ using AustralianElectorates;
 
 static class Serializer
 {
-    static JsonSerializerOptions options;
-
-    static Serializer()
+    public static T Deserialize<T>(Stream stream)
     {
-        options = new();
+        var options = new JsonSerializerOptions();
         options.Converters.Add(new StateConverter());
         options.Converters.Add(new InterfaceConverter<TwoCandidatePreferred, ITwoCandidatePreferred>());
         options.Converters.Add(new InterfaceConverter<Address, IAddress>());
@@ -19,10 +17,8 @@ static class Serializer
         options.Converters.Add(new InterfaceConverter<Party, IParty>());
         options.Converters.Add(new InterfaceConverter<Branch, IBranch>());
         options.Converters.Add(new InterfaceConverter<StateMap, IStateMap>());
+        return JsonSerializer.Deserialize<T>(ReadToEnd(stream), options)!;
     }
-
-    public static T Deserialize<T>(Stream stream) =>
-        JsonSerializer.Deserialize<T>(ReadToEnd(stream), options)!;
 
     static string ReadToEnd(Stream stream)
     {
