@@ -7,480 +7,480 @@ namespace AustralianElectorates.Bogus;
 public partial class ElectorateDataSet
 {
 
-    public IElectorate Bean() =>
+    public static IElectorate Bean() =>
         DataLoader.Bean;
 
-    public IElectorate Canberra() =>
+    public static IElectorate Canberra() =>
         DataLoader.Canberra;
 
-    public IElectorate Fenner() =>
+    public static IElectorate Fenner() =>
         DataLoader.Fenner;
 
-    public IElectorate Bass() =>
+    public static IElectorate Bass() =>
         DataLoader.Bass;
 
-    public IElectorate Braddon() =>
+    public static IElectorate Braddon() =>
         DataLoader.Braddon;
 
-    public IElectorate Clark() =>
+    public static IElectorate Clark() =>
         DataLoader.Clark;
 
-    public IElectorate Franklin() =>
+    public static IElectorate Franklin() =>
         DataLoader.Franklin;
 
-    public IElectorate Lyons() =>
+    public static IElectorate Lyons() =>
         DataLoader.Lyons;
 
-    public IElectorate Denison() =>
+    public static IElectorate Denison() =>
         DataLoader.Denison;
 
-    public IElectorate Adelaide() =>
+    public static IElectorate Adelaide() =>
         DataLoader.Adelaide;
 
-    public IElectorate Barker() =>
+    public static IElectorate Barker() =>
         DataLoader.Barker;
 
-    public IElectorate Boothby() =>
+    public static IElectorate Boothby() =>
         DataLoader.Boothby;
 
-    public IElectorate Grey() =>
+    public static IElectorate Grey() =>
         DataLoader.Grey;
 
-    public IElectorate Hindmarsh() =>
+    public static IElectorate Hindmarsh() =>
         DataLoader.Hindmarsh;
 
-    public IElectorate Kingston() =>
+    public static IElectorate Kingston() =>
         DataLoader.Kingston;
 
-    public IElectorate Makin() =>
+    public static IElectorate Makin() =>
         DataLoader.Makin;
 
-    public IElectorate Mayo() =>
+    public static IElectorate Mayo() =>
         DataLoader.Mayo;
 
-    public IElectorate Spence() =>
+    public static IElectorate Spence() =>
         DataLoader.Spence;
 
-    public IElectorate Sturt() =>
+    public static IElectorate Sturt() =>
         DataLoader.Sturt;
 
-    public IElectorate PortAdelaide() =>
+    public static IElectorate PortAdelaide() =>
         DataLoader.PortAdelaide;
 
-    public IElectorate Wakefield() =>
+    public static IElectorate Wakefield() =>
         DataLoader.Wakefield;
 
-    public IElectorate Aston() =>
+    public static IElectorate Aston() =>
         DataLoader.Aston;
 
-    public IElectorate Ballarat() =>
+    public static IElectorate Ballarat() =>
         DataLoader.Ballarat;
 
-    public IElectorate Bendigo() =>
+    public static IElectorate Bendigo() =>
         DataLoader.Bendigo;
 
-    public IElectorate Bruce() =>
+    public static IElectorate Bruce() =>
         DataLoader.Bruce;
 
-    public IElectorate Calwell() =>
+    public static IElectorate Calwell() =>
         DataLoader.Calwell;
 
-    public IElectorate Casey() =>
+    public static IElectorate Casey() =>
         DataLoader.Casey;
 
-    public IElectorate Chisholm() =>
+    public static IElectorate Chisholm() =>
         DataLoader.Chisholm;
 
-    public IElectorate Cooper() =>
+    public static IElectorate Cooper() =>
         DataLoader.Cooper;
 
-    public IElectorate Corangamite() =>
+    public static IElectorate Corangamite() =>
         DataLoader.Corangamite;
 
-    public IElectorate Corio() =>
+    public static IElectorate Corio() =>
         DataLoader.Corio;
 
-    public IElectorate Deakin() =>
+    public static IElectorate Deakin() =>
         DataLoader.Deakin;
 
-    public IElectorate Dunkley() =>
+    public static IElectorate Dunkley() =>
         DataLoader.Dunkley;
 
-    public IElectorate Flinders() =>
+    public static IElectorate Flinders() =>
         DataLoader.Flinders;
 
-    public IElectorate Fraser() =>
+    public static IElectorate Fraser() =>
         DataLoader.Fraser;
 
-    public IElectorate Gellibrand() =>
+    public static IElectorate Gellibrand() =>
         DataLoader.Gellibrand;
 
-    public IElectorate Gippsland() =>
+    public static IElectorate Gippsland() =>
         DataLoader.Gippsland;
 
-    public IElectorate Goldstein() =>
+    public static IElectorate Goldstein() =>
         DataLoader.Goldstein;
 
-    public IElectorate Gorton() =>
+    public static IElectorate Gorton() =>
         DataLoader.Gorton;
 
-    public IElectorate Hawke() =>
+    public static IElectorate Hawke() =>
         DataLoader.Hawke;
 
-    public IElectorate Higgins() =>
+    public static IElectorate Higgins() =>
         DataLoader.Higgins;
 
-    public IElectorate Holt() =>
+    public static IElectorate Holt() =>
         DataLoader.Holt;
 
-    public IElectorate Hotham() =>
+    public static IElectorate Hotham() =>
         DataLoader.Hotham;
 
-    public IElectorate Indi() =>
+    public static IElectorate Indi() =>
         DataLoader.Indi;
 
-    public IElectorate Isaacs() =>
+    public static IElectorate Isaacs() =>
         DataLoader.Isaacs;
 
-    public IElectorate Jagajaga() =>
+    public static IElectorate Jagajaga() =>
         DataLoader.Jagajaga;
 
-    public IElectorate Kooyong() =>
+    public static IElectorate Kooyong() =>
         DataLoader.Kooyong;
 
-    public IElectorate LaTrobe() =>
+    public static IElectorate LaTrobe() =>
         DataLoader.LaTrobe;
 
-    public IElectorate Lalor() =>
+    public static IElectorate Lalor() =>
         DataLoader.Lalor;
 
-    public IElectorate Macnamara() =>
+    public static IElectorate Macnamara() =>
         DataLoader.Macnamara;
 
-    public IElectorate Mallee() =>
+    public static IElectorate Mallee() =>
         DataLoader.Mallee;
 
-    public IElectorate Maribyrnong() =>
+    public static IElectorate Maribyrnong() =>
         DataLoader.Maribyrnong;
 
-    public IElectorate McEwen() =>
+    public static IElectorate McEwen() =>
         DataLoader.McEwen;
 
-    public IElectorate Melbourne() =>
+    public static IElectorate Melbourne() =>
         DataLoader.Melbourne;
 
-    public IElectorate Menzies() =>
+    public static IElectorate Menzies() =>
         DataLoader.Menzies;
 
-    public IElectorate Monash() =>
+    public static IElectorate Monash() =>
         DataLoader.Monash;
 
-    public IElectorate Nicholls() =>
+    public static IElectorate Nicholls() =>
         DataLoader.Nicholls;
 
-    public IElectorate Scullin() =>
+    public static IElectorate Scullin() =>
         DataLoader.Scullin;
 
-    public IElectorate Wannon() =>
+    public static IElectorate Wannon() =>
         DataLoader.Wannon;
 
-    public IElectorate Wills() =>
+    public static IElectorate Wills() =>
         DataLoader.Wills;
 
-    public IElectorate Batman() =>
+    public static IElectorate Batman() =>
         DataLoader.Batman;
 
-    public IElectorate McMillan() =>
+    public static IElectorate McMillan() =>
         DataLoader.McMillan;
 
-    public IElectorate MelbournePorts() =>
+    public static IElectorate MelbournePorts() =>
         DataLoader.MelbournePorts;
 
-    public IElectorate Murray() =>
+    public static IElectorate Murray() =>
         DataLoader.Murray;
 
-    public IElectorate Blair() =>
+    public static IElectorate Blair() =>
         DataLoader.Blair;
 
-    public IElectorate Bonner() =>
+    public static IElectorate Bonner() =>
         DataLoader.Bonner;
 
-    public IElectorate Bowman() =>
+    public static IElectorate Bowman() =>
         DataLoader.Bowman;
 
-    public IElectorate Brisbane() =>
+    public static IElectorate Brisbane() =>
         DataLoader.Brisbane;
 
-    public IElectorate Capricornia() =>
+    public static IElectorate Capricornia() =>
         DataLoader.Capricornia;
 
-    public IElectorate Dawson() =>
+    public static IElectorate Dawson() =>
         DataLoader.Dawson;
 
-    public IElectorate Dickson() =>
+    public static IElectorate Dickson() =>
         DataLoader.Dickson;
 
-    public IElectorate Fadden() =>
+    public static IElectorate Fadden() =>
         DataLoader.Fadden;
 
-    public IElectorate Fairfax() =>
+    public static IElectorate Fairfax() =>
         DataLoader.Fairfax;
 
-    public IElectorate Fisher() =>
+    public static IElectorate Fisher() =>
         DataLoader.Fisher;
 
-    public IElectorate Flynn() =>
+    public static IElectorate Flynn() =>
         DataLoader.Flynn;
 
-    public IElectorate Forde() =>
+    public static IElectorate Forde() =>
         DataLoader.Forde;
 
-    public IElectorate Griffith() =>
+    public static IElectorate Griffith() =>
         DataLoader.Griffith;
 
-    public IElectorate Groom() =>
+    public static IElectorate Groom() =>
         DataLoader.Groom;
 
-    public IElectorate Herbert() =>
+    public static IElectorate Herbert() =>
         DataLoader.Herbert;
 
-    public IElectorate Hinkler() =>
+    public static IElectorate Hinkler() =>
         DataLoader.Hinkler;
 
-    public IElectorate Kennedy() =>
+    public static IElectorate Kennedy() =>
         DataLoader.Kennedy;
 
-    public IElectorate Leichhardt() =>
+    public static IElectorate Leichhardt() =>
         DataLoader.Leichhardt;
 
-    public IElectorate Lilley() =>
+    public static IElectorate Lilley() =>
         DataLoader.Lilley;
 
-    public IElectorate Longman() =>
+    public static IElectorate Longman() =>
         DataLoader.Longman;
 
-    public IElectorate Maranoa() =>
+    public static IElectorate Maranoa() =>
         DataLoader.Maranoa;
 
-    public IElectorate McPherson() =>
+    public static IElectorate McPherson() =>
         DataLoader.McPherson;
 
-    public IElectorate Moncrieff() =>
+    public static IElectorate Moncrieff() =>
         DataLoader.Moncrieff;
 
-    public IElectorate Moreton() =>
+    public static IElectorate Moreton() =>
         DataLoader.Moreton;
 
-    public IElectorate Oxley() =>
+    public static IElectorate Oxley() =>
         DataLoader.Oxley;
 
-    public IElectorate Petrie() =>
+    public static IElectorate Petrie() =>
         DataLoader.Petrie;
 
-    public IElectorate Rankin() =>
+    public static IElectorate Rankin() =>
         DataLoader.Rankin;
 
-    public IElectorate Ryan() =>
+    public static IElectorate Ryan() =>
         DataLoader.Ryan;
 
-    public IElectorate WideBay() =>
+    public static IElectorate WideBay() =>
         DataLoader.WideBay;
 
-    public IElectorate Wright() =>
+    public static IElectorate Wright() =>
         DataLoader.Wright;
 
-    public IElectorate Lingiari() =>
+    public static IElectorate Lingiari() =>
         DataLoader.Lingiari;
 
-    public IElectorate Solomon() =>
+    public static IElectorate Solomon() =>
         DataLoader.Solomon;
 
-    public IElectorate Banks() =>
+    public static IElectorate Banks() =>
         DataLoader.Banks;
 
-    public IElectorate Barton() =>
+    public static IElectorate Barton() =>
         DataLoader.Barton;
 
-    public IElectorate Bennelong() =>
+    public static IElectorate Bennelong() =>
         DataLoader.Bennelong;
 
-    public IElectorate Berowra() =>
+    public static IElectorate Berowra() =>
         DataLoader.Berowra;
 
-    public IElectorate Blaxland() =>
+    public static IElectorate Blaxland() =>
         DataLoader.Blaxland;
 
-    public IElectorate Bradfield() =>
+    public static IElectorate Bradfield() =>
         DataLoader.Bradfield;
 
-    public IElectorate Calare() =>
+    public static IElectorate Calare() =>
         DataLoader.Calare;
 
-    public IElectorate Chifley() =>
+    public static IElectorate Chifley() =>
         DataLoader.Chifley;
 
-    public IElectorate Cook() =>
+    public static IElectorate Cook() =>
         DataLoader.Cook;
 
-    public IElectorate Cowper() =>
+    public static IElectorate Cowper() =>
         DataLoader.Cowper;
 
-    public IElectorate Cunningham() =>
+    public static IElectorate Cunningham() =>
         DataLoader.Cunningham;
 
-    public IElectorate Dobell() =>
+    public static IElectorate Dobell() =>
         DataLoader.Dobell;
 
-    public IElectorate EdenMonaro() =>
+    public static IElectorate EdenMonaro() =>
         DataLoader.EdenMonaro;
 
-    public IElectorate Farrer() =>
+    public static IElectorate Farrer() =>
         DataLoader.Farrer;
 
-    public IElectorate Fowler() =>
+    public static IElectorate Fowler() =>
         DataLoader.Fowler;
 
-    public IElectorate Gilmore() =>
+    public static IElectorate Gilmore() =>
         DataLoader.Gilmore;
 
-    public IElectorate Grayndler() =>
+    public static IElectorate Grayndler() =>
         DataLoader.Grayndler;
 
-    public IElectorate Greenway() =>
+    public static IElectorate Greenway() =>
         DataLoader.Greenway;
 
-    public IElectorate Hughes() =>
+    public static IElectorate Hughes() =>
         DataLoader.Hughes;
 
-    public IElectorate Hume() =>
+    public static IElectorate Hume() =>
         DataLoader.Hume;
 
-    public IElectorate Hunter() =>
+    public static IElectorate Hunter() =>
         DataLoader.Hunter;
 
-    public IElectorate KingsfordSmith() =>
+    public static IElectorate KingsfordSmith() =>
         DataLoader.KingsfordSmith;
 
-    public IElectorate Lindsay() =>
+    public static IElectorate Lindsay() =>
         DataLoader.Lindsay;
 
-    public IElectorate Lyne() =>
+    public static IElectorate Lyne() =>
         DataLoader.Lyne;
 
-    public IElectorate Macarthur() =>
+    public static IElectorate Macarthur() =>
         DataLoader.Macarthur;
 
-    public IElectorate Mackellar() =>
+    public static IElectorate Mackellar() =>
         DataLoader.Mackellar;
 
-    public IElectorate Macquarie() =>
+    public static IElectorate Macquarie() =>
         DataLoader.Macquarie;
 
-    public IElectorate McMahon() =>
+    public static IElectorate McMahon() =>
         DataLoader.McMahon;
 
-    public IElectorate Mitchell() =>
+    public static IElectorate Mitchell() =>
         DataLoader.Mitchell;
 
-    public IElectorate NewEngland() =>
+    public static IElectorate NewEngland() =>
         DataLoader.NewEngland;
 
-    public IElectorate Newcastle() =>
+    public static IElectorate Newcastle() =>
         DataLoader.Newcastle;
 
-    public IElectorate NorthSydney() =>
+    public static IElectorate NorthSydney() =>
         DataLoader.NorthSydney;
 
-    public IElectorate Page() =>
+    public static IElectorate Page() =>
         DataLoader.Page;
 
-    public IElectorate Parkes() =>
+    public static IElectorate Parkes() =>
         DataLoader.Parkes;
 
-    public IElectorate Parramatta() =>
+    public static IElectorate Parramatta() =>
         DataLoader.Parramatta;
 
-    public IElectorate Paterson() =>
+    public static IElectorate Paterson() =>
         DataLoader.Paterson;
 
-    public IElectorate Reid() =>
+    public static IElectorate Reid() =>
         DataLoader.Reid;
 
-    public IElectorate Richmond() =>
+    public static IElectorate Richmond() =>
         DataLoader.Richmond;
 
-    public IElectorate Riverina() =>
+    public static IElectorate Riverina() =>
         DataLoader.Riverina;
 
-    public IElectorate Robertson() =>
+    public static IElectorate Robertson() =>
         DataLoader.Robertson;
 
-    public IElectorate Shortland() =>
+    public static IElectorate Shortland() =>
         DataLoader.Shortland;
 
-    public IElectorate Sydney() =>
+    public static IElectorate Sydney() =>
         DataLoader.Sydney;
 
-    public IElectorate Warringah() =>
+    public static IElectorate Warringah() =>
         DataLoader.Warringah;
 
-    public IElectorate Watson() =>
+    public static IElectorate Watson() =>
         DataLoader.Watson;
 
-    public IElectorate Wentworth() =>
+    public static IElectorate Wentworth() =>
         DataLoader.Wentworth;
 
-    public IElectorate Werriwa() =>
+    public static IElectorate Werriwa() =>
         DataLoader.Werriwa;
 
-    public IElectorate Whitlam() =>
+    public static IElectorate Whitlam() =>
         DataLoader.Whitlam;
 
-    public IElectorate Brand() =>
+    public static IElectorate Brand() =>
         DataLoader.Brand;
 
-    public IElectorate Burt() =>
+    public static IElectorate Burt() =>
         DataLoader.Burt;
 
-    public IElectorate Canning() =>
+    public static IElectorate Canning() =>
         DataLoader.Canning;
 
-    public IElectorate Cowan() =>
+    public static IElectorate Cowan() =>
         DataLoader.Cowan;
 
-    public IElectorate Curtin() =>
+    public static IElectorate Curtin() =>
         DataLoader.Curtin;
 
-    public IElectorate Durack() =>
+    public static IElectorate Durack() =>
         DataLoader.Durack;
 
-    public IElectorate Forrest() =>
+    public static IElectorate Forrest() =>
         DataLoader.Forrest;
 
-    public IElectorate Fremantle() =>
+    public static IElectorate Fremantle() =>
         DataLoader.Fremantle;
 
-    public IElectorate Hasluck() =>
+    public static IElectorate Hasluck() =>
         DataLoader.Hasluck;
 
-    public IElectorate Moore() =>
+    public static IElectorate Moore() =>
         DataLoader.Moore;
 
-    public IElectorate OConnor() =>
+    public static IElectorate OConnor() =>
         DataLoader.OConnor;
 
-    public IElectorate Pearce() =>
+    public static IElectorate Pearce() =>
         DataLoader.Pearce;
 
-    public IElectorate Perth() =>
+    public static IElectorate Perth() =>
         DataLoader.Perth;
 
-    public IElectorate Swan() =>
+    public static IElectorate Swan() =>
         DataLoader.Swan;
 
-    public IElectorate Tangney() =>
+    public static IElectorate Tangney() =>
         DataLoader.Tangney;
 
-    public IElectorate Stirling() =>
+    public static IElectorate Stirling() =>
         DataLoader.Stirling;
 }
