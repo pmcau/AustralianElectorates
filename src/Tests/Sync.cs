@@ -409,7 +409,7 @@ public class Sync
                 writer.WriteLine(
                     $"""
 
-                         public IElectorate {name}() =>
+                         public static IElectorate {name}() =>
                              DataLoader.{name};
                      """);
             }
