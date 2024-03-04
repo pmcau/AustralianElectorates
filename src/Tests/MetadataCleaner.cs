@@ -14,16 +14,17 @@ static class MetadataCleaner
 
         foreach (var feature in featureCollection.Features)
         {
-            var electorate = (string) feature.Properties["Elect_div"];
+            var properties = feature.Properties;
+            var electorate = (string) properties["Elect_div"];
             var stateFromProperties = GetState(feature, state);
-            var area = (double) feature.Properties["Area_SqKm"];
+            var area = (double) properties["Area_SqKm"];
 
             var shortName = Electorate.GetShortName(electorate);
-            feature.Properties.Clear();
-            feature.Properties["electorateName"] = electorate;
-            feature.Properties["electorateShortName"] = shortName;
-            feature.Properties["area"] = Math.Round(area, 6);
-            feature.Properties["state"] = stateFromProperties;
+            properties.Clear();
+            properties["electorateName"] = electorate;
+            properties["electorateShortName"] = shortName;
+            properties["area"] = Math.Round(area, 6);
+            properties["state"] = stateFromProperties;
         }
     }
 

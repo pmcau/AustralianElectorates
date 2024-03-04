@@ -78,7 +78,7 @@ static class Extensions
         var index = str.IndexOf(oldValue, StringComparison.OrdinalIgnoreCase);
         while (index != -1)
         {
-            stringBuilder.Append(str.Substring(previousIndex, index - previousIndex));
+            stringBuilder.Append(str.AsSpan(previousIndex, index - previousIndex));
             stringBuilder.Append(newValue);
             index += oldValue.Length;
 
