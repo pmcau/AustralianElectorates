@@ -25,6 +25,8 @@ public interface IElectorate
 
     IElectorateMap Get2022Map();
     //IElectorateMap GetFutureMap();
+
+    bool ContainsPostcode(int postcode);
 }
 
 [DebuggerDisplay("Name={Name}, State={State}")]
@@ -73,6 +75,19 @@ class Electorate :
 
     public IElectorateMap GetMap() =>
         DataLoader.GetMap(this);
+
+    public bool ContainsPostcode(int postcode)
+    {
+        foreach (var location in Locations)
+        {
+            if (location.Postcode == postcode)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
 
     // public IElectorateMap GetFutureMap() =>
     //     DataLoader.GetFutureMap(this);
