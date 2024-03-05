@@ -166,6 +166,17 @@ public static partial class DataLoader
         }
     }
 
+    public static IEnumerable<IElectorate> ElectoratesForPostcode(int postcode)
+    {
+        foreach (var electorate in Electorates)
+        {
+            if (electorate.ContainsPostcode(postcode))
+            {
+                yield return electorate;
+            }
+        }
+    }
+
     public static bool TryFindInvalidateElectorates(IEnumerable<string> names, out List<string> invalid)
     {
         invalid = FindInvalidateElectorates(names)
