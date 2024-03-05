@@ -1,10 +1,12 @@
-﻿public class PostcodeScraperTests
+﻿using Xunit.Abstractions;
+
+public class PostcodeScraperTests(ITestOutputHelper outputHelper)
 {
     [Fact]
     [Trait("Category", "Integration")]
     public async Task Run()
     {
-        var data = await PostcodeScraper.Run();
+        var data = await PostcodeScraper.Run(outputHelper);
         File.Delete(DataLocations.LocalitiesPath);
         JsonSerializerService.Serialize(data, DataLocations.LocalitiesPath);
         await Verify(data.Take(10));
@@ -12,9 +14,6 @@
 
     [Fact]
     [Trait("Category", "Integration")]
-    public Task Specific()
-    {
-        var place = AustraliaData.PostCodes.Single(_ => _.Key == "3429");
-        return Verify(PostcodeScraper.GetAECDataForPostcode(place));
-    }
+    public Task Specific() =>
+        Verify(PostcodeScraper.GetAECDataForPostcode("3429"));
 }

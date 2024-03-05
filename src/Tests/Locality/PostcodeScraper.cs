@@ -1,16 +1,24 @@
-﻿using CountryData;
-using HtmlAgilityPack;
+﻿using HtmlAgilityPack;
+using Xunit.Abstractions;
 
 static class PostcodeScraper
 {
     static HttpClient client = new();
     static HtmlDocument doc = new();
 
-    public static async Task<List<AecLocalityData>> Run()
+    public static async Task<List<AecLocalityData>> Run(ITestOutputHelper outputHelper)
     {
         var items = new List<AecLocalityData>();
-        foreach (var postcode in AustraliaData.PostCodes)
+        var postcodes = AustraliaData.PostCodes.Keys.ToList();
+        for (var index = 0; index < postcodes.Count; index++)
         {
+            var postcode = postcodes[index];
+
+            if (index % 50 == 0)
+            {
+                outputHelper.WriteLine($"{index} of {postcodes.Count}");
+            }
+
             items.AddRange(await GetAECDataForPostcode(postcode));
         }
 
@@ -70,9 +78,9 @@ static class PostcodeScraper
         return nodeCount + 1;
     }
 
-    public static async Task<List<AecLocalityData>> GetAECDataForPostcode(KeyValuePair<string, IReadOnlyList<IPlace>> postcode)
+    public static async Task<List<AecLocalityData>> GetAECDataForPostcode(string postcode)
     {
-        if (!int.TryParse(postcode.Key, out var result))
+        if (!int.TryParse(postcode, out var result))
         {
             throw new("Invalid Postcode");
         }
@@ -80,11 +88,6 @@ static class PostcodeScraper
         if (result is < 0 or > 9999)
         {
             throw new("Invalid Postcode");
-        }
-
-        if (result % 50 == 0)
-        {
-            Trace.WriteLine(postcode.Key);
         }
 
         var url = $"https://electorate.aec.gov.au/LocalitySearchResults.aspx?filter={result:D4}&filterby=Postcode";
