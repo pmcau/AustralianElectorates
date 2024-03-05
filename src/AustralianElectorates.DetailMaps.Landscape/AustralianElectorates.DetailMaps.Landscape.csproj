@@ -11,7 +11,7 @@
       <PackagePath>contentFiles/any/any/ElectorateMaps</PackagePath>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <PackageReference Include="ProjectDefaults" Version="1.0.118" PrivateAssets="all" />
+    <PackageReference Include="ProjectDefaults" Version="1.0.125" PrivateAssets="all" />
     <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
   </ItemGroup>
 </Project>

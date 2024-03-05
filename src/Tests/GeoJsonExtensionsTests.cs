@@ -23,8 +23,9 @@ public class GeoJsonExtensionsTests
             ],
             simpleBoundingBox);
     }
-
-    public List<Feature> BuildFeatures(params Position[] positions) =>
+#pragma warning disable CA1822
+    // ReSharper disable once MemberCanBeMadeStatic.Local
+    List<Feature> BuildFeatures(params Position[] positions) =>
     [
         new(
             new Polygon(
