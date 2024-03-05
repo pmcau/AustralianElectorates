@@ -160,7 +160,9 @@ public static partial class DataLoader
     {
         var missing = FindInvalidateElectorates(names)
             .ToList();
+#pragma warning disable CA1860
         if (missing.Any())
+#pragma warning restore CA1860
         {
             throw new ElectoratesNotFoundException(missing);
         }
@@ -181,7 +183,9 @@ public static partial class DataLoader
     {
         invalid = FindInvalidateElectorates(names)
             .ToList();
+#pragma warning disable CA1860
         return invalid.Any();
+#pragma warning restore CA1860
     }
 
     public static IEnumerable<string> FindInvalidateElectorates(params string[] names) =>
