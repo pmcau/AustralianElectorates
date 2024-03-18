@@ -7,5 +7,7 @@
     <LangVersion>preview</LangVersion>
     <Copyright>Code under MIT. Data under AEC Copyright https://www.aec.gov.au/footer/Copyright.htm</Copyright>
     <NoWarn>CA1416;CS1591</NoWarn>
+    <NuGetAuditMode>all</NuGetAuditMode>
+    <NuGetAuditLevel>low</NuGetAuditLevel>
   </PropertyGroup>
 </Project>
