@@ -9,5 +9,6 @@
     <NoWarn>CA1416;CS1591</NoWarn>
     <NuGetAuditMode>all</NuGetAuditMode>
     <NuGetAuditLevel>low</NuGetAuditLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
 </Project>
