@@ -311,11 +311,11 @@ var targetInstance = faker.Generate();
 ## DetailMaps Usage
 
 <!-- snippet: usageDetailMaps -->
-<a id='snippet-usagedetailmaps'></a>
+<a id='snippet-usageDetailMaps'></a>
 ```cs
 var pathToPng = DetailMaps.MapForElectorate("Bass");
 ```
-<sup><a href='/src/Tests/Snippets.cs#L56-L60' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagedetailmaps' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L56-L60' title='Snippet source file'>snippet source</a> | <a href='#snippet-usageDetailMaps' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
