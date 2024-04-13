@@ -4,15 +4,15 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Bogus" Version="35.5.0" />
-    <PackageReference Include="CountryData" Version="6.0.0" />
+    <PackageReference Include="CountryData" Version="6.1.0" />
     <PackageReference Include="MarkdownSnippets.MsBuild" Version="27.0.2" PrivateAssets="all" />
     <PackageReference Include="GeoJSON.Net" Version="1.2.19" />
-    <PackageReference Include="HtmlAgilityPack" Version="1.11.59" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.60" />
     <PackageReference Include="NetTopologySuite" Version="2.5.0" />
     <PackageReference Include="NetTopologySuite.IO.GeoJSON" Version="4.0.0" />
     <PackageReference Include="NetTopologySuite.IO.ShapeFile" Version="2.1.0" />
     <PackageReference Include="Argon" Version="0.17.0" />
-    <PackageReference Include="System.Drawing.Common" Version="8.0.3" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.4" />
     <PackageReference Include="System.IO.Compression" Version="4.3.0" />
     <PackageReference Include="xunit" Version="2.7.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.5.8" PrivateAssets="all" />
