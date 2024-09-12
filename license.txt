@@ -26,7 +26,7 @@ The content/data that is rendered (all files under [/Data/](/Data/)) is sourced 
 
 The content/data in this repository does not necessarily represent the latest data made available by the AEC. The Department of the Prime Minister and Cabinet gives no warranty regarding the accuracy, completeness, currency or suitability of the content/data for any particular purpose.
 
-This product (AustralianElectorates) incorporates data that is:  
+This product (AustralianElectorates) incorporates data that is:
 © Commonwealth of Australia (Australian Electoral Commission) 2018
 
 The Data (Commonwealth Electoral Boundaries (various years)) has been used in AustralianElectorates with the permission of the Australian Electoral Commission. The Australian Electoral Commission has not evaluated the Data as altered and incorporated within AustralianElectorates, and therefore gives no warranty regarding its accuracy, completeness, currency or suitability for any particular purpose.
