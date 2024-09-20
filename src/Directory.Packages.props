@@ -19,7 +19,7 @@
     <PackageVersion Include="System.IO.Compression" Version="4.3.0" />
     <!-- explcit to avoid a cve -->
     <PackageVersion Include="System.Text.Json" Version="8.0.4" />
-    <PackageVersion Include="Verify.Xunit" Version="26.2.0" />
+    <PackageVersion Include="Verify.Xunit" Version="26.5.0" />
     <PackageVersion Include="Xunit" Version="2.9.0" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="3.0.0-pre.24" />
   </ItemGroup>
