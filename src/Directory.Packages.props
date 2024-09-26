@@ -6,9 +6,9 @@
   <ItemGroup>
     <PackageVersion Include="Argon" Version="0.21.0" />
     <PackageVersion Include="Bogus" Version="35.6.1" />
-    <PackageVersion Include="CountryData" Version="6.5.0" />
+    <PackageVersion Include="CountryData" Version="6.6.0" />
     <PackageVersion Include="GeoJSON.Net" Version="1.4.1" />
-    <PackageVersion Include="HtmlAgilityPack" Version="1.11.65" />
+    <PackageVersion Include="HtmlAgilityPack" Version="1.11.66" />
     <PackageVersion Include="MarkdownSnippets.MsBuild" Version="27.0.2" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
     <PackageVersion Include="NetTopologySuite" Version="2.5.0" />
@@ -18,7 +18,7 @@
     <PackageVersion Include="System.Drawing.Common" Version="8.0.8" />
     <PackageVersion Include="System.IO.Compression" Version="4.3.0" />
     <PackageVersion Include="Verify.Xunit" Version="27.0.0-beta.5" />
-    <PackageVersion Include="Xunit" Version="2.9.0" />
+    <PackageVersion Include="Xunit" Version="2.9.1" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="3.0.0-pre.35" />
     <!-- explcit to avoid a cve -->
     <PackageVersion Include="System.Text.Json" Version="8.0.4" />
