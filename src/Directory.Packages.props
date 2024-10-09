@@ -21,6 +21,6 @@
     <PackageVersion Include="Xunit" Version="2.9.2" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="3.0.0-pre.35" />
     <!-- explcit to avoid a cve -->
-    <PackageVersion Include="System.Text.Json" Version="8.0.4" />
+    <PackageVersion Include="System.Text.Json" Version="8.0.5" />
   </ItemGroup>
 </Project>
