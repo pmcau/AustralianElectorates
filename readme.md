@@ -130,10 +130,10 @@ Sample:
     "AmendmentDate": "3 May 2011",
     "Address": "Ground Floor\n470 St Kilda Rd\nMELBOURNE VIC 3004",
     "Officer": {
-      "Title": "Mr",
+      "Title": "Dr",
       "FamilyName": "Cheung",
       "GivenNames": "William",
-      "Capacity": "Party Agent, Secretary & Registered Officer",
+      "Capacity": "Party Agent",
       "Address": {
         "Line1": "Ground Floor",
         "Line2": "470 St Kilda Road",
@@ -381,7 +381,6 @@ Elections are currently added manually as they are declared.
 <!-- snippet: elections -->
 <a id='snippet-elections'></a>
 ```cs
-return
 [
     new()
     {
@@ -392,7 +391,6 @@ return
             .Where(_ => _.Exist2016)
             .ToList()
     },
-
     new()
     {
         Parliament = 46,
@@ -401,10 +399,19 @@ return
         Electorates = Electorates
             .Where(_ => _.Exist2019)
             .ToList()
+    },
+    new()
+    {
+        Parliament = 47,
+        Year = 2022,
+        Date = new(2022, 05, 21),
+        Electorates = Electorates
+            .Where(_ => _.Exist2022)
+            .ToList()
     }
 ];
 ```
-<sup><a href='/src/AustralianElectorates/DataLoader.cs#L73-L98' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/AustralianElectorates/DataLoader.cs#L72-L103' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 

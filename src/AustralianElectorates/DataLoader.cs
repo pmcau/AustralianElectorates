@@ -66,13 +66,11 @@ public static partial class DataLoader
 
     public static IReadOnlyList<IElection> Elections { get; }
 
-    static List<Election> BuildElections()
-    {
+    static List<Election> BuildElections() =>
         //TODO: scrape from here instead, will need to change from the electorate.ExistNNNN pattern: https://www.aec.gov.au/Elections/Federal_Elections/
 
-        #region elections
+    #region elections
 
-        return
         [
             new()
             {
@@ -83,7 +81,6 @@ public static partial class DataLoader
                     .Where(_ => _.Exist2016)
                     .ToList()
             },
-
             new()
             {
                 Parliament = 46,
@@ -92,11 +89,19 @@ public static partial class DataLoader
                 Electorates = Electorates
                     .Where(_ => _.Exist2019)
                     .ToList()
+            },
+            new()
+            {
+                Parliament = 47,
+                Year = 2022,
+                Date = new(2022, 05, 21),
+                Electorates = Electorates
+                    .Where(_ => _.Exist2022)
+                    .ToList()
             }
         ];
+    #endregion
 
-        #endregion
-    }
 
     public static IReadOnlyList<IParty> Parties { get; }
     public static IReadOnlyList<IPartyOrBranch> PartiesAndBranches { get; }
