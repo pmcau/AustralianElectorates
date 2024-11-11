@@ -3,28 +3,22 @@ using HtmlAgilityPack;
 
 static class ElectoratesScraper
 {
-    public static Task<ElectorateEx> ScrapeCurrentElectorate(string shortName, State state)
-    {
-        //TODO: split this out to a ScrapeCurrentElectorate and a Scrape2019Electorate when aec archives 2019
-        // and also remove the NT hacks
-        var requestUri = $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm";
-        if (shortName is "lingiari" or "solomon")
-        {
-            return Scrape2016Electorate(shortName, state);
-        }
+    // public static Task<ElectorateEx> ScrapeCurrentElectorate(string shortName, State state)
+    // {
+    //     //TODO: split this out to a ScrapeCurrentElectorate and a Scrape2019Electorate when aec archives 2019
+    //     // and also remove the NT hacks
+    //     var requestUri = $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm";
+    //     if (shortName is "lingiari" or "solomon")
+    //     {
+    //         return Scrape2016Electorate(shortName, state);
+    //     }
+    //
+    //     return ScrapeElectorate(shortName, state, requestUri, "Profile of the electoral division of ");
+    // }
 
-        return ScrapeElectorate(shortName, state, requestUri, "Profile of the electoral division of ");
-    }
-
-    public static Task<ElectorateEx> Scrape2016Electorate(string shortName, State state)
+    public static async Task<ElectorateEx> ScrapeElectorate(int year, string shortName, State state)
     {
-        var requestUri = $"https://www.aec.gov.au/Elections/federal_elections/2016/profiles/{state}/{shortName}.htm";
-        return ScrapeElectorate(shortName, state, requestUri, "2016 federal election: profile of the electoral division of ");
-    }
-
-    static async Task<ElectorateEx> ScrapeElectorate(string shortName, State state, string requestUri, string prefix)
-    {
-        requestUri = requestUri.ToLowerInvariant();
+        var requestUri = $"https://www.aec.gov.au/Elections/federal_elections/{year}/profiles/{state.ToString().ToLowerInvariant()}/{shortName.ToLowerInvariant()}.htm";
         var tempElectorateHtmlPath = Path.Combine(DataLocations.TempPath, $"{shortName}.html");
         try
         {
@@ -37,7 +31,7 @@ static class ElectoratesScraper
 
             var document = new HtmlDocument();
             document.Load(tempElectorateHtmlPath);
-            var fullName = GetFullName(document, prefix);
+            var fullName = GetFullName(document, year);
             var values = new Dictionary<string, HtmlNode>(StringComparer.OrdinalIgnoreCase);
             var profileId = FindProfileTable(document);
             var htmlNodeCollection = profileId.SelectNodes("dt");
@@ -174,12 +168,15 @@ static class ElectoratesScraper
         throw new("FindMapsNode");
     }
 
-    static string GetFullName(HtmlDocument document, string prefix)
+    static string GetFullName(HtmlDocument document, int year)
     {
+        var prefix1 = $"{year} federal election: profile of the electoral division of ";
+        var prefix2 = $"Profile of the electoral division of ";
         var headings = document.Headings();
         var caseless = headings
-            .Single(_ => _.StartsWith(prefix))
-            .ReplaceCaseless(prefix, "");
+            .Single(_ => _.StartsWith(prefix1) || _.StartsWith(prefix2))
+            .ReplaceCaseless(prefix1, "")
+            .ReplaceCaseless(prefix2, "");
         return TrimState(caseless);
     }
 

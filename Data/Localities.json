@@ -455,6 +455,11 @@
     "Electorate": "FENNER"
   },
   {
+    "Place": "Macnamara",
+    "Postcode": 2615,
+    "Electorate": "FENNER"
+  },
+  {
     "Place": "Melba",
     "Postcode": 2615,
     "Electorate": "FENNER"
@@ -810,6 +815,11 @@
     "Electorate": "EDEN-MONARO"
   },
   {
+    "Place": "Sutton",
+    "Postcode": 2620,
+    "Electorate": "EDEN-MONARO"
+  },
+  {
     "Place": "Tennent District",
     "Postcode": 2620,
     "Electorate": "BEAN"
@@ -890,9 +900,19 @@
     "Electorate": "FENNER"
   },
   {
+    "Place": "Kenny",
+    "Postcode": 2911,
+    "Electorate": "FENNER"
+  },
+  {
     "Place": "Mitchell",
     "Postcode": 2911,
     "Electorate": "FENNER"
+  },
+  {
+    "Place": "Badagarang",
+    "Postcode": 2540,
+    "Electorate": "GILMORE"
   },
   {
     "Place": "Bamarang",
@@ -941,11 +961,6 @@
   },
   {
     "Place": "Brundee",
-    "Postcode": 2540,
-    "Electorate": "GILMORE"
-  },
-  {
-    "Place": "Buangla",
     "Postcode": 2540,
     "Electorate": "GILMORE"
   },
@@ -2390,6 +2405,11 @@
     "Electorate": "NEW ENGLAND"
   },
   {
+    "Place": "Muli Muli",
+    "Postcode": 2476,
+    "Electorate": "PAGE"
+  },
+  {
     "Place": "New Koreelah",
     "Postcode": 2476,
     "Electorate": "NEW ENGLAND"
@@ -3737,11 +3757,6 @@
   {
     "Place": "Hamlyn Terrace",
     "Postcode": 2259,
-    "Electorate": "COWPER"
-  },
-  {
-    "Place": "Hamlyn Terrace",
-    "Postcode": 2259,
     "Electorate": "DOBELL"
   },
   {
@@ -4306,6 +4321,11 @@
   },
   {
     "Place": "East Wardell",
+    "Postcode": 2477,
+    "Electorate": "PAGE"
+  },
+  {
+    "Place": "Goat Island",
     "Postcode": 2477,
     "Electorate": "PAGE"
   },
@@ -5085,7 +5105,22 @@
     "Electorate": "EDEN-MONARO"
   },
   {
+    "Place": "Bywong",
+    "Postcode": 2621,
+    "Electorate": "EDEN-MONARO"
+  },
+  {
     "Place": "Forbes Creek",
+    "Postcode": 2621,
+    "Electorate": "EDEN-MONARO"
+  },
+  {
+    "Place": "Gearys Gap",
+    "Postcode": 2621,
+    "Electorate": "EDEN-MONARO"
+  },
+  {
+    "Place": "Gearys Gap",
     "Postcode": 2621,
     "Electorate": "EDEN-MONARO"
   },
@@ -5705,6 +5740,11 @@
     "Electorate": "HUNTER"
   },
   {
+    "Place": "Bowmans Creek",
+    "Postcode": 2330,
+    "Electorate": "HUNTER"
+  },
+  {
     "Place": "Bridgman",
     "Postcode": 2330,
     "Electorate": "HUNTER"
@@ -5840,12 +5880,22 @@
     "Electorate": "HUNTER"
   },
   {
+    "Place": "Hebden",
+    "Postcode": 2330,
+    "Electorate": "HUNTER"
+  },
+  {
     "Place": "Howes Valley",
     "Postcode": 2330,
     "Electorate": "HUNTER"
   },
   {
     "Place": "Hunterview",
+    "Postcode": 2330,
+    "Electorate": "HUNTER"
+  },
+  {
+    "Place": "Jerrys Plains",
     "Postcode": 2330,
     "Electorate": "HUNTER"
   },
@@ -6736,6 +6786,11 @@
   },
   {
     "Place": "Kyalite",
+    "Postcode": 2715,
+    "Electorate": "FARRER"
+  },
+  {
+    "Place": "Mungo",
     "Postcode": 2715,
     "Electorate": "FARRER"
   },
@@ -9085,6 +9140,11 @@
     "Electorate": "NEW ENGLAND"
   },
   {
+    "Place": "Moogem",
+    "Postcode": 2370,
+    "Electorate": "NEW ENGLAND"
+  },
+  {
     "Place": "Newton Boyd",
     "Postcode": 2370,
     "Electorate": "NEW ENGLAND"
@@ -9215,7 +9275,12 @@
     "Electorate": "GRAYNDLER"
   },
   {
-    "Place": "Balmoral",
+    "Place": "Balmoral Village",
+    "Postcode": 2571,
+    "Electorate": "HUME"
+  },
+  {
+    "Place": "Buxton",
     "Postcode": 2571,
     "Electorate": "HUME"
   },
@@ -9403,6 +9468,11 @@
     "Place": "Bango",
     "Postcode": 2582,
     "Electorate": "EDEN-MONARO"
+  },
+  {
+    "Place": "Bango",
+    "Postcode": 2582,
+    "Electorate": "HUME"
   },
   {
     "Place": "Berremangra",
@@ -9610,6 +9680,11 @@
     "Electorate": "HUME"
   },
   {
+    "Place": "Greenwich Park",
+    "Postcode": 2580,
+    "Electorate": "HUME"
+  },
+  {
     "Place": "Gundary",
     "Postcode": 2580,
     "Electorate": "HUME"
@@ -9645,6 +9720,11 @@
     "Electorate": "HUME"
   },
   {
+    "Place": "Middle Arm",
+    "Postcode": 2580,
+    "Electorate": "HUME"
+  },
+  {
     "Place": "Mount Fairy",
     "Postcode": 2580,
     "Electorate": "EDEN-MONARO"
@@ -9666,6 +9746,16 @@
   },
   {
     "Place": "Parkesbourne",
+    "Postcode": 2580,
+    "Electorate": "HUME"
+  },
+  {
+    "Place": "Parkesbourne",
+    "Postcode": 2580,
+    "Electorate": "HUME"
+  },
+  {
+    "Place": "Pomeroy",
     "Postcode": 2580,
     "Electorate": "HUME"
   },
@@ -9720,12 +9810,22 @@
     "Electorate": "HUME"
   },
   {
+    "Place": "Tarlo",
+    "Postcode": 2580,
+    "Electorate": "HUME"
+  },
+  {
     "Place": "Tirrannaville",
     "Postcode": 2580,
     "Electorate": "HUME"
   },
   {
     "Place": "Towrang",
+    "Postcode": 2580,
+    "Electorate": "HUME"
+  },
+  {
+    "Place": "Wayo",
     "Postcode": 2580,
     "Electorate": "HUME"
   },
@@ -9750,7 +9850,22 @@
     "Electorate": "HUME"
   },
   {
+    "Place": "Wollogorang",
+    "Postcode": 2580,
+    "Electorate": "HUME"
+  },
+  {
     "Place": "Wombeyan Caves",
+    "Postcode": 2580,
+    "Electorate": "HUME"
+  },
+  {
+    "Place": "Wombeyan Caves",
+    "Postcode": 2580,
+    "Electorate": "HUME"
+  },
+  {
+    "Place": "Woodhouselee",
     "Postcode": 2580,
     "Electorate": "HUME"
   },
@@ -9948,6 +10063,11 @@
     "Place": "The Rocks",
     "Postcode": 2000,
     "Electorate": "SYDNEY"
+  },
+  {
+    "Place": "Bardia",
+    "Postcode": 2565,
+    "Electorate": "WERRIWA"
   },
   {
     "Place": "Bardia",
@@ -10522,6 +10642,21 @@
   {
     "Place": "Ardlethan",
     "Postcode": 2665,
+    "Electorate": "FARRER"
+  },
+  {
+    "Place": "Ardlethan",
+    "Postcode": 2665,
+    "Electorate": "RIVERINA"
+  },
+  {
+    "Place": "Ardlethan",
+    "Postcode": 2665,
+    "Electorate": "RIVERINA"
+  },
+  {
+    "Place": "Ariah Park",
+    "Postcode": 2665,
     "Electorate": "RIVERINA"
   },
   {
@@ -10536,6 +10671,11 @@
   },
   {
     "Place": "Barellan",
+    "Postcode": 2665,
+    "Electorate": "RIVERINA"
+  },
+  {
+    "Place": "Beckom",
     "Postcode": 2665,
     "Electorate": "RIVERINA"
   },
@@ -10651,6 +10791,11 @@
   },
   {
     "Place": "Warroo",
+    "Postcode": 2871,
+    "Electorate": "RIVERINA"
+  },
+  {
+    "Place": "Wirrinya",
     "Postcode": 2871,
     "Electorate": "RIVERINA"
   },
@@ -11255,6 +11400,11 @@
     "Electorate": "EDEN-MONARO"
   },
   {
+    "Place": "Lake George",
+    "Postcode": 2581,
+    "Electorate": "EDEN-MONARO"
+  },
+  {
     "Place": "Lerida",
     "Postcode": 2581,
     "Electorate": "EDEN-MONARO"
@@ -11605,7 +11755,7 @@
     "Electorate": "CALARE"
   },
   {
-    "Place": "Oaky Park",
+    "Place": "Oakey Park",
     "Postcode": 2790,
     "Electorate": "CALARE"
   },
@@ -12070,6 +12220,11 @@
     "Electorate": "HUME"
   },
   {
+    "Place": "Brayton",
+    "Postcode": 2579,
+    "Electorate": "HUME"
+  },
+  {
     "Place": "Exeter",
     "Postcode": 2579,
     "Electorate": "HUME"
@@ -12091,6 +12246,11 @@
   },
   {
     "Place": "Penrose",
+    "Postcode": 2579,
+    "Electorate": "HUME"
+  },
+  {
+    "Place": "Tallong",
     "Postcode": 2579,
     "Electorate": "HUME"
   },
@@ -12406,6 +12566,16 @@
   },
   {
     "Place": "Biniguy",
+    "Postcode": 2399,
+    "Electorate": "PARKES"
+  },
+  {
+    "Place": "Biniguy",
+    "Postcode": 2399,
+    "Electorate": "PARKES"
+  },
+  {
+    "Place": "Pallamallawa",
     "Postcode": 2399,
     "Electorate": "PARKES"
   },
@@ -12960,6 +13130,11 @@
     "Electorate": "RIVERINA"
   },
   {
+    "Place": "Quandialla",
+    "Postcode": 2721,
+    "Electorate": "RIVERINA"
+  },
+  {
     "Place": "Blaxland",
     "Postcode": 2774,
     "Electorate": "MACQUARIE"
@@ -12978,6 +13153,11 @@
     "Place": "Warrimoo",
     "Postcode": 2774,
     "Electorate": "MACQUARIE"
+  },
+  {
+    "Place": "North Star",
+    "Postcode": 2408,
+    "Electorate": "PARKES"
   },
   {
     "Place": "North Star",
@@ -13161,6 +13341,11 @@
   },
   {
     "Place": "Bobadah",
+    "Postcode": 2877,
+    "Electorate": "PARKES"
+  },
+  {
+    "Place": "Boona Mount",
     "Postcode": 2877,
     "Electorate": "PARKES"
   },
@@ -13840,7 +14025,22 @@
     "Electorate": "COWPER"
   },
   {
+    "Place": "Korora",
+    "Postcode": 2450,
+    "Electorate": "COWPER"
+  },
+  {
     "Place": "Korora Basin",
+    "Postcode": 2450,
+    "Electorate": "COWPER"
+  },
+  {
+    "Place": "Korora Basin",
+    "Postcode": 2450,
+    "Electorate": "COWPER"
+  },
+  {
+    "Place": "Korora Bay",
     "Postcode": 2450,
     "Electorate": "COWPER"
   },
@@ -14013,6 +14213,11 @@
     "Place": "Boomanoomana",
     "Postcode": 2712,
     "Electorate": "FARRER"
+  },
+  {
+    "Place": "Boggabilla",
+    "Postcode": 2409,
+    "Electorate": "PARKES"
   },
   {
     "Place": "Boggabilla",
@@ -15220,6 +15425,11 @@
     "Electorate": "PATERSON"
   },
   {
+    "Place": "Buchanan",
+    "Postcode": 2323,
+    "Electorate": "PATERSON"
+  },
+  {
     "Place": "Buttai",
     "Postcode": 2323,
     "Electorate": "PATERSON"
@@ -15705,7 +15915,17 @@
     "Electorate": "PARKES"
   },
   {
+    "Place": "Moree",
+    "Postcode": 2400,
+    "Electorate": "PARKES"
+  },
+  {
     "Place": "Terry Hie Hie",
+    "Postcode": 2400,
+    "Electorate": "PARKES"
+  },
+  {
+    "Place": "Tulloona",
     "Postcode": 2400,
     "Electorate": "PARKES"
   },
@@ -15881,6 +16101,11 @@
   },
   {
     "Place": "Bungarribee",
+    "Postcode": 2767,
+    "Electorate": "CHIFLEY"
+  },
+  {
+    "Place": "Doonside",
     "Postcode": 2767,
     "Electorate": "CHIFLEY"
   },
@@ -16340,12 +16565,12 @@
     "Electorate": "WHITLAM"
   },
   {
-    "Place": "Yellow Rock",
+    "Place": "Yellow Rock Ridge",
     "Postcode": 2527,
     "Electorate": "GILMORE"
   },
   {
-    "Place": "Yellow Rock",
+    "Place": "Yellow Rock Ridge",
     "Postcode": 2527,
     "Electorate": "WHITLAM"
   },
@@ -16741,6 +16966,11 @@
   },
   {
     "Place": "Elizabeth Hills",
+    "Postcode": 2171,
+    "Electorate": "WERRIWA"
+  },
+  {
+    "Place": "Horningsea Park",
     "Postcode": 2171,
     "Electorate": "WERRIWA"
   },
@@ -17175,6 +17405,16 @@
     "Electorate": "PARRAMATTA"
   },
   {
+    "Place": "Clyde",
+    "Postcode": 2142,
+    "Electorate": "PARRAMATTA"
+  },
+  {
+    "Place": "Granville",
+    "Postcode": 2142,
+    "Electorate": "PARRAMATTA"
+  },
+  {
     "Place": "Granville",
     "Postcode": 2142,
     "Electorate": "PARRAMATTA"
@@ -17233,6 +17473,11 @@
     "Place": "Burrill Lake",
     "Postcode": 2539,
     "Electorate": "GILMORE"
+  },
+  {
+    "Place": "Cockwhy",
+    "Postcode": 2539,
+    "Electorate": ""
   },
   {
     "Place": "Conjola",
@@ -17520,6 +17765,11 @@
     "Electorate": "RIVERINA"
   },
   {
+    "Place": "Morangarell",
+    "Postcode": 2666,
+    "Electorate": "RIVERINA"
+  },
+  {
     "Place": "Narraburra",
     "Postcode": 2666,
     "Electorate": "RIVERINA"
@@ -17563,6 +17813,16 @@
     "Place": "Girraween",
     "Postcode": 2145,
     "Electorate": "GREENWAY"
+  },
+  {
+    "Place": "Greystanes",
+    "Postcode": 2145,
+    "Electorate": "MCMAHON"
+  },
+  {
+    "Place": "Greystanes",
+    "Postcode": 2145,
+    "Electorate": "MCMAHON"
   },
   {
     "Place": "Greystanes",
@@ -17880,6 +18140,11 @@
     "Electorate": "WHITLAM"
   },
   {
+    "Place": "Kembla Grange",
+    "Postcode": 2526,
+    "Electorate": "WHITLAM"
+  },
+  {
     "Place": "Kembla Heights",
     "Postcode": 2526,
     "Electorate": "CUNNINGHAM"
@@ -17888,6 +18153,11 @@
     "Place": "Mount Kembla",
     "Postcode": 2526,
     "Electorate": "CUNNINGHAM"
+  },
+  {
+    "Place": "Stream Hill",
+    "Postcode": 2526,
+    "Electorate": "WHITLAM"
   },
   {
     "Place": "Unanderra",
@@ -19205,7 +19475,17 @@
     "Electorate": "MACARTHUR"
   },
   {
+    "Place": "Catherine Field",
+    "Postcode": 2557,
+    "Electorate": "MACARTHUR"
+  },
+  {
     "Place": "Gledswood Hills",
+    "Postcode": 2557,
+    "Electorate": "MACARTHUR"
+  },
+  {
+    "Place": "Gregory Hills",
     "Postcode": 2557,
     "Electorate": "MACARTHUR"
   },
@@ -19256,6 +19536,11 @@
   },
   {
     "Place": "Pullabooka",
+    "Postcode": 2810,
+    "Electorate": "RIVERINA"
+  },
+  {
+    "Place": "Warraderry",
     "Postcode": 2810,
     "Electorate": "RIVERINA"
   },
@@ -20095,11 +20380,6 @@
     "Electorate": "PARKES"
   },
   {
-    "Place": "Gubbata",
-    "Postcode": 2669,
-    "Electorate": "RIVERINA"
-  },
-  {
     "Place": "Kikoira",
     "Postcode": 2669,
     "Electorate": "RIVERINA"
@@ -20118,11 +20398,6 @@
     "Place": "Naradhan",
     "Postcode": 2669,
     "Electorate": "PARKES"
-  },
-  {
-    "Place": "Naradhan",
-    "Postcode": 2669,
-    "Electorate": "RIVERINA"
   },
   {
     "Place": "Rankins Springs",
@@ -20530,11 +20805,6 @@
     "Electorate": "REID"
   },
   {
-    "Place": "Lidcombe",
-    "Postcode": 2141,
-    "Electorate": "WATSON"
-  },
-  {
     "Place": "Rookwood",
     "Postcode": 2141,
     "Electorate": "WATSON"
@@ -20930,6 +21200,11 @@
     "Electorate": "PARKES"
   },
   {
+    "Place": "Wongarbon",
+    "Postcode": 2831,
+    "Electorate": "PARKES"
+  },
+  {
     "Place": "Bateau Bay",
     "Postcode": 2261,
     "Electorate": "DOBELL"
@@ -21280,12 +21555,22 @@
     "Electorate": "MACARTHUR"
   },
   {
+    "Place": "Minto",
+    "Postcode": 2566,
+    "Electorate": "MACARTHUR"
+  },
+  {
     "Place": "Minto Heights",
     "Postcode": 2566,
     "Electorate": "MACARTHUR"
   },
   {
     "Place": "Raby",
+    "Postcode": 2566,
+    "Electorate": "MACARTHUR"
+  },
+  {
+    "Place": "St Andrews",
     "Postcode": 2566,
     "Electorate": "MACARTHUR"
   },
@@ -21465,7 +21750,17 @@
     "Electorate": "PATERSON"
   },
   {
+    "Place": "Abermain",
+    "Postcode": 2326,
+    "Electorate": "PATERSON"
+  },
+  {
     "Place": "Bishops Bridge",
+    "Postcode": 2326,
+    "Electorate": "PATERSON"
+  },
+  {
+    "Place": "Loxford",
     "Postcode": 2326,
     "Electorate": "PATERSON"
   },
@@ -21485,9 +21780,19 @@
     "Electorate": "PATERSON"
   },
   {
+    "Place": "Sawyers Gully",
+    "Postcode": 2326,
+    "Electorate": "PATERSON"
+  },
+  {
     "Place": "Tomalpin",
     "Postcode": 2326,
     "Electorate": "HUNTER"
+  },
+  {
+    "Place": "Weston",
+    "Postcode": 2326,
+    "Electorate": "PATERSON"
   },
   {
     "Place": "Weston",
@@ -21543,6 +21848,11 @@
     "Place": "Tamarama",
     "Postcode": 2026,
     "Electorate": "WENTWORTH"
+  },
+  {
+    "Place": "Epping",
+    "Postcode": 2121,
+    "Electorate": "BENNELONG"
   },
   {
     "Place": "Epping",
@@ -21656,6 +21966,11 @@
   },
   {
     "Place": "North Wahroonga",
+    "Postcode": 2076,
+    "Electorate": "BRADFIELD"
+  },
+  {
+    "Place": "Wahroonga",
     "Postcode": 2076,
     "Electorate": "BRADFIELD"
   },
@@ -22155,6 +22470,11 @@
     "Electorate": "KINGSFORD SMITH"
   },
   {
+    "Place": "Coogee",
+    "Postcode": 2034,
+    "Electorate": "KINGSFORD SMITH"
+  },
+  {
     "Place": "South Coogee",
     "Postcode": 2034,
     "Electorate": "KINGSFORD SMITH"
@@ -22485,6 +22805,16 @@
     "Electorate": "GILMORE"
   },
   {
+    "Place": "Turlinjah",
+    "Postcode": 2537,
+    "Electorate": "GILMORE"
+  },
+  {
+    "Place": "Tuross Head",
+    "Postcode": 2537,
+    "Electorate": "GILMORE"
+  },
+  {
     "Place": "Tuross Head",
     "Postcode": 2537,
     "Electorate": "GILMORE"
@@ -22551,6 +22881,16 @@
   },
   {
     "Place": "Wetherill Park",
+    "Postcode": 2164,
+    "Electorate": "MCMAHON"
+  },
+  {
+    "Place": "Wetherill Park",
+    "Postcode": 2164,
+    "Electorate": "MCMAHON"
+  },
+  {
+    "Place": "Woodpark",
     "Postcode": 2164,
     "Electorate": "MCMAHON"
   },
@@ -22637,11 +22977,6 @@
   {
     "Place": "Elizabeth Bay",
     "Postcode": 2011,
-    "Electorate": "SYDNEY"
-  },
-  {
-    "Place": "Elizabeth Bay",
-    "Postcode": 2011,
     "Electorate": "WENTWORTH"
   },
   {
@@ -22663,6 +22998,11 @@
     "Place": "Kings Cross",
     "Postcode": 2011,
     "Electorate": "WENTWORTH"
+  },
+  {
+    "Place": "Kings Cross",
+    "Postcode": 2011,
+    "Electorate": "SYDNEY"
   },
   {
     "Place": "Kings Cross",
@@ -22683,6 +23023,11 @@
     "Place": "Rushcutters Bay",
     "Postcode": 2011,
     "Electorate": "WENTWORTH"
+  },
+  {
+    "Place": "Woolloomooloo",
+    "Postcode": 2011,
+    "Electorate": "SYDNEY"
   },
   {
     "Place": "Woolloomooloo",
@@ -23055,6 +23400,11 @@
     "Electorate": "GRAYNDLER"
   },
   {
+    "Place": "Lilyfield",
+    "Postcode": 2040,
+    "Electorate": "GRAYNDLER"
+  },
+  {
     "Place": "Marrickville",
     "Postcode": 2204,
     "Electorate": "BARTON"
@@ -23175,11 +23525,6 @@
     "Electorate": "REID"
   },
   {
-    "Place": "Ashfield",
-    "Postcode": 2131,
-    "Electorate": "WATSON"
-  },
-  {
     "Place": "Banksia",
     "Postcode": 2216,
     "Electorate": "BARTON"
@@ -23191,6 +23536,11 @@
   },
   {
     "Place": "Kyeemagh",
+    "Postcode": 2216,
+    "Electorate": "BARTON"
+  },
+  {
+    "Place": "Rockdale",
     "Postcode": 2216,
     "Electorate": "BARTON"
   },
@@ -23265,6 +23615,16 @@
     "Electorate": "COOK"
   },
   {
+    "Place": "Ramsgate",
+    "Postcode": 2217,
+    "Electorate": "COOK"
+  },
+  {
+    "Place": "Ramsgate Beach",
+    "Postcode": 2217,
+    "Electorate": "COOK"
+  },
+  {
     "Place": "Ramsgate Beach",
     "Postcode": 2217,
     "Electorate": "COOK"
@@ -23278,11 +23638,6 @@
     "Place": "Beverly Hills",
     "Postcode": 2209,
     "Electorate": "BARTON"
-  },
-  {
-    "Place": "Beverly Hills",
-    "Postcode": 2209,
-    "Electorate": "WATSON"
   },
   {
     "Place": "Narwee",
@@ -23323,6 +23678,11 @@
     "Place": "Kyle Bay",
     "Postcode": 2221,
     "Electorate": "COOK"
+  },
+  {
+    "Place": "South Hurstville",
+    "Postcode": 2221,
+    "Electorate": "BANKS"
   },
   {
     "Place": "South Hurstville",
@@ -23465,6 +23825,16 @@
     "Electorate": "WATSON"
   },
   {
+    "Place": "Punchbowl",
+    "Postcode": 2196,
+    "Electorate": "WATSON"
+  },
+  {
+    "Place": "Roselands",
+    "Postcode": 2196,
+    "Electorate": "WATSON"
+  },
+  {
     "Place": "Roselands",
     "Postcode": 2196,
     "Electorate": "WATSON"
@@ -23512,17 +23882,7 @@
   {
     "Place": "Audley",
     "Postcode": 2232,
-    "Electorate": "CUNNINGHAM"
-  },
-  {
-    "Place": "Audley",
-    "Postcode": 2232,
     "Electorate": "HUGHES"
-  },
-  {
-    "Place": "Deer Park",
-    "Postcode": 2232,
-    "Electorate": "CUNNINGHAM"
   },
   {
     "Place": "Deer Park",
@@ -23550,6 +23910,11 @@
     "Electorate": "HUGHES"
   },
   {
+    "Place": "Kirrawee",
+    "Postcode": 2232,
+    "Electorate": "HUGHES"
+  },
+  {
     "Place": "Loftus",
     "Postcode": 2232,
     "Electorate": "HUGHES"
@@ -23557,10 +23922,10 @@
   {
     "Place": "Royal National Park",
     "Postcode": 2232,
-    "Electorate": "CUNNINGHAM"
+    "Electorate": "HUGHES"
   },
   {
-    "Place": "Royal National Park",
+    "Place": "Sutherland",
     "Postcode": 2232,
     "Electorate": "HUGHES"
   },
@@ -23656,6 +24021,16 @@
   },
   {
     "Place": "Como",
+    "Postcode": 2226,
+    "Electorate": "HUGHES"
+  },
+  {
+    "Place": "Como",
+    "Postcode": 2226,
+    "Electorate": "HUGHES"
+  },
+  {
+    "Place": "Jannali",
     "Postcode": 2226,
     "Electorate": "HUGHES"
   },
@@ -23785,6 +24160,11 @@
     "Electorate": "NORTH SYDNEY"
   },
   {
+    "Place": "Cammeray",
+    "Postcode": 2062,
+    "Electorate": "NORTH SYDNEY"
+  },
+  {
     "Place": "Chatswood",
     "Postcode": 2067,
     "Electorate": "BRADFIELD"
@@ -23805,12 +24185,12 @@
     "Electorate": "BRADFIELD"
   },
   {
-    "Place": "Chatswood West",
-    "Postcode": 2067,
+    "Place": "Crows Nest",
+    "Postcode": 2065,
     "Electorate": "NORTH SYDNEY"
   },
   {
-    "Place": "Crows Nest",
+    "Place": "Gore Hill",
     "Postcode": 2065,
     "Electorate": "NORTH SYDNEY"
   },
@@ -23836,6 +24216,11 @@
   },
   {
     "Place": "Naremburn",
+    "Postcode": 2065,
+    "Electorate": "NORTH SYDNEY"
+  },
+  {
+    "Place": "St Leonards",
     "Postcode": 2065,
     "Electorate": "NORTH SYDNEY"
   },
@@ -24000,6 +24385,11 @@
     "Electorate": "BENNELONG"
   },
   {
+    "Place": "Melrose Park",
+    "Postcode": 2114,
+    "Electorate": "BENNELONG"
+  },
+  {
     "Place": "West Ryde",
     "Postcode": 2114,
     "Electorate": "BENNELONG"
@@ -24028,6 +24418,11 @@
     "Place": "Lindfield",
     "Postcode": 2070,
     "Electorate": "BRADFIELD"
+  },
+  {
+    "Place": "Eastwood",
+    "Postcode": 2122,
+    "Electorate": "BENNELONG"
   },
   {
     "Place": "Eastwood",
@@ -24460,6 +24855,16 @@
     "Electorate": "GREENWAY"
   },
   {
+    "Place": "Seven Hills",
+    "Postcode": 2147,
+    "Electorate": "GREENWAY"
+  },
+  {
+    "Place": "Seven Hills",
+    "Postcode": 2147,
+    "Electorate": "GREENWAY"
+  },
+  {
     "Place": "Old Toongabbie",
     "Postcode": 2146,
     "Electorate": "MITCHELL"
@@ -24528,11 +24933,6 @@
     "Place": "Box Hill",
     "Postcode": 2765,
     "Electorate": "MITCHELL"
-  },
-  {
-    "Place": "Gables",
-    "Postcode": 2765,
-    "Electorate": "BEROWRA"
   },
   {
     "Place": "Gables",
@@ -24840,6 +25240,11 @@
     "Electorate": "BLAXLAND"
   },
   {
+    "Place": "Bass Hill",
+    "Postcode": 2197,
+    "Electorate": "BLAXLAND"
+  },
+  {
     "Place": "Birrong",
     "Postcode": 2143,
     "Electorate": "BLAXLAND"
@@ -25070,6 +25475,11 @@
     "Electorate": "MACARTHUR"
   },
   {
+    "Place": "Bradfield",
+    "Postcode": 2556,
+    "Electorate": "WERRIWA"
+  },
+  {
     "Place": "Bringelly",
     "Postcode": 2556,
     "Electorate": "HUME"
@@ -25140,9 +25550,19 @@
     "Electorate": "WERRIWA"
   },
   {
+    "Place": "Edmondson Park",
+    "Postcode": 2174,
+    "Electorate": "WERRIWA"
+  },
+  {
     "Place": "Liverpool Military Area",
     "Postcode": 2174,
     "Electorate": "HUGHES"
+  },
+  {
+    "Place": "Glenfield",
+    "Postcode": 2167,
+    "Electorate": "WERRIWA"
   },
   {
     "Place": "Glenfield",
@@ -25770,6 +26190,16 @@
     "Electorate": "PARKES"
   },
   {
+    "Place": "Croppa Creek",
+    "Postcode": 2411,
+    "Electorate": "PARKES"
+  },
+  {
+    "Place": "Gravesend",
+    "Postcode": 2401,
+    "Electorate": "PARKES"
+  },
+  {
     "Place": "Gravesend",
     "Postcode": 2401,
     "Electorate": "PARKES"
@@ -25813,6 +26243,11 @@
     "Place": "Werris Creek",
     "Postcode": 2341,
     "Electorate": "NEW ENGLAND"
+  },
+  {
+    "Place": "Werris Creek",
+    "Postcode": 2341,
+    "Electorate": "PARKES"
   },
   {
     "Place": "Tweed Heads",
@@ -26025,11 +26460,6 @@
     "Electorate": "CALARE"
   },
   {
-    "Place": "Boona Mount",
-    "Postcode": 2874,
-    "Electorate": "PARKES"
-  },
-  {
     "Place": "Tullamore",
     "Postcode": 2874,
     "Electorate": "PARKES"
@@ -26063,6 +26493,11 @@
     "Place": "Coleambally",
     "Postcode": 2707,
     "Electorate": "FARRER"
+  },
+  {
+    "Place": "Barmedman",
+    "Postcode": 2668,
+    "Electorate": "RIVERINA"
   },
   {
     "Place": "Barmedman",
@@ -26900,11 +27335,6 @@
     "Electorate": "LINGIARI"
   },
   {
-    "Place": "Flagon Creek Camp",
-    "Postcode": 822,
-    "Electorate": "LINGIARI"
-  },
-  {
     "Place": "Fly Creek",
     "Postcode": 822,
     "Electorate": "LINGIARI"
@@ -27015,6 +27445,11 @@
     "Electorate": "LINGIARI"
   },
   {
+    "Place": "Gitan",
+    "Postcode": 822,
+    "Electorate": "LINGIARI"
+  },
+  {
     "Place": "Anula",
     "Postcode": 812,
     "Electorate": "SOLOMON"
@@ -27041,6 +27476,21 @@
   },
   {
     "Place": "Northlakes",
+    "Postcode": 812,
+    "Electorate": "SOLOMON"
+  },
+  {
+    "Place": "Sanderson",
+    "Postcode": 812,
+    "Electorate": "SOLOMON"
+  },
+  {
+    "Place": "Sanderson",
+    "Postcode": 812,
+    "Electorate": "SOLOMON"
+  },
+  {
+    "Place": "Sanderson",
     "Postcode": 812,
     "Electorate": "SOLOMON"
   },
@@ -27190,7 +27640,7 @@
     "Electorate": "SOLOMON"
   },
   {
-    "Place": "Darwin Raaf",
+    "Place": "Darwin Raaf Base",
     "Postcode": 820,
     "Electorate": "SOLOMON"
   },
@@ -28500,7 +28950,7 @@
     "Electorate": "LINGIARI"
   },
   {
-    "Place": "Walpiri",
+    "Place": "Walpiri Transient Camp",
     "Postcode": 850,
     "Electorate": "LINGIARI"
   },
@@ -28665,6 +29115,11 @@
     "Electorate": "LINGIARI"
   },
   {
+    "Place": "Garrathiya Stn",
+    "Postcode": 880,
+    "Electorate": "LINGIARI"
+  },
+  {
     "Place": "Garrthalala",
     "Postcode": 880,
     "Electorate": "LINGIARI"
@@ -28815,14 +29270,9 @@
     "Electorate": "LINGIARI"
   },
   {
-    "Place": "Palmerston",
+    "Place": "Yarrawonga Bush Camp",
     "Postcode": 831,
     "Electorate": "LINGIARI"
-  },
-  {
-    "Place": "Palmerston",
-    "Postcode": 831,
-    "Electorate": "SOLOMON"
   },
   {
     "Place": "Bonrook Stn",
@@ -29565,6 +30015,11 @@
     "Electorate": "LINGIARI"
   },
   {
+    "Place": "De Rose Hill",
+    "Postcode": 872,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Deep Well Stn",
     "Postcode": 872,
     "Electorate": "LINGIARI"
@@ -29646,11 +30101,6 @@
   },
   {
     "Place": "Ernabella",
-    "Postcode": 872,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "Everard Park Homestead",
     "Postcode": 872,
     "Electorate": "GREY"
   },
@@ -29800,12 +30250,22 @@
     "Electorate": "LINGIARI"
   },
   {
+    "Place": "Irrkerlantye",
+    "Postcode": 870,
+    "Electorate": "LINGIARI"
+  },
+  {
     "Place": "Itwiyethwenge",
     "Postcode": 870,
     "Electorate": "LINGIARI"
   },
   {
     "Place": "Karnte",
+    "Postcode": 870,
+    "Electorate": "LINGIARI"
+  },
+  {
+    "Place": "Kite Hawk",
     "Postcode": 870,
     "Electorate": "LINGIARI"
   },
@@ -29941,6 +30401,11 @@
   },
   {
     "Place": "Wanarkula",
+    "Postcode": 870,
+    "Electorate": "LINGIARI"
+  },
+  {
+    "Place": "White Gate",
     "Postcode": 870,
     "Electorate": "LINGIARI"
   },
@@ -30405,7 +30870,7 @@
     "Electorate": "LINGIARI"
   },
   {
-    "Place": "Pungalina Wildlife Sant",
+    "Place": "Pungalina Wildlife Sanct",
     "Postcode": 862,
     "Electorate": "LINGIARI"
   },
@@ -30777,7 +31242,22 @@
   {
     "Place": "Bundaberg",
     "Postcode": 4670,
-    "Electorate": "FLYNN"
+    "Electorate": "HINKLER"
+  },
+  {
+    "Place": "Bundaberg",
+    "Postcode": 4670,
+    "Electorate": "HINKLER"
+  },
+  {
+    "Place": "Bundaberg",
+    "Postcode": 4670,
+    "Electorate": "HINKLER"
+  },
+  {
+    "Place": "Bundaberg",
+    "Postcode": 4670,
+    "Electorate": "HINKLER"
   },
   {
     "Place": "Bundaberg",
@@ -31325,6 +31805,11 @@
     "Electorate": "WIDE BAY"
   },
   {
+    "Place": "St Mary",
+    "Postcode": 4650,
+    "Electorate": "WIDE BAY"
+  },
+  {
     "Place": "Talegalla Weir",
     "Postcode": 4650,
     "Electorate": "WIDE BAY"
@@ -31376,6 +31861,11 @@
   },
   {
     "Place": "Tuan",
+    "Postcode": 4650,
+    "Electorate": "WIDE BAY"
+  },
+  {
+    "Place": "Tuan Forest",
     "Postcode": 4650,
     "Electorate": "WIDE BAY"
   },
@@ -33025,6 +33515,11 @@
     "Electorate": "CAPRICORNIA"
   },
   {
+    "Place": "Cheeseborough",
+    "Postcode": 4702,
+    "Electorate": "FLYNN"
+  },
+  {
     "Place": "Comet",
     "Postcode": 4702,
     "Electorate": "FLYNN"
@@ -33083,11 +33578,6 @@
     "Place": "Etna Creek",
     "Postcode": 4702,
     "Electorate": "CAPRICORNIA"
-  },
-  {
-    "Place": "Fork Lagoons",
-    "Postcode": 4702,
-    "Electorate": "FLYNN"
   },
   {
     "Place": "Gainsford",
@@ -33188,6 +33678,11 @@
     "Place": "Kunwarara",
     "Postcode": 4702,
     "Electorate": "CAPRICORNIA"
+  },
+  {
+    "Place": "Lochington",
+    "Postcode": 4702,
+    "Electorate": "FLYNN"
   },
   {
     "Place": "Lowesby",
@@ -34430,11 +34925,6 @@
     "Electorate": "MARANOA"
   },
   {
-    "Place": "Burra Burri",
-    "Postcode": 4413,
-    "Electorate": "MARANOA"
-  },
-  {
     "Place": "Cameby",
     "Postcode": 4413,
     "Electorate": "MARANOA"
@@ -34631,6 +35121,11 @@
   },
   {
     "Place": "Charters Towers",
+    "Postcode": 4820,
+    "Electorate": "KENNEDY"
+  },
+  {
+    "Place": "Charters Towers City",
     "Postcode": 4820,
     "Electorate": "KENNEDY"
   },
@@ -34933,6 +35428,11 @@
     "Place": "Coral Sea",
     "Postcode": 4741,
     "Electorate": "CAPRICORNIA"
+  },
+  {
+    "Place": "Coral Sea",
+    "Postcode": 4741,
+    "Electorate": "FLYNN"
   },
   {
     "Place": "Daydream Island",
@@ -36080,7 +36580,17 @@
     "Electorate": "FLYNN"
   },
   {
+    "Place": "Cotherstone",
+    "Postcode": 4723,
+    "Electorate": "FLYNN"
+  },
+  {
     "Place": "Crinum",
+    "Postcode": 4723,
+    "Electorate": "FLYNN"
+  },
+  {
+    "Place": "Fork Lagoons",
     "Postcode": 4723,
     "Electorate": "FLYNN"
   },
@@ -36116,6 +36626,11 @@
   },
   {
     "Place": "Retro",
+    "Postcode": 4723,
+    "Electorate": "FLYNN"
+  },
+  {
+    "Place": "Wyuna",
     "Postcode": 4723,
     "Electorate": "FLYNN"
   },
@@ -36540,11 +37055,6 @@
     "Electorate": "WIDE BAY"
   },
   {
-    "Place": "St Mary",
-    "Postcode": 4570,
-    "Electorate": "WIDE BAY"
-  },
-  {
     "Place": "Tamaree",
     "Postcode": 4570,
     "Electorate": "WIDE BAY"
@@ -36961,6 +37471,11 @@
   },
   {
     "Place": "Murrigal",
+    "Postcode": 4854,
+    "Electorate": "KENNEDY"
+  },
+  {
+    "Place": "Rockingham",
     "Postcode": 4854,
     "Electorate": "KENNEDY"
   },
@@ -38085,11 +38600,6 @@
     "Electorate": "FLYNN"
   },
   {
-    "Place": "Lochington",
-    "Postcode": 4722,
-    "Electorate": "FLYNN"
-  },
-  {
     "Place": "Mantuan Downs",
     "Postcode": 4722,
     "Electorate": "FLYNN"
@@ -38495,6 +39005,11 @@
     "Electorate": "FISHER"
   },
   {
+    "Place": "Banya",
+    "Postcode": 4551,
+    "Electorate": "FISHER"
+  },
+  {
     "Place": "Baringa",
     "Postcode": 4551,
     "Electorate": "FISHER"
@@ -38521,6 +39036,11 @@
   },
   {
     "Place": "Caloundra West",
+    "Postcode": 4551,
+    "Electorate": "FISHER"
+  },
+  {
+    "Place": "Corbould Park",
     "Postcode": 4551,
     "Electorate": "FISHER"
   },
@@ -39850,11 +40370,6 @@
     "Electorate": "MARANOA"
   },
   {
-    "Place": "Waikola",
-    "Postcode": 4427,
-    "Electorate": "MARANOA"
-  },
-  {
     "Place": "Yuleba",
     "Postcode": 4427,
     "Electorate": "MARANOA"
@@ -40730,11 +41245,6 @@
     "Electorate": "CAPRICORNIA"
   },
   {
-    "Place": "Cheeseborough",
-    "Postcode": 4721,
-    "Electorate": "FLYNN"
-  },
-  {
     "Place": "Clermont",
     "Postcode": 4721,
     "Electorate": "CAPRICORNIA"
@@ -41046,6 +41556,11 @@
   },
   {
     "Place": "Inskip",
+    "Postcode": 4581,
+    "Electorate": "WIDE BAY"
+  },
+  {
+    "Place": "K'Gari",
     "Postcode": 4581,
     "Electorate": "WIDE BAY"
   },
@@ -42967,11 +43482,6 @@
   {
     "Place": "Macalister",
     "Postcode": 4406,
-    "Electorate": "KENNEDY"
-  },
-  {
-    "Place": "Macalister",
-    "Postcode": 4406,
     "Electorate": "MARANOA"
   },
   {
@@ -43000,9 +43510,19 @@
     "Electorate": "MARANOA"
   },
   {
+    "Place": "Broadmere",
+    "Postcode": 4420,
+    "Electorate": "FLYNN"
+  },
+  {
     "Place": "Eurombah",
     "Postcode": 4420,
     "Electorate": "MARANOA"
+  },
+  {
+    "Place": "Ghinghinda",
+    "Postcode": 4420,
+    "Electorate": "FLYNN"
   },
   {
     "Place": "Glebe",
@@ -43020,9 +43540,19 @@
     "Electorate": "FLYNN"
   },
   {
+    "Place": "Spring Creek",
+    "Postcode": 4420,
+    "Electorate": "FLYNN"
+  },
+  {
     "Place": "Taroom",
     "Postcode": 4420,
     "Electorate": "FLYNN"
+  },
+  {
+    "Place": "Waikola",
+    "Postcode": 4420,
+    "Electorate": "MARANOA"
   },
   {
     "Place": "Augustine Heights",
@@ -43520,9 +44050,19 @@
     "Electorate": "BOWMAN"
   },
   {
+    "Place": "Point Talburpin",
+    "Postcode": 4165,
+    "Electorate": "RANKIN"
+  },
+  {
     "Place": "Redland Bay",
     "Postcode": 4165,
     "Electorate": "BOWMAN"
+  },
+  {
+    "Place": "Redland Bay",
+    "Postcode": 4165,
+    "Electorate": "RANKIN"
   },
   {
     "Place": "Victoria Point",
@@ -43575,6 +44115,11 @@
     "Electorate": "FAIRFAX"
   },
   {
+    "Place": "Woombye",
+    "Postcode": 4559,
+    "Electorate": "FISHER"
+  },
+  {
     "Place": "Lindum",
     "Postcode": 4178,
     "Electorate": "BONNER"
@@ -43601,11 +44146,6 @@
   },
   {
     "Place": "Emerald",
-    "Postcode": 4720,
-    "Electorate": "FLYNN"
-  },
-  {
-    "Place": "Wyuna",
     "Postcode": 4720,
     "Electorate": "FLYNN"
   },
@@ -45280,11 +45820,6 @@
     "Electorate": "MARANOA"
   },
   {
-    "Place": "Nebine",
-    "Postcode": 4490,
-    "Electorate": "MARANOA"
-  },
-  {
     "Place": "Noorama",
     "Postcode": 4490,
     "Electorate": "MARANOA"
@@ -45591,6 +46126,11 @@
   },
   {
     "Place": "Bollon",
+    "Postcode": 4488,
+    "Electorate": "MARANOA"
+  },
+  {
+    "Place": "Nebine",
     "Postcode": 4488,
     "Electorate": "MARANOA"
   },
@@ -46220,6 +46760,11 @@
     "Electorate": "MARANOA"
   },
   {
+    "Place": "Burra Burri",
+    "Postcode": 4410,
+    "Electorate": "MARANOA"
+  },
+  {
     "Place": "Diamondy",
     "Postcode": 4410,
     "Electorate": "MARANOA"
@@ -46312,16 +46857,6 @@
   {
     "Place": "Nobby",
     "Postcode": 4360,
-    "Electorate": "MARANOA"
-  },
-  {
-    "Place": "North Talwood",
-    "Postcode": 4496,
-    "Electorate": "MARANOA"
-  },
-  {
-    "Place": "South Talwood",
-    "Postcode": 4496,
     "Electorate": "MARANOA"
   },
   {
@@ -46870,11 +47405,6 @@
     "Electorate": "FLYNN"
   },
   {
-    "Place": "Cotherstone",
-    "Postcode": 4745,
-    "Electorate": "FLYNN"
-  },
-  {
     "Place": "Dysart",
     "Postcode": 4745,
     "Electorate": "CAPRICORNIA"
@@ -46970,11 +47500,6 @@
     "Electorate": "FLYNN"
   },
   {
-    "Place": "Bundoora",
-    "Postcode": 4746,
-    "Electorate": "FLYNN"
-  },
-  {
     "Place": "May Downs",
     "Postcode": 4746,
     "Electorate": "CAPRICORNIA"
@@ -46997,6 +47522,11 @@
   {
     "Place": "Raglan",
     "Postcode": 4697,
+    "Electorate": "FLYNN"
+  },
+  {
+    "Place": "Bundoora",
+    "Postcode": 4709,
     "Electorate": "FLYNN"
   },
   {
@@ -47655,6 +48185,11 @@
     "Electorate": "GREY"
   },
   {
+    "Place": "Minburra Plain",
+    "Postcode": 5431,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Morchard",
     "Postcode": 5431,
     "Electorate": "GREY"
@@ -47985,11 +48520,6 @@
     "Electorate": "BARKER"
   },
   {
-    "Place": "Wall Flat",
-    "Postcode": 5238,
-    "Electorate": "BARKER"
-  },
-  {
     "Place": "Wongulla",
     "Postcode": 5238,
     "Electorate": "BARKER"
@@ -48135,11 +48665,6 @@
     "Electorate": "GREY"
   },
   {
-    "Place": "Carriewerloo",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
     "Place": "Commonwealth Hill",
     "Postcode": 5701,
     "Electorate": "GREY"
@@ -48155,37 +48680,7 @@
     "Electorate": "GREY"
   },
   {
-    "Place": "Emeroo",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "Etadunna",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
     "Place": "Glendambo",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "Kolendo",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "Kootaberra",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "Lake Everard",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "Mahanewo",
     "Postcode": 5701,
     "Electorate": "GREY"
   },
@@ -48200,57 +48695,7 @@
     "Electorate": "GREY"
   },
   {
-    "Place": "Mount Ive",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
     "Place": "Mulgathing",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "Narcoona",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "Nonning",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "North Well",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "Oakden Hills",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "Pandie Pandie",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "Pandurra",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "Pernatty",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "Siam",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "South Gap",
     "Postcode": 5701,
     "Electorate": "GREY"
   },
@@ -48260,42 +48705,7 @@
     "Electorate": "GREY"
   },
   {
-    "Place": "Thurlga",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "Wartaka",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "Wilkatana Station",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "William Creek",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "Wirraminna",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
     "Place": "Woolundunga",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "Yadlamalka",
-    "Postcode": 5701,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "Yardea",
     "Postcode": 5701,
     "Electorate": "GREY"
   },
@@ -48455,11 +48865,6 @@
     "Electorate": "GREY"
   },
   {
-    "Place": "Brownlow",
-    "Postcode": 5374,
-    "Electorate": "MAYO"
-  },
-  {
     "Place": "Buchanan",
     "Postcode": 5374,
     "Electorate": "GREY"
@@ -48575,6 +48980,11 @@
     "Electorate": "BARKER"
   },
   {
+    "Place": "Monteith",
+    "Postcode": 5253,
+    "Electorate": "BARKER"
+  },
+  {
     "Place": "Murrawong",
     "Postcode": 5253,
     "Electorate": "BARKER"
@@ -48611,11 +49021,6 @@
   },
   {
     "Place": "Riverglen",
-    "Postcode": 5253,
-    "Electorate": "BARKER"
-  },
-  {
-    "Place": "Rocky Gully",
     "Postcode": 5253,
     "Electorate": "BARKER"
   },
@@ -48885,27 +49290,12 @@
     "Electorate": "BARKER"
   },
   {
-    "Place": "Langs Landing",
-    "Postcode": 5354,
-    "Electorate": "BARKER"
-  },
-  {
     "Place": "Marks Landing",
     "Postcode": 5354,
     "Electorate": "BARKER"
   },
   {
     "Place": "Naidia",
-    "Postcode": 5354,
-    "Electorate": "BARKER"
-  },
-  {
-    "Place": "Punyelroo",
-    "Postcode": 5354,
-    "Electorate": "BARKER"
-  },
-  {
-    "Place": "Sunnydale",
     "Postcode": 5354,
     "Electorate": "BARKER"
   },
@@ -48975,6 +49365,16 @@
     "Electorate": "GREY"
   },
   {
+    "Place": "Danggali",
+    "Postcode": 5417,
+    "Electorate": "BARKER"
+  },
+  {
+    "Place": "Faraway Hill",
+    "Postcode": 5417,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Gum Creek",
     "Postcode": 5417,
     "Electorate": "GREY"
@@ -49005,12 +49405,32 @@
     "Electorate": "GREY"
   },
   {
+    "Place": "Oakvale Station",
+    "Postcode": 5417,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Old Koomooloo",
     "Postcode": 5417,
     "Electorate": "GREY"
   },
   {
     "Place": "Parcoola",
+    "Postcode": 5417,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Pine Valley Station",
+    "Postcode": 5417,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Quondong",
+    "Postcode": 5417,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Sturt Vale",
     "Postcode": 5417,
     "Electorate": "GREY"
   },
@@ -49200,7 +49620,12 @@
     "Electorate": "GREY"
   },
   {
-    "Place": "Wilpena Pound",
+    "Place": "Shaggy Ridge",
+    "Postcode": 5434,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Upalinna",
     "Postcode": 5434,
     "Electorate": "GREY"
   },
@@ -49640,7 +50065,27 @@
     "Electorate": "GREY"
   },
   {
+    "Place": "Holowiliena",
+    "Postcode": 5432,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Holowiliena South",
+    "Postcode": 5432,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Moockra",
+    "Postcode": 5432,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Willippa",
+    "Postcode": 5432,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Witchitie",
     "Postcode": 5432,
     "Electorate": "GREY"
   },
@@ -49895,11 +50340,6 @@
     "Electorate": "BARKER"
   },
   {
-    "Place": "Canunda",
-    "Postcode": 5291,
-    "Electorate": "BARKER"
-  },
-  {
     "Place": "Cape Douglas",
     "Postcode": 5291,
     "Electorate": "BARKER"
@@ -49936,6 +50376,11 @@
   },
   {
     "Place": "Eight Mile Creek",
+    "Postcode": 5291,
+    "Electorate": "BARKER"
+  },
+  {
+    "Place": "German Creek",
     "Postcode": 5291,
     "Electorate": "BARKER"
   },
@@ -50185,6 +50630,11 @@
     "Electorate": "GREY"
   },
   {
+    "Place": "Mundallio",
+    "Postcode": 5700,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Port Augusta",
     "Postcode": 5700,
     "Electorate": "GREY"
@@ -50300,6 +50750,11 @@
     "Electorate": "GREY"
   },
   {
+    "Place": "Gawler Ranges",
+    "Postcode": 5655,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Kaldoonera",
     "Postcode": 5655,
     "Electorate": "GREY"
@@ -50350,11 +50805,6 @@
     "Electorate": "GREY"
   },
   {
-    "Place": "Dinahline",
-    "Postcode": 5690,
-    "Electorate": "GREY"
-  },
-  {
     "Place": "Fowlers Bay",
     "Postcode": 5690,
     "Electorate": "GREY"
@@ -50381,11 +50831,6 @@
   },
   {
     "Place": "Merghiny",
-    "Postcode": 5690,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "Munda Munda Watutjinna",
     "Postcode": 5690,
     "Electorate": "GREY"
   },
@@ -50435,11 +50880,6 @@
     "Electorate": "GREY"
   },
   {
-    "Place": "Ware Villa",
-    "Postcode": 5690,
-    "Electorate": "GREY"
-  },
-  {
     "Place": "Watraba",
     "Postcode": 5690,
     "Electorate": "GREY"
@@ -50451,11 +50891,6 @@
   },
   {
     "Place": "Yalata",
-    "Postcode": 5690,
-    "Electorate": "GREY"
-  },
-  {
-    "Place": "Yarilena Community",
     "Postcode": 5690,
     "Electorate": "GREY"
   },
@@ -51415,11 +51850,6 @@
     "Electorate": "BARKER"
   },
   {
-    "Place": "Monteith",
-    "Postcode": 5254,
-    "Electorate": "BARKER"
-  },
-  {
     "Place": "Mypolonga",
     "Postcode": 5254,
     "Electorate": "BARKER"
@@ -51430,17 +51860,22 @@
     "Electorate": "BARKER"
   },
   {
-    "Place": "Petwood",
-    "Postcode": 5254,
-    "Electorate": "MAYO"
-  },
-  {
     "Place": "Rockleigh",
     "Postcode": 5254,
     "Electorate": "BARKER"
   },
   {
+    "Place": "Rocky Gully",
+    "Postcode": 5254,
+    "Electorate": "BARKER"
+  },
+  {
     "Place": "Tepko",
+    "Postcode": 5254,
+    "Electorate": "BARKER"
+  },
+  {
+    "Place": "Wall Flat",
     "Postcode": 5254,
     "Electorate": "BARKER"
   },
@@ -51530,17 +51965,17 @@
     "Electorate": "BARKER"
   },
   {
+    "Place": "Canunda",
+    "Postcode": 5280,
+    "Electorate": "BARKER"
+  },
+  {
     "Place": "Clay Wells",
     "Postcode": 5280,
     "Electorate": "BARKER"
   },
   {
     "Place": "Furner",
-    "Postcode": 5280,
-    "Electorate": "BARKER"
-  },
-  {
-    "Place": "German Creek",
     "Postcode": 5280,
     "Electorate": "BARKER"
   },
@@ -51740,11 +52175,6 @@
     "Electorate": "GREY"
   },
   {
-    "Place": "Tia Tuckia",
-    "Postcode": 5680,
-    "Electorate": "GREY"
-  },
-  {
     "Place": "Westall",
     "Postcode": 5680,
     "Electorate": "GREY"
@@ -51871,11 +52301,6 @@
   },
   {
     "Place": "Calperum Station",
-    "Postcode": 5341,
-    "Electorate": "BARKER"
-  },
-  {
-    "Place": "Canopus",
     "Postcode": 5341,
     "Electorate": "BARKER"
   },
@@ -52290,7 +52715,17 @@
     "Electorate": "BARKER"
   },
   {
+    "Place": "Bollards Lagoon",
+    "Postcode": 5731,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Cordillo Downs",
+    "Postcode": 5731,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Farina",
     "Postcode": 5731,
     "Electorate": "GREY"
   },
@@ -52305,7 +52740,42 @@
     "Electorate": "GREY"
   },
   {
+    "Place": "Leigh Creek Station",
+    "Postcode": 5731,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Lindon",
+    "Postcode": 5731,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Lyndhurst",
+    "Postcode": 5731,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Merty Merty",
+    "Postcode": 5731,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Mount Lyndhurst",
+    "Postcode": 5731,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Mulgaria",
+    "Postcode": 5731,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Murnpeowie",
+    "Postcode": 5731,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Witchelina",
     "Postcode": 5731,
     "Electorate": "GREY"
   },
@@ -52570,6 +53040,11 @@
     "Electorate": "MAYO"
   },
   {
+    "Place": "Petwood",
+    "Postcode": 5252,
+    "Electorate": "MAYO"
+  },
+  {
     "Place": "St Ives",
     "Postcode": 5252,
     "Electorate": "MAYO"
@@ -52675,12 +53150,67 @@
     "Electorate": "SPENCE"
   },
   {
+    "Place": "Alton Downs Station",
+    "Postcode": 5733,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Callanna",
+    "Postcode": 5733,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Clayton Station",
+    "Postcode": 5733,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Clifton Hills Station",
+    "Postcode": 5733,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Cowarie",
     "Postcode": 5733,
     "Electorate": "GREY"
   },
   {
+    "Place": "Dulkaninna",
+    "Postcode": 5733,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Etadunna",
+    "Postcode": 5733,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Kalamurina",
+    "Postcode": 5733,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Marree",
+    "Postcode": 5733,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Muloorina",
+    "Postcode": 5733,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Mundowdna",
+    "Postcode": 5733,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Mungerannie",
+    "Postcode": 5733,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Pandie Pandie",
     "Postcode": 5733,
     "Electorate": "GREY"
   },
@@ -53040,6 +53570,11 @@
     "Electorate": "KINGSTON"
   },
   {
+    "Place": "Onkaparinga Heights",
+    "Postcode": 5163,
+    "Electorate": "KINGSTON"
+  },
+  {
     "Place": "Onkaparinga Hills",
     "Postcode": 5163,
     "Electorate": "KINGSTON"
@@ -53200,7 +53735,22 @@
     "Electorate": "GREY"
   },
   {
+    "Place": "Karte",
+    "Postcode": 5304,
+    "Electorate": "BARKER"
+  },
+  {
     "Place": "Kringin",
+    "Postcode": 5304,
+    "Electorate": "BARKER"
+  },
+  {
+    "Place": "Kulkami",
+    "Postcode": 5304,
+    "Electorate": "BARKER"
+  },
+  {
+    "Place": "Mootatunga",
     "Postcode": 5304,
     "Electorate": "BARKER"
   },
@@ -53270,6 +53820,11 @@
     "Electorate": "BARKER"
   },
   {
+    "Place": "Langs Landing",
+    "Postcode": 5353,
+    "Electorate": "BARKER"
+  },
+  {
     "Place": "Moculta",
     "Postcode": 5353,
     "Electorate": "BARKER"
@@ -53285,7 +53840,17 @@
     "Electorate": "BARKER"
   },
   {
+    "Place": "Punyelroo",
+    "Postcode": 5353,
+    "Electorate": "BARKER"
+  },
+  {
     "Place": "Sedan",
+    "Postcode": 5353,
+    "Electorate": "BARKER"
+  },
+  {
+    "Place": "Sunnydale",
     "Postcode": 5353,
     "Electorate": "BARKER"
   },
@@ -53605,7 +54170,17 @@
     "Electorate": "ADELAIDE"
   },
   {
+    "Place": "Bimbowrie",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Bindarrah",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Boolcoomatta",
     "Postcode": 5440,
     "Electorate": "GREY"
   },
@@ -53615,7 +54190,32 @@
     "Electorate": "GREY"
   },
   {
+    "Place": "Curnamona",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Devonborough Downs",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Grampus",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Kalabity",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Kalkaroo",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Koonamore",
     "Postcode": 5440,
     "Electorate": "GREY"
   },
@@ -53625,7 +54225,32 @@
     "Electorate": "GREY"
   },
   {
+    "Place": "Martins Well",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Mingary",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Mooleulooloo",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Mount Victor Station",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Mulyungarie",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Mutooroo",
     "Postcode": 5440,
     "Electorate": "GREY"
   },
@@ -53635,7 +54260,57 @@
     "Electorate": "GREY"
   },
   {
+    "Place": "Netley Gap",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Olary",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Oulnina",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Outalpa",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Pine Creek Station",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Quinyambie",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Tikalina",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Wadnaminga",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Weekeroo",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Wiawera",
+    "Postcode": 5440,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Yarramba",
     "Postcode": 5440,
     "Electorate": "GREY"
   },
@@ -53825,17 +54500,52 @@
     "Electorate": "GREY"
   },
   {
+    "Place": "Burr Well",
+    "Postcode": 5732,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Copley",
     "Postcode": 5732,
     "Electorate": "GREY"
   },
   {
-    "Place": "Iga Warta",
+    "Place": "Gammon Ranges",
+    "Postcode": 5732,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Manners Well",
+    "Postcode": 5732,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Moolawatana",
+    "Postcode": 5732,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Mulga View",
     "Postcode": 5732,
     "Electorate": "GREY"
   },
   {
     "Place": "Nepabunna",
+    "Postcode": 5732,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "North Moolooloo",
+    "Postcode": 5732,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Wertaloona",
+    "Postcode": 5732,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Wooltana",
     "Postcode": 5732,
     "Electorate": "GREY"
   },
@@ -54110,7 +54820,32 @@
     "Electorate": "SPENCE"
   },
   {
+    "Place": "Arcoona",
+    "Postcode": 5720,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Billa Kalina",
+    "Postcode": 5720,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Bosworth",
+    "Postcode": 5720,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Millers Creek",
+    "Postcode": 5720,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Mount Eba",
+    "Postcode": 5720,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Mount Vivian",
     "Postcode": 5720,
     "Electorate": "GREY"
   },
@@ -55610,6 +56345,11 @@
     "Electorate": "SPENCE"
   },
   {
+    "Place": "Riverlea Park",
+    "Postcode": 5120,
+    "Electorate": "SPENCE"
+  },
+  {
     "Place": "Virginia",
     "Postcode": 5120,
     "Electorate": "SPENCE"
@@ -55845,22 +56585,7 @@
     "Electorate": "BARKER"
   },
   {
-    "Place": "Karte",
-    "Postcode": 5307,
-    "Electorate": "BARKER"
-  },
-  {
-    "Place": "Kulkami",
-    "Postcode": 5307,
-    "Electorate": "BARKER"
-  },
-  {
     "Place": "Marama",
-    "Postcode": 5307,
-    "Electorate": "BARKER"
-  },
-  {
-    "Place": "Mootatunga",
     "Postcode": 5307,
     "Electorate": "BARKER"
   },
@@ -56010,7 +56735,22 @@
     "Electorate": "BARKER"
   },
   {
+    "Place": "Alpana",
+    "Postcode": 5730,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Angorigina",
+    "Postcode": 5730,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Beltana",
+    "Postcode": 5730,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Beltana Station",
     "Postcode": 5730,
     "Electorate": "GREY"
   },
@@ -56020,12 +56760,57 @@
     "Electorate": "GREY"
   },
   {
+    "Place": "Gum Creek Station",
+    "Postcode": 5730,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Moolooloo",
+    "Postcode": 5730,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Motpena",
     "Postcode": 5730,
     "Electorate": "GREY"
   },
   {
+    "Place": "Mount Falkland",
+    "Postcode": 5730,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Narrina",
+    "Postcode": 5730,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Nilpena",
+    "Postcode": 5730,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Oratunga Station",
+    "Postcode": 5730,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Parachilna",
+    "Postcode": 5730,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Puttapa",
+    "Postcode": 5730,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Warraweena",
+    "Postcode": 5730,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Wirrealpa",
     "Postcode": 5730,
     "Electorate": "GREY"
   },
@@ -56075,7 +56860,42 @@
     "Electorate": "GREY"
   },
   {
+    "Place": "Arckaringa",
+    "Postcode": 5723,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Coober Pedy",
+    "Postcode": 5723,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Evelyn Downs",
+    "Postcode": 5723,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Ingomar",
+    "Postcode": 5723,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Mcdouall Peak",
+    "Postcode": 5723,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Mount Barry",
+    "Postcode": 5723,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Mount Clarence Station",
+    "Postcode": 5723,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Mount Willoughby",
     "Postcode": 5723,
     "Electorate": "GREY"
   },
@@ -56086,6 +56906,16 @@
   },
   {
     "Place": "Umoona",
+    "Postcode": 5723,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "William Creek",
+    "Postcode": 5723,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Wintinna",
     "Postcode": 5723,
     "Electorate": "GREY"
   },
@@ -56135,6 +56965,11 @@
     "Electorate": "GREY"
   },
   {
+    "Place": "Welbourn Hill",
+    "Postcode": 5724,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Melrose",
     "Postcode": 5483,
     "Electorate": "GREY"
@@ -56160,12 +56995,32 @@
     "Electorate": "GREY"
   },
   {
+    "Place": "Roxby Downs Station",
+    "Postcode": 5725,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Eringa",
+    "Postcode": 5734,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Macumba",
     "Postcode": 5734,
     "Electorate": "GREY"
   },
   {
+    "Place": "Mount Sarah",
+    "Postcode": 5734,
+    "Electorate": "GREY"
+  },
+  {
     "Place": "Oodnadatta",
+    "Postcode": 5734,
+    "Electorate": "GREY"
+  },
+  {
+    "Place": "Todmorden",
     "Postcode": 5734,
     "Electorate": "GREY"
   },
@@ -59007,6 +59862,11 @@
   {
     "Place": "Old Beach",
     "Postcode": 7017,
+    "Electorate": "FRANKLIN"
+  },
+  {
+    "Place": "Old Beach",
+    "Postcode": 7017,
     "Electorate": "LYONS"
   },
   {
@@ -60193,6 +61053,11 @@
     "Place": "Melbourne",
     "Postcode": 3000,
     "Electorate": "MELBOURNE"
+  },
+  {
+    "Place": "Melbourne",
+    "Postcode": 3004,
+    "Electorate": "MACNAMARA"
   },
   {
     "Place": "Melbourne",
@@ -62130,6 +62995,11 @@
     "Electorate": "CORANGAMITE"
   },
   {
+    "Place": "Freshwater Creek",
+    "Postcode": 3217,
+    "Electorate": "CORANGAMITE"
+  },
+  {
     "Place": "Mount Duneed",
     "Postcode": 3217,
     "Electorate": "CORANGAMITE"
@@ -62206,11 +63076,6 @@
   },
   {
     "Place": "Kimbolton",
-    "Postcode": 3551,
-    "Electorate": "BENDIGO"
-  },
-  {
-    "Place": "Knowsley",
     "Postcode": 3551,
     "Electorate": "BENDIGO"
   },
@@ -63688,6 +64553,11 @@
     "Place": "Merricks North",
     "Postcode": 3926,
     "Electorate": "FLINDERS"
+  },
+  {
+    "Place": "Balwyn",
+    "Postcode": 3103,
+    "Electorate": "KOOYONG"
   },
   {
     "Place": "Balwyn",
@@ -66595,6 +67465,11 @@
     "Electorate": "HOLT"
   },
   {
+    "Place": "Cranbourne North",
+    "Postcode": 3977,
+    "Electorate": "HOLT"
+  },
+  {
     "Place": "Cranbourne South",
     "Postcode": 3977,
     "Electorate": "HOLT"
@@ -66695,6 +67570,16 @@
     "Electorate": "CHISHOLM"
   },
   {
+    "Place": "Box Hill South",
+    "Postcode": 3128,
+    "Electorate": "CHISHOLM"
+  },
+  {
+    "Place": "Wattle Park",
+    "Postcode": 3128,
+    "Electorate": "CHISHOLM"
+  },
+  {
     "Place": "Wattle Park",
     "Postcode": 3128,
     "Electorate": "CHISHOLM"
@@ -66720,7 +67605,22 @@
     "Electorate": "CHISHOLM"
   },
   {
+    "Place": "Glen Waverley",
+    "Postcode": 3150,
+    "Electorate": "CHISHOLM"
+  },
+  {
     "Place": "Syndal East",
+    "Postcode": 3150,
+    "Electorate": "CHISHOLM"
+  },
+  {
+    "Place": "Syndal East",
+    "Postcode": 3150,
+    "Electorate": "CHISHOLM"
+  },
+  {
+    "Place": "Wheelers Hill",
     "Postcode": 3150,
     "Electorate": "CHISHOLM"
   },
@@ -67327,6 +68227,11 @@
   {
     "Place": "Jewell",
     "Postcode": 3056,
+    "Electorate": "WILLS"
+  },
+  {
+    "Place": "Brunswick West",
+    "Postcode": 3055,
     "Electorate": "WILLS"
   },
   {
@@ -68630,6 +69535,11 @@
     "Electorate": "CHISHOLM"
   },
   {
+    "Place": "Chadstone",
+    "Postcode": 3148,
+    "Electorate": "CHISHOLM"
+  },
+  {
     "Place": "Charam",
     "Postcode": 3318,
     "Electorate": "MALLEE"
@@ -69081,6 +69991,11 @@
   },
   {
     "Place": "Sanctuary Lakes",
+    "Postcode": 3030,
+    "Electorate": "LALOR"
+  },
+  {
+    "Place": "Werribee",
     "Postcode": 3030,
     "Electorate": "LALOR"
   },
@@ -69550,6 +70465,16 @@
     "Electorate": "HIGGINS"
   },
   {
+    "Place": "Central Park",
+    "Postcode": 3145,
+    "Electorate": "HIGGINS"
+  },
+  {
+    "Place": "Darling",
+    "Postcode": 3145,
+    "Electorate": "HIGGINS"
+  },
+  {
     "Place": "Darling",
     "Postcode": 3145,
     "Electorate": "HIGGINS"
@@ -69558,6 +70483,11 @@
     "Place": "East Caulfield",
     "Postcode": 3145,
     "Electorate": "MACNAMARA"
+  },
+  {
+    "Place": "Malvern East",
+    "Postcode": 3145,
+    "Electorate": "HIGGINS"
   },
   {
     "Place": "Malvern East",
@@ -70260,6 +71190,11 @@
     "Electorate": "MCEWEN"
   },
   {
+    "Place": "Kilmore East",
+    "Postcode": 3764,
+    "Electorate": "MCEWEN"
+  },
+  {
     "Place": "Moranding",
     "Postcode": 3764,
     "Electorate": "MCEWEN"
@@ -70401,6 +71336,11 @@
   },
   {
     "Place": "Barrabool",
+    "Postcode": 3221,
+    "Electorate": "CORANGAMITE"
+  },
+  {
+    "Place": "Ceres",
     "Postcode": 3221,
     "Electorate": "CORANGAMITE"
   },
@@ -70586,6 +71526,11 @@
   },
   {
     "Place": "Gisborne",
+    "Postcode": 3437,
+    "Electorate": "MCEWEN"
+  },
+  {
+    "Place": "Gisborne South",
     "Postcode": 3437,
     "Electorate": "MCEWEN"
   },
@@ -70855,6 +71800,11 @@
     "Electorate": "KOOYONG"
   },
   {
+    "Place": "Balwyn North",
+    "Postcode": 3104,
+    "Electorate": "KOOYONG"
+  },
+  {
     "Place": "Belmont",
     "Postcode": 3216,
     "Electorate": "CORIO"
@@ -71025,6 +71975,11 @@
     "Electorate": "DEAKIN"
   },
   {
+    "Place": "Ringwood",
+    "Postcode": 3134,
+    "Electorate": "DEAKIN"
+  },
+  {
     "Place": "Ringwood North",
     "Postcode": 3134,
     "Electorate": "DEAKIN"
@@ -71036,6 +71991,16 @@
   },
   {
     "Place": "South Warrandyte",
+    "Postcode": 3134,
+    "Electorate": "MENZIES"
+  },
+  {
+    "Place": "South Warrandyte",
+    "Postcode": 3134,
+    "Electorate": "MENZIES"
+  },
+  {
+    "Place": "Warrandyte South",
     "Postcode": 3134,
     "Electorate": "MENZIES"
   },
@@ -71795,6 +72760,11 @@
     "Electorate": "CASEY"
   },
   {
+    "Place": "Ftg",
+    "Postcode": 3156,
+    "Electorate": "ASTON"
+  },
+  {
     "Place": "Lysterfield",
     "Postcode": 3156,
     "Electorate": "ASTON"
@@ -71826,6 +72796,16 @@
   },
   {
     "Place": "Upper Ferntree Gully",
+    "Postcode": 3156,
+    "Electorate": "CASEY"
+  },
+  {
+    "Place": "Upper Ftg",
+    "Postcode": 3156,
+    "Electorate": "ASTON"
+  },
+  {
+    "Place": "Upper Ftg",
     "Postcode": 3156,
     "Electorate": "CASEY"
   },
@@ -71900,6 +72880,16 @@
     "Electorate": "LALOR"
   },
   {
+    "Place": "Mambourin",
+    "Postcode": 3024,
+    "Electorate": "LALOR"
+  },
+  {
+    "Place": "Manor Lakes",
+    "Postcode": 3024,
+    "Electorate": "LALOR"
+  },
+  {
     "Place": "Manor Lakes",
     "Postcode": 3024,
     "Electorate": "LALOR"
@@ -71921,6 +72911,26 @@
   },
   {
     "Place": "Wyndham Green",
+    "Postcode": 3024,
+    "Electorate": "LALOR"
+  },
+  {
+    "Place": "Wyndham Green",
+    "Postcode": 3024,
+    "Electorate": "LALOR"
+  },
+  {
+    "Place": "Wyndham Green",
+    "Postcode": 3024,
+    "Electorate": "LALOR"
+  },
+  {
+    "Place": "Wyndham Vale",
+    "Postcode": 3024,
+    "Electorate": "LALOR"
+  },
+  {
+    "Place": "Wyndham Vale",
     "Postcode": 3024,
     "Electorate": "LALOR"
   },
@@ -72565,6 +73575,11 @@
     "Electorate": "MARIBYRNONG"
   },
   {
+    "Place": "Keilor Park",
+    "Postcode": 3042,
+    "Electorate": "MARIBYRNONG"
+  },
+  {
     "Place": "Niddrie",
     "Postcode": 3042,
     "Electorate": "MARIBYRNONG"
@@ -72812,11 +73827,6 @@
   {
     "Place": "Ormond",
     "Postcode": 3204,
-    "Electorate": "HIGGINS"
-  },
-  {
-    "Place": "Ormond",
-    "Postcode": 3204,
     "Electorate": "HOTHAM"
   },
   {
@@ -72860,7 +73870,22 @@
     "Electorate": "CHISHOLM"
   },
   {
+    "Place": "Mount Waverley",
+    "Postcode": 3149,
+    "Electorate": "CHISHOLM"
+  },
+  {
     "Place": "Pinewood",
+    "Postcode": 3149,
+    "Electorate": "CHISHOLM"
+  },
+  {
+    "Place": "Pinewood",
+    "Postcode": 3149,
+    "Electorate": "CHISHOLM"
+  },
+  {
+    "Place": "Syndal",
     "Postcode": 3149,
     "Electorate": "CHISHOLM"
   },
@@ -72913,6 +73938,11 @@
     "Place": "Pound Creek",
     "Postcode": 3996,
     "Electorate": "MONASH"
+  },
+  {
+    "Place": "Prahran",
+    "Postcode": 3181,
+    "Electorate": "HIGGINS"
   },
   {
     "Place": "Prahran",
@@ -73166,6 +74196,16 @@
   },
   {
     "Place": "Mont Albert",
+    "Postcode": 3127,
+    "Electorate": "KOOYONG"
+  },
+  {
+    "Place": "Surrey Hills",
+    "Postcode": 3127,
+    "Electorate": "KOOYONG"
+  },
+  {
+    "Place": "Surrey Hills",
     "Postcode": 3127,
     "Electorate": "KOOYONG"
   },
@@ -73542,22 +74582,12 @@
   {
     "Place": "Mulgrave",
     "Postcode": 3170,
-    "Electorate": "CHISHOLM"
-  },
-  {
-    "Place": "Mulgrave",
-    "Postcode": 3170,
     "Electorate": "HOTHAM"
   },
   {
     "Place": "Waverley Park",
     "Postcode": 3170,
     "Electorate": "BRUCE"
-  },
-  {
-    "Place": "Waverley Park",
-    "Postcode": 3170,
-    "Electorate": "CHISHOLM"
   },
   {
     "Place": "Waverley Park",
@@ -73955,6 +74985,11 @@
     "Electorate": "CALWELL"
   },
   {
+    "Place": "Campbellfield",
+    "Postcode": 3061,
+    "Electorate": "CALWELL"
+  },
+  {
     "Place": "Carlton",
     "Postcode": 3053,
     "Electorate": "MELBOURNE"
@@ -73977,6 +75012,11 @@
   {
     "Place": "Meadow Heights",
     "Postcode": 3048,
+    "Electorate": "CALWELL"
+  },
+  {
+    "Place": "Craigieburn",
+    "Postcode": 3064,
     "Electorate": "CALWELL"
   },
   {
@@ -74075,14 +75115,19 @@
     "Electorate": "GORTON"
   },
   {
-    "Place": "Truganina",
-    "Postcode": 3029,
-    "Electorate": "LALOR"
+    "Place": "Kinglake",
+    "Postcode": 3763,
+    "Electorate": "INDI"
   },
   {
     "Place": "Kinglake",
     "Postcode": 3763,
     "Electorate": "INDI"
+  },
+  {
+    "Place": "Kinglake",
+    "Postcode": 3763,
+    "Electorate": "MCEWEN"
   },
   {
     "Place": "Kinglake",
@@ -74145,6 +75190,11 @@
     "Electorate": "MCEWEN"
   },
   {
+    "Place": "Panton Hill",
+    "Postcode": 3759,
+    "Electorate": "MCEWEN"
+  },
+  {
     "Place": "Bonnie Brook",
     "Postcode": 3335,
     "Electorate": "GORTON"
@@ -74180,9 +75230,24 @@
     "Electorate": "MCEWEN"
   },
   {
+    "Place": "Smiths Gully",
+    "Postcode": 3760,
+    "Electorate": "MCEWEN"
+  },
+  {
     "Place": "Somerton",
     "Postcode": 3062,
     "Electorate": "CALWELL"
+  },
+  {
+    "Place": "Somerton",
+    "Postcode": 3062,
+    "Electorate": "CALWELL"
+  },
+  {
+    "Place": "St Andrews",
+    "Postcode": 3761,
+    "Electorate": "MCEWEN"
   },
   {
     "Place": "St Andrews",
@@ -74355,6 +75420,11 @@
     "Electorate": "MARIBYRNONG"
   },
   {
+    "Place": "Tullamarine",
+    "Postcode": 3043,
+    "Electorate": "MARIBYRNONG"
+  },
+  {
     "Place": "Keilor",
     "Postcode": 3036,
     "Electorate": "GORTON"
@@ -74372,6 +75442,11 @@
   {
     "Place": "Keilor East",
     "Postcode": 3033,
+    "Electorate": "MARIBYRNONG"
+  },
+  {
+    "Place": "Melbourne Airport",
+    "Postcode": 3045,
     "Electorate": "MARIBYRNONG"
   },
   {
@@ -74467,6 +75542,21 @@
   {
     "Place": "Fawkner",
     "Postcode": 3060,
+    "Electorate": "CALWELL"
+  },
+  {
+    "Place": "Fawkner",
+    "Postcode": 3060,
+    "Electorate": "WILLS"
+  },
+  {
+    "Place": "Fawkner",
+    "Postcode": 3060,
+    "Electorate": "WILLS"
+  },
+  {
+    "Place": "Glenroy",
+    "Postcode": 3046,
     "Electorate": "WILLS"
   },
   {
@@ -74476,6 +75566,11 @@
   },
   {
     "Place": "Hadfield",
+    "Postcode": 3046,
+    "Electorate": "WILLS"
+  },
+  {
+    "Place": "Oak Park",
     "Postcode": 3046,
     "Electorate": "WILLS"
   },
@@ -74531,6 +75626,16 @@
   },
   {
     "Place": "Pascoe Vale",
+    "Postcode": 3044,
+    "Electorate": "WILLS"
+  },
+  {
+    "Place": "Pascoe Vale",
+    "Postcode": 3044,
+    "Electorate": "WILLS"
+  },
+  {
+    "Place": "Pascoe Vale South",
     "Postcode": 3044,
     "Electorate": "WILLS"
   },
@@ -74645,7 +75750,22 @@
     "Electorate": "CHISHOLM"
   },
   {
+    "Place": "Burwood East",
+    "Postcode": 3151,
+    "Electorate": "CHISHOLM"
+  },
+  {
     "Place": "Burwood Heights",
+    "Postcode": 3151,
+    "Electorate": "CHISHOLM"
+  },
+  {
+    "Place": "Burwood Heights",
+    "Postcode": 3151,
+    "Electorate": "CHISHOLM"
+  },
+  {
+    "Place": "East Burwood",
     "Postcode": 3151,
     "Electorate": "CHISHOLM"
   },
@@ -74715,6 +75835,11 @@
     "Electorate": "DEAKIN"
   },
   {
+    "Place": "Heathmont",
+    "Postcode": 3135,
+    "Electorate": "DEAKIN"
+  },
+  {
     "Place": "Ringwood East",
     "Postcode": 3135,
     "Electorate": "DEAKIN"
@@ -74772,6 +75897,11 @@
   {
     "Place": "East Doncaster",
     "Postcode": 3109,
+    "Electorate": "MENZIES"
+  },
+  {
+    "Place": "Donvale",
+    "Postcode": 3111,
     "Electorate": "MENZIES"
   },
   {
@@ -74920,11 +76050,6 @@
     "Electorate": "DEAKIN"
   },
   {
-    "Place": "Wonga Park",
-    "Postcode": 3115,
-    "Electorate": "MENZIES"
-  },
-  {
     "Place": "Avonsleigh",
     "Postcode": 3782,
     "Electorate": "CASEY"
@@ -74960,14 +76085,29 @@
     "Electorate": "DEAKIN"
   },
   {
+    "Place": "Bayswater North",
+    "Postcode": 3153,
+    "Electorate": "DEAKIN"
+  },
+  {
+    "Place": "Bayswater South",
+    "Postcode": 3153,
+    "Electorate": "ASTON"
+  },
+  {
+    "Place": "Bayswater West",
+    "Postcode": 3153,
+    "Electorate": "ASTON"
+  },
+  {
     "Place": "North Bayswater",
     "Postcode": 3153,
     "Electorate": "DEAKIN"
   },
   {
-    "Place": "Blackburn",
-    "Postcode": 3130,
-    "Electorate": "CHISHOLM"
+    "Place": "North Bayswater",
+    "Postcode": 3153,
+    "Electorate": "DEAKIN"
   },
   {
     "Place": "Blackburn",
@@ -74985,6 +76125,16 @@
     "Electorate": "MENZIES"
   },
   {
+    "Place": "Blackburn North",
+    "Postcode": 3130,
+    "Electorate": "MENZIES"
+  },
+  {
+    "Place": "Blackburn South",
+    "Postcode": 3130,
+    "Electorate": "CHISHOLM"
+  },
+  {
     "Place": "Blackburn South",
     "Postcode": 3130,
     "Electorate": "CHISHOLM"
@@ -74995,9 +76145,9 @@
     "Electorate": "DEAKIN"
   },
   {
-    "Place": "Laburnum",
+    "Place": "Blackburn South",
     "Postcode": 3130,
-    "Electorate": "CHISHOLM"
+    "Electorate": "DEAKIN"
   },
   {
     "Place": "Laburnum",
@@ -75006,6 +76156,11 @@
   },
   {
     "Place": "Laburnum",
+    "Postcode": 3130,
+    "Electorate": "MENZIES"
+  },
+  {
+    "Place": "North Blackburn",
     "Postcode": 3130,
     "Electorate": "MENZIES"
   },
@@ -75071,6 +76226,11 @@
   },
   {
     "Place": "Knox",
+    "Postcode": 3152,
+    "Electorate": "ASTON"
+  },
+  {
+    "Place": "South Wantirna",
     "Postcode": 3152,
     "Electorate": "ASTON"
   },
@@ -75145,6 +76305,11 @@
     "Electorate": "CASEY"
   },
   {
+    "Place": "Basin",
+    "Postcode": 3154,
+    "Electorate": "ASTON"
+  },
+  {
     "Place": "The Basin",
     "Postcode": 3154,
     "Electorate": "ASTON"
@@ -75180,7 +76345,22 @@
     "Electorate": "HOTHAM"
   },
   {
+    "Place": "Bentleigh East",
+    "Postcode": 3165,
+    "Electorate": "HOTHAM"
+  },
+  {
     "Place": "Coatesville",
+    "Postcode": 3165,
+    "Electorate": "HOTHAM"
+  },
+  {
+    "Place": "Coatesville",
+    "Postcode": 3165,
+    "Electorate": "HOTHAM"
+  },
+  {
+    "Place": "East Bentleigh",
     "Postcode": 3165,
     "Electorate": "HOTHAM"
   },
@@ -75215,7 +76395,22 @@
     "Electorate": "HOTHAM"
   },
   {
+    "Place": "Clarinda",
+    "Postcode": 3169,
+    "Electorate": "HOTHAM"
+  },
+  {
     "Place": "Clayton South",
+    "Postcode": 3169,
+    "Electorate": "HOTHAM"
+  },
+  {
+    "Place": "Clayton South",
+    "Postcode": 3169,
+    "Electorate": "HOTHAM"
+  },
+  {
+    "Place": "Westall",
     "Postcode": 3169,
     "Electorate": "HOTHAM"
   },
@@ -75370,6 +76565,11 @@
     "Electorate": "LA TROBE"
   },
   {
+    "Place": "Beaconsfield",
+    "Postcode": 3807,
+    "Electorate": "LA TROBE"
+  },
+  {
     "Place": "Guys Hill",
     "Postcode": 3807,
     "Electorate": "LA TROBE"
@@ -75411,6 +76611,16 @@
   },
   {
     "Place": "Chelsea",
+    "Postcode": 3196,
+    "Electorate": "ISAACS"
+  },
+  {
+    "Place": "Chelsea",
+    "Postcode": 3196,
+    "Electorate": "ISAACS"
+  },
+  {
+    "Place": "Chelsea Heights",
     "Postcode": 3196,
     "Electorate": "ISAACS"
   },
@@ -75465,11 +76675,6 @@
     "Electorate": "GOLDSTEIN"
   },
   {
-    "Place": "Hampton",
-    "Postcode": 3188,
-    "Electorate": "HOLT"
-  },
-  {
     "Place": "Hampton East",
     "Postcode": 3188,
     "Electorate": "GOLDSTEIN"
@@ -75497,6 +76702,11 @@
   {
     "Place": "Keysborough",
     "Postcode": 3173,
+    "Electorate": "ISAACS"
+  },
+  {
+    "Place": "Moorabbin",
+    "Postcode": 3189,
     "Electorate": "ISAACS"
   },
   {
@@ -75638,6 +76848,11 @@
     "Place": "Hmas Cerberus",
     "Postcode": 3920,
     "Electorate": "FLINDERS"
+  },
+  {
+    "Place": "Mount Eliza",
+    "Postcode": 3930,
+    "Electorate": "DUNKLEY"
   },
   {
     "Place": "Mount Eliza",
@@ -75923,6 +77138,11 @@
     "Place": "Gheringhap",
     "Postcode": 3331,
     "Electorate": "CORANGAMITE"
+  },
+  {
+    "Place": "Maude",
+    "Postcode": 3331,
+    "Electorate": "BALLARAT"
   },
   {
     "Place": "Maude",
@@ -76672,11 +77892,6 @@
   {
     "Place": "Tabilk",
     "Postcode": 3607,
-    "Electorate": "CASEY"
-  },
-  {
-    "Place": "Tabilk",
-    "Postcode": 3607,
     "Electorate": "NICHOLLS"
   },
   {
@@ -76803,6 +78018,11 @@
     "Place": "Karragullen",
     "Postcode": 6111,
     "Electorate": "CANNING"
+  },
+  {
+    "Place": "Kelmscott",
+    "Postcode": 6111,
+    "Electorate": "BURT"
   },
   {
     "Place": "Kelmscott",
@@ -76950,6 +78170,11 @@
     "Electorate": "COWAN"
   },
   {
+    "Place": "Beechboro",
+    "Postcode": 6063,
+    "Electorate": "HASLUCK"
+  },
+  {
     "Place": "Bennett Springs",
     "Postcode": 6063,
     "Electorate": "HASLUCK"
@@ -77095,6 +78320,11 @@
     "Electorate": "HASLUCK"
   },
   {
+    "Place": "Hazelmere",
+    "Postcode": 6055,
+    "Electorate": "HASLUCK"
+  },
+  {
     "Place": "Henley Brook",
     "Postcode": 6055,
     "Electorate": "HASLUCK"
@@ -77103,11 +78333,6 @@
     "Place": "South Guildford",
     "Postcode": 6055,
     "Electorate": "HASLUCK"
-  },
-  {
-    "Place": "South Guildford",
-    "Postcode": 6055,
-    "Electorate": "SWAN"
   },
   {
     "Place": "West Swan",
@@ -77610,6 +78835,11 @@
     "Electorate": "DURACK"
   },
   {
+    "Place": "Yuna",
+    "Postcode": 6532,
+    "Electorate": ""
+  },
+  {
     "Place": "Perth",
     "Postcode": 6000,
     "Electorate": "PERTH"
@@ -77835,12 +79065,22 @@
     "Electorate": "BURT"
   },
   {
+    "Place": "Armadale",
+    "Postcode": 6112,
+    "Electorate": "BURT"
+  },
+  {
     "Place": "Bedfordale",
     "Postcode": 6112,
     "Electorate": "CANNING"
   },
   {
     "Place": "Brookdale",
+    "Postcode": 6112,
+    "Electorate": "BURT"
+  },
+  {
+    "Place": "Doobarda",
     "Postcode": 6112,
     "Electorate": "BURT"
   },
@@ -78318,11 +79558,6 @@
     "Place": "Tammin",
     "Postcode": 6409,
     "Electorate": "O'CONNOR"
-  },
-  {
-    "Place": "Osborne Park",
-    "Postcode": 6017,
-    "Electorate": "COWAN"
   },
   {
     "Place": "Osborne Park",
@@ -79010,12 +80245,27 @@
     "Electorate": "COWAN"
   },
   {
+    "Place": "Balcatta",
+    "Postcode": 6021,
+    "Electorate": "COWAN"
+  },
+  {
+    "Place": "Stirling",
+    "Postcode": 6021,
+    "Electorate": "COWAN"
+  },
+  {
     "Place": "Stirling",
     "Postcode": 6021,
     "Electorate": "COWAN"
   },
   {
     "Place": "Baskerville",
+    "Postcode": 6056,
+    "Electorate": "HASLUCK"
+  },
+  {
+    "Place": "Bellevue",
     "Postcode": 6056,
     "Electorate": "HASLUCK"
   },
@@ -79070,6 +80320,11 @@
     "Electorate": "HASLUCK"
   },
   {
+    "Place": "Midvale",
+    "Postcode": 6056,
+    "Electorate": "HASLUCK"
+  },
+  {
     "Place": "Millendon",
     "Postcode": 6056,
     "Electorate": "HASLUCK"
@@ -79098,6 +80353,11 @@
     "Place": "Woodbridge",
     "Postcode": 6056,
     "Electorate": "HASLUCK"
+  },
+  {
+    "Place": "Bayswater",
+    "Postcode": 6053,
+    "Electorate": "PERTH"
   },
   {
     "Place": "Bayswater",
@@ -79243,6 +80503,11 @@
     "Place": "Millbridge",
     "Postcode": 6232,
     "Electorate": "FORREST"
+  },
+  {
+    "Place": "Embleton",
+    "Postcode": 6062,
+    "Electorate": "PERTH"
   },
   {
     "Place": "Embleton",
@@ -79880,6 +81145,11 @@
     "Electorate": "CANNING"
   },
   {
+    "Place": "Byford",
+    "Postcode": 6122,
+    "Electorate": "CANNING"
+  },
+  {
     "Place": "Cardup",
     "Postcode": 6122,
     "Electorate": "CANNING"
@@ -79942,12 +81212,32 @@
   {
     "Place": "Dianella",
     "Postcode": 6059,
+    "Electorate": "COWAN"
+  },
+  {
+    "Place": "Dianella",
+    "Postcode": 6059,
+    "Electorate": "PERTH"
+  },
+  {
+    "Place": "Dianella",
+    "Postcode": 6059,
     "Electorate": "PERTH"
   },
   {
     "Place": "Dianella Heights",
     "Postcode": 6059,
     "Electorate": "COWAN"
+  },
+  {
+    "Place": "Dianella Heights",
+    "Postcode": 6059,
+    "Electorate": "COWAN"
+  },
+  {
+    "Place": "Dianella Heights",
+    "Postcode": 6059,
+    "Electorate": "PERTH"
   },
   {
     "Place": "Dianella Heights",
@@ -79978,6 +81268,11 @@
     "Place": "Forrestfield",
     "Postcode": 6058,
     "Electorate": "SWAN"
+  },
+  {
+    "Place": "Gosnells",
+    "Postcode": 6110,
+    "Electorate": "BURT"
   },
   {
     "Place": "Gosnells",

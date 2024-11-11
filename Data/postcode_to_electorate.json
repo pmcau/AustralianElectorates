@@ -570,14 +570,17 @@
   ],
   "5374": [
     "Barker",
-    "Grey",
-    "Mayo"
+    "Grey"
   ],
   "5253": [
     "Barker"
   ],
   "5354": [
     "Barker"
+  ],
+  "5417": [
+    "Barker",
+    "Grey"
   ],
   "5268": [
     "Barker"
@@ -866,9 +869,6 @@
     "Grey"
   ],
   "5671": [
-    "Grey"
-  ],
-  "5417": [
     "Grey"
   ],
   "5481": [
@@ -1757,7 +1757,6 @@
   ],
   "3170": [
     "Bruce",
-    "Chisholm",
     "Hotham"
   ],
   "3174": [
@@ -1868,8 +1867,7 @@
   ],
   "3115": [
     "Casey",
-    "Deakin",
-    "Menzies"
+    "Deakin"
   ],
   "3782": [
     "Casey"
@@ -1897,10 +1895,6 @@
   ],
   "3158": [
     "Casey"
-  ],
-  "3607": [
-    "Casey",
-    "Nicholls"
   ],
   "3128": [
     "Chisholm",
@@ -2407,7 +2401,6 @@
   ],
   "3204": [
     "Goldstein",
-    "Higgins",
     "Hotham"
   ],
   "3187": [
@@ -2426,8 +2419,7 @@
     "Isaacs"
   ],
   "3188": [
-    "Goldstein",
-    "Holt"
+    "Goldstein"
   ],
   "3190": [
     "Goldstein",
@@ -3515,6 +3507,9 @@
   "3521": [
     "Nicholls"
   ],
+  "3607": [
+    "Nicholls"
+  ],
   "3659": [
     "Nicholls"
   ],
@@ -3861,7 +3856,8 @@
     "Bowman"
   ],
   "4165": [
-    "Bowman"
+    "Bowman",
+    "Rankin"
   ],
   "4161": [
     "Bowman"
@@ -3946,7 +3942,8 @@
   ],
   "4741": [
     "Capricornia",
-    "Dawson"
+    "Dawson",
+    "Flynn"
   ],
   "4724": [
     "Capricornia",
@@ -4010,8 +4007,7 @@
     "Capricornia"
   ],
   "4745": [
-    "Capricornia",
-    "Flynn"
+    "Capricornia"
   ],
   "4710": [
     "Capricornia"
@@ -4026,8 +4022,7 @@
     "Capricornia"
   ],
   "4746": [
-    "Capricornia",
-    "Flynn"
+    "Capricornia"
   ],
   "4744": [
     "Capricornia"
@@ -4603,10 +4598,6 @@
   "4860": [
     "Kennedy"
   ],
-  "4406": [
-    "Kennedy",
-    "Maranoa"
-  ],
   "4732": [
     "Kennedy",
     "Maranoa"
@@ -4805,6 +4796,9 @@
     "Maranoa"
   ],
   "4467": [
+    "Maranoa"
+  ],
+  "4406": [
     "Maranoa"
   ],
   "4371": [
@@ -5205,8 +5199,7 @@
     "Lingiari"
   ],
   "831": [
-    "Lingiari",
-    "Solomon"
+    "Lingiari"
   ],
   "847": [
     "Lingiari"
@@ -5700,12 +5693,6 @@
   "2440": [
     "Cowper"
   ],
-  "2259": [
-    "Cowper",
-    "Dobell",
-    "Hunter",
-    "Shortland"
-  ],
   "2441": [
     "Cowper",
     "Lyne"
@@ -5762,10 +5749,6 @@
   "2517": [
     "Cunningham"
   ],
-  "2232": [
-    "Cunningham",
-    "Hughes"
-  ],
   "2515": [
     "Cunningham"
   ],
@@ -5781,6 +5764,11 @@
   ],
   "2505": [
     "Cunningham"
+  ],
+  "2259": [
+    "Dobell",
+    "Hunter",
+    "Shortland"
   ],
   "2250": [
     "Dobell",
@@ -6134,8 +6122,7 @@
   ],
   "2131": [
     "Grayndler",
-    "Reid",
-    "Watson"
+    "Reid"
   ],
   "2130": [
     "Grayndler",
@@ -6165,6 +6152,9 @@
     "Parramatta"
   ],
   "2234": [
+    "Hughes"
+  ],
+  "2232": [
     "Hughes"
   ],
   "2226": [
@@ -6830,6 +6820,9 @@
   "2356": [
     "Parkes"
   ],
+  "2341": [
+    "Parkes"
+  ],
   "2833": [
     "Parkes"
   ],
@@ -7302,11 +7295,6 @@
     "Cowan",
     "Hasluck"
   ],
-  "6017": [
-    "Cowan",
-    "Curtin",
-    "Perth"
-  ],
   "6054": [
     "Cowan",
     "Perth"
@@ -7347,6 +7335,10 @@
   ],
   "6009": [
     "Curtin"
+  ],
+  "6017": [
+    "Curtin",
+    "Perth"
   ],
   "6008": [
     "Curtin"
@@ -7814,8 +7806,7 @@
     "Hasluck"
   ],
   "6055": [
-    "Hasluck",
-    "Swan"
+    "Hasluck"
   ],
   "6073": [
     "Hasluck"

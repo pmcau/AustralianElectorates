@@ -299,14 +299,21 @@ public class Sync
                 //var existInFuture = electoratesFuture.Contains(electorateName);
 
                 ElectorateEx electorate;
-                //if (existIn2019 || existInFuture)
-                if (existIn2019 || existIn2022)
+                if (existIn2022)
                 {
-                    electorate = await ElectoratesScraper.ScrapeCurrentElectorate(electorateName, electoratePair.Key);
+                    electorate = await ElectoratesScraper.ScrapeElectorate(2022,electorateName, electoratePair.Key);
+                }
+                else if(existIn2019)
+                {
+                    electorate = await ElectoratesScraper.ScrapeElectorate(2019,electorateName, electoratePair.Key);
+                }
+                else if(existIn2016)
+                {
+                    electorate = await ElectoratesScraper.ScrapeElectorate(2016,electorateName, electoratePair.Key);
                 }
                 else
                 {
-                    electorate = await ElectoratesScraper.Scrape2016Electorate(electorateName, electoratePair.Key);
+                    throw new("Does not exist in any year");
                 }
 
                 electorate.Exist2016 = existIn2016;
