@@ -129,7 +129,7 @@ static class ElectoratesScraper
         }
         catch (Exception exception)
         {
-            throw new($"Failed to parse {shortName} {tempElectorateHtmlPath}", exception);
+            throw new($"Failed to parse {shortName} {tempElectorateHtmlPath}. Uri: {requestUri}", exception);
         }
     }
 
