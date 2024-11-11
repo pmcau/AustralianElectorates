@@ -386,6 +386,7 @@
           "Holt",
           "Latham",
           "Macgregor",
+          "Macnamara",
           "Melba",
           "Spence",
           "Strathnairn"
@@ -419,6 +420,7 @@
         "Postcode": 2911,
         "Localities": [
           "Crace",
+          "Kenny",
           "Mitchell"
         ]
       },
@@ -1339,6 +1341,7 @@
         "Postcode": 7017,
         "Localities": [
           "Grasstree Hill",
+          "Old Beach",
           "Otago",
           "Risdon"
         ]
@@ -2397,7 +2400,6 @@
           "Rocky Point",
           "Teal Flat",
           "Walker Flat",
-          "Wall Flat",
           "Wongulla",
           "Younghusband",
           "Younghusband Holdings"
@@ -2462,6 +2464,7 @@
           "Greenbanks",
           "Long Flat",
           "Mobilong",
+          "Monteith",
           "Murrawong",
           "Murray Bridge",
           "Murray Bridge East",
@@ -2470,7 +2473,6 @@
           "Northern Heights",
           "Riverglades",
           "Riverglen",
-          "Rocky Gully",
           "Sunnyside",
           "Swanport",
           "Toora",
@@ -2486,12 +2488,15 @@
           "Bakara",
           "Bakara Well",
           "Fisher",
-          "Langs Landing",
           "Marks Landing",
           "Naidia",
-          "Punyelroo",
-          "Sunnydale",
           "Swan Reach"
+        ]
+      },
+      {
+        "Postcode": 5417,
+        "Localities": [
+          "Danggali"
         ]
       },
       {
@@ -2565,7 +2570,6 @@
           "Allendale East",
           "Blackfellows Caves",
           "Burrungule",
-          "Canunda",
           "Cape Douglas",
           "Caroline",
           "Carpenter Rocks",
@@ -2574,6 +2578,7 @@
           "Dismal Swamp",
           "Donovans",
           "Eight Mile Creek",
+          "German Creek",
           "Glenburnie",
           "Glencoe",
           "Kongorong",
@@ -2747,11 +2752,12 @@
           "Caloote",
           "Monarto",
           "Monarto South",
-          "Monteith",
           "Mypolonga",
           "Pallamana",
           "Rockleigh",
+          "Rocky Gully",
           "Tepko",
+          "Wall Flat",
           "Woodlane",
           "Zadows Landing"
         ]
@@ -2760,9 +2766,9 @@
         "Postcode": 5280,
         "Localities": [
           "Beachport",
+          "Canunda",
           "Clay Wells",
           "Furner",
-          "German Creek",
           "German Flat",
           "Hatherleigh",
           "Kangaroo Inn",
@@ -2796,7 +2802,6 @@
         "Postcode": 5341,
         "Localities": [
           "Calperum Station",
-          "Canopus",
           "Chaffey",
           "Chowilla",
           "Cooltong",
@@ -2931,7 +2936,10 @@
       {
         "Postcode": 5304,
         "Localities": [
+          "Karte",
           "Kringin",
+          "Kulkami",
+          "Mootatunga",
           "Peebinga",
           "Pinnaroo"
         ]
@@ -2949,10 +2957,13 @@
           "Black Hill",
           "Cambrai",
           "Keyneton",
+          "Langs Landing",
           "Moculta",
           "Mount Mckenzie",
           "Penrice",
+          "Punyelroo",
           "Sedan",
+          "Sunnydale",
           "Towitta"
         ]
       },
@@ -3075,10 +3086,7 @@
         "Postcode": 5307,
         "Localities": [
           "Karoonda",
-          "Karte",
-          "Kulkami",
-          "Marama",
-          "Mootatunga"
+          "Marama"
         ]
       },
       {
@@ -3394,9 +3402,9 @@
         "Localities": [
           "Amata",
           "Anapala",
+          "De Rose Hill",
           "Eagle Bore",
-          "Ernabella",
-          "Everard Park Homestead"
+          "Ernabella"
         ]
       },
       {
@@ -3417,6 +3425,7 @@
           "Hammond",
           "Johnburgh",
           "Minburra",
+          "Minburra Plain",
           "Morchard",
           "Orroroo",
           "Pekina",
@@ -3478,39 +3487,15 @@
         "Localities": [
           "Arkaroola",
           "Arkaroola Village",
-          "Carriewerloo",
           "Commonwealth Hill",
           "Cook",
           "Coondambo",
-          "Emeroo",
-          "Etadunna",
           "Glendambo",
-          "Kolendo",
-          "Kootaberra",
-          "Lake Everard",
-          "Mahanewo",
           "Moomba",
           "Moonaree",
-          "Mount Ive",
           "Mulgathing",
-          "Narcoona",
-          "Nonning",
-          "North Well",
-          "Oakden Hills",
-          "Pandie Pandie",
-          "Pandurra",
-          "Pernatty",
-          "Siam",
-          "South Gap",
           "Tarcoola",
-          "Thurlga",
-          "Wartaka",
-          "Wilkatana Station",
-          "William Creek",
-          "Wirraminna",
-          "Woolundunga",
-          "Yadlamalka",
-          "Yardea"
+          "Woolundunga"
         ]
       },
       {
@@ -3608,14 +3593,19 @@
           "Burra",
           "Burra Eastern Districts",
           "Canegrass",
+          "Faraway Hill",
           "Gum Creek",
           "Hanson",
           "Koonoona",
           "Leighton",
           "Mongolata",
           "North Booborowie",
+          "Oakvale Station",
           "Old Koomooloo",
           "Parcoola",
+          "Pine Valley Station",
+          "Quondong",
+          "Sturt Vale",
           "Warnes"
         ]
       },
@@ -3662,7 +3652,8 @@
           "Flinders Ranges",
           "Hawker",
           "Kanyaka",
-          "Wilpena Pound",
+          "Shaggy Ridge",
+          "Upalinna",
           "Worumba"
         ]
       },
@@ -3739,7 +3730,11 @@
           "Belton",
           "Carrieton",
           "Cradock",
+          "Holowiliena",
+          "Holowiliena South",
           "Moockra",
+          "Willippa",
+          "Witchitie",
           "Yanyarrie"
         ]
       },
@@ -3774,6 +3769,7 @@
           "Cultana",
           "Davenport",
           "Miranda",
+          "Mundallio",
           "Port Augusta",
           "Port Augusta West",
           "Port Paterson",
@@ -3803,6 +3799,7 @@
         "Postcode": 5655,
         "Localities": [
           "Bockelberg",
+          "Gawler Ranges",
           "Kaldoonera",
           "Poochera"
         ]
@@ -3818,14 +3815,12 @@
           "Charra",
           "Coorabie",
           "Denial Bay",
-          "Dinahline",
           "Fowlers Bay",
           "Kalanbi",
           "Koongawa Dundey Community",
           "Koonibba",
           "Maltee",
           "Merghiny",
-          "Munda Munda Watutjinna",
           "Nadia",
           "Nullarbor",
           "Nundroo",
@@ -3835,11 +3830,9 @@
           "Thevenard",
           "Uworra",
           "Wandana",
-          "Ware Villa",
           "Watraba",
           "White Well Corner",
-          "Yalata",
-          "Yarilena Community"
+          "Yalata"
         ]
       },
       {
@@ -4041,7 +4034,6 @@
           "Sceale Bay",
           "Smoky Bay",
           "Streaky Bay",
-          "Tia Tuckia",
           "Westall",
           "Yanerbie"
         ]
@@ -4132,10 +4124,19 @@
       {
         "Postcode": 5731,
         "Localities": [
+          "Bollards Lagoon",
           "Cordillo Downs",
+          "Farina",
           "Innamincka",
           "Leigh Creek",
-          "Lyndhurst"
+          "Leigh Creek Station",
+          "Lindon",
+          "Lyndhurst",
+          "Merty Merty",
+          "Mount Lyndhurst",
+          "Mulgaria",
+          "Murnpeowie",
+          "Witchelina"
         ]
       },
       {
@@ -4160,8 +4161,19 @@
       {
         "Postcode": 5733,
         "Localities": [
+          "Alton Downs Station",
+          "Callanna",
+          "Clayton Station",
+          "Clifton Hills Station",
           "Cowarie",
-          "Marree"
+          "Dulkaninna",
+          "Etadunna",
+          "Kalamurina",
+          "Marree",
+          "Muloorina",
+          "Mundowdna",
+          "Mungerannie",
+          "Pandie Pandie"
         ]
       },
       {
@@ -4286,13 +4298,35 @@
       {
         "Postcode": 5440,
         "Localities": [
+          "Bimbowrie",
           "Bindarrah",
+          "Boolcoomatta",
           "Cockburn",
+          "Curnamona",
+          "Devonborough Downs",
           "Grampus",
+          "Kalabity",
+          "Kalkaroo",
+          "Koonamore",
           "Manna Hill",
+          "Martins Well",
           "Mingary",
+          "Mooleulooloo",
+          "Mount Victor Station",
+          "Mulyungarie",
+          "Mutooroo",
           "Nackara",
+          "Netley Gap",
           "Olary",
+          "Oulnina",
+          "Outalpa",
+          "Pine Creek Station",
+          "Quinyambie",
+          "Tikalina",
+          "Wadnaminga",
+          "Weekeroo",
+          "Wiawera",
+          "Yarramba",
           "Yunta"
         ]
       },
@@ -4315,9 +4349,16 @@
       {
         "Postcode": 5732,
         "Localities": [
+          "Burr Well",
           "Copley",
-          "Iga Warta",
-          "Nepabunna"
+          "Gammon Ranges",
+          "Manners Well",
+          "Moolawatana",
+          "Mulga View",
+          "Nepabunna",
+          "North Moolooloo",
+          "Wertaloona",
+          "Wooltana"
         ]
       },
       {
@@ -4365,7 +4406,12 @@
       {
         "Postcode": 5720,
         "Localities": [
+          "Arcoona",
+          "Billa Kalina",
           "Bosworth",
+          "Millers Creek",
+          "Mount Eba",
+          "Mount Vivian",
           "Pimba",
           "Stuarts Creek",
           "Woomera"
@@ -4513,10 +4559,22 @@
       {
         "Postcode": 5730,
         "Localities": [
+          "Alpana",
+          "Angorigina",
           "Beltana",
+          "Beltana Station",
           "Blinman",
+          "Gum Creek Station",
+          "Moolooloo",
           "Motpena",
-          "Parachilna"
+          "Mount Falkland",
+          "Narrina",
+          "Nilpena",
+          "Oratunga Station",
+          "Parachilna",
+          "Puttapa",
+          "Warraweena",
+          "Wirrealpa"
         ]
       },
       {
@@ -4531,9 +4589,18 @@
         "Localities": [
           "Allandale Station",
           "Anna Creek",
+          "Arckaringa",
           "Coober Pedy",
+          "Evelyn Downs",
+          "Ingomar",
+          "Mcdouall Peak",
+          "Mount Barry",
+          "Mount Clarence Station",
+          "Mount Willoughby",
           "Nilpinna Station",
-          "Umoona"
+          "Umoona",
+          "William Creek",
+          "Wintinna"
         ]
       },
       {
@@ -4570,7 +4637,8 @@
         "Postcode": 5724,
         "Localities": [
           "Marla",
-          "Mintabie"
+          "Mintabie",
+          "Welbourn Hill"
         ]
       },
       {
@@ -4583,14 +4651,18 @@
         "Postcode": 5725,
         "Localities": [
           "Olympic Dam",
-          "Roxby Downs"
+          "Roxby Downs",
+          "Roxby Downs Station"
         ]
       },
       {
         "Postcode": 5734,
         "Localities": [
+          "Eringa",
           "Macumba",
+          "Mount Sarah",
           "Oodnadatta",
+          "Todmorden",
           "Witjira"
         ]
       },
@@ -4888,6 +4960,7 @@
           "Hackham",
           "Hackham West",
           "Huntfield Heights",
+          "Onkaparinga Heights",
           "Onkaparinga Hills"
         ]
       },
@@ -5236,12 +5309,6 @@
         ]
       },
       {
-        "Postcode": 5374,
-        "Localities": [
-          "Brownlow"
-        ]
-      },
-      {
         "Postcode": 5211,
         "Localities": [
           "Back Valley",
@@ -5359,8 +5426,7 @@
       {
         "Postcode": 5254,
         "Localities": [
-          "Callington",
-          "Petwood"
+          "Callington"
         ]
       },
       {
@@ -5437,6 +5503,7 @@
           "Hay Valley",
           "Kanmantoo",
           "Nairne",
+          "Petwood",
           "St Ives"
         ]
       },
@@ -5903,6 +5970,7 @@
         "Postcode": 5120,
         "Localities": [
           "Buckland Park",
+          "Riverlea Park",
           "Virginia"
         ]
       }
@@ -6174,15 +6242,19 @@
         "Localities": [
           "Ferntree Gully",
           "Ferntree Gully Upper",
+          "Ftg",
           "Lysterfield",
           "Mountain Gate",
-          "Upper Ferntree Gully"
+          "Upper Ferntree Gully",
+          "Upper Ftg"
         ]
       },
       {
         "Postcode": 3153,
         "Localities": [
-          "Bayswater"
+          "Bayswater",
+          "Bayswater South",
+          "Bayswater West"
         ]
       },
       {
@@ -6196,6 +6268,7 @@
         "Localities": [
           "Harcrest",
           "Knox",
+          "South Wantirna",
           "Studfield",
           "Wantirna",
           "Wantirna South"
@@ -6229,6 +6302,7 @@
       {
         "Postcode": 3154,
         "Localities": [
+          "Basin",
           "The Basin"
         ]
       }
@@ -6567,6 +6641,7 @@
         "Postcode": 3331,
         "Localities": [
           "Maude",
+          "Maude",
           "She Oaks",
           "Steiglitz",
           "Sutherlands Creek"
@@ -6678,7 +6753,6 @@
           "Huntly North",
           "Junortoun",
           "Kimbolton",
-          "Knowsley",
           "Lockwood",
           "Lockwood South",
           "Longlea",
@@ -7113,6 +7187,7 @@
       {
         "Postcode": 3061,
         "Localities": [
+          "Campbellfield",
           "Campbellfield"
         ]
       },
@@ -7126,6 +7201,7 @@
       {
         "Postcode": 3064,
         "Localities": [
+          "Craigieburn",
           "Craigieburn",
           "Kalkallo",
           "Mickleham",
@@ -7148,12 +7224,14 @@
       {
         "Postcode": 3062,
         "Localities": [
+          "Somerton",
           "Somerton"
         ]
       },
       {
         "Postcode": 3060,
         "Localities": [
+          "Fawkner",
           "Fawkner"
         ]
       }
@@ -7252,7 +7330,8 @@
         "Localities": [
           "Ferntree Gully Upper",
           "Lysterfield",
-          "Upper Ferntree Gully"
+          "Upper Ferntree Gully",
+          "Upper Ftg"
         ]
       },
       {
@@ -7419,12 +7498,6 @@
         "Localities": [
           "Narre Warren East"
         ]
-      },
-      {
-        "Postcode": 3607,
-        "Localities": [
-          "Tabilk"
-        ]
       }
     ]
   },
@@ -7465,6 +7538,8 @@
         "Localities": [
           "Box Hill",
           "Box Hill South",
+          "Box Hill South",
+          "Wattle Park",
           "Wattle Park"
         ]
       },
@@ -7472,13 +7547,17 @@
         "Postcode": 3150,
         "Localities": [
           "Glen Waverley",
+          "Glen Waverley",
           "Syndal East",
+          "Syndal East",
+          "Wheelers Hill",
           "Wheelers Hill"
         ]
       },
       {
         "Postcode": 3148,
         "Localities": [
+          "Chadstone",
           "Chadstone"
         ]
       },
@@ -7486,7 +7565,10 @@
         "Postcode": 3149,
         "Localities": [
           "Mount Waverley",
+          "Mount Waverley",
           "Pinewood",
+          "Pinewood",
+          "Syndal",
           "Syndal"
         ]
       },
@@ -7495,13 +7577,6 @@
         "Localities": [
           "Bennettswood",
           "Burwood"
-        ]
-      },
-      {
-        "Postcode": 3170,
-        "Localities": [
-          "Mulgrave",
-          "Waverley Park"
         ]
       },
       {
@@ -7514,16 +7589,18 @@
         "Postcode": 3151,
         "Localities": [
           "Burwood East",
+          "Burwood East",
           "Burwood Heights",
+          "Burwood Heights",
+          "East Burwood",
           "East Burwood"
         ]
       },
       {
         "Postcode": 3130,
         "Localities": [
-          "Blackburn",
           "Blackburn South",
-          "Laburnum"
+          "Blackburn South"
         ]
       },
       {
@@ -7690,6 +7767,7 @@
           "Armstrong Creek",
           "Charlemont",
           "Freshwater Creek",
+          "Freshwater Creek",
           "Mount Duneed"
         ]
       },
@@ -7723,6 +7801,7 @@
         "Postcode": 3221,
         "Localities": [
           "Barrabool",
+          "Ceres",
           "Ceres",
           "Gnarwarre"
         ]
@@ -7979,6 +8058,7 @@
         "Localities": [
           "North Ringwood",
           "Ringwood",
+          "Ringwood",
           "Ringwood North",
           "Warranwood"
         ]
@@ -7994,6 +8074,7 @@
         "Postcode": 3135,
         "Localities": [
           "East Ringwood",
+          "Heathmont",
           "Heathmont",
           "Ringwood East"
         ]
@@ -8033,6 +8114,8 @@
         "Postcode": 3153,
         "Localities": [
           "Bayswater North",
+          "Bayswater North",
+          "North Bayswater",
           "North Bayswater"
         ]
       },
@@ -8040,6 +8123,7 @@
         "Postcode": 3130,
         "Localities": [
           "Blackburn",
+          "Blackburn South",
           "Blackburn South",
           "Laburnum"
         ]
@@ -8135,6 +8219,7 @@
       {
         "Postcode": 3930,
         "Localities": [
+          "Mount Eliza",
           "Mount Eliza"
         ]
       },
@@ -9579,7 +9664,10 @@
         "Postcode": 3145,
         "Localities": [
           "Central Park",
+          "Central Park",
           "Darling",
+          "Darling",
+          "Malvern East",
           "Malvern East"
         ]
       },
@@ -9599,14 +9687,9 @@
         ]
       },
       {
-        "Postcode": 3204,
-        "Localities": [
-          "Ormond"
-        ]
-      },
-      {
         "Postcode": 3181,
         "Localities": [
+          "Prahran",
           "Prahran",
           "Windsor"
         ]
@@ -9687,6 +9770,7 @@
           "Cranbourne",
           "Cranbourne East",
           "Cranbourne North",
+          "Cranbourne North",
           "Cranbourne South",
           "Cranbourne West",
           "Devon Meadows",
@@ -9706,12 +9790,6 @@
         "Localities": [
           "Narre Warren South",
           "South Narre Warren"
-        ]
-      },
-      {
-        "Postcode": 3188,
-        "Localities": [
-          "Hampton"
         ]
       },
       {
@@ -9795,7 +9873,10 @@
         "Postcode": 3165,
         "Localities": [
           "Bentleigh East",
+          "Bentleigh East",
           "Coatesville",
+          "Coatesville",
+          "East Bentleigh",
           "East Bentleigh"
         ]
       },
@@ -9803,7 +9884,10 @@
         "Postcode": 3169,
         "Localities": [
           "Clarinda",
+          "Clarinda",
           "Clayton South",
+          "Clayton South",
+          "Westall",
           "Westall"
         ]
       },
@@ -10365,6 +10449,7 @@
       {
         "Postcode": 3763,
         "Localities": [
+          "Kinglake",
           "Kinglake"
         ]
       },
@@ -10565,6 +10650,8 @@
         "Localities": [
           "Bonbeach",
           "Chelsea",
+          "Chelsea",
+          "Chelsea Heights",
           "Chelsea Heights",
           "Edithvale"
         ]
@@ -10603,6 +10690,7 @@
       {
         "Postcode": 3189,
         "Localities": [
+          "Moorabbin",
           "Moorabbin"
         ]
       },
@@ -10787,6 +10875,7 @@
         "Postcode": 3103,
         "Localities": [
           "Balwyn",
+          "Balwyn",
           "Deepdene"
         ]
       },
@@ -10799,6 +10888,7 @@
       {
         "Postcode": 3104,
         "Localities": [
+          "Balwyn North",
           "Balwyn North"
         ]
       },
@@ -10813,6 +10903,8 @@
         "Postcode": 3127,
         "Localities": [
           "Mont Albert",
+          "Surrey Hills",
+          "Surrey Hills",
           "Surrey Hills"
         ]
       },
@@ -10922,6 +11014,7 @@
           "Quandong",
           "Sanctuary Lakes",
           "Werribee",
+          "Werribee",
           "Werribee South"
         ]
       },
@@ -10929,9 +11022,15 @@
         "Postcode": 3024,
         "Localities": [
           "Mambourin",
+          "Mambourin",
+          "Manor Lakes",
           "Manor Lakes",
           "Mount Cottrell",
           "Wyndham Green",
+          "Wyndham Green",
+          "Wyndham Green",
+          "Wyndham Vale",
+          "Wyndham Vale",
           "Wyndham Vale"
         ]
       },
@@ -10946,8 +11045,7 @@
         "Postcode": 3029,
         "Localities": [
           "Hoppers Crossing",
-          "Tarneit",
-          "Truganina"
+          "Tarneit"
         ]
       },
       {
@@ -10999,6 +11097,7 @@
       {
         "Postcode": 3004,
         "Localities": [
+          "Melbourne",
           "Melbourne"
         ]
       },
@@ -12296,6 +12395,7 @@
         "Localities": [
           "Airport West",
           "Keilor Park",
+          "Keilor Park",
           "Niddrie"
         ]
       },
@@ -12333,6 +12433,7 @@
         "Localities": [
           "Gladstone Park",
           "Gowanbrae",
+          "Tullamarine",
           "Tullamarine"
         ]
       },
@@ -12351,6 +12452,7 @@
       {
         "Postcode": 3045,
         "Localities": [
+          "Melbourne Airport",
           "Melbourne Airport"
         ]
       },
@@ -12447,6 +12549,7 @@
           "Forbes",
           "Kilmore",
           "Kilmore East",
+          "Kilmore East",
           "Moranding",
           "Tantaraboo",
           "Willowmavin"
@@ -12457,6 +12560,7 @@
         "Localities": [
           "Bullengarook",
           "Gisborne",
+          "Gisborne South",
           "Gisborne South"
         ]
       },
@@ -12549,6 +12653,7 @@
       {
         "Postcode": 3763,
         "Localities": [
+          "Kinglake",
           "Kinglake"
         ]
       },
@@ -12573,6 +12678,7 @@
       {
         "Postcode": 3759,
         "Localities": [
+          "Panton Hill",
           "Panton Hill"
         ]
       },
@@ -12585,12 +12691,14 @@
       {
         "Postcode": 3760,
         "Localities": [
+          "Smiths Gully",
           "Smiths Gully"
         ]
       },
       {
         "Postcode": 3761,
         "Localities": [
+          "St Andrews",
           "St Andrews"
         ]
       },
@@ -12818,6 +12926,8 @@
           "North Ringwood",
           "Ringwood North",
           "South Warrandyte",
+          "South Warrandyte",
+          "Warrandyte South",
           "Warrandyte South"
         ]
       },
@@ -12850,6 +12960,7 @@
       {
         "Postcode": 3111,
         "Localities": [
+          "Donvale",
           "Donvale"
         ]
       },
@@ -12880,17 +12991,13 @@
         ]
       },
       {
-        "Postcode": 3115,
-        "Localities": [
-          "Wonga Park"
-        ]
-      },
-      {
         "Postcode": 3130,
         "Localities": [
           "Blackburn",
           "Blackburn North",
+          "Blackburn North",
           "Laburnum",
+          "North Blackburn",
           "North Blackburn"
         ]
       },
@@ -14927,6 +15034,7 @@
       {
         "Postcode": 3055,
         "Localities": [
+          "Brunswick West",
           "Brunswick West"
         ]
       },
@@ -14940,6 +15048,7 @@
       {
         "Postcode": 3060,
         "Localities": [
+          "Fawkner",
           "Fawkner"
         ]
       },
@@ -14947,7 +15056,9 @@
         "Postcode": 3046,
         "Localities": [
           "Glenroy",
+          "Glenroy",
           "Hadfield",
+          "Oak Park",
           "Oak Park"
         ]
       },
@@ -14955,6 +15066,8 @@
         "Postcode": 3044,
         "Localities": [
           "Pascoe Vale",
+          "Pascoe Vale",
+          "Pascoe Vale South",
           "Pascoe Vale South"
         ]
       },
@@ -15030,7 +15143,7 @@
     "DateGazetted": "2018-03-27",
     "Description": "<div><div class=\"ExternalClassDCA070BCAD204878925F897238E59A44\"><p></p><p>The Division of Blair consists of:<br></p><ul><li>part of the Brisbane City Council,</li><li>part of the Ipswich City Council,</li><li>part of the Scenic Rim Regional Council, and</li><li>part of the Somerset Regional Council.</li></ul></div></div>",
     "DemographicRating": "<strong>Provincial</strong> – outside capital cities, but with a majority of enrolment in major provincial cities",
-    "NameDerivation": "<div><div>&#8203;Named in honour of Harold Blair AM, 1924-76, the noted tenor, in recognition of his work for Aboriginal advancement and service to the arts.&nbsp; Mr Blair established the Aboriginal Children's Holiday Project and was a member of the the Aborigines' Welfare Board in Victoria (1957-58) and the Aborigines Advancement League, the Federal Council for the Advancement of Aborigines and Torres Strait Islanders, and the Commonwealth Aboriginal Arts Board. </div></div>",
+    "NameDerivation": "<div><div>&#8203;Named in honour of Harold Blair AM, 1924&amp;ndash;76, the noted tenor, in recognition of his work for Aboriginal advancement and service to the arts.&nbsp; Mr Blair established the Aboriginal Children's Holiday Project and was a member of the the Aborigines' Welfare Board in Victoria (1957&amp;ndash;58) and the Aborigines Advancement League, the Federal Council for the Advancement of Aborigines and Torres Strait Islanders, and the Commonwealth Aboriginal Arts Board. </div></div>",
     "Enrollment": 126366,
     "TwoCandidatePreferred": {
       "Elected": {
@@ -16824,12 +16937,14 @@
         "Postcode": 4551,
         "Localities": [
           "Aroona",
+          "Banya",
           "Baringa",
           "Battery Hill",
           "Bells Creek",
           "Bulcock Beach",
           "Caloundra",
           "Caloundra West",
+          "Corbould Park",
           "Currimundi",
           "Dicky Beach",
           "Golden Beach",
@@ -16885,7 +17000,8 @@
       {
         "Postcode": 4559,
         "Localities": [
-          "West Woombye"
+          "West Woombye",
+          "Woombye"
         ]
       },
       {
@@ -16981,7 +17097,6 @@
           "Abbotsford",
           "Avondale",
           "Bucca",
-          "Bundaberg",
           "Fairymead",
           "Gooburrum",
           "Meadowvale",
@@ -17196,6 +17311,7 @@
           "Boolburra",
           "Bouldercombe",
           "Bushley",
+          "Cheeseborough",
           "Comet",
           "Consuelo",
           "Coomoo",
@@ -17205,7 +17321,6 @@
           "Dixalea",
           "Dululu",
           "Dumpy Creek",
-          "Fork Lagoons",
           "Gainsford",
           "Garnant",
           "Gindie",
@@ -17221,6 +17336,7 @@
           "Kabra",
           "Kalapa",
           "Kokotungo",
+          "Lochington",
           "Lowesby",
           "Mackenzie",
           "Marmor",
@@ -17261,6 +17377,12 @@
           "Machine Creek",
           "Mount Larcom",
           "The Narrows"
+        ]
+      },
+      {
+        "Postcode": 4741,
+        "Localities": [
+          "Coral Sea"
         ]
       },
       {
@@ -17315,14 +17437,17 @@
           "Capella",
           "Carbine Creek",
           "Chirnside",
+          "Cotherstone",
           "Crinum",
+          "Fork Lagoons",
           "Gordonstone",
           "Hibernia",
           "Khosh Bulduk",
           "Lilyvale",
           "Lowestoff",
           "Mount Macarthur",
-          "Retro"
+          "Retro",
+          "Wyuna"
         ]
       },
       {
@@ -17348,7 +17473,6 @@
           "Buckland",
           "Cairdbeign",
           "Cona Creek",
-          "Lochington",
           "Mantuan Downs",
           "Minerva",
           "Nandowrie",
@@ -17391,7 +17515,6 @@
         "Postcode": 4721,
         "Localities": [
           "Argyll",
-          "Cheeseborough",
           "Clermont",
           "Peak Vale",
           "Theresa Creek"
@@ -17429,9 +17552,12 @@
       {
         "Postcode": 4420,
         "Localities": [
+          "Broadmere",
+          "Ghinghinda",
           "Glebe",
           "Glenhaughton",
           "Kinnoul",
+          "Spring Creek",
           "Taroom"
         ]
       },
@@ -17478,8 +17604,7 @@
       {
         "Postcode": 4720,
         "Localities": [
-          "Emerald",
-          "Wyuna"
+          "Emerald"
         ]
       },
       {
@@ -17571,22 +17696,10 @@
         ]
       },
       {
-        "Postcode": 4745,
-        "Localities": [
-          "Cotherstone"
-        ]
-      },
-      {
         "Postcode": 4716,
         "Localities": [
           "Lawgi Dawes",
           "Thangool"
-        ]
-      },
-      {
-        "Postcode": 4746,
-        "Localities": [
-          "Bundoora"
         ]
       },
       {
@@ -17598,6 +17711,7 @@
       {
         "Postcode": 4709,
         "Localities": [
+          "Bundoora",
           "Tieri"
         ]
       },
@@ -18341,6 +18455,10 @@
           "Bargara",
           "Branyan",
           "Bundaberg",
+          "Bundaberg",
+          "Bundaberg",
+          "Bundaberg",
+          "Bundaberg",
           "Bundaberg Central",
           "Bundaberg East",
           "Bundaberg North",
@@ -18614,6 +18732,7 @@
           "Broughton",
           "Campaspe",
           "Charters Towers",
+          "Charters Towers City",
           "Columbia",
           "Dotswood",
           "Grand Secret",
@@ -18768,6 +18887,7 @@
           "Midgenoo",
           "Murray Upper",
           "Murrigal",
+          "Rockingham",
           "Silky Oak",
           "Tully",
           "Tully Heads"
@@ -18977,12 +19097,6 @@
           "Bohle Plains",
           "Hervey Range",
           "Rupertswood"
-        ]
-      },
-      {
-        "Postcode": 4406,
-        "Localities": [
-          "Macalister"
         ]
       },
       {
@@ -19846,7 +19960,6 @@
           "Blackswamp",
           "Boonarga",
           "Burncluith",
-          "Burra Burri",
           "Cameby",
           "Canaga",
           "Chances Plain",
@@ -20029,7 +20142,6 @@
         "Localities": [
           "Bundi",
           "Clifford",
-          "Waikola",
           "Yuleba",
           "Yuleba North",
           "Yuleba South"
@@ -20204,7 +20316,8 @@
       {
         "Postcode": 4420,
         "Localities": [
-          "Eurombah"
+          "Eurombah",
+          "Waikola"
         ]
       },
       {
@@ -20318,7 +20431,6 @@
           "Humeburn",
           "Jobs Gate",
           "Linden",
-          "Nebine",
           "Noorama",
           "Tuen",
           "Widgeegoara",
@@ -20387,7 +20499,8 @@
         "Postcode": 4488,
         "Localities": [
           "Bindebango",
-          "Bollon"
+          "Bollon",
+          "Nebine"
         ]
       },
       {
@@ -20560,6 +20673,7 @@
       {
         "Postcode": 4410,
         "Localities": [
+          "Burra Burri",
           "Diamondy",
           "Jandowae",
           "Jinghi"
@@ -20614,8 +20728,6 @@
       {
         "Postcode": 4496,
         "Localities": [
-          "North Talwood",
-          "South Talwood",
           "Talwood"
         ]
       },
@@ -21302,6 +21414,13 @@
     },
     "Locations": [
       {
+        "Postcode": 4165,
+        "Localities": [
+          "Point Talburpin",
+          "Redland Bay"
+        ]
+      },
+      {
         "Postcode": 4115,
         "Localities": [
           "Algester",
@@ -21978,13 +22097,14 @@
     "Name": "Lingiari",
     "ShortName": "lingiari",
     "State": "NT",
-    "Area": 0.0,
+    "Area": 1348157.94,
     "Exist2016": true,
     "Exist2019": true,
     "Exist2022": true,
-    "Description": "Lingiari covers an area of approximately 1&nbsp;352&nbsp;371 sq km of the Northern Territory including Christmas Island and Cocos (Keeling) Islands.",
-    "DemographicRating": "Rural",
-    "NameDerivation": "Named in honour of Vincent Lingiari OAM 1908-88, who was a member of the Gurindji people from the Victoria River District.",
+    "DateGazetted": "2017-02-07",
+    "Description": "Lingiari covers the majority of the Northern Territory, with the exception of the Darwin Municipality and most of the Palmerston Municipality.<br> Lingiari includes the Territory of Cocos (Keeling) Islands and the Territory of Christmas Island.",
+    "DemographicRating": "<strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.",
+    "NameDerivation": "Named in honour of Vincent Lingiari AM 19??-88, who was a member of the Gurindji people from the Victoria River District. Mr Lingiari was a stockman and lands right leader who worked for many years to improve conditions for Aboriginal people. In 1966, he led the walk-off of his people from Wave Hill Station, which eventually resulted in the establishment of Wattie Creek and a land grant to the Gurindji people.",
     "Enrollment": 74008,
     "TwoCandidatePreferred": {
       "Elected": {
@@ -22128,7 +22248,6 @@
           "Emu Point",
           "Finniss River Stn",
           "Finniss Valley",
-          "Flagon Creek Camp",
           "Fly Creek",
           "Fossil Head",
           "Freds Pass",
@@ -22150,7 +22269,8 @@
           "Gawa",
           "Gikal",
           "Gilirri",
-          "Gimbat"
+          "Gimbat",
+          "Gitan"
         ]
       },
       {
@@ -22465,7 +22585,7 @@
           "Sturt Downs Stn",
           "Tamarind Stn",
           "Waldnarr",
-          "Walpiri",
+          "Walpiri Transient Camp",
           "Warlpiri Camp"
         ]
       },
@@ -22508,6 +22628,7 @@
           "Galaru",
           "Galupa",
           "Gapuwiyak",
+          "Garrathiya Stn",
           "Garrthalala",
           "Gove",
           "Gulkula",
@@ -22548,7 +22669,7 @@
       {
         "Postcode": 831,
         "Localities": [
-          "Palmerston"
+          "Yarrawonga Bush Camp"
         ]
       },
       {
@@ -22743,8 +22864,10 @@
           "Inarlenge",
           "Inbina Atwatye",
           "Irklancha Atwacha",
+          "Irrkerlantye",
           "Itwiyethwenge",
           "Karnte",
+          "Kite Hawk",
           "Larapinta Valley",
           "Lhenpa-Artne",
           "Little Sisters",
@@ -22772,6 +22895,7 @@
           "Undoolya Stn",
           "Walpiri",
           "Wanarkula",
+          "White Gate",
           "White Gums",
           "Yarintja Assoc",
           "Yarrenty Altere"
@@ -22869,7 +22993,7 @@
           "Pingala Stn",
           "Powell Creek Stn",
           "Puawua",
-          "Pungalina Wildlife Sant",
+          "Pungalina Wildlife Sanct",
           "Punjarriji",
           "Purrukuwurru",
           "Red Bank Copper Mine",
@@ -22998,13 +23122,14 @@
     "Name": "Solomon",
     "ShortName": "solomon",
     "State": "NT",
-    "Area": 0.0,
+    "Area": 190.61,
     "Exist2016": true,
     "Exist2019": true,
     "Exist2022": true,
-    "Description": "Solomon covers an area of approximately 337 sq km and includes the cities of Darwin and Palmerston and urban fringes.",
-    "DemographicRating": "Inner Metropolitan",
-    "NameDerivation": "Named after Vaiben Louis Solomon 1853-1908, who has been described as the Northern Territory's founding father of federation.",
+    "DateGazetted": "2017-02-07",
+    "Description": "Solomon covers the Darwin Municipality, the Palmerston Municipality (with the exception of the suburbs of Farrar, Johnston, Mitchell, Yarrawonga and Zuccoli), and the unincorporated areas of the Darwin Rates Act Area and East Arm.",
+    "DemographicRating": "<strong>Inner Metropolitan</strong> - situated in capital cities and consisting of well-established built-up suburbs.",
+    "NameDerivation": "Named after Vaiben Louis Solomon, 1853-1908, who was an active member of the Constitutional Conventions that led to the Commonwealth of Australia. Between 1901 and 1903 Mr Solomon was elected as one of the first Members of the House of Representatives as the member for the South Australian seat that included the Northern Territory. Mr Solomon also represented the Northern Territory seat in the South Australian House of Assembly on several occasions.",
     "Enrollment": 71843,
     "TwoCandidatePreferred": {
       "Elected": {
@@ -23066,6 +23191,9 @@
           "Northlakes",
           "Sanderson",
           "Sanderson",
+          "Sanderson",
+          "Sanderson",
+          "Sanderson",
           "Woodleigh Gardens",
           "Wulagi"
         ]
@@ -23096,7 +23224,7 @@
           "City Valley",
           "Coonawarra",
           "Cullen Bay",
-          "Darwin Raaf",
+          "Darwin Raaf Base",
           "East Point",
           "Eaton",
           "Fannie Bay",
@@ -23136,12 +23264,6 @@
         "Postcode": 800,
         "Localities": [
           "Darwin"
-        ]
-      },
-      {
-        "Postcode": 831,
-        "Localities": [
-          "Palmerston"
         ]
       },
       {
@@ -23224,6 +23346,7 @@
         "Localities": [
           "Blakehurst",
           "Connells Point",
+          "South Hurstville",
           "South Hurstville"
         ]
       },
@@ -23348,6 +23471,7 @@
           "Banksia",
           "Brighton-Le-Sands",
           "Kyeemagh",
+          "Rockdale",
           "Rockdale"
         ]
       },
@@ -23463,6 +23587,7 @@
         "Postcode": 2121,
         "Localities": [
           "Epping",
+          "Epping",
           "North Epping"
         ]
       },
@@ -23493,6 +23618,7 @@
           "Denistone West",
           "Meadowbank",
           "Melrose Park",
+          "Melrose Park",
           "West Ryde"
         ]
       },
@@ -23507,6 +23633,7 @@
       {
         "Postcode": 2122,
         "Localities": [
+          "Eastwood",
           "Eastwood",
           "Marsfield"
         ]
@@ -23697,7 +23824,6 @@
       {
         "Postcode": 2765,
         "Localities": [
-          "Gables",
           "Maraylya"
         ]
       }
@@ -23784,6 +23910,7 @@
       {
         "Postcode": 2197,
         "Localities": [
+          "Bass Hill",
           "Bass Hill"
         ]
       },
@@ -23878,6 +24005,7 @@
         "Localities": [
           "Normanhurst",
           "North Wahroonga",
+          "Wahroonga",
           "Wahroonga"
         ]
       },
@@ -24279,7 +24407,7 @@
           "Morts Estate",
           "Mount Lambie",
           "Newnes",
-          "Oaky Park",
+          "Oakey Park",
           "Pottery Estate",
           "Rydal",
           "Sheedys Gully",
@@ -24575,6 +24703,7 @@
         "Localities": [
           "Bungarribee",
           "Doonside",
+          "Doonside",
           "Woodcroft"
         ]
       },
@@ -24723,6 +24852,8 @@
           "Kogarah Bay",
           "Monterey",
           "Ramsgate",
+          "Ramsgate",
+          "Ramsgate Beach",
           "Ramsgate Beach"
         ]
       },
@@ -24853,12 +24984,6 @@
         ]
       },
       {
-        "Postcode": 2259,
-        "Localities": [
-          "Hamlyn Terrace"
-        ]
-      },
-      {
         "Postcode": 2441,
         "Localities": [
           "Allgomera",
@@ -24950,7 +25075,10 @@
           "Coffs Harbour",
           "Dairyville",
           "Korora",
+          "Korora",
           "Korora Basin",
+          "Korora Basin",
+          "Korora Bay",
           "Korora Bay",
           "Mid Sapphire",
           "Middle Boambee",
@@ -25134,14 +25262,6 @@
         "Localities": [
           "Russell Vale",
           "Woonona"
-        ]
-      },
-      {
-        "Postcode": 2232,
-        "Localities": [
-          "Audley",
-          "Deer Park",
-          "Royal National Park"
         ]
       },
       {
@@ -25387,6 +25507,7 @@
           "Radcliffe",
           "Royalla",
           "Sutton",
+          "Sutton",
           "Tharwa",
           "Tharwa",
           "The Angle",
@@ -25431,7 +25552,10 @@
           "Bungendore",
           "Butmaroo",
           "Bywong",
+          "Bywong",
           "Forbes Creek",
+          "Gearys Gap",
+          "Gearys Gap",
           "Gearys Gap",
           "Gearys Gap",
           "Gearys Gap",
@@ -25733,6 +25857,7 @@
         "Localities": [
           "Bellmount Forest",
           "Collector",
+          "Lake George",
           "Lake George",
           "Lerida"
         ]
@@ -26037,6 +26162,7 @@
           "Clare",
           "Hatfield",
           "Kyalite",
+          "Mungo",
           "Waugorah",
           "Yanga"
         ]
@@ -26072,6 +26198,7 @@
       {
         "Postcode": 2665,
         "Localities": [
+          "Ardlethan",
           "Ardlethan",
           "Barellan",
           "Binya",
@@ -26577,6 +26704,7 @@
       {
         "Postcode": 2540,
         "Localities": [
+          "Badagarang",
           "Bamarang",
           "Barringella",
           "Basin View",
@@ -26587,7 +26715,6 @@
           "Bream Beach",
           "Browns Mountain",
           "Brundee",
-          "Buangla",
           "Budjong Vale",
           "Burrier",
           "Callala Bay",
@@ -26722,7 +26849,7 @@
         "Postcode": 2527,
         "Localities": [
           "Croom",
-          "Yellow Rock"
+          "Yellow Rock Ridge"
         ]
       },
       {
@@ -26834,6 +26961,8 @@
           "Mossy Point",
           "Tomakin",
           "Turlinjah",
+          "Turlinjah",
+          "Tuross Head",
           "Tuross Head",
           "Wamban"
         ]
@@ -26939,6 +27068,7 @@
         "Postcode": 2040,
         "Localities": [
           "Leichhardt",
+          "Lilyfield",
           "Lilyfield"
         ]
       },
@@ -27068,6 +27198,8 @@
         "Localities": [
           "Kings Langley",
           "Lalor Park",
+          "Seven Hills",
+          "Seven Hills",
           "Seven Hills"
         ]
       },
@@ -27167,8 +27299,10 @@
           "Grays Point",
           "Kareela",
           "Kirrawee",
+          "Kirrawee",
           "Loftus",
           "Royal National Park",
+          "Sutherland",
           "Sutherland",
           "Woronora"
         ]
@@ -27178,6 +27312,8 @@
         "Localities": [
           "Bonnet Bay",
           "Como",
+          "Como",
+          "Jannali",
           "Jannali"
         ]
       },
@@ -27286,7 +27422,8 @@
       {
         "Postcode": 2571,
         "Localities": [
-          "Balmoral",
+          "Balmoral Village",
+          "Buxton",
           "Buxton",
           "Couridjah",
           "Maldon",
@@ -27299,6 +27436,7 @@
       {
         "Postcode": 2582,
         "Localities": [
+          "Bango",
           "Jerrawa",
           "Pudman Creek"
         ]
@@ -27319,14 +27457,18 @@
           "Golspie",
           "Goulburn",
           "Greenwich Park",
+          "Greenwich Park",
           "Gundary",
           "Kingsdale",
           "Lake Bathurst",
           "Lower Boro",
           "Middle Arm",
+          "Middle Arm",
           "Mummel",
           "Myrtleville",
           "Parkesbourne",
+          "Parkesbourne",
+          "Pomeroy",
           "Pomeroy",
           "Quialigo",
           "Richlands",
@@ -27336,13 +27478,18 @@
           "Tarago",
           "Taralga",
           "Tarlo",
+          "Tarlo",
           "Tirrannaville",
           "Towrang",
+          "Wayo",
           "Wayo",
           "Wiarborough",
           "Windellama",
           "Wollogorang",
+          "Wollogorang",
           "Wombeyan Caves",
+          "Wombeyan Caves",
+          "Woodhouselee",
           "Woodhouselee",
           "Yalbraith",
           "Yarra"
@@ -27412,10 +27559,12 @@
         "Localities": [
           "Big Hill",
           "Brayton",
+          "Brayton",
           "Exeter",
           "Marulan",
           "Marulan South",
           "Penrose",
+          "Tallong",
           "Tallong",
           "Wingello"
         ]
@@ -27604,6 +27753,7 @@
           "Appletree Flat",
           "Big Ridge",
           "Bowmans Creek",
+          "Bowmans Creek",
           "Bridgman",
           "Broke",
           "Bulga",
@@ -27631,8 +27781,10 @@
           "Greenlands",
           "Hambledon Hill",
           "Hebden",
+          "Hebden",
           "Howes Valley",
           "Hunterview",
+          "Jerrys Plains",
           "Jerrys Plains",
           "Lemington",
           "Long Point",
@@ -28603,7 +28755,9 @@
         "Postcode": 2557,
         "Localities": [
           "Catherine Field",
+          "Catherine Field",
           "Gledswood Hills",
+          "Gregory Hills",
           "Gregory Hills",
           "Rossmore"
         ]
@@ -28613,8 +28767,10 @@
         "Localities": [
           "Bow Bowing",
           "Minto",
+          "Minto",
           "Minto Heights",
           "Raby",
+          "St Andrews",
           "St Andrews",
           "Varroville"
         ]
@@ -29102,6 +29258,8 @@
         "Postcode": 2145,
         "Localities": [
           "Greystanes",
+          "Greystanes",
+          "Greystanes",
           "Pemulwuy",
           "South Wentworthville"
         ]
@@ -29117,6 +29275,8 @@
         "Localities": [
           "Smithfield",
           "Wetherill Park",
+          "Wetherill Park",
+          "Woodpark",
           "Woodpark"
         ]
       },
@@ -29572,6 +29732,7 @@
           "Boomi Creek",
           "Brumby Plains",
           "Lindesay Creek",
+          "Muli Muli",
           "The Glen",
           "Woodenbong"
         ]
@@ -29697,6 +29858,7 @@
           "Cabbage Tree Island",
           "Dalwood",
           "East Wardell",
+          "Goat Island",
           "Lynwood",
           "Meerschaum Vale",
           "Pearces Creek",
@@ -30296,12 +30458,15 @@
         "Postcode": 2399,
         "Localities": [
           "Biniguy",
+          "Biniguy",
+          "Pallamallawa",
           "Pallamallawa"
         ]
       },
       {
         "Postcode": 2408,
         "Localities": [
+          "North Star",
           "North Star",
           "Yallaroi"
         ]
@@ -30326,6 +30491,7 @@
         "Postcode": 2877,
         "Localities": [
           "Bobadah",
+          "Boona Mount",
           "Condobolin",
           "Derriwong",
           "Eremerang",
@@ -30376,6 +30542,7 @@
       {
         "Postcode": 2409,
         "Localities": [
+          "Boggabilla",
           "Boggabilla",
           "Boonal"
         ]
@@ -30432,7 +30599,9 @@
           "Crooble",
           "Mallowa",
           "Moree",
+          "Moree",
           "Terry Hie Hie",
+          "Tulloona",
           "Tulloona"
         ]
       },
@@ -30586,6 +30755,7 @@
           "Pine Clump",
           "Quambone",
           "The Marra",
+          "Wongarbon",
           "Wongarbon"
         ]
       },
@@ -30669,12 +30839,14 @@
       {
         "Postcode": 2411,
         "Localities": [
+          "Croppa Creek",
           "Croppa Creek"
         ]
       },
       {
         "Postcode": 2401,
         "Localities": [
+          "Gravesend",
           "Gravesend"
         ]
       },
@@ -30688,6 +30860,12 @@
         "Postcode": 2356,
         "Localities": [
           "Gwabegar"
+        ]
+      },
+      {
+        "Postcode": 2341,
+        "Localities": [
+          "Werris Creek"
         ]
       },
       {
@@ -30739,7 +30917,6 @@
       {
         "Postcode": 2874,
         "Localities": [
-          "Boona Mount",
           "Tullamore"
         ]
       },
@@ -30795,6 +30972,8 @@
         "Localities": [
           "Camellia",
           "Clyde",
+          "Clyde",
+          "Granville",
           "Granville",
           "Holroyd",
           "Rosehill",
@@ -30947,6 +31126,7 @@
         "Localities": [
           "Ashtonfield",
           "Buchanan",
+          "Buchanan",
           "Buttai",
           "East Maitland",
           "Four Mile Creek",
@@ -31009,10 +31189,14 @@
         "Postcode": 2326,
         "Localities": [
           "Abermain",
+          "Abermain",
           "Bishops Bridge",
+          "Loxford",
           "Loxford",
           "Neath",
           "Sawyers Gully",
+          "Sawyers Gully",
+          "Weston",
           "Weston"
         ]
       },
@@ -31614,8 +31798,11 @@
         "Postcode": 2665,
         "Localities": [
           "Ardlethan",
+          "Ardlethan",
+          "Ariah Park",
           "Ariah Park",
           "Barellan",
+          "Beckom",
           "Beckom",
           "Bectric",
           "Kamarah",
@@ -31639,6 +31826,7 @@
           "Ooma",
           "Paytens Bridge",
           "Warroo",
+          "Wirrinya",
           "Wirrinya"
         ]
       },
@@ -31686,6 +31874,7 @@
         "Postcode": 2721,
         "Localities": [
           "Bland",
+          "Quandialla",
           "Quandialla"
         ]
       },
@@ -31779,6 +31968,7 @@
           "Junee Reefs",
           "Mimosa",
           "Morangarell",
+          "Morangarell",
           "Narraburra",
           "Pucawan",
           "Reefton",
@@ -31833,6 +32023,7 @@
           "Piney Range",
           "Pinnacle",
           "Pullabooka",
+          "Warraderry",
           "Warraderry"
         ]
       },
@@ -31857,9 +32048,7 @@
         "Localities": [
           "Girral",
           "Gubbata",
-          "Gubbata",
           "Kikoira",
-          "Naradhan",
           "Rankins Springs",
           "Tallimba",
           "Ungarie",
@@ -31965,6 +32154,7 @@
       {
         "Postcode": 2668,
         "Localities": [
+          "Barmedman",
           "Barmedman"
         ]
       },
@@ -32392,11 +32582,12 @@
       {
         "Postcode": 2011,
         "Localities": [
-          "Elizabeth Bay",
+          "Kings Cross",
           "Kings Cross",
           "Kings Cross",
           "Kings Cross",
           "Potts Point",
+          "Woolloomooloo",
           "Woolloomooloo"
         ]
       },
@@ -32656,7 +32847,6 @@
       {
         "Postcode": 2141,
         "Localities": [
-          "Lidcombe",
           "Rookwood"
         ]
       },
@@ -32675,12 +32865,6 @@
         ]
       },
       {
-        "Postcode": 2131,
-        "Localities": [
-          "Ashfield"
-        ]
-      },
-      {
         "Postcode": 2191,
         "Localities": [
           "Belfield"
@@ -32695,7 +32879,6 @@
       {
         "Postcode": 2209,
         "Localities": [
-          "Beverly Hills",
           "Narwee"
         ]
       },
@@ -32748,6 +32931,8 @@
         "Postcode": 2196,
         "Localities": [
           "Punchbowl",
+          "Punchbowl",
+          "Roselands",
           "Roselands"
         ]
       },
@@ -32939,6 +33124,7 @@
         "Postcode": 2565,
         "Localities": [
           "Bardia",
+          "Bardia",
           "Denham Court",
           "Ingleburn",
           "Macquarie Links"
@@ -32950,6 +33136,7 @@
           "Carnes Hill",
           "Cecil Hills",
           "Elizabeth Hills",
+          "Horningsea Park",
           "Horningsea Park",
           "Hoxton Park",
           "Middleton Grange",
@@ -33015,6 +33202,7 @@
       {
         "Postcode": 2556,
         "Localities": [
+          "Bradfield",
           "Bringelly"
         ]
       },
@@ -33028,12 +33216,14 @@
       {
         "Postcode": 2174,
         "Localities": [
+          "Edmondson Park",
           "Edmondson Park"
         ]
       },
       {
         "Postcode": 2167,
         "Localities": [
+          "Glenfield",
           "Glenfield"
         ]
       }
@@ -33140,7 +33330,7 @@
           "Croom",
           "Tongarra",
           "Tullimbar",
-          "Yellow Rock"
+          "Yellow Rock Ridge"
         ]
       },
       {
@@ -33150,6 +33340,8 @@
           "Farmborough Chase",
           "Farmborough Heights",
           "Kembla Grange",
+          "Kembla Grange",
+          "Stream Hill",
           "Unanderra"
         ]
       },
@@ -33371,6 +33563,7 @@
         "Localities": [
           "Camillo",
           "Champion Lakes",
+          "Kelmscott",
           "Kelmscott"
         ]
       },
@@ -33385,7 +33578,9 @@
         "Postcode": 6112,
         "Localities": [
           "Armadale",
+          "Armadale",
           "Brookdale",
+          "Doobarda",
           "Forrestdale",
           "Harrisdale",
           "Haynes",
@@ -33399,6 +33594,7 @@
       {
         "Postcode": 6110,
         "Localities": [
+          "Gosnells",
           "Gosnells",
           "Huntingdale",
           "Martin",
@@ -33575,6 +33771,7 @@
         "Postcode": 6122,
         "Localities": [
           "Byford",
+          "Byford",
           "Cardup",
           "Darling Downs",
           "Karrakup"
@@ -33672,12 +33869,6 @@
         ]
       },
       {
-        "Postcode": 6017,
-        "Localities": [
-          "Osborne Park"
-        ]
-      },
-      {
         "Postcode": 6054,
         "Localities": [
           "Kiara",
@@ -33688,6 +33879,8 @@
         "Postcode": 6021,
         "Localities": [
           "Balcatta",
+          "Balcatta",
+          "Stirling",
           "Stirling"
         ]
       },
@@ -33739,6 +33932,8 @@
         "Postcode": 6059,
         "Localities": [
           "Dianella",
+          "Dianella",
+          "Dianella Heights",
           "Dianella Heights"
         ]
       },
@@ -35426,6 +35621,7 @@
       {
         "Postcode": 6063,
         "Localities": [
+          "Beechboro",
           "Bennett Springs"
         ]
       },
@@ -35437,6 +35633,7 @@
           "Caversham",
           "Dayton",
           "Guildford",
+          "Hazelmere",
           "Hazelmere",
           "Henley Brook",
           "South Guildford",
@@ -35468,6 +35665,7 @@
         "Localities": [
           "Baskerville",
           "Bellevue",
+          "Bellevue",
           "Boya",
           "Greenmount",
           "Helena Valley",
@@ -35476,6 +35674,7 @@
           "Koongamia",
           "Middle Swan",
           "Midland",
+          "Midvale",
           "Midvale",
           "Millendon",
           "Red Hill",
@@ -35907,6 +36106,7 @@
       {
         "Postcode": 6053,
         "Localities": [
+          "Bayswater",
           "Bayswater"
         ]
       },
@@ -35928,6 +36128,7 @@
       {
         "Postcode": 6062,
         "Localities": [
+          "Embleton",
           "Embleton",
           "Morley"
         ]
@@ -35960,6 +36161,8 @@
         "Postcode": 6059,
         "Localities": [
           "Dianella",
+          "Dianella",
+          "Dianella Heights",
           "Dianella Heights"
         ]
       }
@@ -36002,12 +36205,6 @@
         "Localities": [
           "Bentley",
           "St James"
-        ]
-      },
-      {
-        "Postcode": 6055,
-        "Localities": [
-          "South Guildford"
         ]
       },
       {

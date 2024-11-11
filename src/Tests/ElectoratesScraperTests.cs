@@ -6,19 +6,19 @@ public class ElectoratesScraperTests
     [Trait("Category", "Integration")]
     public async Task Run()
     {
-        var lingiari = await ElectoratesScraper.ScrapeCurrentElectorate("lingiari", State.NT);
-        var bass = await ElectoratesScraper.ScrapeCurrentElectorate("clark", State.TAS);
-        var banks = await ElectoratesScraper.ScrapeCurrentElectorate("banks", State.NSW);
-        var northernTerritory = await ElectoratesScraper.ScrapeCurrentElectorate("northern-territory", State.NT);
-        var denison = await ElectoratesScraper.Scrape2016Electorate("denison", State.TAS);
-        var fenner = await ElectoratesScraper.ScrapeCurrentElectorate("fenner", State.ACT);
-        var hunter = await ElectoratesScraper.ScrapeCurrentElectorate("hunter", State.NSW);
-        var spence = await ElectoratesScraper.ScrapeCurrentElectorate("spence", State.SA);
-        var cook = await ElectoratesScraper.ScrapeCurrentElectorate("cook", State.NSW);
-        var canberra = await ElectoratesScraper.ScrapeCurrentElectorate("canberra", State.ACT);
-        var bean = await ElectoratesScraper.ScrapeCurrentElectorate("bean", State.ACT);
-        var batman = await ElectoratesScraper.ScrapeCurrentElectorate("batman", State.VIC);
-        var melbourne = await ElectoratesScraper.ScrapeCurrentElectorate("melbourne", State.VIC);
+        var lingiari = await ElectoratesScraper.ScrapeElectorate(2016, "lingiari", State.NT);
+        var bass = await ElectoratesScraper.ScrapeElectorate(2022, "clark", State.TAS);
+        var banks = await ElectoratesScraper.ScrapeElectorate(2022, "banks", State.NSW);
+        var northernTerritory = await ElectoratesScraper.ScrapeElectorate(2022, "northern-territory", State.NT);
+        var denison = await ElectoratesScraper.ScrapeElectorate(2016, "denison", State.TAS);
+        var fenner = await ElectoratesScraper.ScrapeElectorate(2022, "fenner", State.ACT);
+        var hunter = await ElectoratesScraper.ScrapeElectorate(2022, "hunter", State.NSW);
+        var spence = await ElectoratesScraper.ScrapeElectorate(2022, "spence", State.SA);
+        var cook = await ElectoratesScraper.ScrapeElectorate(2022, "cook", State.NSW);
+        var canberra = await ElectoratesScraper.ScrapeElectorate(2022, "canberra", State.ACT);
+        var bean = await ElectoratesScraper.ScrapeElectorate(2022, "bean", State.ACT);
+        var batman = await ElectoratesScraper.ScrapeElectorate(2022, "batman", State.VIC);
+        var melbourne = await ElectoratesScraper.ScrapeElectorate(2022, "melbourne", State.VIC);
         await Verify(new
         {
             northernTerritory,

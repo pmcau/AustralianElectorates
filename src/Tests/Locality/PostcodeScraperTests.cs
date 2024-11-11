@@ -15,5 +15,5 @@ public class PostcodeScraperTests(ITestOutputHelper outputHelper)
     [Fact]
     [Trait("Category", "Integration")]
     public Task Specific() =>
-        Verify(PostcodeScraper.GetAECDataForPostcode("3429"));
+        Verify(PostcodeScraper.GetAECDataForPostcode("2612"));
 }
