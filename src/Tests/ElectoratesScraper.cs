@@ -171,7 +171,7 @@ static class ElectoratesScraper
     static string GetFullName(HtmlDocument document, int year)
     {
         var prefix1 = $"{year} federal election: profile of the electoral division of ";
-        var prefix2 = $"Profile of the electoral division of ";
+        var prefix2 = "Profile of the electoral division of ";
         var headings = document.Headings();
         var caseless = headings
             .Single(_ => _.StartsWith(prefix1) || _.StartsWith(prefix2))

@@ -17,13 +17,20 @@ static class MetadataCleaner
             var properties = feature.Properties;
             var electorate = (string) properties["Elect_div"];
             var stateFromProperties = GetState(feature, state);
-            var area = (double) properties["Area_SqKm"];
+            var area = properties["Area_SqKm"];
 
             var shortName = Electorate.GetShortName(electorate);
             properties.Clear();
             properties["electorateName"] = electorate;
             properties["electorateShortName"] = shortName;
-            properties["area"] = Math.Round(area, 6);
+            if (area is double doubleArea)
+            {
+                properties["area"] = Math.Round(doubleArea, 6);
+            }
+            else
+            {
+                properties["area"] = (long)area;
+            }
             properties["state"] = stateFromProperties;
         }
     }

@@ -260,6 +260,8 @@ var fennerGeoJson2019 = DataLoader.Fenner.Get2019Map();
 Debug.WriteLine(fennerGeoJson2019);
 var fennerGeoJson2022 = DataLoader.Fenner.Get2022Map();
 Debug.WriteLine(fennerGeoJson2022);
+var fennerGeoJson2025 = DataLoader.Fenner.Get2025Map();
+Debug.WriteLine(fennerGeoJson2025);
 
 // get an electorates maps (geojson) by string
 var canberraGeoJson2016 = DataLoader.Maps2016.GetElectorate("Canberra");
@@ -268,6 +270,8 @@ var canberraGeoJson2019 = DataLoader.Maps2019.GetElectorate("Canberra");
 Debug.WriteLine(canberraGeoJson2019);
 var canberraGeoJson2022 = DataLoader.Maps2022.GetElectorate("Canberra");
 Debug.WriteLine(canberraGeoJson2022);
+var canberraGeoJson2025 = DataLoader.Maps2022.GetElectorate("Canberra");
+Debug.WriteLine(canberraGeoJson2025);
 
 // export all data to a directory
 // structure will be
@@ -282,7 +286,7 @@ var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
 Directory.CreateDirectory(directory);
 return DataLoader.Export(directory);
 ```
-<sup><a href='/src/Tests/Snippets.cs#L11-L50' title='Snippet source file'>snippet source</a> | <a href='#snippet-usage' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L11-L54' title='Snippet source file'>snippet source</a> | <a href='#snippet-usage' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -304,7 +308,7 @@ var faker = new Faker<Target>()
             .Name());
 var targetInstance = faker.Generate();
 ```
-<sup><a href='/src/Tests/Snippets.cs#L84-L99' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagebogus' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L88-L103' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagebogus' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -315,7 +319,7 @@ var targetInstance = faker.Generate();
 ```cs
 var pathToPng = DetailMaps.MapForElectorate("Bass");
 ```
-<sup><a href='/src/Tests/Snippets.cs#L56-L60' title='Snippet source file'>snippet source</a> | <a href='#snippet-usageDetailMaps' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L60-L64' title='Snippet source file'>snippet source</a> | <a href='#snippet-usageDetailMaps' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 

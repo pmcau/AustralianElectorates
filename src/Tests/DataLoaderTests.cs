@@ -48,17 +48,17 @@ public class DataLoaderTests
     [Fact]
     public Task NewRemoved()
     {
-        var electorates2012 = DataLoader
-            .Electorates.Where(_ => _.Exist2012)
+        var electorates2022 = DataLoader
+            .Electorates.Where(_ => _.Exist2022)
             .ToArray();
         var electorates2025 = DataLoader
             .Electorates.Where(_ => _.Exist2025)
             .ToArray();
-        var removed = electorates2012
+        var removed = electorates2022
             .Where(_ => !electorates2025.Contains(_))
             .Select(_ => _.Name);
         var added = electorates2025
-            .Where(_ => !electorates2012.Contains(_))
+            .Where(_ => !electorates2022.Contains(_))
             .Select(_ => _.Name);
         return Verify(new
         {

@@ -24,13 +24,14 @@ public class Sync
 
         await PartyScraper.Run();
 
-        await Get2025();
         await Get2022();
         await Get2019();
         await Get2016();
 
-        // File.Copy(DataLocations.Australia2019JsonPath, DataLocations.FutureAustraliaJsonPath);
-        // await StatesToCountryDownloader.RunFuture();
+        File.Copy(
+            Path.Combine(DataLocations.Maps2022Path,"australia.geojson"),
+            Path.Combine(DataLocations.Maps2025Path,"australia.geojson"));
+         await StatesToCountryDownloader.RunFuture();
 
         await ProcessYear(DataLocations.Maps2025Path, electorates2025, electorateToStateMap);
         await ProcessYear(DataLocations.Maps2022Path, electorates2022, electorateToStateMap);
@@ -210,7 +211,7 @@ public class Sync
 
                 foreach (var electorateFeature in featureCollectionForState.Features)
                 {
-                    var electorate = (string) electorateFeature.Properties["electorateShortName"];
+                    var electorate = (string)electorateFeature.Properties["electorateShortName"];
                     var electorateNameList = electorateNames[state];
                     electorateNameList.Add(electorate);
                     electorates.Add(electorate);
@@ -310,19 +311,20 @@ public class Sync
                 ElectorateEx electorate;
                 if (existIn2025)
                 {
-                    electorate = await ElectoratesScraper.ScrapeElectorate(2025,electorateName, electoratePair.Key);
+                    //TODO: Change to ScrapeElectorate(2025) after election date is confirmed
+                    electorate = await ElectoratesScraper.ScrapeElectorate(2022, electorateName, electoratePair.Key);
                 }
                 else if (existIn2022)
                 {
-                    electorate = await ElectoratesScraper.ScrapeElectorate(2022,electorateName, electoratePair.Key);
+                    electorate = await ElectoratesScraper.ScrapeElectorate(2022, electorateName, electoratePair.Key);
                 }
-                else if(existIn2019)
+                else if (existIn2019)
                 {
-                    electorate = await ElectoratesScraper.ScrapeElectorate(2019,electorateName, electoratePair.Key);
+                    electorate = await ElectoratesScraper.ScrapeElectorate(2019, electorateName, electoratePair.Key);
                 }
-                else if(existIn2016)
+                else if (existIn2016)
                 {
-                    electorate = await ElectoratesScraper.ScrapeElectorate(2016,electorateName, electoratePair.Key);
+                    electorate = await ElectoratesScraper.ScrapeElectorate(2016, electorateName, electoratePair.Key);
                 }
                 else
                 {
