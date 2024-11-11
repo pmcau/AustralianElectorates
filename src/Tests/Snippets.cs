@@ -25,6 +25,8 @@ public class Snippets
         Debug.WriteLine(fennerGeoJson2019);
         var fennerGeoJson2022 = DataLoader.Fenner.Get2022Map();
         Debug.WriteLine(fennerGeoJson2022);
+        var fennerGeoJson2025 = DataLoader.Fenner.Get2025Map();
+        Debug.WriteLine(fennerGeoJson2025);
 
         // get an electorates maps (geojson) by string
         var canberraGeoJson2016 = DataLoader.Maps2016.GetElectorate("Canberra");
@@ -33,6 +35,8 @@ public class Snippets
         Debug.WriteLine(canberraGeoJson2019);
         var canberraGeoJson2022 = DataLoader.Maps2022.GetElectorate("Canberra");
         Debug.WriteLine(canberraGeoJson2022);
+        var canberraGeoJson2025 = DataLoader.Maps2022.GetElectorate("Canberra");
+        Debug.WriteLine(canberraGeoJson2025);
 
         // export all data to a directory
         // structure will be

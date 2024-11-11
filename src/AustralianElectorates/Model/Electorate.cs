@@ -8,8 +8,8 @@ public interface IElectorate
     double Area { get; }
     bool Exist2016 { get; }
     bool Exist2019 { get; }
-
     bool Exist2022 { get; }
+    bool Exist2025 { get; }
 
     //bool ExistInFuture { get; }
     Date? DateGazetted { get; }
@@ -24,6 +24,7 @@ public interface IElectorate
     IElectorateMap Get2019Map();
 
     IElectorateMap Get2022Map();
+    IElectorateMap Get2025Map();
     //IElectorateMap GetFutureMap();
 
     bool ContainsPostcode(int postcode);
@@ -39,8 +40,8 @@ class Electorate :
     public double Area { get; set; }
     public bool Exist2016 { get; set; }
     public bool Exist2019 { get; set; }
-
     public bool Exist2022 { get; set; }
+    public bool Exist2025 { get; set; }
 
     //public bool ExistInFuture { get; set; }
     public Date? DateGazetted { get; set; }
@@ -72,6 +73,9 @@ class Electorate :
 
     public IElectorateMap Get2022Map() =>
         DataLoader.Get2022Map(this);
+
+    public IElectorateMap Get2025Map() =>
+        DataLoader.Get2025Map(this);
 
     public IElectorateMap GetMap() =>
         DataLoader.GetMap(this);

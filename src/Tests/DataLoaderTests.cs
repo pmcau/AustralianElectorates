@@ -30,6 +30,9 @@ public class DataLoaderTests
         var data2022 = DataLoader.Maps2022.GetAustralia();
         Assert.NotEmpty(data2022);
         Assert.NotNull(data2022);
+        var data2025 = DataLoader.Maps2025.GetAustralia();
+        Assert.NotEmpty(data2025);
+        Assert.NotNull(data2025);
         // var dataFuture = DataLoader.MapsFuture.GetAustralia();
         // Assert.NotEmpty(dataFuture);
         // Assert.NotNull(dataFuture);
@@ -45,17 +48,17 @@ public class DataLoaderTests
     [Fact]
     public Task NewRemoved()
     {
-        var electorates2019 = DataLoader
-            .Electorates.Where(_ => _.Exist2019)
+        var electorates2012 = DataLoader
+            .Electorates.Where(_ => _.Exist2012)
             .ToArray();
-        var electorates2022 = DataLoader
-            .Electorates.Where(_ => _.Exist2022)
+        var electorates2025 = DataLoader
+            .Electorates.Where(_ => _.Exist2025)
             .ToArray();
-        var removed = electorates2019
-            .Where(_ => !electorates2022.Contains(_))
+        var removed = electorates2012
+            .Where(_ => !electorates2025.Contains(_))
             .Select(_ => _.Name);
-        var added = electorates2022
-            .Where(_ => !electorates2019.Contains(_))
+        var added = electorates2025
+            .Where(_ => !electorates2012.Contains(_))
             .Select(_ => _.Name);
         return Verify(new
         {
@@ -139,6 +142,13 @@ public class DataLoaderTests
         return Verify(data.GeoJson[..200]);
     }
 
+    [Fact]
+    public Task Get2025State()
+    {
+        var data = DataLoader.Maps2025.GetState(State.ACT);
+        return Verify(data.GeoJson[..200]);
+    }
+
     // [Fact]
     // public Task GetFutureState()
     // {
@@ -201,7 +211,9 @@ public class DataLoaderTests
             LoadedElectorateMaps2019 = DataLoader.Maps2019.LoadedElectorates.Count,
             LoadedStateMaps2019 = DataLoader.Maps2019.LoadedStates.Count,
             LoadedElectorateMaps2022 = DataLoader.Maps2022.LoadedElectorates.Count,
-            LoadedStateMaps2022 = DataLoader.Maps2022.LoadedStates.Count
+            LoadedStateMaps2022 = DataLoader.Maps2022.LoadedStates.Count,
+            LoadedElectorateMaps2025 = DataLoader.Maps2025.LoadedElectorates.Count,
+            LoadedStateMaps2025 = DataLoader.Maps2025.LoadedStates.Count
         });
     }
 

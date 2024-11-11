@@ -103,6 +103,7 @@ public static partial class DataLoader
     public static MapCollection Maps2016 { get; } = new("2016");
     public static MapCollection Maps2019 { get; } = new("2019");
     public static MapCollection Maps2022 { get; } = new("2022");
+    public static MapCollection Maps2025 { get; } = new("2025");
     //public static MapCollection MapsFuture { get; } = new("Future");
 
     public static IElection FindElection(int parliament)
@@ -196,6 +197,7 @@ public static partial class DataLoader
         Maps2016.LoadAll();
         Maps2019.LoadAll();
         Maps2022.LoadAll();
+        Maps2025.LoadAll();
     }
 
     public static async Task Export(string directory)
@@ -245,6 +247,11 @@ public static partial class DataLoader
     public static IElectorateMap GetMap(this IElectorate electorate)
     {
         var name = electorate.ShortName;
+        if (electorate.Exist2025)
+        {
+            return Maps2025.GetElectorate(name);
+        }
+
         if (electorate.Exist2022)
         {
             return Maps2022.GetElectorate(name);
@@ -266,22 +273,32 @@ public static partial class DataLoader
 
     public static IElectorateMap Get2019Map(this IElectorate electorate)
     {
-        if (!electorate.Exist2019)
+        if (electorate.Exist2019)
         {
-            throw new($"Electorate '{electorate.Name}' does not have a 2019 map");
+            return Maps2019.GetElectorate(electorate.ShortName);
         }
 
-        return Maps2019.GetElectorate(electorate.ShortName);
+        throw new($"Electorate '{electorate.Name}' does not have a 2019 map");
     }
 
     public static IElectorateMap Get2022Map(this IElectorate electorate)
     {
-        if (!electorate.Exist2022)
+        if (electorate.Exist2022)
         {
-            throw new($"Electorate '{electorate.Name}' does not have a 2022 map");
+            return Maps2022.GetElectorate(electorate.ShortName);
         }
 
-        return Maps2022.GetElectorate(electorate.ShortName);
+        throw new($"Electorate '{electorate.Name}' does not have a 2022 map");
+    }
+
+    public static IElectorateMap Get2025Map(this IElectorate electorate)
+    {
+        if (electorate.Exist2025)
+        {
+            return Maps2025.GetElectorate(electorate.ShortName);
+        }
+
+        throw new($"Electorate '{electorate.Name}' does not have a 2025 map");
     }
     //
     // public static IElectorateMap GetFutureMap(this IElectorate electorate)
