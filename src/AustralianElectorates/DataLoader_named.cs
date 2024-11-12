@@ -26,8 +26,6 @@ public static partial class DataLoader
 
         Lyons = Electorates.Single(_ => _.Name == "Lyons");
 
-        Denison = Electorates.Single(_ => _.Name == "Denison");
-
         Adelaide = Electorates.Single(_ => _.Name == "Adelaide");
 
         Barker = Electorates.Single(_ => _.Name == "Barker");
@@ -47,10 +45,6 @@ public static partial class DataLoader
         Spence = Electorates.Single(_ => _.Name == "Spence");
 
         Sturt = Electorates.Single(_ => _.Name == "Sturt");
-
-        PortAdelaide = Electorates.Single(_ => _.Name == "Port Adelaide");
-
-        Wakefield = Electorates.Single(_ => _.Name == "Wakefield");
 
         Aston = Electorates.Single(_ => _.Name == "Aston");
 
@@ -90,8 +84,6 @@ public static partial class DataLoader
 
         Hawke = Electorates.Single(_ => _.Name == "Hawke");
 
-        Higgins = Electorates.Single(_ => _.Name == "Higgins");
-
         Holt = Electorates.Single(_ => _.Name == "Holt");
 
         Hotham = Electorates.Single(_ => _.Name == "Hotham");
@@ -130,13 +122,7 @@ public static partial class DataLoader
 
         Wills = Electorates.Single(_ => _.Name == "Wills");
 
-        Batman = Electorates.Single(_ => _.Name == "Batman");
-
-        McMillan = Electorates.Single(_ => _.Name == "McMillan");
-
-        MelbournePorts = Electorates.Single(_ => _.Name == "Melbourne Ports");
-
-        Murray = Electorates.Single(_ => _.Name == "Murray");
+        Higgins = Electorates.Single(_ => _.Name == "Higgins");
 
         Blair = Electorates.Single(_ => _.Name == "Blair");
 
@@ -264,8 +250,6 @@ public static partial class DataLoader
 
         Newcastle = Electorates.Single(_ => _.Name == "Newcastle");
 
-        NorthSydney = Electorates.Single(_ => _.Name == "North Sydney");
-
         Page = Electorates.Single(_ => _.Name == "Page");
 
         Parkes = Electorates.Single(_ => _.Name == "Parkes");
@@ -296,7 +280,11 @@ public static partial class DataLoader
 
         Whitlam = Electorates.Single(_ => _.Name == "Whitlam");
 
+        NorthSydney = Electorates.Single(_ => _.Name == "North Sydney");
+
         Brand = Electorates.Single(_ => _.Name == "Brand");
+
+        Bullwinkel = Electorates.Single(_ => _.Name == "Bullwinkel");
 
         Burt = Electorates.Single(_ => _.Name == "Burt");
 
@@ -345,8 +333,6 @@ public static partial class DataLoader
 
     public static IElectorate Lyons { get; private set; } = null!;
 
-    public static IElectorate Denison { get; private set; } = null!;
-
     public static IElectorate Adelaide { get; private set; } = null!;
 
     public static IElectorate Barker { get; private set; } = null!;
@@ -366,10 +352,6 @@ public static partial class DataLoader
     public static IElectorate Spence { get; private set; } = null!;
 
     public static IElectorate Sturt { get; private set; } = null!;
-
-    public static IElectorate PortAdelaide { get; private set; } = null!;
-
-    public static IElectorate Wakefield { get; private set; } = null!;
 
     public static IElectorate Aston { get; private set; } = null!;
 
@@ -409,8 +391,6 @@ public static partial class DataLoader
 
     public static IElectorate Hawke { get; private set; } = null!;
 
-    public static IElectorate Higgins { get; private set; } = null!;
-
     public static IElectorate Holt { get; private set; } = null!;
 
     public static IElectorate Hotham { get; private set; } = null!;
@@ -449,13 +429,7 @@ public static partial class DataLoader
 
     public static IElectorate Wills { get; private set; } = null!;
 
-    public static IElectorate Batman { get; private set; } = null!;
-
-    public static IElectorate McMillan { get; private set; } = null!;
-
-    public static IElectorate MelbournePorts { get; private set; } = null!;
-
-    public static IElectorate Murray { get; private set; } = null!;
+    public static IElectorate Higgins { get; private set; } = null!;
 
     public static IElectorate Blair { get; private set; } = null!;
 
@@ -583,8 +557,6 @@ public static partial class DataLoader
 
     public static IElectorate Newcastle { get; private set; } = null!;
 
-    public static IElectorate NorthSydney { get; private set; } = null!;
-
     public static IElectorate Page { get; private set; } = null!;
 
     public static IElectorate Parkes { get; private set; } = null!;
@@ -615,7 +587,11 @@ public static partial class DataLoader
 
     public static IElectorate Whitlam { get; private set; } = null!;
 
+    public static IElectorate NorthSydney { get; private set; } = null!;
+
     public static IElectorate Brand { get; private set; } = null!;
+
+    public static IElectorate Bullwinkel { get; private set; } = null!;
 
     public static IElectorate Burt { get; private set; } = null!;
 

@@ -3,7 +3,6 @@ ACT:fenner
 ACT:bean
 TAS:bass
 TAS:braddon
-TAS:denison
 TAS:franklin
 TAS:lyons
 TAS:clark

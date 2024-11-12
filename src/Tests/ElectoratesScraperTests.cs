@@ -12,7 +12,6 @@ public class ElectoratesScraperTests
         var bass = await ElectoratesScraper.ScrapeElectorate(2022, "clark", State.TAS);
         var banks = await ElectoratesScraper.ScrapeElectorate(2022, "banks", State.NSW);
         var northernTerritory = await ElectoratesScraper.ScrapeElectorate(2022, "northern-territory", State.NT);
-        var denison = await ElectoratesScraper.ScrapeElectorate(2016, "denison", State.TAS);
         var fenner = await ElectoratesScraper.ScrapeElectorate(2022, "fenner", State.ACT);
         var hunter = await ElectoratesScraper.ScrapeElectorate(2022, "hunter", State.NSW);
         var spence = await ElectoratesScraper.ScrapeElectorate(2022, "spence", State.SA);
@@ -25,7 +24,6 @@ public class ElectoratesScraperTests
             northSydney,
             northernTerritory,
             lingiari,
-            denison,
             melbourne,
             banks,
             hunter,

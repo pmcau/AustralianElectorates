@@ -27,9 +27,9 @@ Sample:
     "ShortName": "bean",
     "State": "ACT",
     "Area": 1913.0,
-    "Exist2016": false,
     "Exist2019": true,
     "Exist2022": true,
+    "Exist2025": true,
     "DateGazetted": "2018-07-13",
     "Description": "<p>The Division of Bean covers an area in the south of the ACT consisting of the Districts of:</p><ul><li>Booth,</li><li>Coree,</li><li>Cotter River,</li><li>Mount Clear,</li><li>Paddys River,</li><li>Rendezvous Creek,</li><li>Stromlo,</li><li>Tennent,</li><li>Tuggeranong,</li><li>part of Jerrabomberra,</li><li>part of Molonglo Valley,</li><li>part of Weston Creek, and</li><li>part of Woden Valley</li></ul><p>The Division of Bean also includes Norfolk Island.</p>",
     "DemographicRating": "<strong>Inner Metropolitan</strong> – situated in capital cities and consisting of well-established built-up suburbs",
@@ -254,8 +254,6 @@ var canberra = DataLoader.Electorates.Single(_ => _.Name == "Canberra");
 Debug.WriteLine(canberra.Description);
 
 // get an electorates maps (geojson) by string
-var fennerGeoJson2016 = DataLoader.Fenner.Get2016Map();
-Debug.WriteLine(fennerGeoJson2016);
 var fennerGeoJson2019 = DataLoader.Fenner.Get2019Map();
 Debug.WriteLine(fennerGeoJson2019);
 var fennerGeoJson2022 = DataLoader.Fenner.Get2022Map();
@@ -264,8 +262,6 @@ var fennerGeoJson2025 = DataLoader.Fenner.Get2025Map();
 Debug.WriteLine(fennerGeoJson2025);
 
 // get an electorates maps (geojson) by string
-var canberraGeoJson2016 = DataLoader.Maps2016.GetElectorate("Canberra");
-Debug.WriteLine(canberraGeoJson2016);
 var canberraGeoJson2019 = DataLoader.Maps2019.GetElectorate("Canberra");
 Debug.WriteLine(canberraGeoJson2019);
 var canberraGeoJson2022 = DataLoader.Maps2022.GetElectorate("Canberra");
@@ -276,8 +272,6 @@ Debug.WriteLine(canberraGeoJson2025);
 // export all data to a directory
 // structure will be
 // /electorates.json
-// /2016 (2016 states and australia geojson files)
-// /2016/Electorates (2016 electorate geojson files)
 // /2019 (2019 states and australia geojson files)
 // /2019/Electorates (2019 electorate geojson files)
 // /2022 (202 states and australia geojson files)
@@ -286,7 +280,7 @@ var directory = Path.Combine(Environment.CurrentDirectory, "Maps");
 Directory.CreateDirectory(directory);
 return DataLoader.Export(directory);
 ```
-<sup><a href='/src/Tests/Snippets.cs#L11-L54' title='Snippet source file'>snippet source</a> | <a href='#snippet-usage' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L11-L48' title='Snippet source file'>snippet source</a> | <a href='#snippet-usage' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -308,7 +302,7 @@ var faker = new Faker<Target>()
             .Name());
 var targetInstance = faker.Generate();
 ```
-<sup><a href='/src/Tests/Snippets.cs#L88-L103' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagebogus' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L82-L97' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagebogus' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -319,7 +313,7 @@ var targetInstance = faker.Generate();
 ```cs
 var pathToPng = DetailMaps.MapForElectorate("Bass");
 ```
-<sup><a href='/src/Tests/Snippets.cs#L60-L64' title='Snippet source file'>snippet source</a> | <a href='#snippet-usageDetailMaps' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L54-L58' title='Snippet source file'>snippet source</a> | <a href='#snippet-usageDetailMaps' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -384,15 +378,6 @@ Elections are currently added manually as they are declared.
 [
     new()
     {
-        Parliament = 45,
-        Year = 2016,
-        Date = new(2016, 07, 02),
-        Electorates = Electorates
-            .Where(_ => _.Exist2016)
-            .ToList()
-    },
-    new()
-    {
         Parliament = 46,
         Year = 2019,
         Date = new(2019, 05, 18),
@@ -411,7 +396,7 @@ Elections are currently added manually as they are declared.
     }
 ];
 ```
-<sup><a href='/src/AustralianElectorates/DataLoader.cs#L72-L103' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/AustralianElectorates/DataLoader.cs#L72-L94' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
