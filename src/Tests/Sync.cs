@@ -44,15 +44,19 @@ public class Sync
         foreach (var electorate in electorates)
         {
             var targetPath = Path.Combine(DataLocations.MapsDetail, $"{electorate.ShortName}.pdf");
-            await Downloader.DownloadFile(targetPath, electorate.MapUrl);
-        }
+            try
+            {
+                await Downloader.DownloadFile(targetPath, electorate.MapUrl);
 
-        foreach (var file in Directory.EnumerateFiles(DataLocations.MapsDetail))
-        {
-            var pngPath = await PdfToPng.Convert(file);
-            File.Delete(file);
+                var pngPath = await PdfToPng.Convert(targetPath);
+                File.Delete(targetPath);
 
-            CreatePortraitAndLandscape(pngPath);
+                CreatePortraitAndLandscape(pngPath);
+            }
+            catch (Exception exception)
+            {
+                throw new("Could not convert " + electorate.MapUrl, exception);
+            }
         }
 
         WriteNamedCs(electorates);
@@ -189,7 +193,7 @@ public class Sync
 
     static async Task ProcessYear(string yearPath, List<string> electorates, Dictionary<State, List<string>> electorateToStateMap)
     {
-        await WriteOptimised(yearPath);
+        await WriteOptimised(yearPath, electorateToStateMap);
 
         foreach (var australiaPath in Directory.EnumerateFiles(yearPath, "australia*"))
         {
@@ -278,11 +282,20 @@ public class Sync
         }
     }
 
-    static async Task WriteOptimised(string directory)
+    static async Task WriteOptimised(string directory, Dictionary<State, List<string>> electorateToStateMap)
     {
         var jsonPath = Path.Combine(directory, "australia.geojson");
         var raw = JsonSerializerService.DeserializeGeo(jsonPath);
         raw.FixBoundingBox();
+        var allElectorates = electorateToStateMap.SelectMany(_=>_.Value).ToList();
+        foreach (var feature in raw.Features)
+        {
+            var electorateShortName = (string)feature.Properties["electorateShortName"];
+            if (!allElectorates.Contains(electorateShortName))
+            {
+                throw new ($"Electorate not found: {electorateShortName}");
+            }
+        }
         foreach (var percent in percents)
         {
             var percentJsonPath = Path.Combine(directory, $"australia_{percent:D2}.geojson");
@@ -311,8 +324,7 @@ public class Sync
                 ElectorateEx electorate;
                 if (existIn2025)
                 {
-                    //TODO: Change to ScrapeElectorate(2025) after election date is confirmed
-                    electorate = await ElectoratesScraper.ScrapeElectorate(2022, electorateName, electoratePair.Key);
+                    electorate = await ElectoratesScraper.ScrapeElectorate(2025, electorateName, electoratePair.Key);
                 }
                 else if (existIn2022)
                 {
@@ -338,6 +350,10 @@ public class Sync
                 //electorate.ExistInFuture = existInFuture;
                 electorate.Locations = SelectLocations(electorateName, localityData)
                     .ToList();
+                if (electorates.Contains(electorate))
+                {
+                    throw new($"Duplicate electorate: {electorate}");
+                }
                 electorates.Add(electorate);
             }
         }

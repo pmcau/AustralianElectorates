@@ -8,6 +8,10 @@ static class GeoJsonExtensions
 
     public static FeatureCollection FeaturesCollectionForState(this FeatureCollection featureCollection, List<string> electorates)
     {
+        if(electorates.Count == 0)
+        {
+            throw new("No electorates");
+        }
         var features = featureCollection
             .Features
             .Where(_ =>
@@ -16,6 +20,10 @@ static class GeoJsonExtensions
                 return electorates.Contains(electorate);
             })
             .ToList();
+        if(features.Count == 0)
+        {
+            throw new("No features found");
+        }
         var collection = new FeatureCollection(features);
         collection.FixBoundingBox();
         return collection;

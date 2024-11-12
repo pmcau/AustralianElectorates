@@ -20,14 +20,12 @@ public static class StatesToCountryDownloader
     // Merges the current national with the state amendments to get the future
     public static async Task RunFuture()
     {
-        var previousElectionJson = Path.Combine(DataLocations.Maps2022Path, "australia.geojson");
         var futureElectionJson = Path.Combine(DataLocations.Maps2025Path, "australia.geojson");
-        var features = JsonSerializerService.DeserializeGeo(previousElectionJson);
+        var features = new FeatureCollection();
 
         foreach (var stateUrl in stateUrls)
         {
             var state = stateUrl.Key;
-            RemoveStateFromFeatures(features, state);
 
             var targetPath = Path.Combine(DataLocations.TempPath, $"{state}.zip");
             await Downloader.DownloadFile(targetPath, stateUrl.Value);
