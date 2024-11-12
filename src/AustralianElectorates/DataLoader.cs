@@ -74,15 +74,6 @@ public static partial class DataLoader
         [
             new()
             {
-                Parliament = 45,
-                Year = 2016,
-                Date = new(2016, 07, 02),
-                Electorates = Electorates
-                    .Where(_ => _.Exist2016)
-                    .ToList()
-            },
-            new()
-            {
                 Parliament = 46,
                 Year = 2019,
                 Date = new(2019, 05, 18),
@@ -105,7 +96,6 @@ public static partial class DataLoader
 
     public static IReadOnlyList<IParty> Parties { get; }
     public static IReadOnlyList<IPartyOrBranch> PartiesAndBranches { get; }
-    public static MapCollection Maps2016 { get; } = new("2016");
     public static MapCollection Maps2019 { get; } = new("2019");
     public static MapCollection Maps2022 { get; } = new("2022");
     public static MapCollection Maps2025 { get; } = new("2025");
@@ -199,7 +189,6 @@ public static partial class DataLoader
     public static void LoadAll()
     {
         //MapsFuture.LoadAll();
-        Maps2016.LoadAll();
         Maps2019.LoadAll();
         Maps2022.LoadAll();
         Maps2025.LoadAll();
@@ -239,16 +228,6 @@ public static partial class DataLoader
         await stream.CopyToAsync(target);
     }
 
-    public static IElectorateMap Get2016Map(this IElectorate electorate)
-    {
-        if (!electorate.Exist2016)
-        {
-            throw new($"Electorate '{electorate.Name}' does not have a 2016 map");
-        }
-
-        return Maps2016.GetElectorate(electorate.ShortName);
-    }
-
     public static IElectorateMap GetMap(this IElectorate electorate)
     {
         var name = electorate.ShortName;
@@ -267,13 +246,7 @@ public static partial class DataLoader
             return Maps2019.GetElectorate(name);
         }
 
-        if (electorate.Exist2016)
-        {
-            return Maps2016.GetElectorate(name);
-        }
-
         throw new($"Map not found: {name}");
-        //return MapsFuture.GetElectorate(electorate.ShortName);
     }
 
     public static IElectorateMap Get2019Map(this IElectorate electorate)

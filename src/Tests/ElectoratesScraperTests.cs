@@ -8,7 +8,7 @@ public class ElectoratesScraperTests
     {
         var northSydney = await ElectoratesScraper.ScrapeElectorate(2022, "north-sydney", State.NSW);
         var bean = await ElectoratesScraper.ScrapeElectorate(2022, "bean", State.ACT);
-        var lingiari = await ElectoratesScraper.ScrapeElectorate(2016, "lingiari", State.NT);
+        var lingiari = await ElectoratesScraper.ScrapeElectorate(2022, "lingiari", State.NT);
         var bass = await ElectoratesScraper.ScrapeElectorate(2022, "clark", State.TAS);
         var banks = await ElectoratesScraper.ScrapeElectorate(2022, "banks", State.NSW);
         var northernTerritory = await ElectoratesScraper.ScrapeElectorate(2022, "northern-territory", State.NT);

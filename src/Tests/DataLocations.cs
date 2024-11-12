@@ -20,8 +20,6 @@
         //Directory.CreateDirectory(MapsFuturePath);
         MapsDetail = Path.GetFullPath(Path.Combine(DataPath, "DetailMaps"));
         Directory.CreateDirectory(MapsDetail);
-        Maps2016Path = Path.GetFullPath(Path.Combine(MapsPath, "2016"));
-        Directory.CreateDirectory(Maps2016Path);
         // Australia2016JsonPath = Path.GetFullPath(Path.Combine(Maps2016Path, "australia.geojson"));
         Maps2019Path = Path.GetFullPath(Path.Combine(MapsPath, "2019"));
         Directory.CreateDirectory(Maps2019Path);
@@ -49,7 +47,6 @@
     public static string BogusProjectPath;
     public static string MapsPath;
     public static string MapsDetail;
-    public static string Maps2016Path;
     public static string Maps2019Path;
     public static string Maps2022Path;
     public static string Maps2025Path;

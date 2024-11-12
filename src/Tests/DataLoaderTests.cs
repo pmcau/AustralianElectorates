@@ -21,9 +21,6 @@ public class DataLoaderTests
     [Fact]
     public void GetAustralia()
     {
-        var data2016 = DataLoader.Maps2016.GetAustralia();
-        Assert.NotEmpty(data2016);
-        Assert.NotNull(data2016);
         var data2019 = DataLoader.Maps2019.GetAustralia();
         Assert.NotEmpty(data2019);
         Assert.NotNull(data2019);
@@ -122,13 +119,6 @@ public class DataLoaderTests
     }
 
     [Fact]
-    public Task Get2016State()
-    {
-        var data = DataLoader.Maps2016.GetState(State.ACT);
-        return Verify(data.GeoJson[..200]);
-    }
-
-    [Fact]
     public Task Get2019State()
     {
         var data = DataLoader.Maps2019.GetState(State.ACT);
@@ -157,13 +147,6 @@ public class DataLoaderTests
     // }
 
     [Fact]
-    public Task Get2016Electorate()
-    {
-        var data = DataLoader.Maps2016.GetElectorate("fenner");
-        return Verify(data.GeoJson[..200]);
-    }
-
-    [Fact]
     public Task Get2019Electorate()
     {
         var data = DataLoader.Maps2019.GetElectorate("fenner");
@@ -173,7 +156,7 @@ public class DataLoaderTests
     [Fact]
     public void GetElectorateFull()
     {
-        var data = DataLoader.Maps2016.GetElectorate("O'Connor");
+        var data = DataLoader.Maps2022.GetElectorate("O'Connor");
         Assert.NotNull(data);
     }
 
@@ -204,10 +187,6 @@ public class DataLoaderTests
         DataLoader.LoadAll();
         return Verify(new
         {
-            // FutureLoadedElectorateMaps = DataLoader.MapsFuture.LoadedElectorates.Count,
-            // FutureLoadedStateMaps = DataLoader.MapsFuture.LoadedStates.Count,
-            LoadedElectorateMaps2016 = DataLoader.Maps2016.LoadedElectorates.Count,
-            LoadedStateMaps2016 = DataLoader.Maps2016.LoadedStates.Count,
             LoadedElectorateMaps2019 = DataLoader.Maps2019.LoadedElectorates.Count,
             LoadedStateMaps2019 = DataLoader.Maps2019.LoadedStates.Count,
             LoadedElectorateMaps2022 = DataLoader.Maps2022.LoadedElectorates.Count,

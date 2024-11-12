@@ -6,7 +6,6 @@ public interface IElectorate
     string ShortName { get; }
     State State { get; }
     double Area { get; }
-    bool Exist2016 { get; }
     bool Exist2019 { get; }
     bool Exist2022 { get; }
     bool Exist2025 { get; }
@@ -20,9 +19,7 @@ public interface IElectorate
     ITwoCandidatePreferred? TwoCandidatePreferred { get; }
     IPartyOrBranch? CurrentParty { get; set; }
     IReadOnlyList<ILocation> Locations { get; set; }
-    IElectorateMap Get2016Map();
     IElectorateMap Get2019Map();
-
     IElectorateMap Get2022Map();
     IElectorateMap Get2025Map();
     //IElectorateMap GetFutureMap();
@@ -38,7 +35,6 @@ class Electorate :
     public string ShortName { get; set; } = null!;
     public State State { get; set; }
     public double Area { get; set; }
-    public bool Exist2016 { get; set; }
     public bool Exist2019 { get; set; }
     public bool Exist2022 { get; set; }
     public bool Exist2025 { get; set; }
@@ -64,9 +60,6 @@ class Electorate :
 
     public override string ToString() =>
         Name;
-
-    public IElectorateMap Get2016Map() =>
-        DataLoader.Get2016Map(this);
 
     public IElectorateMap Get2019Map() =>
         DataLoader.Get2019Map(this);

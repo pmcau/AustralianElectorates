@@ -8,7 +8,6 @@ public class Sync
     static List<int> percents;
 
     //static List<string> electoratesFuture = new();
-    static List<string> electorates2016 = [];
     static List<string> electorates2019 = [];
     static List<string> electorates2022 = [];
     static List<string> electorates2025 = [];
@@ -26,7 +25,6 @@ public class Sync
 
         await Get2022();
         await Get2019();
-        await Get2016();
 
         File.Copy(
             Path.Combine(DataLocations.Maps2022Path,"australia.geojson"),
@@ -35,7 +33,6 @@ public class Sync
 
         await ProcessYear(DataLocations.Maps2025Path, electorates2025, electorateToStateMap);
         await ProcessYear(DataLocations.Maps2022Path, electorates2022, electorateToStateMap);
-        await ProcessYear(DataLocations.Maps2016Path, electorates2016, electorateToStateMap);
         await ProcessYear(DataLocations.Maps2019Path, electorates2019, electorateToStateMap);
 
         var electorates = await WriteElectoratesMetaData();
@@ -227,11 +224,6 @@ public class Sync
         }
     }
 
-    static Task Get2016() =>
-        // elected https://results.aec.gov.au/20499/Website/Downloads/HouseMembersElectedDownload-20499.csv
-        // 2 party pref https://results.aec.gov.au/20499/Website/Downloads/HouseTppByDivisionDownload-20499.csv
-        GetCountry(2016, "https://www.aec.gov.au/Electorates/gis/files/national-midmif-09052016.zip", DataLocations.Maps2016Path);
-
     static Task Get2019() =>
         // elected https://tallyroom.aec.gov.au/Downloads/HouseMembersElectedDownload-24310.csv
         // 2 party pref https://tallyroom.aec.gov.au/Downloads/HouseTppByDivisionDownload-24310.csv
@@ -315,7 +307,6 @@ public class Sync
         {
             foreach (var electorateName in electoratePair.Value)
             {
-                var existIn2016 = electorates2016.Contains(electorateName);
                 var existIn2019 = electorates2019.Contains(electorateName);
                 var existIn2022 = electorates2022.Contains(electorateName);
                 var existIn2025 = electorates2025.Contains(electorateName);
@@ -334,16 +325,11 @@ public class Sync
                 {
                     electorate = await ElectoratesScraper.ScrapeElectorate(2019, electorateName, electoratePair.Key);
                 }
-                else if (existIn2016)
-                {
-                    electorate = await ElectoratesScraper.ScrapeElectorate(2016, electorateName, electoratePair.Key);
-                }
                 else
                 {
                     throw new("Does not exist in any year");
                 }
 
-                electorate.Exist2016 = existIn2016;
                 electorate.Exist2019 = existIn2019;
                 electorate.Exist2022 = existIn2022;
                 electorate.Exist2025 = existIn2025;
