@@ -137,12 +137,7 @@ public static partial class DataLoader
     {
         Guard.AgainstWhiteSpace(nameof(name), name);
         electorate = Electorates.SingleOrDefault(_ => MatchName(name, _));
-        if (electorate != null)
-        {
-            return true;
-        }
-
-        return false;
+        return electorate != null;
     }
 
     static bool MatchName(string name, IElectorate x) =>
