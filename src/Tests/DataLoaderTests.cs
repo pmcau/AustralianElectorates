@@ -21,15 +21,15 @@ public class DataLoaderTests
     [Fact]
     public void GetAustralia()
     {
-        var data2016 = DataLoader.Maps2016.GetAustralia();
-        Assert.NotEmpty(data2016);
-        Assert.NotNull(data2016);
         var data2019 = DataLoader.Maps2019.GetAustralia();
         Assert.NotEmpty(data2019);
         Assert.NotNull(data2019);
         var data2022 = DataLoader.Maps2022.GetAustralia();
         Assert.NotEmpty(data2022);
         Assert.NotNull(data2022);
+        var data2025 = DataLoader.Maps2025.GetAustralia();
+        Assert.NotEmpty(data2025);
+        Assert.NotNull(data2025);
         // var dataFuture = DataLoader.MapsFuture.GetAustralia();
         // Assert.NotEmpty(dataFuture);
         // Assert.NotNull(dataFuture);
@@ -45,17 +45,17 @@ public class DataLoaderTests
     [Fact]
     public Task NewRemoved()
     {
-        var electorates2019 = DataLoader
-            .Electorates.Where(_ => _.Exist2019)
-            .ToArray();
         var electorates2022 = DataLoader
             .Electorates.Where(_ => _.Exist2022)
             .ToArray();
-        var removed = electorates2019
-            .Where(_ => !electorates2022.Contains(_))
+        var electorates2025 = DataLoader
+            .Electorates.Where(_ => _.Exist2025)
+            .ToArray();
+        var removed = electorates2022
+            .Where(_ => !electorates2025.Contains(_))
             .Select(_ => _.Name);
-        var added = electorates2022
-            .Where(_ => !electorates2019.Contains(_))
+        var added = electorates2025
+            .Where(_ => !electorates2022.Contains(_))
             .Select(_ => _.Name);
         return Verify(new
         {
@@ -74,17 +74,17 @@ public class DataLoaderTests
 
     [Fact]
     public Task FindInvalidateElectorates_by_short_name() =>
-        Verify(DataLoader.FindInvalidateElectorates("not Found", "port-adelaide"));
+        Verify(DataLoader.FindInvalidateElectorates("not Found", "bass"));
 
     [Fact]
     public void TryFindElectorate()
     {
-        Assert.True(DataLoader.TryFindElectorate("Port Adelaide", out var electorate));
+        Assert.True(DataLoader.TryFindElectorate("Bass", out var electorate));
         Assert.NotNull(electorate);
-        Assert.NotNull(DataLoader.FindElectorate("Port Adelaide"));
-        Assert.True(DataLoader.TryFindElectorate("port-adelaide", out electorate));
+        Assert.NotNull(DataLoader.FindElectorate("Bass"));
+        Assert.True(DataLoader.TryFindElectorate("bass", out electorate));
         Assert.NotNull(electorate);
-        Assert.NotNull(DataLoader.FindElectorate("port-adelaide"));
+        Assert.NotNull(DataLoader.FindElectorate("bass"));
     }
 
     [Fact]
@@ -119,13 +119,6 @@ public class DataLoaderTests
     }
 
     [Fact]
-    public Task Get2016State()
-    {
-        var data = DataLoader.Maps2016.GetState(State.ACT);
-        return Verify(data.GeoJson[..200]);
-    }
-
-    [Fact]
     public Task Get2019State()
     {
         var data = DataLoader.Maps2019.GetState(State.ACT);
@@ -139,19 +132,19 @@ public class DataLoaderTests
         return Verify(data.GeoJson[..200]);
     }
 
+    [Fact]
+    public Task Get2025State()
+    {
+        var data = DataLoader.Maps2025.GetState(State.ACT);
+        return Verify(data.GeoJson[..200]);
+    }
+
     // [Fact]
     // public Task GetFutureState()
     // {
     //     var data = DataLoader.MapsFuture.GetState(State.ACT);
     //     return Verify(data.GeoJson.Substring(0, 200));
     // }
-
-    [Fact]
-    public Task Get2016Electorate()
-    {
-        var data = DataLoader.Maps2016.GetElectorate("fenner");
-        return Verify(data.GeoJson[..200]);
-    }
 
     [Fact]
     public Task Get2019Electorate()
@@ -163,7 +156,7 @@ public class DataLoaderTests
     [Fact]
     public void GetElectorateFull()
     {
-        var data = DataLoader.Maps2016.GetElectorate("O'Connor");
+        var data = DataLoader.Maps2022.GetElectorate("O'Connor");
         Assert.NotNull(data);
     }
 
@@ -194,14 +187,12 @@ public class DataLoaderTests
         DataLoader.LoadAll();
         return Verify(new
         {
-            // FutureLoadedElectorateMaps = DataLoader.MapsFuture.LoadedElectorates.Count,
-            // FutureLoadedStateMaps = DataLoader.MapsFuture.LoadedStates.Count,
-            LoadedElectorateMaps2016 = DataLoader.Maps2016.LoadedElectorates.Count,
-            LoadedStateMaps2016 = DataLoader.Maps2016.LoadedStates.Count,
             LoadedElectorateMaps2019 = DataLoader.Maps2019.LoadedElectorates.Count,
             LoadedStateMaps2019 = DataLoader.Maps2019.LoadedStates.Count,
             LoadedElectorateMaps2022 = DataLoader.Maps2022.LoadedElectorates.Count,
-            LoadedStateMaps2022 = DataLoader.Maps2022.LoadedStates.Count
+            LoadedStateMaps2022 = DataLoader.Maps2022.LoadedStates.Count,
+            LoadedElectorateMaps2025 = DataLoader.Maps2025.LoadedElectorates.Count,
+            LoadedStateMaps2025 = DataLoader.Maps2025.LoadedStates.Count
         });
     }
 
@@ -222,7 +213,7 @@ public class DataLoaderTests
     [Fact]
     public void FindElection()
     {
-        var election = DataLoader.FindElection(45);
+        var election = DataLoader.FindElection(47);
         Assert.NotNull(election);
     }
 

@@ -9,13 +9,13 @@ static class Downloader
 
     static HttpClient httpClient = new(new HttpClientHandler
     {
-        AllowAutoRedirect = false
+        AllowAutoRedirect = true
     })
     {
         Timeout = TimeSpan.FromSeconds(30)
     };
 
-    public static async Task DownloadFile(string targetPath, string requestUri)
+    public static async Task<string> DownloadFile(string targetPath, string requestUri)
     {
         try
         {
@@ -23,8 +23,7 @@ static class Downloader
             {
                 try
                 {
-                    await InnerDownload(targetPath, requestUri);
-                    return;
+                    return await InnerDownload(targetPath, requestUri);
                 }
                 catch
                 {
@@ -43,37 +42,39 @@ static class Downloader
                  """,
                 exception);
         }
+        throw new(
+            $"""
+             Download failed:
+               Path: {targetPath}
+               Uri: {requestUri}
+             """);
     }
 
-    static async Task InnerDownload(string targetPath, string requestUri)
+    static async Task<string> InnerDownload(string targetPath, string requestUri)
     {
-        var requestMessage = new HttpRequestMessage(HttpMethod.Head, requestUri);
-
-        DateTime remoteLastModified;
-        using (var headResponse = await httpClient.SendAsync(requestMessage))
-        {
-            if (headResponse.ReasonPhrase == "Redirect")
-            {
-                File.Delete(targetPath);
-                return;
-            }
-
-            remoteLastModified = headResponse.Content.Headers.LastModified.GetValueOrDefault(DateTimeOffset.UtcNow)
-                .UtcDateTime;
-        }
-
-        if (File.Exists(targetPath))
-        {
-            if (remoteLastModified <= File.GetLastWriteTimeUtc(targetPath))
-            {
-                return;
-            }
-
-            File.Delete(targetPath);
-        }
-
         using (var response = await httpClient.GetAsync(requestUri))
         {
+            if (response.StatusCode == HttpStatusCode.Redirect)
+            {
+                requestUri = response.Headers.Location!.ToString();
+            }
+        }
+
+        DateTime remoteLastModified;
+        using (var response = await httpClient.GetAsync(requestUri))
+        {
+            remoteLastModified = response.Content.Headers.LastModified.GetValueOrDefault(DateTimeOffset.UtcNow)
+                .UtcDateTime;
+            if (File.Exists(targetPath))
+            {
+                if (remoteLastModified <= File.GetLastWriteTimeUtc(targetPath))
+                {
+                    return requestUri;
+                }
+
+                File.Delete(targetPath);
+            }
+
             await using var httpStream = await response.Content.ReadAsStreamAsync();
             await using var fileStream = new FileStream(targetPath, FileMode.Create, FileAccess.Write, FileShare.None);
             await httpStream.CopyToAsync(fileStream);
@@ -81,5 +82,6 @@ static class Downloader
         }
 
         File.SetLastWriteTimeUtc(targetPath, remoteLastModified);
+        return requestUri;
     }
 }

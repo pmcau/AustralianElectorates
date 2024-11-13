@@ -31,9 +31,6 @@ public partial class ElectorateDataSet
     public static IElectorate Lyons() =>
         DataLoader.Lyons;
 
-    public static IElectorate Denison() =>
-        DataLoader.Denison;
-
     public static IElectorate Adelaide() =>
         DataLoader.Adelaide;
 
@@ -63,12 +60,6 @@ public partial class ElectorateDataSet
 
     public static IElectorate Sturt() =>
         DataLoader.Sturt;
-
-    public static IElectorate PortAdelaide() =>
-        DataLoader.PortAdelaide;
-
-    public static IElectorate Wakefield() =>
-        DataLoader.Wakefield;
 
     public static IElectorate Aston() =>
         DataLoader.Aston;
@@ -127,9 +118,6 @@ public partial class ElectorateDataSet
     public static IElectorate Hawke() =>
         DataLoader.Hawke;
 
-    public static IElectorate Higgins() =>
-        DataLoader.Higgins;
-
     public static IElectorate Holt() =>
         DataLoader.Holt;
 
@@ -187,17 +175,8 @@ public partial class ElectorateDataSet
     public static IElectorate Wills() =>
         DataLoader.Wills;
 
-    public static IElectorate Batman() =>
-        DataLoader.Batman;
-
-    public static IElectorate McMillan() =>
-        DataLoader.McMillan;
-
-    public static IElectorate MelbournePorts() =>
-        DataLoader.MelbournePorts;
-
-    public static IElectorate Murray() =>
-        DataLoader.Murray;
+    public static IElectorate Higgins() =>
+        DataLoader.Higgins;
 
     public static IElectorate Blair() =>
         DataLoader.Blair;
@@ -388,9 +367,6 @@ public partial class ElectorateDataSet
     public static IElectorate Newcastle() =>
         DataLoader.Newcastle;
 
-    public static IElectorate NorthSydney() =>
-        DataLoader.NorthSydney;
-
     public static IElectorate Page() =>
         DataLoader.Page;
 
@@ -436,8 +412,14 @@ public partial class ElectorateDataSet
     public static IElectorate Whitlam() =>
         DataLoader.Whitlam;
 
+    public static IElectorate NorthSydney() =>
+        DataLoader.NorthSydney;
+
     public static IElectorate Brand() =>
         DataLoader.Brand;
+
+    public static IElectorate Bullwinkel() =>
+        DataLoader.Bullwinkel;
 
     public static IElectorate Burt() =>
         DataLoader.Burt;

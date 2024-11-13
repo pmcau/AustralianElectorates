@@ -19,26 +19,24 @@ public class Snippets
         Debug.WriteLine(canberra.Description);
 
         // get an electorates maps (geojson) by string
-        var fennerGeoJson2016 = DataLoader.Fenner.Get2016Map();
-        Debug.WriteLine(fennerGeoJson2016);
         var fennerGeoJson2019 = DataLoader.Fenner.Get2019Map();
         Debug.WriteLine(fennerGeoJson2019);
         var fennerGeoJson2022 = DataLoader.Fenner.Get2022Map();
         Debug.WriteLine(fennerGeoJson2022);
+        var fennerGeoJson2025 = DataLoader.Fenner.Get2025Map();
+        Debug.WriteLine(fennerGeoJson2025);
 
         // get an electorates maps (geojson) by string
-        var canberraGeoJson2016 = DataLoader.Maps2016.GetElectorate("Canberra");
-        Debug.WriteLine(canberraGeoJson2016);
         var canberraGeoJson2019 = DataLoader.Maps2019.GetElectorate("Canberra");
         Debug.WriteLine(canberraGeoJson2019);
         var canberraGeoJson2022 = DataLoader.Maps2022.GetElectorate("Canberra");
         Debug.WriteLine(canberraGeoJson2022);
+        var canberraGeoJson2025 = DataLoader.Maps2022.GetElectorate("Canberra");
+        Debug.WriteLine(canberraGeoJson2025);
 
         // export all data to a directory
         // structure will be
         // /electorates.json
-        // /2016 (2016 states and australia geojson files)
-        // /2016/Electorates (2016 electorate geojson files)
         // /2019 (2019 states and australia geojson files)
         // /2019/Electorates (2019 electorate geojson files)
         // /2022 (202 states and australia geojson files)

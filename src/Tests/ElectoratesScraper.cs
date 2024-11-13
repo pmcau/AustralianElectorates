@@ -18,15 +18,20 @@ static class ElectoratesScraper
 
     public static async Task<ElectorateEx> ScrapeElectorate(int year, string shortName, State state)
     {
-        var requestUri = $"https://www.aec.gov.au/Elections/federal_elections/{year}/profiles/{state.ToString().ToLowerInvariant()}/{shortName.ToLowerInvariant()}.htm";
         var tempElectorateHtmlPath = Path.Combine(DataLocations.TempPath, $"{shortName}.html");
+
+        var requestUri = $"https://www.aec.gov.au/{shortName}";
         try
         {
-            await Downloader.DownloadFile(tempElectorateHtmlPath, requestUri);
+            requestUri = await Downloader.DownloadFile(tempElectorateHtmlPath, requestUri);
 
-            if (!File.Exists(tempElectorateHtmlPath))
+            // because AEC does not return a 404 for missing electorates
+            var textAsync = await File.ReadAllTextAsync(tempElectorateHtmlPath);
+            if (textAsync.Contains("Sauce not found"))
             {
-                throw new($"Could not download {shortName}");
+                requestUri = $"https://www.aec.gov.au/Elections/federal_elections/{year}/profiles/{state.ToString().ToLowerInvariant()}/{shortName}.htm";
+                //requestUri = $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm";
+                requestUri = await Downloader.DownloadFile(tempElectorateHtmlPath, requestUri);
             }
 
             var document = new HtmlDocument();
@@ -171,7 +176,7 @@ static class ElectoratesScraper
     static string GetFullName(HtmlDocument document, int year)
     {
         var prefix1 = $"{year} federal election: profile of the electoral division of ";
-        var prefix2 = $"Profile of the electoral division of ";
+        var prefix2 = "Profile of the electoral division of ";
         var headings = document.Headings();
         var caseless = headings
             .Single(_ => _.StartsWith(prefix1) || _.StartsWith(prefix2))

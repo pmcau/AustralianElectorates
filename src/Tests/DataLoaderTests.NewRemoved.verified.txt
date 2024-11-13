@@ -1,8 +1,9 @@
 ﻿{
   added: [
-    Hawke
+    Bullwinkel
   ],
   removed: [
-    Stirling
+    Higgins,
+    North Sydney
   ]
 }

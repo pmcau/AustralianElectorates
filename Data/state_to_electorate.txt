@@ -3,7 +3,6 @@ ACT:fenner
 ACT:bean
 TAS:bass
 TAS:braddon
-TAS:denison
 TAS:franklin
 TAS:lyons
 TAS:clark
@@ -142,6 +141,7 @@ NSW:wentworth
 NSW:werriwa
 NSW:whitlam
 WA:brand
+WA:bullwinkel
 WA:canning
 WA:cowan
 WA:curtin
