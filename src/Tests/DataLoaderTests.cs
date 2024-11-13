@@ -38,7 +38,7 @@ public class DataLoaderTests
     [Fact]
     public Task TryFindElectorate_not_found()
     {
-        Assert.False(DataLoader.TryFindElectorate("not Found", out _));
+        Assert.False(DataLoader.TryFindElectorate("not Found 2", out _));
         return Throws(() => DataLoader.FindElectorate("not Found"));
     }
 
