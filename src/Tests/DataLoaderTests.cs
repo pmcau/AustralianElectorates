@@ -74,7 +74,7 @@ public class DataLoaderTests
 
     [Fact]
     public Task FindInvalidateElectorates_by_short_name() =>
-        Verify(DataLoader.FindInvalidateElectorates("not Found", "port-adelaide"));
+        Verify(DataLoader.FindInvalidateElectorates("not Found", "bass"));
 
     [Fact]
     public void TryFindElectorate()
