@@ -38,10 +38,7 @@ public class DataLoaderTests
     [Fact]
     public Task TryFindElectorate_not_found()
     {
-        //TODO: Work out why this is failing on CI
-#if Debug
         Assert.False(DataLoader.TryFindElectorate("not Found", out _));
-#endif
         return Throws(() => DataLoader.FindElectorate("not Found"));
     }
 
@@ -82,12 +79,12 @@ public class DataLoaderTests
     [Fact]
     public void TryFindElectorate()
     {
-        Assert.True(DataLoader.TryFindElectorate("Port Adelaide", out var electorate));
+        Assert.True(DataLoader.TryFindElectorate("Bass", out var electorate));
         Assert.NotNull(electorate);
-        Assert.NotNull(DataLoader.FindElectorate("Port Adelaide"));
-        Assert.True(DataLoader.TryFindElectorate("port-adelaide", out electorate));
+        Assert.NotNull(DataLoader.FindElectorate("Bass"));
+        Assert.True(DataLoader.TryFindElectorate("bass", out electorate));
         Assert.NotNull(electorate);
-        Assert.NotNull(DataLoader.FindElectorate("port-adelaide"));
+        Assert.NotNull(DataLoader.FindElectorate("bass"));
     }
 
     [Fact]
