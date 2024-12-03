@@ -14,7 +14,6 @@
     <PackageReference Include="Argon" />
     <PackageReference Include="System.Drawing.Common" />
     <PackageReference Include="System.IO.Compression" />
-    <PackageReference Include="System.Text.Json" />
     <PackageReference Include="Xunit" />
     <PackageReference Include="xunit.runner.visualstudio" PrivateAssets="all" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" />
