@@ -7,10 +7,11 @@ static class Downloader
                                                SecurityProtocolType.Tls11 |
                                                SecurityProtocolType.Tls12;
 
-    static HttpClient httpClient = new(new HttpClientHandler
-    {
-        AllowAutoRedirect = true
-    })
+    static HttpClient httpClient = new(
+        new HttpClientHandler
+        {
+            AllowAutoRedirect = true
+        })
     {
         Timeout = TimeSpan.FromSeconds(30)
     };
@@ -42,6 +43,7 @@ static class Downloader
                  """,
                 exception);
         }
+
         throw new(
             $"""
              Download failed:
