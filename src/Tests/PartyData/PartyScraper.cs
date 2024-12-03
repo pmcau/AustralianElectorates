@@ -175,15 +175,13 @@ static class PartyScraper
             throw new();
         }
 
-        // ReSharper disable once SuggestVarOrType_BuiltInTypes
-        string? line2 = address.Line2;
+        var line2 = address.Line2;
         if (string.IsNullOrWhiteSpace(line2))
         {
             line2 = null;
         }
 
-        // ReSharper disable once SuggestVarOrType_BuiltInTypes
-        string? line3 = address.Line3;
+        var line3 = address.Line3;
         if (string.IsNullOrWhiteSpace(line3))
         {
             line3 = null;

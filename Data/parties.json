@@ -1072,20 +1072,7 @@
             "Postcode": 4010
           }
         },
-        "DeputyOfficers": [
-          {
-            "Title": "Mr",
-            "FamilyName": "Negerevich",
-            "GivenNames": "Michael",
-            "Capacity": "Deputy Registered Officer",
-            "Address": {
-              "Line1": "PO Box 940",
-              "Suburb": "Spring Hill",
-              "State": "QLD",
-              "Postcode": 4004
-            }
-          }
-        ]
+        "DeputyOfficers": []
       },
       {
         "Id": 178,
@@ -1250,12 +1237,11 @@
         "Address": "Locked Bag 2\nKINGS CROSS NSW 1340",
         "Officer": {
           "Title": "Mr",
-          "FamilyName": "Shields",
-          "GivenNames": "Richard ",
+          "FamilyName": "Stone",
+          "GivenNames": "Christopher",
           "Capacity": "Registered Officer",
           "Address": {
-            "Line1": "Level 2",
-            "Line2": "131 Macquarie Street",
+            "Line1": "Level 2, 131 Macquarie Street",
             "Suburb": "Sydney",
             "State": "NSW",
             "Postcode": 2000

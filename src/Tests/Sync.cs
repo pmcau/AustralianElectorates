@@ -26,9 +26,9 @@ public class Sync
         await Get2019();
 
         File.Copy(
-            Path.Combine(DataLocations.Maps2022Path,"australia.geojson"),
-            Path.Combine(DataLocations.Maps2025Path,"australia.geojson"));
-         await StatesToCountryDownloader.RunFuture();
+            Path.Combine(DataLocations.Maps2022Path, "australia.geojson"),
+            Path.Combine(DataLocations.Maps2025Path, "australia.geojson"));
+        await StatesToCountryDownloader.RunFuture();
 
         await ProcessYear(DataLocations.Maps2025Path, electorates2025, electorateToStateMap);
         await ProcessYear(DataLocations.Maps2022Path, electorates2022, electorateToStateMap);
@@ -278,15 +278,16 @@ public class Sync
         var jsonPath = Path.Combine(directory, "australia.geojson");
         var raw = JsonSerializerService.DeserializeGeo(jsonPath);
         raw.FixBoundingBox();
-        var allElectorates = electorateToStateMap.SelectMany(_=>_.Value).ToList();
+        var allElectorates = electorateToStateMap.SelectMany(_ => _.Value).ToList();
         foreach (var feature in raw.Features)
         {
             var electorateShortName = (string)feature.Properties["electorateShortName"];
             if (!allElectorates.Contains(electorateShortName))
             {
-                throw new ($"Electorate not found: {electorateShortName}");
+                throw new($"Electorate not found: {electorateShortName}");
             }
         }
+
         foreach (var percent in percents)
         {
             var percentJsonPath = Path.Combine(directory, $"australia_{percent:D2}.geojson");
@@ -339,6 +340,7 @@ public class Sync
                 {
                     throw new($"Duplicate electorate: {electorate}");
                 }
+
                 electorates.Add(electorate);
             }
         }
