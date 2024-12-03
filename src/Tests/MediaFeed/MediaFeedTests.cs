@@ -6,17 +6,17 @@
         foreach (var contest in MediaFeedService.HouseOfReps.Contests)
         {
             var electorate = contest.ContestIdentifier.ContestName;
-            Debug.WriteLine(electorate);
+            Trace.WriteLine(electorate);
             var candidatePreferred = contest.TwoCandidatePreferred;
             foreach (var candidate in candidatePreferred.Candidate)
             {
                 if (candidate.AffiliationIdentifier == null)
                 {
-                    Debug.WriteLine($"    {candidate.CandidateIdentifier.CandidateName} {candidate.Votes.Swing}");
+                    Trace.WriteLine($"    {candidate.CandidateIdentifier.CandidateName} {candidate.Votes.Swing}");
                 }
                 else
                 {
-                    Debug.WriteLine($"    {candidate.AffiliationIdentifier.ShortCode} {candidate.Votes.Swing}");
+                    Trace.WriteLine($"    {candidate.AffiliationIdentifier.ShortCode} {candidate.Votes.Swing}");
                 }
             }
         }

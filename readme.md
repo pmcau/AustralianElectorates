@@ -247,27 +247,27 @@ To get the latests version of the data do a NuGet update. There are several opti
 ```cs
 // get an electorate by name
 var fenner = DataLoader.Fenner;
-Debug.WriteLine(fenner.Description);
+Trace.WriteLine(fenner.Description);
 
 // get an electorate by string
 var canberra = DataLoader.Electorates.Single(_ => _.Name == "Canberra");
-Debug.WriteLine(canberra.Description);
+Trace.WriteLine(canberra.Description);
 
 // get an electorates maps (geojson) by string
 var fennerGeoJson2019 = DataLoader.Fenner.Get2019Map();
-Debug.WriteLine(fennerGeoJson2019);
+Trace.WriteLine(fennerGeoJson2019);
 var fennerGeoJson2022 = DataLoader.Fenner.Get2022Map();
-Debug.WriteLine(fennerGeoJson2022);
+Trace.WriteLine(fennerGeoJson2022);
 var fennerGeoJson2025 = DataLoader.Fenner.Get2025Map();
-Debug.WriteLine(fennerGeoJson2025);
+Trace.WriteLine(fennerGeoJson2025);
 
 // get an electorates maps (geojson) by string
 var canberraGeoJson2019 = DataLoader.Maps2019.GetElectorate("Canberra");
-Debug.WriteLine(canberraGeoJson2019);
+Trace.WriteLine(canberraGeoJson2019);
 var canberraGeoJson2022 = DataLoader.Maps2022.GetElectorate("Canberra");
-Debug.WriteLine(canberraGeoJson2022);
+Trace.WriteLine(canberraGeoJson2022);
 var canberraGeoJson2025 = DataLoader.Maps2022.GetElectorate("Canberra");
-Debug.WriteLine(canberraGeoJson2025);
+Trace.WriteLine(canberraGeoJson2025);
 
 // export all data to a directory
 // structure will be
