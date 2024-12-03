@@ -1,6 +1,4 @@
-﻿using AustralianElectorates;
-
-class ElectorateEx :
+﻿class ElectorateEx :
     Electorate
 {
     [NonSerialized]

@@ -1,5 +1,4 @@
-﻿using AustralianElectorates;
-using HtmlAgilityPack;
+﻿using HtmlAgilityPack;
 
 static class ElectoratesScraper
 {

@@ -1,4 +1,3 @@
-using AustralianElectorates;
 using GeoJSON.Net.Feature;
 
 static class MetadataCleaner

@@ -1,5 +1,4 @@
 ﻿using System.IO.Compression;
-using AustralianElectorates;
 using GeoJSON.Net.Feature;
 
 public static class StatesToCountryDownloader

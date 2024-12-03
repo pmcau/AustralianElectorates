@@ -1,6 +1,5 @@
 ﻿using System.Drawing;
 using System.IO.Compression;
-using AustralianElectorates;
 using GeoJSON.Net.Feature;
 
 public class Sync

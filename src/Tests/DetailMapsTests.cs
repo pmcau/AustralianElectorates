@@ -1,6 +1,4 @@
-﻿using AustralianElectorates;
-
-public class DetailMapsTests
+﻿public class DetailMapsTests
 {
     [Fact]
     public void Simple() =>

@@ -1,8 +1,4 @@
-﻿using AustralianElectorates;
-using AustralianElectorates.Bogus;
-using Bogus;
-
-// ReSharper disable UnusedVariable
+﻿// ReSharper disable UnusedVariable
 public class Snippets
 {
     [Fact]

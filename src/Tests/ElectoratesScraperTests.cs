@@ -1,6 +1,4 @@
-﻿using AustralianElectorates;
-
-public class ElectoratesScraperTests
+﻿public class ElectoratesScraperTests
 {
     [Fact]
     [Trait("Category", "Integration")]
