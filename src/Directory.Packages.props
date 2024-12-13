@@ -4,7 +4,7 @@
     <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="Argon" Version="0.25.0" />
+    <PackageVersion Include="Argon" Version="0.26.0" />
     <PackageVersion Include="Bogus" Version="35.6.1" />
     <PackageVersion Include="CountryData" Version="6.6.0" />
     <PackageVersion Include="GeoJSON.Net" Version="1.4.1" />
