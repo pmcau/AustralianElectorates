@@ -292,54 +292,6 @@
     "Branches": []
   },
   {
-    "Id": 1344,
-    "Name": "Australian Federation Party",
-    "Code": "Federation Party",
-    "Abbreviation": "Federation Party",
-    "RegisterDate": "26 July 2011",
-    "AmendmentDate": "26 July 2011",
-    "Address": "53 Grand Ridge West\nMIRBOO NORTH VIC 3871",
-    "Officer": {
-      "Title": "Mr",
-      "FamilyName": "O'Rourke",
-      "GivenNames": "Glenn",
-      "Capacity": "Registered Officer",
-      "Address": {
-        "Line1": "3 McCartney Street",
-        "Suburb": "Morphett Vale",
-        "State": "SA",
-        "Postcode": 5162
-      }
-    },
-    "DeputyOfficers": [
-      {
-        "Title": "Mr",
-        "FamilyName": "Burkett",
-        "GivenNames": "David",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "361 Seventeen Mile Road",
-          "Suburb": "Oxley",
-          "State": "QLD",
-          "Postcode": 4075
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Aldridge",
-        "GivenNames": "Mark",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "201 Taylors Road",
-          "Suburb": "Penfield Gardens",
-          "State": "SA",
-          "Postcode": 5121
-        }
-      }
-    ],
-    "Branches": []
-  },
-  {
     "Id": 2,
     "Name": "Australian Labor Party (ALP)",
     "Code": "ALP",
@@ -670,6 +622,29 @@
     ]
   },
   {
+    "Id": 1523,
+    "Name": "Australia's Voice",
+    "Code": "Australia's Voice",
+    "Abbreviation": "Australia's Voice",
+    "RegisterDate": "17 December 2024",
+    "AmendmentDate": "17 December 2024",
+    "Address": "112/1 Anthony Rolfe Avenue\nGUNGAHLIN ACT 2912",
+    "Officer": {
+      "Title": "Senator",
+      "FamilyName": "Payman",
+      "GivenNames": "Fatima",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "112/1 Anthony Rolfe Avenue",
+        "Suburb": "Gungahlin",
+        "State": "ACT",
+        "Postcode": 2912
+      }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
+  },
+  {
     "Id": 1388,
     "Name": "Centre Alliance",
     "Code": "Centre Alliance",
@@ -870,6 +845,29 @@
         }
       }
     ],
+    "Branches": []
+  },
+  {
+    "Id": 1521,
+    "Name": "Gerard Rennick People First",
+    "Code": "Gerard Rennick People First",
+    "Abbreviation": "Gerard Rennick People First",
+    "RegisterDate": "5 December 2024",
+    "AmendmentDate": "5 December 2024",
+    "Address": "30 Sandy Cove Place\nREDLAND BAY QLD 4165",
+    "Officer": {
+      "Title": "Mrs",
+      "FamilyName": "Eaton",
+      "GivenNames": "Stephanie",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "Level 1, 1024 Ann Street",
+        "Suburb": "Fortitude Valley",
+        "State": "QLD",
+        "Postcode": 4006
+      }
+    },
+    "DeputyOfficers": [],
     "Branches": []
   },
   {
@@ -1330,6 +1328,18 @@
           "State": "QLD",
           "Postcode": 4008
         }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Game",
+        "GivenNames": "Jennifer Julie",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "58 Yarmouth Street",
+          "Suburb": "South Brighton",
+          "State": "SA",
+          "Postcode": 5048
+        }
       }
     ],
     "Branches": []
@@ -1505,6 +1515,29 @@
         }
       }
     ],
+    "Branches": []
+  },
+  {
+    "Id": 1528,
+    "Name": "Tammy Tyrrell for Tasmania",
+    "Code": "TT",
+    "Abbreviation": "TT",
+    "RegisterDate": "12 December 2024",
+    "AmendmentDate": "12 December 2024",
+    "Address": "20 Bowman Drive\nPENGUIN TAS 7316",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "Tyrrell",
+      "GivenNames": "Tyler",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "20 Bowman Drive",
+        "Suburb": "Penguin",
+        "State": "TAS",
+        "Postcode": 7316
+      }
+    },
+    "DeputyOfficers": [],
     "Branches": []
   },
   {
@@ -1913,6 +1946,54 @@
         "DeputyOfficers": []
       }
     ]
+  },
+  {
+    "Id": 1344,
+    "Name": "Trumpet of Patriots",
+    "Code": "Trumpet of Patriots",
+    "Abbreviation": "Trumpet of Patriots",
+    "RegisterDate": "26 July 2011",
+    "AmendmentDate": "26 July 2011",
+    "Address": "53 Grand Ridge West\nMIRBOO NORTH VIC 3871",
+    "Officer": {
+      "Title": "Mr",
+      "FamilyName": "O'Rourke",
+      "GivenNames": "Glenn",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "3 McCartney Street",
+        "Suburb": "Morphett Vale",
+        "State": "SA",
+        "Postcode": 5162
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Burkett",
+        "GivenNames": "David",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "361 Seventeen Mile Road",
+          "Suburb": "Oxley",
+          "State": "QLD",
+          "Postcode": 4075
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Aldridge",
+        "GivenNames": "Mark",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "201 Taylors Road",
+          "Suburb": "Penfield Gardens",
+          "State": "SA",
+          "Postcode": 5121
+        }
+      }
+    ],
+    "Branches": []
   },
   {
     "Id": 1477,
