@@ -854,7 +854,7 @@
     "Abbreviation": "Gerard Rennick People First",
     "RegisterDate": "5 December 2024",
     "AmendmentDate": "5 December 2024",
-    "Address": "30 Sandy Cove Place\nREDLAND BAY QLD 4165",
+    "Address": "Level 1, 1024 Ann Street\nFORTITUDE VALLEY QLD 4006",
     "Officer": {
       "Title": "Mrs",
       "FamilyName": "Eaton",
@@ -1319,9 +1319,9 @@
     "DeputyOfficers": [
       {
         "Title": "Mr",
-        "FamilyName": "Huxham",
-        "GivenNames": "Damian",
-        "Capacity": "Secretary",
+        "FamilyName": "Ashby",
+        "GivenNames": "James",
+        "Capacity": "Deputy Registered Officer",
         "Address": {
           "Line1": "2/6-12 Boronia Road",
           "Suburb": "Brisbane Airport",
@@ -2002,17 +2002,17 @@
     "Abbreviation": "Victorian Socialists",
     "RegisterDate": "7 April 2019",
     "AmendmentDate": "7 April 2019",
-    "Address": "54 Victoria Street\nCARLTON SOUTH VIC 3053",
+    "Address": "83 Sydney Road\nBRUNSWICK VIC 3056",
     "Officer": {
       "Title": "Mr",
       "FamilyName": "Oakley",
       "GivenNames": "Corey",
       "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "54 Victoria Street",
-        "Suburb": "Carlton South",
+        "Line1": "83 Sydney Road",
+        "Suburb": "Brunswick",
         "State": "VIC",
-        "Postcode": 3053
+        "Postcode": 3056
       }
     },
     "DeputyOfficers": [
