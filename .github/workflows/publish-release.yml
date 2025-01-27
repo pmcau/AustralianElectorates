@@ -36,34 +36,26 @@ jobs:
       - name: Compress Data directory
         run: zip -r data_bundle.zip ./Data
 
-      - name: Verify DLL exists
-        run: test -f ./output/AustralianElectorates.dll
-
-      - name: Upload DLL Asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
         with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./output/AustralianElectorates.dll
-          asset_name: AustralianElectorates.dll
-          asset_content_type: application/octet-stream
+          name: build-artifacts
+          path: ./output/AustralianElectorates.dll
 
-      - name: Upload Data Bundle Asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload Data bundle
+        uses: actions/upload-artifact@v3
         with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: data_bundle.zip
-          asset_name: data_bundle.zip
-          asset_content_type: application/zip
+          name: data-bundle
+          path: data_bundle.zip
 
   release:
     needs: build
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Download build artifacts
         uses: actions/download-artifact@v3
         with:
