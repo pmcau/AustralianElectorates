@@ -19,13 +19,13 @@ jobs:
           dotnet-version: '8.0' 
 
       - name: Restore dependencies
-        run: dotnet restore ./src/AustralianElectorates/solution.sln
+        run: dotnet restore ./src/AustralianElectorates/AustralianElectorates.sln
 
       - name: Build solution
-        run: dotnet build ./src/AustralianElectorates/solution.sln --configuration Release --no-restore
+        run: dotnet build ./src/AustralianElectorates/AustralianElectorates.sln --configuration Release --no-restore
 
       - name: Publish artifacts
-        run: dotnet publish ./src/AustralianElectorates/solution.sln --configuration Release --output ./output
+        run: dotnet publish ./src/AustralianElectorates/AustralianElectorates.sln --configuration Release --output ./output
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
