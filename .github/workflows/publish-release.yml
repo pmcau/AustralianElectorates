@@ -39,17 +39,25 @@ jobs:
       - name: Verify DLL exists
         run: test -f ./output/AustralianElectorates.dll
 
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
+      - name: Upload DLL Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          name: build-artifacts
-          path: ./output/AustralianElectorates.dll
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./output/AustralianElectorates.dll
+          asset_name: AustralianElectorates.dll
+          asset_content_type: application/octet-stream
 
-      - name: Upload Data bundle
-        uses: actions/upload-artifact@v3
+      - name: Upload Data Bundle Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          name: data-bundle
-          path: data_bundle.zip
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: data_bundle.zip
+          asset_name: data_bundle.zip
+          asset_content_type: application/zip
 
   release:
     needs: build
