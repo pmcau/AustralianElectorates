@@ -28,7 +28,7 @@ jobs:
         run: dotnet build ./src/AustralianElectorates.sln --configuration Release --no-restore
 
       - name: Publish artifacts
-        run: dotnet publish ./src/AustralianElectorates.sln --configuration Release -p:TargetFramework=net9.0
+        run: dotnet publish ./src/AustralianElectorates.sln --configuration Release -p:TargetFramework=net9.0  --output ./output
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
