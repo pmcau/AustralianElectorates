@@ -30,23 +30,34 @@ jobs:
       - name: Publish artifacts
         run: dotnet publish ./src/AustralianElectorates.sln --configuration Release --output ./output -p:TargetFramework=net9.0
 
-      - name: List output directory
+      - name: Debug output directory
         run: ls -R ./output
 
       - name: Compress Data directory
         run: zip -r data_bundle.zip ./Data
 
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: build-artifacts
-          path: ./output/AustralianElectorates.dll
+      - name: Verify DLL exists
+        run: test -f ./output/AustralianElectorates.dll
 
-      - name: Upload Data bundle
-        uses: actions/upload-artifact@v3
+      - name: Upload DLL Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          name: data-bundle
-          path: data_bundle.zip
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./output/AustralianElectorates.dll
+          asset_name: AustralianElectorates.dll
+          asset_content_type: application/octet-stream
+
+      - name: Upload Data Bundle Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: data_bundle.zip
+          asset_name: data_bundle.zip
+          asset_content_type: application/zip
 
   release:
     needs: build
