@@ -28,7 +28,10 @@ jobs:
         run: dotnet build ./src/AustralianElectorates.sln --configuration Release --no-restore
 
       - name: Publish artifacts
-        run: dotnet publish ./src/AustralianElectorates.sln --configuration Release -p:TargetFramework=net9.0  --output ./output
+        run: dotnet publish ./src/AustralianElectorates.sln --configuration Release --output ./output -p:TargetFramework=net9.0
+
+      - name: List output directory
+        run: ls -R ./output
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
@@ -47,6 +50,7 @@ jobs:
           name: build-artifacts
 
       - name: Create GitHub Release
+        id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
