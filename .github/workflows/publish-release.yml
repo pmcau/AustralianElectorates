@@ -30,11 +30,14 @@ jobs:
       - name: Publish artifacts
         run: dotnet publish ./src/AustralianElectorates.sln --configuration Release --output ./output -p:TargetFramework=net9.0
 
-      - name: List output directory
+      - name: Debug output directory
         run: ls -R ./output
 
       - name: Compress Data directory
         run: zip -r data_bundle.zip ./Data
+
+      - name: Verify DLL exists
+        run: test -f ./output/AustralianElectorates.dll
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
