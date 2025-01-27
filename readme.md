@@ -396,7 +396,7 @@ Elections are currently added manually as they are declared.
     }
 ];
 ```
-<sup><a href='/src/AustralianElectorates/DataLoader.cs#L72-L94' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/AustralianElectorates/DataLoader.cs#L73-L95' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
