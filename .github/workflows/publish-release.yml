@@ -66,11 +66,8 @@ jobs:
         with:
           name: data-bundle
 
-      - name: Debug artifact directory
+      - name: Debug artifact structure
         run: ls -R
-
-      - name: Move DLL to expected location
-        run: mv ./build-artifacts/AustralianElectorates.dll ./output/
 
       - name: Create GitHub Release
         id: create_release
@@ -89,7 +86,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./output/AustralianElectorates.dll
+          asset_path: ./AustralianElectorates.dll
           asset_name: AustralianElectorates.dll
           asset_content_type: application/octet-stream
 
@@ -102,4 +99,3 @@ jobs:
           asset_path: data_bundle.zip
           asset_name: data_bundle.zip
           asset_content_type: application/zip
-      
