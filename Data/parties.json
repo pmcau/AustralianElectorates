@@ -8,10 +8,10 @@
     "AmendmentDate": "3 May 2011",
     "Address": "Ground Floor\n470 St Kilda Rd\nMELBOURNE VIC 3004",
     "Officer": {
-      "Title": "Dr",
-      "FamilyName": "Cheung",
-      "GivenNames": "William",
-      "Capacity": "Party Agent",
+      "Title": "Mrs",
+      "FamilyName": "Elisei",
+      "GivenNames": "Lorna",
+      "Capacity": "Registered Officer",
       "Address": {
         "Line1": "Ground Floor",
         "Line2": "470 St Kilda Road",
@@ -105,6 +105,18 @@
     },
     "DeputyOfficers": [
       {
+        "Title": "Mr",
+        "FamilyName": "Isherwood",
+        "GivenNames": "Aaron William",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "PO Box 376",
+          "Suburb": "COBURG",
+          "State": "VIC",
+          "Postcode": 3046
+        }
+      },
+      {
         "Title": "Ms",
         "FamilyName": "Lawler",
         "GivenNames": "Ann",
@@ -113,6 +125,18 @@
           "Suburb": "Farley",
           "State": "NSW",
           "Postcode": 2320
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Staggard",
+        "GivenNames": "Daryl John",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "PO Box 365",
+          "Suburb": "Prospect",
+          "State": "TAS",
+          "Postcode": 7250
         }
       },
       {
@@ -139,13 +163,38 @@
       },
       {
         "Title": "Mrs",
-        "FamilyName": "Robinson",
-        "GivenNames": "Jean",
+        "FamilyName": "Ackland",
+        "GivenNames": "Louise Catherine",
+        "Capacity": "Deputy Registered Officer",
         "Address": {
-          "Line1": "Lot 308 Potts Rd",
-          "Suburb": "Kojonup",
-          "State": "WA",
-          "Postcode": 6395
+          "Line1": "38 King George Street",
+          "Suburb": "Mannum",
+          "State": "SA",
+          "Postcode": 5238
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Freer",
+        "GivenNames": "Mark",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "6 Baroota Avenue",
+          "Suburb": "Rostrevor",
+          "State": "SA",
+          "Postcode": 5073
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Williams",
+        "GivenNames": "Raymond Frank",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "41 High Street",
+          "Suburb": "New Norfolk",
+          "State": "TAS",
+          "Postcode": 7140
         }
       },
       {
@@ -160,6 +209,18 @@
         }
       },
       {
+        "Title": "Mr",
+        "FamilyName": "Hawkins",
+        "GivenNames": "Thomas George",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "6A Vaux Street",
+          "Suburb": "Rockingham",
+          "State": "WA",
+          "Postcode": 6168
+        }
+      },
+      {
         "Title": "Mrs",
         "FamilyName": "Campbell",
         "GivenNames": "Trudy",
@@ -168,6 +229,18 @@
           "Suburb": "DARWIN RIVER",
           "State": "NT",
           "Postcode": 838
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Wang",
+        "GivenNames": "Zhenya (Dio)",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "27 Seahorse Parade",
+          "Suburb": "KERRINYUP",
+          "State": "WA",
+          "Postcode": 6018
         }
       }
     ],
@@ -645,6 +718,29 @@
     "Branches": []
   },
   {
+    "Id": 1527,
+    "Name": "Better Together Party",
+    "Code": "Better Together",
+    "Abbreviation": "Better Together",
+    "RegisterDate": "7 March 2025",
+    "AmendmentDate": "7 March 2025",
+    "Address": "45 Glenferrie Road\nMALVERN VIC 3144",
+    "Officer": {
+      "Title": "Miss",
+      "FamilyName": "Bradlow",
+      "GivenNames": "Lucinda",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "45 Glenferrie Road",
+        "Suburb": "Malvern",
+        "State": "VIC",
+        "Postcode": 3144
+      }
+    },
+    "DeputyOfficers": [],
+    "Branches": []
+  },
+  {
     "Id": 1388,
     "Name": "Centre Alliance",
     "Code": "Centre Alliance",
@@ -677,12 +773,12 @@
     "Address": "PO Box 4194\nDARWIN NT 0801",
     "Officer": {
       "Title": "Mr",
-      "FamilyName": "Delosa",
-      "GivenNames": "Michael",
+      "FamilyName": "Schelling",
+      "GivenNames": "Albert Antony (Tony)",
       "Capacity": "Party Agent",
       "Address": {
         "Line1": "2/229 McMillans Road",
-        "Suburb": "Jingili",
+        "Suburb": "JINGLI",
         "State": "NT",
         "Postcode": 810
       }
@@ -777,7 +873,7 @@
   },
   {
     "Id": 1481,
-    "Name": "FUSION: Science, Pirate, Secular, Climate Emergency",
+    "Name": "FUSION | Planet Rescue | Whistleblower Protection | Innovation",
     "Code": "FUSION",
     "Abbreviation": "FUSION",
     "RegisterDate": "11 October 2019",
@@ -854,17 +950,54 @@
     "Abbreviation": "Gerard Rennick People First",
     "RegisterDate": "5 December 2024",
     "AmendmentDate": "5 December 2024",
-    "Address": "Level 1, 1024 Ann Street\nFORTITUDE VALLEY QLD 4006",
+    "Address": "PO Box 2387\nCHERMSIDE CENTRE QLD 4032",
     "Officer": {
       "Title": "Mrs",
       "FamilyName": "Eaton",
       "GivenNames": "Stephanie",
       "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "Level 1, 1024 Ann Street",
-        "Suburb": "Fortitude Valley",
+        "Line1": "Level 5",
+        "Line2": "14 Banfield Street",
+        "Suburb": "Chermside",
         "State": "QLD",
-        "Postcode": 4006
+        "Postcode": 4032
+      }
+    },
+    "DeputyOfficers": [
+      {
+        "Title": "Ms",
+        "FamilyName": "Burrows",
+        "GivenNames": "Linda",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "PO Box 2387",
+          "Suburb": "Chermside",
+          "State": "QLD",
+          "Postcode": 4032
+        }
+      }
+    ],
+    "Branches": []
+  },
+  {
+    "Id": 1427,
+    "Name": "Health Environment Accountability Rights Transparency (HEART)",
+    "Code": "HEART Party",
+    "Abbreviation": "HEART Party",
+    "RegisterDate": "26 October 2016",
+    "AmendmentDate": "26 October 2016",
+    "Address": "PO Box 3322\nWEST KEMPSEY NSW 2440",
+    "Officer": {
+      "Title": "Ms",
+      "FamilyName": "McCredie",
+      "GivenNames": "Rebecca",
+      "Capacity": "Registered Officer",
+      "Address": {
+        "Line1": "1755 Nulla Nulla Creek Road",
+        "Suburb": "Bellbrook",
+        "State": "NSW",
+        "Postcode": 2440
       }
     },
     "DeputyOfficers": [],
@@ -939,9 +1072,9 @@
     "AmendmentDate": "27 September 2011",
     "Address": "PO Box 1022\nTOWNSVILLE QLD 4810",
     "Officer": {
-      "Title": "Ms",
-      "FamilyName": "Boschen",
-      "GivenNames": "Shannan Christine",
+      "Title": "Mr",
+      "FamilyName": "Fusco",
+      "GivenNames": "Benjamin",
       "Capacity": "Registered Officer",
       "Address": {
         "Line1": "2/321 Sturt Street",
@@ -960,7 +1093,7 @@
     "Abbreviation": "Kim for Canberra",
     "RegisterDate": "18 January 2022",
     "AmendmentDate": "18 January 2022",
-    "Address": "Level 6, 9 Barrack Street\nSYDNEY NSW 2000",
+    "Address": "Suite 259 M Centre\n11 Palmertson Lane\nMANUKA ACT 2603",
     "Officer": {
       "Title": "Ms",
       "FamilyName": "Rubenstein",
@@ -1000,6 +1133,18 @@
     },
     "DeputyOfficers": [
       {
+        "Title": "Mr",
+        "FamilyName": "Mulholland",
+        "GivenNames": "Frederick Sopon",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "10 Gwalia Place",
+          "Suburb": "Gosnells",
+          "State": "WA",
+          "Postcode": 6110
+        }
+      },
+      {
         "Title": "Ms",
         "FamilyName": "Hester",
         "GivenNames": "Gail",
@@ -1009,6 +1154,30 @@
           "Suburb": "Nambucca Heads",
           "State": "NSW",
           "Postcode": 2448
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Fraser",
+        "GivenNames": "Mira",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "17  Chandos Street",
+          "Suburb": "Coburg",
+          "State": "VIC",
+          "Postcode": 3058
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Luyken",
+        "GivenNames": "Suzette",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "2/57 Gordon Street",
+          "Suburb": "Labrador",
+          "State": "QLD",
+          "Postcode": 4215
         }
       }
     ],
@@ -1114,7 +1283,7 @@
         "Abbreviation": "Liberal",
         "RegisterDate": "5 July 1984",
         "AmendmentDate": "5 July 1984",
-        "Address": "PO Box 66\nDEAKIN WEST ACT 2600",
+        "Address": "PO Box 9566\nDEAKIN ACT 2600",
         "Officer": {
           "Title": "Mr",
           "FamilyName": "Wojtonis",
@@ -1139,28 +1308,28 @@
         "Address": "GPO Box 469\nHOBART TAS 7001",
         "Officer": {
           "Title": "Mr",
-          "FamilyName": "Coulson",
-          "GivenNames": "Peter",
+          "FamilyName": "McQuestin",
+          "GivenNames": "Charles",
           "Capacity": "Registered Officer",
           "Address": {
-            "Line1": "Suite 4C",
+            "Line1": "Suite 4C, Level 3",
             "Line2": "33 Salamanca Place",
             "Suburb": "Hobart",
             "State": "TAS",
-            "Postcode": 7000
+            "Postcode": 7001
           }
         },
         "DeputyOfficers": [
           {
-            "Title": "Ms",
-            "FamilyName": "van den Berg",
-            "GivenNames": "Carmen",
+            "Title": "Miss",
+            "FamilyName": "Mazlin",
+            "GivenNames": "Amanda",
             "Capacity": "Deputy Registered Officer",
             "Address": {
-              "Line1": "GPO Box 469",
-              "Suburb": "Hobart",
+              "Line1": "2/21a Ecclestone Road",
+              "Suburb": "Riverside",
               "State": "TAS",
-              "Postcode": 7001
+              "Postcode": 7250
             }
           }
         ]
@@ -1186,7 +1355,20 @@
             "Postcode": 5061
           }
         },
-        "DeputyOfficers": []
+        "DeputyOfficers": [
+          {
+            "Title": "Mr",
+            "FamilyName": "Nuske",
+            "GivenNames": "Julian",
+            "Capacity": "Deputy Registered Officer",
+            "Address": {
+              "Line1": "PO Box 20",
+              "Suburb": "Adelaide",
+              "State": "SA",
+              "Postcode": 5001
+            }
+          }
+        ]
       },
       {
         "Id": 180,
@@ -1248,26 +1430,26 @@
         "DeputyOfficers": [
           {
             "Title": "Ms",
-            "FamilyName": "Ilievska",
-            "GivenNames": "Dorina",
+            "FamilyName": "Silke",
+            "GivenNames": "Christine Jean",
+            "Capacity": "Deputy Registered Officer",
+            "Address": {
+              "Line1": "Locked Bag 2",
+              "Suburb": "Kings Cross",
+              "State": "NSW",
+              "Postcode": 1340
+            }
+          },
+          {
+            "Title": "Mr",
+            "FamilyName": "Chessell",
+            "GivenNames": "Wilson Francis",
             "Capacity": "Deputy Registered Officer",
             "Address": {
               "Line1": "Level 2, 131 Macquarie Street",
               "Suburb": "Sydney",
               "State": "NSW",
               "Postcode": 2000
-            }
-          },
-          {
-            "Title": "Mr",
-            "FamilyName": "Wheatley",
-            "GivenNames": "Peter",
-            "Capacity": "Party Agent",
-            "Address": {
-              "Line1": "Locked Bag 2",
-              "Suburb": "Kings Cross",
-              "State": "NSW",
-              "Postcode": 1340
             }
           }
         ]
@@ -1367,14 +1549,14 @@
     "DeputyOfficers": [
       {
         "Title": "Mr",
-        "FamilyName": "Basily",
-        "GivenNames": "Tim",
+        "FamilyName": "Borsak",
+        "GivenNames": "Robert Czeslaw",
         "Capacity": "Deputy Registered Officer",
         "Address": {
-          "Line1": "33 Souter Street",
-          "Suburb": "Kogarah Bay",
+          "Line1": "PO Box 515",
+          "Suburb": "Ashfield",
           "State": "NSW",
-          "Postcode": 2217
+          "Postcode": 1800
         }
       }
     ],
@@ -1597,17 +1779,6 @@
       },
       {
         "Title": "Mr",
-        "FamilyName": "Irving",
-        "GivenNames": "Damien",
-        "Address": {
-          "Line1": "124 Marlyn Road",
-          "Suburb": "South Hobart",
-          "State": "TAS",
-          "Postcode": 7004
-        }
-      },
-      {
-        "Title": "Mr",
         "FamilyName": "Pollock",
         "GivenNames": "David Charles",
         "Address": {
@@ -1615,6 +1786,18 @@
           "Suburb": "Gray",
           "State": "NT",
           "Postcode": 830
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Haren",
+        "GivenNames": "Emily",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "7/291 Angas Street",
+          "Suburb": "Adelaide",
+          "State": "SA",
+          "Postcode": 5000
         }
       },
       {
@@ -1630,14 +1813,15 @@
         }
       },
       {
-        "Title": "Mr",
-        "FamilyName": "Green",
-        "GivenNames": "Ian",
+        "Title": "Ms",
+        "FamilyName": "Kitsos",
+        "GivenNames": "Gemma",
+        "Capacity": "Deputy Registered Officer",
         "Address": {
-          "Line1": "1a Marlborough Street",
-          "Suburb": "Fullarton",
-          "State": "SA",
-          "Postcode": 5063
+          "Line1": "298 Argyle Street",
+          "Suburb": "North Hobart",
+          "State": "TAS",
+          "Postcode": 7000
         }
       },
       {
@@ -1748,9 +1932,10 @@
         "AmendmentDate": "19 July 1989",
         "Address": "91/215 Stirling Street\nPERTH WA 6000",
         "Officer": {
-          "Title": "Mx",
-          "FamilyName": "Tang",
-          "GivenNames": "Nat",
+          "Title": "Dr",
+          "FamilyName": "Bulbeck",
+          "GivenNames": "Margaret",
+          "Capacity": "Registered Officer",
           "Address": {
             "Line1": "91/215 Stirling Street",
             "Suburb": "Perth",
@@ -1954,7 +2139,7 @@
     "Abbreviation": "Trumpet of Patriots",
     "RegisterDate": "26 July 2011",
     "AmendmentDate": "26 July 2011",
-    "Address": "53 Grand Ridge West\nMIRBOO NORTH VIC 3871",
+    "Address": "153 Gooding Drive\nMERRIMAC QLD 4226",
     "Officer": {
       "Title": "Mr",
       "FamilyName": "O'Rourke",
@@ -1970,26 +2155,14 @@
     "DeputyOfficers": [
       {
         "Title": "Mr",
-        "FamilyName": "Burkett",
-        "GivenNames": "David",
+        "FamilyName": "Favager",
+        "GivenNames": "Neil",
         "Capacity": "Deputy Registered Officer",
         "Address": {
-          "Line1": "361 Seventeen Mile Road",
-          "Suburb": "Oxley",
+          "Line1": "PO Box 8225",
+          "Suburb": "Gold Coast Mc",
           "State": "QLD",
-          "Postcode": 4075
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Aldridge",
-        "GivenNames": "Mark",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "201 Taylors Road",
-          "Suburb": "Penfield Gardens",
-          "State": "SA",
-          "Postcode": 5121
+          "Postcode": 9726
         }
       }
     ],
