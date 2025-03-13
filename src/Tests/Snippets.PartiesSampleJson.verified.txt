@@ -8,10 +8,10 @@
     "AmendmentDate": "3 May 2011",
     "Address": "Ground Floor\n470 St Kilda Rd\nMELBOURNE VIC 3004",
     "Officer": {
-      "Title": "Dr",
-      "FamilyName": "Cheung",
-      "GivenNames": "William",
-      "Capacity": "Party Agent",
+      "Title": "Mrs",
+      "FamilyName": "Elisei",
+      "GivenNames": "Lorna",
+      "Capacity": "Registered Officer",
       "Address": {
         "Line1": "Ground Floor",
         "Line2": "470 St Kilda Road",
