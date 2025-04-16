@@ -32,19 +32,19 @@
     },
     "Locations": [
       {
-        "Postcode": 2906,
+        "Postcode": 2620,
         "Localities": [
-          "Banks",
-          "Conder",
-          "Gordon"
+          "Booth District",
+          "Corin Dam",
+          "Hume",
+          "Paddys River District",
+          "Rendezvous Creek District",
+          "Royalla",
+          "Tennent District",
+          "Tharwa",
+          "Tuggeranong District",
+          "Williamsdale"
         ]
       },
       {
-        "Postcode": 2600,
-        "Localities": [
-          "Hmas Harman"
-        ]
-      },
-      {
-        "Postcode": 2617,
-        "Localities": [
+        "Postcode": 2611,
