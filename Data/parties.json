@@ -34,6 +34,18 @@
         }
       },
       {
+        "Title": "Ms",
+        "FamilyName": "McGovern",
+        "GivenNames": "Amanda",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "173 Grove Road",
+          "Suburb": "Lesmurdie",
+          "State": "WA",
+          "Postcode": 6076
+        }
+      },
+      {
         "Title": "Mr",
         "FamilyName": "Cram",
         "GivenNames": "Austin",
@@ -43,6 +55,66 @@
           "Suburb": "Jeetho",
           "State": "VIC",
           "Postcode": 3945
+        }
+      },
+      {
+        "Title": "Miss",
+        "FamilyName": "Davies",
+        "GivenNames": "Casey",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "2/2 Keats Avenue",
+          "Suburb": "Moonah",
+          "State": "TAS",
+          "Postcode": 7009
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Dillon",
+        "GivenNames": "Gregory",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "60 Mumford Road",
+          "Suburb": "KURONGBAH",
+          "State": "QLD",
+          "Postcode": 4503
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Sutch",
+        "GivenNames": "Jenna",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "13 Gray Court",
+          "Suburb": "Prospect",
+          "State": "SA",
+          "Postcode": 5082
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Soxsmith",
+        "GivenNames": "Robyn",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "81 Morrison Street",
+          "Suburb": "Kambah",
+          "State": "ACT",
+          "Postcode": 2902
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Laxmanalal",
+        "GivenNames": "Rohan",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "2106/1 Brushbox Street",
+          "Suburb": "SYDNEY OLYPMIC PARK",
+          "State": "NSW",
+          "Postcode": 2127
         }
       }
     ],
@@ -57,9 +129,10 @@
     "AmendmentDate": "19 December 2011",
     "Address": "PO Box 1077\nOSBORNE PARK WA 6916",
     "Officer": {
-      "Title": "Ms",
-      "FamilyName": "Groenewald",
-      "GivenNames": "Maryka",
+      "Title": "Mr",
+      "FamilyName": "Hildebrandt",
+      "GivenNames": "Louis",
+      "Capacity": "Registered Officer",
       "Address": {
         "Line1": "3/16 Guthrie Street",
         "Suburb": "Osborne Park",
@@ -238,7 +311,7 @@
         "Capacity": "Deputy Registered Officer",
         "Address": {
           "Line1": "27 Seahorse Parade",
-          "Suburb": "KERRINYUP",
+          "Suburb": "Karrinyup",
           "State": "WA",
           "Postcode": 6018
         }
@@ -303,6 +376,18 @@
         }
       },
       {
+        "Title": "Mr",
+        "FamilyName": "Crawford",
+        "GivenNames": "Glenn",
+        "Capacity": "Deputy Registered ",
+        "Address": {
+          "Line1": "853 Rainbows Road",
+          "Suburb": "Kullogum",
+          "State": "QLD",
+          "Postcode": 4660
+        }
+      },
+      {
         "Title": "Mr ",
         "FamilyName": "Urquhart",
         "GivenNames": "Ian Alistair",
@@ -314,20 +399,20 @@
         }
       },
       {
-        "Title": "Ms",
-        "FamilyName": "Hicks DeVylder",
-        "GivenNames": "Janna",
+        "Title": "Mr",
+        "FamilyName": "Krebs",
+        "GivenNames": "John Jason",
         "Capacity": "Deputy Registered Officer",
         "Address": {
-          "Line1": "67 Renwick Street",
-          "Suburb": "Drummoyne",
+          "Line1": "50 Newton Road",
+          "Suburb": "Strathfield",
           "State": "NSW",
-          "Postcode": 2047
+          "Postcode": 2135
         }
       },
       {
-        "Title": "Ms",
-        "FamilyName": "Clothier",
+        "Title": "Mrs",
+        "FamilyName": "Churchill",
         "GivenNames": "Lucy Grace",
         "Capacity": "Deputy Registered Officer",
         "Address": {
@@ -1032,7 +1117,7 @@
         "Capacity": "Deputy Registered Officer",
         "Address": {
           "Line1": "69 Roseleigh Street",
-          "Suburb": "KALINGA",
+          "Suburb": "Kalinga",
           "State": "QLD",
           "Postcode": 4030
         }
@@ -1476,7 +1561,80 @@
         "Postcode": 3008
       }
     },
-    "DeputyOfficers": [],
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Rebase",
+        "GivenNames": "Anthony Laurence",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "11 Mountain Street",
+          "Suburb": "Epping",
+          "State": "NSW",
+          "Postcode": 2121
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "McCoull",
+        "GivenNames": "Jake",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "30 Berkley Road",
+          "Suburb": "Marangaroo",
+          "State": "WA",
+          "Postcode": 6064
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Hocknell",
+        "GivenNames": "Joel",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "4/15 Wentworth Court",
+          "Suburb": "Golden Grove",
+          "State": "SA",
+          "Postcode": 5125
+        }
+      },
+      {
+        "Title": "Ms",
+        "FamilyName": "Versteegen",
+        "GivenNames": "Rachel Elaine Kathleen",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "12 Hodgkinson Street",
+          "Suburb": "Clifton Hill",
+          "State": "VIC",
+          "Postcode": 3068
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Davies",
+        "GivenNames": "Richard",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "2 Kanuka Street",
+          "Suburb": "Algester",
+          "State": "QLD",
+          "Postcode": 4115
+        }
+      },
+      {
+        "Title": "Mr",
+        "FamilyName": "Gojkovic",
+        "GivenNames": "Simo",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "413 Watson Road",
+          "Suburb": "ACACIA ROAD",
+          "State": "QLD",
+          "Postcode": 4110
+        }
+      }
+    ],
     "Branches": []
   },
   {
@@ -1499,6 +1657,18 @@
       }
     },
     "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Jones",
+        "GivenNames": "Alexander",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "2/6-12 Bornia Road",
+          "Suburb": "Brisbane Airport",
+          "State": "QLD",
+          "Postcode": 4008
+        }
+      },
       {
         "Title": "Mr",
         "FamilyName": "Ashby",
@@ -1779,6 +1949,17 @@
       },
       {
         "Title": "Mr",
+        "FamilyName": "Irving",
+        "GivenNames": "Damien",
+        "Address": {
+          "Line1": "124 Marlyn Road",
+          "Suburb": "South Hobart",
+          "State": "TAS",
+          "Postcode": 7004
+        }
+      },
+      {
+        "Title": "Mr",
         "FamilyName": "Pollock",
         "GivenNames": "David Charles",
         "Address": {
@@ -1801,18 +1982,6 @@
         }
       },
       {
-        "Title": "Mr",
-        "FamilyName": "Whisson",
-        "GivenNames": "Gary",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "PO Box 181",
-          "Suburb": "Orford",
-          "State": "TAS",
-          "Postcode": 7190
-        }
-      },
-      {
         "Title": "Ms",
         "FamilyName": "Kitsos",
         "GivenNames": "Gemma",
@@ -1825,15 +1994,15 @@
         }
       },
       {
-        "Title": "Mr",
-        "FamilyName": "Cruz",
-        "GivenNames": "James",
+        "Title": "Ms",
+        "FamilyName": "Moss",
+        "GivenNames": "Philippa",
         "Capacity": "Deputy Registered Officer",
         "Address": {
-          "Line1": "2/18 Lonsdale Street",
-          "Suburb": "Braddon",
+          "Line1": "PO Box 2019",
+          "Suburb": "CIVIC",
           "State": "ACT",
-          "Postcode": 2612
+          "Postcode": 2600
         }
       },
       {
@@ -2117,15 +2286,15 @@
         "AmendmentDate": "1 April 1985",
         "Address": "PO Box 1418\nWEST PERTH WA 6872",
         "Officer": {
-          "Title": "Mr",
-          "FamilyName": "Mallick",
-          "GivenNames": "Jack",
-          "Capacity": "Registered Officer",
+          "Title": "Ms",
+          "FamilyName": "Kirby",
+          "GivenNames": "Julie",
+          "Capacity": "Party Agent",
           "Address": {
-            "Line1": "1 Graylands Road",
-            "Suburb": "Claremont",
+            "Line1": "1/43 Ventnor Avenue",
+            "Suburb": "West Perth",
             "State": "WA",
-            "Postcode": 6010
+            "Postcode": 6005
           }
         },
         "DeputyOfficers": []
@@ -2160,7 +2329,7 @@
         "Capacity": "Deputy Registered Officer",
         "Address": {
           "Line1": "PO Box 8225",
-          "Suburb": "Gold Coast Mc",
+          "Suburb": "GOLD COAST MC",
           "State": "QLD",
           "Postcode": 9726
         }

@@ -189,7 +189,7 @@ static class PartyScraper
 
         return new()
         {
-            State = (State) Enum.Parse(typeof(State), address.State!),
+            State = (State)Enum.Parse(typeof(State), address.State!),
             Line1 = line1,
             Line2 = line2,
             Line3 = line3,
@@ -200,12 +200,13 @@ static class PartyScraper
 
     static string FixSuburbCase(AecModels.Address deputyOfficerAddress, string postcode)
     {
-        if(!AustraliaData.PostCodes.TryGetValue(postcode, out var suburbs))
+        var suburb = deputyOfficerAddress.Suburb.Trim();
+        if (!AustraliaData.PostCodes.TryGetValue(postcode, out var suburbs))
         {
-            throw new($"Could not find {postcode} in AustraliaData.PostCodes");
+            // CountryData not updated for a new suburb
+            return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(suburb);
         }
 
-        var suburb = deputyOfficerAddress.Suburb.Trim();
         var place = suburbs.SingleOrDefault(_ => string.Equals(_.Name, suburb, StringComparison.OrdinalIgnoreCase));
         if (place == null)
         {
