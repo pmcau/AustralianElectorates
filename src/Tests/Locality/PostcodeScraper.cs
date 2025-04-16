@@ -27,10 +27,10 @@ static class PostcodeScraper
 
     static IEnumerable<AecLocalityData> GetLocalityData(HtmlDocument doc, int postcode)
     {
-        var table = doc.DocumentNode.SelectSingleNode("//table[@id='ContentPlaceHolderBody_gridViewLocalities']");
+        var table = doc.DocumentNode.SelectSingleNode("//table[@id='ContentPlaceHolderBody_gridViewLocalities']")!;
 
         foreach (var tr in table
-                     .SelectNodes("tr")
+                     .SelectNodes("tr")!
                      .Where(p => !p.HasAttributes))
         {
             var tds = tr.SelectNodes("td");
@@ -55,7 +55,7 @@ static class PostcodeScraper
     static Dictionary<string, string> ParseFormForParameters(HtmlDocument doc)
     {
         var parameters = new Dictionary<string, string>();
-        var form = doc.DocumentNode.SelectSingleNode("//form[@id='formMaster']");
+        var form = doc.DocumentNode.SelectSingleNode("//form[@id='formMaster']")!;
 
         var inputs = form.SelectNodes("input[@type='hidden']");
 
@@ -72,7 +72,7 @@ static class PostcodeScraper
 
     static int GetPageCount(HtmlDocument doc)
     {
-        var table = doc.DocumentNode.SelectSingleNode("//table[@id='ContentPlaceHolderBody_gridViewLocalities']");
+        var table = doc.DocumentNode.SelectSingleNode("//table[@id='ContentPlaceHolderBody_gridViewLocalities']")!;
         var nodes = table.SelectNodes("tr[@class='pagingLink']//a");
         var nodeCount = nodes?.Count ?? 0;
         return nodeCount + 1;

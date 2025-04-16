@@ -38,7 +38,7 @@ static class ElectoratesScraper
             var fullName = GetFullName(document, year);
             var values = new Dictionary<string, HtmlNode>(StringComparer.OrdinalIgnoreCase);
             var profileId = FindProfileTable(document);
-            var htmlNodeCollection = profileId.SelectNodes("dt");
+            var htmlNodeCollection = profileId.SelectNodes("dt")!;
             foreach (var keyNode in htmlNodeCollection)
             {
                 var valueNode = keyNode.NextSibling.NextSibling;
@@ -217,5 +217,5 @@ static class ElectoratesScraper
 
     static HtmlNode FindProfileTable(HtmlDocument document) =>
         document.DocumentNode
-            .SelectSingleNode("//comment()[contains(., ' InstanceBeginEditable name=\"Content\" ')]/following-sibling::dl");
+            .SelectSingleNode("//comment()[contains(., ' InstanceBeginEditable name=\"Content\" ')]/following-sibling::dl")!;
 }
