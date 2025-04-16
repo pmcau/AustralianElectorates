@@ -1,52 +1,52 @@
 ﻿[
   {
-    Place: Acton,
-    Postcode: 2601,
+    Place: Beard,
+    Postcode: 2620,
     Electorate: CANBERRA
   },
   {
-    Place: Canberra Central,
-    Postcode: 2601,
-    Electorate: CANBERRA
+    Place: Booth District,
+    Postcode: 2620,
+    Electorate: BEAN
   },
   {
-    Place: Canberra City,
-    Postcode: 2601,
-    Electorate: CANBERRA
+    Place: Burra,
+    Postcode: 2620,
+    Electorate: EDEN-MONARO
   },
   {
-    Place: Ainslie,
-    Postcode: 2602,
-    Electorate: CANBERRA
+    Place: Carwoola,
+    Postcode: 2620,
+    Electorate: EDEN-MONARO
   },
   {
-    Place: Dickson,
-    Postcode: 2602,
-    Electorate: CANBERRA
+    Place: Clear Range,
+    Postcode: 2620,
+    Electorate: EDEN-MONARO
   },
   {
-    Place: Downer,
-    Postcode: 2602,
-    Electorate: CANBERRA
+    Place: Corin Dam,
+    Postcode: 2620,
+    Electorate: BEAN
   },
   {
-    Place: Hackett,
-    Postcode: 2602,
-    Electorate: CANBERRA
+    Place: Crestwood,
+    Postcode: 2620,
+    Electorate: EDEN-MONARO
   },
   {
-    Place: Lyneham,
-    Postcode: 2602,
-    Electorate: CANBERRA
+    Place: Environa,
+    Postcode: 2620,
+    Electorate: EDEN-MONARO
   },
   {
-    Place: O'Connor,
-    Postcode: 2602,
-    Electorate: CANBERRA
+    Place: Fernleigh Park,
+    Postcode: 2620,
+    Electorate: EDEN-MONARO
   },
   {
-    Place: Watson,
-    Postcode: 2602,
-    Electorate: CANBERRA
+    Place: Googong,
+    Postcode: 2620,
+    Electorate: EDEN-MONARO
   }
 ]
