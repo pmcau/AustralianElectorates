@@ -87,24 +87,24 @@ Sample:
 ```txt
 [
   {
-    "Place": "Acton",
-    "Postcode": 2601,
+    "Place": "Beard",
+    "Postcode": 2620,
     "Electorate": "CANBERRA"
   },
   {
-    "Place": "Canberra Central",
-    "Postcode": 2601,
-    "Electorate": "CANBERRA"
+    "Place": "Booth District",
+    "Postcode": 2620,
+    "Electorate": "BEAN"
   },
   {
-    "Place": "Canberra City",
-    "Postcode": 2601,
-    "Electorate": "CANBERRA"
+    "Place": "Burra",
+    "Postcode": 2620,
+    "Electorate": "EDEN-MONARO"
   },
   {
-    "Place": "Ainslie",
-    "Postcode": 2602,
-    "Electorate": "CANBERRA"
+    "Place": "Carwoola",
+    "Postcode": 2620,
+    "Electorate": "EDEN-MONARO"
   },
 ```
 <sup><a href='/src/Tests/Snippets.LocalitiesSampleJson.verified.txt#L1-L21' title='Snippet source file'>snippet source</a> | <a href='#snippet-Snippets.LocalitiesSampleJson.verified.txt' title='Start of snippet'>anchor</a></sup>
