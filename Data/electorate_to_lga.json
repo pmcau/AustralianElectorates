@@ -403,15 +403,6 @@
     "Moorabool",
     "Wyndham"
   ],
-  "Higgins": [
-    "Boroondara",
-    "Glen Eira",
-    "Melbourne",
-    "Monash",
-    "Port Phillip",
-    "Stonnington",
-    "Yarra"
-  ],
   "Holt": [
     "Cardinia",
     "Casey",
@@ -628,6 +619,15 @@
     "Melbourne",
     "Moonee Valley",
     "Moreland",
+    "Yarra"
+  ],
+  "Higgins": [
+    "Boroondara",
+    "Glen Eira",
+    "Melbourne",
+    "Monash",
+    "Port Phillip",
+    "Stonnington",
     "Yarra"
   ],
   "Blair": [
@@ -1256,14 +1256,6 @@
     "Lake Macquarie",
     "Newcastle"
   ],
-  "North Sydney": [
-    "Hunters Hill",
-    "Lane Cove",
-    "Mosman",
-    "North Sydney",
-    "Ryde",
-    "Willoughby"
-  ],
   "Page": [
     "Armidale",
     "Ballina",
@@ -1426,6 +1418,14 @@
     "Shoalhaven",
     "Wingecarribee",
     "Wollongong"
+  ],
+  "North Sydney": [
+    "Hunters Hill",
+    "Lane Cove",
+    "Mosman",
+    "North Sydney",
+    "Ryde",
+    "Willoughby"
   ],
   "Brand": [
     "Cockburn",

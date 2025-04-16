@@ -45,18 +45,18 @@
     NameDerivation: The Northern Territory was surrendered by the State of South Australia and accepted by the Commonwealth on 1 January 1911. It was defined in the Northern Territory Acceptance Act 1910 as that part of Australia which lies to the northward of the twenty-sixth parallel of South Latitude and between the one hundred and twenty-ninth and one hundred and thirty-eighth degrees of East Longitude, together with the bays and gulfs therein, and all and every the islands adjacent to any part of the mainland within such limits as aforesaid, with their rights, members, and appurtenances.
   },
   lingiari: {
-    MapUrl: http://www.aec.gov.au/profiles/nt/files/2017/2017-aec-a4-map-nt-lingiari.pdf,
+    MapUrl: http://www.aec.gov.au/redistributions/2024/nt/final-report/files/maps-a4/2025-AEC-Northern%20Territory-A4-Lingiari-Final.pdf,
     Name: Lingiari,
     ShortName: lingiari,
     State: NT,
-    Area: 1348157.94,
+    Area: 1348073.0,
     Exist2019: false,
     Exist2022: false,
     Exist2025: false,
     DateGazetted: Date_3,
-    Description: Lingiari covers the majority of the Northern Territory, with the exception of the Darwin Municipality and most of the Palmerston Municipality.<br> Lingiari includes the Territory of Cocos (Keeling) Islands and the Territory of Christmas Island.,
+    Description: <p>The Division of Lingiari will consist of:</p><ul><li>Alice Springs Town Council,</li><li>Barkly Regional Council,</li><li>Belyuen Community Government Council,</li><li>Central Desert Regional Council,</li><li>Shire of Christmas Island,</li><li>Shire of the Cocos (Keeling) Islands,</li><li>Coomalie Community Government Council,</li><li>East Arnhem Regional Council,</li><li>Katherine Town Council,</li><li>Litchfield Council,</li><li>MacDonnell Regional Council,</li><li>Roper Gulf Regional Council,</li><li>Tiwi Islands Regional Council,</li><li>Victoria Daly Regional Council,</li><li>Wagait Shire Council,</li><li>West Arnhem Regional Council,</li><li>West Daly Regional Council,</li><li>the unincorporated area of Alyangula,</li><li>the unincorporated area of Nhulunbuy, and</li><li>the unincorporated area of Yulara.</li></ul>,
     DemographicRating: <strong>Rural</strong> - outside capital cities and without majority of enrolment in major provincial cities.,
-    NameDerivation: Named in honour of Vincent Lingiari AM 19??-88, who was a member of the Gurindji people from the Victoria River District. Mr Lingiari was a stockman and lands right leader who worked for many years to improve conditions for Aboriginal people. In 1966, he led the walk-off of his people from Wave Hill Station, which eventually resulted in the establishment of Wattie Creek and a land grant to the Gurindji people.,
+    NameDerivation: Named in honour of Vincent Lingiari AM 19??-88, who was a member of the Gurindji people from the Victoria River District. Mr Lingiari was a stockman and land rights leader who worked for many years to improve conditions for Aboriginal people. In 1966, he led the walk-off of his people from Wave Hill Station, which eventually resulted in the establishment of Wattie Creek and a land grant to the Gurindji people.,
     Enrollment: 74008,
     TwoCandidatePreferred: {
       Elected: {

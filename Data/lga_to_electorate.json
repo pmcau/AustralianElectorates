@@ -384,8 +384,8 @@
     "Parkes"
   ],
   "Mosman": [
-    "North Sydney",
-    "Warringah"
+    "Warringah",
+    "North Sydney"
   ],
   "Murray River": [
     "Mallee",
@@ -424,8 +424,8 @@
     "Shortland"
   ],
   "North Sydney": [
-    "North Sydney",
-    "Warringah"
+    "Warringah",
+    "North Sydney"
   ],
   "Northern Beaches": [
     "Berowra",
@@ -490,8 +490,8 @@
   "Ryde": [
     "Bennelong",
     "Bradfield",
-    "North Sydney",
-    "Parramatta"
+    "Parramatta",
+    "North Sydney"
   ],
   "Shellharbour": [
     "Gilmore",
@@ -706,11 +706,11 @@
   "Boroondara": [
     "Chisholm",
     "Cooper",
-    "Higgins",
     "Jagajaga",
     "Kooyong",
     "Melbourne",
-    "Menzies"
+    "Menzies",
+    "Higgins"
   ],
   "Brimbank": [
     "Fraser",
@@ -783,9 +783,9 @@
   ],
   "Glen Eira": [
     "Goldstein",
-    "Higgins",
     "Hotham",
-    "Macnamara"
+    "Macnamara",
+    "Higgins"
   ],
   "Glenelg": [
     "Barker",
@@ -914,11 +914,11 @@
   "Melbourne": [
     "Fraser",
     "Gellibrand",
-    "Higgins",
     "Macnamara",
     "Maribyrnong",
     "Melbourne",
-    "Wills"
+    "Wills",
+    "Higgins"
   ],
   "Melton": [
     "Gorton",
@@ -948,8 +948,8 @@
     "Bruce",
     "Chisholm",
     "Deakin",
-    "Higgins",
-    "Hotham"
+    "Hotham",
+    "Higgins"
   ],
   "Moonee Valley": [
     "Fraser",
@@ -1004,8 +1004,8 @@
   ],
   "Port Phillip": [
     "Goldstein",
-    "Higgins",
-    "Macnamara"
+    "Macnamara",
+    "Higgins"
   ],
   "Pyrenees": [
     "Ballarat",
@@ -1026,9 +1026,9 @@
   ],
   "Stonnington": [
     "Chisholm",
-    "Higgins",
     "Kooyong",
-    "Melbourne"
+    "Melbourne",
+    "Higgins"
   ],
   "Strathbogie": [
     "Bendigo",
@@ -1096,11 +1096,11 @@
   ],
   "Yarra": [
     "Cooper",
-    "Higgins",
     "Jagajaga",
     "Kooyong",
     "Melbourne",
-    "Wills"
+    "Wills",
+    "Higgins"
   ],
   "Yarra Ranges": [
     "Aston",

@@ -27,7 +27,16 @@ static class PostcodeScraper
 
     static IEnumerable<AecLocalityData> GetLocalityData(HtmlDocument doc, int postcode)
     {
-        var table = doc.DocumentNode.SelectSingleNode("//table[@id='ContentPlaceHolderBody_gridViewLocalities']")!;
+        var tablePath = "//table[@id='ContentPlaceHolderBody_gridViewLocalities']";
+        var table = doc.DocumentNode.SelectSingleNode(tablePath);
+        if (table == null)
+        {
+            throw new(
+                $"""
+                 Could not find table: {tablePath}
+                 {doc}
+                 """);
+        }
 
         foreach (var tr in table
                      .SelectNodes("tr")!
