@@ -36,7 +36,7 @@ static class PartyScraper
         }
         catch (Exception exception)
         {
-            throw new($"Failed to parse {htmlPath} {htmlPath}", exception);
+            throw new($"Failed to parse {url} {htmlPath}", exception);
         }
     }
 
@@ -200,8 +200,11 @@ static class PartyScraper
 
     static string FixSuburbCase(AecModels.Address deputyOfficerAddress, string postcode)
     {
-        var suburbs = AustraliaData.PostCodes.Single(_ => _.Key == postcode)
-            .Value;
+        if(!AustraliaData.PostCodes.TryGetValue(postcode, out var suburbs))
+        {
+            throw new($"Could not find {postcode} in AustraliaData.PostCodes");
+        }
+
         var suburb = deputyOfficerAddress.Suburb.Trim();
         var place = suburbs.SingleOrDefault(_ => string.Equals(_.Name, suburb, StringComparison.OrdinalIgnoreCase));
         if (place == null)
