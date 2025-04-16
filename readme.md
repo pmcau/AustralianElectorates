@@ -55,22 +55,22 @@ Sample:
     },
     "Locations": [
       {
-        "Postcode": 2906,
+        "Postcode": 2620,
         "Localities": [
-          "Banks",
-          "Conder",
-          "Gordon"
+          "Booth District",
+          "Corin Dam",
+          "Hume",
+          "Paddys River District",
+          "Rendezvous Creek District",
+          "Royalla",
+          "Tennent District",
+          "Tharwa",
+          "Tuggeranong District",
+          "Williamsdale"
         ]
       },
       {
-        "Postcode": 2600,
-        "Localities": [
-          "Hmas Harman"
-        ]
-      },
-      {
-        "Postcode": 2617,
-        "Localities": [
+        "Postcode": 2611,
 ```
 <sup><a href='/src/Tests/Snippets.ElectoratesSampleJson.verified.txt#L1-L50' title='Snippet source file'>snippet source</a> | <a href='#snippet-Snippets.ElectoratesSampleJson.verified.txt' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
