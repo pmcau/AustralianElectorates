@@ -30,6 +30,7 @@ static class MetadataCleaner
             {
                 properties["area"] = (long)area;
             }
+
             properties["state"] = stateFromProperties;
         }
     }
