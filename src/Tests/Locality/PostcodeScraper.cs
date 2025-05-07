@@ -14,7 +14,7 @@ static class PostcodeScraper
         {
             var postcode = postcodes[index];
 
-            if (index % 50 == 0)
+            if (index % 250 == 0)
             {
                 outputHelper.WriteLine($"{index} of {postcodes.Count}");
             }

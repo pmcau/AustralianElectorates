@@ -393,10 +393,19 @@ Elections are currently added manually as they are declared.
         Electorates = Electorates
             .Where(_ => _.Exist2022)
             .ToList()
+    },
+    new()
+    {
+        Parliament = 48,
+        Year = 2024,
+        Date = new(2022, 05, 3),
+        Electorates = Electorates
+            .Where(_ => _.Exist2025)
+            .ToList()
     }
 ];
 ```
-<sup><a href='/src/AustralianElectorates/DataLoader.cs#L72-L94' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/AustralianElectorates/DataLoader.cs#L72-L103' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 

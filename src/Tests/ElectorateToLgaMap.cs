@@ -18,7 +18,7 @@ public class ElectorateToLgaMap
 
         var electorates = DataLoader
             .Electorates
-            .Where(_ => _.Exist2022)
+            .Where(_ => _.Exist2025)
             .Select(
                 _ =>
                 {
