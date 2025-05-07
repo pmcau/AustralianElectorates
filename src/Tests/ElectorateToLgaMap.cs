@@ -3,7 +3,6 @@ using NetTopologySuite.Geometries;
 using NetTopologySuite.IO;
 using Newtonsoft.Json;
 
-//TODO:
 public class ElectorateToLgaMap
 {
     [Fact]
@@ -23,8 +22,8 @@ public class ElectorateToLgaMap
                 _ =>
                 {
                     var serializer = GeoJsonSerializer.Create(new GeometryFactoryEx());
-                    using var jsonReader = new JsonTextReader(new StringReader(_.Get2022Map()
-                        .GeoJson));
+                    var stringReader = new StringReader(_.Get2025Map().GeoJson);
+                    using var jsonReader = new JsonTextReader(stringReader);
                     var featureCollection = serializer.Deserialize<FeatureCollection>(jsonReader)!;
                     var feature = featureCollection.Single();
                     return new
