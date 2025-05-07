@@ -20,8 +20,16 @@ static class MetadataCleaner
 
             var shortName = Electorate.GetShortName(electorate);
             properties.Clear();
-            properties["electorateName"] = electorate;
             properties["electorateShortName"] = shortName;
+            if (shortName == "oconnor")
+            {
+                properties["electorateName"] = "O'Connor";
+            }
+            else
+            {
+                properties["electorateName"] = electorate;
+            }
+
             if (area is double doubleArea)
             {
                 properties["area"] = Math.Round(doubleArea, 6);
