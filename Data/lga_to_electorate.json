@@ -19,7 +19,6 @@
   ],
   "Bathurst": [
     "Calare",
-    "Hume",
     "Riverina"
   ],
   "Bayside (NSW)": [
@@ -30,7 +29,6 @@
     "Sydney"
   ],
   "Bega Valley": [
-    "Gippsland",
     "Eden-Monaro"
   ],
   "Bellingen": [
@@ -81,6 +79,7 @@
     "Parkes"
   ],
   "Burwood": [
+    "Grayndler",
     "Reid",
     "Watson"
   ],
@@ -106,8 +105,8 @@
     "Werriwa"
   ],
   "Canada Bay": [
-    "Grayndler",
-    "Reid"
+    "Reid",
+    "Sydney"
   ],
   "Canterbury-Bankstown": [
     "Banks",
@@ -116,13 +115,11 @@
     "Fowler",
     "Grayndler",
     "Hughes",
-    "McMahon",
     "Watson"
   ],
   "Carrathool": [
     "Farrer",
-    "Parkes",
-    "Riverina"
+    "Parkes"
   ],
   "Central Coast (NSW)": [
     "Berowra",
@@ -159,24 +156,23 @@
   ],
   "Coolamon": [
     "Farrer",
+    "Parkes",
     "Riverina"
   ],
   "Coonamble": [
     "Parkes"
   ],
   "Cootamundra-Gundagai": [
-    "Eden-Monaro",
     "Riverina"
   ],
   "Cowra": [
     "Calare",
-    "Hume",
+    "Parkes",
     "Riverina"
   ],
   "Cumberland": [
     "Blaxland",
     "Fowler",
-    "Greenway",
     "McMahon",
     "Parramatta",
     "Reid",
@@ -202,6 +198,7 @@
     "Blaxland",
     "Fowler",
     "McMahon",
+    "Watson",
     "Werriwa"
   ],
   "Federation": [
@@ -218,8 +215,7 @@
   "Georges River": [
     "Banks",
     "Barton",
-    "Cook",
-    "Watson"
+    "Cook"
   ],
   "Gilgandra": [
     "Parkes"
@@ -231,11 +227,11 @@
   "Goulburn Mulwaree": [
     "Eden-Monaro",
     "Gilmore",
-    "Hume"
+    "Riverina",
+    "Whitlam"
   ],
   "Greater Hume": [
     "Indi",
-    "Eden-Monaro",
     "Farrer",
     "Riverina"
   ],
@@ -258,15 +254,13 @@
     "Hunter",
     "Lindsay",
     "Macquarie",
-    "Mitchell",
     "Robertson"
   ],
   "Hay": [
     "Farrer"
   ],
   "Hilltops": [
-    "Eden-Monaro",
-    "Hume",
+    "Parkes",
     "Riverina"
   ],
   "Hornsby": [
@@ -277,16 +271,14 @@
     "Robertson"
   ],
   "Hunters Hill": [
-    "Bennelong",
-    "North Sydney"
+    "Bennelong"
   ],
   "Inner West": [
     "Barton",
     "Grayndler",
     "Kingsford Smith",
     "Reid",
-    "Sydney",
-    "Watson"
+    "Sydney"
   ],
   "Inverell": [
     "Maranoa",
@@ -319,8 +311,7 @@
   ],
   "Lachlan": [
     "Farrer",
-    "Parkes",
-    "Riverina"
+    "Parkes"
   ],
   "Lake Macquarie": [
     "Dobell",
@@ -330,7 +321,9 @@
     "Shortland"
   ],
   "Lane Cove": [
-    "North Sydney"
+    "Bennelong",
+    "Bradfield",
+    "Warringah"
   ],
   "Leeton": [
     "Farrer"
@@ -346,13 +339,13 @@
   ],
   "Liverpool": [
     "Banks",
-    "Blaxland",
     "Fowler",
     "Hughes",
     "Hume",
     "Lindsay",
     "Macarthur",
     "McMahon",
+    "Watson",
     "Werriwa"
   ],
   "Liverpool Plains": [
@@ -384,8 +377,7 @@
     "Parkes"
   ],
   "Mosman": [
-    "Warringah",
-    "North Sydney"
+    "Warringah"
   ],
   "Murray River": [
     "Mallee",
@@ -410,22 +402,22 @@
   ],
   "Narrandera": [
     "Farrer",
+    "Parkes",
     "Riverina"
   ],
   "Narromine": [
     "Calare",
-    "Parkes",
-    "Riverina"
+    "Parkes"
   ],
   "Newcastle": [
-    "Hunter",
     "Newcastle",
     "Paterson",
     "Shortland"
   ],
   "North Sydney": [
-    "Warringah",
-    "North Sydney"
+    "Bennelong",
+    "Bradfield",
+    "Warringah"
   ],
   "Northern Beaches": [
     "Berowra",
@@ -437,21 +429,20 @@
   "Oberon": [
     "Calare",
     "Hume",
-    "Macquarie"
+    "Macquarie",
+    "Riverina"
   ],
   "Orange": [
     "Calare"
   ],
   "Parkes": [
     "Calare",
-    "Parkes",
-    "Riverina"
+    "Parkes"
   ],
   "Parramatta": [
     "Bennelong",
     "Berowra",
     "Blaxland",
-    "Greenway",
     "Mitchell",
     "Parramatta",
     "Reid"
@@ -477,7 +468,7 @@
     "Canberra",
     "Eden-Monaro",
     "Gilmore",
-    "Hume"
+    "Riverina"
   ],
   "Randwick": [
     "Kingsford Smith",
@@ -489,9 +480,9 @@
   ],
   "Ryde": [
     "Bennelong",
+    "Berowra",
     "Bradfield",
-    "Parramatta",
-    "North Sydney"
+    "Parramatta"
   ],
   "Shellharbour": [
     "Gilmore",
@@ -501,7 +492,6 @@
     "Fenner",
     "Eden-Monaro",
     "Gilmore",
-    "Hume",
     "Whitlam"
   ],
   "Singleton": [
@@ -513,8 +503,8 @@
   ],
   "Snowy Monaro": [
     "Bean",
-    "Gippsland",
-    "Eden-Monaro"
+    "Eden-Monaro",
+    "Riverina"
   ],
   "Snowy Valleys": [
     "Bean",
@@ -525,6 +515,8 @@
     "Riverina"
   ],
   "Strathfield": [
+    "Blaxland",
+    "Grayndler",
     "Reid",
     "Watson"
   ],
@@ -547,6 +539,7 @@
     "Parkes"
   ],
   "Temora": [
+    "Parkes",
     "Riverina"
   ],
   "Tenterfield": [
@@ -557,8 +550,10 @@
   ],
   "The Hills": [
     "Berowra",
+    "Greenway",
     "Macquarie",
     "Mitchell",
+    "Parramatta",
     "Robertson"
   ],
   "Tweed": [
@@ -578,13 +573,13 @@
     "Calare",
     "Eden-Monaro",
     "Hume",
-    "Riverina"
+    "Riverina",
+    "Whitlam"
   ],
   "Uralla": [
     "New England"
   ],
   "Wagga Wagga": [
-    "Eden-Monaro",
     "Farrer",
     "Riverina"
   ],
@@ -609,6 +604,7 @@
     "Wentworth"
   ],
   "Weddin": [
+    "Parkes",
     "Riverina"
   ],
   "Wentworth": [
@@ -619,12 +615,14 @@
   "Willoughby": [
     "Bennelong",
     "Bradfield",
-    "North Sydney"
+    "Warringah"
   ],
   "Wingecarribee": [
     "Cunningham",
+    "Eden-Monaro",
     "Gilmore",
     "Hume",
+    "Riverina",
     "Whitlam"
   ],
   "Wollondilly": [
@@ -633,7 +631,9 @@
     "Hume",
     "Lindsay",
     "Macarthur",
-    "Macquarie"
+    "Macquarie",
+    "Riverina",
+    "Whitlam"
   ],
   "Wollongong": [
     "Cunningham",
@@ -643,14 +643,12 @@
     "Whitlam"
   ],
   "Woollahra": [
-    "Sydney",
     "Wentworth"
   ],
   "Yass Valley": [
     "Bean",
     "Fenner",
     "Eden-Monaro",
-    "Hume",
     "Riverina"
   ],
   "Unincorporated NSW": [
@@ -709,8 +707,7 @@
     "Jagajaga",
     "Kooyong",
     "Melbourne",
-    "Menzies",
-    "Higgins"
+    "Menzies"
   ],
   "Brimbank": [
     "Fraser",
@@ -729,6 +726,7 @@
     "Farrer"
   ],
   "Cardinia": [
+    "Bruce",
     "Casey",
     "Holt",
     "La Trobe",
@@ -750,7 +748,6 @@
   ],
   "Colac Otway": [
     "Ballarat",
-    "Corangamite",
     "Wannon"
   ],
   "Corangamite": [
@@ -758,17 +755,16 @@
     "Wannon"
   ],
   "Darebin": [
-    "Calwell",
     "Cooper",
     "Jagajaga",
-    "Melbourne",
     "Scullin",
     "Wills"
   ],
   "East Gippsland": [
     "Gippsland",
     "Indi",
-    "Eden-Monaro"
+    "Eden-Monaro",
+    "Riverina"
   ],
   "Frankston": [
     "Dunkley",
@@ -782,10 +778,11 @@
     "Farrer"
   ],
   "Glen Eira": [
+    "Chisholm",
     "Goldstein",
     "Hotham",
-    "Macnamara",
-    "Higgins"
+    "Kooyong",
+    "Macnamara"
   ],
   "Glenelg": [
     "Barker",
@@ -794,7 +791,6 @@
   ],
   "Golden Plains": [
     "Ballarat",
-    "Corangamite",
     "Corio",
     "Hawke",
     "Wannon"
@@ -816,7 +812,7 @@
     "Corangamite",
     "Corio",
     "Hawke",
-    "Lalor"
+    "Wannon"
   ],
   "Greater Shepparton": [
     "Indi",
@@ -844,7 +840,6 @@
   ],
   "Hume": [
     "Calwell",
-    "Gorton",
     "Hawke",
     "Maribyrnong",
     "McEwen",
@@ -890,7 +885,6 @@
     "Deakin",
     "Jagajaga",
     "Kooyong",
-    "McEwen",
     "Menzies"
   ],
   "Mansfield": [
@@ -901,7 +895,6 @@
   ],
   "Maribyrnong": [
     "Fraser",
-    "Gellibrand",
     "Maribyrnong",
     "Melbourne"
   ],
@@ -913,12 +906,10 @@
   ],
   "Melbourne": [
     "Fraser",
-    "Gellibrand",
     "Macnamara",
     "Maribyrnong",
     "Melbourne",
-    "Wills",
-    "Higgins"
+    "Wills"
   ],
   "Melton": [
     "Gorton",
@@ -948,8 +939,7 @@
     "Bruce",
     "Chisholm",
     "Deakin",
-    "Hotham",
-    "Higgins"
+    "Hotham"
   ],
   "Moonee Valley": [
     "Fraser",
@@ -961,7 +951,6 @@
     "Ballarat",
     "Corio",
     "Hawke",
-    "Lalor",
     "McEwen"
   ],
   "Moreland": [
@@ -969,6 +958,7 @@
     "Cooper",
     "Maribyrnong",
     "Melbourne",
+    "Scullin",
     "Wills"
   ],
   "Mornington Peninsula": [
@@ -1004,8 +994,9 @@
   ],
   "Port Phillip": [
     "Goldstein",
+    "Kooyong",
     "Macnamara",
-    "Higgins"
+    "Melbourne"
   ],
   "Pyrenees": [
     "Ballarat",
@@ -1026,9 +1017,10 @@
   ],
   "Stonnington": [
     "Chisholm",
+    "Hotham",
     "Kooyong",
-    "Melbourne",
-    "Higgins"
+    "Macnamara",
+    "Melbourne"
   ],
   "Strathbogie": [
     "Bendigo",
@@ -1037,6 +1029,7 @@
   ],
   "Surf Coast": [
     "Corangamite",
+    "Corio",
     "Wannon"
   ],
   "Swan Hill": [
@@ -1046,8 +1039,8 @@
   "Towong": [
     "Gippsland",
     "Indi",
-    "Eden-Monaro",
-    "Farrer"
+    "Farrer",
+    "Riverina"
   ],
   "Wangaratta": [
     "Gippsland",
@@ -1071,11 +1064,9 @@
     "Aston",
     "Chisholm",
     "Deakin",
-    "Kooyong",
     "Menzies"
   ],
   "Whittlesea": [
-    "Calwell",
     "Cooper",
     "Indi",
     "Jagajaga",
@@ -1099,8 +1090,7 @@
     "Jagajaga",
     "Kooyong",
     "Melbourne",
-    "Wills",
-    "Higgins"
+    "Wills"
   ],
   "Yarra Ranges": [
     "Aston",
@@ -1109,8 +1099,6 @@
     "Deakin",
     "Indi",
     "La Trobe",
-    "McEwen",
-    "Menzies",
     "Monash"
   ],
   "Yarriambiack": [
@@ -1173,8 +1161,7 @@
   ],
   "Bulloo": [
     "Grey",
-    "Maranoa",
-    "Parkes"
+    "Maranoa"
   ],
   "Bundaberg": [
     "Flynn",
@@ -1187,7 +1174,8 @@
     "Kennedy"
   ],
   "Burke": [
-    "Kennedy"
+    "Kennedy",
+    "Lingiari"
   ],
   "Cairns": [
     "Kennedy",
@@ -1220,6 +1208,7 @@
     "Maranoa"
   ],
   "Cook": [
+    "Kennedy",
     "Leichhardt"
   ],
   "Croydon": [
@@ -1367,6 +1356,7 @@
   ],
   "Noosa": [
     "Fairfax",
+    "Hinkler",
     "Wide Bay"
   ],
   "North Burnett": [
@@ -1382,8 +1372,7 @@
     "Herbert"
   ],
   "Paroo": [
-    "Maranoa",
-    "Parkes"
+    "Maranoa"
   ],
   "Pormpuraaw": [
     "Leichhardt"
@@ -1394,6 +1383,7 @@
   "Redland": [
     "Bonner",
     "Bowman",
+    "Fadden",
     "Forde",
     "Rankin"
   ],
@@ -1772,8 +1762,7 @@
     "Maranoa",
     "Lingiari",
     "Farrer",
-    "Parkes",
-    "O'Connor"
+    "Parkes"
   ],
   "No usual address (SA)": [],
   "Migratory - Offshore - Shipping (SA)": [],
@@ -1781,9 +1770,9 @@
     "O'Connor"
   ],
   "Armadale": [
+    "Bullwinkel",
     "Burt",
     "Canning",
-    "Durack",
     "Fremantle",
     "O'Connor",
     "Tangney"
@@ -1796,21 +1785,20 @@
     "O'Connor"
   ],
   "Bassendean": [
+    "Hasluck"
+  ],
+  "Bayswater": [
     "Cowan",
     "Hasluck",
     "Perth"
   ],
-  "Bayswater": [
-    "Cowan",
-    "Perth"
-  ],
   "Belmont": [
+    "Bullwinkel",
     "Hasluck",
     "Swan"
   ],
   "Beverley": [
-    "Canning",
-    "Durack",
+    "Bullwinkel",
     "O'Connor"
   ],
   "Boddington": [
@@ -1819,14 +1807,13 @@
     "O'Connor"
   ],
   "Boyup Brook": [
-    "Forrest",
     "O'Connor"
   ],
   "Bridgetown-Greenbushes": [
-    "Forrest",
     "O'Connor"
   ],
   "Brookton": [
+    "Bullwinkel",
     "O'Connor"
   ],
   "Broome": [
@@ -1836,6 +1823,7 @@
     "O'Connor"
   ],
   "Bruce Rock": [
+    "Durack",
     "O'Connor"
   ],
   "Bunbury": [
@@ -1850,13 +1838,15 @@
     "Perth"
   ],
   "Canning": [
+    "Bullwinkel",
     "Burt",
     "Fremantle",
     "Swan",
     "Tangney"
   ],
   "Capel": [
-    "Forrest"
+    "Forrest",
+    "O'Connor"
   ],
   "Carnamah": [
     "Durack"
@@ -1868,6 +1858,7 @@
     "Durack"
   ],
   "Chittering": [
+    "Bullwinkel",
     "Durack",
     "Pearce"
   ],
@@ -1912,12 +1903,12 @@
     "Durack"
   ],
   "Cunderdin": [
+    "Bullwinkel",
     "Durack",
     "O'Connor"
   ],
   "Dalwallinu": [
-    "Durack",
-    "O'Connor"
+    "Durack"
   ],
   "Dandaragan": [
     "Durack"
@@ -1937,8 +1928,7 @@
     "O'Connor"
   ],
   "Dowerin": [
-    "Durack",
-    "O'Connor"
+    "Durack"
   ],
   "Dumbleyung": [
     "O'Connor"
@@ -1974,13 +1964,12 @@
     "O'Connor"
   ],
   "Goomalling": [
-    "Durack",
-    "O'Connor"
+    "Bullwinkel",
+    "Durack"
   ],
   "Gosnells": [
+    "Bullwinkel",
     "Burt",
-    "Canning",
-    "Hasluck",
     "Swan",
     "Tangney"
   ],
@@ -2008,9 +1997,8 @@
     "Pearce"
   ],
   "Kalamunda": [
+    "Bullwinkel",
     "Burt",
-    "Canning",
-    "Hasluck",
     "Swan"
   ],
   "Kalgoorlie-Boulder": [
@@ -2024,6 +2012,7 @@
     "O'Connor"
   ],
   "Kellerberrin": [
+    "Durack",
     "O'Connor"
   ],
   "Kent": [
@@ -2036,14 +2025,14 @@
     "O'Connor"
   ],
   "Koorda": [
-    "Durack",
-    "O'Connor"
+    "Durack"
   ],
   "Kulin": [
     "O'Connor"
   ],
   "Kwinana": [
     "Brand",
+    "Burt",
     "Canning",
     "Fremantle"
   ],
@@ -2059,7 +2048,6 @@
     "O'Connor"
   ],
   "Mandurah": [
-    "Brand",
     "Canning"
   ],
   "Manjimup": [
@@ -2079,6 +2067,7 @@
     "O'Connor"
   ],
   "Merredin": [
+    "Durack",
     "O'Connor"
   ],
   "Mingenew": [
@@ -2102,18 +2091,17 @@
     "O'Connor"
   ],
   "Mukinbudin": [
+    "Durack",
     "O'Connor"
   ],
   "Mundaring": [
-    "Canning",
-    "Durack",
+    "Bullwinkel",
     "Hasluck"
   ],
   "Murchison": [
     "Durack"
   ],
   "Murray": [
-    "Brand",
     "Canning",
     "O'Connor"
   ],
@@ -2122,6 +2110,7 @@
     "O'Connor"
   ],
   "Narembeen": [
+    "Durack",
     "O'Connor"
   ],
   "Narrogin": [
@@ -2137,15 +2126,14 @@
     "O'Connor"
   ],
   "Northam": [
-    "Durack",
-    "Hasluck",
-    "O'Connor"
+    "Bullwinkel",
+    "Durack"
   ],
   "Northampton": [
     "Durack"
   ],
   "Nungarin": [
-    "O'Connor"
+    "Durack"
   ],
   "Peppermint Grove": [
     "Curtin"
@@ -2167,6 +2155,7 @@
     "Durack"
   ],
   "Quairading": [
+    "Bullwinkel",
     "Durack",
     "O'Connor"
   ],
@@ -2183,6 +2172,7 @@
   ],
   "Serpentine-Jarrahdale": [
     "Brand",
+    "Bullwinkel",
     "Burt",
     "Canning",
     "Fremantle",
@@ -2192,12 +2182,12 @@
     "Durack"
   ],
   "South Perth": [
-    "Swan",
-    "Tangney"
+    "Swan"
   ],
   "Stirling": [
     "Cowan",
     "Curtin",
+    "Hasluck",
     "Moore",
     "Perth"
   ],
@@ -2206,24 +2196,26 @@
     "Perth"
   ],
   "Swan": [
+    "Bullwinkel",
     "Cowan",
     "Durack",
     "Hasluck",
     "Pearce",
-    "Perth",
     "Swan"
   ],
   "Tammin": [
+    "Durack",
     "O'Connor"
   ],
   "Three Springs": [
     "Durack"
   ],
   "Toodyay": [
+    "Bullwinkel",
     "Durack"
   ],
   "Trayning": [
-    "O'Connor"
+    "Durack"
   ],
   "Upper Gascoyne": [
     "Durack"
@@ -2232,6 +2224,7 @@
     "Swan"
   ],
   "Victoria Plains": [
+    "Bullwinkel",
     "Durack"
   ],
   "Vincent": [
@@ -2241,7 +2234,7 @@
     "O'Connor"
   ],
   "Wandering": [
-    "Canning",
+    "Bullwinkel",
     "O'Connor"
   ],
   "Wanneroo": [
@@ -2259,6 +2252,7 @@
     "O'Connor"
   ],
   "Westonia": [
+    "Durack",
     "O'Connor"
   ],
   "Wickepin": [
@@ -2272,31 +2266,28 @@
     "O'Connor"
   ],
   "Wongan-Ballidu": [
-    "Durack",
-    "O'Connor"
+    "Durack"
   ],
   "Woodanilling": [
     "O'Connor"
   ],
   "Wyalkatchem": [
-    "Durack",
-    "O'Connor"
+    "Durack"
   ],
   "Wyndham-East Kimberley": [
     "Lingiari",
     "Durack"
   ],
   "Yalgoo": [
-    "Durack",
-    "O'Connor"
+    "Durack"
   ],
   "Yilgarn": [
+    "Durack",
     "O'Connor"
   ],
   "York": [
-    "Canning",
+    "Bullwinkel",
     "Durack",
-    "Hasluck",
     "O'Connor"
   ],
   "No usual address (WA)": [],
@@ -2430,8 +2421,7 @@
   "Central Desert": [
     "Kennedy",
     "Maranoa",
-    "Lingiari",
-    "Durack"
+    "Lingiari"
   ],
   "Coomalie": [
     "Lingiari"
@@ -2456,16 +2446,13 @@
   "MacDonnell": [
     "Grey",
     "Maranoa",
-    "Lingiari",
-    "Durack",
-    "O'Connor"
+    "Lingiari"
   ],
   "Palmerston": [
     "Lingiari",
     "Solomon"
   ],
   "Roper Gulf": [
-    "Kennedy",
     "Lingiari"
   ],
   "Tiwi Islands": [
@@ -2494,7 +2481,8 @@
     "Bean",
     "Canberra",
     "Fenner",
-    "Eden-Monaro"
+    "Eden-Monaro",
+    "Riverina"
   ],
   "No usual address (ACT)": [],
   "Migratory - Offshore - Shipping (ACT)": [],

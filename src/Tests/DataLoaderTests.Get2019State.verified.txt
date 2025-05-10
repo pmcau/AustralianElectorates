@@ -1,2 +1,2 @@
-{"type":"FeatureCollection","features":[
-{"properties":{"electorateName":"Bean","electorateShortName":"bean","area":1913.969737,"state":"ACT"},"type":"Feature","geometry":{"type":"MultiPolygon","coor
+﻿{"type":"FeatureCollection","features":[
+{"properties":{"electorateShortName":"bean","electorateName":"Bean","area":1913.969737,"state":"ACT"},"type":"Feature","geometry":{"type":"MultiPolygon","coor

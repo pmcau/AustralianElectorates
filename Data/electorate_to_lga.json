@@ -276,6 +276,7 @@
     "Strathbogie"
   ],
   "Bruce": [
+    "Cardinia",
     "Casey",
     "Greater Dandenong",
     "Knox",
@@ -283,12 +284,10 @@
     "Yarra Ranges"
   ],
   "Calwell": [
-    "Darebin",
     "Hume",
     "Macedon Ranges",
     "Mitchell",
-    "Moreland",
-    "Whittlesea"
+    "Moreland"
   ],
   "Casey": [
     "Baw Baw",
@@ -305,6 +304,7 @@
   ],
   "Chisholm": [
     "Boroondara",
+    "Glen Eira",
     "Knox",
     "Monash",
     "Stonnington",
@@ -319,8 +319,6 @@
     "Yarra"
   ],
   "Corangamite": [
-    "Colac Otway",
-    "Golden Plains",
     "Greater Geelong",
     "Queenscliffe",
     "Surf Coast"
@@ -329,6 +327,7 @@
     "Golden Plains",
     "Greater Geelong",
     "Moorabool",
+    "Surf Coast",
     "Wyndham"
   ],
   "Deakin": [
@@ -361,13 +360,9 @@
   "Gellibrand": [
     "Brimbank",
     "Hobsons Bay",
-    "Maribyrnong",
-    "Melbourne",
     "Wyndham"
   ],
   "Gippsland": [
-    "Bega Valley",
-    "Snowy Monaro",
     "Snowy Valleys",
     "Alpine",
     "Baw Baw",
@@ -388,7 +383,6 @@
   ],
   "Gorton": [
     "Brimbank",
-    "Hume",
     "Melton",
     "Wyndham"
   ],
@@ -414,7 +408,8 @@
     "Glen Eira",
     "Greater Dandenong",
     "Kingston (Vic.)",
-    "Monash"
+    "Monash",
+    "Stonnington"
   ],
   "Indi": [
     "Albury",
@@ -459,9 +454,10 @@
   "Kooyong": [
     "Banyule",
     "Boroondara",
+    "Glen Eira",
     "Manningham",
+    "Port Phillip",
     "Stonnington",
-    "Whitehorse",
     "Yarra"
   ],
   "La Trobe": [
@@ -473,9 +469,7 @@
     "Yarra Ranges"
   ],
   "Lalor": [
-    "Greater Geelong",
     "Melton",
-    "Moorabool",
     "Wyndham"
   ],
   "Macnamara": [
@@ -483,7 +477,8 @@
     "Glen Eira",
     "Hobsons Bay",
     "Melbourne",
-    "Port Phillip"
+    "Port Phillip",
+    "Stonnington"
   ],
   "Mallee": [
     "Balranald",
@@ -529,22 +524,20 @@
     "Hepburn",
     "Hume",
     "Macedon Ranges",
-    "Manningham",
     "Melton",
     "Mitchell",
     "Moorabool",
     "Murrindindi",
     "Nillumbik",
-    "Whittlesea",
-    "Yarra Ranges"
+    "Whittlesea"
   ],
   "Melbourne": [
     "Boroondara",
-    "Darebin",
     "Maribyrnong",
     "Melbourne",
     "Moonee Valley",
     "Moreland",
+    "Port Phillip",
     "Stonnington",
     "Yarra"
   ],
@@ -554,8 +547,7 @@
     "Manningham",
     "Maroondah",
     "Nillumbik",
-    "Whitehorse",
-    "Yarra Ranges"
+    "Whitehorse"
   ],
   "Monash": [
     "Bass Coast",
@@ -590,6 +582,7 @@
     "Banyule",
     "Darebin",
     "Hume",
+    "Moreland",
     "Nillumbik",
     "Whittlesea"
   ],
@@ -601,6 +594,7 @@
     "Corangamite",
     "Glenelg",
     "Golden Plains",
+    "Greater Geelong",
     "Hepburn",
     "Horsham",
     "Moyne",
@@ -619,15 +613,6 @@
     "Melbourne",
     "Moonee Valley",
     "Moreland",
-    "Yarra"
-  ],
-  "Higgins": [
-    "Boroondara",
-    "Glen Eira",
-    "Melbourne",
-    "Monash",
-    "Port Phillip",
-    "Stonnington",
     "Yarra"
   ],
   "Blair": [
@@ -681,7 +666,8 @@
   ],
   "Fadden": [
     "Gold Coast",
-    "Logan"
+    "Logan",
+    "Redland"
   ],
   "Fairfax": [
     "Gympie",
@@ -737,6 +723,7 @@
   "Hinkler": [
     "Bundaberg",
     "Fraser Coast",
+    "Noosa",
     "North Burnett"
   ],
   "Kennedy": [
@@ -749,6 +736,7 @@
     "Cassowary Coast",
     "Charters Towers",
     "Cloncurry",
+    "Cook",
     "Croydon",
     "Diamantina",
     "Doomadgee",
@@ -768,8 +756,7 @@
     "Winton",
     "Yarrabah",
     "Barkly",
-    "Central Desert",
-    "Roper Gulf"
+    "Central Desert"
   ],
   "Leichhardt": [
     "Aurukun",
@@ -901,6 +888,7 @@
   ],
   "Lingiari": [
     "Boulia",
+    "Burke",
     "Diamantina",
     "Mount Isa",
     "Anangu Pitjantjatjara Yunkunytjatjara",
@@ -953,6 +941,8 @@
     "Hornsby",
     "Hunters Hill",
     "Ku-ring-gai",
+    "Lane Cove",
+    "North Sydney",
     "Parramatta",
     "Ryde",
     "Willoughby"
@@ -964,18 +954,21 @@
     "Ku-ring-gai",
     "Northern Beaches",
     "Parramatta",
+    "Ryde",
     "The Hills"
   ],
   "Blaxland": [
     "Canterbury-Bankstown",
     "Cumberland",
     "Fairfield",
-    "Liverpool",
-    "Parramatta"
+    "Parramatta",
+    "Strathfield"
   ],
   "Bradfield": [
     "Hornsby",
     "Ku-ring-gai",
+    "Lane Cove",
+    "North Sydney",
     "Northern Beaches",
     "Ryde",
     "Willoughby"
@@ -1036,20 +1029,16 @@
   ],
   "Eden-Monaro": [
     "Bega Valley",
-    "Cootamundra-Gundagai",
     "Eurobodalla",
     "Goulburn Mulwaree",
-    "Greater Hume",
-    "Hilltops",
     "Queanbeyan-Palerang",
     "Shoalhaven",
     "Snowy Monaro",
     "Snowy Valleys",
     "Upper Lachlan",
-    "Wagga Wagga",
+    "Wingecarribee",
     "Yass Valley",
     "East Gippsland",
-    "Towong",
     "Unincorporated ACT"
   ],
   "Farrer": [
@@ -1104,16 +1093,16 @@
   ],
   "Grayndler": [
     "Bayside (NSW)",
-    "Canada Bay",
+    "Burwood",
     "Canterbury-Bankstown",
     "Inner West",
+    "Strathfield",
     "Sydney"
   ],
   "Greenway": [
     "Blacktown",
-    "Cumberland",
     "Hawkesbury",
-    "Parramatta"
+    "The Hills"
   ],
   "Hughes": [
     "Campbelltown (NSW)",
@@ -1123,23 +1112,16 @@
     "Wollongong"
   ],
   "Hume": [
-    "Bathurst",
     "Blue Mountains",
     "Camden",
     "Campbelltown (NSW)",
-    "Cowra",
-    "Goulburn Mulwaree",
-    "Hilltops",
     "Liverpool",
     "Oberon",
     "Penrith",
-    "Queanbeyan-Palerang",
-    "Shoalhaven",
     "Upper Lachlan",
     "Wingecarribee",
     "Wollondilly",
-    "Wollongong",
-    "Yass Valley"
+    "Wollongong"
   ],
   "Hunter": [
     "Central Coast (NSW)",
@@ -1151,7 +1133,6 @@
     "Maitland",
     "Mid-Western",
     "Muswellbrook",
-    "Newcastle",
     "Singleton",
     "Upper Hunter"
   ],
@@ -1208,7 +1189,6 @@
   ],
   "McMahon": [
     "Blacktown",
-    "Canterbury-Bankstown",
     "Cumberland",
     "Fairfield",
     "Liverpool",
@@ -1216,7 +1196,6 @@
   ],
   "Mitchell": [
     "Blacktown",
-    "Hawkesbury",
     "Hornsby",
     "Parramatta",
     "The Hills"
@@ -1282,38 +1261,43 @@
     "Carrathool",
     "Central Darling",
     "Cobar",
+    "Coolamon",
     "Coonamble",
+    "Cowra",
     "Dubbo",
     "Forbes",
     "Gilgandra",
     "Gunnedah",
     "Gwydir",
+    "Hilltops",
     "Inverell",
     "Lachlan",
     "Liverpool Plains",
     "Mid-Western",
     "Moree Plains",
     "Narrabri",
+    "Narrandera",
     "Narromine",
     "Parkes",
     "Tamworth",
+    "Temora",
     "Upper Hunter",
     "Walgett",
     "Warren",
     "Warrumbungle",
+    "Weddin",
     "Wentworth",
     "Unincorporated NSW",
     "Balonne",
-    "Bulloo",
     "Goondiwindi",
-    "Paroo",
     "Unincorporated SA"
   ],
   "Parramatta": [
     "Blacktown",
     "Cumberland",
     "Parramatta",
-    "Ryde"
+    "Ryde",
+    "The Hills"
   ],
   "Paterson": [
     "Cessnock",
@@ -1344,26 +1328,31 @@
     "Bland",
     "Blayney",
     "Cabonne",
-    "Carrathool",
     "Coolamon",
     "Cootamundra-Gundagai",
     "Cowra",
     "Federation",
     "Forbes",
+    "Goulburn Mulwaree",
     "Greater Hume",
     "Hilltops",
     "Junee",
-    "Lachlan",
     "Lockhart",
     "Narrandera",
-    "Narromine",
-    "Parkes",
+    "Oberon",
+    "Queanbeyan-Palerang",
+    "Snowy Monaro",
     "Snowy Valleys",
     "Temora",
     "Upper Lachlan",
     "Wagga Wagga",
     "Weddin",
-    "Yass Valley"
+    "Wingecarribee",
+    "Wollondilly",
+    "Yass Valley",
+    "East Gippsland",
+    "Towong",
+    "Unincorporated ACT"
   ],
   "Robertson": [
     "Central Coast (NSW)",
@@ -1380,23 +1369,25 @@
   ],
   "Sydney": [
     "Bayside (NSW)",
+    "Canada Bay",
     "Inner West",
     "Randwick",
     "Sydney",
-    "Woollahra",
     "Unincorporated NSW"
   ],
   "Warringah": [
+    "Lane Cove",
     "Mosman",
     "North Sydney",
-    "Northern Beaches"
+    "Northern Beaches",
+    "Willoughby"
   ],
   "Watson": [
     "Burwood",
     "Canterbury-Bankstown",
     "Cumberland",
-    "Georges River",
-    "Inner West",
+    "Fairfield",
+    "Liverpool",
     "Strathfield"
   ],
   "Wentworth": [
@@ -1413,27 +1404,41 @@
     "Liverpool"
   ],
   "Whitlam": [
+    "Goulburn Mulwaree",
     "Kiama",
     "Shellharbour",
     "Shoalhaven",
+    "Upper Lachlan",
     "Wingecarribee",
+    "Wollondilly",
     "Wollongong"
-  ],
-  "North Sydney": [
-    "Hunters Hill",
-    "Lane Cove",
-    "Mosman",
-    "North Sydney",
-    "Ryde",
-    "Willoughby"
   ],
   "Brand": [
     "Cockburn",
     "Kwinana",
-    "Mandurah",
-    "Murray",
     "Rockingham",
     "Serpentine-Jarrahdale"
+  ],
+  "Bullwinkel": [
+    "Armadale",
+    "Belmont",
+    "Beverley",
+    "Brookton",
+    "Canning",
+    "Chittering",
+    "Cunderdin",
+    "Goomalling",
+    "Gosnells",
+    "Kalamunda",
+    "Mundaring",
+    "Northam",
+    "Quairading",
+    "Serpentine-Jarrahdale",
+    "Swan",
+    "Toodyay",
+    "Victoria Plains",
+    "Wandering",
+    "York"
   ],
   "Burt": [
     "Armadale",
@@ -1441,27 +1446,21 @@
     "Cockburn",
     "Gosnells",
     "Kalamunda",
+    "Kwinana",
     "Serpentine-Jarrahdale"
   ],
   "Canning": [
     "Armadale",
-    "Beverley",
     "Boddington",
-    "Gosnells",
     "Harvey",
-    "Kalamunda",
     "Kwinana",
     "Mandurah",
-    "Mundaring",
     "Murray",
     "Rockingham",
     "Serpentine-Jarrahdale",
-    "Wandering",
-    "Waroona",
-    "York"
+    "Waroona"
   ],
   "Cowan": [
-    "Bassendean",
     "Bayswater",
     "Joondalup",
     "Stirling",
@@ -1481,10 +1480,9 @@
     "Subiaco"
   ],
   "Durack": [
-    "Armadale",
     "Ashburton",
-    "Beverley",
     "Broome",
+    "Bruce Rock",
     "Carnamah",
     "Carnarvon",
     "Chapman Valley",
@@ -1504,46 +1502,50 @@
     "Halls Creek",
     "Irwin",
     "Karratha",
+    "Kellerberrin",
     "Koorda",
     "Leonora",
     "Meekatharra",
     "Menzies",
+    "Merredin",
     "Mingenew",
     "Moora",
     "Morawa",
     "Mount Magnet",
     "Mount Marshall",
-    "Mundaring",
+    "Mukinbudin",
     "Murchison",
+    "Narembeen",
     "Ngaanyatjarraku",
     "Northam",
     "Northampton",
+    "Nungarin",
     "Perenjori",
     "Port Hedland",
     "Quairading",
     "Sandstone",
     "Shark Bay",
     "Swan",
+    "Tammin",
     "Three Springs",
     "Toodyay",
+    "Trayning",
     "Upper Gascoyne",
     "Victoria Plains",
     "Wanneroo",
+    "Westonia",
     "Wiluna",
     "Wongan-Ballidu",
     "Wyalkatchem",
     "Wyndham-East Kimberley",
     "Yalgoo",
+    "Yilgarn",
     "York",
-    "Central Desert",
-    "MacDonnell",
     "Victoria Daly"
   ],
   "Forrest": [
     "Augusta Margaret River",
     "Boddington",
-    "Boyup Brook",
-    "Bridgetown-Greenbushes",
     "Bunbury",
     "Busselton",
     "Capel",
@@ -1567,13 +1569,11 @@
   ],
   "Hasluck": [
     "Bassendean",
+    "Bayswater",
     "Belmont",
-    "Gosnells",
-    "Kalamunda",
     "Mundaring",
-    "Northam",
-    "Swan",
-    "York"
+    "Stirling",
+    "Swan"
   ],
   "Moore": [
     "Joondalup",
@@ -1581,7 +1581,6 @@
     "Wanneroo"
   ],
   "O'Connor": [
-    "Unincorporated SA",
     "Albany",
     "Armadale",
     "Augusta Margaret River",
@@ -1593,23 +1592,21 @@
     "Broomehill-Tambellup",
     "Bruce Rock",
     "Busselton",
+    "Capel",
     "Collie",
     "Coolgardie",
     "Corrigin",
     "Cranbrook",
     "Cuballing",
     "Cunderdin",
-    "Dalwallinu",
     "Dardanup",
     "Denmark",
     "Donnybrook-Balingup",
-    "Dowerin",
     "Dumbleyung",
     "Dundas",
     "East Pilbara",
     "Esperance",
     "Gnowangerup",
-    "Goomalling",
     "Harvey",
     "Jerramungup",
     "Kalgoorlie-Boulder",
@@ -1618,7 +1615,6 @@
     "Kent",
     "Kojonup",
     "Kondinin",
-    "Koorda",
     "Kulin",
     "Lake Grace",
     "Laverton",
@@ -1634,8 +1630,6 @@
     "Narembeen",
     "Narrogin",
     "Ngaanyatjarraku",
-    "Northam",
-    "Nungarin",
     "Pingelly",
     "Plantagenet",
     "Quairading",
@@ -1643,7 +1637,6 @@
     "Sandstone",
     "Serpentine-Jarrahdale",
     "Tammin",
-    "Trayning",
     "Wagin",
     "Wandering",
     "Waroona",
@@ -1652,13 +1645,9 @@
     "Wickepin",
     "Williams",
     "Wiluna",
-    "Wongan-Ballidu",
     "Woodanilling",
-    "Wyalkatchem",
-    "Yalgoo",
     "Yilgarn",
-    "York",
-    "MacDonnell"
+    "York"
   ],
   "Pearce": [
     "Chittering",
@@ -1667,13 +1656,11 @@
     "Wanneroo"
   ],
   "Perth": [
-    "Bassendean",
     "Bayswater",
     "Cambridge",
     "Perth",
     "Stirling",
     "Subiaco",
-    "Swan",
     "Vincent"
   ],
   "Swan": [
@@ -1692,7 +1679,6 @@
     "East Fremantle",
     "Fremantle",
     "Gosnells",
-    "Melville",
-    "South Perth"
+    "Melville"
   ]
 }

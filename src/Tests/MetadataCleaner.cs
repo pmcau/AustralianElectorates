@@ -14,14 +14,22 @@ static class MetadataCleaner
         foreach (var feature in featureCollection.Features)
         {
             var properties = feature.Properties;
-            var electorate = (string) properties["Elect_div"];
+            var electorate = (string)properties["Elect_div"];
             var stateFromProperties = GetState(feature, state);
             var area = properties["Area_SqKm"];
 
             var shortName = Electorate.GetShortName(electorate);
             properties.Clear();
-            properties["electorateName"] = electorate;
             properties["electorateShortName"] = shortName;
+            if (shortName == "oconnor")
+            {
+                properties["electorateName"] = "O'Connor";
+            }
+            else
+            {
+                properties["electorateName"] = electorate;
+            }
+
             if (area is double doubleArea)
             {
                 properties["area"] = Math.Round(doubleArea, 6);
@@ -30,6 +38,7 @@ static class MetadataCleaner
             {
                 properties["area"] = (long)area;
             }
+
             properties["state"] = stateFromProperties;
         }
     }
@@ -38,7 +47,7 @@ static class MetadataCleaner
     {
         if (feature.Properties.TryGetValue("State", out var stateFromProperties))
         {
-            return (string) stateFromProperties;
+            return (string)stateFromProperties;
         }
 
         return state?.ToString();

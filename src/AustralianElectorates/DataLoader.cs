@@ -89,6 +89,15 @@ public static partial class DataLoader
                 Electorates = Electorates
                     .Where(_ => _.Exist2022)
                     .ToList()
+            },
+            new()
+            {
+                Parliament = 48,
+                Year = 2024,
+                Date = new(2022, 05, 3),
+                Electorates = Electorates
+                    .Where(_ => _.Exist2025)
+                    .ToList()
             }
         ];
     #endregion
