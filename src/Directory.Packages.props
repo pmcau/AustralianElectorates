@@ -11,7 +11,7 @@
     <PackageVersion Include="HtmlAgilityPack" Version="1.12.2" />
     <PackageVersion Include="MarkdownSnippets.MsBuild" Version="28.0.0-beta.2" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
-    <PackageVersion Include="Microsoft.Sbom.Targets" Version="4.1.0" />
+    <PackageVersion Include="Microsoft.Sbom.Targets" Version="4.1.1" />
     <PackageVersion Include="NetTopologySuite" Version="2.6.0" />
     <PackageVersion Include="NetTopologySuite.IO.GeoJSON" Version="4.0.0" />
     <PackageVersion Include="NetTopologySuite.IO.ShapeFile" Version="2.1.0" />
