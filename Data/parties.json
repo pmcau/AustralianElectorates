@@ -634,13 +634,13 @@
         "AmendmentDate": "13 June 1985",
         "Address": "PO Box 5032\nWEST END QLD 4101",
         "Officer": {
-          "Title": "Ms",
-          "FamilyName": "Flanders",
-          "GivenNames": "Katherine",
-          "Capacity": "Party Agent",
+          "Title": "Mr",
+          "FamilyName": "Driscoll",
+          "GivenNames": "Benjamin",
+          "Capacity": "Secretary",
           "Address": {
-            "Line1": "1/16 Peel Street",
-            "Suburb": "South Brisbane",
+            "Line1": "Level 1, 16 Peel Street",
+            "Suburb": "West End",
             "State": "QLD",
             "Postcode": 4101
           }
@@ -754,7 +754,6 @@
           "Title": "Ms",
           "FamilyName": "Whiteaker",
           "GivenNames": "Eleanor Elizabeth Margaret",
-          "Capacity": "Party Agent",
           "Address": {
             "Line1": "85 Havelock Street",
             "Suburb": "West Perth",
@@ -1038,12 +1037,11 @@
     "Address": "PO Box 2387\nCHERMSIDE CENTRE QLD 4032",
     "Officer": {
       "Title": "Mrs",
-      "FamilyName": "Eaton",
-      "GivenNames": "Stephanie",
+      "FamilyName": "Rennick",
+      "GivenNames": "Lauren",
       "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "Level 5",
-        "Line2": "14 Banfield Street",
+        "Line1": "PO Box 2387",
         "Suburb": "Chermside",
         "State": "QLD",
         "Postcode": 4032
@@ -1057,7 +1055,7 @@
         "Capacity": "Deputy Registered Officer",
         "Address": {
           "Line1": "PO Box 2387",
-          "Suburb": "Chermside",
+          "Suburb": "Chermside Centre",
           "State": "QLD",
           "Postcode": 4032
         }
@@ -1160,7 +1158,7 @@
       "Title": "Mr",
       "FamilyName": "Fusco",
       "GivenNames": "Benjamin",
-      "Capacity": "Registered Officer",
+      "Capacity": "Party Agent",
       "Address": {
         "Line1": "2/321 Sturt Street",
         "Suburb": "Townsville",
@@ -1373,6 +1371,7 @@
           "Title": "Mr",
           "FamilyName": "Wojtonis",
           "GivenNames": "Adam",
+          "Capacity": "Registered Officer",
           "Address": {
             "Line1": "Suite 4",
             "Line2": "50 Geils Court",
@@ -1517,7 +1516,6 @@
             "Title": "Ms",
             "FamilyName": "Silke",
             "GivenNames": "Christine Jean",
-            "Capacity": "Deputy Registered Officer",
             "Address": {
               "Line1": "Locked Bag 2",
               "Suburb": "Kings Cross",
@@ -1620,18 +1618,6 @@
           "Suburb": "Algester",
           "State": "QLD",
           "Postcode": 4115
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Gojkovic",
-        "GivenNames": "Simo",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "413 Watson Road",
-          "Suburb": "ACACIA ROAD",
-          "State": "QLD",
-          "Postcode": 4110
         }
       }
     ],
@@ -1876,7 +1862,7 @@
     "Abbreviation": "TT",
     "RegisterDate": "12 December 2024",
     "AmendmentDate": "12 December 2024",
-    "Address": "20 Bowman Drive\nPENGUIN TAS 7316",
+    "Address": "18 Ayrshire Avenue\nLATROBE TAS 7307",
     "Officer": {
       "Title": "Mr",
       "FamilyName": "Tyrrell",
@@ -2321,20 +2307,7 @@
         "Postcode": 5162
       }
     },
-    "DeputyOfficers": [
-      {
-        "Title": "Mr",
-        "FamilyName": "Favager",
-        "GivenNames": "Neil",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "PO Box 8225",
-          "Suburb": "GOLD COAST MC",
-          "State": "QLD",
-          "Postcode": 9726
-        }
-      }
-    ],
+    "DeputyOfficers": [],
     "Branches": []
   },
   {

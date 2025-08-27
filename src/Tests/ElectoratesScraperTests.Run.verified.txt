@@ -1,6 +1,6 @@
 ﻿{
   northSydney: {
-    MapUrl: https://www.aec.gov.au/profiles/nsw/files/2016/2016-aec-nsw-a4-map-north-sydney.pdf,
+    MapUrl: http://www.aec.gov.au/profiles/nsw/files/2016/2016-aec-nsw-a4-map-north-sydney.pdf,
     Name: North Sydney,
     ShortName: north-sydney,
     State: NSW,
@@ -87,7 +87,7 @@
     Exist2022: false,
     Exist2025: false,
     DateGazetted: Date_4,
-    Description: The proposed Division of Melbourne will consist of: <ul><li>part of the Melbourne City Council,</li><li> part of the Merri-bek City Council,</li><li> part of the Moonee Valley City Council,</li><li> part of the Stonnington City Council, and</li><li> part of the Yarra City Council.</li></ul>,
+    Description: The Division of Melbourne consists of: <ul><li>part of the Melbourne City Council,</li><li> part of the Merri-bek City Council,</li><li> part of the Moonee Valley City Council,</li><li> part of the Stonnington City Council, and</li><li> part of the Yarra City Council.</li></ul>,
     DemographicRating: <strong>Inner Metropolitan</strong> – situated in capital cities and consisting of well-established built-up suburbs.,
     NameDerivation: Named after the City of Melbourne. The settlement of Port Phillip was named 'Melbourne' on 5 March 1837 in honour of Lord Melbourne who was the Prime Minister of Great Britain at the time.,
     Enrollment: 114388,
