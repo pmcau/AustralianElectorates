@@ -858,7 +858,7 @@
     "Officer": {
       "Title": "Mr",
       "FamilyName": "Schelling",
-      "GivenNames": "Albert Antony (Tony)",
+      "GivenNames": "Albert Antony",
       "Capacity": "Party Agent",
       "Address": {
         "Line1": "2/229 McMillans Road",
@@ -1322,7 +1322,20 @@
             "Postcode": 4010
           }
         },
-        "DeputyOfficers": []
+        "DeputyOfficers": [
+          {
+            "Title": "Mr",
+            "FamilyName": "Chadwick",
+            "GivenNames": "Matthew",
+            "Capacity": "Deputy Registered Officer",
+            "Address": {
+              "Line1": "PO Box 940",
+              "Suburb": "Spring Hill",
+              "State": "QLD",
+              "Postcode": 4004
+            }
+          }
+        ]
       },
       {
         "Id": 178,
@@ -1463,9 +1476,9 @@
         "AmendmentDate": "18 July 1984",
         "Address": "Level 12, 257 Collins Street\nMELBOURNE VIC 3000",
         "Officer": {
-          "Title": "Mr",
-          "FamilyName": "Smith",
-          "GivenNames": "Stuart",
+          "Title": "Ms",
+          "FamilyName": "Redfern",
+          "GivenNames": "Felicity",
           "Capacity": "Registered Officer",
           "Address": {
             "Line1": "Level 12",
@@ -1477,16 +1490,15 @@
         },
         "DeputyOfficers": [
           {
-            "Title": "Ms",
-            "FamilyName": "Redfern",
-            "GivenNames": "Felicity",
+            "Title": "Mr",
+            "FamilyName": "Zerbe",
+            "GivenNames": "Benjamin Alexander",
             "Capacity": "Deputy Registered Officer",
             "Address": {
-              "Line1": "Level 12",
-              "Line2": "257 Collins Street",
-              "Suburb": "Melbourne",
+              "Line1": "16A Lockhart Court",
+              "Suburb": "Kilsyth",
               "State": "VIC",
-              "Postcode": 3000
+              "Postcode": 3137
             }
           }
         ]
@@ -1869,10 +1881,10 @@
       "GivenNames": "Tyler",
       "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "20 Bowman Drive",
-        "Suburb": "Penguin",
+        "Line1": "18 Ayrshire Avenue",
+        "Suburb": "Latrobe",
         "State": "TAS",
-        "Postcode": 7316
+        "Postcode": 7307
       }
     },
     "DeputyOfficers": [],
@@ -2294,7 +2306,7 @@
     "Abbreviation": "Trumpet of Patriots",
     "RegisterDate": "26 July 2011",
     "AmendmentDate": "26 July 2011",
-    "Address": "153 Gooding Drive\nMERRIMAC QLD 4226",
+    "Address": "PO Box 90\nMORPHETT VALE SA 5162",
     "Officer": {
       "Title": "Mr",
       "FamilyName": "O'Rourke",
