@@ -95,7 +95,7 @@ public class DataLoaderTests
 
     static async Task InnerExport(bool overwrite)
     {
-        var directory = new TempDirectory();
+        using var directory = new TempDirectory();
 
         if (overwrite)
         {
