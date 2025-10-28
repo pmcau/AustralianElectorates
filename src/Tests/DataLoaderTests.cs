@@ -95,25 +95,15 @@ public class DataLoaderTests
 
     static async Task InnerExport(bool overwrite)
     {
-        var directory = Path.Combine(Environment.CurrentDirectory, $"export_overwrite-{overwrite}");
-        Directory.CreateDirectory(directory);
+        var directory = new TempDirectory();
 
-        try
+        if (overwrite)
         {
-            if (overwrite)
-            {
-                await DataLoader.Export(directory);
-            }
-
             await DataLoader.Export(directory);
-            await Verify(Directory
-                .EnumerateFiles(directory, "*.*", SearchOption.AllDirectories)
-                .Count());
         }
-        finally
-        {
-            Directory.Delete(directory, true);
-        }
+
+        await DataLoader.Export(directory);
+        await Verify(directory.Info.EnumerateFiles("*.*", SearchOption.AllDirectories).Count());
     }
 
     [Fact]
