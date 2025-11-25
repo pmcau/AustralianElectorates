@@ -492,13 +492,12 @@
         "AmendmentDate": "13 June 1985",
         "Address": "GPO Box 3065\nCANBERRA ACT 2601",
         "Officer": {
-          "Title": "Mr",
-          "FamilyName": "van Dijk",
-          "GivenNames": "Ash",
-          "Capacity": "Secretary",
+          "Title": "Mrs",
+          "FamilyName": "Cook",
+          "GivenNames": "Caitlin",
+          "Capacity": "Party Agent",
           "Address": {
-            "Line1": "U14 Level 1",
-            "Line2": "222 City Walk",
+            "Line1": "14/222 City Walk",
             "Suburb": "Canberra",
             "State": "ACT",
             "Postcode": 2601
@@ -952,7 +951,20 @@
         "Postcode": 2067
       }
     },
-    "DeputyOfficers": [],
+    "DeputyOfficers": [
+      {
+        "Title": "Mr",
+        "FamilyName": "Shelton",
+        "GivenNames": "Lyle Gavin",
+        "Capacity": "Deputy Registered Officer",
+        "Address": {
+          "Line1": "PO Box 894",
+          "Suburb": "Chatswood",
+          "State": "NSW",
+          "Postcode": 2057
+        }
+      }
+    ],
     "Branches": []
   },
   {
@@ -2287,7 +2299,7 @@
           "Title": "Ms",
           "FamilyName": "Kirby",
           "GivenNames": "Julie",
-          "Capacity": "Party Agent",
+          "Capacity": "Registered Officer",
           "Address": {
             "Line1": "1/43 Ventnor Avenue",
             "Suburb": "West Perth",
