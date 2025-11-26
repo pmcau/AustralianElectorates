@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <PackageTags>Australia, Electorates</PackageTags>
-    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
     <Description>Provides png detail maps of electorates from the Australian Electoral Commission (AEC) data (https://www.aec.gov.au/).</Description>
   </PropertyGroup>
   <ItemGroup>
