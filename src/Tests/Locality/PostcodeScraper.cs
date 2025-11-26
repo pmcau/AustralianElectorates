@@ -4,7 +4,6 @@ using Xunit.Abstractions;
 static class PostcodeScraper
 {
     static HttpClient client = new();
-    static HtmlDocument doc = new();
 
     public static async Task<List<AecLocalityData>> Run(ITestOutputHelper outputHelper)
     {
@@ -43,20 +42,29 @@ static class PostcodeScraper
                      .Where(p => !p.HasAttributes))
         {
             var tds = tr.SelectNodes("td");
-            if (tds is {Count: > 3})
+            if (tds is not { Count: > 3 })
             {
-                yield return new(
-                    //State = tds[0].InnerText.ToUpper().Trim(),
-                    place: tds[1]
-                        .InnerText.ToUpper()
-                        .Trim()
-                        .ToTitleCase(),
-                    postcode: postcode,
-                    //Postcode = tds[2].InnerText.ToUpper().Trim(),
-                    electorate: tds[3]
-                        .InnerText.ToUpper()
-                        .Trim()
-                );
+                continue;
+            }
+
+            var place = tds[1]
+                .InnerText.ToUpper()
+                .Trim()
+                .ToTitleCase();
+
+            // Select all <a> tags within the electorate cell
+            var electorateLinks = tds[3].SelectNodes(".//a");
+            // ReSharper disable once ConditionIsAlwaysTrueOrFalseAccordingToNullableAPIContract
+            if (electorateLinks != null)
+            {
+                foreach (var link in electorateLinks)
+                {
+                    yield return new(
+                        place: place,
+                        postcode: postcode,
+                        electorate: link.InnerText.ToUpper().Trim()
+                    );
+                }
             }
         }
     }
@@ -80,11 +88,18 @@ static class PostcodeScraper
     {
         var table = doc.DocumentNode.SelectSingleNode("//table[@id='ContentPlaceHolderBody_gridViewLocalities']");
         var nodes = table.SelectNodes("tr[@class='pagingLink']//a");
-        return nodes.Count + 1;
+        // ReSharper disable once ConditionIsAlwaysTrueOrFalseAccordingToNullableAPIContract
+        if (nodes != null)
+        {
+            return nodes.Count + 1;
+        }
+
+        return 1;
     }
 
     public static async Task<List<AecLocalityData>> GetAECDataForPostcode(string postcode)
     {
+        var doc = new HtmlDocument();
         if (!int.TryParse(postcode, out var result))
         {
             throw new("Invalid Postcode");
@@ -97,34 +112,49 @@ static class PostcodeScraper
 
         var url = $"https://electorate.aec.gov.au/LocalitySearchResults.aspx?filter={result:D4}&filterby=Postcode";
 
-        var response = await client.GetAsync(url);
+        using var response = await client.GetAsync(url);
         response.EnsureSuccessStatusCode();
 
         var content = await response.Content.ReadAsStringAsync();
-        doc.LoadHtml(content);
-
-        var data = new List<AecLocalityData>();
-
-        data.AddRange(GetLocalityData(doc, result));
-        var lastPage = GetPageCount(doc);
-
-        var page = 1;
-        while (page != lastPage)
+        try
         {
-            page++;
+            doc.LoadHtml(content);
 
-            var parameters = ParseFormForParameters(doc);
-            parameters["__EVENTTARGET"] = "ctl00$ContentPlaceHolderBody$gridViewLocalities";
-            parameters["__EVENTARGUMENT"] = $"Page${page}";
+            var data = new List<AecLocalityData>();
 
-            var encodedContent = new FormUrlEncodedContent(parameters);
-
-            response = await client.PostAsync(url, encodedContent);
-            response.EnsureSuccessStatusCode();
-            doc.LoadHtml(await response.Content.ReadAsStringAsync());
             data.AddRange(GetLocalityData(doc, result));
-        }
+            var lastPage = GetPageCount(doc);
 
-        return data;
+            var page = 1;
+            while (page != lastPage)
+            {
+                page++;
+
+                var parameters = ParseFormForParameters(doc);
+                parameters["__EVENTTARGET"] = "ctl00$ContentPlaceHolderBody$gridViewLocalities";
+                parameters["__EVENTARGUMENT"] = $"Page${page}";
+
+                var encodedContent = new FormUrlEncodedContent(parameters);
+
+                using var pageResponse = await client.PostAsync(url, encodedContent);
+                pageResponse.EnsureSuccessStatusCode();
+                var pageContent = await pageResponse.Content.ReadAsStringAsync();
+
+                var pageHtmlDoc = new HtmlDocument();
+                pageHtmlDoc.LoadHtml(pageContent);
+                data.AddRange(GetLocalityData(pageHtmlDoc, result));
+            }
+
+            return data;
+        }
+        catch (Exception exception)
+        {
+            throw new($"""
+                       Failed.
+                       {url}
+                       {content}
+                       """,
+                exception);
+        }
     }
 }
