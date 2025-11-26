@@ -1,22 +1,27 @@
-[
+﻿[
   {
-    Place: Braddon,
-    Postcode: 2612,
-    Electorate: CANBERRA
+    Place: Embleton,
+    Postcode: 6062,
+    Electorate: PERTH
   },
   {
-    Place: Campbell,
-    Postcode: 2612,
-    Electorate: CANBERRA
+    Place: Embleton,
+    Postcode: 6062,
+    Electorate: HASLUCK
   },
   {
-    Place: Reid,
-    Postcode: 2612,
-    Electorate: CANBERRA
+    Place: Morley,
+    Postcode: 6062,
+    Electorate: PERTH
   },
   {
-    Place: Turner,
-    Postcode: 2612,
-    Electorate: CANBERRA
+    Place: Morley,
+    Postcode: 6062,
+    Electorate: HASLUCK
+  },
+  {
+    Place: Noranda,
+    Postcode: 6062,
+    Electorate: HASLUCK
   }
 ]
