@@ -13,6 +13,7 @@
     <PackageReference Include="NetTopologySuite.IO.GeoJSON" />
     <PackageReference Include="NetTopologySuite.IO.ShapeFile" />
     <PackageReference Include="Argon" />
+    <PackageReference Include="ProjectFiles" />
     <PackageReference Include="System.Drawing.Common" />
     <PackageReference Include="Xunit" />
     <PackageReference Include="xunit.runner.visualstudio" PrivateAssets="all" />
