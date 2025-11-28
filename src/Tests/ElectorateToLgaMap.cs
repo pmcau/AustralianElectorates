@@ -10,7 +10,7 @@ public class ElectorateToLgaMap
     {
         var factory = new GeometryFactory();
 
-        using var shapeFileDataReader = new ShapefileDataReader(Path.Combine(AttributeReader.GetProjectDirectory(), @"Lga\LGA_2022_AUST_GDA2020.shp"), factory);
+        using var shapeFileDataReader = new ShapefileDataReader(Path.Combine(ProjectFiles.ProjectDirectory, @"Lga\LGA_2022_AUST_GDA2020.shp"), factory);
 
         var electorateToLga = new Dictionary<string, List<string>>();
         var lgaToElectorate = new Dictionary<string, List<string>>();
