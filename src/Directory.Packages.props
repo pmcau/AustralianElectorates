@@ -18,7 +18,7 @@
     <PackageVersion Include="ProjectDefaults" Version="1.0.170" />
     <PackageVersion Include="ProjectFiles" Version="0.4.0" />
     <PackageVersion Include="System.Drawing.Common" Version="10.0.1" />
-    <PackageVersion Include="Verify.Xunit" Version="31.9.3" />
+    <PackageVersion Include="Verify.Xunit" Version="31.9.4" />
     <PackageVersion Include="Xunit" Version="2.9.3" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.5" />
   </ItemGroup>
