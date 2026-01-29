@@ -26,7 +26,7 @@
 
         return result
             .Replace("> <", "><")
-            .Replace("â€", "-")
+            .Replace("â€“", "-")
                 .Replace("â€™", "'")
                 .Replace("&ndash;", "-");
     }
