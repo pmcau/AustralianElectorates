@@ -23,12 +23,12 @@
     "DeputyOfficers": [
       {
         "Title": "Ms",
-        "FamilyName": "Sutton",
-        "GivenNames": "Alicia",
+        "FamilyName": "McGovern",
+        "GivenNames": "Amanda",
         "Capacity": "Deputy Registered Officer",
         "Address": {
-          "Line1": "24 Malvolio Road",
-          "Suburb": "Coolbellup",
+          "Line1": "173 Grove Road",
+          "Suburb": "Lesmurdie",
           "State": "WA",
-          "Postcode": 6163
+          "Postcode": 6076
         }

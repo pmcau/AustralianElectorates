@@ -12,7 +12,6 @@ public class Sync
     static List<string> electorates2025 = [];
 
     [Fact]
-    [Trait("Category", "Integration")]
     public async Task SyncData()
     {
         var electorateToStateMap = GetElectorateToStateMap();
