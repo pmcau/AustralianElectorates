@@ -23,18 +23,6 @@
     "DeputyOfficers": [
       {
         "Title": "Ms",
-        "FamilyName": "Sutton",
-        "GivenNames": "Alicia",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "24 Malvolio Road",
-          "Suburb": "Coolbellup",
-          "State": "WA",
-          "Postcode": 6163
-        }
-      },
-      {
-        "Title": "Ms",
         "FamilyName": "McGovern",
         "GivenNames": "Amanda",
         "Capacity": "Deputy Registered Officer",
@@ -79,30 +67,6 @@
           "Suburb": "KURONGBAH",
           "State": "QLD",
           "Postcode": 4503
-        }
-      },
-      {
-        "Title": "Ms",
-        "FamilyName": "Sutch",
-        "GivenNames": "Jenna",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "13 Gray Court",
-          "Suburb": "Prospect",
-          "State": "SA",
-          "Postcode": 5082
-        }
-      },
-      {
-        "Title": "Ms",
-        "FamilyName": "Soxsmith",
-        "GivenNames": "Robyn",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "81 Morrison Street",
-          "Suburb": "Kambah",
-          "State": "ACT",
-          "Postcode": 2902
         }
       },
       {
@@ -244,18 +208,6 @@
           "Suburb": "Mannum",
           "State": "SA",
           "Postcode": 5238
-        }
-      },
-      {
-        "Title": "Mr",
-        "FamilyName": "Freer",
-        "GivenNames": "Mark",
-        "Capacity": "Deputy Registered Officer",
-        "Address": {
-          "Line1": "6 Baroota Avenue",
-          "Suburb": "Rostrevor",
-          "State": "SA",
-          "Postcode": 5073
         }
       },
       {
@@ -647,8 +599,8 @@
         "DeputyOfficers": [
           {
             "Title": "Mr",
-            "FamilyName": "Beers",
-            "GivenNames": "Zac",
+            "FamilyName": "Richmond",
+            "GivenNames": "Luke",
             "Capacity": "Deputy Registered Officer",
             "Address": {
               "Line1": "PO Box 5032",
@@ -944,7 +896,7 @@
       "GivenNames": "Thomas Richard",
       "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "Level 20 Tower A The Zenith",
+        "Line1": "Level 9 Tower A The Zenith",
         "Line2": "821 Pacific Highway",
         "Suburb": "Chatswood",
         "State": "NSW",
@@ -1488,10 +1440,10 @@
         "AmendmentDate": "18 July 1984",
         "Address": "Level 12, 257 Collins Street\nMELBOURNE VIC 3000",
         "Officer": {
-          "Title": "Ms",
-          "FamilyName": "Redfern",
-          "GivenNames": "Felicity",
-          "Capacity": "Registered Officer",
+          "Title": "Mr",
+          "FamilyName": "Wynen",
+          "GivenNames": "Sid",
+          "Capacity": "Secretary",
           "Address": {
             "Line1": "Level 12",
             "Line2": "257 Collins Street",
@@ -1704,6 +1656,29 @@
         }
       }
     ],
+    "Branches": []
+  },
+  {
+    "Id": 1530,
+    "Name": "Power 2 People",
+    "Code": "P2P",
+    "Abbreviation": "P2P",
+    "RegisterDate": "16 December 2025",
+    "AmendmentDate": "16 December 2025",
+    "Address": "Suite 1248, 17 Gould Road\nHERSTON QLD 4006",
+    "Officer": {
+      "Title": "Mrs",
+      "FamilyName": "Cook",
+      "GivenNames": "Deborah Marina",
+      "Capacity": "Proposed Registered Officer",
+      "Address": {
+        "Line1": "Suite 1248, 17 Gould Road",
+        "Suburb": "Herston",
+        "State": "QLD",
+        "Postcode": 4006
+      }
+    },
+    "DeputyOfficers": [],
     "Branches": []
   },
   {
@@ -2214,7 +2189,7 @@
         "Abbreviation": "The Nationals",
         "RegisterDate": "22 June 1984",
         "AmendmentDate": "22 June 1984",
-        "Address": "GPO Box 4558\nSYDNEY NSW 2001",
+        "Address": "GPO Box 4558\nSYDNEY NSW 2000",
         "Officer": {
           "Title": "Mrs",
           "FamilyName": "Mencshelyi",
@@ -2239,10 +2214,10 @@
         "AmendmentDate": "22 June 1984",
         "Address": "Level 13\n30 Collins Street\nMELBOURNE VIC 3000",
         "Officer": {
-          "Title": "Ms",
-          "FamilyName": "Feery",
-          "GivenNames": "Lyndel",
-          "Capacity": "Registered Officer",
+          "Title": "Mr",
+          "FamilyName": "McKenzie-Edwards",
+          "GivenNames": "Jake",
+          "Capacity": "Party Agent",
           "Address": {
             "Line1": "Level 13",
             "Line2": "30 Collins Street",
