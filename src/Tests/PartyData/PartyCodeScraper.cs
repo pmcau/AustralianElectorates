@@ -1,6 +1,4 @@
-﻿using HtmlAgilityPack;
-
-public static class PartyCodeScraper
+﻿public static class PartyCodeScraper
 {
     public static async Task<Dictionary<string, string>> Run()
     {

@@ -1,5 +1,4 @@
-﻿using HtmlAgilityPack;
-using Xunit.Abstractions;
+﻿using Xunit.Abstractions;
 
 static class PostcodeScraper
 {

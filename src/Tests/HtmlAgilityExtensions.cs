@@ -1,23 +1,33 @@
-﻿using System.Text.RegularExpressions;
-using HtmlAgilityPack;
-
-static class HtmlAgilityExtensions
+﻿static class HtmlAgilityExtensions
 {
     public static string TrimmedInnerHtml(this HtmlNode node)
     {
-        var html = node.InnerHtml;
-        return TrimmedInnerHtml(html);
-    }
+        var builder = new StringBuilder(node.InnerHtml.Length);
+        var lastWasWhitespace = false;
 
-    public static string TrimmedInnerHtml(this string html)
-    {
-        var newlinesTrimmed = html.Replace("\r\n", " ");
-        var duplicateWhiteSpaceTrimmed = Regex.Replace(newlinesTrimmed, @"\s+", " ");
-        return duplicateWhiteSpaceTrimmed
-            .Trim()
+        foreach (var c in node.InnerHtml)
+        {
+            if (c == '\r' || c == '\n' || char.IsWhiteSpace(c))
+            {
+                if (!lastWasWhitespace)
+                {
+                    builder.Append(' ');
+                    lastWasWhitespace = true;
+                }
+            }
+            else
+            {
+                builder.Append(c);
+                lastWasWhitespace = false;
+            }
+        }
+
+        var result = builder.ToString().Trim();
+
+        return result
             .Replace("> <", "><")
-            .Replace("â€“", "-")
-            .Replace("â€™", "'")
-            .Replace("&ndash;", "-");
+            .Replace("â€", "-")
+                .Replace("â€™", "'")
+                .Replace("&ndash;", "-");
     }
 }

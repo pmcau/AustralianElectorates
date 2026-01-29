@@ -1,6 +1,4 @@
-﻿using HtmlAgilityPack;
-
-static class Extensions
+﻿static class Extensions
 {
     public static void AppendArguments(this ProcessStartInfo info, IEnumerable<string> arguments)
     {

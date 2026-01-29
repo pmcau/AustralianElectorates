@@ -1,6 +1,4 @@
-﻿using HtmlAgilityPack;
-
-static class ElectoratesScraper
+﻿static class ElectoratesScraper
 {
     // public static Task<ElectorateEx> ScrapeCurrentElectorate(string shortName, State state)
     // {
