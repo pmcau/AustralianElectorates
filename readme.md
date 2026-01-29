@@ -145,14 +145,14 @@ Sample:
     "DeputyOfficers": [
       {
         "Title": "Ms",
-        "FamilyName": "Sutton",
-        "GivenNames": "Alicia",
+        "FamilyName": "McGovern",
+        "GivenNames": "Amanda",
         "Capacity": "Deputy Registered Officer",
         "Address": {
-          "Line1": "24 Malvolio Road",
-          "Suburb": "Coolbellup",
+          "Line1": "173 Grove Road",
+          "Suburb": "Lesmurdie",
           "State": "WA",
-          "Postcode": 6163
+          "Postcode": 6076
         }
 ```
 <sup><a href='/src/Tests/Snippets.PartiesSampleJson.verified.txt#L1-L34' title='Snippet source file'>snippet source</a> | <a href='#snippet-Snippets.PartiesSampleJson.verified.txt' title='Start of snippet'>anchor</a></sup>
