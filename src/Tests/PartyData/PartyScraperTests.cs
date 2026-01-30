@@ -1,7 +1,6 @@
 ﻿public class PartyScraperTests
 {
-    [Fact]
-    [Trait("Category", "Integration")]
+    [Fact(Explicit = true)]
     public Task Run() =>
         PartyScraper.Run();
 }

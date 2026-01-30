@@ -1,7 +1,6 @@
 ﻿public class ElectoratesScraperTests
 {
-    [Fact]
-    [Trait("Category", "Integration")]
+    [Fact(Explicit = true)]
     public async Task Run()
     {
         var northSydney = await ElectoratesScraper.ScrapeElectorate(2022, "north-sydney", State.NSW);

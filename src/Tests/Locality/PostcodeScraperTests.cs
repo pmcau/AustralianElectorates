@@ -1,9 +1,6 @@
-﻿using Xunit.Abstractions;
-
-public class PostcodeScraperTests(ITestOutputHelper outputHelper)
+﻿public class PostcodeScraperTests(ITestOutputHelper outputHelper)
 {
-    [Fact]
-    [Trait("Category", "Integration")]
+    [Fact(Explicit = true)]
     public async Task Run()
     {
         var data = await PostcodeScraper.Run(outputHelper);
@@ -12,8 +9,7 @@ public class PostcodeScraperTests(ITestOutputHelper outputHelper)
         await Verify(data.Take(10));
     }
 
-    [Fact]
-    [Trait("Category", "Integration")]
+    [Fact(Explicit = true)]
     public Task Specific() =>
         Verify(PostcodeScraper.GetAECDataForPostcode("6062"));
 }

@@ -1,7 +1,6 @@
 ﻿public class PdfToPngTests
 {
-    [Fact]
-    [Trait("Category", "Integration")]
+    [Fact(Explicit = true)]
     public Task ConvertSingle()
     {
         var fullPath = Path.GetFullPath("sample_electorate_map.pdf");

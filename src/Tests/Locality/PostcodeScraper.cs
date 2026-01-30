@@ -1,6 +1,4 @@
-﻿using Xunit.Abstractions;
-
-static class PostcodeScraper
+﻿static class PostcodeScraper
 {
     static HttpClient client = new();
 

@@ -11,7 +11,7 @@ public class Sync
     static List<string> electorates2022 = [];
     static List<string> electorates2025 = [];
 
-    [Fact]
+    [Fact(Explicit = true)]
     public async Task SyncData()
     {
         var electorateToStateMap = GetElectorateToStateMap();
@@ -111,8 +111,7 @@ public class Sync
         return electorateToStateMap;
     }
 
-    [Fact]
-    [Trait("Category", "Integration")]
+    [Fact(Explicit = true)]
     public void CreatePortraitAndLandscapeTest()
     {
         var pngPath = Path.Combine(DataLocations.MapsDetail, "banks.png");
@@ -257,8 +256,7 @@ public class Sync
         JsonSerializerService.SerializeGeo(featureCollection, targetPath);
     }
 
-    [Fact]
-    [Trait("Category", "Integration")]
+    [Fact(Explicit = true)]
     public void AssertAllContainBbox()
     {
         foreach (var file in Directory.EnumerateFiles(DataLocations.MapsPath, "*.geojson", SearchOption.AllDirectories))
