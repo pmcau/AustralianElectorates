@@ -10,6 +10,6 @@
     <EmbeddedResource Condition="Exists('..\..\Data\parties.json')" Include="..\..\Data\parties.json" LogicalName="parties.json" Link="parties.json" />
 
     <PackageReference Include="ProjectDefaults" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.Sbom.Targets" PrivateAssets="all" Condition="$(Configuration)=='Release'" />
+    <PackageReference Include="Microsoft.Sbom.Targets" PrivateAssets="all" Condition="'$(CI)' == 'true'" />
   </ItemGroup>
 </Project>
