@@ -1,6 +1,7 @@
 ﻿using NetTopologySuite.Features;
 using NetTopologySuite.Geometries;
 using NetTopologySuite.IO;
+using NetTopologySuite.IO.Esri;
 using Newtonsoft.Json;
 
 public class ElectorateToLgaMap
@@ -8,9 +9,7 @@ public class ElectorateToLgaMap
     [Fact]
     public void ElectorateOverlapWithLga()
     {
-        var factory = new GeometryFactory();
-
-        using var shapeFileDataReader = new ShapefileDataReader(Path.Combine(ProjectFiles.ProjectDirectory, @"Lga\LGA_2022_AUST_GDA2020.shp"), factory);
+        using var shapeFileDataReader = Shapefile.OpenRead(Path.Combine(ProjectFiles.ProjectDirectory, @"Lga\LGA_2022_AUST_GDA2020.shp"));
 
         var electorateToLga = new Dictionary<string, List<string>>();
         var lgaToElectorate = new Dictionary<string, List<string>>();
@@ -42,7 +41,7 @@ public class ElectorateToLgaMap
         while (shapeFileDataReader.Read())
         {
             var lgaGeometry = shapeFileDataReader.Geometry;
-            var lga = shapeFileDataReader.GetString(2);
+            var lga = (string)shapeFileDataReader.Fields[1].Value;
 
             var list = new List<string>();
             lgaToElectorate.Add(lga, list);
