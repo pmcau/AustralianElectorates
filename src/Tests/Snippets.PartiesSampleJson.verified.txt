@@ -1,34 +1,34 @@
 ﻿[
   {
-    "Id": 1339,
-    "Name": "Animal Justice Party",
-    "Code": "AJP",
-    "Abbreviation": "AJP",
-    "RegisterDate": "3 May 2011",
-    "AmendmentDate": "3 May 2011",
-    "Address": "Ground Floor\n470 St Kilda Rd\nMELBOURNE VIC 3004",
+    "Id": 1336,
+    "Name": "Affordable Housing Now - Sustainable Australia Party",
+    "Code": "Sustainable Australia Party",
+    "Abbreviation": "Sustainable Australia Party",
+    "RegisterDate": "23 September 2010",
+    "AmendmentDate": "23 September 2010",
+    "Address": "Suite 15, 20 Burlington Street\nCROWS NEST NSW 2065",
     "Officer": {
-      "Title": "Mrs",
-      "FamilyName": "Elisei",
-      "GivenNames": "Lorna",
-      "Capacity": "Registered Officer",
+      "Title": "Mr",
+      "FamilyName": "Bourke",
+      "GivenNames": "William",
       "Address": {
-        "Line1": "Ground Floor",
-        "Line2": "470 St Kilda Road",
-        "Suburb": "Melbourne",
-        "State": "VIC",
-        "Postcode": 3004
+        "Line1": "Suite 15, 20 Burlington Street",
+        "Suburb": "Crows Nest",
+        "State": "NSW",
+        "Postcode": 2065
       }
     },
     "DeputyOfficers": [
       {
-        "Title": "Ms",
-        "FamilyName": "McGovern",
-        "GivenNames": "Amanda",
-        "Capacity": "Deputy Registered Officer",
+        "Title": "Mr",
+        "FamilyName": "Haydon",
+        "GivenNames": "John",
         "Address": {
-          "Line1": "173 Grove Road",
-          "Suburb": "Lesmurdie",
-          "State": "WA",
-          "Postcode": 6076
+          "Line1": "3/6 Hall Street",
+          "Suburb": "Lyneham",
+          "State": "ACT",
+          "Postcode": 2602
         }
+      }
+    ],
+    "Branches": []

@@ -11,7 +11,7 @@ public class Sync
     static List<string> electorates2022 = [];
     static List<string> electorates2025 = [];
 
-    [Fact(Explicit = true)]
+    [Fact()]
     public async Task SyncData()
     {
         var electorateToStateMap = GetElectorateToStateMap();

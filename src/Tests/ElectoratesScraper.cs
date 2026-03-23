@@ -23,11 +23,20 @@
             requestUri = await Downloader.DownloadFile(tempElectorateHtmlPath, requestUri);
 
             // because AEC does not return a 404 for missing electorates
+            // and may redirect to a by-election page instead of the profile
             var textAsync = await File.ReadAllTextAsync(tempElectorateHtmlPath);
-            if (textAsync.Contains("Sauce not found"))
+            if (textAsync.Contains("Sauce not found") ||
+                !textAsync.Contains("Profile of the electoral division of"))
             {
                 requestUri = $"https://www.aec.gov.au/Elections/federal_elections/{year}/profiles/{state.ToString().ToLowerInvariant()}/{shortName}.htm";
-                //requestUri = $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm";
+                requestUri = await Downloader.DownloadFile(tempElectorateHtmlPath, requestUri);
+                textAsync = await File.ReadAllTextAsync(tempElectorateHtmlPath);
+            }
+
+            if (textAsync.Contains("Sauce not found") ||
+                !textAsync.Contains("Profile of the electoral division of"))
+            {
+                requestUri = $"https://www.aec.gov.au/profiles/{state}/{shortName}.htm";
                 requestUri = await Downloader.DownloadFile(tempElectorateHtmlPath, requestUri);
             }
 
