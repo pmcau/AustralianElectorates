@@ -1,2 +1,2 @@
 ﻿{"type":"FeatureCollection","features":[
-{"properties":{"electorateShortName":"bean","electorateName":"Bean","area":1913.8,"state":null},"type":"Feature","geometry":{"type":"MultiPolygon","coordinate
+{"properties":{"electorateShortName":"bean","electorateName":"Bean","area":1913.8,"state":null},"type":"Feature","geometry":{"type":"MultiPolygon","coordinates
