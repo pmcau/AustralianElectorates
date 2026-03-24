@@ -31,7 +31,7 @@ static class JsonSerializerService
         }
 
         var serializeObject = JsonConvert.SerializeObject(value, geoSettings);
-        serializeObject = serializeObject.Replace("{\"properties\":", "\r\n{\"properties\":");
+        serializeObject = serializeObject.Replace("{\"properties\":", "\n{\"properties\":");
         File.WriteAllText(path, serializeObject);
     }
 
