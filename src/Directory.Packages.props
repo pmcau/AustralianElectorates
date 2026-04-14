@@ -9,7 +9,7 @@
     <PackageVersion Include="CountryData" Version="6.17.0" />
     <PackageVersion Include="GeoJSON.Net" Version="1.4.1" />
     <PackageVersion Include="HtmlAgilityPack" Version="1.12.4" />
-    <PackageVersion Include="MarkdownSnippets.MsBuild" Version="28.0.2" />
+    <PackageVersion Include="MarkdownSnippets.MsBuild" Version="28.1.0" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.4.0" />
     <PackageVersion Include="Microsoft.Sbom.Targets" Version="4.1.5" />
     <PackageVersion Include="NetTopologySuite" Version="2.6.0" />
@@ -17,7 +17,7 @@
     <PackageVersion Include="NetTopologySuite.IO.Esri.Shapefile" Version="1.2.0" />
     <PackageVersion Include="ProjectDefaults" Version="1.0.172" />
     <PackageVersion Include="ProjectFiles" Version="1.1.1" />
-    <PackageVersion Include="System.Drawing.Common" Version="10.0.5" />
+    <PackageVersion Include="System.Drawing.Common" Version="10.0.6" />
     <PackageVersion Include="Verify.XunitV3" Version="31.15.0" />
     <PackageVersion Include="xunit.v3" Version="3.2.2" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.5" />
