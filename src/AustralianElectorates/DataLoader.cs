@@ -6,6 +6,8 @@ namespace AustralianElectorates;
 public static partial class DataLoader
 {
     static Assembly assembly;
+    // Location lookup uses the full-detail current (2025) australia map so coastal/border points resolve accurately.
+    static Lazy<ElectorateLocator> locator = new(() => new(ReadFullAustralia()));
 
     static DataLoader()
     {
@@ -176,6 +178,49 @@ public static partial class DataLoader
                 yield return electorate;
             }
         }
+    }
+
+    public static IElectorate LocateElectorate(double latitude, double longitude)
+    {
+        if (TryLocateElectorate(latitude, longitude, out var electorate))
+        {
+            return electorate;
+        }
+
+        throw new($"Unable to find electorate for location: latitude '{latitude}', longitude '{longitude}'.");
+    }
+
+    // postcode is an optional performance hint; the result is identical to the lookup without it.
+    public static IElectorate LocateElectorate(double latitude, double longitude, int? postcode)
+    {
+        if (TryLocateElectorate(latitude, longitude, postcode, out var electorate))
+        {
+            return electorate;
+        }
+
+        throw new($"Unable to find electorate for location: latitude '{latitude}', longitude '{longitude}'.");
+    }
+
+    public static bool TryLocateElectorate(double latitude, double longitude, [NotNullWhen(true)] out IElectorate? electorate)
+    {
+        electorate = locator.Value.Find(latitude, longitude);
+        return electorate != null;
+    }
+
+    public static bool TryLocateElectorate(double latitude, double longitude, int? postcode, [NotNullWhen(true)] out IElectorate? electorate)
+    {
+        electorate = postcode.HasValue
+            ? locator.Value.Find(latitude, longitude, postcode.Value)
+            : locator.Value.Find(latitude, longitude);
+        return electorate != null;
+    }
+
+    static string ReadFullAustralia()
+    {
+        using var stream = assembly.GetManifestResourceStream("AustraliaFull.zip")!;
+        using var archive = new ZipArchive(stream);
+        var entry = archive.GetEntry("2025/australia.geojson")!;
+        return entry.ReadString();
     }
 
     public static bool TryFindInvalidateElectorates(IEnumerable<string> names, out List<string> invalid)
