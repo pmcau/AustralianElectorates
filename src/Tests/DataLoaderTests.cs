@@ -34,30 +34,51 @@ public class DataLoaderTests
     }
 
     [Fact]
-    public void LocateElectorate()
+    public void LocateElectorate_no_postcode()
     {
-        // Melbourne CBD (Flinders Street Station)
-        var melbourne = DataLoader.Maps2025.LocateElectorate(-37.8183, 144.9671);
-        Assert.NotNull(melbourne);
-        Assert.Equal("Melbourne", melbourne.Name);
-
-        // Sydney CBD (Town Hall)
-        var sydney = DataLoader.Maps2025.LocateElectorate(-33.8731, 151.2065);
-        Assert.NotNull(sydney);
-        Assert.Equal("Sydney", sydney.Name);
+        // (-35.349, 149.09) is in Canberra under the 2025 boundaries
+        var electorate = DataLoader.Maps2025.LocateElectorate(-35.349, 149.09);
+        Assert.NotNull(electorate);
+        Assert.Equal("Canberra", electorate.Name);
     }
 
     [Fact]
-    public void LocateElectorate_with_postcode()
+    public void LocateElectorate_single_in_postcode()
     {
-        var electorate = DataLoader.Maps2025.LocateElectorate(-37.8183, 144.9671, 3000);
+        // 2903 maps only to Bean (count == 1 fast-path), and the point is in Bean
+        var electorate = DataLoader.Maps2025.LocateElectorate(-35.42, 149.07, 2903);
         Assert.NotNull(electorate);
-        Assert.Equal("Melbourne", electorate.Name);
+        Assert.Equal("Bean", electorate.Name);
+    }
+
+    [Fact]
+    public void LocateElectorate_multiple_in_postcode()
+    {
+        // 2606 maps to both Bean and Canberra; geometry resolves the point to Canberra
+        var electorate = DataLoader.Maps2025.LocateElectorate(-35.349, 149.09, 2606);
+        Assert.NotNull(electorate);
+        Assert.Equal("Canberra", electorate.Name);
+    }
+
+    [Fact]
+    public void LocateElectorate_postcode_narrowing_backstop()
+    {
+        // 6338 yields no postcode candidates, so the all-electorates backstop resolves the point to O'Connor
+        var electorate = DataLoader.Maps2025.LocateElectorate(-34.2527415, 118.2189916, 6338);
+        Assert.NotNull(electorate);
+        Assert.Equal("O'Connor", electorate.Name);
     }
 
     [Fact]
     public void LocateElectorate_outside_australia() =>
         Assert.Null(DataLoader.Maps2025.LocateElectorate(0, 0));
+
+    [Fact]
+    public void LocateElectorate_unsupported_geometry()
+    {
+        var geoJson = """{"type":"FeatureCollection","features":[{"properties":{"electorateName":"X"},"type":"Feature","geometry":{"type":"Point","coordinates":[0,0]}}]}""";
+        Assert.Throws<Exception>(() => new ElectorateLocator(geoJson));
+    }
 
     [Fact]
     public Task TryFindElectorate_not_found()

@@ -8,13 +8,17 @@ public class MapCollection
     ConcurrentDictionary<string, IElectorateMap> electoratesCache = new(StringComparer.OrdinalIgnoreCase);
     ConcurrentDictionary<State, IStateMap> statesCache = [];
     string? australia;
+    Lazy<ElectorateLocator> locator;
     static Assembly assembly;
 
     public IReadOnlyDictionary<string, IElectorateMap> LoadedElectorates => electoratesCache;
     public IReadOnlyDictionary<State, IStateMap> LoadedStates => statesCache;
 
-    internal MapCollection(string prefix) =>
+    internal MapCollection(string prefix)
+    {
         this.prefix = prefix;
+        locator = new(() => new(GetAustralia()));
+    }
 
     static MapCollection() =>
         assembly = typeof(DataLoader).Assembly;
@@ -71,6 +75,9 @@ public class MapCollection
 
         return australia;
     }
+
+    public IElectorate? LocateElectorate(double latitude, double longitude, int? postcode = null) =>
+        locator.Value.Find(latitude, longitude, postcode);
 
     static string GetMap(string path)
     {

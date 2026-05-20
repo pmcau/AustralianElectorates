@@ -12,7 +12,6 @@
   <Project Path="AustralianElectorates.DetailMaps.Landscape/AustralianElectorates.DetailMaps.Landscape.csproj" />
   <Project Path="AustralianElectorates.DetailMaps.Portrait/AustralianElectorates.DetailMaps.Portrait.csproj" />
   <Project Path="AustralianElectorates.DetailMaps/AustralianElectorates.DetailMaps.csproj" />
-  <Project Path="AustralianElectorates.LocationLookup/AustralianElectorates.LocationLookup.csproj" />
   <Project Path="AustralianElectorates/AustralianElectorates.csproj" />
   <Project Path="Tests/Tests.csproj" />
 </Solution>
