@@ -55,6 +55,42 @@ public class Snippets
     }
 
     [Fact]
+    public void LocateElectorateUsage()
+    {
+        #region usageLocateElectorate
+
+        var maps = DataLoader.Maps2025;
+
+        // find the electorate containing a location (latitude, longitude)
+        // throws if the location is outside all electorates
+        var electorate = maps.LocateElectorate(-35.349, 149.09);
+        Trace.WriteLine(electorate.Name);
+
+        // or use the Try variant when the location may be outside all electorates
+        if (maps.TryLocateElectorate(-35.349, 149.09, out var found))
+        {
+            Trace.WriteLine(found.Name);
+        }
+
+        #endregion
+    }
+
+    [Fact]
+    public void ElectoratesForPostcodeUsage()
+    {
+        #region usageElectoratesForPostcode
+
+        // all current electorates that include a postcode
+        var electorates = DataLoader.ElectoratesForPostcode(2606);
+        foreach (var electorate in electorates)
+        {
+            Trace.WriteLine(electorate.Name);
+        }
+
+        #endregion
+    }
+
+    [Fact]
     public Task ElectoratesSampleJson() =>
         Verify(string.Join(Environment.NewLine, File
             .ReadAllLines(DataLocations.ElectoratesJsonPath)

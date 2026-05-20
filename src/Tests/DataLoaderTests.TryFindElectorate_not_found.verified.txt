@@ -1,8 +1,5 @@
 ﻿{
   Type: ElectorateNotFoundException,
   Name: not Found,
-  Message: Unable to find electorate: 'not Found'.,
-  StackTrace:
-at AustralianElectorates.DataLoader.FindElectorate(String name)
-at DataLoaderTests.<>c.<TryFindElectorate_not_found>b__1_0()
+  Message: Unable to find electorate: 'not Found'.
 }

@@ -34,10 +34,61 @@ public class DataLoaderTests
     }
 
     [Fact]
+    public void LocateElectorate()
+    {
+        var maps = DataLoader.Maps2025;
+
+        // (-35.349, 149.09) is in Canberra under the 2025 boundaries
+        Assert.Equal("Canberra", maps.LocateElectorate(-35.349, 149.09).Name);
+        // Tuggeranong is in Bean (whose bbox is large because Bean includes Norfolk Island)
+        Assert.Equal("Bean", maps.LocateElectorate(-35.42, 149.07).Name);
+        // a point in remote Western Australia
+        Assert.Equal("O'Connor", maps.LocateElectorate(-34.2527415, 118.2189916).Name);
+    }
+
+    [Fact]
+    public void LocateElectorate_outside_australia() =>
+        Assert.Throws<Exception>(() => DataLoader.Maps2025.LocateElectorate(0, 0));
+
+    [Fact]
+    public void TryLocateElectorate()
+    {
+        var maps = DataLoader.Maps2025;
+
+        Assert.True(maps.TryLocateElectorate(-35.349, 149.09, out var electorate));
+        Assert.NotNull(electorate);
+        Assert.Equal("Canberra", electorate.Name);
+
+        Assert.False(maps.TryLocateElectorate(0, 0, out var missing));
+        Assert.Null(missing);
+    }
+
+    [Fact]
+    public void LocateElectorate_unsupported_geometry()
+    {
+        var geoJson = """{"type":"FeatureCollection","features":[{"properties":{"electorateName":"Bean"},"type":"Feature","geometry":{"type":"Point","coordinates":[0,0]}}]}""";
+        Assert.Throws<Exception>(() => new ElectorateLocator(geoJson));
+    }
+
+    [Fact]
+    public void ElectoratesForPostcode()
+    {
+        var electorates = DataLoader.ElectoratesForPostcode(2606)
+            .ToList();
+        Assert.All(electorates, _ => Assert.True(_.Exist2025));
+        var names = electorates
+            .Select(_ => _.Name)
+            .ToList();
+        Assert.Contains("Bean", names);
+        Assert.Contains("Canberra", names);
+    }
+
+    [Fact]
     public Task TryFindElectorate_not_found()
     {
         Assert.False(DataLoader.TryFindElectorate("not Found", out _));
-        return Throws(() => DataLoader.FindElectorate("not Found"));
+        return Throws(() => DataLoader.FindElectorate("not Found"))
+            .IgnoreStackTrace();
     }
 
     [Fact]
@@ -64,7 +115,8 @@ public class DataLoaderTests
 
     [Fact]
     public Task ValidateElectorates() =>
-        Throws(() => DataLoader.ValidateElectorates("not Found", "Bass"));
+        Throws(() => DataLoader.ValidateElectorates("not Found", "Bass"))
+            .IgnoreStackTrace();
 
     [Fact]
     public Task FindInvalidateElectorates() =>
@@ -210,6 +262,7 @@ public class DataLoaderTests
     {
         var parliament = 0;
         Assert.False(DataLoader.TryFindElection(parliament, out _));
-        return Throws(() => DataLoader.FindElection(parliament));
+        return Throws(() => DataLoader.FindElection(parliament))
+            .IgnoreStackTrace();
     }
 }
