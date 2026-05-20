@@ -286,25 +286,28 @@ return DataLoader.Export(directory);
 
 ## Location Lookup
 
-Find the electorate that contains a geographic location (latitude/longitude). `LocateElectorate` throws if the location is not inside any electorate; use `TryLocateElectorate` to handle that case.
+Find the electorate that contains a geographic location (latitude/longitude). `LocateElectorate` throws if the location is not inside any electorate; use `TryLocateElectorate` to handle that case. A postcode can optionally be supplied as a performance hint: it narrows the candidate electorates before the geometric test and falls back to a full search, so the result is identical.
 
 <!-- snippet: usageLocateElectorate -->
 <a id='snippet-usageLocateElectorate'></a>
 ```cs
-var maps = DataLoader.Maps2025;
-
 // find the electorate containing a location (latitude, longitude)
 // throws if the location is outside all electorates
-var electorate = maps.LocateElectorate(-35.349, 149.09);
+var electorate = DataLoader.LocateElectorate(-35.349, 149.09);
 Trace.WriteLine(electorate.Name);
 
 // or use the Try variant when the location may be outside all electorates
-if (maps.TryLocateElectorate(-35.349, 149.09, out var found))
+if (DataLoader.TryLocateElectorate(-35.349, 149.09, out var found))
 {
     Trace.WriteLine(found.Name);
 }
+
+// optionally pass a postcode as a performance hint; it narrows the
+// candidate electorates first, then falls back to a full search
+var byPostcode = DataLoader.LocateElectorate(-35.349, 149.09, 2903);
+Trace.WriteLine(byPostcode.Name);
 ```
-<sup><a href='/src/Tests/Snippets.cs#L60-L75' title='Snippet source file'>snippet source</a> | <a href='#snippet-usageLocateElectorate' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L60-L78' title='Snippet source file'>snippet source</a> | <a href='#snippet-usageLocateElectorate' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -322,7 +325,7 @@ foreach (var electorate in electorates)
     Trace.WriteLine(electorate.Name);
 }
 ```
-<sup><a href='/src/Tests/Snippets.cs#L81-L90' title='Snippet source file'>snippet source</a> | <a href='#snippet-usageElectoratesForPostcode' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L84-L93' title='Snippet source file'>snippet source</a> | <a href='#snippet-usageElectoratesForPostcode' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -344,7 +347,7 @@ var faker = new Faker<Target>()
             .Name());
 var targetInstance = faker.Generate();
 ```
-<sup><a href='/src/Tests/Snippets.cs#L114-L129' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagebogus' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L117-L132' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagebogus' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -447,7 +450,7 @@ Elections are currently added manually as they are declared.
     }
 ];
 ```
-<sup><a href='/src/AustralianElectorates/DataLoader.cs#L72-L103' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/AustralianElectorates/DataLoader.cs#L74-L105' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 

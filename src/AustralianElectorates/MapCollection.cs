@@ -1,5 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using System.IO.Compression;
+﻿using System.IO.Compression;
 
 namespace AustralianElectorates;
 
@@ -9,17 +8,13 @@ public class MapCollection
     ConcurrentDictionary<string, IElectorateMap> electoratesCache = new(StringComparer.OrdinalIgnoreCase);
     ConcurrentDictionary<State, IStateMap> statesCache = [];
     string? australia;
-    Lazy<ElectorateLocator> locator;
     static Assembly assembly;
 
     public IReadOnlyDictionary<string, IElectorateMap> LoadedElectorates => electoratesCache;
     public IReadOnlyDictionary<State, IStateMap> LoadedStates => statesCache;
 
-    internal MapCollection(string prefix)
-    {
+    internal MapCollection(string prefix) =>
         this.prefix = prefix;
-        locator = new(() => new(GetAustralia()));
-    }
 
     static MapCollection() =>
         assembly = typeof(DataLoader).Assembly;
@@ -69,22 +64,6 @@ public class MapCollection
 
     public string GetAustralia() =>
         australia ??= GetMap($@"{prefix}\australia");
-
-    public IElectorate LocateElectorate(double latitude, double longitude)
-    {
-        if (TryLocateElectorate(latitude, longitude, out var electorate))
-        {
-            return electorate;
-        }
-
-        throw new($"Unable to find electorate for location: latitude '{latitude}', longitude '{longitude}'.");
-    }
-
-    public bool TryLocateElectorate(double latitude, double longitude, [NotNullWhen(true)] out IElectorate? electorate)
-    {
-        electorate = locator.Value.Find(latitude, longitude);
-        return electorate != null;
-    }
 
     static string GetMap(string path)
     {

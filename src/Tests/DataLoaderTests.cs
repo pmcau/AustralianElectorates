@@ -36,30 +36,46 @@ public class DataLoaderTests
     [Fact]
     public void LocateElectorate()
     {
-        var maps = DataLoader.Maps2025;
-
-        // (-35.349, 149.09) is in Canberra under the 2025 boundaries
-        Assert.Equal("Canberra", maps.LocateElectorate(-35.349, 149.09).Name);
-        // Tuggeranong is in Bean (whose bbox is large because Bean includes Norfolk Island)
-        Assert.Equal("Bean", maps.LocateElectorate(-35.42, 149.07).Name);
+        // (-35.349, 149.09) is in Bean (the simplified map misplaced this into Canberra)
+        Assert.Equal("Bean", DataLoader.LocateElectorate(-35.349, 149.09).Name);
         // a point in remote Western Australia
-        Assert.Equal("O'Connor", maps.LocateElectorate(-34.2527415, 118.2189916).Name);
+        Assert.Equal("O'Connor", DataLoader.LocateElectorate(-34.2527415, 118.2189916).Name);
+        // Lancelin: a coastal town the simplified map dropped but the full map resolves
+        Assert.Equal("Durack", DataLoader.LocateElectorate(-31.0225285, 115.3301909).Name);
+    }
+
+    [Fact]
+    public void LocateElectorate_with_postcode()
+    {
+        // postcode narrows the candidates; result matches the no-postcode lookup
+        Assert.Equal("Bean", DataLoader.LocateElectorate(-35.349, 149.09, 2903).Name);
+        // a postcode whose electorates do not contain the point still resolves
+        // via the full-scan backstop (2000 is Sydney; the point is in Bean)
+        Assert.Equal("Bean", DataLoader.LocateElectorate(-35.349, 149.09, 2000).Name);
+        // null postcode behaves like the no-postcode overload
+        Assert.Equal("Bean", DataLoader.LocateElectorate(-35.349, 149.09, null).Name);
+    }
+
+    [Fact]
+    public void TryLocateElectorate_with_postcode()
+    {
+        Assert.True(DataLoader.TryLocateElectorate(-35.349, 149.09, 2903, out var electorate));
+        Assert.NotNull(electorate);
+        Assert.Equal("Bean", electorate.Name);
     }
 
     [Fact]
     public void LocateElectorate_outside_australia() =>
-        Assert.Throws<Exception>(() => DataLoader.Maps2025.LocateElectorate(0, 0));
+        Assert.Throws<Exception>(() => DataLoader.LocateElectorate(0, 0));
 
     [Fact]
     public void TryLocateElectorate()
     {
-        var maps = DataLoader.Maps2025;
-
-        Assert.True(maps.TryLocateElectorate(-35.349, 149.09, out var electorate));
+        Assert.True(DataLoader.TryLocateElectorate(-35.349, 149.09, out var electorate));
         Assert.NotNull(electorate);
-        Assert.Equal("Canberra", electorate.Name);
+        Assert.Equal("Bean", electorate.Name);
 
-        Assert.False(maps.TryLocateElectorate(0, 0, out var missing));
+        Assert.False(DataLoader.TryLocateElectorate(0, 0, out var missing));
         Assert.Null(missing);
     }
 

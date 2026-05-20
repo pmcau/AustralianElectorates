@@ -68,6 +68,26 @@ class ElectorateLocator
         return null;
     }
 
+    public IElectorate? Find(double latitude, double longitude, int postcode)
+    {
+        // Postcode is a performance hint: test the electorates that include the
+        // postcode first (avoids ray-casting large electorates that merely overlap
+        // the point's bounding box), then fall back to a full scan for correctness.
+        var candidates = DataLoader.ElectoratesForPostcode(postcode)
+            .Select(_ => _.Name)
+            .ToHashSet(StringComparer.OrdinalIgnoreCase);
+        foreach (var area in areas)
+        {
+            if (candidates.Contains(area.Electorate.Name) &&
+                area.Contains(longitude, latitude))
+            {
+                return area.Electorate;
+            }
+        }
+
+        return Find(latitude, longitude);
+    }
+
     class Area
     {
         public IElectorate Electorate { get; }
