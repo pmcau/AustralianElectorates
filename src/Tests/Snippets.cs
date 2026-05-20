@@ -59,9 +59,18 @@ public class Snippets
     {
         #region usageLocateElectorate
 
+        var maps = DataLoader.Maps2025;
+
         // find the electorate containing a location (latitude, longitude)
-        var electorate = DataLoader.Maps2025.LocateElectorate(-35.349, 149.09);
-        Trace.WriteLine(electorate!.Name);
+        // throws if the location is outside all electorates
+        var electorate = maps.LocateElectorate(-35.349, 149.09);
+        Trace.WriteLine(electorate.Name);
+
+        // or use the Try variant when the location may be outside all electorates
+        if (maps.TryLocateElectorate(-35.349, 149.09, out var found))
+        {
+            Trace.WriteLine(found.Name);
+        }
 
         #endregion
     }

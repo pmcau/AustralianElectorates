@@ -39,16 +39,29 @@ public class DataLoaderTests
         var maps = DataLoader.Maps2025;
 
         // (-35.349, 149.09) is in Canberra under the 2025 boundaries
-        Assert.Equal("Canberra", maps.LocateElectorate(-35.349, 149.09)?.Name);
+        Assert.Equal("Canberra", maps.LocateElectorate(-35.349, 149.09).Name);
         // Tuggeranong is in Bean (whose bbox is large because Bean includes Norfolk Island)
-        Assert.Equal("Bean", maps.LocateElectorate(-35.42, 149.07)?.Name);
+        Assert.Equal("Bean", maps.LocateElectorate(-35.42, 149.07).Name);
         // a point in remote Western Australia
-        Assert.Equal("O'Connor", maps.LocateElectorate(-34.2527415, 118.2189916)?.Name);
+        Assert.Equal("O'Connor", maps.LocateElectorate(-34.2527415, 118.2189916).Name);
     }
 
     [Fact]
     public void LocateElectorate_outside_australia() =>
-        Assert.Null(DataLoader.Maps2025.LocateElectorate(0, 0));
+        Assert.Throws<Exception>(() => DataLoader.Maps2025.LocateElectorate(0, 0));
+
+    [Fact]
+    public void TryLocateElectorate()
+    {
+        var maps = DataLoader.Maps2025;
+
+        Assert.True(maps.TryLocateElectorate(-35.349, 149.09, out var electorate));
+        Assert.NotNull(electorate);
+        Assert.Equal("Canberra", electorate.Name);
+
+        Assert.False(maps.TryLocateElectorate(0, 0, out var missing));
+        Assert.Null(missing);
+    }
 
     [Fact]
     public void LocateElectorate_unsupported_geometry()
