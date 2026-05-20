@@ -286,22 +286,16 @@ return DataLoader.Export(directory);
 
 ## Location Lookup
 
-Find the electorate that contains a geographic location (latitude/longitude). An optional postcode narrows the candidate electorates before the geometric point-in-electorate test. Returns `null` if the location is not inside any electorate.
+Find the electorate that contains a geographic location (latitude/longitude). Returns `null` if the location is not inside any electorate.
 
 <!-- snippet: usageLocateElectorate -->
 <a id='snippet-usageLocateElectorate'></a>
 ```cs
-var maps = DataLoader.Maps2025;
-
 // find the electorate containing a location (latitude, longitude)
-var electorate = maps.LocateElectorate(-35.349, 149.09);
+var electorate = DataLoader.Maps2025.LocateElectorate(-35.349, 149.09);
 Trace.WriteLine(electorate!.Name);
-
-// optionally narrow the search with a postcode
-var byPostcode = maps.LocateElectorate(-35.42, 149.07, 2903);
-Trace.WriteLine(byPostcode!.Name);
 ```
-<sup><a href='/src/Tests/Snippets.cs#L60-L72' title='Snippet source file'>snippet source</a> | <a href='#snippet-usageLocateElectorate' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L60-L66' title='Snippet source file'>snippet source</a> | <a href='#snippet-usageLocateElectorate' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -319,7 +313,7 @@ foreach (var electorate in electorates)
     Trace.WriteLine(electorate.Name);
 }
 ```
-<sup><a href='/src/Tests/Snippets.cs#L78-L87' title='Snippet source file'>snippet source</a> | <a href='#snippet-usageElectoratesForPostcode' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L72-L81' title='Snippet source file'>snippet source</a> | <a href='#snippet-usageElectoratesForPostcode' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -341,7 +335,7 @@ var faker = new Faker<Target>()
             .Name());
 var targetInstance = faker.Generate();
 ```
-<sup><a href='/src/Tests/Snippets.cs#L111-L126' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagebogus' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L105-L120' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagebogus' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 

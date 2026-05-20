@@ -54,48 +54,13 @@ class ElectorateLocator
         }
     }
 
-    public IElectorate? Find(double latitude, double longitude, int? postcode)
+    public IElectorate? Find(double latitude, double longitude)
     {
-        var name = FindName(latitude, longitude, postcode);
-        if (name == null)
+        foreach (var (name, area) in areas)
         {
-            return null;
-        }
-
-        return DataLoader.FindElectorate(name);
-    }
-
-    string? FindName(double latitude, double longitude, int? postcode)
-    {
-        // No postcode provided, search all electorates.
-        if (postcode == null)
-        {
-            return Locate(latitude, longitude, areas.Keys);
-        }
-
-        var forPostcode = DataLoader.ElectoratesForPostcode(postcode.Value)
-            .Select(_ => _.Name)
-            .Where(areas.ContainsKey)
-            .ToList();
-
-        if (forPostcode.Count == 1)
-        {
-            return forPostcode[0];
-        }
-
-        return Locate(latitude, longitude, forPostcode) ??
-               // Occasionally, postcode-narrowing removes the correct electorate from the pool.
-               // In this case, searching all electorates acts as a backstop.
-               Locate(latitude, longitude, areas.Keys);
-    }
-
-    string? Locate(double latitude, double longitude, IEnumerable<string> names)
-    {
-        foreach (var name in names)
-        {
-            if (areas[name].Contains(longitude, latitude))
+            if (area.Contains(longitude, latitude))
             {
-                return name;
+                return DataLoader.FindElectorate(name);
             }
         }
 

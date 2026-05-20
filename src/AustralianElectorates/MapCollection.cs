@@ -69,8 +69,8 @@ public class MapCollection
     public string GetAustralia() =>
         australia ??= GetMap($@"{prefix}\australia");
 
-    public IElectorate? LocateElectorate(double latitude, double longitude, int? postcode = null) =>
-        locator.Value.Find(latitude, longitude, postcode);
+    public IElectorate? LocateElectorate(double latitude, double longitude) =>
+        locator.Value.Find(latitude, longitude);
 
     static string GetMap(string path)
     {

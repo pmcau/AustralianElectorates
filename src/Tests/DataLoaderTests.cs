@@ -34,39 +34,16 @@ public class DataLoaderTests
     }
 
     [Fact]
-    public void LocateElectorate_no_postcode()
+    public void LocateElectorate()
     {
+        var maps = DataLoader.Maps2025;
+
         // (-35.349, 149.09) is in Canberra under the 2025 boundaries
-        var electorate = DataLoader.Maps2025.LocateElectorate(-35.349, 149.09);
-        Assert.NotNull(electorate);
-        Assert.Equal("Canberra", electorate.Name);
-    }
-
-    [Fact]
-    public void LocateElectorate_single_in_postcode()
-    {
-        // 2903 maps only to Bean (count == 1 fast-path), and the point is in Bean
-        var electorate = DataLoader.Maps2025.LocateElectorate(-35.42, 149.07, 2903);
-        Assert.NotNull(electorate);
-        Assert.Equal("Bean", electorate.Name);
-    }
-
-    [Fact]
-    public void LocateElectorate_multiple_in_postcode()
-    {
-        // 2606 maps to both Bean and Canberra; geometry resolves the point to Canberra
-        var electorate = DataLoader.Maps2025.LocateElectorate(-35.349, 149.09, 2606);
-        Assert.NotNull(electorate);
-        Assert.Equal("Canberra", electorate.Name);
-    }
-
-    [Fact]
-    public void LocateElectorate_postcode_narrowing_backstop()
-    {
-        // 6338 yields no postcode candidates, so the all-electorates backstop resolves the point to O'Connor
-        var electorate = DataLoader.Maps2025.LocateElectorate(-34.2527415, 118.2189916, 6338);
-        Assert.NotNull(electorate);
-        Assert.Equal("O'Connor", electorate.Name);
+        Assert.Equal("Canberra", maps.LocateElectorate(-35.349, 149.09)?.Name);
+        // Tuggeranong is in Bean (whose bbox is large because Bean includes Norfolk Island)
+        Assert.Equal("Bean", maps.LocateElectorate(-35.42, 149.07)?.Name);
+        // a point in remote Western Australia
+        Assert.Equal("O'Connor", maps.LocateElectorate(-34.2527415, 118.2189916)?.Name);
     }
 
     [Fact]
