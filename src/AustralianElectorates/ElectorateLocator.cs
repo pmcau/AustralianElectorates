@@ -1,7 +1,3 @@
-using System.Collections.Frozen;
-
-namespace AustralianElectorates;
-
 class ElectorateLocator
 {
     FrozenDictionary<string, Area> areas;
@@ -145,8 +141,8 @@ class ElectorateLocator
                 {
                     var (xi, yi) = ring[i];
                     var (xj, yj) = ring[j];
-                    if (((yi > y) != (yj > y)) &&
-                        (x < (xj - xi) * (y - yi) / (yj - yi) + xi))
+                    if (yi > y != yj > y &&
+                        x < (xj - xi) * (y - yi) / (yj - yi) + xi)
                     {
                         inside = !inside;
                     }

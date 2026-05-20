@@ -81,6 +81,19 @@ public class DataLoaderTests
     }
 
     [Fact]
+    public void ElectoratesForPostcode()
+    {
+        var electorates = DataLoader.ElectoratesForPostcode(2606)
+            .ToList();
+        Assert.All(electorates, _ => Assert.True(_.Exist2025));
+        var names = electorates
+            .Select(_ => _.Name)
+            .ToList();
+        Assert.Contains("Bean", names);
+        Assert.Contains("Canberra", names);
+    }
+
+    [Fact]
     public Task TryFindElectorate_not_found()
     {
         Assert.False(DataLoader.TryFindElectorate("not Found", out _));

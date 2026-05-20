@@ -73,6 +73,21 @@ public class Snippets
     }
 
     [Fact]
+    public void ElectoratesForPostcodeUsage()
+    {
+        #region usageElectoratesForPostcode
+
+        // all current electorates that include a postcode
+        var electorates = DataLoader.ElectoratesForPostcode(2606);
+        foreach (var electorate in electorates)
+        {
+            Trace.WriteLine(electorate.Name);
+        }
+
+        #endregion
+    }
+
+    [Fact]
     public Task ElectoratesSampleJson() =>
         Verify(string.Join(Environment.NewLine, File
             .ReadAllLines(DataLocations.ElectoratesJsonPath)

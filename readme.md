@@ -305,6 +305,24 @@ Trace.WriteLine(byPostcode!.Name);
 <!-- endSnippet -->
 
 
+## Electorates for Postcode
+
+Get all current (2025) electorates that include a given postcode. A postcode can span multiple electorates.
+
+<!-- snippet: usageElectoratesForPostcode -->
+<a id='snippet-usageElectoratesForPostcode'></a>
+```cs
+// all current electorates that include a postcode
+var electorates = DataLoader.ElectoratesForPostcode(2606);
+foreach (var electorate in electorates)
+{
+    Trace.WriteLine(electorate.Name);
+}
+```
+<sup><a href='/src/Tests/Snippets.cs#L78-L87' title='Snippet source file'>snippet source</a> | <a href='#snippet-usageElectoratesForPostcode' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
+
 ## Bogus Usage
 
 <!-- snippet: usagebogus -->
@@ -323,7 +341,7 @@ var faker = new Faker<Target>()
             .Name());
 var targetInstance = faker.Generate();
 ```
-<sup><a href='/src/Tests/Snippets.cs#L96-L111' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagebogus' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets.cs#L111-L126' title='Snippet source file'>snippet source</a> | <a href='#snippet-usagebogus' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 

@@ -170,7 +170,8 @@ public static partial class DataLoader
     {
         foreach (var electorate in Electorates)
         {
-            if (electorate.ContainsPostcode(postcode))
+            if (electorate.Exist2025 &&
+                electorate.ContainsPostcode(postcode))
             {
                 yield return electorate;
             }
