@@ -34,6 +34,32 @@ public class DataLoaderTests
     }
 
     [Fact]
+    public void LocateElectorate()
+    {
+        // Melbourne CBD (Flinders Street Station)
+        var melbourne = DataLoader.Maps2025.LocateElectorate(-37.8183, 144.9671);
+        Assert.NotNull(melbourne);
+        Assert.Equal("Melbourne", melbourne.Name);
+
+        // Sydney CBD (Town Hall)
+        var sydney = DataLoader.Maps2025.LocateElectorate(-33.8731, 151.2065);
+        Assert.NotNull(sydney);
+        Assert.Equal("Sydney", sydney.Name);
+    }
+
+    [Fact]
+    public void LocateElectorate_with_postcode()
+    {
+        var electorate = DataLoader.Maps2025.LocateElectorate(-37.8183, 144.9671, 3000);
+        Assert.NotNull(electorate);
+        Assert.Equal("Melbourne", electorate.Name);
+    }
+
+    [Fact]
+    public void LocateElectorate_outside_australia() =>
+        Assert.Null(DataLoader.Maps2025.LocateElectorate(0, 0));
+
+    [Fact]
     public Task TryFindElectorate_not_found()
     {
         Assert.False(DataLoader.TryFindElectorate("not Found", out _));

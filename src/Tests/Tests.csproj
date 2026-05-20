@@ -25,6 +25,7 @@
     <PackageReference Include="Verify" />
     <ProjectReference Include="..\AustralianElectorates.Bogus\AustralianElectorates.Bogus.csproj" />
     <ProjectReference Include="..\AustralianElectorates.DetailMaps\AustralianElectorates.DetailMaps.csproj" />
+    <ProjectReference Include="..\AustralianElectorates.LocationLookup\AustralianElectorates.LocationLookup.csproj" />
     <ProjectReference Include="..\AustralianElectorates\AustralianElectorates.csproj" />
     <PackageReference Include="ProjectDefaults" PrivateAssets="all" />
     <None Update="MediaFeed\*.xml">
