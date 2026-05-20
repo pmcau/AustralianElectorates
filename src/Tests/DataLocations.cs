@@ -33,6 +33,7 @@
         AustralianElectoratesProjectPath = Path.GetFullPath(Path.Combine(RootDir, "src/AustralianElectorates"));
         BogusProjectPath = Path.GetFullPath(Path.Combine(RootDir, "src/AustralianElectorates.Bogus"));
         MapsCuratedZipPath = Path.GetFullPath(Path.Combine(DataPath, "MapsCurated.zip"));
+        AustraliaFullZipPath = Path.GetFullPath(Path.Combine(DataPath, "AustraliaFull.zip"));
         //FutureAustraliaJsonPath = Path.GetFullPath(Path.Combine(MapsFuturePath, "australia.geojson"));
     }
 
@@ -55,6 +56,8 @@
     public static string MapsCuratedPath;
 
     public static string MapsCuratedZipPath;
+
+    public static string AustraliaFullZipPath;
 
     //public static string FutureAustraliaJsonPath;
     public static string RootDir;

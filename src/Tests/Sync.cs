@@ -58,8 +58,13 @@ public class Sync
         Export.ExportElectorates();
         // await Hasher.Create(DataLocations.DataPath);
         Zipper.ZipDir(DataLocations.MapsCuratedZipPath, DataLocations.MapsCuratedPath);
+        await LocatorMapBuilder.Build();
         WritePostcodeToElectorateJsonPathInner(electorates);
     }
+
+    [Fact(Explicit = true)]
+    public Task BuildLocatorMap() =>
+        LocatorMapBuilder.Build();
 
     [Fact]
     public void WritePostcodeToElectorateJsonPath() =>

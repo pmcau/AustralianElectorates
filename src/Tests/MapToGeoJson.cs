@@ -27,6 +27,13 @@
     public static Task ConvertTab(string targetFile, string tabFile) =>
         Run("ogr2ogr", "-f", "GeoJSON", targetFile, tabFile);
 
+    // Builds the arc-node topology (shared borders deduplicated into arcs). no-quantization keeps absolute coordinates.
+    public static Task ToTopoJson(string targetFile, string geoJsonFile) =>
+        Run("cmd.exe", "/C", "mapshaper", geoJsonFile, "-o", "format=topojson", "no-quantization", "force", targetFile);
+
+    public static Task ToGeoJson(string targetFile, string topoJsonFile) =>
+        Run("cmd.exe", "/C", "mapshaper", topoJsonFile, "-o", "format=geojson", "precision=0.000001", "force", targetFile);
+
     static async Task Run(string fileName, params string[] arguments)
     {
         var startInfo = new ProcessStartInfo(fileName)
