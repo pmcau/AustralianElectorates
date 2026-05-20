@@ -1,12 +1,7 @@
-﻿using System.Text.RegularExpressions;
+using System.Text.Json;
 
 public class MetadataCleanerTests
 {
-    // Locks in the invariant MetadataCleaner now enforces: every electorateName
-    // string written into a committed *.geojson must match a canonical
-    // IElectorate.Name from electorates.json. This catches case drift like the
-    // historical "Mcmahon" / "Mcewen" / "Mcpherson" leak even if a future
-    // regeneration skips the generator or someone hand-edits a geojson.
     [Fact]
     public void Every_electorateName_in_committed_geojsons_matches_a_canonical_Name()
     {
@@ -14,17 +9,13 @@ public class MetadataCleanerTests
             .Electorates.Select(_ => _.Name)
             .ToHashSet(StringComparer.Ordinal);
 
-        var pattern = new Regex("\"electorateName\":\"(?<name>[^\"]+)\"", RegexOptions.Compiled);
-
         var violations = new List<string>();
         foreach (var root in new[] { DataLocations.MapsPath, DataLocations.MapsCuratedPath })
         {
             foreach (var file in Directory.EnumerateFiles(root, "*.geojson", SearchOption.AllDirectories))
             {
-                var text = File.ReadAllText(file);
-                foreach (Match match in pattern.Matches(text))
+                foreach (var name in ReadElectorateNames(file))
                 {
-                    var name = match.Groups["name"].Value;
                     if (!canonicalNames.Contains(name))
                     {
                         violations.Add($"{Path.GetRelativePath(DataLocations.RootDir, file)}: \"{name}\"");
@@ -46,5 +37,35 @@ public class MetadataCleanerTests
                 Environment.NewLine +
                 string.Join(Environment.NewLine, distinct.Take(20)));
         }
+    }
+
+    static List<string> ReadElectorateNames(string path)
+    {
+        var bytes = File.ReadAllBytes(path);
+        var reader = new Utf8JsonReader(bytes);
+        var names = new List<string>();
+
+        while (reader.Read())
+        {
+            if (reader.TokenType != JsonTokenType.PropertyName)
+            {
+                continue;
+            }
+
+            if (reader.ValueTextEquals("geometry"))
+            {
+                reader.Read();
+                reader.Skip();
+                continue;
+            }
+
+            if (reader.ValueTextEquals("electorateName"))
+            {
+                reader.Read();
+                names.Add(reader.GetString()!);
+            }
+        }
+
+        return names;
     }
 }
