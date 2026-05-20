@@ -55,6 +55,24 @@ public class Snippets
     }
 
     [Fact]
+    public void LocateElectorateUsage()
+    {
+        #region usageLocateElectorate
+
+        var maps = DataLoader.Maps2025;
+
+        // find the electorate containing a location (latitude, longitude)
+        var electorate = maps.LocateElectorate(-35.349, 149.09);
+        Trace.WriteLine(electorate!.Name);
+
+        // optionally narrow the search with a postcode
+        var byPostcode = maps.LocateElectorate(-35.42, 149.07, 2903);
+        Trace.WriteLine(byPostcode!.Name);
+
+        #endregion
+    }
+
+    [Fact]
     public Task ElectoratesSampleJson() =>
         Verify(string.Join(Environment.NewLine, File
             .ReadAllLines(DataLocations.ElectoratesJsonPath)
