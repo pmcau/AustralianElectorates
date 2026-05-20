@@ -14,21 +14,24 @@ static class MetadataCleaner
         foreach (var feature in featureCollection.Features)
         {
             var properties = feature.Properties;
-            var electorate = (string)properties["Elect_div"];
+            var rawElectorate = (string)properties["Elect_div"];
             var stateFromProperties = GetState(feature, state);
             var area = properties["Area_SqKm"];
 
-            var shortName = Electorate.GetShortName(electorate);
+            // Resolve the AEC shapefile's electorate string to the curated
+            // canonical name from electorates.json. The AEC ships
+            // single-capitalised names like "Mcmahon" / "Mcewen" / "Mcpherson"
+            // and "Oconnor" (no apostrophe); the curated list has the proper
+            // "McMahon" / "McEwen" / "McPherson" / "O'Connor".  Looking up by
+            // ShortName keeps the geojson aligned with IElectorate.Name by
+            // construction, so consumers that join the two by name don't drop
+            // these electorates.
+            var shortName = Electorate.GetShortName(rawElectorate);
+            var canonical = DataLoader.Electorates.SingleOrDefault(_ => _.ShortName == shortName)
+                ?? throw new($"No curated electorate in electorates.json matches ShortName '{shortName}' (from Elect_div '{rawElectorate}').");
             properties.Clear();
             properties["electorateShortName"] = shortName;
-            if (shortName == "oconnor")
-            {
-                properties["electorateName"] = "O'Connor";
-            }
-            else
-            {
-                properties["electorateName"] = electorate;
-            }
+            properties["electorateName"] = canonical.Name;
 
             if (area is double doubleArea)
             {
