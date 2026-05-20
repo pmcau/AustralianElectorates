@@ -1,22 +1,23 @@
 class ElectorateLocator
 {
-    FrozenDictionary<string, Area> areas;
+    Area[] areas;
 
     public ElectorateLocator(string australiaGeoJson)
     {
-        var items = new Dictionary<string, Area>();
+        var items = new List<Area>();
         using var document = JsonDocument.Parse(australiaGeoJson);
         foreach (var feature in document.RootElement.GetProperty("features").EnumerateArray())
         {
             var name = feature.GetProperty("properties")
                 .GetProperty("electorateName")
                 .GetString()!;
+            var electorate = DataLoader.FindElectorate(name);
             var rings = new List<(double, double)[]>();
             ReadGeometry(feature.GetProperty("geometry"), rings);
-            items.Add(name, new(rings));
+            items.Add(new(electorate, rings));
         }
 
-        areas = items.ToFrozenDictionary();
+        areas = [.. items];
     }
 
     static void ReadGeometry(JsonElement geometry, List<(double, double)[]> rings)
@@ -56,11 +57,11 @@ class ElectorateLocator
 
     public IElectorate? Find(double latitude, double longitude)
     {
-        foreach (var (name, area) in areas)
+        foreach (var area in areas)
         {
             if (area.Contains(longitude, latitude))
             {
-                return DataLoader.FindElectorate(name);
+                return area.Electorate;
             }
         }
 
@@ -69,14 +70,16 @@ class ElectorateLocator
 
     class Area
     {
+        public IElectorate Electorate { get; }
         double minX = double.MaxValue;
         double minY = double.MaxValue;
         double maxX = double.MinValue;
         double maxY = double.MinValue;
         (double X, double Y)[][] rings;
 
-        public Area(List<(double, double)[]> rings)
+        public Area(IElectorate electorate, List<(double, double)[]> rings)
         {
+            Electorate = electorate;
             this.rings = [.. rings];
             foreach (var ring in rings)
             {
