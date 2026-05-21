@@ -6,6 +6,7 @@ using NetTopologySuite.Geometries;
 using NetTopologySuite.Geometries.Utilities;
 using NetTopologySuite.Index.Strtree;
 using NetTopologySuite.IO;
+using NetTopologySuite.Simplify;
 using NetTopologySuite.Triangulate;
 
 // Coastline smoothing for the electorate maps.
@@ -37,6 +38,11 @@ static class LocatorMapBuilder
     // ~1km. Spacing for the boundary points fed into the nearest-land Voronoi partition. Smaller is
     // more accurate (smoother offshore borders) but slower; ~1km is plenty for a 10km skirt.
     const double siteSpacing = 0.01;
+
+    // ~2km. The over-water skirt edges carry no useful precision, so the expansion buffer is
+    // Douglas-Peucker simplified to near-straight lines. The coastline is taken from the land (not the
+    // buffer), so only the offshore edge is straightened - the coast stays exact.
+    const double offshoreTolerance = 0.02;
 
     // Large Queensland reef electorates excluded from coast expansion.
     static readonly HashSet<string> excludeFromExpansion = new(StringComparer.OrdinalIgnoreCase)
@@ -181,7 +187,10 @@ static class LocatorMapBuilder
             if (!excludeFromExpansion.Contains(names[i]) &&
                 regions.TryGetValue(i, out var region))
             {
-                var buffered = geometry.Buffer(expandDistance);
+                // simplify the buffer so the over-water skirt edge becomes near-straight lines; the coast
+                // is taken from the land below (Difference), so it stays exact.
+                var buffered = GeometryFixer.Fix(
+                    DouglasPeuckerSimplifier.Simplify(geometry.Buffer(expandDistance), offshoreTolerance));
                 var land = factory
                     .BuildGeometry(tree.Query(buffered.EnvelopeInternal))
                     .Union();
