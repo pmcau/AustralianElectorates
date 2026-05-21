@@ -1,34 +1,49 @@
 using System.IO.Compression;
 using System.Text.Json.Nodes;
 
-// Builds the embedded locator map (AustraliaFull.zip) used by DataLoader.LocateElectorate.
-// Coastlines are smoothed (we don't care about strict coastlines for point lookup) while
-// internal borders between electorates are kept at full precision.
+// Coastline smoothing for the electorate maps.
 //
-// Done on the arc topology: a boundary arc shared by two electorates (degree 2) is an internal
+// We don't care about strict coastlines for electorate lookup/rendering, but we DO care about the
+// internal borders between electorates. So this smooths only the coastline while keeping internal
+// borders at full precision.
+//
+// It works on the arc topology: a boundary arc shared by two electorates (degree 2) is an internal
 // border; an arc belonging to one electorate (degree 1) is coastline. Only degree-1 arcs are
-// simplified (Douglas-Peucker). Because simplification preserves arc endpoints (the junction
-// nodes), the smoothed coast re-stitches exactly to the untouched internal borders - no slivers,
-// no electorate loss.
+// simplified (Douglas-Peucker). Because simplification preserves arc endpoints (the junction nodes),
+// the smoothed coast re-stitches exactly to the untouched internal borders - no slivers, no
+// electorate loss.
+//
+// Applied to australia.geojson during sync (before it is split into states/electorates), so every
+// derived geojson inherits the smoothed coast.
 static class LocatorMapBuilder
 {
-    // ~100m. Coast only; large enough to drop coastline detail, small enough that coastal
-    // towns stay inside their electorate (no outward buffer needed).
+    // ~100m. Coast only; large enough to drop coastline detail, small enough that coastal towns
+    // stay inside their electorate (no outward buffer needed).
     const double coastTolerance = 0.001;
 
-    public static async Task Build()
+    public static async Task SmoothCoastline(string geoJsonPath)
     {
-        var fullAustralia = Path.Combine(DataLocations.Maps2025Path, "australia.geojson");
-        var topoPath = Path.Combine(DataLocations.TempPath, "australia-topo.json");
-        var smoothed = Path.Combine(DataLocations.TempPath, "australia-coast-smoothed.geojson");
+        var year = Path.GetFileName(Path.GetDirectoryName(geoJsonPath)!);
+        var topoPath = Path.Combine(DataLocations.TempPath, $"{year}-australia-topo.json");
 
-        await MapToGeoJson.ToTopoJson(topoPath, fullAustralia);
+        // build arc topology (shared borders deduplicated), simplify only coast arcs, convert back
+        await MapToGeoJson.ToTopoJson(topoPath, geoJsonPath);
         SimplifyCoastArcs(topoPath);
-        await MapToGeoJson.ToGeoJson(smoothed, topoPath);
+        await MapToGeoJson.ToGeoJson(geoJsonPath, topoPath);
 
+        // normalise to the repo's geojson format (bbox etc.)
+        var featureCollection = JsonSerializerService.DeserializeGeo(geoJsonPath);
+        featureCollection.FixBoundingBox();
+        JsonSerializerService.SerializeGeo(featureCollection, geoJsonPath);
+    }
+
+    // Embeds the (already coast-smoothed) current map for DataLoader.LocateElectorate.
+    public static void BuildLocatorZip()
+    {
         File.Delete(DataLocations.AustraliaFullZipPath);
         using var zip = ZipFile.Open(DataLocations.AustraliaFullZipPath, ZipArchiveMode.Create);
-        zip.CreateEntryFromFile(smoothed, "2025/australia.geojson", CompressionLevel.Optimal);
+        var australia = Path.Combine(DataLocations.Maps2025Path, "australia.geojson");
+        zip.CreateEntryFromFile(australia, "2025/australia.geojson", CompressionLevel.Optimal);
     }
 
     static void SimplifyCoastArcs(string topoPath)

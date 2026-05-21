@@ -42,13 +42,12 @@
     "AmendmentDate": "3 May 2011",
     "Address": "Ground Floor\n470 St Kilda Rd\nMELBOURNE VIC 3004",
     "Officer": {
-      "Title": "Mrs",
-      "FamilyName": "Elisei",
-      "GivenNames": "Lorna",
-      "Capacity": "Registered Officer",
+      "Title": "Miss",
+      "FamilyName": "Sadnick",
+      "GivenNames": "Allegra",
+      "Capacity": "Secretary",
       "Address": {
-        "Line1": "Ground Floor",
-        "Line2": "470 St Kilda Road",
+        "Line1": "Ground Floor, 470 St Kilda Road",
         "Suburb": "Melbourne",
         "State": "VIC",
         "Postcode": 3004
@@ -773,9 +772,10 @@
         "AmendmentDate": "13 June 1985",
         "Address": "PO Box 8117\nPERTH BUSINESS CENTRE WA 6849",
         "Officer": {
-          "Title": "Ms",
-          "FamilyName": "Whiteaker",
-          "GivenNames": "Eleanor Elizabeth Margaret",
+          "Title": "Mr",
+          "FamilyName": "Reed",
+          "GivenNames": "Mark William",
+          "Capacity": "Party Agent",
           "Address": {
             "Line1": "85 Havelock Street",
             "Suburb": "West Perth",
@@ -785,15 +785,15 @@
         },
         "DeputyOfficers": [
           {
-            "Title": "Ms",
-            "FamilyName": "Cayoun",
-            "GivenNames": "Lauren Annie",
+            "Title": "Miss",
+            "FamilyName": "Kidson",
+            "GivenNames": "Adelaide Grace",
             "Capacity": "Deputy Registered Officer",
             "Address": {
-              "Line1": "85 Havelock Street",
-              "Suburb": "West Perth",
+              "Line1": "88b Swansea Street",
+              "Suburb": "East Victoria Park",
               "State": "WA",
-              "Postcode": 6005
+              "Postcode": 6101
             }
           }
         ]
@@ -1087,10 +1087,10 @@
       "GivenNames": "Jacquiline",
       "Capacity": "Registered Officer",
       "Address": {
-        "Line1": "Level 6, Reserve Bank Building, Macquarie Street ",
-        "Suburb": "Hobart",
+        "Line1": "Shop 3/22 Mount Street",
+        "Suburb": "Burnie",
         "State": "TAS",
-        "Postcode": 7000
+        "Postcode": 7320
       }
     },
     "DeputyOfficers": [],
@@ -1331,13 +1331,12 @@
         "AmendmentDate": "5 July 1984",
         "Address": "PO Box 9566\nDEAKIN ACT 2600",
         "Officer": {
-          "Title": "Mr",
-          "FamilyName": "Wojtonis",
-          "GivenNames": "Adam",
-          "Capacity": "Registered Officer",
+          "Title": "Dr",
+          "FamilyName": "Dunn",
+          "GivenNames": "Martin",
+          "Capacity": "Party Secretary, Registered Officer",
           "Address": {
-            "Line1": "Suite 4",
-            "Line2": "50 Geils Court",
+            "Line1": "Suite 4, 50 Geils Court",
             "Suburb": "Deakin",
             "State": "ACT",
             "Postcode": 2600
@@ -1426,13 +1425,12 @@
         "AmendmentDate": "18 July 1984",
         "Address": "Level 12, 257 Collins Street\nMELBOURNE VIC 3000",
         "Officer": {
-          "Title": "Mr",
-          "FamilyName": "Wynen",
-          "GivenNames": "Sid",
+          "Title": "Ms",
+          "FamilyName": "Hannam",
+          "GivenNames": "Alyson",
           "Capacity": "Secretary",
           "Address": {
-            "Line1": "Level 12",
-            "Line2": "257 Collins Street",
+            "Line1": "Level 12, 257 Collins Street",
             "Suburb": "Melbourne",
             "State": "VIC",
             "Postcode": 3000
@@ -1463,8 +1461,8 @@
         "Address": "Locked Bag 2\nKINGS CROSS NSW 1340",
         "Officer": {
           "Title": "Mr",
-          "FamilyName": "Stone",
-          "GivenNames": "Christopher",
+          "FamilyName": "Neeham",
+          "GivenNames": "Mark",
           "Capacity": "Registered Officer",
           "Address": {
             "Line1": "Level 2, 131 Macquarie Street",

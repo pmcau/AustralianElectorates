@@ -11,7 +11,7 @@ public class Sync
     static List<string> electorates2022 = [];
     static List<string> electorates2025 = [];
 
-    [Fact(Explicit = true)]
+    [Fact]
     public async Task SyncData()
     {
         var electorateToStateMap = GetElectorateToStateMap();
@@ -28,6 +28,12 @@ public class Sync
             Path.Combine(DataLocations.Maps2022Path, "australia.geojson"),
             Path.Combine(DataLocations.Maps2025Path, "australia.geojson"));
         await StatesToCountryDownloader.RunFuture();
+
+        // Smooth coastlines (internal borders kept full precision) before the maps are split into
+        // states/electorates, so every derived geojson inherits the smoothed coast.
+        await LocatorMapBuilder.SmoothCoastline(Path.Combine(DataLocations.Maps2025Path, "australia.geojson"));
+        await LocatorMapBuilder.SmoothCoastline(Path.Combine(DataLocations.Maps2022Path, "australia.geojson"));
+        await LocatorMapBuilder.SmoothCoastline(Path.Combine(DataLocations.Maps2019Path, "australia.geojson"));
 
         await ProcessYear(DataLocations.Maps2025Path, electorates2025, electorateToStateMap);
         await ProcessYear(DataLocations.Maps2022Path, electorates2022, electorateToStateMap);
@@ -58,13 +64,18 @@ public class Sync
         Export.ExportElectorates();
         // await Hasher.Create(DataLocations.DataPath);
         Zipper.ZipDir(DataLocations.MapsCuratedZipPath, DataLocations.MapsCuratedPath);
-        await LocatorMapBuilder.Build();
+        LocatorMapBuilder.BuildLocatorZip();
         WritePostcodeToElectorateJsonPathInner(electorates);
     }
 
+    // Smooths the current 2025 australia.geojson coastline in place and rebuilds the locator zip,
+    // without a full re-sync.
     [Fact(Explicit = true)]
-    public Task BuildLocatorMap() =>
-        LocatorMapBuilder.Build();
+    public async Task BuildLocatorMap()
+    {
+        await LocatorMapBuilder.SmoothCoastline(Path.Combine(DataLocations.Maps2025Path, "australia.geojson"));
+        LocatorMapBuilder.BuildLocatorZip();
+    }
 
     [Fact]
     public void WritePostcodeToElectorateJsonPath() =>
