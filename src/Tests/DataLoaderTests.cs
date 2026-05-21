@@ -87,6 +87,68 @@ public class DataLoaderTests
     }
 
     [Fact]
+    public void LocateElectorate_single_at_gulf_border()
+    {
+        // -14.878297, 129.001284 is in the Joseph Bonaparte Gulf on the WA/NT border. The expanded
+        // coastlines must not overlap there - the point must be inside exactly one electorate.
+        var point = new NetTopologySuite.Geometries.Point(129.001284, -14.878297);
+        using var stream = File.OpenRead(DataLocations.AustraliaFullZipPath);
+        using var archive = new System.IO.Compression.ZipArchive(stream);
+        using var reader = new StreamReader(archive.GetEntry("2025/australia.geojson")!.Open());
+        var features = new NetTopologySuite.IO.GeoJsonReader()
+            .Read<NetTopologySuite.Features.FeatureCollection>(reader.ReadToEnd());
+        var matches = features
+            .Where(_ => _.Geometry.Contains(point))
+            .Select(_ => (string) _.Attributes["electorateName"])
+            .ToList();
+        Assert.Single(matches);
+    }
+
+    [Fact]
+    public void LocateElectorate_no_inland_gaps()
+    {
+        // OverlayNG: robust union of the full map.
+        NetTopologySuite.NtsGeometryServices.Instance =
+            new(NetTopologySuite.Geometries.GeometryOverlay.NG);
+
+        using var stream = File.OpenRead(DataLocations.AustraliaFullZipPath);
+        using var archive = new System.IO.Compression.ZipArchive(stream);
+        using var reader = new StreamReader(archive.GetEntry("2025/australia.geojson")!.Open());
+        var features = new NetTopologySuite.IO.GeoJsonReader()
+            .Read<NetTopologySuite.Features.FeatureCollection>(reader.ReadToEnd());
+        var geometries = features
+            .Select(_ => NetTopologySuite.Geometries.Utilities.GeometryFixer.Fix(_.Geometry))
+            .ToArray();
+        var factory = geometries[0].Factory;
+        var union = factory.BuildGeometry(geometries).Union();
+
+        // Adjacent electorates must meet with no gap. A hole in the merged map is an inland gap when it
+        // is a thin sliver (state borders in the AEC source don't perfectly align); real bays/gulfs
+        // beyond the ~10km coastline expansion are wide and are allowed.
+        var gaps = new List<string>();
+        for (var i = 0; i < union.NumGeometries; i++)
+        {
+            if (union.GetGeometryN(i) is not NetTopologySuite.Geometries.Polygon polygon)
+            {
+                continue;
+            }
+
+            for (var hole = 0; hole < polygon.NumInteriorRings; hole++)
+            {
+                var ring = factory.CreatePolygon(polygon.GetInteriorRingN(hole).Coordinates);
+                if (ring.Area > 1e-8 &&
+                    ring.Buffer(-0.004).IsEmpty)
+                {
+                    var point = ring.InteriorPoint;
+                    gaps.Add($"lon={point.X:F4} lat={point.Y:F4} area={ring.Area:E2}");
+                }
+            }
+        }
+
+        Assert.Empty(gaps);
+    }
+
+    [Fact]
     public void ElectoratesForPostcode()
     {
         var electorates = DataLoader.ElectoratesForPostcode(2606)

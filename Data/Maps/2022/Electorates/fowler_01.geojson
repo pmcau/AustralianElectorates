@@ -1,2 +1,0 @@
-{"type":"FeatureCollection","features":[
-{"properties":{"electorateShortName":"fowler","electorateName":"Fowler","area":60.3,"state":null},"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[150.985518,-33.870492],[150.945003,-33.885677],[150.875878,-33.852024],[150.842448,-33.876249],[150.881878,-33.888583],[150.918927,-33.939096],[150.968598,-33.931074],[150.985518,-33.870492]]]},"bbox":[150.842448,-33.939096,150.985518,-33.852024]}]}

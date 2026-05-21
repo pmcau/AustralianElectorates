@@ -197,30 +197,11 @@ Each of the above groupings have the following structure.
  * Specific electorate maps are located inside a subdirectory based on the state they exist in.
 
 
-### Map variants
+### Map detail
 
-Each maps has multiple variants based on simplification.
+There is a single GeoJSON file per electorate, state, and country, eg [bass.geojson](/Data/Maps/2022/Electorates/bass.geojson).
 
-With the two options combined, there are 5 different options for each map.
-
-Below is the combinations for [Bass](https://www.aec.gov.au/profiles/tas/bass.htm)
-
-| Size  | File name                                                        | Simplification |
-| -----:| ---------------------------------------------------------------- | --------------:|
-| 2.8MB | [bass.geojson](/Data/Maps/2022/Electorates/bass.geojson)       | none           |
-| 231KB | [bass_20.geojson](/Data/Maps/2022/Electorates/bass_20.geojson) | 20%            |
-| 94KB  | [bass_10.geojson](/Data/Maps/2022/Electorates/bass_10.geojson) | 10%            |
-| 46KB  | [bass_05.geojson](/Data/Maps/2022/Electorates/bass_05.geojson) | 5%             |
-| 8KB   | [bass_01.geojson](/Data/Maps/2022/Electorates/bass_01.geojson) | 1%             |
-
-
-#### Simplification
-
-Simplification uses [MapShaper simplify option](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-simplify)
-
-> Visvalingam simplification iteratively removes the least important point from a polyline. The importance of points is measured using a metric based on the geometry of the triangle formed by each non-endpoint vertex and the two neighboring vertices
-
-The level of simplification is represented as a percent number. 20, 10, 5, and 1. representing 20%, 10%, 5%, and 1%. The smaller the number the smaller the file, but with the loss of some accuracy.
+To keep the file size down the coastline is simplified - only the coastline is touched, the internal borders between electorates are kept at full precision. The coastline is also pushed slightly out to sea so that coastal and near-shore points still resolve to an electorate.
 
 
 ## NuGets

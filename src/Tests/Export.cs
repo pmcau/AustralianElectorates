@@ -1,8 +1,5 @@
-﻿public class Export
+public class Export
 {
-    static int electoratesSize = 200 * 1024;
-    static int stateSize = 500 * 1024;
-
     public static void ExportElectorates()
     {
         IoHelpers.PurgeDirectoryRecursive(DataLocations.MapsCuratedPath);
@@ -10,49 +7,20 @@
         {
             var targetYear = Path.Combine(DataLocations.MapsCuratedPath, Path.GetFileName(sourceYear));
             Directory.CreateDirectory(targetYear);
-            foreach (var fileInfo in FileInfos(sourceYear, stateSize))
-            {
-                var destFileName = Path.Combine(targetYear, $"{Prefix(fileInfo.FullName)}.geojson");
-                fileInfo.CopyTo(destFileName, true);
-            }
+            CopyGeoJson(sourceYear, targetYear);
 
             var sourceElectorates = Path.Combine(sourceYear, "Electorates");
             var targetElectorates = Path.Combine(targetYear, "Electorates");
             Directory.CreateDirectory(targetElectorates);
-            foreach (var fileInfo in FileInfos(sourceElectorates, electoratesSize))
-            {
-                var destFileName = Path.Combine(targetElectorates, $"{Prefix(fileInfo.FullName)}.geojson");
-                fileInfo.CopyTo(destFileName, true);
-            }
+            CopyGeoJson(sourceElectorates, targetElectorates);
         }
     }
 
-    static IEnumerable<FileInfo> FileInfos(string directory, int electoratesSize)
+    static void CopyGeoJson(string source, string target)
     {
-        foreach (var group in Directory
-                     .EnumerateFiles(directory)
-                     .GroupBy(Prefix))
+        foreach (var file in Directory.EnumerateFiles(source, "*.geojson"))
         {
-            var fileInfos = group
-                .Select(_ => new FileInfo(_))
-                .OrderByDescending(_ => _.Length)
-                .ToList();
-            var firstOrDefault = fileInfos
-                .SkipWhile(_ => _.Length > electoratesSize)
-                .FirstOrDefault();
-            if (firstOrDefault == null)
-            {
-                yield return fileInfos.Last();
-            }
-            else
-            {
-                yield return firstOrDefault;
-            }
+            File.Copy(file, Path.Combine(target, Path.GetFileName(file)), true);
         }
     }
-
-    static string Prefix(string x) =>
-        Path
-            .GetFileNameWithoutExtension(x)
-            .Split('_')[0];
 }

@@ -3,26 +3,8 @@
     // Change as needed if not in local path
     const string ogr2ogrPath = @"C:\OSGeo4W64\bin";
 
-    public static Task ConvertShape(string targetFile, string shpFile, int? percent = null)
-    {
-        //mapshaper C:\Code\AustralianElectorates\Data\ElectoratesByState\act.geojson -simplify dp 20% -o format=geojson C:\Code\AustralianElectorates\Data\ElectoratesByState\temp.json
-        var arguments = new List<string>
-        {
-            "/C",
-            "mapshaper",
-            shpFile
-        };
-        if (percent != null)
-        {
-            arguments.Add("-simplify");
-            arguments.Add($"{percent}%");
-        }
-
-        arguments.Add("-o");
-        arguments.Add("format=geojson");
-        arguments.Add(targetFile);
-        return Run("cmd.exe", arguments.ToArray());
-    }
+    public static Task ConvertShape(string targetFile, string shpFile) =>
+        Run("cmd.exe", "/C", "mapshaper", shpFile, "-o", "format=geojson", targetFile);
 
     public static Task ConvertTab(string targetFile, string tabFile) =>
         Run("ogr2ogr", "-f", "GeoJSON", targetFile, tabFile);

@@ -1,2 +1,0 @@
-{"type":"FeatureCollection","features":[
-{"properties":{"electorateShortName":"greenway","electorateName":"Greenway","area":89.62,"state":"NSW"},"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[150.958354,-33.765616],[150.932899,-33.659754],[150.904352,-33.611808],[150.851042,-33.650138],[150.904637,-33.76798],[150.935266,-33.774243],[150.958354,-33.765616]]]},"bbox":[150.851042,-33.774243,150.958354,-33.611808]}]}

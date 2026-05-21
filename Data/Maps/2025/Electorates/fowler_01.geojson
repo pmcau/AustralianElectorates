@@ -1,2 +1,0 @@
-{"type":"FeatureCollection","features":[
-{"properties":{"electorateShortName":"fowler","electorateName":"Fowler","area":62.45,"state":"NSW"},"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[150.973326,-33.889429],[150.961326,-33.86758],[150.918341,-33.848264],[150.842448,-33.876249],[150.918369,-33.939036],[150.968598,-33.931074],[150.97899,-33.929267],[150.973326,-33.889429]]]},"bbox":[150.842448,-33.939036,150.97899,-33.848264]}]}

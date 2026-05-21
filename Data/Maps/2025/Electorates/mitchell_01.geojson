@@ -1,2 +1,0 @@
-{"type":"FeatureCollection","features":[
-{"properties":{"electorateShortName":"mitchell","electorateName":"Mitchell","area":79.39,"state":"NSW"},"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[151.048939,-33.758638],[150.932899,-33.659754],[150.958354,-33.765616],[150.987451,-33.796571],[151.048939,-33.758638]]]},"bbox":[150.932899,-33.796571,151.048939,-33.659754]}]}

@@ -1,2 +1,0 @@
-{"type":"FeatureCollection","features":[
-{"properties":{"electorateShortName":"aston","electorateName":"Aston","area":123.67,"state":"VIC"},"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[145.29336,-37.963976],[145.317759,-37.844956],[145.304288,-37.821538],[145.217544,-37.832384],[145.195704,-37.865176],[145.205647,-37.924401],[145.29336,-37.963976]]]},"bbox":[145.195704,-37.963976,145.317759,-37.821538]}]}

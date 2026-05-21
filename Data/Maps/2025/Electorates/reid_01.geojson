@@ -1,2 +1,0 @@
-{"type":"FeatureCollection","features":[
-{"properties":{"electorateShortName":"reid","electorateName":"Reid","area":49.19,"state":"NSW"},"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[151.142072,-33.870421],[151.159279,-33.845383],[151.071641,-33.819693],[151.02999,-33.835206],[151.068876,-33.884497],[151.091508,-33.887654],[151.142072,-33.870421]]]},"bbox":[151.02999,-33.887654,151.159279,-33.819693]}]}

@@ -1,2 +1,0 @@
-{"type":"FeatureCollection","features":[
-{"properties":{"electorateShortName":"watson","electorateName":"Watson","area":50.5,"state":"NSW"},"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[151.117138,-33.91335],[151.091508,-33.887654],[151.068876,-33.884497],[150.973326,-33.889429],[150.97899,-33.929267],[151.072388,-33.929428],[151.117138,-33.91335]]]},"bbox":[150.973326,-33.929428,151.117138,-33.884497]}]}

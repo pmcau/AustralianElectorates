@@ -1,2 +1,0 @@
-{"type":"FeatureCollection","features":[
-{"properties":{"electorateShortName":"swan","electorateName":"Swan","area":150.89,"state":null},"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[116.021436,-32.019454],[116.031623,-31.936908],[115.953364,-31.919948],[115.843248,-31.96489],[115.838086,-31.991159],[115.941156,-32.02962],[116.021436,-32.019454]]]},"bbox":[115.838086,-32.02962,116.031623,-31.919948]}]}

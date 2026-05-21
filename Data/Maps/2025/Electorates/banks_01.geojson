@@ -1,2 +1,0 @@
-{"type":"FeatureCollection","features":[
-{"properties":{"electorateShortName":"banks","electorateName":"Banks","area":61.16,"state":"NSW"},"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[151.07327,-33.99586],[151.121979,-33.987708],[151.072388,-33.929428],[150.97899,-33.929267],[150.968598,-33.931074],[150.998147,-33.975126],[151.07327,-33.99586]]]},"bbox":[150.968598,-33.99586,151.121979,-33.929267]}]}

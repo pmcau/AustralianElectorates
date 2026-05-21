@@ -4,8 +4,6 @@ using GeoJSON.Net.Feature;
 
 public class Sync
 {
-    static List<int> percents;
-
     //static List<string> electoratesFuture = new();
     static List<string> electorates2019 = [];
     static List<string> electorates2022 = [];
@@ -43,9 +41,9 @@ public class Sync
             LocatorMapBuilder.ExpandCoastline(australia);
         }
 
-        await ProcessYear(DataLocations.Maps2025Path, electorates2025, electorateToStateMap);
-        await ProcessYear(DataLocations.Maps2022Path, electorates2022, electorateToStateMap);
-        await ProcessYear(DataLocations.Maps2019Path, electorates2019, electorateToStateMap);
+        ProcessYear(DataLocations.Maps2025Path, electorates2025, electorateToStateMap);
+        ProcessYear(DataLocations.Maps2022Path, electorates2022, electorateToStateMap);
+        ProcessYear(DataLocations.Maps2019Path, electorates2019, electorateToStateMap);
 
         var electorates = await WriteElectoratesMetaData();
 
@@ -76,8 +74,9 @@ public class Sync
         WritePostcodeToElectorateJsonPathInner(electorates);
     }
 
-    // Smooths the current 2025 australia.geojson coastline in place and rebuilds the locator zip,
-    // without a full re-sync.
+    // Smooths then expands the current 2025 australia.geojson coastline in place and rebuilds the
+    // locator zip, without a full re-sync. Expects australia.geojson to be the raw (un-expanded) map -
+    // ExpandCoastline is not idempotent - so restore it from git first if re-running.
     [Fact(Explicit = true)]
     public async Task BuildLocatorMap()
     {
@@ -209,40 +208,41 @@ public class Sync
         State.WA
     ];
 
-    static Sync() => percents = [20, 10, 5, 1];
-
-    static async Task ProcessYear(string yearPath, List<string> electorates, Dictionary<State, List<string>> electorateToStateMap)
+    static void ProcessYear(string yearPath, List<string> electorates, Dictionary<State, List<string>> electorateToStateMap)
     {
-        await WriteOptimised(yearPath, electorateToStateMap);
+        var australiaPath = Path.Combine(yearPath, "australia.geojson");
+        var australiaFeatures = JsonSerializerService.DeserializeGeo(australiaPath);
 
-        foreach (var australiaPath in Directory.EnumerateFiles(yearPath, "australia*"))
+        // sanity check: every feature maps to a known electorate
+        var allElectorates = electorateToStateMap.SelectMany(_ => _.Value).ToList();
+        foreach (var feature in australiaFeatures.Features)
         {
-            var australiaFeatures = JsonSerializerService.DeserializeGeo(australiaPath);
-
-            var electoratesDirectory = Path.Combine(yearPath, "Electorates");
-            Directory.CreateDirectory(electoratesDirectory);
-            foreach (var state in states)
+            var electorateShortName = (string)feature.Properties["electorateShortName"];
+            if (!allElectorates.Contains(electorateShortName))
             {
-                var lower = state
-                    .ToString()
-                    .ToLower();
-                var featureCollectionForState = australiaFeatures.FeaturesCollectionForState(electorateToStateMap[state]);
-                var suffix = Path
-                    .GetFileName(australiaPath)
-                    .Replace("australia", "");
-                var stateJson = Path.Combine(yearPath, $"{lower}{suffix}");
-                JsonSerializerService.SerializeGeo(featureCollectionForState, stateJson);
+                throw new($"Electorate not found: {electorateShortName}");
+            }
+        }
 
-                foreach (var electorateFeature in featureCollectionForState.Features)
-                {
-                    var electorate = (string)electorateFeature.Properties["electorateShortName"];
-                    var electorateNameList = electorateNames[state];
-                    electorateNameList.Add(electorate);
-                    electorates.Add(electorate);
+        var electoratesDirectory = Path.Combine(yearPath, "Electorates");
+        Directory.CreateDirectory(electoratesDirectory);
+        foreach (var state in states)
+        {
+            var lower = state
+                .ToString()
+                .ToLower();
+            var featureCollectionForState = australiaFeatures.FeaturesCollectionForState(electorateToStateMap[state]);
+            var stateJson = Path.Combine(yearPath, $"{lower}.geojson");
+            JsonSerializerService.SerializeGeo(featureCollectionForState, stateJson);
 
-                    var electorateJsonPath = Path.Combine(electoratesDirectory, $"{electorate}{suffix}");
-                    JsonSerializerService.SerializeGeo(electorateFeature.ToCollection(), electorateJsonPath);
-                }
+            foreach (var electorateFeature in featureCollectionForState.Features)
+            {
+                var electorate = (string)electorateFeature.Properties["electorateShortName"];
+                electorateNames[state].Add(electorate);
+                electorates.Add(electorate);
+
+                var electorateJsonPath = Path.Combine(electoratesDirectory, $"{electorate}.geojson");
+                JsonSerializerService.SerializeGeo(electorateFeature.ToCollection(), electorateJsonPath);
             }
         }
     }
@@ -293,32 +293,6 @@ public class Sync
             {
                 throw new(file);
             }
-        }
-    }
-
-    static async Task WriteOptimised(string directory, Dictionary<State, List<string>> electorateToStateMap)
-    {
-        var jsonPath = Path.Combine(directory, "australia.geojson");
-        var raw = JsonSerializerService.DeserializeGeo(jsonPath);
-        raw.FixBoundingBox();
-        var allElectorates = electorateToStateMap.SelectMany(_ => _.Value).ToList();
-        foreach (var feature in raw.Features)
-        {
-            var electorateShortName = (string)feature.Properties["electorateShortName"];
-            if (!allElectorates.Contains(electorateShortName))
-            {
-                throw new($"Electorate not found: {electorateShortName}");
-            }
-        }
-
-        foreach (var percent in percents)
-        {
-            var percentJsonPath = Path.Combine(directory, $"australia_{percent:D2}.geojson");
-            await MapToGeoJson.ConvertShape(percentJsonPath, jsonPath, percent);
-            var featureCollection = JsonSerializerService.DeserializeGeo(percentJsonPath);
-            featureCollection.FixBoundingBox();
-
-            JsonSerializerService.SerializeGeo(featureCollection, percentJsonPath);
         }
     }
 
