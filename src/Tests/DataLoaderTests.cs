@@ -122,9 +122,11 @@ public class DataLoaderTests
         var factory = geometries[0].Factory;
         var union = factory.BuildGeometry(geometries).Union();
 
-        // Adjacent electorates must meet with no gap. A hole in the merged map is an inland gap when it
-        // is a thin sliver (state borders in the AEC source don't perfectly align); real bays/gulfs
-        // beyond the ~10km coastline expansion are wide and are allowed.
+        // Adjacent electorates must meet with no gap. An inland gap is a thin sliver (state borders in
+        // the AEC source don't perfectly align) enclosed by thick land. A hole is flagged only when it is
+        // both thin (vanishes under a small erosion) and land-surrounded (a band wider than the ~10km
+        // coastline skirt around it stays inside the map). Real bays/gulfs are either wide, or reach open
+        // ocean through the skirt, so they are not flagged.
         var gaps = new List<string>();
         for (var i = 0; i < union.NumGeometries; i++)
         {
@@ -136,8 +138,11 @@ public class DataLoaderTests
             for (var hole = 0; hole < polygon.NumInteriorRings; hole++)
             {
                 var ring = factory.CreatePolygon(polygon.GetInteriorRingN(hole).Coordinates);
+                var thin = ring.Buffer(-0.004).IsEmpty;
+                var landSurrounded = ring.Buffer(0.11).Difference(ring).Difference(union).Area < 1e-6;
                 if (ring.Area > 1e-8 &&
-                    ring.Buffer(-0.004).IsEmpty)
+                    thin &&
+                    landSurrounded)
                 {
                     var point = ring.InteriorPoint;
                     gaps.Add($"lon={point.X:F4} lat={point.Y:F4} area={ring.Area:E2}");
