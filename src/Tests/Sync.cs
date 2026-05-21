@@ -29,11 +29,19 @@ public class Sync
             Path.Combine(DataLocations.Maps2025Path, "australia.geojson"));
         await StatesToCountryDownloader.RunFuture();
 
-        // Smooth coastlines (internal borders kept full precision) before the maps are split into
-        // states/electorates, so every derived geojson inherits the smoothed coast.
-        await LocatorMapBuilder.SmoothCoastline(Path.Combine(DataLocations.Maps2025Path, "australia.geojson"));
-        await LocatorMapBuilder.SmoothCoastline(Path.Combine(DataLocations.Maps2022Path, "australia.geojson"));
-        await LocatorMapBuilder.SmoothCoastline(Path.Combine(DataLocations.Maps2019Path, "australia.geojson"));
+        // Smooth then expand coastlines (internal borders kept full precision) before the maps are
+        // split into states/electorates, so every derived geojson inherits the smoothed+expanded coast.
+        foreach (var mapsPath in new[]
+                 {
+                     DataLocations.Maps2025Path,
+                     DataLocations.Maps2022Path,
+                     DataLocations.Maps2019Path
+                 })
+        {
+            var australia = Path.Combine(mapsPath, "australia.geojson");
+            await LocatorMapBuilder.SmoothCoastline(australia);
+            LocatorMapBuilder.ExpandCoastline(australia);
+        }
 
         await ProcessYear(DataLocations.Maps2025Path, electorates2025, electorateToStateMap);
         await ProcessYear(DataLocations.Maps2022Path, electorates2022, electorateToStateMap);
@@ -73,7 +81,9 @@ public class Sync
     [Fact(Explicit = true)]
     public async Task BuildLocatorMap()
     {
-        await LocatorMapBuilder.SmoothCoastline(Path.Combine(DataLocations.Maps2025Path, "australia.geojson"));
+        var australia = Path.Combine(DataLocations.Maps2025Path, "australia.geojson");
+        await LocatorMapBuilder.SmoothCoastline(australia);
+        LocatorMapBuilder.ExpandCoastline(australia);
         LocatorMapBuilder.BuildLocatorZip();
     }
 

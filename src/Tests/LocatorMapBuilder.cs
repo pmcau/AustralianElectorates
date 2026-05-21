@@ -1,5 +1,10 @@
 using System.IO.Compression;
 using System.Text.Json.Nodes;
+using NetTopologySuite.Features;
+using NetTopologySuite.Geometries;
+using NetTopologySuite.Geometries.Utilities;
+using NetTopologySuite.Index.Strtree;
+using NetTopologySuite.IO;
 
 // Coastline smoothing for the electorate maps.
 //
@@ -21,6 +26,19 @@ static class LocatorMapBuilder
     // stay inside their electorate (no outward buffer needed).
     const double coastTolerance = 0.001;
 
+    // ~10km in degrees. The locator map's coastline is expanded outward into the ocean so that
+    // coastal/near-shore points resolve. Only the coast is expanded (offshore "skirt" = buffer minus
+    // land), so internal borders stay exact. A point well offshore may fall in several electorates'
+    // skirts; the locator returns the first match (fine - we only care about land).
+    const double expandDistance = 0.09;
+
+    // Large Queensland reef electorates excluded from coast expansion.
+    static readonly HashSet<string> excludeFromExpansion = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "Kennedy", "Maranoa", "Leichhardt", "Dawson", "Herbert",
+        "Capricornia", "Flynn", "Hinkler", "Wide Bay"
+    };
+
     public static async Task SmoothCoastline(string geoJsonPath)
     {
         var year = Path.GetFileName(Path.GetDirectoryName(geoJsonPath)!);
@@ -37,13 +55,63 @@ static class LocatorMapBuilder
         JsonSerializerService.SerializeGeo(featureCollection, geoJsonPath);
     }
 
-    // Embeds the (already coast-smoothed) current map for DataLoader.LocateElectorate.
+    // Embeds the (already coast-smoothed and -expanded) current map for DataLoader.LocateElectorate.
     public static void BuildLocatorZip()
     {
         File.Delete(DataLocations.AustraliaFullZipPath);
         using var zip = ZipFile.Open(DataLocations.AustraliaFullZipPath, ZipArchiveMode.Create);
         var australia = Path.Combine(DataLocations.Maps2025Path, "australia.geojson");
         zip.CreateEntryFromFile(australia, "2025/australia.geojson", CompressionLevel.Optimal);
+    }
+
+    // Pushes each electorate's coastline out to sea by expandDistance (offshore skirt = buffer minus
+    // land), in place. Internal borders are untouched; excluded electorates are left unchanged.
+    // Applied to australia.geojson during sync (before it is split into states/electorates) so every
+    // derived geojson inherits the expanded coast.
+    public static void ExpandCoastline(string geoJsonPath)
+    {
+        var features = new GeoJsonReader()
+            .Read<FeatureCollection>(File.ReadAllText(geoJsonPath))
+            .ToList();
+        var geometries = features
+            .Select(_ => GeometryFixer.Fix(_.Geometry))
+            .ToArray();
+
+        var tree = new STRtree<Geometry>();
+        foreach (var geometry in geometries)
+        {
+            tree.Insert(geometry.EnvelopeInternal, geometry);
+        }
+
+        var result = new FeatureCollection();
+        for (var i = 0; i < features.Count; i++)
+        {
+            var geometry = geometries[i];
+            var attributes = features[i].Attributes;
+            var name = (string) attributes["electorateName"];
+
+            if (!excludeFromExpansion.Contains(name))
+            {
+                var buffered = geometry.Buffer(expandDistance);
+                var land = geometry.Factory
+                    .BuildGeometry(tree.Query(buffered.EnvelopeInternal))
+                    .Union();
+                var skirt = buffered.Difference(land);
+                if (!skirt.IsEmpty)
+                {
+                    geometry = geometry.Union(skirt);
+                }
+            }
+
+            result.Add(new Feature(geometry, attributes));
+        }
+
+        File.WriteAllText(geoJsonPath, new GeoJsonWriter().Write(result));
+
+        // normalise to the repo's geojson format (bbox etc.)
+        var featureCollection = JsonSerializerService.DeserializeGeo(geoJsonPath);
+        featureCollection.FixBoundingBox();
+        JsonSerializerService.SerializeGeo(featureCollection, geoJsonPath);
     }
 
     static void SimplifyCoastArcs(string topoPath)
