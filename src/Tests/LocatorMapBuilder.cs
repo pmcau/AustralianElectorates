@@ -210,8 +210,11 @@ static class LocatorMapBuilder
     // 2x this are dissolved; real bays/gulfs are wider and are left open.
     const double slatRadius = 0.004;
 
-    // Dissolves thin slivers of no-man's-land between electorates into the nearest electorate (its
-    // Voronoi region), in place, so the electorates tile the landmass with no gaps.
+    // Dissolves thin slivers of no-man's-land between electorates by absorbing each into a single
+    // electorate, in place, so the electorates tile the landmass with no gaps. Each sliver is given
+    // WHOLE to the electorate whose Voronoi region covers most of it (not split along the medial line),
+    // so the resulting border is the neighbouring electorate's existing edge - a clean line that leaves
+    // that border unchanged, rather than a wiggly new dividing line.
     static void DissolveSlivers(Geometry[] geometries, Dictionary<int, Geometry> regions, GeometryFactory factory)
     {
         var landUnion = factory.BuildGeometry(geometries).Union();
@@ -225,18 +228,50 @@ static class LocatorMapBuilder
             return;
         }
 
-        for (var i = 0; i < geometries.Length; i++)
+        var regionTree = new STRtree<int>();
+        foreach (var (index, region) in regions)
         {
-            if (regions.TryGetValue(i, out var region))
+            regionTree.Insert(region.EnvelopeInternal, index);
+        }
+
+        // group each sliver under its owning electorate
+        var byOwner = new Dictionary<int, List<Geometry>>();
+        for (var s = 0; s < slivers.NumGeometries; s++)
+        {
+            var sliver = slivers.GetGeometryN(s);
+            if (sliver.IsEmpty)
             {
-                // Intersection can yield a GeometryCollection (polygons plus stray boundary
-                // lines/points); keep only the polygonal parts so Union accepts it.
-                var fill = Polygonal(slivers.Intersection(region), factory);
-                if (!fill.IsEmpty)
+                continue;
+            }
+
+            var owner = -1;
+            var ownerArea = 0d;
+            foreach (var index in regionTree.Query(sliver.EnvelopeInternal))
+            {
+                var area = sliver.Intersection(regions[index]).Area;
+                if (area > ownerArea)
                 {
-                    geometries[i] = geometries[i].Union(fill);
+                    ownerArea = area;
+                    owner = index;
                 }
             }
+
+            if (owner < 0)
+            {
+                continue;
+            }
+
+            if (!byOwner.TryGetValue(owner, out var list))
+            {
+                byOwner[owner] = list = [];
+            }
+
+            list.Add(sliver);
+        }
+
+        foreach (var (index, list) in byOwner)
+        {
+            geometries[index] = geometries[index].Union(factory.BuildGeometry(list).Union());
         }
     }
 
