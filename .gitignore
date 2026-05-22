@@ -325,3 +325,4 @@ ASALocalRun/
 
 
 *.pdf
+.claude/settings.local.json

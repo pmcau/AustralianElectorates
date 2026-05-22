@@ -3,10 +3,11 @@ using System.Text.Json.Nodes;
 using NetTopologySuite;
 using NetTopologySuite.Features;
 using NetTopologySuite.Geometries;
+using NetTopologySuite.Geometries.Prepared;
 using NetTopologySuite.Geometries.Utilities;
 using NetTopologySuite.Index.Strtree;
 using NetTopologySuite.IO;
-using NetTopologySuite.Simplify;
+using NetTopologySuite.Operation.Distance;
 using NetTopologySuite.Triangulate;
 
 // Coastline smoothing for the electorate maps.
@@ -39,11 +40,6 @@ static class LocatorMapBuilder
     // more accurate (smoother offshore borders) but slower; ~1km is plenty for a 10km skirt.
     const double siteSpacing = 0.01;
 
-    // ~2km. The over-water skirt edges carry no useful precision, so the expansion buffer is
-    // Douglas-Peucker simplified to near-straight lines. The coastline is taken from the land (not the
-    // buffer), so only the offshore edge is straightened - the coast stays exact.
-    const double offshoreTolerance = 0.02;
-
     // Large Queensland reef electorates excluded from coast expansion.
     static readonly HashSet<string> excludeFromExpansion = new(StringComparer.OrdinalIgnoreCase)
     {
@@ -51,14 +47,18 @@ static class LocatorMapBuilder
         "Capricornia", "Flynn", "Hinkler", "Wide Bay"
     };
 
-    public static async Task SmoothCoastline(string geoJsonPath)
+    // Simplifies the coastline (only the coast - internal borders between electorates are kept exact).
+    public static Task SmoothCoastline(string geoJsonPath) =>
+        Smooth(geoJsonPath, coastTolerance);
+
+    static async Task Smooth(string geoJsonPath, double tolerance)
     {
         var year = Path.GetFileName(Path.GetDirectoryName(geoJsonPath)!);
         var topoPath = Path.Combine(DataLocations.TempPath, $"{year}-australia-topo.json");
 
-        // build arc topology (shared borders deduplicated), simplify only coast arcs, convert back
+        // build arc topology (shared borders deduplicated), simplify only single-electorate arcs, convert back
         await MapToGeoJson.ToTopoJson(topoPath, geoJsonPath);
-        SimplifyCoastArcs(topoPath);
+        SimplifyCoastArcs(topoPath, tolerance);
         await MapToGeoJson.ToGeoJson(geoJsonPath, topoPath);
 
         // normalise to the repo's geojson format (bbox etc.)
@@ -77,13 +77,11 @@ static class LocatorMapBuilder
     }
 
     // Pushes each electorate's coastline out to sea by expandDistance, in place. The expanded ocean is
-    // partitioned by nearest land (a generalised Voronoi over every electorate's boundary points), so
-    // the offshore border between two electorates follows the medial line between their coasts - i.e.
-    // it continues the direction of their shared internal border (e.g. the vertical WA/NT border in the
-    // Joseph Bonaparte Gulf stays vertical out to sea). Each skirt is clipped to its electorate's
-    // Voronoi region, so skirts never overlap and an offshore point resolves to exactly one electorate.
-    // Excluded electorates are not expanded, but still take part in the partition so they claim (and
-    // thus block) the ocean in front of their own coast - neighbours can't reach across it.
+    // partitioned by nearest land (a generalised Voronoi over every electorate's boundary points), so the
+    // offshore border between two electorates is the smooth medial line between their coasts. Each skirt is
+    // clipped to its electorate's Voronoi region, so skirts never overlap and an offshore point resolves to
+    // exactly one electorate. Excluded electorates are not expanded, but still take part in the partition
+    // so they claim (and thus block) the ocean in front of their own coast - neighbours can't reach across it.
     // Before expanding, the thin slivers of no-man's-land between electorates (state-border misalignment
     // in the AEC source) are dissolved into the electorates so the land tiles with no gaps - that way the
     // expansion can never create an inland gap.
@@ -128,6 +126,8 @@ static class LocatorMapBuilder
             }
         }
 
+        var landUnion = factory.BuildGeometry(geometries).Union();
+
         var envelope = new Envelope();
         foreach (var geometry in geometries)
         {
@@ -168,7 +168,7 @@ static class LocatorMapBuilder
         // landmass with no gaps - then the coast expansion can't create any. The AEC source has thin
         // slivers between electorates from different states (their borders don't perfectly align); these
         // are filled and assigned to the nearest electorate (its Voronoi region).
-        DissolveSlivers(geometries, regions, factory);
+        DissolveSlivers(geometries, regions, factory, landUnion);
 
         // local-land lookup, rebuilt from the now gap-free land: each skirt is clipped to ocean by
         // subtracting nearby land.
@@ -180,17 +180,14 @@ static class LocatorMapBuilder
 
         // Expand each electorate's coast into the open ocean (skipped for excluded electorates). The
         // skirt is clipped to the electorate's Voronoi region, so skirts never overlap.
-        var result = new FeatureCollection();
+        var expanded = new Geometry[features.Count];
         for (var i = 0; i < features.Count; i++)
         {
             var geometry = geometries[i];
             if (!excludeFromExpansion.Contains(names[i]) &&
                 regions.TryGetValue(i, out var region))
             {
-                // simplify the buffer so the over-water skirt edge becomes near-straight lines; the coast
-                // is taken from the land below (Difference), so it stays exact.
-                var buffered = GeometryFixer.Fix(
-                    DouglasPeuckerSimplifier.Simplify(geometry.Buffer(expandDistance), offshoreTolerance));
+                var buffered = geometry.Buffer(expandDistance);
                 var land = factory
                     .BuildGeometry(tree.Query(buffered.EnvelopeInternal))
                     .Union();
@@ -203,7 +200,15 @@ static class LocatorMapBuilder
                 }
             }
 
-            result.Add(new Feature(geometry, features[i].Attributes));
+            expanded[i] = geometry;
+        }
+
+        var result = new FeatureCollection();
+        for (var i = 0; i < features.Count; i++)
+        {
+            // drop stray line/point fragments AND degenerate sliver holes left by the overlays, so every
+            // feature is a clean Polygon/MultiPolygon with no zero-area "disconnected line" rings.
+            result.Add(new Feature(CleanGeometry(expanded[i], factory), features[i].Attributes));
         }
 
         File.WriteAllText(geoJsonPath, new GeoJsonWriter().Write(result));
@@ -224,10 +229,8 @@ static class LocatorMapBuilder
     // WHOLE to the electorate whose Voronoi region covers most of it (not split along the medial line),
     // so the resulting border is the neighbouring electorate's existing edge - a clean line that leaves
     // that border unchanged, rather than a wiggly new dividing line.
-    static void DissolveSlivers(Geometry[] geometries, Dictionary<int, Geometry> regions, GeometryFactory factory)
+    static void DissolveSlivers(Geometry[] geometries, Dictionary<int, Geometry> regions, GeometryFactory factory, Geometry landUnion)
     {
-        var landUnion = factory.BuildGeometry(geometries).Union();
-
         // closing (dilate then erode) fills gaps/channels narrower than 2x slatRadius - i.e. the slivers,
         // whether they are enclosed in the source or open at the coast.
         var closed = landUnion.Buffer(slatRadius).Buffer(-slatRadius);
@@ -284,6 +287,39 @@ static class LocatorMapBuilder
         }
     }
 
+    // ~12,000 m². Interior rings smaller than this are overlay artifacts (degenerate slivers that render
+    // as disconnected lines), not real bays/gulfs, so they are dropped (the area is filled into the
+    // electorate). Real coastal bays kept as holes are far larger than this.
+    const double holeMinArea = 1e-6;
+
+    // Produces a clean Polygon/MultiPolygon: drops line/point fragments and degenerate (sub-threshold)
+    // interior rings, keeping each polygon's shell and its real holes.
+    static Geometry CleanGeometry(Geometry geometry, GeometryFactory factory)
+    {
+        var polygons = new List<Geometry>();
+        for (var i = 0; i < geometry.NumGeometries; i++)
+        {
+            if (geometry.GetGeometryN(i) is not Polygon polygon)
+            {
+                continue;
+            }
+
+            var holes = new List<LinearRing>();
+            for (var h = 0; h < polygon.NumInteriorRings; h++)
+            {
+                var ring = (LinearRing) polygon.GetInteriorRingN(h);
+                if (factory.CreatePolygon(ring).Area >= holeMinArea)
+                {
+                    holes.Add(ring);
+                }
+            }
+
+            polygons.Add(factory.CreatePolygon((LinearRing) polygon.ExteriorRing, holes.ToArray()));
+        }
+
+        return factory.BuildGeometry(polygons);
+    }
+
     // The polygonal parts of a geometry, dropping any line/point components.
     static Geometry Polygonal(Geometry geometry, GeometryFactory factory)
     {
@@ -304,7 +340,173 @@ static class LocatorMapBuilder
         return factory.BuildGeometry(polygons);
     }
 
-    static void SimplifyCoastArcs(string topoPath)
+    // ~13.5km. Length of the straight border-extension cut (must reach across the ~10km skirt).
+    const double offshoreCutLength = expandDistance * 1.5;
+
+    // At each coastal junction (where an internal land border meets the coast), the nearest-land partition
+    // lets one electorate's skirt wrap around the headland in front of its neighbour. This replaces that
+    // wrap with a single STRAIGHT cut that continues the land border out to sea: the ocean wedge each
+    // electorate holds on the wrong side of the cut is swapped to the other. A single straight line per
+    // junction (not paired Voronoi sites) means the offshore border is clean - no sawtooth or spikes.
+    static void StraightenOffshoreBorders(Geometry[] expanded, Geometry[] land, Geometry landUnion, GeometryFactory factory)
+    {
+        var coastDistance = new IndexedFacetDistance(landUnion.Boundary);
+        var preparedCoast = PreparedGeometryFactory.Prepare(landUnion.Boundary);
+        var preparedLand = PreparedGeometryFactory.Prepare(landUnion);
+        var boundaries = land.Select(_ => _.Boundary).ToArray();
+        var prepared = land.Select(_ => PreparedGeometryFactory.Prepare(_)).ToArray();
+
+        // only coastal electorates can have a coastal junction
+        var coastal = new List<int>();
+        var tree = new STRtree<int>();
+        for (var i = 0; i < land.Length; i++)
+        {
+            if (preparedCoast.Intersects(boundaries[i]))
+            {
+                coastal.Add(i);
+                tree.Insert(land[i].EnvelopeInternal, i);
+            }
+        }
+
+        const double coastEps = 0.0005; // ~55m: endpoint counts as "on the coast" (vs an inland tripoint)
+        const double sideEps = 0.001;   // ~110m: probe distance to decide direction and which side is which
+
+        foreach (var i in coastal)
+        {
+            foreach (var j in tree.Query(land[i].EnvelopeInternal))
+            {
+                if (j <= i)
+                {
+                    continue;
+                }
+
+                foreach (var line in LineStrings(boundaries[i].Intersection(boundaries[j])))
+                {
+                    var coords = line.Coordinates;
+                    foreach (var (end, inward) in new[] { (coords[0], coords[1]), (coords[^1], coords[^2]) })
+                    {
+                        if (coastDistance.Distance(factory.CreatePoint(end)) > coastEps)
+                        {
+                            continue; // inland endpoint (a tripoint), not a coastal junction
+                        }
+
+                        var dx = end.X - inward.X;
+                        var dy = end.Y - inward.Y;
+                        var length = Math.Sqrt(dx * dx + dy * dy);
+                        if (length < 1e-9)
+                        {
+                            continue;
+                        }
+
+                        dx /= length;
+                        dy /= length;
+
+                        // the cut must head into the ocean, not back into land
+                        if (preparedLand.Contains(factory.CreatePoint(new Coordinate(end.X + dx * sideEps, end.Y + dy * sideEps))))
+                        {
+                            continue;
+                        }
+
+                        var perpX = -dy;
+                        var perpY = dx;
+
+                        // which electorate sits on the +perp side (sampled just inland of the junction)
+                        var sideProbe = factory.CreatePoint(
+                            new Coordinate(end.X - dx * sideEps + perpX * sideEps, end.Y - dy * sideEps + perpY * sideEps));
+                        int a;
+                        int b;
+                        if (prepared[i].Contains(sideProbe))
+                        {
+                            a = i;
+                            b = j;
+                        }
+                        else if (prepared[j].Contains(sideProbe))
+                        {
+                            a = j;
+                            b = i;
+                        }
+                        else
+                        {
+                            continue;
+                        }
+
+                        try
+                        {
+                            SwapWedge(expanded, a, b, end, dx, dy, perpX, perpY, landUnion, factory);
+                        }
+                        catch
+                        {
+                            // a degenerate overlay at this junction - leave it on the nearest-land partition
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Swaps the ocean each electorate holds on the wrong side of the straight cut through the junction.
+    // Electorate 'a' is on the +perp side, 'b' on the -perp side.
+    static void SwapWedge(Geometry[] expanded, int a, int b, Coordinate end, double dx, double dy, double perpX, double perpY, Geometry landUnion, GeometryFactory factory)
+    {
+        var l = offshoreCutLength;
+        var p0 = new Coordinate(end.X - dx * l, end.Y - dy * l); // inland end of the cut
+        var p1 = new Coordinate(end.X + dx * l, end.Y + dy * l); // seaward end of the cut
+
+        Geometry HalfPlane(double sign) =>
+            factory.CreatePolygon(
+            [
+                p0,
+                p1,
+                new Coordinate(p1.X + perpX * l * sign, p1.Y + perpY * l * sign),
+                new Coordinate(p0.X + perpX * l * sign, p0.Y + perpY * l * sign),
+                p0
+            ]);
+
+        var halfA = HalfPlane(1);  // +perp side (a)
+        var halfB = HalfPlane(-1); // -perp side (b)
+        var vicinity = factory.CreatePoint(end).Buffer(l); // limit the swap to near the junction
+
+        // a's ocean on b's side, and b's ocean on a's side (land excluded - only the skirt moves)
+        var aOnB = Polygonal(expanded[a].Intersection(halfB).Intersection(vicinity).Difference(landUnion), factory);
+        var bOnA = Polygonal(expanded[b].Intersection(halfA).Intersection(vicinity).Difference(landUnion), factory);
+
+        // keep each result polygonal - Difference/Union can emit a GeometryCollection, which the next
+        // overlay would reject.
+        if (!aOnB.IsEmpty)
+        {
+            expanded[a] = Polygonal(expanded[a].Difference(aOnB), factory);
+            expanded[b] = Polygonal(expanded[b].Union(aOnB), factory);
+        }
+
+        if (!bOnA.IsEmpty)
+        {
+            expanded[b] = Polygonal(expanded[b].Difference(bOnA), factory);
+            expanded[a] = Polygonal(expanded[a].Union(bOnA), factory);
+        }
+    }
+
+    // The LineString components of a geometry (drops points).
+    static IEnumerable<LineString> LineStrings(Geometry geometry)
+    {
+        switch (geometry)
+        {
+            case LineString line when line.NumPoints >= 2:
+                yield return line;
+                break;
+            case GeometryCollection collection:
+                for (var i = 0; i < collection.NumGeometries; i++)
+                {
+                    foreach (var line in LineStrings(collection.GetGeometryN(i)))
+                    {
+                        yield return line;
+                    }
+                }
+
+                break;
+        }
+    }
+
+    static void SimplifyCoastArcs(string topoPath, double tolerance)
     {
         var root = JsonNode.Parse(File.ReadAllText(topoPath))!.AsObject();
         var arcs = root["arcs"]!.AsArray();
@@ -344,7 +546,7 @@ static class LocatorMapBuilder
                 points.Add((point![0]!.GetValue<double>(), point[1]!.GetValue<double>()));
             }
 
-            var simplified = DouglasPeucker(points);
+            var simplified = DouglasPeucker(points, tolerance);
             if (simplified.Count == points.Count)
             {
                 continue;
@@ -377,7 +579,7 @@ static class LocatorMapBuilder
         }
     }
 
-    static List<(double x, double y)> DouglasPeucker(List<(double x, double y)> points)
+    static List<(double x, double y)> DouglasPeucker(List<(double x, double y)> points, double tolerance)
     {
         var count = points.Count;
         if (count < 3)
@@ -399,7 +601,7 @@ static class LocatorMapBuilder
             var dy = by - ay;
             var lengthSquared = dx * dx + dy * dy;
 
-            var maxDistance = coastTolerance;
+            var maxDistance = tolerance;
             var index = -1;
             for (var k = first + 1; k < last; k++)
             {

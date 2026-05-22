@@ -45,6 +45,8 @@
     "West Tamar"
   ],
   "Clark": [
+    "Brighton",
+    "Clarence",
     "Derwent Valley",
     "Glenorchy",
     "Hobart",
@@ -55,8 +57,10 @@
     "Brighton",
     "Clarence",
     "Derwent Valley",
+    "Glenorchy",
     "Huon Valley",
     "Kingborough",
+    "Sorell",
     "West Coast"
   ],
   "Lyons": [
@@ -344,7 +348,6 @@
     "Mornington Peninsula"
   ],
   "Flinders": [
-    "Casey",
     "Frankston",
     "Mornington Peninsula",
     "Unincorporated Vic"
@@ -894,6 +897,7 @@
     "Anangu Pitjantjatjara Yunkunytjatjara",
     "Unincorporated SA",
     "Christmas Island",
+    "Cocos Islands",
     "East Pilbara",
     "Halls Creek",
     "Ngaanyatjarraku",
@@ -1152,6 +1156,7 @@
     "Wollondilly"
   ],
   "Lyne": [
+    "Cessnock",
     "Dungog",
     "Kempsey",
     "Maitland",
@@ -1289,7 +1294,9 @@
     "Wentworth",
     "Unincorporated NSW",
     "Balonne",
+    "Bulloo",
     "Goondiwindi",
+    "Paroo",
     "Unincorporated SA"
   ],
   "Parramatta": [
@@ -1541,6 +1548,8 @@
     "Yalgoo",
     "Yilgarn",
     "York",
+    "Central Desert",
+    "MacDonnell",
     "Victoria Daly"
   ],
   "Forrest": [
@@ -1581,6 +1590,7 @@
     "Wanneroo"
   ],
   "O'Connor": [
+    "Unincorporated SA",
     "Albany",
     "Armadale",
     "Augusta Margaret River",
@@ -1647,10 +1657,12 @@
     "Wiluna",
     "Woodanilling",
     "Yilgarn",
-    "York"
+    "York",
+    "MacDonnell"
   ],
   "Pearce": [
     "Chittering",
+    "Gingin",
     "Joondalup",
     "Swan",
     "Wanneroo"

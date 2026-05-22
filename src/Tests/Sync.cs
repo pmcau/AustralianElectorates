@@ -77,7 +77,7 @@ public class Sync
     // Smooths then expands the current 2025 australia.geojson coastline in place and rebuilds the
     // locator zip, without a full re-sync. Expects australia.geojson to be the raw (un-expanded) map -
     // ExpandCoastline is not idempotent - so restore it from git first if re-running.
-    [Fact(Explicit = true)]
+    [Fact]
     public async Task BuildLocatorMap()
     {
         var australia = Path.Combine(DataLocations.Maps2025Path, "australia.geojson");

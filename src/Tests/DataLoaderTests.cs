@@ -154,6 +154,45 @@ public class DataLoaderTests
     }
 
     [Fact]
+    public void LocateElectorate_no_degenerate_holes()
+    {
+        using var stream = File.OpenRead(DataLocations.AustraliaFullZipPath);
+        using var archive = new System.IO.Compression.ZipArchive(stream);
+        using var reader = new StreamReader(archive.GetEntry("2025/australia.geojson")!.Open());
+        var features = new NetTopologySuite.IO.GeoJsonReader()
+            .Read<NetTopologySuite.Features.FeatureCollection>(reader.ReadToEnd());
+
+        // Every interior ring (hole) must be a real bay/gulf, not a degenerate sliver artifact that
+        // renders as a "disconnected line". Anything near zero area is an overlay artifact and must be
+        // cleaned away (the real bays kept as holes are far larger).
+        var holes = new List<string>();
+        foreach (var feature in features)
+        {
+            var geometry = feature.Geometry;
+            for (var i = 0; i < geometry.NumGeometries; i++)
+            {
+                if (geometry.GetGeometryN(i) is not NetTopologySuite.Geometries.Polygon polygon)
+                {
+                    continue;
+                }
+
+                for (var h = 0; h < polygon.NumInteriorRings; h++)
+                {
+                    var ring = (NetTopologySuite.Geometries.LinearRing) polygon.GetInteriorRingN(h);
+                    var area = polygon.Factory.CreatePolygon(ring).Area;
+                    if (area < 1e-7)
+                    {
+                        var point = ring.Coordinate;
+                        holes.Add($"{(string) feature.Attributes["electorateName"]} area={area:E2} at {point.X:F4},{point.Y:F4}");
+                    }
+                }
+            }
+        }
+
+        Assert.Empty(holes);
+    }
+
+    [Fact]
     public void ElectoratesForPostcode()
     {
         var electorates = DataLoader.ElectoratesForPostcode(2606)

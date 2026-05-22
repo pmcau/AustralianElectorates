@@ -136,6 +136,7 @@
   "Cessnock": [
     "Dobell",
     "Hunter",
+    "Lyne",
     "Macquarie",
     "Newcastle",
     "Paterson",
@@ -736,7 +737,6 @@
     "Aston",
     "Bruce",
     "Casey",
-    "Flinders",
     "Holt",
     "La Trobe"
   ],
@@ -1161,7 +1161,8 @@
   ],
   "Bulloo": [
     "Grey",
-    "Maranoa"
+    "Maranoa",
+    "Parkes"
   ],
   "Bundaberg": [
     "Flynn",
@@ -1372,7 +1373,8 @@
     "Herbert"
   ],
   "Paroo": [
-    "Maranoa"
+    "Maranoa",
+    "Parkes"
   ],
   "Pormpuraaw": [
     "Leichhardt"
@@ -1762,7 +1764,8 @@
     "Maranoa",
     "Lingiari",
     "Farrer",
-    "Parkes"
+    "Parkes",
+    "O'Connor"
   ],
   "No usual address (SA)": [],
   "Migratory - Offshore - Shipping (SA)": [],
@@ -1875,6 +1878,7 @@
     "Tangney"
   ],
   "Cocos Islands": [
+    "Lingiari",
     "Lingiari"
   ],
   "Collie": [
@@ -1958,7 +1962,8 @@
     "Tangney"
   ],
   "Gingin": [
-    "Durack"
+    "Durack",
+    "Pearce"
   ],
   "Gnowangerup": [
     "O'Connor"
@@ -2297,6 +2302,7 @@
     "Lyons"
   ],
   "Brighton": [
+    "Clark",
     "Franklin",
     "Lyons"
   ],
@@ -2315,6 +2321,7 @@
     "Braddon"
   ],
   "Clarence": [
+    "Clark",
     "Franklin",
     "Lyons"
   ],
@@ -2343,6 +2350,7 @@
   ],
   "Glenorchy": [
     "Clark",
+    "Franklin",
     "Lyons"
   ],
   "Hobart": [
@@ -2384,6 +2392,7 @@
     "Lyons"
   ],
   "Sorell": [
+    "Franklin",
     "Lyons"
   ],
   "Southern Midlands": [
@@ -2421,7 +2430,8 @@
   "Central Desert": [
     "Kennedy",
     "Maranoa",
-    "Lingiari"
+    "Lingiari",
+    "Durack"
   ],
   "Coomalie": [
     "Lingiari"
@@ -2446,7 +2456,9 @@
   "MacDonnell": [
     "Grey",
     "Maranoa",
-    "Lingiari"
+    "Lingiari",
+    "Durack",
+    "O'Connor"
   ],
   "Palmerston": [
     "Lingiari",
