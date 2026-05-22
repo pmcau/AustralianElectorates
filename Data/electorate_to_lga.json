@@ -29,17 +29,23 @@
     "West Tamar"
   ],
   "Braddon": [
+    "Break O'Day",
     "Burnie",
     "Central Coast (Tas.)",
     "Central Highlands (Tas.)",
     "Circular Head",
+    "Clarence",
     "Derwent Valley",
     "Devonport",
+    "Glamorgan-Spring Bay",
     "Huon Valley",
     "Kentish",
     "King Island",
+    "Kingborough",
     "Latrobe (Tas.)",
     "Meander Valley",
+    "Sorell",
+    "Tasman",
     "Waratah-Wynyard",
     "West Coast",
     "West Tamar"
@@ -58,6 +64,7 @@
     "Clarence",
     "Derwent Valley",
     "Glenorchy",
+    "Hobart",
     "Huon Valley",
     "Kingborough",
     "Sorell",
@@ -186,9 +193,11 @@
     "MacDonnell"
   ],
   "Hindmarsh": [
+    "Adelaide Plains",
     "Charles Sturt",
     "Holdfast Bay",
     "Marion",
+    "Playford",
     "Port Adelaide Enfield",
     "Salisbury",
     "West Torrens",
@@ -207,21 +216,32 @@
     "Tea Tree Gully"
   ],
   "Mayo": [
+    "Colac Otway",
+    "Corangamite",
+    "Glenelg",
+    "Moyne",
+    "Surf Coast",
+    "Warrnambool",
+    "Unincorporated Vic",
     "Adelaide Hills",
     "Alexandrina",
     "Barossa",
     "Burnside",
     "Campbelltown (SA)",
+    "Grant",
     "Kangaroo Island",
+    "Kingston (SA)",
     "Mid Murray",
     "Mitcham",
     "Mount Barker",
     "Murray Bridge",
     "Onkaparinga",
     "Playford",
+    "Robe",
     "Tea Tree Gully",
     "Coorong",
     "Victor Harbor",
+    "Wattle Range",
     "Yankalilla"
   ],
   "Spence": [
@@ -231,8 +251,10 @@
     "Gawler",
     "Light",
     "Playford",
+    "Port Adelaide Enfield",
     "Salisbury",
-    "Tea Tree Gully"
+    "Tea Tree Gully",
+    "Unincorporated SA"
   ],
   "Sturt": [
     "Adelaide",
@@ -555,13 +577,23 @@
   "Monash": [
     "Bass Coast",
     "Baw Baw",
+    "Bayside (Vic.)",
     "Cardinia",
+    "Casey",
+    "East Gippsland",
+    "Greater Geelong",
+    "Hobsons Bay",
     "Latrobe (Vic.)",
     "Mansfield",
+    "Mornington Peninsula",
+    "Queenscliffe",
     "South Gippsland",
+    "Surf Coast",
     "Wellington",
+    "Wyndham",
     "Yarra Ranges",
-    "Unincorporated Vic"
+    "Unincorporated Vic",
+    "Flinders (Tas.)"
   ],
   "Nicholls": [
     "Berrigan",
@@ -634,7 +666,9 @@
   "Bonner": [
     "Brisbane",
     "Logan",
-    "Redland"
+    "Moreton Bay",
+    "Redland",
+    "Sunshine Coast"
   ],
   "Bowman": [
     "Brisbane",
@@ -908,6 +942,7 @@
     "Central Desert",
     "Coomalie",
     "Darwin",
+    "Darwin Waterfront Precinct",
     "East Arnhem",
     "Katherine",
     "Litchfield",
@@ -1248,8 +1283,11 @@
     "Clarence Valley",
     "Coffs Harbour",
     "Glen Innes Severn",
+    "Kempsey",
     "Kyogle",
     "Lismore",
+    "Nambucca Valley",
+    "Port Macquarie-Hastings",
     "Richmond Valley",
     "Tenterfield",
     "Tweed",
@@ -1421,10 +1459,15 @@
     "Wollongong"
   ],
   "Brand": [
+    "Cambridge",
     "Cockburn",
+    "Cottesloe",
+    "Fremantle",
     "Kwinana",
+    "Nedlands",
     "Rockingham",
-    "Serpentine-Jarrahdale"
+    "Serpentine-Jarrahdale",
+    "Stirling"
   ],
   "Bullwinkel": [
     "Armadale",
@@ -1662,7 +1705,6 @@
   ],
   "Pearce": [
     "Chittering",
-    "Gingin",
     "Joondalup",
     "Swan",
     "Wanneroo"

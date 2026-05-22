@@ -8,6 +8,7 @@ using NetTopologySuite.Geometries.Utilities;
 using NetTopologySuite.Index.Strtree;
 using NetTopologySuite.IO;
 using NetTopologySuite.Operation.Distance;
+using NetTopologySuite.Operation.Polygonize;
 using NetTopologySuite.Triangulate;
 
 // Coastline smoothing for the electorate maps.
@@ -164,43 +165,87 @@ static class LocatorMapBuilder
             _ => _.Key,
             _ => factory.BuildGeometry(_.Value).Union());
 
+        // Keep the original (pre-dissolve) land per electorate, so after expanding we can tell a real
+        // landmass/island from a stray offshore skirt fragment (a band cell the polygonize left detached).
+        // DissolveSlivers reassigns geometries[i], but this shallow copy keeps the original references.
+        var rawGeometries = geometries.ToArray();
+
         // Dissolve inland no-man's-land into the electorates BEFORE expanding, so the electorates tile the
         // landmass with no gaps - then the coast expansion can't create any. The AEC source has thin
         // slivers between electorates from different states (their borders don't perfectly align); these
         // are filled and assigned to the nearest electorate (its Voronoi region).
         DissolveSlivers(geometries, regions, factory, landUnion);
 
-        // local-land lookup, rebuilt from the now gap-free land: each skirt is clipped to ocean by
-        // subtracting nearby land.
-        var tree = new STRtree<Geometry>();
-        foreach (var geometry in geometries)
+        // Offshore expansion. Build a band around the (gap-free) land, cut it at each coastal junction
+        // with a straight line continuing the internal border out to sea, polygonize the band into cells,
+        // and give each cell to the electorate whose coast it fronts. Straight cuts give straight offshore
+        // borders (no nearest-land "wrap" around headlands), and a single line per junction means no
+        // sawtooth.
+        var mergedLand = factory.BuildGeometry(geometries).Union();
+        var expandedLand = mergedLand.Buffer(expandDistance);
+        var band = expandedLand.Difference(mergedLand);
+        var cuts = OffshoreCuts(geometries, mergedLand, band, factory);
+
+        var dividers = cuts.IsEmpty ? band.Boundary : band.Boundary.Union(cuts);
+        var polygonizer = new Polygonizer();
+        polygonizer.Add(dividers);
+
+        var boundaries = geometries.Select(_ => _.Boundary).ToArray();
+        var indexTree = new STRtree<int>();
+        for (var i = 0; i < geometries.Length; i++)
         {
-            tree.Insert(geometry.EnvelopeInternal, geometry);
+            indexTree.Insert(geometries[i].EnvelopeInternal, i);
         }
 
-        // Expand each electorate's coast into the open ocean (skipped for excluded electorates). The
-        // skirt is clipped to the electorate's Voronoi region, so skirts never overlap.
-        var expanded = new Geometry[features.Count];
-        for (var i = 0; i < features.Count; i++)
+        // assign each band cell to the (non-excluded) electorate whose coast it fronts (longest shared edge)
+        var preparedBand = PreparedGeometryFactory.Prepare(band);
+        var skirts = new Dictionary<int, List<Geometry>>();
+        foreach (var cell in polygonizer.GetPolygons())
         {
-            var geometry = geometries[i];
-            if (!excludeFromExpansion.Contains(names[i]) &&
-                regions.TryGetValue(i, out var region))
+            if (!preparedBand.Contains(cell.InteriorPoint))
             {
-                var buffered = geometry.Buffer(expandDistance);
-                var land = factory
-                    .BuildGeometry(tree.Query(buffered.EnvelopeInternal))
-                    .Union();
-                // Intersection can yield a GeometryCollection (polygons plus stray boundary
-                // lines/points); keep only the polygonal parts so Union accepts it.
-                var skirt = Polygonal(buffered.Difference(land).Intersection(region), factory);
-                if (!skirt.IsEmpty)
+                continue; // a land cell, not an offshore skirt cell
+            }
+
+            var best = -1;
+            var bestShared = 0d;
+            foreach (var i in indexTree.Query(cell.EnvelopeInternal))
+            {
+                var shared = cell.Intersection(boundaries[i]).Length;
+                if (shared > bestShared)
                 {
-                    geometry = geometry.Union(skirt);
+                    bestShared = shared;
+                    best = i;
                 }
             }
 
-            expanded[i] = geometry;
+            if (best < 0 || excludeFromExpansion.Contains(names[best]))
+            {
+                continue;
+            }
+
+            if (!skirts.TryGetValue(best, out var list))
+            {
+                skirts[best] = list = [];
+            }
+
+            list.Add(cell);
+        }
+
+        var expanded = new Geometry[features.Count];
+        for (var i = 0; i < features.Count; i++)
+        {
+            var merged = geometries[i];
+            if (skirts.TryGetValue(i, out var cells))
+            {
+                merged = merged.Union(factory.BuildGeometry(cells).Union());
+            }
+
+            // Drop stray disconnected fragments - parts with no real land of their own that sit out over
+            // the water (a band cell the polygonize left detached, or a dissolved sliver assigned to an
+            // electorate it doesn't touch). These render as disconnected shapes. Real islands, and the
+            // enclosed inland gap-fill slivers that keep the landmass seamless, are kept.
+            expanded[i] = WithoutStrayFragments(merged, rawGeometries[i], expandedLand, factory);
         }
 
         var result = new FeatureCollection();
@@ -210,6 +255,12 @@ static class LocatorMapBuilder
             // feature is a clean Polygon/MultiPolygon with no zero-area "disconnected line" rings.
             result.Add(new Feature(CleanGeometry(expanded[i], factory), features[i].Attributes));
         }
+
+        // Post-condition: no feature may keep a stray disconnected fragment (see IsStray). On the final map
+        // such a fragment is indistinguishable from a small real island - the only reliable signal is
+        // whether it overlaps the raw coastline - so the check has to run here, where the raw land is still
+        // available. WithoutStrayFragments removes these; this guard fails the build if one slips through.
+        AssertNoStrayFragments(result, rawGeometries, expandedLand, names);
 
         File.WriteAllText(geoJsonPath, new GeoJsonWriter().Write(result));
 
@@ -320,6 +371,75 @@ static class LocatorMapBuilder
         return factory.BuildGeometry(polygons);
     }
 
+    // Keeps every polygon part of a (land + skirt) union except stray disconnected fragments (see IsStray).
+    static Geometry WithoutStrayFragments(Geometry unioned, Geometry rawLand, Geometry coverage, GeometryFactory factory)
+    {
+        var parts = new List<Geometry>();
+        for (var i = 0; i < unioned.NumGeometries; i++)
+        {
+            var part = unioned.GetGeometryN(i);
+            if (!IsStray(part, rawLand, coverage))
+            {
+                parts.Add(part);
+            }
+        }
+
+        return factory.BuildGeometry(parts);
+    }
+
+    // ~12km. Reach used to decide whether a land-less fragment is an enclosed inland gap (keep) or an
+    // ocean-adjacent stray (drop). Matches the LocateElectorate_no_inland_gaps test so the two agree:
+    // anything that test would treat as "open to the sea" is dropped, and only sea-locked gap-fills stay.
+    const double enclosedReach = 0.11;
+
+    // A part is a stray disconnected fragment if it has no real (pre-dissolve) land of its own AND it is
+    // not an enclosed inland gap-fill. Real islands (which contain raw land - including the reef islands
+    // of excluded electorates) are never stray. A land-less fragment is kept only when it is sea-locked
+    // (a dissolved sliver plugging an inland gap); a land-less fragment open to the ocean (a detached
+    // skirt cell, or a dissolved coastal notch) is stray and would render as a disconnected shape.
+    // Enclosure is tested against the land-plus-skirt coverage (mergedLand buffered by expandDistance).
+    // That region contains the final expanded union, so this stays consistent with the inland-gaps test:
+    // a fragment it keeps can never leave a hole that test would later flag.
+    static bool IsStray(Geometry part, Geometry rawLand, Geometry coverage)
+    {
+        if (part.Intersection(rawLand).Area > 0)
+        {
+            return false; // real land (mainland, island, or a gap-fill merged into the coast)
+        }
+
+        // no land of its own: stray unless the ring around it stays within the land+skirt coverage
+        return part.Buffer(enclosedReach).Difference(coverage).Area > 1e-6;
+    }
+
+    // Fails if any expanded feature kept a stray disconnected fragment (see IsStray) - an ocean-adjacent
+    // part with no land of its own, which would render as a disconnected shape.
+    static void AssertNoStrayFragments(FeatureCollection result, Geometry[] rawGeometries, Geometry coverage, string[] names)
+    {
+        var strays = new List<string>();
+        for (var i = 0; i < result.Count; i++)
+        {
+            var geometry = result[i].Geometry;
+            for (var g = 0; g < geometry.NumGeometries; g++)
+            {
+                var part = geometry.GetGeometryN(g);
+                if (part is Polygon &&
+                    IsStray(part, rawGeometries[i], coverage))
+                {
+                    var point = part.InteriorPoint;
+                    strays.Add($"{names[i]} at {point.X:F4},{point.Y:F4} (area {part.Area:E2})");
+                }
+            }
+        }
+
+        if (strays.Count > 0)
+        {
+            throw new(
+                $"Expanded map has {strays.Count} stray disconnected fragment(s) with no land of their own:" +
+                Environment.NewLine +
+                string.Join(Environment.NewLine, strays));
+        }
+    }
+
     // The polygonal parts of a geometry, dropping any line/point components.
     static Geometry Polygonal(Geometry geometry, GeometryFactory factory)
     {
@@ -340,21 +460,18 @@ static class LocatorMapBuilder
         return factory.BuildGeometry(polygons);
     }
 
-    // ~13.5km. Length of the straight border-extension cut (must reach across the ~10km skirt).
-    const double offshoreCutLength = expandDistance * 1.5;
-
-    // At each coastal junction (where an internal land border meets the coast), the nearest-land partition
-    // lets one electorate's skirt wrap around the headland in front of its neighbour. This replaces that
-    // wrap with a single STRAIGHT cut that continues the land border out to sea: the ocean wedge each
-    // electorate holds on the wrong side of the cut is swapped to the other. A single straight line per
-    // junction (not paired Voronoi sites) means the offshore border is clean - no sawtooth or spikes.
-    static void StraightenOffshoreBorders(Geometry[] expanded, Geometry[] land, Geometry landUnion, GeometryFactory factory)
+    // Builds the straight border-extension cuts that divide the offshore band. Where an internal land
+    // border meets the coast, a straight line continuing that border out to sea (clipped to the band)
+    // separates the two electorates' frontage cells - so the offshore boundary is a straight continuation
+    // of the land border, not the nearest-land medial (which wraps around headlands). One line per
+    // junction means no sawtooth.
+    static Geometry OffshoreCuts(Geometry[] land, Geometry mergedLand, Geometry band, GeometryFactory factory)
     {
-        var coastDistance = new IndexedFacetDistance(landUnion.Boundary);
-        var preparedCoast = PreparedGeometryFactory.Prepare(landUnion.Boundary);
-        var preparedLand = PreparedGeometryFactory.Prepare(landUnion);
+        var coast = mergedLand.Boundary;
+        var coastDistance = new IndexedFacetDistance(coast);
+        var preparedCoast = PreparedGeometryFactory.Prepare(coast);
+        var preparedLand = PreparedGeometryFactory.Prepare(mergedLand);
         var boundaries = land.Select(_ => _.Boundary).ToArray();
-        var prepared = land.Select(_ => PreparedGeometryFactory.Prepare(_)).ToArray();
 
         // only coastal electorates can have a coastal junction
         var coastal = new List<int>();
@@ -369,8 +486,10 @@ static class LocatorMapBuilder
         }
 
         const double coastEps = 0.0005; // ~55m: endpoint counts as "on the coast" (vs an inland tripoint)
-        const double sideEps = 0.001;   // ~110m: probe distance to decide direction and which side is which
+        const double sideEps = 0.001;   // ~110m: tiny inland start so the cut connects to the coast
+        var cutLength = expandDistance * 2; // must reach across the ~10km band
 
+        var cuts = new List<Geometry>();
         foreach (var i in coastal)
         {
             foreach (var j in tree.Query(land[i].EnvelopeInternal))
@@ -390,6 +509,9 @@ static class LocatorMapBuilder
                             continue; // inland endpoint (a tripoint), not a coastal junction
                         }
 
+                        // continue the land border's own direction (from the last inland vertex out through
+                        // the coastal junction) seaward - this aligns the cut with the actual border so the
+                        // band splits into clean per-electorate frontage cells.
                         var dx = end.X - inward.X;
                         var dy = end.Y - inward.Y;
                         var length = Math.Sqrt(dx * dx + dy * dy);
@@ -407,82 +529,23 @@ static class LocatorMapBuilder
                             continue;
                         }
 
-                        var perpX = -dy;
-                        var perpY = dx;
-
-                        // which electorate sits on the +perp side (sampled just inland of the junction)
-                        var sideProbe = factory.CreatePoint(
-                            new Coordinate(end.X - dx * sideEps + perpX * sideEps, end.Y - dy * sideEps + perpY * sideEps));
-                        int a;
-                        int b;
-                        if (prepared[i].Contains(sideProbe))
+                        // straight ray from just inland of the junction out to sea, clipped to the band
+                        var ray = factory.CreateLineString(
+                        [
+                            new Coordinate(end.X - dx * sideEps, end.Y - dy * sideEps),
+                            new Coordinate(end.X + dx * cutLength, end.Y + dy * cutLength)
+                        ]);
+                        // keep only the line parts (the clip can also yield touch points)
+                        foreach (var segment in LineStrings(ray.Intersection(band)))
                         {
-                            a = i;
-                            b = j;
-                        }
-                        else if (prepared[j].Contains(sideProbe))
-                        {
-                            a = j;
-                            b = i;
-                        }
-                        else
-                        {
-                            continue;
-                        }
-
-                        try
-                        {
-                            SwapWedge(expanded, a, b, end, dx, dy, perpX, perpY, landUnion, factory);
-                        }
-                        catch
-                        {
-                            // a degenerate overlay at this junction - leave it on the nearest-land partition
+                            cuts.Add(segment);
                         }
                     }
                 }
             }
         }
-    }
 
-    // Swaps the ocean each electorate holds on the wrong side of the straight cut through the junction.
-    // Electorate 'a' is on the +perp side, 'b' on the -perp side.
-    static void SwapWedge(Geometry[] expanded, int a, int b, Coordinate end, double dx, double dy, double perpX, double perpY, Geometry landUnion, GeometryFactory factory)
-    {
-        var l = offshoreCutLength;
-        var p0 = new Coordinate(end.X - dx * l, end.Y - dy * l); // inland end of the cut
-        var p1 = new Coordinate(end.X + dx * l, end.Y + dy * l); // seaward end of the cut
-
-        Geometry HalfPlane(double sign) =>
-            factory.CreatePolygon(
-            [
-                p0,
-                p1,
-                new Coordinate(p1.X + perpX * l * sign, p1.Y + perpY * l * sign),
-                new Coordinate(p0.X + perpX * l * sign, p0.Y + perpY * l * sign),
-                p0
-            ]);
-
-        var halfA = HalfPlane(1);  // +perp side (a)
-        var halfB = HalfPlane(-1); // -perp side (b)
-        var vicinity = factory.CreatePoint(end).Buffer(l); // limit the swap to near the junction
-
-        // a's ocean on b's side, and b's ocean on a's side (land excluded - only the skirt moves)
-        var aOnB = Polygonal(expanded[a].Intersection(halfB).Intersection(vicinity).Difference(landUnion), factory);
-        var bOnA = Polygonal(expanded[b].Intersection(halfA).Intersection(vicinity).Difference(landUnion), factory);
-
-        // keep each result polygonal - Difference/Union can emit a GeometryCollection, which the next
-        // overlay would reject.
-        if (!aOnB.IsEmpty)
-        {
-            expanded[a] = Polygonal(expanded[a].Difference(aOnB), factory);
-            expanded[b] = Polygonal(expanded[b].Union(aOnB), factory);
-        }
-
-        if (!bOnA.IsEmpty)
-        {
-            expanded[b] = Polygonal(expanded[b].Difference(bOnA), factory);
-            expanded[a] = Polygonal(expanded[a].Union(bOnA), factory);
-        }
+        return cuts.Count == 0 ? factory.BuildGeometry(cuts) : factory.BuildGeometry(cuts).Union();
     }
 
     // The LineString components of a geometry (drops points).

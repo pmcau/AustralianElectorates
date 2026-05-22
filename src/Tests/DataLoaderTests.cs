@@ -193,6 +193,71 @@ public class DataLoaderTests
     }
 
     [Fact]
+    public void LocateElectorate_no_nested_parts()
+    {
+        // OverlayNG: robust operations on the full map.
+        NetTopologySuite.NtsGeometryServices.Instance =
+            new(NetTopologySuite.Geometries.GeometryOverlay.NG);
+
+        using var stream = File.OpenRead(DataLocations.AustraliaFullZipPath);
+        using var archive = new System.IO.Compression.ZipArchive(stream);
+        using var reader = new StreamReader(archive.GetEntry("2025/australia.geojson")!.Open());
+        var features = new NetTopologySuite.IO.GeoJsonReader()
+            .Read<NetTopologySuite.Features.FeatureCollection>(reader.ReadToEnd());
+
+        // No electorate may have a disconnected polygon part nested inside another of its parts (or
+        // overlapping itself). Such a part renders as a shape drawn inside another shape - an overlay
+        // artifact (e.g. a detached skirt sliver that landed on top of the body), not real geography.
+        var violations = new List<string>();
+        foreach (var feature in features)
+        {
+            var geometry = feature.Geometry;
+            var name = (string) feature.Attributes["electorateName"];
+
+            // a self-overlapping part, or two parts whose interiors overlap, makes the geometry invalid
+            // ("inside themselves")
+            if (!geometry.IsValid)
+            {
+                violations.Add($"{name}: invalid geometry (self-overlapping/overlapping parts)");
+            }
+
+            var parts = new List<NetTopologySuite.Geometries.Polygon>();
+            for (var i = 0; i < geometry.NumGeometries; i++)
+            {
+                if (geometry.GetGeometryN(i) is NetTopologySuite.Geometries.Polygon polygon)
+                {
+                    parts.Add(polygon);
+                }
+            }
+
+            // a part whose interior point falls within the solid outline (holes ignored) of another part
+            // is nested inside that part - i.e. a disconnected part sitting inside another part
+            for (var i = 0; i < parts.Count; i++)
+            {
+                var point = parts[i].InteriorPoint;
+                for (var j = 0; j < parts.Count; j++)
+                {
+                    if (i == j)
+                    {
+                        continue;
+                    }
+
+                    var outline = parts[j].Factory.CreatePolygon(
+                        (NetTopologySuite.Geometries.LinearRing) parts[j].ExteriorRing);
+                    if (outline.Contains(point))
+                    {
+                        violations.Add(
+                            $"{name}: a part at {point.X:F4},{point.Y:F4} is nested inside another part");
+                        break;
+                    }
+                }
+            }
+        }
+
+        Assert.Empty(violations);
+    }
+
+    [Fact]
     public void ElectoratesForPostcode()
     {
         var electorates = DataLoader.ElectoratesForPostcode(2606)
