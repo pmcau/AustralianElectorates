@@ -458,7 +458,7 @@ Elections are currently added manually as they are declared.
 
 Part of [Geospatial Data Abstraction Library (GDAL)](https://www.gdal.org/)
 
- * Download https://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries
+ * Download https://gdal.org/en/stable/download.html
 
 
 #### Ensure in path
