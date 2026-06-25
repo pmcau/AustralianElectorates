@@ -485,11 +485,6 @@ https://github.com/mbloch/mapshaper/wiki/Command-Reference
 C:\Program Files\gs\gs9.27\bin\
 
 
-### pngquant
-
-https://pngquant.org/
-
-
 ## Purge history
 
 ```

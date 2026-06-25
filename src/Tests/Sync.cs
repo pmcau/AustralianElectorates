@@ -1,6 +1,7 @@
-﻿using System.Drawing;
-using System.IO.Compression;
+﻿using System.IO.Compression;
 using GeoJSON.Net.Feature;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Processing;
 
 public class Sync
 {
@@ -122,10 +123,10 @@ public class Sync
     {
         var landscapePath = pngPath.Replace(".png", "_landscape.png");
         var portraitPath = pngPath.Replace(".png", "_portrait.png");
-        using var image = Image.FromStream(File.OpenRead(pngPath));
+        using var image = Image.Load(pngPath);
         if (image.Height < image.Width)
         {
-            image.RotateFlip(RotateFlipType.Rotate270FlipXY);
+            image.Mutate(_ => _.Rotate(RotateMode.Rotate90));
             image.Save(portraitPath);
             File.Copy(pngPath, landscapePath, true);
             return;
@@ -133,7 +134,7 @@ public class Sync
 
         if (image.Height > image.Width)
         {
-            image.RotateFlip(RotateFlipType.Rotate90FlipXY);
+            image.Mutate(_ => _.Rotate(RotateMode.Rotate270));
             image.Save(landscapePath);
             File.Copy(pngPath, portraitPath, true);
             return;
