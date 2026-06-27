@@ -1,4 +1,8 @@
-﻿using System.Drawing;
+﻿using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Formats.Png;
+using SixLabors.ImageSharp.PixelFormats;
+using SixLabors.ImageSharp.Processing;
+using SixLabors.ImageSharp.Processing.Processors.Quantization;
 
 public static class PdfToPng
 {
@@ -13,55 +17,68 @@ public static class PdfToPng
         await CallGhostScript(pdf, tempPng1);
 
         var cropSize = 60;
-        using (var bmpImage = (Bitmap) Image.FromFile(tempPng1))
+        using (var image = await Image.LoadAsync<Rgba32>(tempPng1))
         {
-            var size = bmpImage.Size;
-            var cropRect = new Rectangle(cropSize, cropSize, size.Width - 2 * cropSize, size.Height - 2 * cropSize);
-
-            using (var bitmap = bmpImage.Clone(cropRect, bmpImage.PixelFormat))
-            {
-                DrawBitmapWithBorder(bitmap);
-                bitmap.Save(tempPng2);
-            }
+            var cropRect = new Rectangle(cropSize, cropSize, image.Width - 2 * cropSize, image.Height - 2 * cropSize);
+            image.Mutate(_ => _.Crop(cropRect));
+            DrawBorder(image);
+            await image.SaveAsync(tempPng2);
         }
 
         File.Delete(tempPng1);
-        await CallPngquant(tempPng2, png);
+        await Quantize(tempPng2, png);
         return png;
     }
 
-    static void DrawBitmapWithBorder(Bitmap bitmap)
+    static void DrawBorder(Image<Rgba32> image)
     {
-        using var graphics = Graphics.FromImage(bitmap);
-        using var pen = new Pen(Brushes.Black, 3);
-        graphics.DrawLine(pen, new(0, 0), new(0, bitmap.Height));
-        graphics.DrawLine(pen, new(0, 0), new(bitmap.Width, 0));
-        graphics.DrawLine(pen, new(0, bitmap.Height), new(bitmap.Width, bitmap.Height));
-        graphics.DrawLine(pen, new(bitmap.Width, 0), new(bitmap.Width, bitmap.Height));
+        const int thickness = 3;
+        var black = new Rgba32(0, 0, 0);
+        image.ProcessPixelRows(accessor =>
+        {
+            for (var y = 0; y < accessor.Height; y++)
+            {
+                var row = accessor.GetRowSpan(y);
+                if (y < thickness ||
+                    y >= accessor.Height - thickness)
+                {
+                    row.Fill(black);
+                }
+                else
+                {
+                    for (var x = 0; x < thickness; x++)
+                    {
+                        row[x] = black;
+                        row[accessor.Width - 1 - x] = black;
+                    }
+                }
+            }
+        });
     }
 
-    static async Task CallPngquant(string tempPng, string png)
+    static async Task Quantize(string source, string png)
     {
-        var pngquant = new ProcessStartInfo
+        using (var image = await Image.LoadAsync(source))
+        await using (var stream = File.Create(png))
         {
-            FileName = "pngquant.exe",
-            UseShellExecute = false,
-            RedirectStandardOutput = true,
-            RedirectStandardError = true,
-            CreateNoWindow = true
-        };
-        pngquant.AppendArguments("--force", "--verbose", "--ordered", "--speed=1", "--skip-if-larger", "--quality=50-70", tempPng, "--output", png);
+            var encoder = new PngEncoder
+            {
+                ColorType = PngColorType.Palette,
+                BitDepth = PngBitDepth.Bit8,
+                Quantizer = new WuQuantizer()
+            };
+            await image.SaveAsync(stream, encoder);
+        }
 
-        using var process = Process.Start(pngquant)!;
-        await process.WaitForExitAsync();
-        //skip-if-larger can result in 98 "not saved"
-        if (process.ExitCode == 98)
+        // keep the original if quantization did not shrink it
+        if (new FileInfo(png).Length < new FileInfo(source).Length)
         {
-            File.Move(tempPng, png);
+            File.Delete(source);
         }
         else
         {
-            File.Delete(tempPng);
+            File.Delete(png);
+            File.Move(source, png);
         }
     }
 
