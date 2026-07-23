@@ -6,7 +6,7 @@
   <ItemGroup>
     <PackageVersion Include="Argon" Version="0.35.2" />
     <PackageVersion Include="Bogus" Version="35.6.5" />
-    <PackageVersion Include="CountryData" Version="6.19.0" />
+    <PackageVersion Include="CountryData" Version="6.20.0" />
     <PackageVersion Include="GeoJSON.Net" Version="1.4.1" />
     <PackageVersion Include="HtmlAgilityPack" Version="1.12.4" />
     <PackageVersion Include="MarkdownSnippets.MsBuild" Version="28.4.1" />
@@ -15,15 +15,15 @@
     <PackageVersion Include="NetTopologySuite" Version="2.6.0" />
     <PackageVersion Include="NetTopologySuite.IO.GeoJSON" Version="4.0.0" />
     <PackageVersion Include="NetTopologySuite.IO.Esri.Shapefile" Version="1.2.0" />
-    <PackageVersion Include="ProjectDefaults" Version="1.0.174" />
+    <PackageVersion Include="ProjectDefaults" Version="1.0.175" />
     <PackageVersion Include="ProjectFiles" Version="1.4.0" />
     <PackageVersion Include="SixLabors.ImageSharp" Version="4.0.0" />
-    <PackageVersion Include="Verify.XunitV3" Version="31.24.2" />
+    <PackageVersion Include="Verify.XunitV3" Version="31.27.0" />
     <PackageVersion Include="xunit.v3" Version="3.2.2" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.5" />
-    <PackageVersion Include="DiffEngine" Version="19.3.2" />
+    <PackageVersion Include="DiffEngine" Version="19.3.3" />
     <PackageVersion Include="EmptyFiles" Version="8.18.2" />
     <PackageVersion Include="SimpleInfoName" Version="3.2.0" />
-    <PackageVersion Include="Verify" Version="31.24.2" />
+    <PackageVersion Include="Verify" Version="31.27.0" />
   </ItemGroup>
 </Project>
