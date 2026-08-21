@@ -15,13 +15,13 @@
     <PackageVersion Include="NetTopologySuite" Version="2.6.0" />
     <PackageVersion Include="NetTopologySuite.IO.GeoJSON" Version="4.0.0" />
     <PackageVersion Include="NetTopologySuite.IO.Esri.Shapefile" Version="1.2.0" />
-    <PackageVersion Include="ProjectDefaults" Version="1.0.176" />
+    <PackageVersion Include="ProjectDefaults" Version="1.0.180" />
     <PackageVersion Include="ProjectFiles" Version="1.4.0" />
-    <PackageVersion Include="SixLabors.ImageSharp" Version="4.1.0" />
+    <PackageVersion Include="SixLabors.ImageSharp" Version="4.1.1" />
     <PackageVersion Include="Verify.XunitV3" Version="31.28.0" />
     <PackageVersion Include="xunit.v3" Version="4.0.0" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="4.0.0" />
-    <PackageVersion Include="DiffEngine" Version="20.0.0-beta.29" />
+    <PackageVersion Include="DiffEngine" Version="20.0.0-beta.30" />
     <PackageVersion Include="EmptyFiles" Version="8.18.2" />
     <PackageVersion Include="SimpleInfoName" Version="3.2.0" />
     <PackageVersion Include="Verify" Version="31.28.0" />
