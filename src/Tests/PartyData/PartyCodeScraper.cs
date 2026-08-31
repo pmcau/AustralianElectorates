@@ -16,11 +16,11 @@
 
             var document = new HtmlDocument();
             document.Load(htmlPath);
-            var selectSingleNode = document.DocumentNode.SelectSingleNode("//caption");
-            var table = selectSingleNode.ParentNode;
+            var selectSingleNode = document.DocumentNode.SelectSingleNode("//caption")!;
+            var table = selectSingleNode.ParentNode!;
             var codes = new Dictionary<string, string>();
             foreach (var node in table
-                         .SelectNodes("//tr")
+                         .SelectNodes("//tr")!
                          .Skip(1))
             {
                 var nodes = node

@@ -35,7 +35,7 @@
         }
 
         foreach (var tr in table
-                     .SelectNodes("tr")
+                     .SelectNodes("tr")!
                      .Where(p => !p.HasAttributes))
         {
             var tds = tr.SelectNodes("td");
@@ -69,13 +69,13 @@
     static Dictionary<string, string> ParseFormForParameters(HtmlDocument doc)
     {
         var parameters = new Dictionary<string, string>();
-        var form = doc.DocumentNode.SelectSingleNode("//form[@id='formMaster']");
+        var form = doc.DocumentNode.SelectSingleNode("//form[@id='formMaster']")!;
 
-        var inputs = form.SelectNodes("input[@type='hidden']");
+        var inputs = form.SelectNodes("input[@type='hidden']")!;
 
         foreach (var input in inputs)
         {
-            parameters.Add(input.Attributes["name"].Value, input.Attributes["value"].Value);
+            parameters.Add(input.Attributes["name"]!.Value!, input.Attributes["value"]!.Value!);
         }
 
         return parameters;
@@ -83,7 +83,7 @@
 
     static int GetPageCount(HtmlDocument doc)
     {
-        var table = doc.DocumentNode.SelectSingleNode("//table[@id='ContentPlaceHolderBody_gridViewLocalities']");
+        var table = doc.DocumentNode.SelectSingleNode("//table[@id='ContentPlaceHolderBody_gridViewLocalities']")!;
         var nodes = table.SelectNodes("tr[@class='pagingLink']//a");
         // ReSharper disable once ConditionIsAlwaysTrueOrFalseAccordingToNullableAPIContract
         if (nodes != null)

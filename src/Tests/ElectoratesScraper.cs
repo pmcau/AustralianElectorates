@@ -45,10 +45,10 @@
             var fullName = GetFullName(document, year);
             var values = new Dictionary<string, HtmlNode>(StringComparer.OrdinalIgnoreCase);
             var profileId = FindProfileTable(document);
-            var htmlNodeCollection = profileId.SelectNodes("dt");
+            var htmlNodeCollection = profileId.SelectNodes("dt")!;
             foreach (var keyNode in htmlNodeCollection)
             {
-                var valueNode = keyNode.NextSibling.NextSibling;
+                var valueNode = keyNode.NextSibling!.NextSibling!;
                 values[keyNode
                     .InnerText.Trim()
                     .Trim(':')
@@ -143,9 +143,9 @@
         var mapsNode = FindMapsNode(values);
         return mapsNode
             .ChildNodes
-            .FindFirst("a")
-            .Attributes["href"]
-            .Value
+            .FindFirst("a")!
+            .Attributes["href"]!
+            .Value!
             .Replace("http://", "https://");
     }
 
@@ -224,5 +224,5 @@
 
     static HtmlNode FindProfileTable(HtmlDocument document) =>
         document.DocumentNode
-            .SelectSingleNode("//comment()[contains(., ' InstanceBeginEditable name=\"Content\" ')]/following-sibling::dl");
+            .SelectSingleNode("//comment()[contains(., ' InstanceBeginEditable name=\"Content\" ')]/following-sibling::dl")!;
 }
