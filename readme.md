@@ -286,7 +286,7 @@ return DataLoader.Export(directory);
 
 ## Location Lookup
 
-Find the electorate that contains a geographic location (latitude/longitude). `LocateElectorate` throws if the location is not inside any electorate; use `TryLocateElectorate` to handle that case. A postcode can optionally be supplied as a performance hint: it narrows the candidate electorates before the geometric test and falls back to a full search, so the result is identical.
+Find the electorate that contains a geographic location (latitude/longitude). `LocateElectorate` throws if the location is not inside any electorate; use `TryLocateElectorate` to handle that case. A postcode can optionally be supplied as a performance hint: it narrows the candidate electorates before the geometric test and falls back to a full search, so the result is identical. The first lookup loads the full-detail boundaries of the current electorates (about 2.1 million points, 33MB), which are then kept for the life of the process.
 
 <!-- snippet: usageLocateElectorate -->
 <a id='snippet-usageLocateElectorate'></a>

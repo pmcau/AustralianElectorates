@@ -7,7 +7,7 @@ public static partial class DataLoader
 {
     static Assembly assembly;
     // Location lookup uses the full-detail current (2025) australia map so coastal/border points resolve accurately.
-    static Lazy<ElectorateLocator> locator = new(() => new(ReadFullAustralia()));
+    static Lazy<ElectorateLocator> locator = new(BuildLocator);
 
     static DataLoader()
     {
@@ -215,12 +215,12 @@ public static partial class DataLoader
         return electorate != null;
     }
 
-    static string ReadFullAustralia()
+    static ElectorateLocator BuildLocator()
     {
         using var stream = assembly.GetManifestResourceStream("AustraliaFull.zip")!;
         using var archive = new ZipArchive(stream);
-        var entry = archive.GetEntry("2025/australia.geojson")!;
-        return entry.ReadString();
+        using var geoJson = archive.GetEntry("2025/australia.geojson")!.Open();
+        return new(geoJson);
     }
 
     public static bool TryFindInvalidateElectorates(IEnumerable<string> names, out List<string> invalid)

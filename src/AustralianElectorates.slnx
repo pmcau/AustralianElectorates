@@ -13,5 +13,6 @@
   <Project Path="AustralianElectorates.DetailMaps.Portrait/AustralianElectorates.DetailMaps.Portrait.csproj" />
   <Project Path="AustralianElectorates.DetailMaps/AustralianElectorates.DetailMaps.csproj" />
   <Project Path="AustralianElectorates/AustralianElectorates.csproj" />
+  <Project Path="Benchmarks/Benchmarks.csproj" />
   <Project Path="Tests/Tests.csproj" />
 </Solution>

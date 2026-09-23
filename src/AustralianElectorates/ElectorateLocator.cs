@@ -2,57 +2,144 @@ class ElectorateLocator
 {
     Area[] areas;
 
-    public ElectorateLocator(string australiaGeoJson)
+    // Reads the geojson a token at a time as it streams in, keeping only the vertices: about 33MB for
+    // the full-detail map. Parsing the whole text instead (a string, then a JsonDocument over it)
+    // peaked at over 500MB, and ArrayPool.Shared then held on to most of that.
+    public ElectorateLocator(Stream australiaGeoJson)
     {
+        var reader = new JsonStreamReader(australiaGeoJson);
         var items = new List<Area>();
-        using var document = JsonDocument.Parse(australiaGeoJson);
-        foreach (var feature in document.RootElement.GetProperty("features").EnumerateArray())
+        // reused for every feature and ring, so they grow to the largest once rather than per ring
+        var rings = new List<(double, double)[]>();
+        var points = new List<(double, double)>();
+        reader.Read();
+        while (reader.Read() == JsonTokenType.PropertyName)
         {
-            var name = feature.GetProperty("properties")
-                .GetProperty("electorateName")
-                .GetString()!;
-            var electorate = DataLoader.FindElectorate(name);
-            var rings = new List<(double, double)[]>();
-            ReadGeometry(feature.GetProperty("geometry"), rings);
-            items.Add(new(electorate, rings));
+            if (!reader.ValueTextEquals("features"u8))
+            {
+                reader.Skip();
+                continue;
+            }
+
+            reader.Read();
+            while (reader.Read() == JsonTokenType.StartObject)
+            {
+                items.Add(ReadFeature(ref reader, rings, points));
+            }
         }
 
         areas = [.. items];
     }
 
-    static void ReadGeometry(JsonElement geometry, List<(double, double)[]> rings)
+    static Area ReadFeature(ref JsonStreamReader reader, List<(double, double)[]> rings, List<(double, double)> points)
     {
-        var type = geometry.GetProperty("type").GetString();
-        var coordinates = geometry.GetProperty("coordinates");
-        switch (type)
+        string? name = null;
+        string? type = null;
+        rings.Clear();
+        while (reader.Read() == JsonTokenType.PropertyName)
         {
-            case "Polygon":
-                ReadPolygon(coordinates, rings);
-                break;
-            case "MultiPolygon":
-                foreach (var polygon in coordinates.EnumerateArray())
-                {
-                    ReadPolygon(polygon, rings);
-                }
-
-                break;
-            default:
-                throw new($"Unsupported geometry type: {type}");
+            if (reader.ValueTextEquals("properties"u8))
+            {
+                name = ReadElectorateName(ref reader);
+            }
+            else if (reader.ValueTextEquals("geometry"u8))
+            {
+                type = ReadGeometry(ref reader, rings, points);
+            }
+            else
+            {
+                reader.Skip();
+            }
         }
+
+        if (type is not ("Polygon" or "MultiPolygon"))
+        {
+            throw new($"Unsupported geometry type: {type}");
+        }
+
+        return new(DataLoader.FindElectorate(name!), rings);
     }
 
-    static void ReadPolygon(JsonElement polygon, List<(double, double)[]> rings)
+    static string? ReadElectorateName(ref JsonStreamReader reader)
     {
-        foreach (var ring in polygon.EnumerateArray())
+        string? name = null;
+        reader.Read();
+        while (reader.Read() == JsonTokenType.PropertyName)
         {
-            var points = new List<(double, double)>();
-            foreach (var position in ring.EnumerateArray())
+            if (reader.ValueTextEquals("electorateName"u8))
             {
-                points.Add((position[0].GetDouble(), position[1].GetDouble()));
+                reader.Read();
+                name = reader.GetString();
             }
-
-            rings.Add(points.ToArray());
+            else
+            {
+                reader.Skip();
+            }
         }
+
+        return name;
+    }
+
+    static string? ReadGeometry(ref JsonStreamReader reader, List<(double, double)[]> rings, List<(double, double)> points)
+    {
+        string? type = null;
+        reader.Read();
+        while (reader.Read() == JsonTokenType.PropertyName)
+        {
+            if (reader.ValueTextEquals("type"u8))
+            {
+                reader.Read();
+                type = reader.GetString();
+            }
+            else if (reader.ValueTextEquals("coordinates"u8))
+            {
+                ReadCoordinates(ref reader, rings, points);
+            }
+            else
+            {
+                reader.Skip();
+            }
+        }
+
+        return type;
+    }
+
+    // Polygon coordinates are rings of positions, and MultiPolygon coordinates are polygons of rings
+    // of positions. Either way a ring is an array of positions, so the nesting can be followed
+    // without relying on "type" having been read first. ReadPosition reads through the end of each
+    // position, so an end of array with points pending is the end of a ring.
+    static void ReadCoordinates(ref JsonStreamReader reader, List<(double, double)[]> rings, List<(double, double)> points)
+    {
+        reader.Read();
+        var depth = reader.CurrentDepth;
+        do
+        {
+            var token = reader.Read();
+            if (token == JsonTokenType.Number)
+            {
+                points.Add(ReadPosition(ref reader));
+            }
+            else if (token == JsonTokenType.EndArray &&
+                     points.Count > 0)
+            {
+                rings.Add(points.ToArray());
+                points.Clear();
+            }
+        } while (reader.CurrentDepth > depth);
+    }
+
+    // [longitude, latitude, altitude?], with the reader on the longitude
+    static (double, double) ReadPosition(ref JsonStreamReader reader)
+    {
+        var longitude = reader.GetDouble();
+        reader.Read();
+        var latitude = reader.GetDouble();
+        // past any further ordinates to the end of the position
+        while (reader.Read() == JsonTokenType.Number)
+        {
+        }
+
+        return (longitude, latitude);
     }
 
     public IElectorate? Find(double latitude, double longitude)
