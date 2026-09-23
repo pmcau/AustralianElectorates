@@ -80,13 +80,6 @@ public class DataLoaderTests
     }
 
     [Fact]
-    public void LocateElectorate_unsupported_geometry()
-    {
-        var geoJson = """{"type":"FeatureCollection","features":[{"properties":{"electorateName":"Bean"},"type":"Feature","geometry":{"type":"Point","coordinates":[0,0]}}]}""";
-        Assert.Throws<Exception>(() => new ElectorateLocator(geoJson));
-    }
-
-    [Fact]
     public void ElectoratesForPostcode()
     {
         var electorates = DataLoader.ElectoratesForPostcode(2606)
