@@ -286,7 +286,7 @@ return DataLoader.Export(directory);
 
 ## Location Lookup
 
-Find the electorate that contains a geographic location (latitude/longitude). `LocateElectorate` throws if the location is not inside any electorate; use `TryLocateElectorate` to handle that case. A postcode can optionally be supplied as a performance hint: it narrows the candidate electorates before the geometric test and falls back to a full search, so the result is identical. The first lookup loads the full-detail boundaries of the current electorates (about 2.1 million points, 33MB), which are then kept for the life of the process.
+Find the electorate that contains a geographic location (latitude/longitude). `LocateElectorate` throws if the location is not inside any electorate; use `TryLocateElectorate` to handle that case. A postcode can optionally be supplied as a performance hint: it narrows the candidate electorates before the geometric test and falls back to a full search, so the result is identical. The first lookup loads the full-detail boundaries of the current electorates (about 2.1 million points, plus an index of their edges by latitude: 45MB), which are then kept for the life of the process. Lookups after that take well under a microsecond.
 
 <!-- snippet: usageLocateElectorate -->
 <a id='snippet-usageLocateElectorate'></a>
@@ -450,7 +450,7 @@ Elections are currently added manually as they are declared.
     }
 ];
 ```
-<sup><a href='/src/AustralianElectorates/DataLoader.cs#L74-L105' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/AustralianElectorates/DataLoader.cs#L84-L115' title='Snippet source file'>snippet source</a> | <a href='#snippet-elections' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 

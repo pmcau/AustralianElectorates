@@ -8,6 +8,10 @@ public static partial class DataLoader
     static Assembly assembly;
     // Location lookup uses the full-detail current (2025) australia map so coastal/border points resolve accurately.
     static Lazy<ElectorateLocator> locator = new(BuildLocator);
+    // by both Name and ShortName
+    static FrozenDictionary<string, IElectorate> electoratesByName;
+    // current (2025) electorates only
+    static FrozenDictionary<int, IElectorate[]> electoratesByPostcode;
 
     static DataLoader()
     {
@@ -37,6 +41,12 @@ public static partial class DataLoader
         }
 
         PartiesAndBranches = partiesAndBranches;
+        electoratesByName = BuildElectoratesByName();
+        electoratesByPostcode = Electorates
+            .Where(_ => _.Exist2025)
+            .SelectMany(electorate => electorate.Locations.Select(_ => (_.Postcode, electorate)))
+            .GroupBy(_ => _.Postcode, _ => _.electorate)
+            .ToFrozenDictionary(_ => _.Key, _ => _.Distinct().ToArray());
 
         foreach (var electorate in Electorates)
         {
@@ -147,8 +157,31 @@ public static partial class DataLoader
     public static bool TryFindElectorate(string name, [NotNullWhen(true)] out IElectorate? electorate)
     {
         Guard.AgainstWhiteSpace(nameof(name), name);
-        electorate = Electorates.SingleOrDefault(_ => MatchName(name, _));
-        return electorate != null;
+        return electoratesByName.TryGetValue(name, out electorate);
+    }
+
+    static FrozenDictionary<string, IElectorate> BuildElectoratesByName()
+    {
+        var byName = new Dictionary<string, IElectorate>(StringComparer.OrdinalIgnoreCase);
+        foreach (var electorate in Electorates)
+        {
+            Add(electorate.Name, electorate);
+            Add(electorate.ShortName, electorate);
+        }
+
+        return byName.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
+
+        // a name matching two electorates would make a lookup by it ambiguous
+        void Add(string name, IElectorate electorate)
+        {
+            if (byName.TryGetValue(name, out var existing) &&
+                existing != electorate)
+            {
+                throw new($"'{name}' matches both {existing.Name} and {electorate.Name}.");
+            }
+
+            byName[name] = electorate;
+        }
     }
 
     static bool MatchName(string name, IElectorate x) =>
@@ -170,14 +203,12 @@ public static partial class DataLoader
 
     public static IEnumerable<IElectorate> ElectoratesForPostcode(int postcode)
     {
-        foreach (var electorate in Electorates)
+        if (electoratesByPostcode.TryGetValue(postcode, out var electorates))
         {
-            if (electorate.Exist2025 &&
-                electorate.ContainsPostcode(postcode))
-            {
-                yield return electorate;
-            }
+            return electorates;
         }
+
+        return [];
     }
 
     public static IElectorate LocateElectorate(double latitude, double longitude)
