@@ -1,6 +1,6 @@
 # <img src="/src/icon.png" height="30px"> Australian Electorate information
 
-[![Build status](https://img.shields.io/appveyor/build/SimonCropp/australianelectorates)](https://ci.appveyor.com/project/SimonCropp/australianelectorates)
+[![Build status](https://github.com/pmcau/AustralianElectorates/actions/workflows/build.yml/badge.svg)](https://github.com/pmcau/AustralianElectorates/actions/workflows/build.yml)
 [![NuGet Status](https://img.shields.io/nuget/v/AustralianElectorates.svg?label=AustralianElectorates)](https://www.nuget.org/packages/AustralianElectorates/)
 [![NuGet Status](https://img.shields.io/nuget/v/AustralianElectorates.Bogus.svg?label=Bogus)](https://www.nuget.org/packages/AustralianElectorates.Bogus/)
 [![NuGet Status](https://img.shields.io/nuget/v/AustralianElectorates.DetailMaps.svg?label=DetailMaps)](https://www.nuget.org/packages/AustralianElectorates.DetailMaps/)
