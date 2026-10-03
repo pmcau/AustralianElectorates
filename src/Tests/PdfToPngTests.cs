@@ -3,7 +3,7 @@
     [Fact(Explicit = true)]
     public Task ConvertSingle()
     {
-        var fullPath = Path.GetFullPath("sample_electorate_map.pdf");
+        var fullPath = ProjectFiles.sample_electorate_map_pdf.FullPath;
         return PdfToPng.Convert(fullPath);
     }
 }

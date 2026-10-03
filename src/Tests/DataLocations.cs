@@ -2,7 +2,7 @@
 {
     static DataLocations()
     {
-        RootDir = GitRepoDirectoryFinder.FindForFilePath();
+        RootDir = Path.GetFullPath(Path.Combine(ProjectFiles.SolutionDirectory, ".."));
         TempPath = Path.GetFullPath(Path.Combine(RootDir, "temp"));
         Directory.CreateDirectory(TempPath);
         DataPath = Path.GetFullPath(Path.Combine(RootDir, "Data"));
