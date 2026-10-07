@@ -4,7 +4,7 @@
     <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="Argon" Version="0.37.0" />
+    <PackageVersion Include="Argon" Version="0.38.0" />
     <PackageVersion Include="BenchmarkDotNet" Version="0.15.8" />
     <PackageVersion Include="Bogus" Version="35.6.5" />
     <PackageVersion Include="CountryData" Version="6.20.0" />
@@ -14,15 +14,15 @@
     <PackageVersion Include="NetTopologySuite" Version="2.6.0" />
     <PackageVersion Include="NetTopologySuite.IO.GeoJSON" Version="4.0.0" />
     <PackageVersion Include="NetTopologySuite.IO.Esri.Shapefile" Version="1.2.0" />
-    <PackageVersion Include="ProjectDefaults" Version="1.0.182" />
+    <PackageVersion Include="ProjectDefaults" Version="1.0.184" />
     <PackageVersion Include="ProjectFiles" Version="1.6.0" />
     <PackageVersion Include="Sbom" Version="0.3.1" />
     <PackageVersion Include="SixLabors.ImageSharp" Version="4.1.2" />
-    <PackageVersion Include="Verify.XunitV3" Version="33.3.0" />
+    <PackageVersion Include="Verify.XunitV3" Version="33.3.2-beta.1" />
     <PackageVersion Include="xunit.v3" Version="4.0.1" />
     <PackageVersion Include="DiffEngine" Version="20.7.0" />
     <PackageVersion Include="EmptyFiles" Version="8.20.0" />
     <PackageVersion Include="SimpleInfoName" Version="3.2.0" />
-    <PackageVersion Include="Verify" Version="33.3.0" />
+    <PackageVersion Include="Verify" Version="33.3.2-beta.1" />
   </ItemGroup>
 </Project>
